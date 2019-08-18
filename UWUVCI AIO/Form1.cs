@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
 using System.Resources;
+using AutoUpdaterDotNET;
 
 namespace UWUVCI_AIO
 {
@@ -19,6 +20,7 @@ namespace UWUVCI_AIO
         public string language = Properties.Settings.Default.Language;
         public UWUVCI_AIO()
         {
+            AutoUpdater.Start("https://raw.githubusercontent.com/Hotbrawl20/testing/master/update.xml");
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
             
                
