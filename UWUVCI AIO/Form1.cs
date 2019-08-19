@@ -30,6 +30,19 @@ namespace UWUVCI_AIO
             {
                 enableDarkMode();
             }
+            if(Properties.Settings.Default.CommonKey.GetHashCode() == 487391367)
+            {
+                toolStripMenuItem2.Enabled = false;
+                if(language == "en-US")
+                {
+                    toolStripMenuItem2.Text = "CommonKey is already set";
+                }
+                else
+                {
+                    toolStripMenuItem2.Text = "CommonKey ist bereits gespeichert";
+                }
+                
+            }
             
         }
 
@@ -80,8 +93,8 @@ namespace UWUVCI_AIO
         {
             splitter1.BackColor = Color.FromArgb(50, 50, 50);
             panel1.BackColor = Color.FromArgb(50, 50, 50);
-            tabPage2.BackColor = Color.FromArgb(60, 60, 60);
-            tabPage2.ForeColor = Color.WhiteSmoke;
+            Main.BackColor = Color.FromArgb(60, 60, 60);
+            Main.ForeColor = Color.WhiteSmoke;
         }
 
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -96,6 +109,17 @@ namespace UWUVCI_AIO
             this.Show();
             this.WindowState = FormWindowState.Normal;
 
+        }
+
+        private void HilfeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Form ckey = new CKey();
+            ckey.Show();
         }
     }
 }

@@ -46,5 +46,17 @@ namespace UWUVCI_AIO.Properties {
                 this["darkmode"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CommonKey {
+            get {
+                return ((string)(this["CommonKey"]));
+            }
+            set {
+                this["CommonKey"] = value;
+            }
+        }
     }
 }

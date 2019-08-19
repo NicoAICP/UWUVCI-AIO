@@ -118,19 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 13</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 20</value>
   </data>
-  <data name="linkLabel1.Text" xml:space="preserve">
-    <value>erstellt von NicoAICP</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Bitte gib den WiiU CommonKey ein</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Mitwirkende</value>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 60</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Über UWUVCI AIO</value>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 23</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
+    <value>Überprüfen</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 60</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
     <value>Schließen</value>
   </data>
 </root>

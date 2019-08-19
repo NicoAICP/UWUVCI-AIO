@@ -90,6 +90,12 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="CKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CKey.Designer.cs">
+      <DependentUpon>CKey.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CKey.de.resx">
+      <DependentUpon>CKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CKey.resx">
+      <DependentUpon>CKey.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.de.resx">
       <DependentUpon>Form1.cs</DependentUpon>
