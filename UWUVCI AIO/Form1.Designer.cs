@@ -71,6 +71,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.NDS = new System.Windows.Forms.TabPage();
             this.N64 = new System.Windows.Forms.TabPage();
+            this.PackingN64 = new System.Windows.Forms.GroupBox();
+            this.BaseRomN64 = new System.Windows.Forms.GroupBox();
+            this.InjectionN64 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -86,6 +90,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.N64.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -359,15 +364,42 @@
             // 
             // NDS
             // 
+            this.NDS.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.NDS, "NDS");
             this.NDS.Name = "NDS";
-            this.NDS.UseVisualStyleBackColor = true;
             // 
             // N64
             // 
+            this.N64.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.N64.Controls.Add(this.label7);
+            this.N64.Controls.Add(this.InjectionN64);
+            this.N64.Controls.Add(this.BaseRomN64);
+            this.N64.Controls.Add(this.PackingN64);
             resources.ApplyResources(this.N64, "N64");
             this.N64.Name = "N64";
-            this.N64.UseVisualStyleBackColor = true;
+            // 
+            // PackingN64
+            // 
+            resources.ApplyResources(this.PackingN64, "PackingN64");
+            this.PackingN64.Name = "PackingN64";
+            this.PackingN64.TabStop = false;
+            // 
+            // BaseRomN64
+            // 
+            resources.ApplyResources(this.BaseRomN64, "BaseRomN64");
+            this.BaseRomN64.Name = "BaseRomN64";
+            this.BaseRomN64.TabStop = false;
+            // 
+            // InjectionN64
+            // 
+            resources.ApplyResources(this.InjectionN64, "InjectionN64");
+            this.InjectionN64.Name = "InjectionN64";
+            this.InjectionN64.TabStop = false;
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
             // 
             // UWUVCI_AIO
             // 
@@ -402,6 +434,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.N64.ResumeLayout(false);
+            this.N64.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -450,6 +484,10 @@
         private System.Windows.Forms.TabPage NDS;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.TabPage N64;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox InjectionN64;
+        private System.Windows.Forms.GroupBox BaseRomN64;
+        private System.Windows.Forms.GroupBox PackingN64;
     }
 }
 

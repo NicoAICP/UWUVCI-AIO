@@ -82,6 +82,9 @@ namespace UWUVCI_AIO
             NDS.ForeColor = Color.WhiteSmoke;
             N64.BackColor = Color.FromArgb(60, 60, 60);
             N64.ForeColor = Color.WhiteSmoke;
+            BaseRomN64.ForeColor = Color.WhiteSmoke;
+            PackingN64.ForeColor = Color.WhiteSmoke;
+            InjectionN64.ForeColor = Color.WhiteSmoke;
         }
 
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
