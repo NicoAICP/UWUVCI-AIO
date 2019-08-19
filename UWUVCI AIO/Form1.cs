@@ -43,7 +43,6 @@ namespace UWUVCI_AIO
                 }
                 
             }
-            
         }
 
         private void CloseToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -51,28 +50,12 @@ namespace UWUVCI_AIO
             Environment.Exit(0);
         }
 
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            language = "de-DE";
 
-        }
 
-        private void Button4_Click(object sender, EventArgs e)
-        {
-            language = "en-US";
-        }
 
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            Properties.Settings.Default.Language = "de-DE";
-            Properties.Settings.Default.Save();
-        }
 
-        private void Button3_Click(object sender, EventArgs e)
-        {
-            Properties.Settings.Default.Language = "en-US";
-            Properties.Settings.Default.Save();
-        }
+
+
 
         private void SettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -95,6 +78,10 @@ namespace UWUVCI_AIO
             panel1.BackColor = Color.FromArgb(50, 50, 50);
             Main.BackColor = Color.FromArgb(60, 60, 60);
             Main.ForeColor = Color.WhiteSmoke;
+            NDS.BackColor = Color.FromArgb(60, 60, 60);
+            NDS.ForeColor = Color.WhiteSmoke;
+            N64.BackColor = Color.FromArgb(60, 60, 60);
+            N64.ForeColor = Color.WhiteSmoke;
         }
 
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -120,6 +107,21 @@ namespace UWUVCI_AIO
         {
             Form ckey = new CKey();
             ckey.Show();
+        }
+
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 2; // 0 = Main, 1 = NDS, 2 = N64, 3 = GBA, 4 = NES, 5 = SNES
+        }
+
+        private void Label7_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 1; // 0 = Main, 1 = NDS, 2 = N64, 3 = GBA, 4 = NES, 5 = SNES
         }
     }
 }
