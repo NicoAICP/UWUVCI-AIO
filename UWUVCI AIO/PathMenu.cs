@@ -1,0 +1,155 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
+using System.Resources;
+
+namespace UWUVCI_AIO
+{
+    public partial class PathMenu : Form
+    {
+        public string language = Properties.Settings.Default.Language;
+        public PathMenu()
+        {
+            InitializeComponent();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
+
+            if (Properties.Settings.Default.darkmode == true)
+            {
+                enableDarkMode();
+            }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = folderBrowserDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog1.SelectedPath))
+            {
+                textBox1.Text = folderBrowserDialog1.SelectedPath;
+                Properties.Settings.Default.BaseRomPath = textBox1.Text;
+                Properties.Settings.Default.Save();
+                if(language == "de-DE")
+                {
+                    MessageBox.Show("Pfad erfolgreich gespeichert");
+                }
+                else
+                {
+                    MessageBox.Show("Path successfully saved!");
+                }
+               
+            }
+            else
+            {
+                if (language == "de-DE")
+                {
+                    MessageBox.Show("Ein Fehler ist beim Pfad speichern aufgetreten");
+                }
+                else
+                {
+                    MessageBox.Show("An error occured while saving the path");
+                }
+            }
+
+        }
+
+        private void PathMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void enableDarkMode()
+        {
+            this.BackColor = Color.FromArgb(60, 60, 60);
+            this.ForeColor = Color.WhiteSmoke;
+            button1.ForeColor = Color.Black;
+            button2.ForeColor = Color.Black;
+            button3.ForeColor = Color.Black;
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            DialogResult result = folderBrowserDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog1.SelectedPath))
+            {
+                textBox3.Text = folderBrowserDialog1.SelectedPath;
+                Properties.Settings.Default.WorkingPath = textBox3.Text;
+                Properties.Settings.Default.Save();
+                if (language == "de-DE")
+                {
+                    MessageBox.Show("Pfad erfolgreich gespeichert");
+                }
+                else
+                {
+                    MessageBox.Show("Path successfully saved!");
+                }
+
+            }
+            else
+            {
+                if (language == "de-DE")
+                {
+                    MessageBox.Show("Ein Fehler ist beim Pfad speichern aufgetreten");
+                }
+                else
+                {
+                    MessageBox.Show("An error occured while saving the path");
+                }
+            }
+        }
+        private void loadfromsettings()
+        {
+            textBox2.Text = Properties.Settings.Default.InjectionPath;
+            textBox1.Text = Properties.Settings.Default.BaseRomPath;
+            textBox3.Text = Properties.Settings.Default.WorkingPath;
+        }
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            DialogResult result = folderBrowserDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog1.SelectedPath))
+            {
+                textBox2.Text = folderBrowserDialog1.SelectedPath;
+                Properties.Settings.Default.InjectionPath = textBox2.Text;
+                Properties.Settings.Default.Save();
+                if (language == "de-DE")
+                {
+                    MessageBox.Show("Pfad erfolgreich gespeichert");
+                }
+                else
+                {
+                    MessageBox.Show("Path successfully saved!");
+                }
+
+            }
+            else
+            {
+                if (language == "de-DE")
+                {
+                    MessageBox.Show("Ein Fehler ist beim Pfad speichern aufgetreten");
+                }
+                else
+                {
+                    MessageBox.Show("An error occured while saving the path");
+                }
+            }
+        }
+    }
+}

@@ -58,5 +58,113 @@ namespace UWUVCI_AIO.Properties {
                 this["CommonKey"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PMEU {
+            get {
+                return ((string)(this["PMEU"]));
+            }
+            set {
+                this["PMEU"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PMUS {
+            get {
+                return ((string)(this["PMUS"]));
+            }
+            set {
+                this["PMUS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DKEU {
+            get {
+                return ((string)(this["DKEU"]));
+            }
+            set {
+                this["DKEU"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DKUS {
+            get {
+                return ((string)(this["DKUS"]));
+            }
+            set {
+                this["DKUS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string FZX {
+            get {
+                return ((string)(this["FZX"]));
+            }
+            set {
+                this["FZX"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string FZXJP {
+            get {
+                return ((string)(this["FZXJP"]));
+            }
+            set {
+                this["FZXJP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string BaseRomPath {
+            get {
+                return ((string)(this["BaseRomPath"]));
+            }
+            set {
+                this["BaseRomPath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string InjectionPath {
+            get {
+                return ((string)(this["InjectionPath"]));
+            }
+            set {
+                this["InjectionPath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string WorkingPath {
+            get {
+                return ((string)(this["WorkingPath"]));
+            }
+            set {
+                this["WorkingPath"] = value;
+            }
+        }
     }
 }

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
 using System.Resources;
+using System.IO;
 
 namespace UWUVCI_AIO
 {
@@ -24,10 +25,10 @@ namespace UWUVCI_AIO
             {
                 enableDarkMode();
             }
-
+          
 
         }
-
+        
         private void Button1_Click(object sender, EventArgs e)
         {
             if(textBox1.Text.GetHashCode() == 487391367)
