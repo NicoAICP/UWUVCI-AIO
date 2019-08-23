@@ -33,6 +33,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.n64ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gBAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sNESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,6 +42,13 @@
             this.closeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.hilfeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TitleKeys = new System.Windows.Forms.ToolStripMenuItem();
+            this.nDSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.n64ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nESToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nESToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sNESToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,26 +62,67 @@
             this.Main = new System.Windows.Forms.TabPage();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.NDS = new System.Windows.Forms.TabPage();
+            this.back_nds = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.NDS_BTN15 = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.NDS_BTN14 = new System.Windows.Forms.Button();
+            this.NDS_BTN13 = new System.Windows.Forms.Button();
+            this.NDS_BTN12 = new System.Windows.Forms.Button();
+            this.NDS_BTN11 = new System.Windows.Forms.Button();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.NDS_BTN10 = new System.Windows.Forms.Button();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.NDS_BTN7 = new System.Windows.Forms.Button();
+            this.NDS_BTN8 = new System.Windows.Forms.Button();
+            this.NDS_BTN6 = new System.Windows.Forms.Button();
+            this.NDS_BTN4 = new System.Windows.Forms.Button();
+            this.NDS_BTN5 = new System.Windows.Forms.Button();
+            this.NDS_BTN3 = new System.Windows.Forms.Button();
+            this.NDS_BTN2 = new System.Windows.Forms.Button();
+            this.label30 = new System.Windows.Forms.Label();
+            this.NDS_BTN9 = new System.Windows.Forms.Button();
+            this.NDS_BTN1 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.NDS_BTN17 = new System.Windows.Forms.Button();
+            this.NDS_BTN16 = new System.Windows.Forms.Button();
             this.N64 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.InjectionN64 = new System.Windows.Forms.GroupBox();
-            this.button9 = new System.Windows.Forms.Button();
+            this.N64_BTN15 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.N64_BTN14 = new System.Windows.Forms.Button();
+            this.N64_BTN13 = new System.Windows.Forms.Button();
+            this.N64_BTN12 = new System.Windows.Forms.Button();
+            this.N64_BTN11 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -82,63 +132,53 @@
             this.label12 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.N64_BTN10 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.N64_BTN9 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.N64_BTN8 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.BaseRomN64 = new System.Windows.Forms.GroupBox();
-            this.PackingN64 = new System.Windows.Forms.GroupBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.TitleKeys = new System.Windows.Forms.ToolStripMenuItem();
-            this.nDSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.n64ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.nESToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.nESToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.sNESToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.n64ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.N64_BTN4 = new System.Windows.Forms.Button();
+            this.N64_BTN5 = new System.Windows.Forms.Button();
+            this.N64_BTN7 = new System.Windows.Forms.Button();
+            this.N64_BTN3 = new System.Windows.Forms.Button();
+            this.N64_BTN2 = new System.Windows.Forms.Button();
+            this.N64_BTN6 = new System.Windows.Forms.Button();
+            this.N64_BTN1 = new System.Windows.Forms.Button();
+            this.PackingN64 = new System.Windows.Forms.GroupBox();
+            this.N64_BTN17 = new System.Windows.Forms.Button();
+            this.N64_BTN16 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Main.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.NDS.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.N64.SuspendLayout();
             this.InjectionN64.SuspendLayout();
             this.BaseRomN64.SuspendLayout();
             this.PackingN64.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -172,6 +212,18 @@
             this.sNESToolStripMenuItem});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             resources.ApplyResources(this.newToolStripMenuItem, "newToolStripMenuItem");
+            // 
+            // toolStripMenuItem1
+            // 
+            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.ToolStripMenuItem1_Click);
+            // 
+            // n64ToolStripMenuItem
+            // 
+            resources.ApplyResources(this.n64ToolStripMenuItem, "n64ToolStripMenuItem");
+            this.n64ToolStripMenuItem.Name = "n64ToolStripMenuItem";
+            this.n64ToolStripMenuItem.Click += new System.EventHandler(this.N64ToolStripMenuItem_Click);
             // 
             // gBAToolStripMenuItem
             // 
@@ -216,6 +268,49 @@
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
             this.toolStripMenuItem2.Click += new System.EventHandler(this.ToolStripMenuItem2_Click);
+            // 
+            // TitleKeys
+            // 
+            this.TitleKeys.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nDSToolStripMenuItem,
+            this.n64ToolStripMenuItem1,
+            this.nESToolStripMenuItem1,
+            this.nESToolStripMenuItem2,
+            this.sNESToolStripMenuItem1});
+            this.TitleKeys.Name = "TitleKeys";
+            resources.ApplyResources(this.TitleKeys, "TitleKeys");
+            // 
+            // nDSToolStripMenuItem
+            // 
+            this.nDSToolStripMenuItem.Name = "nDSToolStripMenuItem";
+            resources.ApplyResources(this.nDSToolStripMenuItem, "nDSToolStripMenuItem");
+            // 
+            // n64ToolStripMenuItem1
+            // 
+            this.n64ToolStripMenuItem1.Name = "n64ToolStripMenuItem1";
+            resources.ApplyResources(this.n64ToolStripMenuItem1, "n64ToolStripMenuItem1");
+            this.n64ToolStripMenuItem1.Click += new System.EventHandler(this.N64ToolStripMenuItem1_Click);
+            // 
+            // nESToolStripMenuItem1
+            // 
+            this.nESToolStripMenuItem1.Name = "nESToolStripMenuItem1";
+            resources.ApplyResources(this.nESToolStripMenuItem1, "nESToolStripMenuItem1");
+            // 
+            // nESToolStripMenuItem2
+            // 
+            this.nESToolStripMenuItem2.Name = "nESToolStripMenuItem2";
+            resources.ApplyResources(this.nESToolStripMenuItem2, "nESToolStripMenuItem2");
+            // 
+            // sNESToolStripMenuItem1
+            // 
+            this.sNESToolStripMenuItem1.Name = "sNESToolStripMenuItem1";
+            resources.ApplyResources(this.sNESToolStripMenuItem1, "sNESToolStripMenuItem1");
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.ToolStripMenuItem3_Click);
             // 
             // toolStripSeparator1
             // 
@@ -308,6 +403,13 @@
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.TabStop = false;
+            // 
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -320,6 +422,13 @@
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.TabStop = false;
             // 
             // panel5
             // 
@@ -334,6 +443,13 @@
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -346,6 +462,14 @@
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
             // 
             // panel2
             // 
@@ -360,11 +484,263 @@
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
+            // 
             // NDS
             // 
             this.NDS.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.NDS.Controls.Add(this.back_nds);
+            this.NDS.Controls.Add(this.groupBox1);
+            this.NDS.Controls.Add(this.groupBox2);
+            this.NDS.Controls.Add(this.groupBox3);
             resources.ApplyResources(this.NDS, "NDS");
             this.NDS.Name = "NDS";
+            // 
+            // back_nds
+            // 
+            resources.ApplyResources(this.back_nds, "back_nds");
+            this.back_nds.Name = "back_nds";
+            this.back_nds.UseVisualStyleBackColor = true;
+            this.back_nds.Click += new System.EventHandler(this.Button19_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.NDS_BTN15);
+            this.groupBox1.Controls.Add(this.label19);
+            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Controls.Add(this.NDS_BTN14);
+            this.groupBox1.Controls.Add(this.NDS_BTN13);
+            this.groupBox1.Controls.Add(this.NDS_BTN12);
+            this.groupBox1.Controls.Add(this.NDS_BTN11);
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.textBox9);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.label23);
+            this.groupBox1.Controls.Add(this.textBox11);
+            this.groupBox1.Controls.Add(this.label24);
+            this.groupBox1.Controls.Add(this.textBox12);
+            this.groupBox1.Controls.Add(this.label25);
+            this.groupBox1.Controls.Add(this.NDS_BTN10);
+            this.groupBox1.Controls.Add(this.textBox14);
+            this.groupBox1.Controls.Add(this.label29);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // NDS_BTN15
+            // 
+            this.NDS_BTN15.AutoEllipsis = true;
+            this.NDS_BTN15.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.NDS_BTN15, "NDS_BTN15");
+            this.NDS_BTN15.Name = "NDS_BTN15";
+            this.NDS_BTN15.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.Name = "label19";
+            // 
+            // textBox8
+            // 
+            resources.ApplyResources(this.textBox8, "textBox8");
+            this.textBox8.Name = "textBox8";
+            // 
+            // label20
+            // 
+            resources.ApplyResources(this.label20, "label20");
+            this.label20.Name = "label20";
+            // 
+            // NDS_BTN14
+            // 
+            resources.ApplyResources(this.NDS_BTN14, "NDS_BTN14");
+            this.NDS_BTN14.Name = "NDS_BTN14";
+            this.NDS_BTN14.UseVisualStyleBackColor = true;
+            // 
+            // NDS_BTN13
+            // 
+            resources.ApplyResources(this.NDS_BTN13, "NDS_BTN13");
+            this.NDS_BTN13.Name = "NDS_BTN13";
+            this.NDS_BTN13.UseVisualStyleBackColor = true;
+            // 
+            // NDS_BTN12
+            // 
+            resources.ApplyResources(this.NDS_BTN12, "NDS_BTN12");
+            this.NDS_BTN12.Name = "NDS_BTN12";
+            this.NDS_BTN12.UseVisualStyleBackColor = true;
+            // 
+            // NDS_BTN11
+            // 
+            resources.ApplyResources(this.NDS_BTN11, "NDS_BTN11");
+            this.NDS_BTN11.Name = "NDS_BTN11";
+            this.NDS_BTN11.UseVisualStyleBackColor = true;
+            // 
+            // label21
+            // 
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.Name = "label21";
+            // 
+            // textBox9
+            // 
+            resources.ApplyResources(this.textBox9, "textBox9");
+            this.textBox9.Name = "textBox9";
+            // 
+            // label22
+            // 
+            resources.ApplyResources(this.label22, "label22");
+            this.label22.Name = "label22";
+            // 
+            // textBox10
+            // 
+            resources.ApplyResources(this.textBox10, "textBox10");
+            this.textBox10.Name = "textBox10";
+            // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
+            // 
+            // textBox11
+            // 
+            resources.ApplyResources(this.textBox11, "textBox11");
+            this.textBox11.Name = "textBox11";
+            // 
+            // label24
+            // 
+            resources.ApplyResources(this.label24, "label24");
+            this.label24.Name = "label24";
+            // 
+            // textBox12
+            // 
+            resources.ApplyResources(this.textBox12, "textBox12");
+            this.textBox12.Name = "textBox12";
+            // 
+            // label25
+            // 
+            resources.ApplyResources(this.label25, "label25");
+            this.label25.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label25.Name = "label25";
+            // 
+            // NDS_BTN10
+            // 
+            resources.ApplyResources(this.NDS_BTN10, "NDS_BTN10");
+            this.NDS_BTN10.Name = "NDS_BTN10";
+            this.NDS_BTN10.UseVisualStyleBackColor = true;
+            // 
+            // textBox14
+            // 
+            resources.ApplyResources(this.textBox14, "textBox14");
+            this.textBox14.Name = "textBox14";
+            // 
+            // label29
+            // 
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label29.Name = "label29";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.NDS_BTN7);
+            this.groupBox2.Controls.Add(this.NDS_BTN8);
+            this.groupBox2.Controls.Add(this.NDS_BTN6);
+            this.groupBox2.Controls.Add(this.NDS_BTN4);
+            this.groupBox2.Controls.Add(this.NDS_BTN5);
+            this.groupBox2.Controls.Add(this.NDS_BTN3);
+            this.groupBox2.Controls.Add(this.NDS_BTN2);
+            this.groupBox2.Controls.Add(this.label30);
+            this.groupBox2.Controls.Add(this.NDS_BTN9);
+            this.groupBox2.Controls.Add(this.NDS_BTN1);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
+            // 
+            // NDS_BTN7
+            // 
+            resources.ApplyResources(this.NDS_BTN7, "NDS_BTN7");
+            this.NDS_BTN7.Name = "NDS_BTN7";
+            this.NDS_BTN7.UseVisualStyleBackColor = true;
+            // 
+            // NDS_BTN8
+            // 
+            resources.ApplyResources(this.NDS_BTN8, "NDS_BTN8");
+            this.NDS_BTN8.Name = "NDS_BTN8";
+            this.NDS_BTN8.UseVisualStyleBackColor = true;
+            // 
+            // NDS_BTN6
+            // 
+            resources.ApplyResources(this.NDS_BTN6, "NDS_BTN6");
+            this.NDS_BTN6.Name = "NDS_BTN6";
+            this.NDS_BTN6.UseVisualStyleBackColor = true;
+            // 
+            // NDS_BTN4
+            // 
+            resources.ApplyResources(this.NDS_BTN4, "NDS_BTN4");
+            this.NDS_BTN4.Name = "NDS_BTN4";
+            this.NDS_BTN4.UseVisualStyleBackColor = true;
+            // 
+            // NDS_BTN5
+            // 
+            resources.ApplyResources(this.NDS_BTN5, "NDS_BTN5");
+            this.NDS_BTN5.Name = "NDS_BTN5";
+            this.NDS_BTN5.UseVisualStyleBackColor = true;
+            // 
+            // NDS_BTN3
+            // 
+            resources.ApplyResources(this.NDS_BTN3, "NDS_BTN3");
+            this.NDS_BTN3.Name = "NDS_BTN3";
+            this.NDS_BTN3.UseVisualStyleBackColor = true;
+            // 
+            // NDS_BTN2
+            // 
+            resources.ApplyResources(this.NDS_BTN2, "NDS_BTN2");
+            this.NDS_BTN2.Name = "NDS_BTN2";
+            this.NDS_BTN2.UseVisualStyleBackColor = true;
+            // 
+            // label30
+            // 
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.Name = "label30";
+            // 
+            // NDS_BTN9
+            // 
+            resources.ApplyResources(this.NDS_BTN9, "NDS_BTN9");
+            this.NDS_BTN9.Name = "NDS_BTN9";
+            this.NDS_BTN9.UseVisualStyleBackColor = true;
+            // 
+            // NDS_BTN1
+            // 
+            resources.ApplyResources(this.NDS_BTN1, "NDS_BTN1");
+            this.NDS_BTN1.Name = "NDS_BTN1";
+            this.NDS_BTN1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.NDS_BTN17);
+            this.groupBox3.Controls.Add(this.NDS_BTN16);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.TabStop = false;
+            // 
+            // NDS_BTN17
+            // 
+            this.NDS_BTN17.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.NDS_BTN17, "NDS_BTN17");
+            this.NDS_BTN17.Name = "NDS_BTN17";
+            this.NDS_BTN17.UseVisualStyleBackColor = true;
+            // 
+            // NDS_BTN16
+            // 
+            this.NDS_BTN16.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.NDS_BTN16, "NDS_BTN16");
+            this.NDS_BTN16.Name = "NDS_BTN16";
+            this.NDS_BTN16.UseVisualStyleBackColor = true;
             // 
             // N64
             // 
@@ -385,14 +761,14 @@
             // 
             // InjectionN64
             // 
-            this.InjectionN64.Controls.Add(this.button9);
+            this.InjectionN64.Controls.Add(this.N64_BTN15);
             this.InjectionN64.Controls.Add(this.label17);
             this.InjectionN64.Controls.Add(this.textBox7);
             this.InjectionN64.Controls.Add(this.label16);
-            this.InjectionN64.Controls.Add(this.button8);
-            this.InjectionN64.Controls.Add(this.button7);
-            this.InjectionN64.Controls.Add(this.button6);
-            this.InjectionN64.Controls.Add(this.button5);
+            this.InjectionN64.Controls.Add(this.N64_BTN14);
+            this.InjectionN64.Controls.Add(this.N64_BTN13);
+            this.InjectionN64.Controls.Add(this.N64_BTN12);
+            this.InjectionN64.Controls.Add(this.N64_BTN11);
             this.InjectionN64.Controls.Add(this.label15);
             this.InjectionN64.Controls.Add(this.textBox6);
             this.InjectionN64.Controls.Add(this.label14);
@@ -402,28 +778,28 @@
             this.InjectionN64.Controls.Add(this.label12);
             this.InjectionN64.Controls.Add(this.textBox3);
             this.InjectionN64.Controls.Add(this.label11);
-            this.InjectionN64.Controls.Add(this.button4);
+            this.InjectionN64.Controls.Add(this.N64_BTN10);
             this.InjectionN64.Controls.Add(this.label10);
-            this.InjectionN64.Controls.Add(this.button3);
+            this.InjectionN64.Controls.Add(this.N64_BTN9);
             this.InjectionN64.Controls.Add(this.textBox2);
             this.InjectionN64.Controls.Add(this.label9);
             this.InjectionN64.Controls.Add(this.radioButton2);
             this.InjectionN64.Controls.Add(this.radioButton1);
             this.InjectionN64.Controls.Add(this.label8);
-            this.InjectionN64.Controls.Add(this.button2);
+            this.InjectionN64.Controls.Add(this.N64_BTN8);
             this.InjectionN64.Controls.Add(this.textBox1);
             this.InjectionN64.Controls.Add(this.label7);
             resources.ApplyResources(this.InjectionN64, "InjectionN64");
             this.InjectionN64.Name = "InjectionN64";
             this.InjectionN64.TabStop = false;
             // 
-            // button9
+            // N64_BTN15
             // 
-            this.button9.AutoEllipsis = true;
-            this.button9.Cursor = System.Windows.Forms.Cursors.No;
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = true;
+            this.N64_BTN15.AutoEllipsis = true;
+            this.N64_BTN15.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.N64_BTN15, "N64_BTN15");
+            this.N64_BTN15.Name = "N64_BTN15";
+            this.N64_BTN15.UseVisualStyleBackColor = true;
             // 
             // label17
             // 
@@ -440,29 +816,29 @@
             resources.ApplyResources(this.label16, "label16");
             this.label16.Name = "label16";
             // 
-            // button8
+            // N64_BTN14
             // 
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.N64_BTN14, "N64_BTN14");
+            this.N64_BTN14.Name = "N64_BTN14";
+            this.N64_BTN14.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // N64_BTN13
             // 
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.N64_BTN13, "N64_BTN13");
+            this.N64_BTN13.Name = "N64_BTN13";
+            this.N64_BTN13.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // N64_BTN12
             // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.N64_BTN12, "N64_BTN12");
+            this.N64_BTN12.Name = "N64_BTN12";
+            this.N64_BTN12.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // N64_BTN11
             // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.N64_BTN11, "N64_BTN11");
+            this.N64_BTN11.Name = "N64_BTN11";
+            this.N64_BTN11.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
@@ -510,22 +886,22 @@
             this.label11.Cursor = System.Windows.Forms.Cursors.Help;
             this.label11.Name = "label11";
             // 
-            // button4
+            // N64_BTN10
             // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.N64_BTN10, "N64_BTN10");
+            this.N64_BTN10.Name = "N64_BTN10";
+            this.N64_BTN10.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
             // 
-            // button3
+            // N64_BTN9
             // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.N64_BTN9, "N64_BTN9");
+            this.N64_BTN9.Name = "N64_BTN9";
+            this.N64_BTN9.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
@@ -558,12 +934,12 @@
             this.label8.Cursor = System.Windows.Forms.Cursors.Help;
             this.label8.Name = "label8";
             // 
-            // button2
+            // N64_BTN8
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            resources.ApplyResources(this.N64_BTN8, "N64_BTN8");
+            this.N64_BTN8.Name = "N64_BTN8";
+            this.N64_BTN8.UseVisualStyleBackColor = true;
+            this.N64_BTN8.Click += new System.EventHandler(this.Button2_Click);
             // 
             // textBox1
             // 
@@ -579,180 +955,89 @@
             // BaseRomN64
             // 
             this.BaseRomN64.Controls.Add(this.label18);
-            this.BaseRomN64.Controls.Add(this.button14);
-            this.BaseRomN64.Controls.Add(this.button16);
-            this.BaseRomN64.Controls.Add(this.button15);
-            this.BaseRomN64.Controls.Add(this.button13);
-            this.BaseRomN64.Controls.Add(this.button12);
-            this.BaseRomN64.Controls.Add(this.button11);
-            this.BaseRomN64.Controls.Add(this.button10);
+            this.BaseRomN64.Controls.Add(this.N64_BTN4);
+            this.BaseRomN64.Controls.Add(this.N64_BTN5);
+            this.BaseRomN64.Controls.Add(this.N64_BTN7);
+            this.BaseRomN64.Controls.Add(this.N64_BTN3);
+            this.BaseRomN64.Controls.Add(this.N64_BTN2);
+            this.BaseRomN64.Controls.Add(this.N64_BTN6);
+            this.BaseRomN64.Controls.Add(this.N64_BTN1);
             resources.ApplyResources(this.BaseRomN64, "BaseRomN64");
             this.BaseRomN64.Name = "BaseRomN64";
             this.BaseRomN64.TabStop = false;
-            // 
-            // PackingN64
-            // 
-            this.PackingN64.Controls.Add(this.button18);
-            this.PackingN64.Controls.Add(this.button17);
-            resources.ApplyResources(this.PackingN64, "PackingN64");
-            this.PackingN64.Name = "PackingN64";
-            this.PackingN64.TabStop = false;
-            // 
-            // toolTip1
-            // 
-            this.toolTip1.IsBalloon = true;
-            // 
-            // TitleKeys
-            // 
-            this.TitleKeys.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nDSToolStripMenuItem,
-            this.n64ToolStripMenuItem1,
-            this.nESToolStripMenuItem1,
-            this.nESToolStripMenuItem2,
-            this.sNESToolStripMenuItem1});
-            this.TitleKeys.Name = "TitleKeys";
-            resources.ApplyResources(this.TitleKeys, "TitleKeys");
-            // 
-            // nDSToolStripMenuItem
-            // 
-            this.nDSToolStripMenuItem.Name = "nDSToolStripMenuItem";
-            resources.ApplyResources(this.nDSToolStripMenuItem, "nDSToolStripMenuItem");
-            // 
-            // n64ToolStripMenuItem1
-            // 
-            this.n64ToolStripMenuItem1.Name = "n64ToolStripMenuItem1";
-            resources.ApplyResources(this.n64ToolStripMenuItem1, "n64ToolStripMenuItem1");
-            this.n64ToolStripMenuItem1.Click += new System.EventHandler(this.N64ToolStripMenuItem1_Click);
-            // 
-            // nESToolStripMenuItem1
-            // 
-            this.nESToolStripMenuItem1.Name = "nESToolStripMenuItem1";
-            resources.ApplyResources(this.nESToolStripMenuItem1, "nESToolStripMenuItem1");
-            // 
-            // nESToolStripMenuItem2
-            // 
-            this.nESToolStripMenuItem2.Name = "nESToolStripMenuItem2";
-            resources.ApplyResources(this.nESToolStripMenuItem2, "nESToolStripMenuItem2");
-            // 
-            // sNESToolStripMenuItem1
-            // 
-            this.sNESToolStripMenuItem1.Name = "sNESToolStripMenuItem1";
-            resources.ApplyResources(this.sNESToolStripMenuItem1, "sNESToolStripMenuItem1");
-            // 
-            // button10
-            // 
-            resources.ApplyResources(this.button10, "button10");
-            this.button10.Name = "button10";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            resources.ApplyResources(this.button11, "button11");
-            this.button11.Name = "button11";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            resources.ApplyResources(this.button12, "button12");
-            this.button12.Name = "button12";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            resources.ApplyResources(this.button13, "button13");
-            this.button13.Name = "button13";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            resources.ApplyResources(this.button15, "button15");
-            this.button15.Name = "button15";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            resources.ApplyResources(this.button16, "button16");
-            this.button16.Name = "button16";
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            resources.ApplyResources(this.button14, "button14");
-            this.button14.Name = "button14";
-            this.button14.UseVisualStyleBackColor = true;
             // 
             // label18
             // 
             resources.ApplyResources(this.label18, "label18");
             this.label18.Name = "label18";
             // 
-            // button17
+            // N64_BTN4
             // 
-            this.button17.Cursor = System.Windows.Forms.Cursors.No;
-            resources.ApplyResources(this.button17, "button17");
-            this.button17.Name = "button17";
-            this.button17.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.N64_BTN4, "N64_BTN4");
+            this.N64_BTN4.Name = "N64_BTN4";
+            this.N64_BTN4.UseVisualStyleBackColor = true;
             // 
-            // button18
+            // N64_BTN5
             // 
-            this.button18.Cursor = System.Windows.Forms.Cursors.No;
-            resources.ApplyResources(this.button18, "button18");
-            this.button18.Name = "button18";
-            this.button18.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.N64_BTN5, "N64_BTN5");
+            this.N64_BTN5.Name = "N64_BTN5";
+            this.N64_BTN5.UseVisualStyleBackColor = true;
             // 
-            // toolStripMenuItem3
+            // N64_BTN7
             // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
-            this.toolStripMenuItem3.Click += new System.EventHandler(this.ToolStripMenuItem3_Click);
+            resources.ApplyResources(this.N64_BTN7, "N64_BTN7");
+            this.N64_BTN7.Name = "N64_BTN7";
+            this.N64_BTN7.UseVisualStyleBackColor = true;
             // 
-            // pictureBox5
+            // N64_BTN3
             // 
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.pictureBox5, "pictureBox5");
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.TabStop = false;
+            resources.ApplyResources(this.N64_BTN3, "N64_BTN3");
+            this.N64_BTN3.Name = "N64_BTN3";
+            this.N64_BTN3.UseVisualStyleBackColor = true;
             // 
-            // pictureBox4
+            // N64_BTN2
             // 
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.TabStop = false;
+            resources.ApplyResources(this.N64_BTN2, "N64_BTN2");
+            this.N64_BTN2.Name = "N64_BTN2";
+            this.N64_BTN2.UseVisualStyleBackColor = true;
             // 
-            // pictureBox3
+            // N64_BTN6
             // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
+            resources.ApplyResources(this.N64_BTN6, "N64_BTN6");
+            this.N64_BTN6.Name = "N64_BTN6";
+            this.N64_BTN6.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // N64_BTN1
             // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
+            resources.ApplyResources(this.N64_BTN1, "N64_BTN1");
+            this.N64_BTN1.Name = "N64_BTN1";
+            this.N64_BTN1.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // PackingN64
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
+            this.PackingN64.Controls.Add(this.N64_BTN17);
+            this.PackingN64.Controls.Add(this.N64_BTN16);
+            resources.ApplyResources(this.PackingN64, "PackingN64");
+            this.PackingN64.Name = "PackingN64";
+            this.PackingN64.TabStop = false;
             // 
-            // toolStripMenuItem1
+            // N64_BTN17
             // 
-            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.N64_BTN17.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.N64_BTN17, "N64_BTN17");
+            this.N64_BTN17.Name = "N64_BTN17";
+            this.N64_BTN17.UseVisualStyleBackColor = true;
             // 
-            // n64ToolStripMenuItem
+            // N64_BTN16
             // 
-            resources.ApplyResources(this.n64ToolStripMenuItem, "n64ToolStripMenuItem");
-            this.n64ToolStripMenuItem.Name = "n64ToolStripMenuItem";
-            this.n64ToolStripMenuItem.Click += new System.EventHandler(this.N64ToolStripMenuItem_Click);
+            this.N64_BTN16.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.N64_BTN16, "N64_BTN16");
+            this.N64_BTN16.Name = "N64_BTN16";
+            this.N64_BTN16.UseVisualStyleBackColor = true;
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.IsBalloon = true;
             // 
             // UWUVCI_AIO
             // 
@@ -774,25 +1059,31 @@
             this.Main.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.NDS.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.N64.ResumeLayout(false);
             this.InjectionN64.ResumeLayout(false);
             this.InjectionN64.PerformLayout();
             this.BaseRomN64.ResumeLayout(false);
             this.BaseRomN64.PerformLayout();
             this.PackingN64.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -844,27 +1135,27 @@
         private System.Windows.Forms.GroupBox BaseRomN64;
         private System.Windows.Forms.GroupBox PackingN64;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button N64_BTN8;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button N64_BTN10;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button N64_BTN9;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button N64_BTN15;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button N64_BTN14;
+        private System.Windows.Forms.Button N64_BTN13;
+        private System.Windows.Forms.Button N64_BTN12;
+        private System.Windows.Forms.Button N64_BTN11;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label14;
@@ -879,17 +1170,53 @@
         private System.Windows.Forms.ToolStripMenuItem nESToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem nESToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem sNESToolStripMenuItem1;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button N64_BTN5;
+        private System.Windows.Forms.Button N64_BTN7;
+        private System.Windows.Forms.Button N64_BTN3;
+        private System.Windows.Forms.Button N64_BTN2;
+        private System.Windows.Forms.Button N64_BTN6;
+        private System.Windows.Forms.Button N64_BTN1;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button N64_BTN4;
+        private System.Windows.Forms.Button N64_BTN17;
+        private System.Windows.Forms.Button N64_BTN16;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.Button back_nds;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button NDS_BTN15;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button NDS_BTN14;
+        private System.Windows.Forms.Button NDS_BTN13;
+        private System.Windows.Forms.Button NDS_BTN12;
+        private System.Windows.Forms.Button NDS_BTN11;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Button NDS_BTN10;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Button NDS_BTN9;
+        private System.Windows.Forms.Button NDS_BTN1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button NDS_BTN17;
+        private System.Windows.Forms.Button NDS_BTN16;
+        private System.Windows.Forms.Button NDS_BTN7;
+        private System.Windows.Forms.Button NDS_BTN8;
+        private System.Windows.Forms.Button NDS_BTN6;
+        private System.Windows.Forms.Button NDS_BTN4;
+        private System.Windows.Forms.Button NDS_BTN5;
+        private System.Windows.Forms.Button NDS_BTN3;
+        private System.Windows.Forms.Button NDS_BTN2;
     }
 }
 

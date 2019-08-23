@@ -1,20 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using AutoUpdaterDotNET;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
-using System.Resources;
-using AutoUpdaterDotNET;
+using System.Windows.Forms;
 
 namespace UWUVCI_AIO
 {
-    
+
     public partial class UWUVCI_AIO : Form
     {
         #region injector stuff
@@ -92,32 +85,57 @@ namespace UWUVCI_AIO
             panel1.BackColor = Color.FromArgb(50, 50, 50);
             Main.BackColor = Color.FromArgb(60, 60, 60);
             Main.ForeColor = Color.WhiteSmoke;
-            NDS.BackColor = Color.FromArgb(60, 60, 60);
-            NDS.ForeColor = Color.WhiteSmoke;
+            
+            #region n64
             N64.BackColor = Color.FromArgb(60, 60, 60);
             N64.ForeColor = Color.WhiteSmoke;
             BaseRomN64.ForeColor = Color.WhiteSmoke;
             PackingN64.ForeColor = Color.WhiteSmoke;
             InjectionN64.ForeColor = Color.WhiteSmoke;
             button1.ForeColor = Color.Black;
-            button2.ForeColor = Color.Black;
-            button3.ForeColor = Color.Black;
-            button4.ForeColor = Color.Black;
-            button5.ForeColor = Color.Black;
-            button6.ForeColor = Color.Black;
-            button7.ForeColor = Color.Black;
-            button8.ForeColor = Color.Black;
-            button9.ForeColor = Color.Black;
-            button10.ForeColor = Color.Black;
-            button11.ForeColor = Color.Black;
-            button12.ForeColor = Color.Black;
-            button13.ForeColor = Color.Black;
-            button14.ForeColor = Color.Black;
-            button15.ForeColor = Color.Black;
-            button16.ForeColor = Color.Black;
-            button17.ForeColor = Color.Black;
-            button18.ForeColor = Color.Black;
-
+            N64_BTN8.ForeColor = Color.Black;
+            N64_BTN9.ForeColor = Color.Black;
+            N64_BTN10.ForeColor = Color.Black;
+            N64_BTN11.ForeColor = Color.Black;
+            N64_BTN12.ForeColor = Color.Black;
+            N64_BTN13.ForeColor = Color.Black;
+            N64_BTN14.ForeColor = Color.Black;
+            N64_BTN15.ForeColor = Color.Black;
+            N64_BTN1.ForeColor = Color.Black;
+            N64_BTN6.ForeColor = Color.Black;
+            N64_BTN2.ForeColor = Color.Black;
+            N64_BTN3.ForeColor = Color.Black;
+            N64_BTN4.ForeColor = Color.Black;
+            N64_BTN7.ForeColor = Color.Black;
+            N64_BTN5.ForeColor = Color.Black;
+            N64_BTN16.ForeColor = Color.Black;
+            N64_BTN17.ForeColor = Color.Black;
+            #endregion
+            #region nds
+            groupBox1.ForeColor = Color.WhiteSmoke;
+            groupBox2.ForeColor = Color.WhiteSmoke;
+            groupBox3.ForeColor = Color.WhiteSmoke;
+            NDS.BackColor = Color.FromArgb(60, 60, 60);
+            NDS.ForeColor = Color.WhiteSmoke;
+            back_nds.ForeColor = Color.Black;
+            NDS_BTN8.ForeColor = Color.Black;
+            NDS_BTN9.ForeColor = Color.Black;
+            NDS_BTN10.ForeColor = Color.Black;
+            NDS_BTN11.ForeColor = Color.Black;
+            NDS_BTN12.ForeColor = Color.Black;
+            NDS_BTN13.ForeColor = Color.Black;
+            NDS_BTN14.ForeColor = Color.Black;
+            NDS_BTN15.ForeColor = Color.Black;
+            NDS_BTN1.ForeColor = Color.Black;
+            NDS_BTN6.ForeColor = Color.Black;
+            NDS_BTN2.ForeColor = Color.Black;
+            NDS_BTN3.ForeColor = Color.Black;
+            NDS_BTN4.ForeColor = Color.Black;
+            NDS_BTN7.ForeColor = Color.Black;
+            NDS_BTN5.ForeColor = Color.Black;
+            NDS_BTN16.ForeColor = Color.Black;
+            NDS_BTN17.ForeColor = Color.Black;
+            #endregion
 
         }
         private void ResetInput()
@@ -208,6 +226,18 @@ namespace UWUVCI_AIO
         {
             Form path = new PathMenu();
             path.Show();
+        }
+
+        private void Button19_Click(object sender, EventArgs e)
+        {
+            ResetInput();
+            tabControl1.SelectedIndex = 0;
+        }
+
+        private void ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ResetInput();
+            tabControl1.SelectedIndex = 1;
         }
     }
 }

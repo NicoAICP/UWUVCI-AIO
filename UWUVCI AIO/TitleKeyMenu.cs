@@ -50,6 +50,7 @@ namespace UWUVCI_AIO
             FZX.ForeColor = Color.Black;
             DKEU.ForeColor = Color.Black;
             DKUS.ForeColor = Color.Black;
+            FZXJP.ForeColor = Color.Black;
         }
         private void CheckN64Keys(byte b)
         {

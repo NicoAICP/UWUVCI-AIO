@@ -279,7 +279,7 @@
     <value>F1</value>
   </data>
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="toolStripMenuItem1.Text" xml:space="preserve">
     <value>NDS</value>
@@ -3337,7 +3337,7 @@
     <value>F2</value>
   </data>
   <data name="n64ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="n64ToolStripMenuItem.Text" xml:space="preserve">
     <value>N64</value>
@@ -3346,7 +3346,7 @@
     <value>F3</value>
   </data>
   <data name="gBAToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="gBAToolStripMenuItem.Text" xml:space="preserve">
     <value>GBA</value>
@@ -3355,7 +3355,7 @@
     <value>F4</value>
   </data>
   <data name="nESToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="nESToolStripMenuItem.Text" xml:space="preserve">
     <value>NES</value>
@@ -3364,25 +3364,25 @@
     <value>F5</value>
   </data>
   <data name="sNESToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="sNESToolStripMenuItem.Text" xml:space="preserve">
     <value>SNES</value>
   </data>
   <data name="newToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="newToolStripMenuItem.Text" xml:space="preserve">
     <value>New</value>
   </data>
   <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 6</value>
+    <value>177, 6</value>
   </data>
   <data name="closeToolStripMenuItem1.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Alt+F4</value>
   </data>
   <data name="closeToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="closeToolStripMenuItem1.Text" xml:space="preserve">
     <value>Close</value>
@@ -6607,6 +6607,987 @@
   <data name="&gt;&gt;Main.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="back_nds.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="back_nds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 17</value>
+  </data>
+  <data name="back_nds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 23</value>
+  </data>
+  <data name="back_nds.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="back_nds.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="&gt;&gt;back_nds.Name" xml:space="preserve">
+    <value>back_nds</value>
+  </data>
+  <data name="&gt;&gt;back_nds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;back_nds.Parent" xml:space="preserve">
+    <value>NDS</value>
+  </data>
+  <data name="&gt;&gt;back_nds.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="NDS_BTN15.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NDS_BTN15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="NDS_BTN15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 477</value>
+  </data>
+  <data name="NDS_BTN15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 22</value>
+  </data>
+  <data name="NDS_BTN15.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="NDS_BTN15.Text" xml:space="preserve">
+    <value>Inject!</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN15.Name" xml:space="preserve">
+    <value>NDS_BTN15</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN15.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN15.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 359</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>Game Name</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 375</value>
+  </data>
+  <data name="textBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 20</value>
+  </data>
+  <data name="textBox8.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;textBox8.Name" xml:space="preserve">
+    <value>textBox8</value>
+  </data>
+  <data name="&gt;&gt;textBox8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox8.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 340</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="label20.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>XML Edits:</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="NDS_BTN14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 276</value>
+  </data>
+  <data name="NDS_BTN14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 22</value>
+  </data>
+  <data name="NDS_BTN14.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="NDS_BTN14.Text" xml:space="preserve">
+    <value>Choose File</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN14.Name" xml:space="preserve">
+    <value>NDS_BTN14</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN14.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN14.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="NDS_BTN13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 232</value>
+  </data>
+  <data name="NDS_BTN13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 22</value>
+  </data>
+  <data name="NDS_BTN13.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="NDS_BTN13.Text" xml:space="preserve">
+    <value>Choose File</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN13.Name" xml:space="preserve">
+    <value>NDS_BTN13</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN13.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN13.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="NDS_BTN12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 190</value>
+  </data>
+  <data name="NDS_BTN12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 22</value>
+  </data>
+  <data name="NDS_BTN12.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="NDS_BTN12.Text" xml:space="preserve">
+    <value>Choose File</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN12.Name" xml:space="preserve">
+    <value>NDS_BTN12</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN12.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN12.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="NDS_BTN11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 147</value>
+  </data>
+  <data name="NDS_BTN11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 22</value>
+  </data>
+  <data name="NDS_BTN11.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="NDS_BTN11.Text" xml:space="preserve">
+    <value>Choose File</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN11.Name" xml:space="preserve">
+    <value>NDS_BTN11</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN11.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN11.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 261</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
+  </data>
+  <data name="label21.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>(Optional) BootLogo</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="textBox9.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 277</value>
+  </data>
+  <data name="textBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 20</value>
+  </data>
+  <data name="textBox9.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;textBox9.Name" xml:space="preserve">
+    <value>textBox9</value>
+  </data>
+  <data name="&gt;&gt;textBox9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox9.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox9.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label22.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 217</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label22.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>IconTex</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="textBox10.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 233</value>
+  </data>
+  <data name="textBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 20</value>
+  </data>
+  <data name="textBox10.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;textBox10.Name" xml:space="preserve">
+    <value>textBox10</value>
+  </data>
+  <data name="&gt;&gt;textBox10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox10.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox10.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 175</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="label23.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>BootDRCTex</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="textBox11.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 191</value>
+  </data>
+  <data name="textBox11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 20</value>
+  </data>
+  <data name="textBox11.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;textBox11.Name" xml:space="preserve">
+    <value>textBox11</value>
+  </data>
+  <data name="&gt;&gt;textBox11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox11.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox11.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label24.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 132</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 13</value>
+  </data>
+  <data name="label24.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>BootTVTex</value>
+  </data>
+  <data name="&gt;&gt;label24.Name" xml:space="preserve">
+    <value>label24</value>
+  </data>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="textBox12.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 148</value>
+  </data>
+  <data name="textBox12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 20</value>
+  </data>
+  <data name="textBox12.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;textBox12.Name" xml:space="preserve">
+    <value>textBox12</value>
+  </data>
+  <data name="&gt;&gt;textBox12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox12.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox12.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 114</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="label25.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Bootimages:</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
+  </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="NDS_BTN10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 62</value>
+  </data>
+  <data name="NDS_BTN10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 22</value>
+  </data>
+  <data name="NDS_BTN10.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="NDS_BTN10.Text" xml:space="preserve">
+    <value>Choose ROM</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN10.Name" xml:space="preserve">
+    <value>NDS_BTN10</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN10.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN10.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="textBox14.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 63</value>
+  </data>
+  <data name="textBox14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 20</value>
+  </data>
+  <data name="textBox14.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBox14.Name" xml:space="preserve">
+    <value>textBox14</value>
+  </data>
+  <data name="&gt;&gt;textBox14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox14.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox14.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="label29.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 46</value>
+  </data>
+  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="label29.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>Rom to inject:</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
+  </data>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 4</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>342, 514</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>2. Injection</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>NDS</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="NDS_BTN7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 194</value>
+  </data>
+  <data name="NDS_BTN7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 23</value>
+  </data>
+  <data name="NDS_BTN7.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="NDS_BTN7.Text" xml:space="preserve">
+    <value>Kirby's Squeak Squad [US]</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN7.Name" xml:space="preserve">
+    <value>NDS_BTN7</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN7.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="NDS_BTN8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 224</value>
+  </data>
+  <data name="NDS_BTN8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 23</value>
+  </data>
+  <data name="NDS_BTN8.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="NDS_BTN8.Text" xml:space="preserve">
+    <value>Kirby Mass Attack [US]</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN8.Name" xml:space="preserve">
+    <value>NDS_BTN8</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN8.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="NDS_BTN6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 165</value>
+  </data>
+  <data name="NDS_BTN6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 23</value>
+  </data>
+  <data name="NDS_BTN6.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="NDS_BTN6.Text" xml:space="preserve">
+    <value>New Super Mario Bros [US]</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN6.Name" xml:space="preserve">
+    <value>NDS_BTN6</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN6.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="NDS_BTN4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 107</value>
+  </data>
+  <data name="NDS_BTN4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 23</value>
+  </data>
+  <data name="NDS_BTN4.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="NDS_BTN4.Text" xml:space="preserve">
+    <value>Mario and Luigi: Partners in Time [EU]</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN4.Name" xml:space="preserve">
+    <value>NDS_BTN4</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN4.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="NDS_BTN5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 136</value>
+  </data>
+  <data name="NDS_BTN5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 23</value>
+  </data>
+  <data name="NDS_BTN5.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="NDS_BTN5.Text" xml:space="preserve">
+    <value>Yoshi Touch and Go [EU]</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN5.Name" xml:space="preserve">
+    <value>NDS_BTN5</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN5.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="NDS_BTN3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 78</value>
+  </data>
+  <data name="NDS_BTN3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 23</value>
+  </data>
+  <data name="NDS_BTN3.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="NDS_BTN3.Text" xml:space="preserve">
+    <value>Metroid Prime Hunters [EU]</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN3.Name" xml:space="preserve">
+    <value>NDS_BTN3</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN3.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="NDS_BTN2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 49</value>
+  </data>
+  <data name="NDS_BTN2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 23</value>
+  </data>
+  <data name="NDS_BTN2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="NDS_BTN2.Text" xml:space="preserve">
+    <value>Mario Kart DS [EU]</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN2.Name" xml:space="preserve">
+    <value>NDS_BTN2</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN2.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 259</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="label30.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>or use a</value>
+  </data>
+  <data name="&gt;&gt;label30.Name" xml:space="preserve">
+    <value>label30</value>
+  </data>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="NDS_BTN9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 259</value>
+  </data>
+  <data name="NDS_BTN9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 23</value>
+  </data>
+  <data name="NDS_BTN9.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="NDS_BTN9.Text" xml:space="preserve">
+    <value>Custom NDS VC Base</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN9.Name" xml:space="preserve">
+    <value>NDS_BTN9</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN9.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN9.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="NDS_BTN1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 20</value>
+  </data>
+  <data name="NDS_BTN1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 23</value>
+  </data>
+  <data name="NDS_BTN1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="NDS_BTN1.Text" xml:space="preserve">
+    <value>Wario Ware: Touched! [EU]</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN1.Name" xml:space="preserve">
+    <value>NDS_BTN1</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN1.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 57</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 329</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>1. BaseRom</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>NDS</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="NDS_BTN17.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NDS_BTN17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 55</value>
+  </data>
+  <data name="NDS_BTN17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 23</value>
+  </data>
+  <data name="NDS_BTN17.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="NDS_BTN17.Text" xml:space="preserve">
+    <value>Installable Files</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN17.Name" xml:space="preserve">
+    <value>NDS_BTN17</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN17.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN17.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="NDS_BTN16.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NDS_BTN16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NDS_BTN16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 55</value>
+  </data>
+  <data name="NDS_BTN16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 23</value>
+  </data>
+  <data name="NDS_BTN16.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="NDS_BTN16.Text" xml:space="preserve">
+    <value>Loadiine Ready</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN16.Name" xml:space="preserve">
+    <value>NDS_BTN16</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN16.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;NDS_BTN16.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 392</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 126</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>3. Packing</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>NDS</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="NDS.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
@@ -6658,37 +7639,37 @@
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button9.Enabled" type="System.Boolean, mscorlib">
+  <data name="N64_BTN15.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="button9.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="N64_BTN15.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="button9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="N64_BTN15.Location" type="System.Drawing.Point, System.Drawing">
     <value>245, 477</value>
   </data>
-  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN15.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 22</value>
   </data>
-  <data name="button9.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN15.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
-  <data name="button9.Text" xml:space="preserve">
+  <data name="N64_BTN15.Text" xml:space="preserve">
     <value>Inject!</value>
   </data>
-  <data name="&gt;&gt;button9.Name" xml:space="preserve">
-    <value>button9</value>
+  <data name="&gt;&gt;N64_BTN15.Name" xml:space="preserve">
+    <value>N64_BTN15</value>
   </data>
-  <data name="&gt;&gt;button9.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN15.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN15.Parent" xml:space="preserve">
     <value>InjectionN64</value>
   </data>
-  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN15.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
@@ -6772,112 +7753,112 @@
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="button8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="N64_BTN14.Location" type="System.Drawing.Point, System.Drawing">
     <value>247, 348</value>
   </data>
-  <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN14.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 22</value>
   </data>
-  <data name="button8.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN14.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
-  <data name="button8.Text" xml:space="preserve">
+  <data name="N64_BTN14.Text" xml:space="preserve">
     <value>Choose File</value>
   </data>
-  <data name="&gt;&gt;button8.Name" xml:space="preserve">
-    <value>button8</value>
+  <data name="&gt;&gt;N64_BTN14.Name" xml:space="preserve">
+    <value>N64_BTN14</value>
   </data>
-  <data name="&gt;&gt;button8.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN14.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN14.Parent" xml:space="preserve">
     <value>InjectionN64</value>
   </data>
-  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN14.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="button7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="N64_BTN13.Location" type="System.Drawing.Point, System.Drawing">
     <value>247, 304</value>
   </data>
-  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN13.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 22</value>
   </data>
-  <data name="button7.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN13.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="button7.Text" xml:space="preserve">
+  <data name="N64_BTN13.Text" xml:space="preserve">
     <value>Choose File</value>
   </data>
-  <data name="&gt;&gt;button7.Name" xml:space="preserve">
-    <value>button7</value>
+  <data name="&gt;&gt;N64_BTN13.Name" xml:space="preserve">
+    <value>N64_BTN13</value>
   </data>
-  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN13.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN13.Parent" xml:space="preserve">
     <value>InjectionN64</value>
   </data>
-  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN13.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="N64_BTN12.Location" type="System.Drawing.Point, System.Drawing">
     <value>247, 262</value>
   </data>
-  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN12.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 22</value>
   </data>
-  <data name="button6.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN12.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
-  <data name="button6.Text" xml:space="preserve">
+  <data name="N64_BTN12.Text" xml:space="preserve">
     <value>Choose File</value>
   </data>
-  <data name="&gt;&gt;button6.Name" xml:space="preserve">
-    <value>button6</value>
+  <data name="&gt;&gt;N64_BTN12.Name" xml:space="preserve">
+    <value>N64_BTN12</value>
   </data>
-  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN12.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN12.Parent" xml:space="preserve">
     <value>InjectionN64</value>
   </data>
-  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN12.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="button5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="N64_BTN11.Location" type="System.Drawing.Point, System.Drawing">
     <value>247, 219</value>
   </data>
-  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN11.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 22</value>
   </data>
-  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN11.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
-  <data name="button5.Text" xml:space="preserve">
+  <data name="N64_BTN11.Text" xml:space="preserve">
     <value>Choose File</value>
   </data>
-  <data name="&gt;&gt;button5.Name" xml:space="preserve">
-    <value>button5</value>
+  <data name="&gt;&gt;N64_BTN11.Name" xml:space="preserve">
+    <value>N64_BTN11</value>
   </data>
-  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN11.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN11.Parent" xml:space="preserve">
     <value>InjectionN64</value>
   </data>
-  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN11.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
@@ -7126,31 +8107,31 @@
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="N64_BTN10.Location" type="System.Drawing.Point, System.Drawing">
     <value>247, 158</value>
   </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN10.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 22</value>
   </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN10.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="button4.Text" xml:space="preserve">
+  <data name="N64_BTN10.Text" xml:space="preserve">
     <value>use blank INI</value>
   </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
+  <data name="&gt;&gt;N64_BTN10.Name" xml:space="preserve">
+    <value>N64_BTN10</value>
   </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN10.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN10.Parent" xml:space="preserve">
     <value>InjectionN64</value>
   </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN10.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
@@ -7183,31 +8164,31 @@
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="N64_BTN9.Location" type="System.Drawing.Point, System.Drawing">
     <value>247, 132</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN9.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 22</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN9.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
+  <data name="N64_BTN9.Text" xml:space="preserve">
     <value>Choose INI</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;N64_BTN9.Name" xml:space="preserve">
+    <value>N64_BTN9</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN9.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN9.Parent" xml:space="preserve">
     <value>InjectionN64</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN9.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
   <data name="textBox2.Enabled" type="System.Boolean, mscorlib">
@@ -7354,31 +8335,31 @@
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>24</value>
   </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="N64_BTN8.Location" type="System.Drawing.Point, System.Drawing">
     <value>247, 32</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN8.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 22</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN8.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
+  <data name="N64_BTN8.Text" xml:space="preserve">
     <value>Choose ROM</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;N64_BTN8.Name" xml:space="preserve">
+    <value>N64_BTN8</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN8.Parent" xml:space="preserve">
     <value>InjectionN64</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN8.ZOrder" xml:space="preserve">
     <value>25</value>
   </data>
   <data name="textBox1.Enabled" type="System.Boolean, mscorlib">
@@ -7466,7 +8447,7 @@
     <value>NoControl</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 114</value>
+    <value>7, 194</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 13</value>
@@ -7489,193 +8470,193 @@
   <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 78</value>
+  <data name="N64_BTN4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 107</value>
   </data>
-  <data name="button14.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN4.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 23</value>
   </data>
-  <data name="button14.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN4.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="button14.Text" xml:space="preserve">
+  <data name="N64_BTN4.Text" xml:space="preserve">
     <value>Donkey Kong 64 [US]</value>
   </data>
-  <data name="&gt;&gt;button14.Name" xml:space="preserve">
-    <value>button14</value>
+  <data name="&gt;&gt;N64_BTN4.Name" xml:space="preserve">
+    <value>N64_BTN4</value>
   </data>
-  <data name="&gt;&gt;button14.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button14.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN4.Parent" xml:space="preserve">
     <value>BaseRomN64</value>
   </data>
-  <data name="&gt;&gt;button14.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN4.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 49</value>
+  <data name="N64_BTN5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 136</value>
   </data>
-  <data name="button16.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN5.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 23</value>
   </data>
-  <data name="button16.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN5.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="button16.Text" xml:space="preserve">
+  <data name="N64_BTN5.Text" xml:space="preserve">
     <value>F-Zero X [JP]</value>
   </data>
-  <data name="&gt;&gt;button16.Name" xml:space="preserve">
-    <value>button16</value>
+  <data name="&gt;&gt;N64_BTN5.Name" xml:space="preserve">
+    <value>N64_BTN5</value>
   </data>
-  <data name="&gt;&gt;button16.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button16.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN5.Parent" xml:space="preserve">
     <value>BaseRomN64</value>
   </data>
-  <data name="&gt;&gt;button16.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN5.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 114</value>
+  <data name="N64_BTN7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 194</value>
   </data>
-  <data name="button15.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN7.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 23</value>
   </data>
-  <data name="button15.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN7.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="button15.Text" xml:space="preserve">
+  <data name="N64_BTN7.Text" xml:space="preserve">
     <value>Custom N64 VC Base</value>
   </data>
-  <data name="&gt;&gt;button15.Name" xml:space="preserve">
-    <value>button15</value>
+  <data name="&gt;&gt;N64_BTN7.Name" xml:space="preserve">
+    <value>N64_BTN7</value>
   </data>
-  <data name="&gt;&gt;button15.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button15.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN7.Parent" xml:space="preserve">
     <value>BaseRomN64</value>
   </data>
-  <data name="&gt;&gt;button15.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN7.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="button13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button13.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="N64_BTN3.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 78</value>
   </data>
-  <data name="button13.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN3.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 23</value>
   </data>
-  <data name="button13.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="button13.Text" xml:space="preserve">
+  <data name="N64_BTN3.Text" xml:space="preserve">
     <value>Donkey Kong 64 [EU]</value>
   </data>
-  <data name="&gt;&gt;button13.Name" xml:space="preserve">
-    <value>button13</value>
+  <data name="&gt;&gt;N64_BTN3.Name" xml:space="preserve">
+    <value>N64_BTN3</value>
   </data>
-  <data name="&gt;&gt;button13.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button13.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN3.Parent" xml:space="preserve">
     <value>BaseRomN64</value>
   </data>
-  <data name="&gt;&gt;button13.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN3.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="button12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button12.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="N64_BTN2.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 49</value>
   </data>
-  <data name="button12.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN2.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 23</value>
   </data>
-  <data name="button12.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="button12.Text" xml:space="preserve">
+  <data name="N64_BTN2.Text" xml:space="preserve">
     <value>F-Zero X [US]</value>
   </data>
-  <data name="&gt;&gt;button12.Name" xml:space="preserve">
-    <value>button12</value>
+  <data name="&gt;&gt;N64_BTN2.Name" xml:space="preserve">
+    <value>N64_BTN2</value>
   </data>
-  <data name="&gt;&gt;button12.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button12.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN2.Parent" xml:space="preserve">
     <value>BaseRomN64</value>
   </data>
-  <data name="&gt;&gt;button12.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN2.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="button11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 20</value>
+  <data name="N64_BTN6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 165</value>
   </data>
-  <data name="button11.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN6.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 23</value>
   </data>
-  <data name="button11.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN6.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="button11.Text" xml:space="preserve">
+  <data name="N64_BTN6.Text" xml:space="preserve">
     <value>Paper Mario [US]</value>
   </data>
-  <data name="&gt;&gt;button11.Name" xml:space="preserve">
-    <value>button11</value>
+  <data name="&gt;&gt;N64_BTN6.Name" xml:space="preserve">
+    <value>N64_BTN6</value>
   </data>
-  <data name="&gt;&gt;button11.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button11.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN6.Parent" xml:space="preserve">
     <value>BaseRomN64</value>
   </data>
-  <data name="&gt;&gt;button11.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN6.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="button10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button10.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="N64_BTN1.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 20</value>
   </data>
-  <data name="button10.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN1.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 23</value>
   </data>
-  <data name="button10.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="button10.Text" xml:space="preserve">
+  <data name="N64_BTN1.Text" xml:space="preserve">
     <value>Paper Mario [EU]</value>
   </data>
-  <data name="&gt;&gt;button10.Name" xml:space="preserve">
-    <value>button10</value>
+  <data name="&gt;&gt;N64_BTN1.Name" xml:space="preserve">
+    <value>N64_BTN1</value>
   </data>
-  <data name="&gt;&gt;button10.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button10.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN1.Parent" xml:space="preserve">
     <value>BaseRomN64</value>
   </data>
-  <data name="&gt;&gt;button10.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN1.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="BaseRomN64.Location" type="System.Drawing.Point, System.Drawing">
@@ -7702,64 +8683,64 @@
   <data name="&gt;&gt;BaseRomN64.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button18.Enabled" type="System.Boolean, mscorlib">
+  <data name="N64_BTN17.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="button18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button18.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="N64_BTN17.Location" type="System.Drawing.Point, System.Drawing">
     <value>160, 55</value>
   </data>
-  <data name="button18.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN17.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 23</value>
   </data>
-  <data name="button18.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN17.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="button18.Text" xml:space="preserve">
+  <data name="N64_BTN17.Text" xml:space="preserve">
     <value>Installable Files</value>
   </data>
-  <data name="&gt;&gt;button18.Name" xml:space="preserve">
-    <value>button18</value>
+  <data name="&gt;&gt;N64_BTN17.Name" xml:space="preserve">
+    <value>N64_BTN17</value>
   </data>
-  <data name="&gt;&gt;button18.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN17.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button18.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN17.Parent" xml:space="preserve">
     <value>PackingN64</value>
   </data>
-  <data name="&gt;&gt;button18.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN17.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button17.Enabled" type="System.Boolean, mscorlib">
+  <data name="N64_BTN16.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="button17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="N64_BTN16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button17.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="N64_BTN16.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 55</value>
   </data>
-  <data name="button17.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64_BTN16.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 23</value>
   </data>
-  <data name="button17.TabIndex" type="System.Int32, mscorlib">
+  <data name="N64_BTN16.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="button17.Text" xml:space="preserve">
+  <data name="N64_BTN16.Text" xml:space="preserve">
     <value>Loadiine Ready</value>
   </data>
-  <data name="&gt;&gt;button17.Name" xml:space="preserve">
-    <value>button17</value>
+  <data name="&gt;&gt;N64_BTN16.Name" xml:space="preserve">
+    <value>N64_BTN16</value>
   </data>
-  <data name="&gt;&gt;button17.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN16.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button17.Parent" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN16.Parent" xml:space="preserve">
     <value>PackingN64</value>
   </data>
-  <data name="&gt;&gt;button17.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;N64_BTN16.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="PackingN64.Location" type="System.Drawing.Point, System.Drawing">
@@ -7888,6 +8869,18 @@
   <data name="&gt;&gt;newToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
+    <value>toolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;n64ToolStripMenuItem.Name" xml:space="preserve">
+    <value>n64ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;n64ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;gBAToolStripMenuItem.Name" xml:space="preserve">
     <value>gBAToolStripMenuItem</value>
   </data>
@@ -7929,42 +8922,6 @@
   </data>
   <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
-    <value>toolStripSeparator1</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;settingsToolStripMenuItem.Name" xml:space="preserve">
-    <value>settingsToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;settingsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;helpToolStripMenuItem.Name" xml:space="preserve">
-    <value>helpToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;helpToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
-    <value>aboutToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;notifyIcon1.Name" xml:space="preserve">
-    <value>notifyIcon1</value>
-  </data>
-  <data name="&gt;&gt;notifyIcon1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
-    <value>toolTip1</value>
-  </data>
-  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TitleKeys.Name" xml:space="preserve">
     <value>TitleKeys</value>
@@ -8008,17 +8965,41 @@
   <data name="&gt;&gt;toolStripMenuItem3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
-    <value>toolStripMenuItem1</value>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;settingsToolStripMenuItem.Name" xml:space="preserve">
+    <value>settingsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;settingsToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;n64ToolStripMenuItem.Name" xml:space="preserve">
-    <value>n64ToolStripMenuItem</value>
+  <data name="&gt;&gt;helpToolStripMenuItem.Name" xml:space="preserve">
+    <value>helpToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;n64ToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;helpToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
+    <value>aboutToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;notifyIcon1.Name" xml:space="preserve">
+    <value>notifyIcon1</value>
+  </data>
+  <data name="&gt;&gt;notifyIcon1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>UWUVCI_AIO</value>
