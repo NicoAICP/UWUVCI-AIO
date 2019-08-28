@@ -30,9 +30,9 @@ namespace UWUVCI_AIO
             AutoUpdater.Start("https://raw.githubusercontent.com/Hotbrawl20/testing/master/update.xml");
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
             
-             
-            
+
             InitializeComponent();
+
             if (Properties.Settings.Default.darkmode == true)
             {
                 enableDarkMode();
@@ -40,18 +40,55 @@ namespace UWUVCI_AIO
             if(Properties.Settings.Default.CommonKey.GetHashCode() == 487391367)
             {
                 toolStripMenuItem2.Enabled = false;
-                if(language == "en-US")
-                {
-                    toolStripMenuItem2.Text = "CommonKey is already set";
-                }
-                else
+                if(language == "de-DE")
                 {
                     toolStripMenuItem2.Text = "CommonKey ist bereits gespeichert";
                 }
+                else
+                {
+                    toolStripMenuItem2.Text = "CommonKey is already set";
+                }
                 
             }
-        }
+            if (Properties.Settings.Default.allpathset)
+            {
+                if (maybeallpathsaresetbuttheydidntusetheoptionlikethemessageboxtoldthemto())
+                {
+                    disableInjection();
+                }     
+            }
 
+        }
+      private bool maybeallpathsaresetbuttheydidntusetheoptionlikethemessageboxtoldthemto()
+        {
+            if(Properties.Settings.Default.BaseRomPath != null && Properties.Settings.Default.WorkingPath != null && Properties.Settings.Default.InjectionPath != null)
+            {
+                Properties.Settings.Default.allpathset = false;
+                Properties.Settings.Default.Save();
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        private void disableInjection()
+        {
+            if (language == "de-DE")
+            {
+                MessageBox.Show("Bitte geben sie alle Verzeichnispfade an (Einstellungen -> Verzeichnispfade) und starten Sie das Programm neu (Datei -> Neustarten) um mit dem Injecten zu beginnen.");
+            }
+            else
+            {
+                MessageBox.Show("Please enter all Paths (Settings -> Paths) and restart the programm (File -> Restart) to be able to inject");
+            }
+            pictureBox1.Enabled = false;
+            pictureBox2.Enabled = false;
+            pictureBox3.Enabled = false;
+            pictureBox4.Enabled = false;
+            pictureBox5.Enabled = false;
+            newToolStripMenuItem.Enabled = false;
+        }
         private void CloseToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
@@ -238,6 +275,25 @@ namespace UWUVCI_AIO
         {
             ResetInput();
             tabControl1.SelectedIndex = 1;
+        }
+
+        private void ToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            if(Properties.Settings.Default.allpathset)
+            {
+                if (Properties.Settings.Default.BaseRomPath != null && Properties.Settings.Default.WorkingPath != null && Properties.Settings.Default.InjectionPath != null)
+                {
+                    Properties.Settings.Default.allpathset = false;
+                    Properties.Settings.Default.Save();
+                 
+                }
+            }
+            Application.Restart();
+        }
+
+        private void PictureBox3_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

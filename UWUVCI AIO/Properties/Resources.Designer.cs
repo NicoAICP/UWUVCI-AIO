@@ -59,15 +59,5 @@ namespace UWUVCI_AIO.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BACK_ENG_LIGHT {
-            get {
-                object obj = ResourceManager.GetObject("BACK_ENG_LIGHT", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

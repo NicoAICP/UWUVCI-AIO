@@ -166,5 +166,17 @@ namespace UWUVCI_AIO.Properties {
                 this["WorkingPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool allpathset {
+            get {
+                return ((bool)(this["allpathset"]));
+            }
+            set {
+                this["allpathset"] = value;
+            }
+        }
     }
 }

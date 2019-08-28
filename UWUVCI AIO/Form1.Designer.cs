@@ -39,6 +39,7 @@
             this.nESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sNESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.hilfeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -196,6 +197,7 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripMenuItem,
             this.closeToolStripMenuItem,
+            this.toolStripMenuItem4,
             this.closeToolStripMenuItem1});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
@@ -227,23 +229,29 @@
             // 
             // gBAToolStripMenuItem
             // 
-            this.gBAToolStripMenuItem.Name = "gBAToolStripMenuItem";
             resources.ApplyResources(this.gBAToolStripMenuItem, "gBAToolStripMenuItem");
+            this.gBAToolStripMenuItem.Name = "gBAToolStripMenuItem";
             // 
             // nESToolStripMenuItem
             // 
-            this.nESToolStripMenuItem.Name = "nESToolStripMenuItem";
             resources.ApplyResources(this.nESToolStripMenuItem, "nESToolStripMenuItem");
+            this.nESToolStripMenuItem.Name = "nESToolStripMenuItem";
             // 
             // sNESToolStripMenuItem
             // 
-            this.sNESToolStripMenuItem.Name = "sNESToolStripMenuItem";
             resources.ApplyResources(this.sNESToolStripMenuItem, "sNESToolStripMenuItem");
+            this.sNESToolStripMenuItem.Name = "sNESToolStripMenuItem";
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
             resources.ApplyResources(this.closeToolStripMenuItem, "closeToolStripMenuItem");
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            resources.ApplyResources(this.toolStripMenuItem4, "toolStripMenuItem4");
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.ToolStripMenuItem4_Click);
             // 
             // closeToolStripMenuItem1
             // 
@@ -282,29 +290,29 @@
             // 
             // nDSToolStripMenuItem
             // 
-            this.nDSToolStripMenuItem.Name = "nDSToolStripMenuItem";
             resources.ApplyResources(this.nDSToolStripMenuItem, "nDSToolStripMenuItem");
+            this.nDSToolStripMenuItem.Name = "nDSToolStripMenuItem";
             // 
             // n64ToolStripMenuItem1
             // 
-            this.n64ToolStripMenuItem1.Name = "n64ToolStripMenuItem1";
             resources.ApplyResources(this.n64ToolStripMenuItem1, "n64ToolStripMenuItem1");
+            this.n64ToolStripMenuItem1.Name = "n64ToolStripMenuItem1";
             this.n64ToolStripMenuItem1.Click += new System.EventHandler(this.N64ToolStripMenuItem1_Click);
             // 
             // nESToolStripMenuItem1
             // 
-            this.nESToolStripMenuItem1.Name = "nESToolStripMenuItem1";
             resources.ApplyResources(this.nESToolStripMenuItem1, "nESToolStripMenuItem1");
+            this.nESToolStripMenuItem1.Name = "nESToolStripMenuItem1";
             // 
             // nESToolStripMenuItem2
             // 
-            this.nESToolStripMenuItem2.Name = "nESToolStripMenuItem2";
             resources.ApplyResources(this.nESToolStripMenuItem2, "nESToolStripMenuItem2");
+            this.nESToolStripMenuItem2.Name = "nESToolStripMenuItem2";
             // 
             // sNESToolStripMenuItem1
             // 
-            this.sNESToolStripMenuItem1.Name = "sNESToolStripMenuItem1";
             resources.ApplyResources(this.sNESToolStripMenuItem1, "sNESToolStripMenuItem1");
+            this.sNESToolStripMenuItem1.Name = "sNESToolStripMenuItem1";
             // 
             // toolStripMenuItem3
             // 
@@ -449,6 +457,7 @@
             resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.PictureBox3_Click);
             // 
             // panel4
             // 
@@ -1217,6 +1226,7 @@
         private System.Windows.Forms.Button NDS_BTN5;
         private System.Windows.Forms.Button NDS_BTN3;
         private System.Windows.Forms.Button NDS_BTN2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
     }
 }
 

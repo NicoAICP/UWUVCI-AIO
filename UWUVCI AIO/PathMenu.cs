@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
 using System.Resources;
+using System.IO;
 
 namespace UWUVCI_AIO
 {
@@ -19,6 +20,7 @@ namespace UWUVCI_AIO
         public PathMenu()
         {
             InitializeComponent();
+            loadfromsettings();
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
 
             if (Properties.Settings.Default.darkmode == true)
@@ -31,7 +33,7 @@ namespace UWUVCI_AIO
         {
             DialogResult result = folderBrowserDialog1.ShowDialog();
 
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog1.SelectedPath))
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog1.SelectedPath) && folderBrowserDialog1.SelectedPath != Properties.Settings.Default.WorkingPath && folderBrowserDialog1.SelectedPath != Properties.Settings.Default.InjectionPath && IsDirectoryEmpty(folderBrowserDialog1.SelectedPath))
             {
                 textBox1.Text = folderBrowserDialog1.SelectedPath;
                 Properties.Settings.Default.BaseRomPath = textBox1.Text;
@@ -50,11 +52,11 @@ namespace UWUVCI_AIO
             {
                 if (language == "de-DE")
                 {
-                    MessageBox.Show("Ein Fehler ist beim Pfad speichern aufgetreten");
+                    MessageBox.Show("Der Pfad fürs Basenverzeichnis darf nicht gleich dem Arbeits- sowie dem Injected Games - Verzeichnis sein.");
                 }
                 else
                 {
-                    MessageBox.Show("An error occured while saving the path");
+                    MessageBox.Show("The path for the Bases shouldn't be the same as the Work and the Injected Games one.");
                 }
             }
 
@@ -82,12 +84,15 @@ namespace UWUVCI_AIO
             button2.ForeColor = Color.Black;
             button3.ForeColor = Color.Black;
         }
-
+        public bool IsDirectoryEmpty(string path)
+        {
+            return !Directory.EnumerateFileSystemEntries(path).Any();
+        }
         private void Button3_Click(object sender, EventArgs e)
         {
             DialogResult result = folderBrowserDialog1.ShowDialog();
 
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog1.SelectedPath))
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog1.SelectedPath) && folderBrowserDialog1.SelectedPath != Properties.Settings.Default.BaseRomPath && folderBrowserDialog1.SelectedPath != Properties.Settings.Default.InjectionPath && IsDirectoryEmpty(folderBrowserDialog1.SelectedPath))
             {
                 textBox3.Text = folderBrowserDialog1.SelectedPath;
                 Properties.Settings.Default.WorkingPath = textBox3.Text;
@@ -106,11 +111,11 @@ namespace UWUVCI_AIO
             {
                 if (language == "de-DE")
                 {
-                    MessageBox.Show("Ein Fehler ist beim Pfad speichern aufgetreten");
+                    MessageBox.Show("Der Pfad fürs Arbeitsverzeichnis darf nicht gleich dem Basen- sowie dem Injected Games - Verzeichnis sein.");
                 }
                 else
                 {
-                    MessageBox.Show("An error occured while saving the path");
+                    MessageBox.Show("The path for work shouldn't be the same as the Bases and the Injected Games one.");
                 }
             }
         }
@@ -124,7 +129,7 @@ namespace UWUVCI_AIO
         {
             DialogResult result = folderBrowserDialog1.ShowDialog();
 
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog1.SelectedPath))
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog1.SelectedPath) && folderBrowserDialog1.SelectedPath != Properties.Settings.Default.BaseRomPath && folderBrowserDialog1.SelectedPath != Properties.Settings.Default.WorkingPath && IsDirectoryEmpty(folderBrowserDialog1.SelectedPath))
             {
                 textBox2.Text = folderBrowserDialog1.SelectedPath;
                 Properties.Settings.Default.InjectionPath = textBox2.Text;
@@ -143,11 +148,11 @@ namespace UWUVCI_AIO
             {
                 if (language == "de-DE")
                 {
-                    MessageBox.Show("Ein Fehler ist beim Pfad speichern aufgetreten");
+                    MessageBox.Show("Der Pfad fürs Injected Games - Verzeichnis darf nicht gleich dem Basen- sowie dem Arbeits- Verzeichnis sein.");
                 }
                 else
                 {
-                    MessageBox.Show("An error occured while saving the path");
+                    MessageBox.Show("The path for Injected Games shouldn't be the same as the Base and the work one.");
                 }
             }
         }

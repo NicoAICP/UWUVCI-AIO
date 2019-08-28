@@ -133,6 +133,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PathMenu.de.resx">
+      <DependentUpon>PathMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PathMenu.resx">
       <DependentUpon>PathMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitleKeyMenu.de.resx">
+      <DependentUpon>TitleKeyMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TitleKeyMenu.resx">
       <DependentUpon>TitleKeyMenu.cs</DependentUpon>
@@ -187,6 +193,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BACK_ENG_LIGHT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bildercredits.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
