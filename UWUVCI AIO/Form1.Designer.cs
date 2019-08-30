@@ -251,7 +251,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label54 = new System.Windows.Forms.Label();
             this.SMetroidEUPanel = new System.Windows.Forms.Panel();
-            this.label59 = new System.Windows.Forms.Label();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.CKEYMSG_PACKING = new System.Windows.Forms.Label();
             this.ICON_PACKING = new System.Windows.Forms.PictureBox();
@@ -261,6 +260,23 @@
             this.KEYS = new System.Windows.Forms.Timer(this.components);
             this.SNESCSTMNFOLDERS = new System.Windows.Forms.Timer(this.components);
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.SMETROIDEUFOLDER = new System.Windows.Forms.Label();
+            this.SMEUBASE = new System.Windows.Forms.PictureBox();
+            this.SMEEU_CKEY = new System.Windows.Forms.Label();
+            this.SMEUCK = new System.Windows.Forms.PictureBox();
+            this.SMEU_TKEY = new System.Windows.Forms.Label();
+            this.SMEUTK = new System.Windows.Forms.PictureBox();
+            this.SMEU_DWNLD = new System.Windows.Forms.Button();
+            this.SMETROIDEU = new System.Windows.Forms.Timer(this.components);
+            this.SMUS_PANEL = new System.Windows.Forms.Panel();
+            this.SMUS_DWNLD = new System.Windows.Forms.Button();
+            this.SMUSTKEY = new System.Windows.Forms.Label();
+            this.SMUSTKEYIMG = new System.Windows.Forms.PictureBox();
+            this.SMUSCKEY = new System.Windows.Forms.Label();
+            this.SMUSCKEYIMG = new System.Windows.Forms.PictureBox();
+            this.SMUSBASE = new System.Windows.Forms.Label();
+            this.SMUSBASEIMG = new System.Windows.Forms.PictureBox();
+            this.SMETROIDUS = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -302,6 +318,13 @@
             this.SMetroidEUPanel.SuspendLayout();
             this.groupBox12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ICON_PACKING)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMEUBASE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMEUCK)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMEUTK)).BeginInit();
+            this.SMUS_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SMUSTKEYIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMUSCKEYIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMUSBASEIMG)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -1079,6 +1102,7 @@
             resources.ApplyResources(this.N64_BTN8, "N64_BTN8");
             this.N64_BTN8.Name = "N64_BTN8";
             this.N64_BTN8.UseVisualStyleBackColor = true;
+            this.N64_BTN8.Click += new System.EventHandler(this.N64_BTN8_Click);
             // 
             // textBox1
             // 
@@ -1703,6 +1727,7 @@
             resources.ApplyResources(this.SNES_ROM, "SNES_ROM");
             this.SNES_ROM.Name = "SNES_ROM";
             this.SNES_ROM.UseVisualStyleBackColor = true;
+            this.SNES_ROM.Click += new System.EventHandler(this.SNES_ROM_Click);
             // 
             // textBox31
             // 
@@ -1717,10 +1742,11 @@
             // 
             // groupBox11
             // 
+            this.groupBox11.Controls.Add(this.SMetroidEUPanel);
+            this.groupBox11.Controls.Add(this.SMUS_PANEL);
             this.groupBox11.Controls.Add(this.SNESCUSTOM);
             this.groupBox11.Controls.Add(this.comboBox1);
             this.groupBox11.Controls.Add(this.label54);
-            this.groupBox11.Controls.Add(this.SMetroidEUPanel);
             resources.ApplyResources(this.groupBox11, "groupBox11");
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.TabStop = false;
@@ -1824,14 +1850,15 @@
             // 
             // SMetroidEUPanel
             // 
-            this.SMetroidEUPanel.Controls.Add(this.label59);
+            this.SMetroidEUPanel.Controls.Add(this.SMEU_DWNLD);
+            this.SMetroidEUPanel.Controls.Add(this.SMEU_TKEY);
+            this.SMetroidEUPanel.Controls.Add(this.SMEUTK);
+            this.SMetroidEUPanel.Controls.Add(this.SMEEU_CKEY);
+            this.SMetroidEUPanel.Controls.Add(this.SMEUCK);
+            this.SMetroidEUPanel.Controls.Add(this.SMETROIDEUFOLDER);
+            this.SMetroidEUPanel.Controls.Add(this.SMEUBASE);
             resources.ApplyResources(this.SMetroidEUPanel, "SMetroidEUPanel");
             this.SMetroidEUPanel.Name = "SMetroidEUPanel";
-            // 
-            // label59
-            // 
-            resources.ApplyResources(this.label59, "label59");
-            this.label59.Name = "label59";
             // 
             // groupBox12
             // 
@@ -1881,6 +1908,112 @@
             // SNESCSTMNFOLDERS
             // 
             this.SNESCSTMNFOLDERS.Tick += new System.EventHandler(this.SNESCSTMNFOLDERS_Tick);
+            // 
+            // SMETROIDEUFOLDER
+            // 
+            resources.ApplyResources(this.SMETROIDEUFOLDER, "SMETROIDEUFOLDER");
+            this.SMETROIDEUFOLDER.ForeColor = System.Drawing.Color.Red;
+            this.SMETROIDEUFOLDER.Name = "SMETROIDEUFOLDER";
+            // 
+            // SMEUBASE
+            // 
+            resources.ApplyResources(this.SMEUBASE, "SMEUBASE");
+            this.SMEUBASE.Name = "SMEUBASE";
+            this.SMEUBASE.TabStop = false;
+            // 
+            // SMEEU_CKEY
+            // 
+            resources.ApplyResources(this.SMEEU_CKEY, "SMEEU_CKEY");
+            this.SMEEU_CKEY.ForeColor = System.Drawing.Color.Red;
+            this.SMEEU_CKEY.Name = "SMEEU_CKEY";
+            // 
+            // SMEUCK
+            // 
+            resources.ApplyResources(this.SMEUCK, "SMEUCK");
+            this.SMEUCK.Name = "SMEUCK";
+            this.SMEUCK.TabStop = false;
+            // 
+            // SMEU_TKEY
+            // 
+            resources.ApplyResources(this.SMEU_TKEY, "SMEU_TKEY");
+            this.SMEU_TKEY.ForeColor = System.Drawing.Color.Red;
+            this.SMEU_TKEY.Name = "SMEU_TKEY";
+            // 
+            // SMEUTK
+            // 
+            resources.ApplyResources(this.SMEUTK, "SMEUTK");
+            this.SMEUTK.Name = "SMEUTK";
+            this.SMEUTK.TabStop = false;
+            // 
+            // SMEU_DWNLD
+            // 
+            resources.ApplyResources(this.SMEU_DWNLD, "SMEU_DWNLD");
+            this.SMEU_DWNLD.Name = "SMEU_DWNLD";
+            this.SMEU_DWNLD.UseVisualStyleBackColor = true;
+            // 
+            // SMETROIDEU
+            // 
+            this.SMETROIDEU.Tick += new System.EventHandler(this.SMETROID_Tick);
+            // 
+            // SMUS_PANEL
+            // 
+            this.SMUS_PANEL.Controls.Add(this.SMUS_DWNLD);
+            this.SMUS_PANEL.Controls.Add(this.SMUSTKEY);
+            this.SMUS_PANEL.Controls.Add(this.SMUSTKEYIMG);
+            this.SMUS_PANEL.Controls.Add(this.SMUSCKEY);
+            this.SMUS_PANEL.Controls.Add(this.SMUSCKEYIMG);
+            this.SMUS_PANEL.Controls.Add(this.SMUSBASE);
+            this.SMUS_PANEL.Controls.Add(this.SMUSBASEIMG);
+            resources.ApplyResources(this.SMUS_PANEL, "SMUS_PANEL");
+            this.SMUS_PANEL.Name = "SMUS_PANEL";
+            // 
+            // SMUS_DWNLD
+            // 
+            this.SMUS_DWNLD.Cursor = System.Windows.Forms.Cursors.Help;
+            resources.ApplyResources(this.SMUS_DWNLD, "SMUS_DWNLD");
+            this.SMUS_DWNLD.Name = "SMUS_DWNLD";
+            this.toolTip1.SetToolTip(this.SMUS_DWNLD, resources.GetString("SMUS_DWNLD.ToolTip"));
+            this.SMUS_DWNLD.UseVisualStyleBackColor = true;
+            // 
+            // SMUSTKEY
+            // 
+            resources.ApplyResources(this.SMUSTKEY, "SMUSTKEY");
+            this.SMUSTKEY.ForeColor = System.Drawing.Color.Red;
+            this.SMUSTKEY.Name = "SMUSTKEY";
+            // 
+            // SMUSTKEYIMG
+            // 
+            resources.ApplyResources(this.SMUSTKEYIMG, "SMUSTKEYIMG");
+            this.SMUSTKEYIMG.Name = "SMUSTKEYIMG";
+            this.SMUSTKEYIMG.TabStop = false;
+            // 
+            // SMUSCKEY
+            // 
+            resources.ApplyResources(this.SMUSCKEY, "SMUSCKEY");
+            this.SMUSCKEY.ForeColor = System.Drawing.Color.Red;
+            this.SMUSCKEY.Name = "SMUSCKEY";
+            // 
+            // SMUSCKEYIMG
+            // 
+            resources.ApplyResources(this.SMUSCKEYIMG, "SMUSCKEYIMG");
+            this.SMUSCKEYIMG.Name = "SMUSCKEYIMG";
+            this.SMUSCKEYIMG.TabStop = false;
+            // 
+            // SMUSBASE
+            // 
+            resources.ApplyResources(this.SMUSBASE, "SMUSBASE");
+            this.SMUSBASE.ForeColor = System.Drawing.Color.Red;
+            this.SMUSBASE.Name = "SMUSBASE";
+            // 
+            // SMUSBASEIMG
+            // 
+            resources.ApplyResources(this.SMUSBASEIMG, "SMUSBASEIMG");
+            this.SMUSBASEIMG.Name = "SMUSBASEIMG";
+            this.SMUSBASEIMG.TabStop = false;
+            // 
+            // SMETROIDUS
+            // 
+            this.SMETROIDUS.Tick += new System.EventHandler(this.SMETROIDUS_Tick);
             // 
             // UWUVCI_AIO
             // 
@@ -1955,6 +2088,14 @@
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ICON_PACKING)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMEUBASE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMEUCK)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMEUTK)).EndInit();
+            this.SMUS_PANEL.ResumeLayout(false);
+            this.SMUS_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SMUSTKEYIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMUSCKEYIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMUSBASEIMG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2196,9 +2337,25 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox32;
         private System.Windows.Forms.Panel SMetroidEUPanel;
-        private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Timer SNESCSTMNFOLDERS;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.Label SMEU_TKEY;
+        private System.Windows.Forms.PictureBox SMEUTK;
+        private System.Windows.Forms.Label SMEEU_CKEY;
+        private System.Windows.Forms.PictureBox SMEUCK;
+        private System.Windows.Forms.Label SMETROIDEUFOLDER;
+        private System.Windows.Forms.PictureBox SMEUBASE;
+        private System.Windows.Forms.Button SMEU_DWNLD;
+        private System.Windows.Forms.Timer SMETROIDEU;
+        private System.Windows.Forms.Panel SMUS_PANEL;
+        private System.Windows.Forms.Button SMUS_DWNLD;
+        private System.Windows.Forms.Label SMUSTKEY;
+        private System.Windows.Forms.PictureBox SMUSTKEYIMG;
+        private System.Windows.Forms.Label SMUSCKEY;
+        private System.Windows.Forms.PictureBox SMUSCKEYIMG;
+        private System.Windows.Forms.Label SMUSBASE;
+        private System.Windows.Forms.PictureBox SMUSBASEIMG;
+        private System.Windows.Forms.Timer SMETROIDUS;
     }
 }
 

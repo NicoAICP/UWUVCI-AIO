@@ -230,6 +230,7 @@ namespace UWUVCI_AIO
             SNES_ROM.ForeColor = Color.Black;
             SNES_TV.ForeColor = Color.Black;
             button2.ForeColor = Color.Black;
+            SMEU_DWNLD.ForeColor = Color.Black;
             #region bases
             
 
@@ -254,6 +255,7 @@ namespace UWUVCI_AIO
             logo_path = null;
             SNESCSTMNFOLDERS.Enabled = false;
             CSTMBaseRom = null;
+            SMETROIDEU.Enabled = false;
         }
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -429,11 +431,31 @@ namespace UWUVCI_AIO
             {
                 SNESCUSTOM.Visible = true;
                 SMetroidEUPanel.Visible = false;
+                SMUS_PANEL.Visible =false;
+                #region timers
+                SMETROIDEU.Enabled = false;
+                SMETROIDUS.Enabled = false;
+                #endregion
             }
-            if(b == 1)
+            if (b == 1)
             {
                 SNESCUSTOM.Visible = false;
                 SMetroidEUPanel.Visible = true;
+                SMUS_PANEL.Visible = false;
+                #region timers
+                SMETROIDEU.Enabled = true;
+                SMETROIDUS.Enabled = false;
+                #endregion
+            }
+            if (b == 2)
+            {
+                SNESCUSTOM.Visible = false;
+                SMetroidEUPanel.Visible = false;
+                SMUS_PANEL.Visible = true;
+                #region timers
+                SMETROIDEU.Enabled = false;
+                SMETROIDUS.Enabled = true;
+                #endregion
             }
         }
         private void SNESToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -446,10 +468,15 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.CommonKey == null)
             {
-                ICON_PACKING.Image = null;
                 ICON_PACKING.Image = Properties.Resources._;
                 CKEYMSG_PACKING.Text = "No CommonKey stored";
                 CKEYMSG_PACKING.ForeColor = Color.FromArgb(255, 216, 0);
+                SMEUCK.Image = Properties.Resources.X;
+                SMEEU_CKEY.Text = "No CommonKey stored";
+                SMEEU_CKEY.ForeColor = Color.Red;
+                SMUSCKEYIMG.Image = Properties.Resources.X;
+                SMUSCKEY.Text = "No CommonKey stored";
+                SMUSCKEY.ForeColor = Color.Red;
             }
             else
             {
@@ -457,7 +484,14 @@ namespace UWUVCI_AIO
                 ICON_PACKING.Image = Properties.Resources.yes;
                 CKEYMSG_PACKING.Text = "CommonKey found";
                 CKEYMSG_PACKING.ForeColor = Color.FromArgb(0, 127, 14);
+                SMEUCK.Image = Properties.Resources.yes;
+                SMEEU_CKEY.Text = "CommonKey found";
+                SMEEU_CKEY.ForeColor = Color.FromArgb(0, 127, 14);
+                SMUSCKEYIMG.Image = Properties.Resources.yes;
+                SMUSCKEY.Text = "CommonKey found";
+                SMUSCKEY.ForeColor = Color.FromArgb(0, 127, 14);
             }
+            
         }
         public bool IsDirectoryEmpty(string path)
         {
@@ -551,17 +585,122 @@ namespace UWUVCI_AIO
 
         private void SNESCODETXT_Click(object sender, EventArgs e)
         {
-            code = true;
+           
         }
 
         private void SNESCONTENTTXT_Click(object sender, EventArgs e)
         {
-            content = true;
+            
         }
 
         private void SNESMETATXT_Click(object sender, EventArgs e)
         {
-            meta = true;
+         
+        }
+
+        private void SMETROID_Tick(object sender, EventArgs e)
+        {
+
+            #region SUPER METROID EU
+
+            if (Properties.Settings.Default.SMetroidEU == "")
+            {
+                SMEUTK.Image = Properties.Resources.X;
+                SMEU_TKEY.Text = "No TitleKey stored";
+                SMEU_TKEY.ForeColor = Color.Red;
+            }
+            else
+            {
+                SMEUTK.Image = Properties.Resources.yes;
+                SMEU_TKEY.Text = "TitleKey found";
+                SMEU_TKEY.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/SMetroidEU"))
+            {
+                SMEUBASE.Image = Properties.Resources.X;
+                SMETROIDEUFOLDER.Text = "Base not downloaded";
+                SMETROIDEUFOLDER.ForeColor = Color.Red;
+            }
+            else
+            {
+                SMEUBASE.Image = Properties.Resources.yes;
+                SMETROIDEUFOLDER.Text = "Base downloaded";
+                SMETROIDEUFOLDER.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if(SMEU_DWNLD.Enabled == false)
+            {
+                SMEU_DWNLD.Cursor = Cursors.Help;
+                toolTip1.SetToolTip(SMEU_DWNLD, "You need to enter the Common- and TitleKey to be able to download");
+                if(!(Properties.Settings.Default.SMetroidEU == "" && Properties.Settings.Default.CommonKey == ""))
+                {
+                    SMEU_DWNLD.Enabled = true;
+                    SMEU_DWNLD.Cursor = Cursors.Default;
+                    toolTip1.SetToolTip(SMEU_DWNLD, null);
+                    
+                }
+            }
+            #endregion
+        }
+
+        private void SNES_ROM_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void N64_BTN8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SMETROIDUS_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.SMetroidUS == "")
+            {
+                SMUSTKEYIMG.Image = Properties.Resources.X;
+                SMUSTKEY.Text = "No TitleKey stored";
+                SMUSTKEY.ForeColor = Color.Red;
+            }
+            else
+            {
+                SMUSTKEYIMG.Image = Properties.Resources.yes;
+                SMUSTKEY.Text = "TitleKey found";
+                SMUSTKEY.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/SMetroidUS"))
+            {
+                SMUSBASEIMG.Image = Properties.Resources.X;
+                SMUSBASE.Text = "Base not downloaded";
+                SMUSBASE.ForeColor = Color.Red;
+            }
+            else
+            {
+                SMUSBASEIMG.Image = Properties.Resources.yes;
+                SMUSBASE.Text = "Base downloaded";
+                SMUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (SMUS_DWNLD.Enabled == false)
+            {
+                
+
+                
+                if(Properties.Settings.Default.SMetroidUS == "")
+                {
+                    SMUS_DWNLD.Enabled = false;
+                }
+                else
+                {
+                    if(Properties.Settings.Default.CommonKey == "")
+                    {
+                        SMUS_DWNLD.Enabled = false;
+                    }
+                    else
+                    {
+                        SMUS_DWNLD.Cursor = Cursors.Default;
+                        toolTip1.SetToolTip(SMUS_DWNLD, null);
+                        SMUS_DWNLD.Enabled = true;
+                    }
+                }
+            }
         }
     }
 }
