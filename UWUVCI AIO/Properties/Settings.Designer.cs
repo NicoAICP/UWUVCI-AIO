@@ -178,5 +178,101 @@ namespace UWUVCI_AIO.Properties {
                 this["allpathset"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SMetroidEU {
+            get {
+                return ((string)(this["SMetroidEU"]));
+            }
+            set {
+                this["SMetroidEU"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SMetroidUS {
+            get {
+                return ((string)(this["SMetroidUS"]));
+            }
+            set {
+                this["SMetroidUS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SMetroidJP {
+            get {
+                return ((string)(this["SMetroidJP"]));
+            }
+            set {
+                this["SMetroidJP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string EarthboundEU {
+            get {
+                return ((string)(this["EarthboundEU"]));
+            }
+            set {
+                this["EarthboundEU"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string EarthboundUS {
+            get {
+                return ((string)(this["EarthboundUS"]));
+            }
+            set {
+                this["EarthboundUS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string EarthboundJP {
+            get {
+                return ((string)(this["EarthboundJP"]));
+            }
+            set {
+                this["EarthboundJP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DKCEU {
+            get {
+                return ((string)(this["DKCEU"]));
+            }
+            set {
+                this["DKCEU"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DKCUS {
+            get {
+                return ((string)(this["DKCUS"]));
+            }
+            set {
+                this["DKCUS"] = value;
+            }
+        }
     }
 }

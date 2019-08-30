@@ -156,7 +156,111 @@
             this.PackingN64 = new System.Windows.Forms.GroupBox();
             this.N64_BTN17 = new System.Windows.Forms.Button();
             this.N64_BTN16 = new System.Windows.Forms.Button();
+            this.GBA = new System.Windows.Forms.TabPage();
+            this.GBA_BACK = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.GBA_INJECT = new System.Windows.Forms.Button();
+            this.label26 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.GBA_LOGO = new System.Windows.Forms.Button();
+            this.GBA_ICON = new System.Windows.Forms.Button();
+            this.GBA_DRC = new System.Windows.Forms.Button();
+            this.GBA_TV = new System.Windows.Forms.Button();
+            this.label28 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.GBA_ROM = new System.Windows.Forms.Button();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.GBA_CUSTOM = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.GBA_INST = new System.Windows.Forms.Button();
+            this.GBA_LOADIINE = new System.Windows.Forms.Button();
+            this.NES = new System.Windows.Forms.TabPage();
+            this.NES_BACK = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.NES_INJCT = new System.Windows.Forms.Button();
+            this.label37 = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.NES_LOGO = new System.Windows.Forms.Button();
+            this.NES_ICON = new System.Windows.Forms.Button();
+            this.NES_DRC = new System.Windows.Forms.Button();
+            this.NES_TV = new System.Windows.Forms.Button();
+            this.label39 = new System.Windows.Forms.Label();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.NES_ROM = new System.Windows.Forms.Button();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.NES_CSTM = new System.Windows.Forms.Button();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.NES_INST = new System.Windows.Forms.Button();
+            this.NES_LOADIINE = new System.Windows.Forms.Button();
+            this.SNES = new System.Windows.Forms.TabPage();
+            this.SNES_BACK = new System.Windows.Forms.Button();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.SNES_INJCT = new System.Windows.Forms.Button();
+            this.label46 = new System.Windows.Forms.Label();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.SNES_LOGO = new System.Windows.Forms.Button();
+            this.SNES_ICON = new System.Windows.Forms.Button();
+            this.SNES_DRC = new System.Windows.Forms.Button();
+            this.SNES_TV = new System.Windows.Forms.Button();
+            this.label48 = new System.Windows.Forms.Label();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.SNES_ROM = new System.Windows.Forms.Button();
+            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.SNESCUSTOM = new System.Windows.Forms.Panel();
+            this.SNESCONTENTTXT = new System.Windows.Forms.Label();
+            this.SNESCONTENTIMG = new System.Windows.Forms.PictureBox();
+            this.SNESMETATXT = new System.Windows.Forms.Label();
+            this.SNESMETAIMG = new System.Windows.Forms.PictureBox();
+            this.SNESCODETXT = new System.Windows.Forms.Label();
+            this.SNESCODEIMG = new System.Windows.Forms.PictureBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.SMetroidEUPanel = new System.Windows.Forms.Panel();
+            this.label59 = new System.Windows.Forms.Label();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.CKEYMSG_PACKING = new System.Windows.Forms.Label();
+            this.ICON_PACKING = new System.Windows.Forms.PictureBox();
+            this.SNES_INST = new System.Windows.Forms.Button();
+            this.SNES_LOADIINE = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.KEYS = new System.Windows.Forms.Timer(this.components);
+            this.SNESCSTMNFOLDERS = new System.Windows.Forms.Timer(this.components);
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -180,6 +284,24 @@
             this.InjectionN64.SuspendLayout();
             this.BaseRomN64.SuspendLayout();
             this.PackingN64.SuspendLayout();
+            this.GBA.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.NES.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.SNES.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.SNESCUSTOM.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SNESCONTENTIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SNESMETAIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SNESCODEIMG)).BeginInit();
+            this.SMetroidEUPanel.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ICON_PACKING)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -231,16 +353,19 @@
             // 
             resources.ApplyResources(this.gBAToolStripMenuItem, "gBAToolStripMenuItem");
             this.gBAToolStripMenuItem.Name = "gBAToolStripMenuItem";
+            this.gBAToolStripMenuItem.Click += new System.EventHandler(this.GBAToolStripMenuItem_Click);
             // 
             // nESToolStripMenuItem
             // 
             resources.ApplyResources(this.nESToolStripMenuItem, "nESToolStripMenuItem");
             this.nESToolStripMenuItem.Name = "nESToolStripMenuItem";
+            this.nESToolStripMenuItem.Click += new System.EventHandler(this.NESToolStripMenuItem_Click);
             // 
             // sNESToolStripMenuItem
             // 
             resources.ApplyResources(this.sNESToolStripMenuItem, "sNESToolStripMenuItem");
             this.sNESToolStripMenuItem.Name = "sNESToolStripMenuItem";
+            this.sNESToolStripMenuItem.Click += new System.EventHandler(this.SNESToolStripMenuItem_Click);
             // 
             // closeToolStripMenuItem
             // 
@@ -313,6 +438,7 @@
             // 
             resources.ApplyResources(this.sNESToolStripMenuItem1, "sNESToolStripMenuItem1");
             this.sNESToolStripMenuItem1.Name = "sNESToolStripMenuItem1";
+            this.sNESToolStripMenuItem1.Click += new System.EventHandler(this.SNESToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem3
             // 
@@ -382,6 +508,9 @@
             this.tabControl1.Controls.Add(this.Main);
             this.tabControl1.Controls.Add(this.NDS);
             this.tabControl1.Controls.Add(this.N64);
+            this.tabControl1.Controls.Add(this.GBA);
+            this.tabControl1.Controls.Add(this.NES);
+            this.tabControl1.Controls.Add(this.SNES);
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -417,6 +546,7 @@
             resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.PictureBox5_Click);
             // 
             // panel6
             // 
@@ -437,6 +567,7 @@
             resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.PictureBox4_Click);
             // 
             // panel5
             // 
@@ -948,7 +1079,6 @@
             resources.ApplyResources(this.N64_BTN8, "N64_BTN8");
             this.N64_BTN8.Name = "N64_BTN8";
             this.N64_BTN8.UseVisualStyleBackColor = true;
-            this.N64_BTN8.Click += new System.EventHandler(this.Button2_Click);
             // 
             // textBox1
             // 
@@ -1044,9 +1174,713 @@
             this.N64_BTN16.Name = "N64_BTN16";
             this.N64_BTN16.UseVisualStyleBackColor = true;
             // 
+            // GBA
+            // 
+            this.GBA.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.GBA.Controls.Add(this.GBA_BACK);
+            this.GBA.Controls.Add(this.groupBox4);
+            this.GBA.Controls.Add(this.groupBox5);
+            this.GBA.Controls.Add(this.groupBox6);
+            resources.ApplyResources(this.GBA, "GBA");
+            this.GBA.Name = "GBA";
+            // 
+            // GBA_BACK
+            // 
+            resources.ApplyResources(this.GBA_BACK, "GBA_BACK");
+            this.GBA_BACK.Name = "GBA_BACK";
+            this.GBA_BACK.UseVisualStyleBackColor = true;
+            this.GBA_BACK.Click += new System.EventHandler(this.GBA_BACK_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.GBA_INJECT);
+            this.groupBox4.Controls.Add(this.label26);
+            this.groupBox4.Controls.Add(this.textBox13);
+            this.groupBox4.Controls.Add(this.label27);
+            this.groupBox4.Controls.Add(this.GBA_LOGO);
+            this.groupBox4.Controls.Add(this.GBA_ICON);
+            this.groupBox4.Controls.Add(this.GBA_DRC);
+            this.groupBox4.Controls.Add(this.GBA_TV);
+            this.groupBox4.Controls.Add(this.label28);
+            this.groupBox4.Controls.Add(this.textBox15);
+            this.groupBox4.Controls.Add(this.label31);
+            this.groupBox4.Controls.Add(this.textBox16);
+            this.groupBox4.Controls.Add(this.label32);
+            this.groupBox4.Controls.Add(this.textBox17);
+            this.groupBox4.Controls.Add(this.label33);
+            this.groupBox4.Controls.Add(this.textBox18);
+            this.groupBox4.Controls.Add(this.label34);
+            this.groupBox4.Controls.Add(this.GBA_ROM);
+            this.groupBox4.Controls.Add(this.textBox19);
+            this.groupBox4.Controls.Add(this.label35);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.TabStop = false;
+            // 
+            // GBA_INJECT
+            // 
+            this.GBA_INJECT.AutoEllipsis = true;
+            this.GBA_INJECT.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.GBA_INJECT, "GBA_INJECT");
+            this.GBA_INJECT.Name = "GBA_INJECT";
+            this.GBA_INJECT.UseVisualStyleBackColor = true;
+            // 
+            // label26
+            // 
+            resources.ApplyResources(this.label26, "label26");
+            this.label26.Name = "label26";
+            // 
+            // textBox13
+            // 
+            resources.ApplyResources(this.textBox13, "textBox13");
+            this.textBox13.Name = "textBox13";
+            // 
+            // label27
+            // 
+            resources.ApplyResources(this.label27, "label27");
+            this.label27.Name = "label27";
+            // 
+            // GBA_LOGO
+            // 
+            resources.ApplyResources(this.GBA_LOGO, "GBA_LOGO");
+            this.GBA_LOGO.Name = "GBA_LOGO";
+            this.GBA_LOGO.UseVisualStyleBackColor = true;
+            // 
+            // GBA_ICON
+            // 
+            resources.ApplyResources(this.GBA_ICON, "GBA_ICON");
+            this.GBA_ICON.Name = "GBA_ICON";
+            this.GBA_ICON.UseVisualStyleBackColor = true;
+            // 
+            // GBA_DRC
+            // 
+            resources.ApplyResources(this.GBA_DRC, "GBA_DRC");
+            this.GBA_DRC.Name = "GBA_DRC";
+            this.GBA_DRC.UseVisualStyleBackColor = true;
+            // 
+            // GBA_TV
+            // 
+            resources.ApplyResources(this.GBA_TV, "GBA_TV");
+            this.GBA_TV.Name = "GBA_TV";
+            this.GBA_TV.UseVisualStyleBackColor = true;
+            // 
+            // label28
+            // 
+            resources.ApplyResources(this.label28, "label28");
+            this.label28.Name = "label28";
+            // 
+            // textBox15
+            // 
+            resources.ApplyResources(this.textBox15, "textBox15");
+            this.textBox15.Name = "textBox15";
+            // 
+            // label31
+            // 
+            resources.ApplyResources(this.label31, "label31");
+            this.label31.Name = "label31";
+            // 
+            // textBox16
+            // 
+            resources.ApplyResources(this.textBox16, "textBox16");
+            this.textBox16.Name = "textBox16";
+            // 
+            // label32
+            // 
+            resources.ApplyResources(this.label32, "label32");
+            this.label32.Name = "label32";
+            // 
+            // textBox17
+            // 
+            resources.ApplyResources(this.textBox17, "textBox17");
+            this.textBox17.Name = "textBox17";
+            // 
+            // label33
+            // 
+            resources.ApplyResources(this.label33, "label33");
+            this.label33.Name = "label33";
+            // 
+            // textBox18
+            // 
+            resources.ApplyResources(this.textBox18, "textBox18");
+            this.textBox18.Name = "textBox18";
+            // 
+            // label34
+            // 
+            resources.ApplyResources(this.label34, "label34");
+            this.label34.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label34.Name = "label34";
+            // 
+            // GBA_ROM
+            // 
+            resources.ApplyResources(this.GBA_ROM, "GBA_ROM");
+            this.GBA_ROM.Name = "GBA_ROM";
+            this.GBA_ROM.UseVisualStyleBackColor = true;
+            // 
+            // textBox19
+            // 
+            resources.ApplyResources(this.textBox19, "textBox19");
+            this.textBox19.Name = "textBox19";
+            // 
+            // label35
+            // 
+            resources.ApplyResources(this.label35, "label35");
+            this.label35.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label35.Name = "label35";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label36);
+            this.groupBox5.Controls.Add(this.GBA_CUSTOM);
+            resources.ApplyResources(this.groupBox5, "groupBox5");
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.TabStop = false;
+            // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.Name = "label36";
+            // 
+            // GBA_CUSTOM
+            // 
+            resources.ApplyResources(this.GBA_CUSTOM, "GBA_CUSTOM");
+            this.GBA_CUSTOM.Name = "GBA_CUSTOM";
+            this.GBA_CUSTOM.UseVisualStyleBackColor = true;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.GBA_INST);
+            this.groupBox6.Controls.Add(this.GBA_LOADIINE);
+            resources.ApplyResources(this.groupBox6, "groupBox6");
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.TabStop = false;
+            // 
+            // GBA_INST
+            // 
+            this.GBA_INST.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.GBA_INST, "GBA_INST");
+            this.GBA_INST.Name = "GBA_INST";
+            this.GBA_INST.UseVisualStyleBackColor = true;
+            // 
+            // GBA_LOADIINE
+            // 
+            this.GBA_LOADIINE.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.GBA_LOADIINE, "GBA_LOADIINE");
+            this.GBA_LOADIINE.Name = "GBA_LOADIINE";
+            this.GBA_LOADIINE.UseVisualStyleBackColor = true;
+            // 
+            // NES
+            // 
+            this.NES.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.NES.Controls.Add(this.NES_BACK);
+            this.NES.Controls.Add(this.groupBox7);
+            this.NES.Controls.Add(this.groupBox8);
+            this.NES.Controls.Add(this.groupBox9);
+            resources.ApplyResources(this.NES, "NES");
+            this.NES.Name = "NES";
+            // 
+            // NES_BACK
+            // 
+            resources.ApplyResources(this.NES_BACK, "NES_BACK");
+            this.NES_BACK.Name = "NES_BACK";
+            this.NES_BACK.UseVisualStyleBackColor = true;
+            this.NES_BACK.Click += new System.EventHandler(this.NES_BACK_Click);
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.NES_INJCT);
+            this.groupBox7.Controls.Add(this.label37);
+            this.groupBox7.Controls.Add(this.textBox20);
+            this.groupBox7.Controls.Add(this.label38);
+            this.groupBox7.Controls.Add(this.NES_LOGO);
+            this.groupBox7.Controls.Add(this.NES_ICON);
+            this.groupBox7.Controls.Add(this.NES_DRC);
+            this.groupBox7.Controls.Add(this.NES_TV);
+            this.groupBox7.Controls.Add(this.label39);
+            this.groupBox7.Controls.Add(this.textBox21);
+            this.groupBox7.Controls.Add(this.label40);
+            this.groupBox7.Controls.Add(this.textBox22);
+            this.groupBox7.Controls.Add(this.label41);
+            this.groupBox7.Controls.Add(this.textBox23);
+            this.groupBox7.Controls.Add(this.label42);
+            this.groupBox7.Controls.Add(this.textBox24);
+            this.groupBox7.Controls.Add(this.label43);
+            this.groupBox7.Controls.Add(this.NES_ROM);
+            this.groupBox7.Controls.Add(this.textBox25);
+            this.groupBox7.Controls.Add(this.label44);
+            resources.ApplyResources(this.groupBox7, "groupBox7");
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.TabStop = false;
+            // 
+            // NES_INJCT
+            // 
+            this.NES_INJCT.AutoEllipsis = true;
+            this.NES_INJCT.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.NES_INJCT, "NES_INJCT");
+            this.NES_INJCT.Name = "NES_INJCT";
+            this.NES_INJCT.UseVisualStyleBackColor = true;
+            // 
+            // label37
+            // 
+            resources.ApplyResources(this.label37, "label37");
+            this.label37.Name = "label37";
+            // 
+            // textBox20
+            // 
+            resources.ApplyResources(this.textBox20, "textBox20");
+            this.textBox20.Name = "textBox20";
+            // 
+            // label38
+            // 
+            resources.ApplyResources(this.label38, "label38");
+            this.label38.Name = "label38";
+            // 
+            // NES_LOGO
+            // 
+            resources.ApplyResources(this.NES_LOGO, "NES_LOGO");
+            this.NES_LOGO.Name = "NES_LOGO";
+            this.NES_LOGO.UseVisualStyleBackColor = true;
+            // 
+            // NES_ICON
+            // 
+            resources.ApplyResources(this.NES_ICON, "NES_ICON");
+            this.NES_ICON.Name = "NES_ICON";
+            this.NES_ICON.UseVisualStyleBackColor = true;
+            // 
+            // NES_DRC
+            // 
+            resources.ApplyResources(this.NES_DRC, "NES_DRC");
+            this.NES_DRC.Name = "NES_DRC";
+            this.NES_DRC.UseVisualStyleBackColor = true;
+            // 
+            // NES_TV
+            // 
+            resources.ApplyResources(this.NES_TV, "NES_TV");
+            this.NES_TV.Name = "NES_TV";
+            this.NES_TV.UseVisualStyleBackColor = true;
+            // 
+            // label39
+            // 
+            resources.ApplyResources(this.label39, "label39");
+            this.label39.Name = "label39";
+            // 
+            // textBox21
+            // 
+            resources.ApplyResources(this.textBox21, "textBox21");
+            this.textBox21.Name = "textBox21";
+            // 
+            // label40
+            // 
+            resources.ApplyResources(this.label40, "label40");
+            this.label40.Name = "label40";
+            // 
+            // textBox22
+            // 
+            resources.ApplyResources(this.textBox22, "textBox22");
+            this.textBox22.Name = "textBox22";
+            // 
+            // label41
+            // 
+            resources.ApplyResources(this.label41, "label41");
+            this.label41.Name = "label41";
+            // 
+            // textBox23
+            // 
+            resources.ApplyResources(this.textBox23, "textBox23");
+            this.textBox23.Name = "textBox23";
+            // 
+            // label42
+            // 
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.Name = "label42";
+            // 
+            // textBox24
+            // 
+            resources.ApplyResources(this.textBox24, "textBox24");
+            this.textBox24.Name = "textBox24";
+            // 
+            // label43
+            // 
+            resources.ApplyResources(this.label43, "label43");
+            this.label43.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label43.Name = "label43";
+            // 
+            // NES_ROM
+            // 
+            resources.ApplyResources(this.NES_ROM, "NES_ROM");
+            this.NES_ROM.Name = "NES_ROM";
+            this.NES_ROM.UseVisualStyleBackColor = true;
+            // 
+            // textBox25
+            // 
+            resources.ApplyResources(this.textBox25, "textBox25");
+            this.textBox25.Name = "textBox25";
+            // 
+            // label44
+            // 
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label44.Name = "label44";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.label45);
+            this.groupBox8.Controls.Add(this.NES_CSTM);
+            resources.ApplyResources(this.groupBox8, "groupBox8");
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.TabStop = false;
+            // 
+            // label45
+            // 
+            resources.ApplyResources(this.label45, "label45");
+            this.label45.Name = "label45";
+            // 
+            // NES_CSTM
+            // 
+            resources.ApplyResources(this.NES_CSTM, "NES_CSTM");
+            this.NES_CSTM.Name = "NES_CSTM";
+            this.NES_CSTM.UseVisualStyleBackColor = true;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.NES_INST);
+            this.groupBox9.Controls.Add(this.NES_LOADIINE);
+            resources.ApplyResources(this.groupBox9, "groupBox9");
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.TabStop = false;
+            // 
+            // NES_INST
+            // 
+            this.NES_INST.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.NES_INST, "NES_INST");
+            this.NES_INST.Name = "NES_INST";
+            this.NES_INST.UseVisualStyleBackColor = true;
+            // 
+            // NES_LOADIINE
+            // 
+            this.NES_LOADIINE.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.NES_LOADIINE, "NES_LOADIINE");
+            this.NES_LOADIINE.Name = "NES_LOADIINE";
+            this.NES_LOADIINE.UseVisualStyleBackColor = true;
+            // 
+            // SNES
+            // 
+            this.SNES.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SNES.Controls.Add(this.SNES_BACK);
+            this.SNES.Controls.Add(this.groupBox10);
+            this.SNES.Controls.Add(this.groupBox11);
+            this.SNES.Controls.Add(this.groupBox12);
+            resources.ApplyResources(this.SNES, "SNES");
+            this.SNES.Name = "SNES";
+            // 
+            // SNES_BACK
+            // 
+            resources.ApplyResources(this.SNES_BACK, "SNES_BACK");
+            this.SNES_BACK.Name = "SNES_BACK";
+            this.SNES_BACK.UseVisualStyleBackColor = true;
+            this.SNES_BACK.Click += new System.EventHandler(this.SNES_BACK_Click);
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.SNES_INJCT);
+            this.groupBox10.Controls.Add(this.label46);
+            this.groupBox10.Controls.Add(this.textBox26);
+            this.groupBox10.Controls.Add(this.label47);
+            this.groupBox10.Controls.Add(this.SNES_LOGO);
+            this.groupBox10.Controls.Add(this.SNES_ICON);
+            this.groupBox10.Controls.Add(this.SNES_DRC);
+            this.groupBox10.Controls.Add(this.SNES_TV);
+            this.groupBox10.Controls.Add(this.label48);
+            this.groupBox10.Controls.Add(this.textBox27);
+            this.groupBox10.Controls.Add(this.label49);
+            this.groupBox10.Controls.Add(this.textBox28);
+            this.groupBox10.Controls.Add(this.label50);
+            this.groupBox10.Controls.Add(this.textBox29);
+            this.groupBox10.Controls.Add(this.label51);
+            this.groupBox10.Controls.Add(this.textBox30);
+            this.groupBox10.Controls.Add(this.label52);
+            this.groupBox10.Controls.Add(this.SNES_ROM);
+            this.groupBox10.Controls.Add(this.textBox31);
+            this.groupBox10.Controls.Add(this.label53);
+            resources.ApplyResources(this.groupBox10, "groupBox10");
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.TabStop = false;
+            // 
+            // SNES_INJCT
+            // 
+            this.SNES_INJCT.AutoEllipsis = true;
+            this.SNES_INJCT.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.SNES_INJCT, "SNES_INJCT");
+            this.SNES_INJCT.Name = "SNES_INJCT";
+            this.SNES_INJCT.UseVisualStyleBackColor = true;
+            // 
+            // label46
+            // 
+            resources.ApplyResources(this.label46, "label46");
+            this.label46.Name = "label46";
+            // 
+            // textBox26
+            // 
+            resources.ApplyResources(this.textBox26, "textBox26");
+            this.textBox26.Name = "textBox26";
+            // 
+            // label47
+            // 
+            resources.ApplyResources(this.label47, "label47");
+            this.label47.Name = "label47";
+            // 
+            // SNES_LOGO
+            // 
+            resources.ApplyResources(this.SNES_LOGO, "SNES_LOGO");
+            this.SNES_LOGO.Name = "SNES_LOGO";
+            this.SNES_LOGO.UseVisualStyleBackColor = true;
+            // 
+            // SNES_ICON
+            // 
+            resources.ApplyResources(this.SNES_ICON, "SNES_ICON");
+            this.SNES_ICON.Name = "SNES_ICON";
+            this.SNES_ICON.UseVisualStyleBackColor = true;
+            // 
+            // SNES_DRC
+            // 
+            resources.ApplyResources(this.SNES_DRC, "SNES_DRC");
+            this.SNES_DRC.Name = "SNES_DRC";
+            this.SNES_DRC.UseVisualStyleBackColor = true;
+            // 
+            // SNES_TV
+            // 
+            resources.ApplyResources(this.SNES_TV, "SNES_TV");
+            this.SNES_TV.Name = "SNES_TV";
+            this.SNES_TV.UseVisualStyleBackColor = true;
+            // 
+            // label48
+            // 
+            resources.ApplyResources(this.label48, "label48");
+            this.label48.Name = "label48";
+            // 
+            // textBox27
+            // 
+            resources.ApplyResources(this.textBox27, "textBox27");
+            this.textBox27.Name = "textBox27";
+            // 
+            // label49
+            // 
+            resources.ApplyResources(this.label49, "label49");
+            this.label49.Name = "label49";
+            // 
+            // textBox28
+            // 
+            resources.ApplyResources(this.textBox28, "textBox28");
+            this.textBox28.Name = "textBox28";
+            // 
+            // label50
+            // 
+            resources.ApplyResources(this.label50, "label50");
+            this.label50.Name = "label50";
+            // 
+            // textBox29
+            // 
+            resources.ApplyResources(this.textBox29, "textBox29");
+            this.textBox29.Name = "textBox29";
+            // 
+            // label51
+            // 
+            resources.ApplyResources(this.label51, "label51");
+            this.label51.Name = "label51";
+            // 
+            // textBox30
+            // 
+            resources.ApplyResources(this.textBox30, "textBox30");
+            this.textBox30.Name = "textBox30";
+            // 
+            // label52
+            // 
+            resources.ApplyResources(this.label52, "label52");
+            this.label52.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label52.Name = "label52";
+            // 
+            // SNES_ROM
+            // 
+            resources.ApplyResources(this.SNES_ROM, "SNES_ROM");
+            this.SNES_ROM.Name = "SNES_ROM";
+            this.SNES_ROM.UseVisualStyleBackColor = true;
+            // 
+            // textBox31
+            // 
+            resources.ApplyResources(this.textBox31, "textBox31");
+            this.textBox31.Name = "textBox31";
+            // 
+            // label53
+            // 
+            resources.ApplyResources(this.label53, "label53");
+            this.label53.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label53.Name = "label53";
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.SNESCUSTOM);
+            this.groupBox11.Controls.Add(this.comboBox1);
+            this.groupBox11.Controls.Add(this.label54);
+            this.groupBox11.Controls.Add(this.SMetroidEUPanel);
+            resources.ApplyResources(this.groupBox11, "groupBox11");
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.TabStop = false;
+            // 
+            // SNESCUSTOM
+            // 
+            this.SNESCUSTOM.Controls.Add(this.SNESCONTENTTXT);
+            this.SNESCUSTOM.Controls.Add(this.SNESCONTENTIMG);
+            this.SNESCUSTOM.Controls.Add(this.SNESMETATXT);
+            this.SNESCUSTOM.Controls.Add(this.SNESMETAIMG);
+            this.SNESCUSTOM.Controls.Add(this.SNESCODETXT);
+            this.SNESCUSTOM.Controls.Add(this.SNESCODEIMG);
+            this.SNESCUSTOM.Controls.Add(this.label55);
+            this.SNESCUSTOM.Controls.Add(this.button2);
+            this.SNESCUSTOM.Controls.Add(this.textBox32);
+            resources.ApplyResources(this.SNESCUSTOM, "SNESCUSTOM");
+            this.SNESCUSTOM.Name = "SNESCUSTOM";
+            // 
+            // SNESCONTENTTXT
+            // 
+            resources.ApplyResources(this.SNESCONTENTTXT, "SNESCONTENTTXT");
+            this.SNESCONTENTTXT.ForeColor = System.Drawing.Color.Red;
+            this.SNESCONTENTTXT.Name = "SNESCONTENTTXT";
+            this.SNESCONTENTTXT.Click += new System.EventHandler(this.SNESCONTENTTXT_Click);
+            // 
+            // SNESCONTENTIMG
+            // 
+            resources.ApplyResources(this.SNESCONTENTIMG, "SNESCONTENTIMG");
+            this.SNESCONTENTIMG.Name = "SNESCONTENTIMG";
+            this.SNESCONTENTIMG.TabStop = false;
+            // 
+            // SNESMETATXT
+            // 
+            resources.ApplyResources(this.SNESMETATXT, "SNESMETATXT");
+            this.SNESMETATXT.ForeColor = System.Drawing.Color.Red;
+            this.SNESMETATXT.Name = "SNESMETATXT";
+            this.SNESMETATXT.Click += new System.EventHandler(this.SNESMETATXT_Click);
+            // 
+            // SNESMETAIMG
+            // 
+            resources.ApplyResources(this.SNESMETAIMG, "SNESMETAIMG");
+            this.SNESMETAIMG.Name = "SNESMETAIMG";
+            this.SNESMETAIMG.TabStop = false;
+            // 
+            // SNESCODETXT
+            // 
+            resources.ApplyResources(this.SNESCODETXT, "SNESCODETXT");
+            this.SNESCODETXT.ForeColor = System.Drawing.Color.Red;
+            this.SNESCODETXT.Name = "SNESCODETXT";
+            this.SNESCODETXT.Click += new System.EventHandler(this.SNESCODETXT_Click);
+            // 
+            // SNESCODEIMG
+            // 
+            resources.ApplyResources(this.SNESCODEIMG, "SNESCODEIMG");
+            this.SNESCODEIMG.Name = "SNESCODEIMG";
+            this.SNESCODEIMG.TabStop = false;
+            // 
+            // label55
+            // 
+            resources.ApplyResources(this.label55, "label55");
+            this.label55.Name = "label55";
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // textBox32
+            // 
+            resources.ApplyResources(this.textBox32, "textBox32");
+            this.textBox32.Name = "textBox32";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("comboBox1.AutoCompleteCustomSource"),
+            resources.GetString("comboBox1.AutoCompleteCustomSource1"),
+            resources.GetString("comboBox1.AutoCompleteCustomSource2")});
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1"),
+            resources.GetString("comboBox1.Items2"),
+            resources.GetString("comboBox1.Items3"),
+            resources.GetString("comboBox1.Items4"),
+            resources.GetString("comboBox1.Items5"),
+            resources.GetString("comboBox1.Items6"),
+            resources.GetString("comboBox1.Items7"),
+            resources.GetString("comboBox1.Items8")});
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
+            // 
+            // label54
+            // 
+            resources.ApplyResources(this.label54, "label54");
+            this.label54.Name = "label54";
+            // 
+            // SMetroidEUPanel
+            // 
+            this.SMetroidEUPanel.Controls.Add(this.label59);
+            resources.ApplyResources(this.SMetroidEUPanel, "SMetroidEUPanel");
+            this.SMetroidEUPanel.Name = "SMetroidEUPanel";
+            // 
+            // label59
+            // 
+            resources.ApplyResources(this.label59, "label59");
+            this.label59.Name = "label59";
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.CKEYMSG_PACKING);
+            this.groupBox12.Controls.Add(this.ICON_PACKING);
+            this.groupBox12.Controls.Add(this.SNES_INST);
+            this.groupBox12.Controls.Add(this.SNES_LOADIINE);
+            resources.ApplyResources(this.groupBox12, "groupBox12");
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.TabStop = false;
+            // 
+            // CKEYMSG_PACKING
+            // 
+            resources.ApplyResources(this.CKEYMSG_PACKING, "CKEYMSG_PACKING");
+            this.CKEYMSG_PACKING.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
+            this.CKEYMSG_PACKING.Name = "CKEYMSG_PACKING";
+            // 
+            // ICON_PACKING
+            // 
+            resources.ApplyResources(this.ICON_PACKING, "ICON_PACKING");
+            this.ICON_PACKING.Name = "ICON_PACKING";
+            this.ICON_PACKING.TabStop = false;
+            // 
+            // SNES_INST
+            // 
+            this.SNES_INST.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.SNES_INST, "SNES_INST");
+            this.SNES_INST.Name = "SNES_INST";
+            this.SNES_INST.UseVisualStyleBackColor = true;
+            // 
+            // SNES_LOADIINE
+            // 
+            this.SNES_LOADIINE.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.SNES_LOADIINE, "SNES_LOADIINE");
+            this.SNES_LOADIINE.Name = "SNES_LOADIINE";
+            this.SNES_LOADIINE.UseVisualStyleBackColor = true;
+            // 
             // toolTip1
             // 
             this.toolTip1.IsBalloon = true;
+            // 
+            // KEYS
+            // 
+            this.KEYS.Enabled = true;
+            this.KEYS.Tick += new System.EventHandler(this.KEYS_Tick);
+            // 
+            // SNESCSTMNFOLDERS
+            // 
+            this.SNESCSTMNFOLDERS.Tick += new System.EventHandler(this.SNESCSTMNFOLDERS_Tick);
             // 
             // UWUVCI_AIO
             // 
@@ -1059,6 +1893,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UWUVCI_AIO";
+            this.Load += new System.EventHandler(this.UWUVCI_AIO_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -1093,6 +1928,33 @@
             this.BaseRomN64.ResumeLayout(false);
             this.BaseRomN64.PerformLayout();
             this.PackingN64.ResumeLayout(false);
+            this.GBA.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.NES.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.SNES.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            this.SNESCUSTOM.ResumeLayout(false);
+            this.SNESCUSTOM.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SNESCONTENTIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SNESMETAIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SNESCODEIMG)).EndInit();
+            this.SMetroidEUPanel.ResumeLayout(false);
+            this.SMetroidEUPanel.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ICON_PACKING)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1227,6 +2089,116 @@
         private System.Windows.Forms.Button NDS_BTN3;
         private System.Windows.Forms.Button NDS_BTN2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.TabPage GBA;
+        private System.Windows.Forms.Button GBA_BACK;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button GBA_INJECT;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Button GBA_LOGO;
+        private System.Windows.Forms.Button GBA_ICON;
+        private System.Windows.Forms.Button GBA_DRC;
+        private System.Windows.Forms.Button GBA_TV;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Button GBA_ROM;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Button GBA_CUSTOM;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button GBA_INST;
+        private System.Windows.Forms.Button GBA_LOADIINE;
+        private System.Windows.Forms.TabPage NES;
+        private System.Windows.Forms.Button NES_BACK;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Button NES_INJCT;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Button NES_LOGO;
+        private System.Windows.Forms.Button NES_ICON;
+        private System.Windows.Forms.Button NES_DRC;
+        private System.Windows.Forms.Button NES_TV;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Button NES_ROM;
+        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Button NES_CSTM;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Button NES_INST;
+        private System.Windows.Forms.Button NES_LOADIINE;
+        private System.Windows.Forms.TabPage SNES;
+        private System.Windows.Forms.Button SNES_BACK;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.Button SNES_INJCT;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Button SNES_LOGO;
+        private System.Windows.Forms.Button SNES_ICON;
+        private System.Windows.Forms.Button SNES_DRC;
+        private System.Windows.Forms.Button SNES_TV;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.TextBox textBox30;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Button SNES_ROM;
+        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.Button SNES_INST;
+        private System.Windows.Forms.Button SNES_LOADIINE;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label54;
+      
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Label CKEYMSG_PACKING;
+        private System.Windows.Forms.PictureBox ICON_PACKING;
+        private System.Windows.Forms.Timer KEYS;
+        private System.Windows.Forms.Panel SNESCUSTOM;
+        private System.Windows.Forms.Label SNESCONTENTTXT;
+        private System.Windows.Forms.PictureBox SNESCONTENTIMG;
+        private System.Windows.Forms.Label SNESMETATXT;
+        private System.Windows.Forms.PictureBox SNESMETAIMG;
+        private System.Windows.Forms.Label SNESCODETXT;
+        private System.Windows.Forms.PictureBox SNESCODEIMG;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox32;
+        private System.Windows.Forms.Panel SMetroidEUPanel;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Timer SNESCSTMNFOLDERS;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
 

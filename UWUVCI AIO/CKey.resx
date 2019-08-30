@@ -131,6 +131,9 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
@@ -177,8 +180,8 @@
   <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 36</value>
   </data>
   <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -192,23 +195,20 @@
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 36</value>
-  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>206, 20</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -237,8 +237,8 @@
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
     <value>119, 60</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Close</value>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;button2.Parent" xml:space="preserve">
     <value>$this</value>

@@ -43,7 +43,6 @@ namespace UWUVCI_AIO
                 {
                     MessageBox.Show("CommonKey erfolgreich gespeichert", "Gültiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
                 }
-                Application.Restart();
             }
             else
             {
@@ -70,6 +69,11 @@ namespace UWUVCI_AIO
         private void Button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

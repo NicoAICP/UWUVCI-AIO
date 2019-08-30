@@ -117,302 +117,878 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 13</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>GBA</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;PMEU.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 178</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage5.Name" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;PMUS.Name" xml:space="preserve">
-    <value>PMUS</value>
-  </data>
-  <data name="&gt;&gt;FZX.Name" xml:space="preserve">
-    <value>FZX</value>
-  </data>
-  <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="&gt;&gt;textBox6.Name" xml:space="preserve">
-    <value>textBox6</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>F-Zero X [JP]</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="FZXJP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 22</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PMEU.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="DKEU.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>494, 464</value>
-  </data>
-  <data name="FZX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 132</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;DKEU.Name" xml:space="preserve">
-    <value>DKEU</value>
-  </data>
-  <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>TitleKeyMenu</value>
-  </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="DKEU.Text" xml:space="preserve">
-    <value>Check</value>
-  </data>
-  <data name="FZX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 22</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;PMUS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;FZXJP.Name" xml:space="preserve">
-    <value>FZXJP</value>
-  </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>494, 464</value>
-  </data>
-  <data name="textBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 20</value>
-  </data>
-  <data name="textBox4.MaxLength" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;DKEU.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 20</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>F-Zero X [US]</value>
-  </data>
-  <data name="FZX.Text" xml:space="preserve">
-    <value>Check</value>
-  </data>
-  <data name="&gt;&gt;DKEU.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Donkey Kong 64 [US]</value>
-  </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 20</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;FZX.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 13</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="textBox2.MaxLength" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 133</value>
-  </data>
-  <data name="&gt;&gt;PMEU.Name" xml:space="preserve">
-    <value>PMEU</value>
-  </data>
-  <data name="tabPage4.Text" xml:space="preserve">
-    <value>NES</value>
-  </data>
-  <data name="&gt;&gt;PMUS.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="textBox6.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="textBox6.MaxLength" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="FZXJP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 177</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 202</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPage5.Text" xml:space="preserve">
-    <value>SNES</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 21</value>
-  </data>
-  <data name="&gt;&gt;PMUS.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="PMEU.Text" xml:space="preserve">
-    <value>Check</value>
-  </data>
-  <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>TitleKeyMenu</value>
-  </data>
-  <data name="&gt;&gt;DKUS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
     <value>494, 464</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>NDS</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;FZXJP.Name" xml:space="preserve">
+    <value>FZXJP</value>
+  </data>
+  <data name="&gt;&gt;FZXJP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FZXJP.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;FZXJP.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;FZXJP_LABEL.Name" xml:space="preserve">
+    <value>FZXJP_LABEL</value>
+  </data>
+  <data name="&gt;&gt;FZXJP_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FZXJP_LABEL.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;FZXJP_LABEL.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;FZXJPtxt.Name" xml:space="preserve">
+    <value>FZXJPtxt</value>
+  </data>
+  <data name="&gt;&gt;FZXJPtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FZXJPtxt.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;FZXJPtxt.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;DKUS.Name" xml:space="preserve">
+    <value>DKUS</value>
+  </data>
+  <data name="&gt;&gt;DKUS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DKUS.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;DKUS.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;DKEU.Name" xml:space="preserve">
+    <value>DKEU</value>
+  </data>
+  <data name="&gt;&gt;DKEU.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DKEU.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;DKEU.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;FZX.Name" xml:space="preserve">
+    <value>FZX</value>
+  </data>
+  <data name="&gt;&gt;FZX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FZX.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;FZX.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;PMUS.Name" xml:space="preserve">
+    <value>PMUS</value>
+  </data>
+  <data name="&gt;&gt;PMUS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PMUS.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;PMUS.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;PMEU.Name" xml:space="preserve">
+    <value>PMEU</value>
+  </data>
+  <data name="&gt;&gt;PMEU.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PMEU.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;PMEU.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;DK64US_LABEL.Name" xml:space="preserve">
+    <value>DK64US_LABEL</value>
+  </data>
+  <data name="&gt;&gt;DK64US_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DK64US_LABEL.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;DK64US_LABEL.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;DK64UStxt.Name" xml:space="preserve">
+    <value>DK64UStxt</value>
+  </data>
+  <data name="&gt;&gt;DK64UStxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DK64UStxt.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;DK64UStxt.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;DK64EU_LABEL.Name" xml:space="preserve">
+    <value>DK64EU_LABEL</value>
+  </data>
+  <data name="&gt;&gt;DK64EU_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DK64EU_LABEL.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;DK64EU_LABEL.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;DK64EUtxt.Name" xml:space="preserve">
+    <value>DK64EUtxt</value>
+  </data>
+  <data name="&gt;&gt;DK64EUtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DK64EUtxt.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;DK64EUtxt.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;FZXUS_LABEL.Name" xml:space="preserve">
+    <value>FZXUS_LABEL</value>
+  </data>
+  <data name="&gt;&gt;FZXUS_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FZXUS_LABEL.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;FZXUS_LABEL.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;FZXUStxt.Name" xml:space="preserve">
+    <value>FZXUStxt</value>
+  </data>
+  <data name="&gt;&gt;FZXUStxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FZXUStxt.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;FZXUStxt.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;PMUS_LABEL.Name" xml:space="preserve">
+    <value>PMUS_LABEL</value>
+  </data>
+  <data name="&gt;&gt;PMUS_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PMUS_LABEL.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;PMUS_LABEL.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;PMUStxt.Name" xml:space="preserve">
+    <value>PMUStxt</value>
+  </data>
+  <data name="&gt;&gt;PMUStxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PMUStxt.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;PMUStxt.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;PMEU_LABEL.Name" xml:space="preserve">
+    <value>PMEU_LABEL</value>
+  </data>
+  <data name="&gt;&gt;PMEU_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PMEU_LABEL.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;PMEU_LABEL.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;PMEUtxt.Name" xml:space="preserve">
+    <value>PMEUtxt</value>
+  </data>
+  <data name="&gt;&gt;PMEUtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PMEUtxt.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;PMEUtxt.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 464</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>N64</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 464</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>GBA</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 464</value>
+  </data>
+  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>NES</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 20</value>
+  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="PMUS.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabControl2.Appearance" type="System.Windows.Forms.TabAppearance, System.Windows.Forms">
+    <value>FlatButtons</value>
+  </data>
+  <data name="&gt;&gt;button7.Name" xml:space="preserve">
+    <value>button7</value>
+  </data>
+  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP.Name" xml:space="preserve">
+    <value>EarthboundJP</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP_LABEL.Name" xml:space="preserve">
+    <value>EarthboundJP_LABEL</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP_LABEL.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP_LABEL.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJPtxt.Name" xml:space="preserve">
+    <value>EarthboundJPtxt</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJPtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJPtxt.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJPtxt.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS.Name" xml:space="preserve">
+    <value>EarthboundUS</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS_LABEL.Name" xml:space="preserve">
+    <value>EarthboundUS_LABEL</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS_LABEL.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS_LABEL.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUStxt.Name" xml:space="preserve">
+    <value>EarthboundUStxt</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUStxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUStxt.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUStxt.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU.Name" xml:space="preserve">
+    <value>EarthboundEU</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU_LABEL.Name" xml:space="preserve">
+    <value>EarthboundEU_LABEL</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU_LABEL.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU_LABEL.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEUtxt.Name" xml:space="preserve">
+    <value>EarthboundEUtxt</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEUtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEUtxt.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEUtxt.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP.Name" xml:space="preserve">
+    <value>SMetroidJP</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP_LABEL.Name" xml:space="preserve">
+    <value>SMetroidJP_LABEL</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP_LABEL.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP_LABEL.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJPtxt.Name" xml:space="preserve">
+    <value>SMetroidJPtxt</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJPtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJPtxt.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJPtxt.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS.Name" xml:space="preserve">
+    <value>SMetroidUS</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS_LABEL.Name" xml:space="preserve">
+    <value>SMetroidUS_LABEL</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS_LABEL.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS_LABEL.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUStxt.Name" xml:space="preserve">
+    <value>SMetroidUStxt</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUStxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUStxt.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUStxt.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU.Name" xml:space="preserve">
+    <value>SMetroidEU</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU_LABEL.Name" xml:space="preserve">
+    <value>SMetroidEU_LABEL</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU_LABEL.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU_LABEL.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEUtxt.Name" xml:space="preserve">
+    <value>SMetroidEUtxt</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEUtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEUtxt.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEUtxt.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="SNES1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="SNES1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="SNES1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 351</value>
+  </data>
+  <data name="SNES1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="SNES1.Text" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;SNES1.Name" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SNES1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SNES1.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;SNES1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 309</value>
+  </data>
+  <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="button8.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="button8.Text" xml:space="preserve">
+    <value>Previous Page</value>
+  </data>
+  <data name="&gt;&gt;button8.Name" xml:space="preserve">
+    <value>button8</value>
+  </data>
+  <data name="&gt;&gt;button8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
+    <value>SNES2</value>
+  </data>
+  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DKCUS.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DKCUS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 80</value>
+  </data>
+  <data name="DKCUS.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 22</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="DKCUS.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="DKCUS.Text" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="&gt;&gt;DKCUS.Name" xml:space="preserve">
+    <value>DKCUS</value>
+  </data>
+  <data name="&gt;&gt;DKCUS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DKCUS.Parent" xml:space="preserve">
+    <value>SNES2</value>
+  </data>
+  <data name="&gt;&gt;DKCUS.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DKCUS_LABEL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DKCUS_LABEL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DKCUS_LABEL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 62</value>
+  </data>
+  <data name="DKCUS_LABEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 13</value>
+  </data>
+  <data name="DKCUS_LABEL.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="DKCUS_LABEL.Text" xml:space="preserve">
+    <value>Donkey Kong Country [US]</value>
+  </data>
+  <data name="&gt;&gt;DKCUS_LABEL.Name" xml:space="preserve">
+    <value>DKCUS_LABEL</value>
+  </data>
+  <data name="&gt;&gt;DKCUS_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DKCUS_LABEL.Parent" xml:space="preserve">
+    <value>SNES2</value>
+  </data>
+  <data name="&gt;&gt;DKCUS_LABEL.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="DKCUStxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 81</value>
+  </data>
+  <data name="DKCUStxt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="DKCUStxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 20</value>
+  </data>
+  <data name="DKCUStxt.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;DKCUStxt.Name" xml:space="preserve">
+    <value>DKCUStxt</value>
+  </data>
+  <data name="&gt;&gt;DKCUStxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DKCUStxt.Parent" xml:space="preserve">
+    <value>SNES2</value>
+  </data>
+  <data name="&gt;&gt;DKCUStxt.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="DKCEU.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DKCEU.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 33</value>
+  </data>
+  <data name="DKCEU.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="DKCEU.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="DKCEU.Text" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="&gt;&gt;DKCEU.Name" xml:space="preserve">
+    <value>DKCEU</value>
+  </data>
+  <data name="&gt;&gt;DKCEU.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DKCEU.Parent" xml:space="preserve">
+    <value>SNES2</value>
+  </data>
+  <data name="&gt;&gt;DKCEU.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="DKCEU_LABEL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DKCEU_LABEL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DKCEU_LABEL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 15</value>
+  </data>
+  <data name="DKCEU_LABEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 13</value>
+  </data>
+  <data name="DKCEU_LABEL.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="DKCEU_LABEL.Text" xml:space="preserve">
+    <value>Donkey Kong Country [EU]</value>
+  </data>
+  <data name="&gt;&gt;DKCEU_LABEL.Name" xml:space="preserve">
+    <value>DKCEU_LABEL</value>
+  </data>
+  <data name="&gt;&gt;DKCEU_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DKCEU_LABEL.Parent" xml:space="preserve">
+    <value>SNES2</value>
+  </data>
+  <data name="&gt;&gt;DKCEU_LABEL.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="DKCEUtxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 34</value>
+  </data>
+  <data name="DKCEUtxt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="DKCEUtxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 20</value>
+  </data>
+  <data name="DKCEUtxt.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;DKCEUtxt.Name" xml:space="preserve">
+    <value>DKCEUtxt</value>
+  </data>
+  <data name="&gt;&gt;DKCEUtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DKCEUtxt.Parent" xml:space="preserve">
+    <value>SNES2</value>
+  </data>
+  <data name="&gt;&gt;DKCEUtxt.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="SNES2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="SNES2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="SNES2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 351</value>
+  </data>
+  <data name="SNES2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="SNES2.Text" xml:space="preserve">
+    <value>tabPage7</value>
+  </data>
+  <data name="&gt;&gt;SNES2.Name" xml:space="preserve">
+    <value>SNES2</value>
+  </data>
+  <data name="&gt;&gt;SNES2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SNES2.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;SNES2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabControl2.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 1</value>
+  </data>
+  <data name="tabControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-4, 3</value>
+  </data>
+  <data name="tabControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 360</value>
+  </data>
+  <data name="tabControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.Name" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 464</value>
+  </data>
+  <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tabPage5.Text" xml:space="preserve">
+    <value>SNES</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.Name" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-9, -34</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 490</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="FZXJP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="FZXJP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 177</value>
+  </data>
+  <data name="FZXJP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
   </data>
   <data name="FZXJP.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -420,331 +996,1009 @@
   <data name="FZXJP.Text" xml:space="preserve">
     <value>Check</value>
   </data>
-  <data name="PMEU.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 22</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;tabPage5.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 13</value>
-  </data>
-  <data name="&gt;&gt;FZX.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 248</value>
-  </data>
-  <data name="&gt;&gt;FZXJP.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FZXJP.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 20</value>
-  </data>
-  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="&gt;&gt;PMEU.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-9, -34</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="FZX.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="DKEU.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 219</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="PMEU.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 39</value>
-  </data>
-  <data name="textBox3.MaxLength" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
-    <value>textBox4</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="FZXJP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;FZX.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 13</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 114</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;textBox6.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 220</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="&gt;&gt;textBox6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;FZXJP.Name" xml:space="preserve">
+    <value>FZXJP</value>
   </data>
   <data name="&gt;&gt;FZXJP.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;DKUS.Parent" xml:space="preserve">
+  <data name="&gt;&gt;FZXJP.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="&gt;&gt;tabPage5.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;FZXJP.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="FZXJP_LABEL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FZXJP_LABEL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="FZXJP_LABEL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 159</value>
+  </data>
+  <data name="FZXJP_LABEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="FZXJP_LABEL.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="FZXJP_LABEL.Text" xml:space="preserve">
+    <value>F-Zero X [JP]</value>
+  </data>
+  <data name="&gt;&gt;FZXJP_LABEL.Name" xml:space="preserve">
+    <value>FZXJP_LABEL</value>
+  </data>
+  <data name="&gt;&gt;FZXJP_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FZXJP_LABEL.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;FZXJP_LABEL.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+  <data name="FZXJPtxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 178</value>
+  </data>
+  <data name="FZXJPtxt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="FZXJPtxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 20</value>
+  </data>
+  <data name="FZXJPtxt.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Paper Mario [US]</value>
+  <data name="&gt;&gt;FZXJPtxt.Name" xml:space="preserve">
+    <value>FZXJPtxt</value>
   </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;FZXJPtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FZXJPtxt.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>494, 464</value>
+  <data name="&gt;&gt;FZXJPtxt.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;DKEU.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>N64</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>NDS</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="DKUS.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="DKUS.Location" type="System.Drawing.Point, System.Drawing">
     <value>263, 264</value>
   </data>
-  <data name="PMUS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 86</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 13</value>
-  </data>
-  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
-    <value>textBox5</value>
-  </data>
-  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;PMEU.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Paper Mario [EU]</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="DKUS.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 22</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 68</value>
-  </data>
-  <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 265</value>
-  </data>
-  <data name="&gt;&gt;DKUS.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DKEU.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 22</value>
-  </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 87</value>
-  </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>494, 464</value>
-  </data>
-  <data name="textBox5.MaxLength" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>356, 286</value>
-  </data>
-  <data name="&gt;&gt;DKUS.Name" xml:space="preserve">
-    <value>DKUS</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="DKUS.Text" xml:space="preserve">
-    <value>Check</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 20</value>
-  </data>
-  <data name="PMUS.Text" xml:space="preserve">
-    <value>Check</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 13</value>
-  </data>
-  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>502, 490</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 40</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="textBox1.MaxLength" type="System.Int32, mscorlib">
-    <value>32</value>
   </data>
   <data name="DKUS.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="DKUS.Text" xml:space="preserve">
+    <value>Check</value>
   </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DKUS.Name" xml:space="preserve">
+    <value>DKUS</value>
+  </data>
+  <data name="&gt;&gt;DKUS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DKUS.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;DKUS.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
+  <data name="DKEU.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DKEU.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 219</value>
+  </data>
+  <data name="DKEU.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="DKEU.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="DKEU.Text" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="&gt;&gt;DKEU.Name" xml:space="preserve">
+    <value>DKEU</value>
+  </data>
+  <data name="&gt;&gt;DKEU.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DKEU.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;DKEU.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="FZX.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="FZX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 132</value>
+  </data>
+  <data name="FZX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="FZX.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="FZX.Text" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="&gt;&gt;FZX.Name" xml:space="preserve">
+    <value>FZX</value>
+  </data>
+  <data name="&gt;&gt;FZX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FZX.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;FZX.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PMUS.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PMUS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 86</value>
+  </data>
+  <data name="PMUS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
   </data>
   <data name="PMUS.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="PMUS.Text" xml:space="preserve">
+    <value>Check</value>
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 159</value>
+  <data name="&gt;&gt;PMUS.Name" xml:space="preserve">
+    <value>PMUS</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;PMUS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="&gt;&gt;PMUS.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;PMUS.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="PMEU.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PMEU.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 39</value>
+  </data>
+  <data name="PMEU.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="PMEU.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="PMEU.Text" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="&gt;&gt;PMEU.Name" xml:space="preserve">
+    <value>PMEU</value>
+  </data>
+  <data name="&gt;&gt;PMEU.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PMEU.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;PMEU.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="DK64US_LABEL.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="DK64US_LABEL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DK64US_LABEL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 248</value>
+  </data>
+  <data name="DK64US_LABEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="DK64US_LABEL.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="DK64US_LABEL.Text" xml:space="preserve">
+    <value>Donkey Kong 64 [US]</value>
+  </data>
+  <data name="&gt;&gt;DK64US_LABEL.Name" xml:space="preserve">
+    <value>DK64US_LABEL</value>
+  </data>
+  <data name="&gt;&gt;DK64US_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DK64US_LABEL.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;DK64US_LABEL.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="DK64UStxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 265</value>
+  </data>
+  <data name="DK64UStxt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="DK64UStxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 20</value>
+  </data>
+  <data name="DK64UStxt.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;DK64UStxt.Name" xml:space="preserve">
+    <value>DK64UStxt</value>
+  </data>
+  <data name="&gt;&gt;DK64UStxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DK64UStxt.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;DK64UStxt.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="DK64EU_LABEL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DK64EU_LABEL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DK64EU_LABEL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 202</value>
+  </data>
+  <data name="DK64EU_LABEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="DK64EU_LABEL.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="DK64EU_LABEL.Text" xml:space="preserve">
     <value>Donkey Kong 64 [EU]</value>
   </data>
-  <data name="&gt;&gt;textBox6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;DK64EU_LABEL.Name" xml:space="preserve">
+    <value>DK64EU_LABEL</value>
+  </data>
+  <data name="&gt;&gt;DK64EU_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DK64EU_LABEL.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;DK64EU_LABEL.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="DK64EUtxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 220</value>
+  </data>
+  <data name="DK64EUtxt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="DK64EUtxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 20</value>
+  </data>
+  <data name="DK64EUtxt.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;DK64EUtxt.Name" xml:space="preserve">
+    <value>DK64EUtxt</value>
+  </data>
+  <data name="&gt;&gt;DK64EUtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DK64EUtxt.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;DK64EUtxt.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="FZXUS_LABEL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FZXUS_LABEL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="FZXUS_LABEL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 114</value>
+  </data>
+  <data name="FZXUS_LABEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="FZXUS_LABEL.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="FZXUS_LABEL.Text" xml:space="preserve">
+    <value>F-Zero X [US]</value>
+  </data>
+  <data name="&gt;&gt;FZXUS_LABEL.Name" xml:space="preserve">
+    <value>FZXUS_LABEL</value>
+  </data>
+  <data name="&gt;&gt;FZXUS_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FZXUS_LABEL.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;FZXUS_LABEL.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="FZXUStxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 133</value>
+  </data>
+  <data name="FZXUStxt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="FZXUStxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 20</value>
+  </data>
+  <data name="FZXUStxt.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;FZXUStxt.Name" xml:space="preserve">
+    <value>FZXUStxt</value>
+  </data>
+  <data name="&gt;&gt;FZXUStxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FZXUStxt.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;FZXUStxt.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="PMUS_LABEL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PMUS_LABEL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PMUS_LABEL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 68</value>
+  </data>
+  <data name="PMUS_LABEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="PMUS_LABEL.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="PMUS_LABEL.Text" xml:space="preserve">
+    <value>Paper Mario [US]</value>
+  </data>
+  <data name="&gt;&gt;PMUS_LABEL.Name" xml:space="preserve">
+    <value>PMUS_LABEL</value>
+  </data>
+  <data name="&gt;&gt;PMUS_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PMUS_LABEL.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;PMUS_LABEL.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="PMUStxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 87</value>
+  </data>
+  <data name="PMUStxt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="PMUStxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 20</value>
+  </data>
+  <data name="PMUStxt.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PMUStxt.Name" xml:space="preserve">
+    <value>PMUStxt</value>
+  </data>
+  <data name="&gt;&gt;PMUStxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PMUStxt.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;PMUStxt.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="PMEU_LABEL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PMEU_LABEL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PMEU_LABEL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 21</value>
+  </data>
+  <data name="PMEU_LABEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="PMEU_LABEL.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="PMEU_LABEL.Text" xml:space="preserve">
+    <value>Paper Mario [EU]</value>
+  </data>
+  <data name="&gt;&gt;PMEU_LABEL.Name" xml:space="preserve">
+    <value>PMEU_LABEL</value>
+  </data>
+  <data name="&gt;&gt;PMEU_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PMEU_LABEL.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;PMEU_LABEL.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="PMEUtxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 40</value>
+  </data>
+  <data name="PMEUtxt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="PMEUtxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 20</value>
+  </data>
+  <data name="PMEUtxt.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;PMEUtxt.Name" xml:space="preserve">
+    <value>PMEUtxt</value>
+  </data>
+  <data name="&gt;&gt;PMEUtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PMEUtxt.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;PMEUtxt.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="button7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 309</value>
+  </data>
+  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="button7.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="button7.Text" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+  <data name="&gt;&gt;button7.Name" xml:space="preserve">
+    <value>button7</value>
+  </data>
+  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="EarthboundJP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="EarthboundJP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 270</value>
+  </data>
+  <data name="EarthboundJP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="EarthboundJP.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="EarthboundJP.Text" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP.Name" xml:space="preserve">
+    <value>EarthboundJP</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="EarthboundJP_LABEL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EarthboundJP_LABEL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="EarthboundJP_LABEL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 252</value>
+  </data>
+  <data name="EarthboundJP_LABEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="EarthboundJP_LABEL.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="EarthboundJP_LABEL.Text" xml:space="preserve">
+    <value>MOTHER [JP]</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP_LABEL.Name" xml:space="preserve">
+    <value>EarthboundJP_LABEL</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP_LABEL.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJP_LABEL.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="EarthboundJPtxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 271</value>
+  </data>
+  <data name="EarthboundJPtxt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="EarthboundJPtxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 20</value>
+  </data>
+  <data name="EarthboundJPtxt.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJPtxt.Name" xml:space="preserve">
+    <value>EarthboundJPtxt</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJPtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJPtxt.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundJPtxt.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="EarthboundUS.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="EarthboundUS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 224</value>
+  </data>
+  <data name="EarthboundUS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="EarthboundUS.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="EarthboundUS.Text" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS.Name" xml:space="preserve">
+    <value>EarthboundUS</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="EarthboundUS_LABEL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EarthboundUS_LABEL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="EarthboundUS_LABEL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 206</value>
+  </data>
+  <data name="EarthboundUS_LABEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="EarthboundUS_LABEL.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="EarthboundUS_LABEL.Text" xml:space="preserve">
+    <value>Earthbound [US]</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS_LABEL.Name" xml:space="preserve">
+    <value>EarthboundUS_LABEL</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS_LABEL.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUS_LABEL.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="EarthboundUStxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 225</value>
+  </data>
+  <data name="EarthboundUStxt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="EarthboundUStxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 20</value>
+  </data>
+  <data name="EarthboundUStxt.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUStxt.Name" xml:space="preserve">
+    <value>EarthboundUStxt</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUStxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUStxt.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundUStxt.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="EarthboundEU.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="EarthboundEU.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 177</value>
+  </data>
+  <data name="EarthboundEU.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="EarthboundEU.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="EarthboundEU.Text" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU.Name" xml:space="preserve">
+    <value>EarthboundEU</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="EarthboundEU_LABEL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EarthboundEU_LABEL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="EarthboundEU_LABEL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 159</value>
+  </data>
+  <data name="EarthboundEU_LABEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="EarthboundEU_LABEL.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="EarthboundEU_LABEL.Text" xml:space="preserve">
+    <value>Earthbound [EU]</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU_LABEL.Name" xml:space="preserve">
+    <value>EarthboundEU_LABEL</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU_LABEL.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEU_LABEL.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="EarthboundEUtxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 178</value>
+  </data>
+  <data name="EarthboundEUtxt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="EarthboundEUtxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 20</value>
+  </data>
+  <data name="EarthboundEUtxt.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEUtxt.Name" xml:space="preserve">
+    <value>EarthboundEUtxt</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEUtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEUtxt.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;EarthboundEUtxt.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="SMetroidJP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SMetroidJP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 128</value>
+  </data>
+  <data name="SMetroidJP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="SMetroidJP.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="SMetroidJP.Text" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP.Name" xml:space="preserve">
+    <value>SMetroidJP</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="SMetroidJP_LABEL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SMetroidJP_LABEL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SMetroidJP_LABEL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 110</value>
+  </data>
+  <data name="SMetroidJP_LABEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 13</value>
+  </data>
+  <data name="SMetroidJP_LABEL.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="SMetroidJP_LABEL.Text" xml:space="preserve">
+    <value>スーパーメトロイド (Super Metroid) [JP]</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP_LABEL.Name" xml:space="preserve">
+    <value>SMetroidJP_LABEL</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP_LABEL.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJP_LABEL.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="SMetroidJPtxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 129</value>
+  </data>
+  <data name="SMetroidJPtxt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="SMetroidJPtxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 20</value>
+  </data>
+  <data name="SMetroidJPtxt.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJPtxt.Name" xml:space="preserve">
+    <value>SMetroidJPtxt</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJPtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJPtxt.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidJPtxt.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="SMetroidUS.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SMetroidUS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 82</value>
+  </data>
+  <data name="SMetroidUS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="SMetroidUS.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="SMetroidUS.Text" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS.Name" xml:space="preserve">
+    <value>SMetroidUS</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="SMetroidUS_LABEL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SMetroidUS_LABEL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SMetroidUS_LABEL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 64</value>
+  </data>
+  <data name="SMetroidUS_LABEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 13</value>
+  </data>
+  <data name="SMetroidUS_LABEL.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="SMetroidUS_LABEL.Text" xml:space="preserve">
+    <value>Super Metroid [US</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS_LABEL.Name" xml:space="preserve">
+    <value>SMetroidUS_LABEL</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS_LABEL.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUS_LABEL.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="SMetroidUStxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 83</value>
+  </data>
+  <data name="SMetroidUStxt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="SMetroidUStxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 20</value>
+  </data>
+  <data name="SMetroidUStxt.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUStxt.Name" xml:space="preserve">
+    <value>SMetroidUStxt</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUStxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUStxt.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidUStxt.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="SMetroidEU.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SMetroidEU.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 35</value>
+  </data>
+  <data name="SMetroidEU.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="SMetroidEU.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="SMetroidEU.Text" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU.Name" xml:space="preserve">
+    <value>SMetroidEU</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="SMetroidEU_LABEL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SMetroidEU_LABEL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SMetroidEU_LABEL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 17</value>
+  </data>
+  <data name="SMetroidEU_LABEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="SMetroidEU_LABEL.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="SMetroidEU_LABEL.Text" xml:space="preserve">
+    <value>Super Metroid [EU]</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU_LABEL.Name" xml:space="preserve">
+    <value>SMetroidEU_LABEL</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU_LABEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU_LABEL.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEU_LABEL.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="SMetroidEUtxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 36</value>
+  </data>
+  <data name="SMetroidEUtxt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="SMetroidEUtxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 20</value>
+  </data>
+  <data name="SMetroidEUtxt.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEUtxt.Name" xml:space="preserve">
+    <value>SMetroidEUtxt</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEUtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEUtxt.Parent" xml:space="preserve">
+    <value>SNES1</value>
+  </data>
+  <data name="&gt;&gt;SMetroidEUtxt.ZOrder" xml:space="preserve">
+    <value>18</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>de</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>356, 339</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>TitleKeyMenu</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TitleKeyMenu</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
