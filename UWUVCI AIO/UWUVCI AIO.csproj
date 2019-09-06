@@ -95,6 +95,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Injection.cs" />
     <Compile Include="PathMenu.cs">
       <SubType>Form</SubType>
     </Compile>
