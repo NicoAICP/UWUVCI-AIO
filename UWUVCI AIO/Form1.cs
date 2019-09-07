@@ -22,7 +22,6 @@ namespace UWUVCI_AIO
         private static bool code = false;
         private static bool content = false;
         private static bool meta = false;
-        private static bool allowinject = false;
         private static string BaseROM = null;
         private static string CSTMBaseRom_path = null;
         private static string INJCT_ROM_path = null;
@@ -159,6 +158,7 @@ namespace UWUVCI_AIO
         private void NES_BACK_Click(object sender, EventArgs e)
         {
             ResetInput();
+            Injection.clean();
             tabControl1.SelectedIndex = 0;
         }
 
@@ -172,6 +172,7 @@ namespace UWUVCI_AIO
         private void GBA_BACK_Click(object sender, EventArgs e)
         {
             ResetInput();
+            Injection.clean();
             tabControl1.SelectedIndex = 0;
         }
 
@@ -902,12 +903,16 @@ namespace UWUVCI_AIO
             else
             {
                 Injection.packing(textBox26.Text);
+                SNES_INST.Enabled = false;
+                SNES_LOADIINE.Enabled = false;
             }
         }
 
         private void SNES_LOADIINE_Click(object sender, EventArgs e)
         {
-            //to be added
+            Injection.loadiine(BaseROM);
+            SNES_INST.Enabled = false;
+            SNES_LOADIINE.Enabled = false;
         }
 
         private void SMJP_DWNLD_Click(object sender, EventArgs e)

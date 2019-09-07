@@ -84,9 +84,19 @@ namespace UWUVCI_AIO
                 Directory.Delete(Properties.Settings.Default.WorkingPath + "/img", true);
             }
         }
+        public static void loadiine(string Gamename)
+        {
+            Directory.Move("\""+Properties.Settings.Default.WorkingPath + "/temp\"","\""+Properties.Settings.Default.InjectionPath+"/"+Gamename+"\"");
+            MessageBox.Show("Inject Succesfully created.\nYou can find your inject here:\n"+ Properties.Settings.Default.InjectionPath + "/" + Gamename);
+
+            clean();
+        }
         public static void packing(string Gamename)
         {
-            CNUSPACKER.Program.Main(args: new[] { "-in", Properties.Settings.Default.WorkingPath + "/temp", "-out", Properties.Settings.Default.InjectionPath + "/"+Gamename, "-encryptKeyWith", Properties.Settings.Default.CommonKey });
+            CNUSPACKER.Program.Main(args: new[] { "-in", "\""+Properties.Settings.Default.WorkingPath + "/temp\"", "-out", "\""+Properties.Settings.Default.InjectionPath + "/"+Gamename+"\"", "-encryptKeyWith", Properties.Settings.Default.CommonKey });
+            MessageBox.Show("Inject Succesfully created.\nYou can find your inject here:\n" + Properties.Settings.Default.InjectionPath + "/" + Gamename);
+            
+            clean();
         }
         public static void download(string BaseRom)
         {
