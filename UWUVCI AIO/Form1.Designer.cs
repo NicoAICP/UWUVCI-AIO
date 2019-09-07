@@ -275,8 +275,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label54 = new System.Windows.Forms.Label();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.CKEYMSG_PACKING = new System.Windows.Forms.Label();
-            this.ICON_PACKING = new System.Windows.Forms.PictureBox();
             this.SNES_INST = new System.Windows.Forms.Button();
             this.SNES_LOADIINE = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -287,7 +285,7 @@
             this.SMETROIDUS = new System.Windows.Forms.Timer(this.components);
             this.SMETROIDJP = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button3 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -339,7 +337,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.SNESMETAIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SNESCODEIMG)).BeginInit();
             this.groupBox12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ICON_PACKING)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -556,7 +553,6 @@
             // Main
             // 
             this.Main.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Main.Controls.Add(this.button3);
             this.Main.Controls.Add(this.panel7);
             this.Main.Controls.Add(this.panel6);
             this.Main.Controls.Add(this.panel5);
@@ -1652,6 +1648,7 @@
             resources.ApplyResources(this.SNES_INJCT, "SNES_INJCT");
             this.SNES_INJCT.Name = "SNES_INJCT";
             this.SNES_INJCT.UseVisualStyleBackColor = true;
+            this.SNES_INJCT.Click += new System.EventHandler(this.SNES_INJCT_Click);
             // 
             // label46
             // 
@@ -1762,9 +1759,9 @@
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.SMJP_PANEL);
-            this.groupBox11.Controls.Add(this.SMUS_PANEL);
             this.groupBox11.Controls.Add(this.SMetroidEUPanel);
+            this.groupBox11.Controls.Add(this.SMUS_PANEL);
+            this.groupBox11.Controls.Add(this.SMJP_PANEL);
             this.groupBox11.Controls.Add(this.SNESCUSTOM);
             this.groupBox11.Controls.Add(this.comboBox1);
             this.groupBox11.Controls.Add(this.label54);
@@ -1791,6 +1788,7 @@
             this.SMJP_DWNLD.Name = "SMJP_DWNLD";
             this.toolTip1.SetToolTip(this.SMJP_DWNLD, resources.GetString("SMJP_DWNLD.ToolTip"));
             this.SMJP_DWNLD.UseVisualStyleBackColor = true;
+            this.SMJP_DWNLD.Click += new System.EventHandler(this.SMJP_DWNLD_Click);
             // 
             // SMJPTK
             // 
@@ -1847,6 +1845,7 @@
             this.SMUS_DWNLD.Name = "SMUS_DWNLD";
             this.toolTip1.SetToolTip(this.SMUS_DWNLD, resources.GetString("SMUS_DWNLD.ToolTip"));
             this.SMUS_DWNLD.UseVisualStyleBackColor = true;
+            this.SMUS_DWNLD.Click += new System.EventHandler(this.SMUS_DWNLD_Click);
             // 
             // SMUSTKEY
             // 
@@ -1901,6 +1900,7 @@
             resources.ApplyResources(this.SMEU_DWNLD, "SMEU_DWNLD");
             this.SMEU_DWNLD.Name = "SMEU_DWNLD";
             this.SMEU_DWNLD.UseVisualStyleBackColor = true;
+            this.SMEU_DWNLD.Click += new System.EventHandler(this.SMEU_DWNLD_Click);
             // 
             // SMEU_TKEY
             // 
@@ -2037,25 +2037,11 @@
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.CKEYMSG_PACKING);
-            this.groupBox12.Controls.Add(this.ICON_PACKING);
             this.groupBox12.Controls.Add(this.SNES_INST);
             this.groupBox12.Controls.Add(this.SNES_LOADIINE);
             resources.ApplyResources(this.groupBox12, "groupBox12");
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.TabStop = false;
-            // 
-            // CKEYMSG_PACKING
-            // 
-            resources.ApplyResources(this.CKEYMSG_PACKING, "CKEYMSG_PACKING");
-            this.CKEYMSG_PACKING.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
-            this.CKEYMSG_PACKING.Name = "CKEYMSG_PACKING";
-            // 
-            // ICON_PACKING
-            // 
-            resources.ApplyResources(this.ICON_PACKING, "ICON_PACKING");
-            this.ICON_PACKING.Name = "ICON_PACKING";
-            this.ICON_PACKING.TabStop = false;
             // 
             // SNES_INST
             // 
@@ -2063,6 +2049,7 @@
             resources.ApplyResources(this.SNES_INST, "SNES_INST");
             this.SNES_INST.Name = "SNES_INST";
             this.SNES_INST.UseVisualStyleBackColor = true;
+            this.SNES_INST.Click += new System.EventHandler(this.SNES_INST_Click);
             // 
             // SNES_LOADIINE
             // 
@@ -2070,6 +2057,7 @@
             resources.ApplyResources(this.SNES_LOADIINE, "SNES_LOADIINE");
             this.SNES_LOADIINE.Name = "SNES_LOADIINE";
             this.SNES_LOADIINE.UseVisualStyleBackColor = true;
+            this.SNES_LOADIINE.Click += new System.EventHandler(this.SNES_LOADIINE_Click);
             // 
             // toolTip1
             // 
@@ -2100,12 +2088,10 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // button3
+            // timer1
             // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // UWUVCI_AIO
             // 
@@ -2191,8 +2177,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.SNESMETAIMG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SNESCODEIMG)).EndInit();
             this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ICON_PACKING)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2420,8 +2404,6 @@
 
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Label CKEYMSG_PACKING;
-        private System.Windows.Forms.PictureBox ICON_PACKING;
         private System.Windows.Forms.Timer KEYS;
         private System.Windows.Forms.Panel SNESCUSTOM;
         private System.Windows.Forms.Label SNESCONTENTTXT;
@@ -2463,7 +2445,7 @@
         private System.Windows.Forms.PictureBox SMJPBASEIMG;
         private System.Windows.Forms.Timer SMETROIDJP;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

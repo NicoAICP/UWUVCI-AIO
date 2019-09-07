@@ -1,9 +1,11 @@
 ﻿using AutoUpdaterDotNET;
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -181,7 +183,6 @@ namespace UWUVCI_AIO
         private void PictureBox5_Click(object sender, EventArgs e)
         {
             ResetInput();
-            SNESCSTMNFOLDERS.Enabled = true;
             tabControl1.SelectedIndex = 5;
         }
 
@@ -200,7 +201,7 @@ namespace UWUVCI_AIO
         private void SNESToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ResetInput();
-            SNESCSTMNFOLDERS.Enabled = true;
+            
             tabControl1.SelectedIndex = 5;
         }
 
@@ -222,7 +223,9 @@ namespace UWUVCI_AIO
                 SMetroidEUPanel.Visible = false;
                 SMUS_PANEL.Visible = false;
                 SMJP_PANEL.Visible = false;
+                BaseROM = "Custom";
                 #region timers
+                SNESCSTMNFOLDERS.Enabled = true;
                 SMETROIDEU.Enabled = false;
                 SMETROIDUS.Enabled = false;
                 SMETROIDJP.Enabled = false;
@@ -234,7 +237,9 @@ namespace UWUVCI_AIO
                 SMetroidEUPanel.Visible = true;
                 SMUS_PANEL.Visible = false;
                 SMJP_PANEL.Visible = false;
+                BaseROM = "SMetroidEU";
                 #region timers
+                SNESCSTMNFOLDERS.Enabled = false;
                 SMETROIDEU.Enabled = true;
                 SMETROIDUS.Enabled = false;
                 SMETROIDJP.Enabled = false;
@@ -246,7 +251,9 @@ namespace UWUVCI_AIO
                 SMetroidEUPanel.Visible = false;
                 SMUS_PANEL.Visible = true;
                 SMJP_PANEL.Visible = false;
+                BaseROM = "SMetroidUS";
                 #region timers
+                SNESCSTMNFOLDERS.Enabled = false;
                 SMETROIDEU.Enabled = false;
                 SMETROIDUS.Enabled = true;
                 SMETROIDJP.Enabled = false;
@@ -258,7 +265,9 @@ namespace UWUVCI_AIO
                 SMetroidEUPanel.Visible = false;
                 SMUS_PANEL.Visible = true;
                 SMJP_PANEL.Visible = true;
+                BaseROM = "SMetroidJP";
                 #region timers
+                SNESCSTMNFOLDERS.Enabled = false;
                 SMETROIDEU.Enabled = false;
                 SMETROIDUS.Enabled = false;
                 SMETROIDJP.Enabled = true;
@@ -275,9 +284,6 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.CommonKey == null)
             {
-                ICON_PACKING.Image = Properties.Resources._;
-                CKEYMSG_PACKING.Text = "No CommonKey stored";
-                CKEYMSG_PACKING.ForeColor = Color.FromArgb(255, 216, 0);
                 SMEUCK.Image = Properties.Resources.X;
                 SMEEU_CKEY.Text = "No CommonKey stored";
                 SMEEU_CKEY.ForeColor = Color.Red;
@@ -290,10 +296,7 @@ namespace UWUVCI_AIO
             }
             else
             {
-                ICON_PACKING.Image = null;
-                ICON_PACKING.Image = Properties.Resources.yes;
-                CKEYMSG_PACKING.Text = "CommonKey found";
-                CKEYMSG_PACKING.ForeColor = Color.FromArgb(0, 127, 14);
+               
                 SMEUCK.Image = Properties.Resources.yes;
                 SMEEU_CKEY.Text = "CommonKey found";
                 SMEEU_CKEY.ForeColor = Color.FromArgb(0, 127, 14);
@@ -351,11 +354,11 @@ namespace UWUVCI_AIO
         {
             if (code == false || content == false || meta == false)
             {
-                allowinject = false;
+                SNES_INJCT.Enabled = false;
             }
             else
             {
-                allowinject = true;
+                SNES_INJCT.Enabled = true;
             }
             if (code == false)
             {
@@ -433,12 +436,15 @@ namespace UWUVCI_AIO
                 SMEUBASE.Image = Properties.Resources.X;
                 SMETROIDEUFOLDER.Text = "Base not downloaded";
                 SMETROIDEUFOLDER.ForeColor = Color.Red;
+                SNES_INJCT.Enabled = false;
             }
             else
             {
                 SMEUBASE.Image = Properties.Resources.yes;
                 SMETROIDEUFOLDER.Text = "Base downloaded";
                 SMETROIDEUFOLDER.ForeColor = Color.FromArgb(0, 127, 14);
+                SMEU_DWNLD.Visible = false;
+                SNES_INJCT.Enabled = true;
             }
             if (Properties.Settings.Default.SMetroidEU == "")
             {
@@ -481,12 +487,15 @@ namespace UWUVCI_AIO
                 SMJPBASEIMG.Image = Properties.Resources.X;
                 SMJPBASE.Text = "Base not downloaded";
                 SMJPBASE.ForeColor = Color.Red;
+                SNES_INJCT.Enabled = false;
             }
             else
             {
                 SMJPBASEIMG.Image = Properties.Resources.yes;
                 SMJPBASE.Text = "Base downloaded";
                 SMJPBASE.ForeColor = Color.FromArgb(0, 127, 14);
+                SNES_INJCT.Enabled = true;
+                SMJP_DWNLD.Visible = false;
             }
             if (Properties.Settings.Default.SMetroidJP == "")
             {
@@ -508,7 +517,12 @@ namespace UWUVCI_AIO
         }
         private void SNES_ROM_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter =  "SNES roms (*.sfc)|*.sfc";
+            MessageBox.Show("Opening romutil now. Load your SNES rom in it and check if the checkbox Header is checked. If thats the case click remove header and then okay. This will create a new file called <Gamename>_noheader.sfc/smc. Use this file. If its not the case, continue with your current rom.");
+            Process romutil = new Process();
+            romutil.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/romutil.exe");
+            romutil.Start();
+            romutil.WaitForExit();
+            openFileDialog1.Filter =  "SNES roms |*.sfc;*.smc";
             openFileDialog1.FilterIndex = 1;
             DialogResult result = openFileDialog1.ShowDialog();
 
@@ -544,12 +558,15 @@ namespace UWUVCI_AIO
                 SMUSBASEIMG.Image = Properties.Resources.X;
                 SMUSBASE.Text = "Base not downloaded";
                 SMUSBASE.ForeColor = Color.Red;
+                SNES_INJCT.Enabled = false;
             }
             else
             {
                 SMUSBASEIMG.Image = Properties.Resources.yes;
                 SMUSBASE.Text = "Base downloaded";
                 SMUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
+                SNES_INJCT.Enabled = true;
+                SMUS_DWNLD.Visible = false;
             }
             if (SMUS_DWNLD.Enabled == false)
             {
@@ -863,6 +880,51 @@ namespace UWUVCI_AIO
         }
 
         private void Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SNES_INJCT_Click(object sender, EventArgs e)
+        {
+            Injection.inject(Injection.Console.SNES, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox26.Text);
+            SNES_INST.Enabled = true;
+            SNES_LOADIINE.Enabled = true;
+        }
+
+        private void SNES_INST_Click(object sender, EventArgs e)
+        {
+            if(Properties.Settings.Default.CommonKey == "")
+            {
+                MessageBox.Show("To use this option you need to enter the CommonKey (Settings -> Set CommonKey)");
+
+            }
+            else
+            {
+                Injection.packing(textBox26.Text);
+            }
+        }
+
+        private void SNES_LOADIINE_Click(object sender, EventArgs e)
+        {
+            //to be added
+        }
+
+        private void SMJP_DWNLD_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void SMUS_DWNLD_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void SMEU_DWNLD_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
         {
 
         }

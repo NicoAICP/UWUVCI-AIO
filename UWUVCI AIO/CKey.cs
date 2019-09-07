@@ -11,6 +11,7 @@ using System.Globalization;
 using System.Threading;
 using System.Resources;
 using System.IO;
+using System.Reflection;
 
 namespace UWUVCI_AIO
 {
@@ -35,6 +36,18 @@ namespace UWUVCI_AIO
             {
                 Properties.Settings.Default.CommonKey = textBox1.Text;
                 Properties.Settings.Default.Save();
+                if (File.Exists(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"TOOLS\JNUSTOOL\config")))
+                {
+
+                    string cfg = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"TOOLS\JNUSTOOL\config");
+                    string word = "<ckey>";
+                    if (File.ReadAllText(cfg).Contains(word))
+                    {
+                        string text = File.ReadAllText(cfg);
+                        text = text.Replace(word, Properties.Settings.Default.CommonKey);
+                        File.WriteAllText(cfg, text);
+                    }
+                }
                 if (language == "en-US")
                 {
                     MessageBox.Show("CommonKey successfully set", "Valid Key", MessageBoxButtons.OK, MessageBoxIcon.None);
