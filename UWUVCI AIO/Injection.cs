@@ -6,6 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Xml;
 using CNUSPACKER;
 
@@ -45,7 +46,7 @@ namespace UWUVCI_AIO
 
                 case Console.N64:
                     CopyBase(BaseRom, CSTMN_Base_path, temppath);
-                    N64(temppath, INJCT_Rom_path);
+                    N64(temppath, INJCT_Rom_path, ini_path);
                     editXML(GameName, temppath);
                     Images(bootimages, temppath);
                     break;
@@ -70,6 +71,17 @@ namespace UWUVCI_AIO
                     editXML(GameName, temppath);
                     Images(bootimages, temppath);
                     break;
+            }
+        }
+        public static void clean()
+        {
+            if(Directory.Exists(Properties.Settings.Default.WorkingPath + "/temp"))
+            {
+                Directory.Delete(Properties.Settings.Default.WorkingPath + "/temp", true);
+            }
+            if (Directory.Exists(Properties.Settings.Default.WorkingPath + "/img"))
+            {
+                Directory.Delete(Properties.Settings.Default.WorkingPath + "/img", true);
             }
         }
         public static void packing(string Gamename)
@@ -252,7 +264,6 @@ namespace UWUVCI_AIO
             mode11.InnerText = GameName;
             mode12.InnerText = GameName;
             doc.Save(xmlFile);
-            XmlDocument doc2 = new XmlDocument();
             doc.Load(xmlFile2);
             XmlNode n2ode = doc.SelectSingleNode("app/title_id");
             n2ode.InnerText = "0005000010" + ID + "00";
@@ -262,6 +273,10 @@ namespace UWUVCI_AIO
         //This function copies the custom or normal Base to the working directory
         private static void CopyBase(string baserom, string custom_path, string output)
         {
+            if (Directory.Exists(output))
+            {
+                Directory.Delete(output, true);
+            }
             if (baserom == "Custom")
             {
                 DirectoryCopy(custom_path, output, true);
@@ -276,58 +291,136 @@ namespace UWUVCI_AIO
 
         private static void NESSNES(string workpath, string romtoinject)
         {
-            string[] RPX = Directory.GetFiles(workpath+"/code", "*.rpx"); //To get the RPX path where the NES/SNES rom needs to be Injected in
+            string[] RPX = Directory.GetFiles(workpath+"\\code", "*.rpx"); //To get the RPX path where the NES/SNES rom needs to be Injected in
 
-            RPXedit(false, RPX[0]); //Decompresses the RPX to be able to write the game into it
-
+            RPXdecomp(RPX[0]); //Decompresses the RPX to be able to write the game into it
+            
             Process retroinject = new Process();
                 retroinject.StartInfo.UseShellExecute = false;
                 retroinject.StartInfo.CreateNoWindow = true;
                 retroinject.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/retroinject.exe");
-                retroinject.StartInfo.Arguments = RPX[0] +" "+romtoinject+" "+RPX[0];  
-                retroinject.Start();
-                retroinject.WaitForExit();
+                retroinject.StartInfo.Arguments = "\""+RPX[0] +"\" \""+romtoinject+"\" \""+RPX[0]+"\"";
+           
+            retroinject.Start();
+           
+            retroinject.WaitForExit();
             
-            RPXedit(true, RPX[0]); //Compresses the RPX
+            RPXcomp(RPX[0]); //Compresses the RPX
         }
         private static void GBA (string workpath, string romtoinject)
         {
+            Process psb = new Process();
+            psb.StartInfo.UseShellExecute = false;
+            psb.StartInfo.CreateNoWindow = true;
+            psb.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/psb.exe");
+            psb.StartInfo.Arguments = "\""+ workpath+"/content/alldata.psb.m\" \"" + romtoinject + "\" \"" + workpath + "/content/alldata.psb.m\"";
 
+            psb.Start();
+
+            psb.WaitForExit();
         }
         private static void NDS(string workpath, string romtoinject)
         {
+            string[] romname;
+            #region unpack rom to get file name
+            Process zip = new Process();
+            zip.StartInfo.UseShellExecute = false;
+            zip.StartInfo.CreateNoWindow = true;
+            zip.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/7za.exe");
+            zip.StartInfo.Arguments = "x \"" + workpath + "\\content\\0010\\rom.zip\"";
+            zip.Start();
+            zip.WaitForExit();
+            File.Delete(workpath + "\\content\\0010\\rom.zip");
+            romname = Directory.GetFiles(workpath + "\\content\\0010", "*.srl");
+
+            #endregion
+            File.Delete(romname[0]);
+            File.Copy(romtoinject, romname[0]);
+            zip.StartInfo.Arguments = "a \"" + workpath + "\\content\\0010\\rom.zip\" \"" + romname[0] + "\"";
+            zip.Start();
+            zip.WaitForExit();
 
         }
-        private static void N64(string workpath, string romtoinject)
+        private static void N64(string workpath, string romtoinject, string ini_path)
         {
+            string[] MainRom = Directory.GetFiles(workpath + "\\content\\rom");
+            string Mainini = null;
+            #region get ini name and path
+            string[] splitmain = MainRom[0].Split('\\','/');
+            string ininame = splitmain[splitmain.Count() - 1] +".ini";
+            Mainini = workpath + "\\content\\config\\" + ininame;
 
+            #endregion
+            string z64out = workpath + "/out.z64";
+            if (romtoinject.Contains(".z64"))
+            {
+                File.Copy(romtoinject, z64out);
+            }
+            else
+            {
+                Process n64conv = new Process();
+                n64conv.StartInfo.UseShellExecute = false;
+                n64conv.StartInfo.CreateNoWindow = true;
+                n64conv.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/N64Converter.exe");
+                n64conv.StartInfo.Arguments = "\"" + romtoinject + "\" \"" + z64out+"\"";
+                n64conv.Start();
+                n64conv.WaitForExit();
+            }
+            File.Delete(MainRom[0]);
+            File.Move(z64out, MainRom[0]);
+            if(ini_path != null)
+            {
+                if(ini_path == "blank")
+                {
+                    File.Delete(Mainini);
+                    File.Copy(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/blank.ini"), Mainini);
+                }
+                else
+                {
+                    File.Delete(Mainini);
+                    File.Copy(ini_path, Mainini);
+                }
+            }
         }
 
         //Compressed or decompresses the RPX using wiiurpxtool
-        private static void RPXedit(bool compress, string rpxpath)
+        private static void RPXdecomp(string rpxpath)
         {
 
            Process rpxtool = new Process();
                 //That the window stays hidden
-                rpxtool.StartInfo.UseShellExecute = false;
+               rpxtool.StartInfo.UseShellExecute = false;
                 rpxtool.StartInfo.CreateNoWindow = true;
 
 
-                rpxtool.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/wiiurpxtool.exe"); ; //
+                rpxtool.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/wiiurpxtool.exe");
                 
-                if (compress)
-                {
-                    rpxtool.StartInfo.Arguments = "-c " + rpxpath;
-                }
-                else
-                {
-                    rpxtool.StartInfo.Arguments = "-d " + rpxpath;
-                }
+               
+                    rpxtool.StartInfo.Arguments = "-d \"" + rpxpath+"\"";
+                
                 rpxtool.Start();
+            rpxtool.WaitForExit();
+        }
+        private static void RPXcomp(string rpxpath)
+        {
+
+            Process rpxtool = new Process();
+            //That the window stays hidden
+           rpxtool.StartInfo.UseShellExecute = false;
+            rpxtool.StartInfo.CreateNoWindow = true;
+
+
+             rpxtool.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/wiiurpxtool.exe");
+
+
+            rpxtool.StartInfo.Arguments = "-c \"" + rpxpath + "\"";
+
+            rpxtool.Start();
             rpxtool.WaitForExit();
         }
         private static void Images(string[] paths, string workpath)
         {
+            
             bool tv = false;
             bool drc = false;
             bool icon = false;
@@ -349,7 +442,7 @@ namespace UWUVCI_AIO
 
                         png2tga.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/png2tga.exe"); // Gotta add the path here, still dont know where i gotta put the tools
 
-                        png2tga.StartInfo.Arguments = paths[0] + paths[0].Replace(".png", ".tga");
+                        png2tga.StartInfo.Arguments = "\"" + paths[0] + "\" \"" + paths[0].Replace(".png", ".tga") + "\"";
 
                         png2tga.Start();
                     png2tga.WaitForExit();
@@ -373,7 +466,7 @@ namespace UWUVCI_AIO
 
                             png2tga.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/png2tga.exe"); // Gotta add the path here, still dont know where i gotta put the tools
 
-                            png2tga.StartInfo.Arguments = paths[1] + paths[1].Replace(".png", ".tga");
+                            png2tga.StartInfo.Arguments = "\""+paths[1]+"\" \"" + paths[1].Replace(".png", ".tga")+"\"";
 
                             png2tga.Start();
                         png2tga.WaitForExit();
@@ -399,7 +492,7 @@ namespace UWUVCI_AIO
 
                             png2tga.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/png2tga.exe"); // Gotta add the path here, still dont know where i gotta put the tools
 
-                            png2tga.StartInfo.Arguments = paths[2] + paths[2].Replace(".png", ".tga");
+                        png2tga.StartInfo.Arguments = "\"" + paths[2] + "\" \"" + paths[2].Replace(".png", ".tga") + "\"";
 
                             png2tga.Start();
                         png2tga.WaitForExit();
@@ -426,7 +519,7 @@ namespace UWUVCI_AIO
 
                             png2tga.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/png2tga.exe"); // Gotta add the path here, still dont know where i gotta put the tools
 
-                            png2tga.StartInfo.Arguments = paths[3] + paths[3].Replace(".png", ".tga");
+                            png2tga.StartInfo.Arguments = "\"" + paths[3] + "\" \"" + paths[3].Replace(".png", ".tga") + "\"";
 
                             png2tga.Start();
                         png2tga.WaitForExit();
@@ -437,7 +530,15 @@ namespace UWUVCI_AIO
             }
             #endregion
             #region Check if files are correct and then copy them into the work dir
-            Directory.CreateDirectory(Properties.Settings.Default.WorkingPath + "/img");
+            if(Directory.Exists(Properties.Settings.Default.WorkingPath + "/img"))
+            {
+                Directory.Delete(Properties.Settings.Default.WorkingPath + "/img", true);
+            }
+            
+            
+                Directory.CreateDirectory(Properties.Settings.Default.WorkingPath + "/img");
+            
+           
             if (tv)
             {
                 File.Copy(paths[0], Properties.Settings.Default.WorkingPath + "/img/bootTvTex.tga");
@@ -465,7 +566,7 @@ namespace UWUVCI_AIO
                     tgaverify.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/tga_verify.exe"); // Gotta add the path here, still dont know where i gotta put the tools
 
 
-                    tgaverify.StartInfo.Arguments = Properties.Settings.Default.WorkingPath + "/img";
+                    tgaverify.StartInfo.Arguments = "\""+ Properties.Settings.Default.WorkingPath + "/img\"";
                     tgaverify.StartInfo.RedirectStandardOutput = true;
 
                     tgaverify.Start();
@@ -531,7 +632,7 @@ namespace UWUVCI_AIO
                         tgaverify2.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/tga_verify.exe");
 
 
-                        tgaverify2.StartInfo.Arguments = "--fixup " + Properties.Settings.Default.WorkingPath + "/img";
+                        tgaverify2.StartInfo.Arguments = "--fixup \"" + Properties.Settings.Default.WorkingPath + "/img\"";
 
 
                         tgaverify2.Start();

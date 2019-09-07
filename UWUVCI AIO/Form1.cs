@@ -165,6 +165,7 @@ namespace UWUVCI_AIO
         private void SNES_BACK_Click(object sender, EventArgs e)
         {
             ResetInput();
+            Injection.clean();
             tabControl1.SelectedIndex = 0;
         }
 
@@ -927,6 +928,11 @@ namespace UWUVCI_AIO
         private void Timer1_Tick(object sender, EventArgs e)
         {
 
+        }
+
+        private void UWUVCI_AIO_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Injection.clean();
         }
     }
 }

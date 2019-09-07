@@ -2104,6 +2104,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UWUVCI_AIO";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UWUVCI_AIO_FormClosing);
             this.Load += new System.EventHandler(this.UWUVCI_AIO_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
