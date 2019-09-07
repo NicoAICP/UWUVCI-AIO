@@ -280,14 +280,14 @@ namespace UWUVCI_AIO
 
             RPXedit(false, RPX[0]); //Decompresses the RPX to be able to write the game into it
 
-            using(Process retroinject = new Process()) //This part uses retroinject to inject the rom into the RPX
-            {
+            Process retroinject = new Process();
                 retroinject.StartInfo.UseShellExecute = false;
                 retroinject.StartInfo.CreateNoWindow = true;
                 retroinject.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/retroinject.exe");
                 retroinject.StartInfo.Arguments = RPX[0] +" "+romtoinject+" "+RPX[0];  
                 retroinject.Start();
-            }
+                retroinject.WaitForExit();
+            
             RPXedit(true, RPX[0]); //Compresses the RPX
         }
         private static void GBA (string workpath, string romtoinject)
@@ -306,9 +306,8 @@ namespace UWUVCI_AIO
         //Compressed or decompresses the RPX using wiiurpxtool
         private static void RPXedit(bool compress, string rpxpath)
         {
-            
-            using (Process rpxtool = new Process())
-            {
+
+           Process rpxtool = new Process();
                 //That the window stays hidden
                 rpxtool.StartInfo.UseShellExecute = false;
                 rpxtool.StartInfo.CreateNoWindow = true;
@@ -325,7 +324,7 @@ namespace UWUVCI_AIO
                     rpxtool.StartInfo.Arguments = "-d " + rpxpath;
                 }
                 rpxtool.Start();
-            }
+            rpxtool.WaitForExit();
         }
         private static void Images(string[] paths, string workpath)
         {
@@ -342,8 +341,7 @@ namespace UWUVCI_AIO
 
                 if (paths[0].EndsWith(".png")) //covnert png to tga
                 {
-                    using (Process png2tga = new Process())
-                    {
+                    Process png2tga = new Process();
                         //That the window stays hidden
                         png2tga.StartInfo.UseShellExecute = false;
                         png2tga.StartInfo.CreateNoWindow = true;
@@ -354,7 +352,7 @@ namespace UWUVCI_AIO
                         png2tga.StartInfo.Arguments = paths[0] + paths[0].Replace(".png", ".tga");
 
                         png2tga.Start();
-                    }
+                    png2tga.WaitForExit();
                     paths[0] = paths[0].Replace(".png", ".tga");
                 }
             }
@@ -366,8 +364,8 @@ namespace UWUVCI_AIO
                 {
                     if (paths[1].EndsWith(".png")) //covnert png to tga
                     {
-                        using (Process png2tga = new Process())
-                        {
+                        Process png2tga = new Process();
+                        
                             //That the window stays hidden
                             png2tga.StartInfo.UseShellExecute = false;
                             png2tga.StartInfo.CreateNoWindow = true;
@@ -378,7 +376,7 @@ namespace UWUVCI_AIO
                             png2tga.StartInfo.Arguments = paths[1] + paths[1].Replace(".png", ".tga");
 
                             png2tga.Start();
-                        }
+                        png2tga.WaitForExit();
                         paths[1] = paths[1].Replace(".png", ".tga");
                     }
                 }
@@ -392,8 +390,8 @@ namespace UWUVCI_AIO
                 {
                     if (paths[2].EndsWith(".png")) //covnert png to tga
                     {
-                        using (Process png2tga = new Process())
-                        {
+                        Process png2tga = new Process();
+                        
                             //That the window stays hidden
                             png2tga.StartInfo.UseShellExecute = false;
                             png2tga.StartInfo.CreateNoWindow = true;
@@ -404,7 +402,7 @@ namespace UWUVCI_AIO
                             png2tga.StartInfo.Arguments = paths[2] + paths[2].Replace(".png", ".tga");
 
                             png2tga.Start();
-                        }
+                        png2tga.WaitForExit();
                         paths[2] = paths[2].Replace(".png", ".tga");
                     }
                 }
@@ -419,8 +417,8 @@ namespace UWUVCI_AIO
                 {
                     if (paths[3].EndsWith(".png")) //covnert png to tga
                     {
-                        using (Process png2tga = new Process())
-                        {
+                        Process png2tga = new Process();
+                        
                             //That the window stays hidden
                             png2tga.StartInfo.UseShellExecute = false;
                             png2tga.StartInfo.CreateNoWindow = true;
@@ -431,7 +429,7 @@ namespace UWUVCI_AIO
                             png2tga.StartInfo.Arguments = paths[3] + paths[3].Replace(".png", ".tga");
 
                             png2tga.Start();
-                        }
+                        png2tga.WaitForExit();
                         paths[3] = paths[3].Replace(".png", ".tga");
                     }
                 }
@@ -457,8 +455,8 @@ namespace UWUVCI_AIO
                 File.Copy(paths[3], Properties.Settings.Default.WorkingPath + "/img/bootLogoTex.tga");
             }
             if (tv||drc||icon||logo) {
-                using (Process tgaverify = new Process())
-                {
+                Process tgaverify = new Process();
+                
                     //That the window stays hidden
                     tgaverify.StartInfo.UseShellExecute = false;
                     tgaverify.StartInfo.CreateNoWindow = true;
@@ -476,7 +474,8 @@ namespace UWUVCI_AIO
                         string line = tgaverify.StandardOutput.ReadLine();
                         Tgaverifyoutput.Add(line);
                     }
-                }
+                    tgaverify.WaitForExit();
+                
                 for (int i = 0; i < Tgaverifyoutput.Count(); i++)
                 {
                     if (tv)
@@ -522,22 +521,22 @@ namespace UWUVCI_AIO
                 }
                 if (fixup)
                 {
-                    using (Process tgaverify = new Process())
-                    {
+                    Process tgaverify2 = new Process();
+                    
                         //That the window stays hidden
-                        tgaverify.StartInfo.UseShellExecute = false;
-                        tgaverify.StartInfo.CreateNoWindow = true;
+                        tgaverify2.StartInfo.UseShellExecute = false;
+                        tgaverify2.StartInfo.CreateNoWindow = true;
 
 
-                        tgaverify.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/tga_verify.exe");
+                        tgaverify2.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/tga_verify.exe");
 
 
-                        tgaverify.StartInfo.Arguments = "--fixup " + Properties.Settings.Default.WorkingPath + "/img";
+                        tgaverify2.StartInfo.Arguments = "--fixup " + Properties.Settings.Default.WorkingPath + "/img";
 
 
-                        tgaverify.Start();
-
-                    }
+                        tgaverify2.Start();
+                    tgaverify2.WaitForExit();
+                    
                 }
                 if (tv)
                 {
