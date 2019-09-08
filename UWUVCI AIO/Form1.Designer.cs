@@ -180,8 +180,6 @@
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.GBA_CUSTOM = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.GBA_INST = new System.Windows.Forms.Button();
             this.GBA_LOADIINE = new System.Windows.Forms.Button();
@@ -209,8 +207,6 @@
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.NES_CSTM = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.NES_INST = new System.Windows.Forms.Button();
             this.NES_LOADIINE = new System.Windows.Forms.Button();
@@ -238,15 +234,39 @@
             this.textBox31 = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.SMJP_PANEL = new System.Windows.Forms.Panel();
-            this.SMJP_DWNLD = new System.Windows.Forms.Button();
-            this.SMJPTK = new System.Windows.Forms.Label();
-            this.SMJPTKIMG = new System.Windows.Forms.PictureBox();
-            this.SMJPCKEY = new System.Windows.Forms.Label();
-            this.SMJPCKEYIMG = new System.Windows.Forms.PictureBox();
-            this.SMJPBASE = new System.Windows.Forms.Label();
-            this.SMJPBASEIMG = new System.Windows.Forms.PictureBox();
+            this.EBJP_PANEL = new System.Windows.Forms.Panel();
+            this.DKCEU_PANEL = new System.Windows.Forms.Panel();
+            this.DKCEU_DWNLD = new System.Windows.Forms.Button();
+            this.DKCEU_TK = new System.Windows.Forms.Label();
+            this.DKCEU_TKIMG = new System.Windows.Forms.PictureBox();
+            this.DKCEU_CK = new System.Windows.Forms.Label();
+            this.DKCEU_CKIMG = new System.Windows.Forms.PictureBox();
+            this.DKCEU_BASE = new System.Windows.Forms.Label();
+            this.DKCEU_BASEIMG = new System.Windows.Forms.PictureBox();
+            this.EBJP_DWNLD = new System.Windows.Forms.Button();
+            this.EBJP_TK = new System.Windows.Forms.Label();
+            this.EBJP_TKIMG = new System.Windows.Forms.PictureBox();
+            this.EBJP_CK = new System.Windows.Forms.Label();
+            this.EBJP_CKIMG = new System.Windows.Forms.PictureBox();
+            this.EBJP_BASE = new System.Windows.Forms.Label();
+            this.EBJP_BASEIMG = new System.Windows.Forms.PictureBox();
+            this.EBUS_PANEL = new System.Windows.Forms.Panel();
+            this.EBUS_DWNLD = new System.Windows.Forms.Button();
+            this.EBUS_TK = new System.Windows.Forms.Label();
+            this.EBUS_TKIMG = new System.Windows.Forms.PictureBox();
+            this.EBUS_CK = new System.Windows.Forms.Label();
+            this.EBUS_CKIMG = new System.Windows.Forms.PictureBox();
+            this.EBUS_BASE = new System.Windows.Forms.Label();
+            this.EBUS_BASEIMG = new System.Windows.Forms.PictureBox();
             this.SMUS_PANEL = new System.Windows.Forms.Panel();
+            this.EBEU_PANEL = new System.Windows.Forms.Panel();
+            this.EBEU_DWNLD = new System.Windows.Forms.Button();
+            this.EBEU_TK = new System.Windows.Forms.Label();
+            this.EBEU_TKIMG = new System.Windows.Forms.PictureBox();
+            this.EBEU_CK = new System.Windows.Forms.Label();
+            this.EBEU_CKIMG = new System.Windows.Forms.PictureBox();
+            this.EBEU_BASE = new System.Windows.Forms.Label();
+            this.EBEU_BASEIMG = new System.Windows.Forms.PictureBox();
             this.SMUS_DWNLD = new System.Windows.Forms.Button();
             this.SMUSTKEY = new System.Windows.Forms.Label();
             this.SMUSTKEYIMG = new System.Windows.Forms.PictureBox();
@@ -262,6 +282,14 @@
             this.SMEUCK = new System.Windows.Forms.PictureBox();
             this.SMETROIDEUFOLDER = new System.Windows.Forms.Label();
             this.SMEUBASE = new System.Windows.Forms.PictureBox();
+            this.SMJP_PANEL = new System.Windows.Forms.Panel();
+            this.SMJP_DWNLD = new System.Windows.Forms.Button();
+            this.SMJPTK = new System.Windows.Forms.Label();
+            this.SMJPTKIMG = new System.Windows.Forms.PictureBox();
+            this.SMJPCKEY = new System.Windows.Forms.Label();
+            this.SMJPCKEYIMG = new System.Windows.Forms.PictureBox();
+            this.SMJPBASE = new System.Windows.Forms.Label();
+            this.SMJPBASEIMG = new System.Windows.Forms.PictureBox();
             this.SNESCUSTOM = new System.Windows.Forms.Panel();
             this.SNESCONTENTTXT = new System.Windows.Forms.Label();
             this.SNESCONTENTIMG = new System.Windows.Forms.PictureBox();
@@ -285,7 +313,19 @@
             this.SMETROIDUS = new System.Windows.Forms.Timer(this.components);
             this.SMETROIDJP = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.EBEU = new System.Windows.Forms.Timer(this.components);
+            this.EBUS = new System.Windows.Forms.Timer(this.components);
+            this.EBJP = new System.Windows.Forms.Timer(this.components);
+            this.DKCEU = new System.Windows.Forms.Timer(this.components);
+            this.DKCUS_PANEL = new System.Windows.Forms.Panel();
+            this.DKCUS_DWNLD = new System.Windows.Forms.Button();
+            this.DKCUS_TK = new System.Windows.Forms.Label();
+            this.DKCUS_TKIMG = new System.Windows.Forms.PictureBox();
+            this.DKCUS_CK = new System.Windows.Forms.Label();
+            this.DKCUS_CKIMG = new System.Windows.Forms.PictureBox();
+            this.DKCUS_BASE = new System.Windows.Forms.Label();
+            this.DKCUS_BASEIMG = new System.Windows.Forms.PictureBox();
+            this.DKCUS = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -311,20 +351,30 @@
             this.PackingN64.SuspendLayout();
             this.GBA.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.NES.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.SNES.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
-            this.SMJP_PANEL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SMJPTKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SMJPCKEYIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SMJPBASEIMG)).BeginInit();
+            this.EBJP_PANEL.SuspendLayout();
+            this.DKCEU_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_TKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_CKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_BASEIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBJP_TKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBJP_CKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBJP_BASEIMG)).BeginInit();
+            this.EBUS_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EBUS_TKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBUS_CKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBUS_BASEIMG)).BeginInit();
             this.SMUS_PANEL.SuspendLayout();
+            this.EBEU_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EBEU_TKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBEU_CKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBEU_BASEIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SMUSTKEYIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SMUSCKEYIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SMUSBASEIMG)).BeginInit();
@@ -332,11 +382,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.SMEUTK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SMEUCK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SMEUBASE)).BeginInit();
+            this.SMJP_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SMJPTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMJPCKEYIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMJPBASEIMG)).BeginInit();
             this.SNESCUSTOM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SNESCONTENTIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SNESMETAIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SNESCODEIMG)).BeginInit();
             this.groupBox12.SuspendLayout();
+            this.DKCUS_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_TKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_CKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_BASEIMG)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -713,10 +771,11 @@
             // NDS_BTN15
             // 
             this.NDS_BTN15.AutoEllipsis = true;
-            this.NDS_BTN15.Cursor = System.Windows.Forms.Cursors.No;
+            this.NDS_BTN15.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.NDS_BTN15, "NDS_BTN15");
             this.NDS_BTN15.Name = "NDS_BTN15";
             this.NDS_BTN15.UseVisualStyleBackColor = true;
+            this.NDS_BTN15.Click += new System.EventHandler(this.NDS_BTN15_Click);
             // 
             // label19
             // 
@@ -738,24 +797,28 @@
             resources.ApplyResources(this.NDS_BTN14, "NDS_BTN14");
             this.NDS_BTN14.Name = "NDS_BTN14";
             this.NDS_BTN14.UseVisualStyleBackColor = true;
+            this.NDS_BTN14.Click += new System.EventHandler(this.NDS_BTN14_Click);
             // 
             // NDS_BTN13
             // 
             resources.ApplyResources(this.NDS_BTN13, "NDS_BTN13");
             this.NDS_BTN13.Name = "NDS_BTN13";
             this.NDS_BTN13.UseVisualStyleBackColor = true;
+            this.NDS_BTN13.Click += new System.EventHandler(this.NDS_BTN13_Click);
             // 
             // NDS_BTN12
             // 
             resources.ApplyResources(this.NDS_BTN12, "NDS_BTN12");
             this.NDS_BTN12.Name = "NDS_BTN12";
             this.NDS_BTN12.UseVisualStyleBackColor = true;
+            this.NDS_BTN12.Click += new System.EventHandler(this.NDS_BTN12_Click);
             // 
             // NDS_BTN11
             // 
             resources.ApplyResources(this.NDS_BTN11, "NDS_BTN11");
             this.NDS_BTN11.Name = "NDS_BTN11";
             this.NDS_BTN11.UseVisualStyleBackColor = true;
+            this.NDS_BTN11.Click += new System.EventHandler(this.NDS_BTN11_Click);
             // 
             // label21
             // 
@@ -808,6 +871,7 @@
             resources.ApplyResources(this.NDS_BTN10, "NDS_BTN10");
             this.NDS_BTN10.Name = "NDS_BTN10";
             this.NDS_BTN10.UseVisualStyleBackColor = true;
+            this.NDS_BTN10.Click += new System.EventHandler(this.NDS_BTN10_Click);
             // 
             // textBox14
             // 
@@ -905,17 +969,19 @@
             // 
             // NDS_BTN17
             // 
-            this.NDS_BTN17.Cursor = System.Windows.Forms.Cursors.No;
+            this.NDS_BTN17.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.NDS_BTN17, "NDS_BTN17");
             this.NDS_BTN17.Name = "NDS_BTN17";
             this.NDS_BTN17.UseVisualStyleBackColor = true;
+            this.NDS_BTN17.Click += new System.EventHandler(this.NDS_BTN17_Click);
             // 
             // NDS_BTN16
             // 
-            this.NDS_BTN16.Cursor = System.Windows.Forms.Cursors.No;
+            this.NDS_BTN16.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.NDS_BTN16, "NDS_BTN16");
             this.NDS_BTN16.Name = "NDS_BTN16";
             this.NDS_BTN16.UseVisualStyleBackColor = true;
+            this.NDS_BTN16.Click += new System.EventHandler(this.NDS_BTN16_Click);
             // 
             // N64
             // 
@@ -971,10 +1037,11 @@
             // N64_BTN15
             // 
             this.N64_BTN15.AutoEllipsis = true;
-            this.N64_BTN15.Cursor = System.Windows.Forms.Cursors.No;
+            this.N64_BTN15.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.N64_BTN15, "N64_BTN15");
             this.N64_BTN15.Name = "N64_BTN15";
             this.N64_BTN15.UseVisualStyleBackColor = true;
+            this.N64_BTN15.Click += new System.EventHandler(this.N64_BTN15_Click);
             // 
             // label17
             // 
@@ -996,24 +1063,28 @@
             resources.ApplyResources(this.N64_BTN14, "N64_BTN14");
             this.N64_BTN14.Name = "N64_BTN14";
             this.N64_BTN14.UseVisualStyleBackColor = true;
+            this.N64_BTN14.Click += new System.EventHandler(this.N64_BTN14_Click);
             // 
             // N64_BTN13
             // 
             resources.ApplyResources(this.N64_BTN13, "N64_BTN13");
             this.N64_BTN13.Name = "N64_BTN13";
             this.N64_BTN13.UseVisualStyleBackColor = true;
+            this.N64_BTN13.Click += new System.EventHandler(this.N64_BTN13_Click);
             // 
             // N64_BTN12
             // 
             resources.ApplyResources(this.N64_BTN12, "N64_BTN12");
             this.N64_BTN12.Name = "N64_BTN12";
             this.N64_BTN12.UseVisualStyleBackColor = true;
+            this.N64_BTN12.Click += new System.EventHandler(this.N64_BTN12_Click);
             // 
             // N64_BTN11
             // 
             resources.ApplyResources(this.N64_BTN11, "N64_BTN11");
             this.N64_BTN11.Name = "N64_BTN11";
             this.N64_BTN11.UseVisualStyleBackColor = true;
+            this.N64_BTN11.Click += new System.EventHandler(this.N64_BTN11_Click);
             // 
             // label15
             // 
@@ -1066,6 +1137,7 @@
             resources.ApplyResources(this.N64_BTN10, "N64_BTN10");
             this.N64_BTN10.Name = "N64_BTN10";
             this.N64_BTN10.UseVisualStyleBackColor = true;
+            this.N64_BTN10.Click += new System.EventHandler(this.N64_BTN10_Click);
             // 
             // label10
             // 
@@ -1077,6 +1149,7 @@
             resources.ApplyResources(this.N64_BTN9, "N64_BTN9");
             this.N64_BTN9.Name = "N64_BTN9";
             this.N64_BTN9.UseVisualStyleBackColor = true;
+            this.N64_BTN9.Click += new System.EventHandler(this.N64_BTN9_Click);
             // 
             // textBox2
             // 
@@ -1198,17 +1271,19 @@
             // 
             // N64_BTN17
             // 
-            this.N64_BTN17.Cursor = System.Windows.Forms.Cursors.No;
+            this.N64_BTN17.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.N64_BTN17, "N64_BTN17");
             this.N64_BTN17.Name = "N64_BTN17";
             this.N64_BTN17.UseVisualStyleBackColor = true;
+            this.N64_BTN17.Click += new System.EventHandler(this.N64_BTN17_Click);
             // 
             // N64_BTN16
             // 
-            this.N64_BTN16.Cursor = System.Windows.Forms.Cursors.No;
+            this.N64_BTN16.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.N64_BTN16, "N64_BTN16");
             this.N64_BTN16.Name = "N64_BTN16";
             this.N64_BTN16.UseVisualStyleBackColor = true;
+            this.N64_BTN16.Click += new System.EventHandler(this.N64_BTN16_Click);
             // 
             // GBA
             // 
@@ -1256,10 +1331,11 @@
             // GBA_INJECT
             // 
             this.GBA_INJECT.AutoEllipsis = true;
-            this.GBA_INJECT.Cursor = System.Windows.Forms.Cursors.No;
+            this.GBA_INJECT.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.GBA_INJECT, "GBA_INJECT");
             this.GBA_INJECT.Name = "GBA_INJECT";
             this.GBA_INJECT.UseVisualStyleBackColor = true;
+            this.GBA_INJECT.Click += new System.EventHandler(this.GBA_INJECT_Click);
             // 
             // label26
             // 
@@ -1281,24 +1357,28 @@
             resources.ApplyResources(this.GBA_LOGO, "GBA_LOGO");
             this.GBA_LOGO.Name = "GBA_LOGO";
             this.GBA_LOGO.UseVisualStyleBackColor = true;
+            this.GBA_LOGO.Click += new System.EventHandler(this.GBA_LOGO_Click);
             // 
             // GBA_ICON
             // 
             resources.ApplyResources(this.GBA_ICON, "GBA_ICON");
             this.GBA_ICON.Name = "GBA_ICON";
             this.GBA_ICON.UseVisualStyleBackColor = true;
+            this.GBA_ICON.Click += new System.EventHandler(this.GBA_ICON_Click);
             // 
             // GBA_DRC
             // 
             resources.ApplyResources(this.GBA_DRC, "GBA_DRC");
             this.GBA_DRC.Name = "GBA_DRC";
             this.GBA_DRC.UseVisualStyleBackColor = true;
+            this.GBA_DRC.Click += new System.EventHandler(this.GBA_DRC_Click);
             // 
             // GBA_TV
             // 
             resources.ApplyResources(this.GBA_TV, "GBA_TV");
             this.GBA_TV.Name = "GBA_TV";
             this.GBA_TV.UseVisualStyleBackColor = true;
+            this.GBA_TV.Click += new System.EventHandler(this.GBA_TV_Click);
             // 
             // label28
             // 
@@ -1351,6 +1431,7 @@
             resources.ApplyResources(this.GBA_ROM, "GBA_ROM");
             this.GBA_ROM.Name = "GBA_ROM";
             this.GBA_ROM.UseVisualStyleBackColor = true;
+            this.GBA_ROM.Click += new System.EventHandler(this.GBA_ROM_Click);
             // 
             // textBox19
             // 
@@ -1365,22 +1446,9 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.label36);
-            this.groupBox5.Controls.Add(this.GBA_CUSTOM);
             resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
-            // 
-            // label36
-            // 
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.Name = "label36";
-            // 
-            // GBA_CUSTOM
-            // 
-            resources.ApplyResources(this.GBA_CUSTOM, "GBA_CUSTOM");
-            this.GBA_CUSTOM.Name = "GBA_CUSTOM";
-            this.GBA_CUSTOM.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
@@ -1392,17 +1460,19 @@
             // 
             // GBA_INST
             // 
-            this.GBA_INST.Cursor = System.Windows.Forms.Cursors.No;
+            this.GBA_INST.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.GBA_INST, "GBA_INST");
             this.GBA_INST.Name = "GBA_INST";
             this.GBA_INST.UseVisualStyleBackColor = true;
+            this.GBA_INST.Click += new System.EventHandler(this.GBA_INST_Click);
             // 
             // GBA_LOADIINE
             // 
-            this.GBA_LOADIINE.Cursor = System.Windows.Forms.Cursors.No;
+            this.GBA_LOADIINE.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.GBA_LOADIINE, "GBA_LOADIINE");
             this.GBA_LOADIINE.Name = "GBA_LOADIINE";
             this.GBA_LOADIINE.UseVisualStyleBackColor = true;
+            this.GBA_LOADIINE.Click += new System.EventHandler(this.GBA_LOADIINE_Click);
             // 
             // NES
             // 
@@ -1450,10 +1520,11 @@
             // NES_INJCT
             // 
             this.NES_INJCT.AutoEllipsis = true;
-            this.NES_INJCT.Cursor = System.Windows.Forms.Cursors.No;
+            this.NES_INJCT.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.NES_INJCT, "NES_INJCT");
             this.NES_INJCT.Name = "NES_INJCT";
             this.NES_INJCT.UseVisualStyleBackColor = true;
+            this.NES_INJCT.Click += new System.EventHandler(this.NES_INJCT_Click);
             // 
             // label37
             // 
@@ -1475,24 +1546,28 @@
             resources.ApplyResources(this.NES_LOGO, "NES_LOGO");
             this.NES_LOGO.Name = "NES_LOGO";
             this.NES_LOGO.UseVisualStyleBackColor = true;
+            this.NES_LOGO.Click += new System.EventHandler(this.NES_LOGO_Click);
             // 
             // NES_ICON
             // 
             resources.ApplyResources(this.NES_ICON, "NES_ICON");
             this.NES_ICON.Name = "NES_ICON";
             this.NES_ICON.UseVisualStyleBackColor = true;
+            this.NES_ICON.Click += new System.EventHandler(this.NES_ICON_Click);
             // 
             // NES_DRC
             // 
             resources.ApplyResources(this.NES_DRC, "NES_DRC");
             this.NES_DRC.Name = "NES_DRC";
             this.NES_DRC.UseVisualStyleBackColor = true;
+            this.NES_DRC.Click += new System.EventHandler(this.NES_DRC_Click);
             // 
             // NES_TV
             // 
             resources.ApplyResources(this.NES_TV, "NES_TV");
             this.NES_TV.Name = "NES_TV";
             this.NES_TV.UseVisualStyleBackColor = true;
+            this.NES_TV.Click += new System.EventHandler(this.NES_TV_Click);
             // 
             // label39
             // 
@@ -1545,6 +1620,7 @@
             resources.ApplyResources(this.NES_ROM, "NES_ROM");
             this.NES_ROM.Name = "NES_ROM";
             this.NES_ROM.UseVisualStyleBackColor = true;
+            this.NES_ROM.Click += new System.EventHandler(this.NES_ROM_Click);
             // 
             // textBox25
             // 
@@ -1559,22 +1635,9 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.label45);
-            this.groupBox8.Controls.Add(this.NES_CSTM);
             resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.TabStop = false;
-            // 
-            // label45
-            // 
-            resources.ApplyResources(this.label45, "label45");
-            this.label45.Name = "label45";
-            // 
-            // NES_CSTM
-            // 
-            resources.ApplyResources(this.NES_CSTM, "NES_CSTM");
-            this.NES_CSTM.Name = "NES_CSTM";
-            this.NES_CSTM.UseVisualStyleBackColor = true;
             // 
             // groupBox9
             // 
@@ -1586,21 +1649,26 @@
             // 
             // NES_INST
             // 
-            this.NES_INST.Cursor = System.Windows.Forms.Cursors.No;
+            this.NES_INST.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.NES_INST, "NES_INST");
             this.NES_INST.Name = "NES_INST";
             this.NES_INST.UseVisualStyleBackColor = true;
+            this.NES_INST.Click += new System.EventHandler(this.NES_INST_Click);
             // 
             // NES_LOADIINE
             // 
-            this.NES_LOADIINE.Cursor = System.Windows.Forms.Cursors.No;
+            this.NES_LOADIINE.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.NES_LOADIINE, "NES_LOADIINE");
             this.NES_LOADIINE.Name = "NES_LOADIINE";
             this.NES_LOADIINE.UseVisualStyleBackColor = true;
+            this.NES_LOADIINE.Click += new System.EventHandler(this.NES_LOADIINE_Click);
             // 
             // SNES
             // 
             this.SNES.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SNES.Controls.Add(this.EBEU_PANEL);
+            this.SNES.Controls.Add(this.EBUS_PANEL);
+            this.SNES.Controls.Add(this.DKCEU_PANEL);
             this.SNES.Controls.Add(this.SNES_BACK);
             this.SNES.Controls.Add(this.groupBox10);
             this.SNES.Controls.Add(this.groupBox11);
@@ -1644,7 +1712,7 @@
             // SNES_INJCT
             // 
             this.SNES_INJCT.AutoEllipsis = true;
-            this.SNES_INJCT.Cursor = System.Windows.Forms.Cursors.No;
+            this.SNES_INJCT.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.SNES_INJCT, "SNES_INJCT");
             this.SNES_INJCT.Name = "SNES_INJCT";
             this.SNES_INJCT.UseVisualStyleBackColor = true;
@@ -1760,6 +1828,8 @@
             // groupBox11
             // 
             this.groupBox11.Controls.Add(this.SMetroidEUPanel);
+            this.groupBox11.Controls.Add(this.EBJP_PANEL);
+            this.groupBox11.Controls.Add(this.DKCUS_PANEL);
             this.groupBox11.Controls.Add(this.SMUS_PANEL);
             this.groupBox11.Controls.Add(this.SMJP_PANEL);
             this.groupBox11.Controls.Add(this.SNESCUSTOM);
@@ -1769,62 +1839,170 @@
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.TabStop = false;
             // 
-            // SMJP_PANEL
+            // EBJP_PANEL
             // 
-            this.SMJP_PANEL.Controls.Add(this.SMJP_DWNLD);
-            this.SMJP_PANEL.Controls.Add(this.SMJPTK);
-            this.SMJP_PANEL.Controls.Add(this.SMJPTKIMG);
-            this.SMJP_PANEL.Controls.Add(this.SMJPCKEY);
-            this.SMJP_PANEL.Controls.Add(this.SMJPCKEYIMG);
-            this.SMJP_PANEL.Controls.Add(this.SMJPBASE);
-            this.SMJP_PANEL.Controls.Add(this.SMJPBASEIMG);
-            resources.ApplyResources(this.SMJP_PANEL, "SMJP_PANEL");
-            this.SMJP_PANEL.Name = "SMJP_PANEL";
+            this.EBJP_PANEL.Controls.Add(this.EBJP_DWNLD);
+            this.EBJP_PANEL.Controls.Add(this.EBJP_TK);
+            this.EBJP_PANEL.Controls.Add(this.EBJP_TKIMG);
+            this.EBJP_PANEL.Controls.Add(this.EBJP_CK);
+            this.EBJP_PANEL.Controls.Add(this.EBJP_CKIMG);
+            this.EBJP_PANEL.Controls.Add(this.EBJP_BASE);
+            this.EBJP_PANEL.Controls.Add(this.EBJP_BASEIMG);
+            resources.ApplyResources(this.EBJP_PANEL, "EBJP_PANEL");
+            this.EBJP_PANEL.Name = "EBJP_PANEL";
             // 
-            // SMJP_DWNLD
+            // DKCEU_PANEL
             // 
-            this.SMJP_DWNLD.Cursor = System.Windows.Forms.Cursors.Help;
-            resources.ApplyResources(this.SMJP_DWNLD, "SMJP_DWNLD");
-            this.SMJP_DWNLD.Name = "SMJP_DWNLD";
-            this.toolTip1.SetToolTip(this.SMJP_DWNLD, resources.GetString("SMJP_DWNLD.ToolTip"));
-            this.SMJP_DWNLD.UseVisualStyleBackColor = true;
-            this.SMJP_DWNLD.Click += new System.EventHandler(this.SMJP_DWNLD_Click);
+            this.DKCEU_PANEL.Controls.Add(this.DKCEU_DWNLD);
+            this.DKCEU_PANEL.Controls.Add(this.DKCEU_TK);
+            this.DKCEU_PANEL.Controls.Add(this.DKCEU_TKIMG);
+            this.DKCEU_PANEL.Controls.Add(this.DKCEU_CK);
+            this.DKCEU_PANEL.Controls.Add(this.DKCEU_CKIMG);
+            this.DKCEU_PANEL.Controls.Add(this.DKCEU_BASE);
+            this.DKCEU_PANEL.Controls.Add(this.DKCEU_BASEIMG);
+            resources.ApplyResources(this.DKCEU_PANEL, "DKCEU_PANEL");
+            this.DKCEU_PANEL.Name = "DKCEU_PANEL";
             // 
-            // SMJPTK
+            // DKCEU_DWNLD
             // 
-            resources.ApplyResources(this.SMJPTK, "SMJPTK");
-            this.SMJPTK.ForeColor = System.Drawing.Color.Red;
-            this.SMJPTK.Name = "SMJPTK";
+            resources.ApplyResources(this.DKCEU_DWNLD, "DKCEU_DWNLD");
+            this.DKCEU_DWNLD.Name = "DKCEU_DWNLD";
+            this.DKCEU_DWNLD.UseVisualStyleBackColor = true;
+            this.DKCEU_DWNLD.Click += new System.EventHandler(this.DKCEU_DWNLD_Click);
             // 
-            // SMJPTKIMG
+            // DKCEU_TK
             // 
-            resources.ApplyResources(this.SMJPTKIMG, "SMJPTKIMG");
-            this.SMJPTKIMG.Name = "SMJPTKIMG";
-            this.SMJPTKIMG.TabStop = false;
+            resources.ApplyResources(this.DKCEU_TK, "DKCEU_TK");
+            this.DKCEU_TK.ForeColor = System.Drawing.Color.Red;
+            this.DKCEU_TK.Name = "DKCEU_TK";
             // 
-            // SMJPCKEY
+            // DKCEU_TKIMG
             // 
-            resources.ApplyResources(this.SMJPCKEY, "SMJPCKEY");
-            this.SMJPCKEY.ForeColor = System.Drawing.Color.Red;
-            this.SMJPCKEY.Name = "SMJPCKEY";
+            resources.ApplyResources(this.DKCEU_TKIMG, "DKCEU_TKIMG");
+            this.DKCEU_TKIMG.Name = "DKCEU_TKIMG";
+            this.DKCEU_TKIMG.TabStop = false;
             // 
-            // SMJPCKEYIMG
+            // DKCEU_CK
             // 
-            resources.ApplyResources(this.SMJPCKEYIMG, "SMJPCKEYIMG");
-            this.SMJPCKEYIMG.Name = "SMJPCKEYIMG";
-            this.SMJPCKEYIMG.TabStop = false;
+            resources.ApplyResources(this.DKCEU_CK, "DKCEU_CK");
+            this.DKCEU_CK.ForeColor = System.Drawing.Color.Red;
+            this.DKCEU_CK.Name = "DKCEU_CK";
             // 
-            // SMJPBASE
+            // DKCEU_CKIMG
             // 
-            resources.ApplyResources(this.SMJPBASE, "SMJPBASE");
-            this.SMJPBASE.ForeColor = System.Drawing.Color.Red;
-            this.SMJPBASE.Name = "SMJPBASE";
+            resources.ApplyResources(this.DKCEU_CKIMG, "DKCEU_CKIMG");
+            this.DKCEU_CKIMG.Name = "DKCEU_CKIMG";
+            this.DKCEU_CKIMG.TabStop = false;
             // 
-            // SMJPBASEIMG
+            // DKCEU_BASE
             // 
-            resources.ApplyResources(this.SMJPBASEIMG, "SMJPBASEIMG");
-            this.SMJPBASEIMG.Name = "SMJPBASEIMG";
-            this.SMJPBASEIMG.TabStop = false;
+            resources.ApplyResources(this.DKCEU_BASE, "DKCEU_BASE");
+            this.DKCEU_BASE.ForeColor = System.Drawing.Color.Red;
+            this.DKCEU_BASE.Name = "DKCEU_BASE";
+            // 
+            // DKCEU_BASEIMG
+            // 
+            resources.ApplyResources(this.DKCEU_BASEIMG, "DKCEU_BASEIMG");
+            this.DKCEU_BASEIMG.Name = "DKCEU_BASEIMG";
+            this.DKCEU_BASEIMG.TabStop = false;
+            // 
+            // EBJP_DWNLD
+            // 
+            resources.ApplyResources(this.EBJP_DWNLD, "EBJP_DWNLD");
+            this.EBJP_DWNLD.Name = "EBJP_DWNLD";
+            this.EBJP_DWNLD.UseVisualStyleBackColor = true;
+            this.EBJP_DWNLD.Click += new System.EventHandler(this.EBJP_DWNLD_Click);
+            // 
+            // EBJP_TK
+            // 
+            resources.ApplyResources(this.EBJP_TK, "EBJP_TK");
+            this.EBJP_TK.ForeColor = System.Drawing.Color.Red;
+            this.EBJP_TK.Name = "EBJP_TK";
+            // 
+            // EBJP_TKIMG
+            // 
+            resources.ApplyResources(this.EBJP_TKIMG, "EBJP_TKIMG");
+            this.EBJP_TKIMG.Name = "EBJP_TKIMG";
+            this.EBJP_TKIMG.TabStop = false;
+            // 
+            // EBJP_CK
+            // 
+            resources.ApplyResources(this.EBJP_CK, "EBJP_CK");
+            this.EBJP_CK.ForeColor = System.Drawing.Color.Red;
+            this.EBJP_CK.Name = "EBJP_CK";
+            // 
+            // EBJP_CKIMG
+            // 
+            resources.ApplyResources(this.EBJP_CKIMG, "EBJP_CKIMG");
+            this.EBJP_CKIMG.Name = "EBJP_CKIMG";
+            this.EBJP_CKIMG.TabStop = false;
+            // 
+            // EBJP_BASE
+            // 
+            resources.ApplyResources(this.EBJP_BASE, "EBJP_BASE");
+            this.EBJP_BASE.ForeColor = System.Drawing.Color.Red;
+            this.EBJP_BASE.Name = "EBJP_BASE";
+            // 
+            // EBJP_BASEIMG
+            // 
+            resources.ApplyResources(this.EBJP_BASEIMG, "EBJP_BASEIMG");
+            this.EBJP_BASEIMG.Name = "EBJP_BASEIMG";
+            this.EBJP_BASEIMG.TabStop = false;
+            // 
+            // EBUS_PANEL
+            // 
+            this.EBUS_PANEL.Controls.Add(this.EBUS_DWNLD);
+            this.EBUS_PANEL.Controls.Add(this.EBUS_TK);
+            this.EBUS_PANEL.Controls.Add(this.EBUS_TKIMG);
+            this.EBUS_PANEL.Controls.Add(this.EBUS_CK);
+            this.EBUS_PANEL.Controls.Add(this.EBUS_CKIMG);
+            this.EBUS_PANEL.Controls.Add(this.EBUS_BASE);
+            this.EBUS_PANEL.Controls.Add(this.EBUS_BASEIMG);
+            resources.ApplyResources(this.EBUS_PANEL, "EBUS_PANEL");
+            this.EBUS_PANEL.Name = "EBUS_PANEL";
+            // 
+            // EBUS_DWNLD
+            // 
+            resources.ApplyResources(this.EBUS_DWNLD, "EBUS_DWNLD");
+            this.EBUS_DWNLD.Name = "EBUS_DWNLD";
+            this.EBUS_DWNLD.UseVisualStyleBackColor = true;
+            this.EBUS_DWNLD.Click += new System.EventHandler(this.EBUS_DWNLD_Click);
+            // 
+            // EBUS_TK
+            // 
+            resources.ApplyResources(this.EBUS_TK, "EBUS_TK");
+            this.EBUS_TK.ForeColor = System.Drawing.Color.Red;
+            this.EBUS_TK.Name = "EBUS_TK";
+            // 
+            // EBUS_TKIMG
+            // 
+            resources.ApplyResources(this.EBUS_TKIMG, "EBUS_TKIMG");
+            this.EBUS_TKIMG.Name = "EBUS_TKIMG";
+            this.EBUS_TKIMG.TabStop = false;
+            // 
+            // EBUS_CK
+            // 
+            resources.ApplyResources(this.EBUS_CK, "EBUS_CK");
+            this.EBUS_CK.ForeColor = System.Drawing.Color.Red;
+            this.EBUS_CK.Name = "EBUS_CK";
+            // 
+            // EBUS_CKIMG
+            // 
+            resources.ApplyResources(this.EBUS_CKIMG, "EBUS_CKIMG");
+            this.EBUS_CKIMG.Name = "EBUS_CKIMG";
+            this.EBUS_CKIMG.TabStop = false;
+            // 
+            // EBUS_BASE
+            // 
+            resources.ApplyResources(this.EBUS_BASE, "EBUS_BASE");
+            this.EBUS_BASE.ForeColor = System.Drawing.Color.Red;
+            this.EBUS_BASE.Name = "EBUS_BASE";
+            // 
+            // EBUS_BASEIMG
+            // 
+            resources.ApplyResources(this.EBUS_BASEIMG, "EBUS_BASEIMG");
+            this.EBUS_BASEIMG.Name = "EBUS_BASEIMG";
+            this.EBUS_BASEIMG.TabStop = false;
             // 
             // SMUS_PANEL
             // 
@@ -1837,6 +2015,61 @@
             this.SMUS_PANEL.Controls.Add(this.SMUSBASEIMG);
             resources.ApplyResources(this.SMUS_PANEL, "SMUS_PANEL");
             this.SMUS_PANEL.Name = "SMUS_PANEL";
+            // 
+            // EBEU_PANEL
+            // 
+            this.EBEU_PANEL.Controls.Add(this.EBEU_DWNLD);
+            this.EBEU_PANEL.Controls.Add(this.EBEU_TK);
+            this.EBEU_PANEL.Controls.Add(this.EBEU_TKIMG);
+            this.EBEU_PANEL.Controls.Add(this.EBEU_CK);
+            this.EBEU_PANEL.Controls.Add(this.EBEU_CKIMG);
+            this.EBEU_PANEL.Controls.Add(this.EBEU_BASE);
+            this.EBEU_PANEL.Controls.Add(this.EBEU_BASEIMG);
+            resources.ApplyResources(this.EBEU_PANEL, "EBEU_PANEL");
+            this.EBEU_PANEL.Name = "EBEU_PANEL";
+            // 
+            // EBEU_DWNLD
+            // 
+            resources.ApplyResources(this.EBEU_DWNLD, "EBEU_DWNLD");
+            this.EBEU_DWNLD.Name = "EBEU_DWNLD";
+            this.EBEU_DWNLD.UseVisualStyleBackColor = true;
+            this.EBEU_DWNLD.Click += new System.EventHandler(this.EBEU_DWNLD_Click);
+            // 
+            // EBEU_TK
+            // 
+            resources.ApplyResources(this.EBEU_TK, "EBEU_TK");
+            this.EBEU_TK.ForeColor = System.Drawing.Color.Red;
+            this.EBEU_TK.Name = "EBEU_TK";
+            // 
+            // EBEU_TKIMG
+            // 
+            resources.ApplyResources(this.EBEU_TKIMG, "EBEU_TKIMG");
+            this.EBEU_TKIMG.Name = "EBEU_TKIMG";
+            this.EBEU_TKIMG.TabStop = false;
+            // 
+            // EBEU_CK
+            // 
+            resources.ApplyResources(this.EBEU_CK, "EBEU_CK");
+            this.EBEU_CK.ForeColor = System.Drawing.Color.Red;
+            this.EBEU_CK.Name = "EBEU_CK";
+            // 
+            // EBEU_CKIMG
+            // 
+            resources.ApplyResources(this.EBEU_CKIMG, "EBEU_CKIMG");
+            this.EBEU_CKIMG.Name = "EBEU_CKIMG";
+            this.EBEU_CKIMG.TabStop = false;
+            // 
+            // EBEU_BASE
+            // 
+            resources.ApplyResources(this.EBEU_BASE, "EBEU_BASE");
+            this.EBEU_BASE.ForeColor = System.Drawing.Color.Red;
+            this.EBEU_BASE.Name = "EBEU_BASE";
+            // 
+            // EBEU_BASEIMG
+            // 
+            resources.ApplyResources(this.EBEU_BASEIMG, "EBEU_BASEIMG");
+            this.EBEU_BASEIMG.Name = "EBEU_BASEIMG";
+            this.EBEU_BASEIMG.TabStop = false;
             // 
             // SMUS_DWNLD
             // 
@@ -1937,6 +2170,63 @@
             resources.ApplyResources(this.SMEUBASE, "SMEUBASE");
             this.SMEUBASE.Name = "SMEUBASE";
             this.SMEUBASE.TabStop = false;
+            // 
+            // SMJP_PANEL
+            // 
+            this.SMJP_PANEL.Controls.Add(this.SMJP_DWNLD);
+            this.SMJP_PANEL.Controls.Add(this.SMJPTK);
+            this.SMJP_PANEL.Controls.Add(this.SMJPTKIMG);
+            this.SMJP_PANEL.Controls.Add(this.SMJPCKEY);
+            this.SMJP_PANEL.Controls.Add(this.SMJPCKEYIMG);
+            this.SMJP_PANEL.Controls.Add(this.SMJPBASE);
+            this.SMJP_PANEL.Controls.Add(this.SMJPBASEIMG);
+            resources.ApplyResources(this.SMJP_PANEL, "SMJP_PANEL");
+            this.SMJP_PANEL.Name = "SMJP_PANEL";
+            // 
+            // SMJP_DWNLD
+            // 
+            this.SMJP_DWNLD.Cursor = System.Windows.Forms.Cursors.Help;
+            resources.ApplyResources(this.SMJP_DWNLD, "SMJP_DWNLD");
+            this.SMJP_DWNLD.Name = "SMJP_DWNLD";
+            this.toolTip1.SetToolTip(this.SMJP_DWNLD, resources.GetString("SMJP_DWNLD.ToolTip"));
+            this.SMJP_DWNLD.UseVisualStyleBackColor = true;
+            this.SMJP_DWNLD.Click += new System.EventHandler(this.SMJP_DWNLD_Click);
+            // 
+            // SMJPTK
+            // 
+            resources.ApplyResources(this.SMJPTK, "SMJPTK");
+            this.SMJPTK.ForeColor = System.Drawing.Color.Red;
+            this.SMJPTK.Name = "SMJPTK";
+            // 
+            // SMJPTKIMG
+            // 
+            resources.ApplyResources(this.SMJPTKIMG, "SMJPTKIMG");
+            this.SMJPTKIMG.Name = "SMJPTKIMG";
+            this.SMJPTKIMG.TabStop = false;
+            // 
+            // SMJPCKEY
+            // 
+            resources.ApplyResources(this.SMJPCKEY, "SMJPCKEY");
+            this.SMJPCKEY.ForeColor = System.Drawing.Color.Red;
+            this.SMJPCKEY.Name = "SMJPCKEY";
+            // 
+            // SMJPCKEYIMG
+            // 
+            resources.ApplyResources(this.SMJPCKEYIMG, "SMJPCKEYIMG");
+            this.SMJPCKEYIMG.Name = "SMJPCKEYIMG";
+            this.SMJPCKEYIMG.TabStop = false;
+            // 
+            // SMJPBASE
+            // 
+            resources.ApplyResources(this.SMJPBASE, "SMJPBASE");
+            this.SMJPBASE.ForeColor = System.Drawing.Color.Red;
+            this.SMJPBASE.Name = "SMJPBASE";
+            // 
+            // SMJPBASEIMG
+            // 
+            resources.ApplyResources(this.SMJPBASEIMG, "SMJPBASEIMG");
+            this.SMJPBASEIMG.Name = "SMJPBASEIMG";
+            this.SMJPBASEIMG.TabStop = false;
             // 
             // SNESCUSTOM
             // 
@@ -2045,7 +2335,7 @@
             // 
             // SNES_INST
             // 
-            this.SNES_INST.Cursor = System.Windows.Forms.Cursors.No;
+            this.SNES_INST.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.SNES_INST, "SNES_INST");
             this.SNES_INST.Name = "SNES_INST";
             this.SNES_INST.UseVisualStyleBackColor = true;
@@ -2053,7 +2343,7 @@
             // 
             // SNES_LOADIINE
             // 
-            this.SNES_LOADIINE.Cursor = System.Windows.Forms.Cursors.No;
+            this.SNES_LOADIINE.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.SNES_LOADIINE, "SNES_LOADIINE");
             this.SNES_LOADIINE.Name = "SNES_LOADIINE";
             this.SNES_LOADIINE.UseVisualStyleBackColor = true;
@@ -2088,10 +2378,80 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // timer1
+            // EBEU
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            this.EBEU.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
+            // EBUS
+            // 
+            this.EBUS.Tick += new System.EventHandler(this.EBUS_Tick);
+            // 
+            // EBJP
+            // 
+            this.EBJP.Tick += new System.EventHandler(this.EBJP_Tick);
+            // 
+            // DKCEU
+            // 
+            this.DKCEU.Tick += new System.EventHandler(this.DKCEU_Tick);
+            // 
+            // DKCUS_PANEL
+            // 
+            this.DKCUS_PANEL.Controls.Add(this.DKCUS_DWNLD);
+            this.DKCUS_PANEL.Controls.Add(this.DKCUS_TK);
+            this.DKCUS_PANEL.Controls.Add(this.DKCUS_TKIMG);
+            this.DKCUS_PANEL.Controls.Add(this.DKCUS_CK);
+            this.DKCUS_PANEL.Controls.Add(this.DKCUS_CKIMG);
+            this.DKCUS_PANEL.Controls.Add(this.DKCUS_BASE);
+            this.DKCUS_PANEL.Controls.Add(this.DKCUS_BASEIMG);
+            resources.ApplyResources(this.DKCUS_PANEL, "DKCUS_PANEL");
+            this.DKCUS_PANEL.Name = "DKCUS_PANEL";
+            // 
+            // DKCUS_DWNLD
+            // 
+            resources.ApplyResources(this.DKCUS_DWNLD, "DKCUS_DWNLD");
+            this.DKCUS_DWNLD.Name = "DKCUS_DWNLD";
+            this.DKCUS_DWNLD.UseVisualStyleBackColor = true;
+            this.DKCUS_DWNLD.Click += new System.EventHandler(this.DKCUS_DWNLD_Click);
+            // 
+            // DKCUS_TK
+            // 
+            resources.ApplyResources(this.DKCUS_TK, "DKCUS_TK");
+            this.DKCUS_TK.ForeColor = System.Drawing.Color.Red;
+            this.DKCUS_TK.Name = "DKCUS_TK";
+            // 
+            // DKCUS_TKIMG
+            // 
+            resources.ApplyResources(this.DKCUS_TKIMG, "DKCUS_TKIMG");
+            this.DKCUS_TKIMG.Name = "DKCUS_TKIMG";
+            this.DKCUS_TKIMG.TabStop = false;
+            // 
+            // DKCUS_CK
+            // 
+            resources.ApplyResources(this.DKCUS_CK, "DKCUS_CK");
+            this.DKCUS_CK.ForeColor = System.Drawing.Color.Red;
+            this.DKCUS_CK.Name = "DKCUS_CK";
+            // 
+            // DKCUS_CKIMG
+            // 
+            resources.ApplyResources(this.DKCUS_CKIMG, "DKCUS_CKIMG");
+            this.DKCUS_CKIMG.Name = "DKCUS_CKIMG";
+            this.DKCUS_CKIMG.TabStop = false;
+            // 
+            // DKCUS_BASE
+            // 
+            resources.ApplyResources(this.DKCUS_BASE, "DKCUS_BASE");
+            this.DKCUS_BASE.ForeColor = System.Drawing.Color.Red;
+            this.DKCUS_BASE.Name = "DKCUS_BASE";
+            // 
+            // DKCUS_BASEIMG
+            // 
+            resources.ApplyResources(this.DKCUS_BASEIMG, "DKCUS_BASEIMG");
+            this.DKCUS_BASEIMG.Name = "DKCUS_BASEIMG";
+            this.DKCUS_BASEIMG.TabStop = false;
+            // 
+            // DKCUS
+            // 
+            this.DKCUS.Tick += new System.EventHandler(this.DKCUS_Tick);
             // 
             // UWUVCI_AIO
             // 
@@ -2143,27 +2503,38 @@
             this.GBA.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.NES.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.SNES.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
-            this.SMJP_PANEL.ResumeLayout(false);
-            this.SMJP_PANEL.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SMJPTKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SMJPCKEYIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SMJPBASEIMG)).EndInit();
+            this.EBJP_PANEL.ResumeLayout(false);
+            this.EBJP_PANEL.PerformLayout();
+            this.DKCEU_PANEL.ResumeLayout(false);
+            this.DKCEU_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_TKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_CKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_BASEIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBJP_TKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBJP_CKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBJP_BASEIMG)).EndInit();
+            this.EBUS_PANEL.ResumeLayout(false);
+            this.EBUS_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EBUS_TKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBUS_CKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBUS_BASEIMG)).EndInit();
             this.SMUS_PANEL.ResumeLayout(false);
             this.SMUS_PANEL.PerformLayout();
+            this.EBEU_PANEL.ResumeLayout(false);
+            this.EBEU_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EBEU_TKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBEU_CKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBEU_BASEIMG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SMUSTKEYIMG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SMUSCKEYIMG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SMUSBASEIMG)).EndInit();
@@ -2172,12 +2543,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.SMEUTK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SMEUCK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SMEUBASE)).EndInit();
+            this.SMJP_PANEL.ResumeLayout(false);
+            this.SMJP_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SMJPTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMJPCKEYIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMJPBASEIMG)).EndInit();
             this.SNESCUSTOM.ResumeLayout(false);
             this.SNESCUSTOM.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SNESCONTENTIMG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SNESMETAIMG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SNESCODEIMG)).EndInit();
             this.groupBox12.ResumeLayout(false);
+            this.DKCUS_PANEL.ResumeLayout(false);
+            this.DKCUS_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_TKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_CKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_BASEIMG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2336,8 +2717,6 @@
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Button GBA_CUSTOM;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button GBA_INST;
         private System.Windows.Forms.Button GBA_LOADIINE;
@@ -2365,8 +2744,6 @@
         private System.Windows.Forms.TextBox textBox25;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Button NES_CSTM;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Button NES_INST;
         private System.Windows.Forms.Button NES_LOADIINE;
@@ -2400,11 +2777,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label54;
       
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
+        
         private System.Windows.Forms.Timer KEYS;
         private System.Windows.Forms.Panel SNESCUSTOM;
         private System.Windows.Forms.Label SNESCONTENTTXT;
@@ -2446,7 +2819,51 @@
         private System.Windows.Forms.PictureBox SMJPBASEIMG;
         private System.Windows.Forms.Timer SMETROIDJP;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer EBEU;
+        private System.Windows.Forms.Panel EBEU_PANEL;
+        private System.Windows.Forms.Button EBEU_DWNLD;
+        private System.Windows.Forms.Label EBEU_TK;
+        private System.Windows.Forms.PictureBox EBEU_TKIMG;
+        private System.Windows.Forms.Label EBEU_CK;
+        private System.Windows.Forms.PictureBox EBEU_CKIMG;
+        private System.Windows.Forms.Label EBEU_BASE;
+        private System.Windows.Forms.PictureBox EBEU_BASEIMG;
+        private System.Windows.Forms.Panel EBUS_PANEL;
+        private System.Windows.Forms.Button EBUS_DWNLD;
+        private System.Windows.Forms.Label EBUS_TK;
+        private System.Windows.Forms.PictureBox EBUS_TKIMG;
+        private System.Windows.Forms.Label EBUS_CK;
+        private System.Windows.Forms.PictureBox EBUS_CKIMG;
+        private System.Windows.Forms.Label EBUS_BASE;
+        private System.Windows.Forms.PictureBox EBUS_BASEIMG;
+        private System.Windows.Forms.Timer EBUS;
+        private System.Windows.Forms.Panel EBJP_PANEL;
+        private System.Windows.Forms.Button EBJP_DWNLD;
+        private System.Windows.Forms.Label EBJP_TK;
+        private System.Windows.Forms.PictureBox EBJP_TKIMG;
+        private System.Windows.Forms.Label EBJP_CK;
+        private System.Windows.Forms.PictureBox EBJP_CKIMG;
+        private System.Windows.Forms.Label EBJP_BASE;
+        private System.Windows.Forms.PictureBox EBJP_BASEIMG;
+        private System.Windows.Forms.Timer EBJP;
+        private System.Windows.Forms.Panel DKCEU_PANEL;
+        private System.Windows.Forms.Button DKCEU_DWNLD;
+        private System.Windows.Forms.Label DKCEU_TK;
+        private System.Windows.Forms.PictureBox DKCEU_TKIMG;
+        private System.Windows.Forms.Label DKCEU_CK;
+        private System.Windows.Forms.PictureBox DKCEU_CKIMG;
+        private System.Windows.Forms.Label DKCEU_BASE;
+        private System.Windows.Forms.PictureBox DKCEU_BASEIMG;
+        private System.Windows.Forms.Timer DKCEU;
+        private System.Windows.Forms.Panel DKCUS_PANEL;
+        private System.Windows.Forms.Button DKCUS_DWNLD;
+        private System.Windows.Forms.Label DKCUS_TK;
+        private System.Windows.Forms.PictureBox DKCUS_TKIMG;
+        private System.Windows.Forms.Label DKCUS_CK;
+        private System.Windows.Forms.PictureBox DKCUS_CKIMG;
+        private System.Windows.Forms.Label DKCUS_BASE;
+        private System.Windows.Forms.PictureBox DKCUS_BASEIMG;
+        private System.Windows.Forms.Timer DKCUS;
     }
 }
 

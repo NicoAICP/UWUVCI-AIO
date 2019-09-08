@@ -372,7 +372,7 @@ namespace UWUVCI_AIO
                 n64conv.StartInfo.UseShellExecute = false;
                 n64conv.StartInfo.CreateNoWindow = true;
                 n64conv.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/N64Converter.exe");
-                n64conv.StartInfo.Arguments = "\"" + romtoinject + "\" \"" + z64out+"\"";
+                n64conv.StartInfo.Arguments = $"\"{romtoinject}\" \"{z64out}\"";
                 n64conv.Start();
                 n64conv.WaitForExit();
             }

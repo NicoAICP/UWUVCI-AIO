@@ -72,7 +72,6 @@ namespace UWUVCI_AIO
             code = false;
             content = false;
             meta = false;
-            allowinject = false;
             INJCT_ROM_path = null;
             ini_path = null;
             for(int i = 0; i < bootimages.Count(); i++)
@@ -107,6 +106,7 @@ namespace UWUVCI_AIO
         private void Button1_Click(object sender, EventArgs e) //Gonna replace this with an image that changes according to the theme/language
         {
             ResetInput();
+            Injection.clean();
             tabControl1.SelectedIndex = 0;
         }
 
@@ -225,12 +225,22 @@ namespace UWUVCI_AIO
                 SMetroidEUPanel.Visible = false;
                 SMUS_PANEL.Visible = false;
                 SMJP_PANEL.Visible = false;
+                EBEU_PANEL.Visible = false;
+                EBUS_PANEL.Visible = false;
+                EBJP_PANEL.Visible = false;
+                DKCEU_PANEL.Visible = false;
+                DKCUS_PANEL.Visible = false;
                 BaseROM = "Custom";
                 #region timers
                 SNESCSTMNFOLDERS.Enabled = true;
                 SMETROIDEU.Enabled = false;
                 SMETROIDUS.Enabled = false;
                 SMETROIDJP.Enabled = false;
+                EBEU.Enabled = false;
+                EBUS.Enabled = false;
+                EBJP.Enabled = false;
+                DKCEU.Enabled = false;
+                DKCUS.Enabled = false;
                 #endregion
             }
             if (b == 1)
@@ -239,12 +249,22 @@ namespace UWUVCI_AIO
                 SMetroidEUPanel.Visible = true;
                 SMUS_PANEL.Visible = false;
                 SMJP_PANEL.Visible = false;
+                EBEU_PANEL.Visible = false;
+                EBUS_PANEL.Visible = false;
+                EBJP_PANEL.Visible = false;
+                DKCEU_PANEL.Visible = false;
+                DKCUS_PANEL.Visible = false;
                 BaseROM = "SMetroidEU";
                 #region timers
                 SNESCSTMNFOLDERS.Enabled = false;
                 SMETROIDEU.Enabled = true;
                 SMETROIDUS.Enabled = false;
                 SMETROIDJP.Enabled = false;
+                EBEU.Enabled = false;
+                EBUS.Enabled = false;
+                EBJP.Enabled = false;
+                DKCEU.Enabled = false;
+                DKCUS.Enabled = false;
                 #endregion
             }
             if (b == 2)
@@ -253,26 +273,166 @@ namespace UWUVCI_AIO
                 SMetroidEUPanel.Visible = false;
                 SMUS_PANEL.Visible = true;
                 SMJP_PANEL.Visible = false;
+                EBEU_PANEL.Visible = false;
+                EBUS_PANEL.Visible = false;
+                EBJP_PANEL.Visible = false;
+                DKCEU_PANEL.Visible = false;
+                DKCUS_PANEL.Visible = false;
                 BaseROM = "SMetroidUS";
                 #region timers
                 SNESCSTMNFOLDERS.Enabled = false;
                 SMETROIDEU.Enabled = false;
                 SMETROIDUS.Enabled = true;
                 SMETROIDJP.Enabled = false;
+                EBEU.Enabled = false;
+                EBUS.Enabled = false;
+                EBJP.Enabled = false;
+                DKCEU.Enabled = false;
+                DKCUS.Enabled = false;
                 #endregion
             }
             if (b == 3)
             {
                 SNESCUSTOM.Visible = false;
                 SMetroidEUPanel.Visible = false;
-                SMUS_PANEL.Visible = true;
+                SMUS_PANEL.Visible = false;
+                EBEU_PANEL.Visible = false;
                 SMJP_PANEL.Visible = true;
+                EBUS_PANEL.Visible = false;
+                EBJP_PANEL.Visible = false;
+                DKCEU_PANEL.Visible = false;
+                DKCUS_PANEL.Visible = false;
                 BaseROM = "SMetroidJP";
                 #region timers
                 SNESCSTMNFOLDERS.Enabled = false;
                 SMETROIDEU.Enabled = false;
                 SMETROIDUS.Enabled = false;
                 SMETROIDJP.Enabled = true;
+                EBEU.Enabled = false;
+                EBUS.Enabled = false;
+                EBJP.Enabled = false;
+                DKCEU.Enabled = false;
+                DKCUS.Enabled = false;
+                #endregion
+            }
+            if(b == 4)
+            {
+                SNESCUSTOM.Visible = false;
+                SMetroidEUPanel.Visible = false;
+                SMUS_PANEL.Visible = false;
+                SMJP_PANEL.Visible = false;
+                EBEU_PANEL.Visible = true;
+                EBUS_PANEL.Visible = false;
+                EBJP_PANEL.Visible = false;
+                DKCEU_PANEL.Visible = false;
+                DKCUS_PANEL.Visible = false;
+                BaseROM = "EarthboundEU";
+                #region timers
+                SNESCSTMNFOLDERS.Enabled = false;
+                SMETROIDEU.Enabled = false;
+                SMETROIDUS.Enabled = false;
+                SMETROIDJP.Enabled = false;
+                EBEU.Enabled = true;
+                EBUS.Enabled = false;
+                EBJP.Enabled = false;
+                DKCEU.Enabled = false;
+                DKCUS.Enabled = false;
+                #endregion
+            }
+            if (b == 5)
+            {
+                SNESCUSTOM.Visible = false;
+                SMetroidEUPanel.Visible = false;
+                SMUS_PANEL.Visible = false;
+                SMJP_PANEL.Visible = false;
+                EBEU_PANEL.Visible = false;
+                EBUS_PANEL.Visible = true;
+                EBJP_PANEL.Visible = false;
+                DKCEU_PANEL.Visible = false;
+                DKCUS_PANEL.Visible = false;
+                BaseROM = "EarthboundUS";
+                #region timers
+                SNESCSTMNFOLDERS.Enabled = false;
+                SMETROIDEU.Enabled = false;
+                SMETROIDUS.Enabled = false;
+                SMETROIDJP.Enabled = false;
+                DKCEU.Enabled = false;
+                EBEU.Enabled = false;
+                EBUS.Enabled = true;
+                EBJP.Enabled = false;
+                DKCUS.Enabled = false;
+                #endregion
+            }
+            if (b == 6)
+            {
+                SNESCUSTOM.Visible = false;
+                SMetroidEUPanel.Visible = false;
+                SMUS_PANEL.Visible = false;
+                SMJP_PANEL.Visible = false;
+                EBEU_PANEL.Visible = false;
+                EBUS_PANEL.Visible = false;
+                EBJP_PANEL.Visible = true;
+                DKCEU_PANEL.Visible = false;
+                DKCUS_PANEL.Visible = false;
+                BaseROM = "EarthboundJP";
+                #region timers
+                SNESCSTMNFOLDERS.Enabled = false;
+                SMETROIDEU.Enabled = false;
+                SMETROIDUS.Enabled = false;
+                SMETROIDJP.Enabled = false;
+                EBEU.Enabled = false;
+                EBUS.Enabled = false;
+                EBJP.Enabled = true;
+                DKCEU.Enabled = false;
+                DKCUS.Enabled = false;
+                #endregion
+            }
+            if (b == 7)
+            {
+                SNESCUSTOM.Visible = false;
+                SMetroidEUPanel.Visible = false;
+                SMUS_PANEL.Visible = false;
+                SMJP_PANEL.Visible = false;
+                EBEU_PANEL.Visible = false;
+                EBUS_PANEL.Visible = false;
+                EBJP_PANEL.Visible = false;
+                DKCEU_PANEL.Visible = true;
+                DKCUS_PANEL.Visible = false;
+                BaseROM = "DKCEU";
+                #region timers
+                SNESCSTMNFOLDERS.Enabled = false;
+                SMETROIDEU.Enabled = false;
+                SMETROIDUS.Enabled = false;
+                SMETROIDJP.Enabled = false;
+                EBEU.Enabled = false;
+                EBUS.Enabled = false;
+                EBJP.Enabled = false;
+                DKCEU.Enabled = true;
+                DKCUS.Enabled = false;
+                #endregion
+            }
+            if (b == 8)
+            {
+                SNESCUSTOM.Visible = false;
+                SMetroidEUPanel.Visible = false;
+                SMUS_PANEL.Visible = false;
+                SMJP_PANEL.Visible = false;
+                EBEU_PANEL.Visible = false;
+                EBUS_PANEL.Visible = false;
+                EBJP_PANEL.Visible = false;
+                DKCEU_PANEL.Visible = false;
+                DKCUS_PANEL.Visible = true;
+                BaseROM = "DKCUS";
+                #region timers
+                SNESCSTMNFOLDERS.Enabled = false;
+                SMETROIDEU.Enabled = false;
+                SMETROIDUS.Enabled = false;
+                SMETROIDJP.Enabled = false;
+                EBEU.Enabled = false;
+                EBUS.Enabled = false;
+                EBJP.Enabled = false;
+                DKCEU.Enabled = false;
+                DKCUS.Enabled = true;
                 #endregion
             }
         }
@@ -286,28 +446,97 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.CommonKey == null)
             {
-                SMEUCK.Image = Properties.Resources.X;
-                SMEEU_CKEY.Text = "No CommonKey stored";
-                SMEEU_CKEY.ForeColor = Color.Red;
-                SMUSCKEYIMG.Image = Properties.Resources.X;
-                SMUSCKEY.Text = "No CommonKey stored";
-                SMUSCKEY.ForeColor = Color.Red;
-                SMJPCKEYIMG.Image = Properties.Resources.X;
-                SMJPCKEY.Text = "No CommonKey stored";
-                SMJPCKEY.ForeColor = Color.Red;
+                if (tabControl1.SelectedIndex == 1) //NDS
+                {
+
+                }
+                if (tabControl1.SelectedIndex == 2) //N64
+                {
+
+                }
+                if (tabControl1.SelectedIndex == 3) //GBA
+                {
+
+                }
+                if (tabControl1.SelectedIndex == 4) //NES
+                {
+
+                }
+                if(tabControl1.SelectedIndex == 5) //SNES
+                {
+                    SMEUCK.Image = Properties.Resources.X;
+                    SMEEU_CKEY.Text = "No CommonKey stored";
+                    SMEEU_CKEY.ForeColor = Color.Red;
+                    SMUSCKEYIMG.Image = Properties.Resources.X;
+                    SMUSCKEY.Text = "No CommonKey stored";
+                    SMUSCKEY.ForeColor = Color.Red;
+                    SMJPCKEYIMG.Image = Properties.Resources.X;
+                    SMJPCKEY.Text = "No CommonKey stored";
+                    SMJPCKEY.ForeColor = Color.Red;
+                    EBEU_CKIMG.Image = Properties.Resources.X;
+                    EBEU_CK.Text = "No CommonKey stored";
+                    EBEU_CK.ForeColor = Color.Red;
+                    EBUS_CKIMG.Image = Properties.Resources.X;
+                    EBUS_CK.Text = "No CommonKey stored";
+                    EBUS_CK.ForeColor = Color.Red;
+                    EBJP_CKIMG.Image = Properties.Resources.X;
+                    EBJP_CK.Text = "No CommonKey stored";
+                    EBJP_CK.ForeColor = Color.Red;
+                    DKCEU_CKIMG.Image = Properties.Resources.X;
+                    DKCEU_CK.Text = "No CommonKey stored";
+                    DKCEU_CK.ForeColor = Color.Red;
+                    DKCUS_CKIMG.Image = Properties.Resources.X;
+                    DKCUS_CK.Text = "No CommonKey stored";
+                    DKCUS_CK.ForeColor = Color.Red;
+                }
+                
             }
             else
             {
-               
-                SMEUCK.Image = Properties.Resources.yes;
-                SMEEU_CKEY.Text = "CommonKey found";
-                SMEEU_CKEY.ForeColor = Color.FromArgb(0, 127, 14);
-                SMUSCKEYIMG.Image = Properties.Resources.yes;
-                SMUSCKEY.Text = "CommonKey found";
-                SMUSCKEY.ForeColor = Color.FromArgb(0, 127, 14);
-                SMJPCKEYIMG.Image = Properties.Resources.yes;
-                SMJPCKEY.Text = "CommonKey found";
-                SMJPCKEY.ForeColor = Color.FromArgb(0, 127, 14);
+                if (tabControl1.SelectedIndex == 1) //NDS
+                {
+
+                }
+                if (tabControl1.SelectedIndex == 2) //N64
+                {
+
+                }
+                if (tabControl1.SelectedIndex == 3) //GBA
+                {
+
+                }
+                if (tabControl1.SelectedIndex == 4) //NES
+                {
+
+                }
+                if (tabControl1.SelectedIndex == 5) //SNES
+                {
+                    SMEUCK.Image = Properties.Resources.yes;
+                    SMEEU_CKEY.Text = "CommonKey found";
+                    SMEEU_CKEY.ForeColor = Color.FromArgb(0, 127, 14);
+                    SMUSCKEYIMG.Image = Properties.Resources.yes;
+                    SMUSCKEY.Text = "CommonKey found";
+                    SMUSCKEY.ForeColor = Color.FromArgb(0, 127, 14);
+                    SMJPCKEYIMG.Image = Properties.Resources.yes;
+                    SMJPCKEY.Text = "CommonKey found";
+                    SMJPCKEY.ForeColor = Color.FromArgb(0, 127, 14);
+                    EBEU_CKIMG.Image = Properties.Resources.yes;
+                    EBEU_CK.Text = "CommonKey found";
+                    EBEU_CK.ForeColor = Color.FromArgb(0, 127, 14);
+                    EBUS_CKIMG.Image = Properties.Resources.yes;
+                    EBUS_CK.Text = "CommonKey found";
+                    EBUS_CK.ForeColor = Color.FromArgb(0, 127, 14);
+                    EBJP_CKIMG.Image = Properties.Resources.yes;
+                    EBJP_CK.Text = "CommonKey found";
+                    EBJP_CK.ForeColor = Color.FromArgb(0, 127, 14);
+                    DKCEU_CKIMG.Image = Properties.Resources.yes;
+                    DKCEU_CK.Text = "CommonKey found";
+                    DKCEU_CK.ForeColor = Color.FromArgb(0, 127, 14);
+                    DKCUS_CKIMG.Image = Properties.Resources.yes;
+                    DKCUS_CK.Text = "CommonKey found";
+                    DKCUS_CK.ForeColor = Color.FromArgb(0, 127, 14);
+                }
+                    
             }
 
         }
@@ -538,7 +767,16 @@ namespace UWUVCI_AIO
 
         private void N64_BTN8_Click(object sender, EventArgs e)
         {
+            openFileDialog1.Filter = "N64 Roms |*.n64;*.v64;*.z64" ;
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
 
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox1.Text = openFileDialog1.FileName;
+                INJCT_ROM_path = textBox1.Text;
+
+            }
         }
 
         private void SMETROIDUS_Tick(object sender, EventArgs e)
@@ -696,7 +934,7 @@ namespace UWUVCI_AIO
             GBA.BackColor = Color.FromArgb(60, 60, 60);
             GBA.ForeColor = Color.WhiteSmoke;
             GBA_BACK.ForeColor = Color.Black;
-            GBA_CUSTOM.ForeColor = Color.Black;
+            
             GBA_DRC.ForeColor = Color.Black;
             GBA_ICON.ForeColor = Color.Black;
             GBA_INJECT.ForeColor = Color.Black;
@@ -713,7 +951,6 @@ namespace UWUVCI_AIO
             NES.BackColor = Color.FromArgb(60, 60, 60);
             NES.ForeColor = Color.WhiteSmoke;
             NES_BACK.ForeColor = Color.Black;
-            NES_CSTM.ForeColor = Color.Black;
             NES_DRC.ForeColor = Color.Black;
             NES_ICON.ForeColor = Color.Black;
             NES_INJCT.ForeColor = Color.Black;
@@ -744,11 +981,12 @@ namespace UWUVCI_AIO
             SMEU_DWNLD.ForeColor = Color.Black;
             SMUS_DWNLD.ForeColor = Color.Black;
             SMJP_DWNLD.ForeColor = Color.Black;
-            #region bases
+            EBEU_DWNLD.ForeColor = Color.Black;
+            EBUS_DWNLD.ForeColor = Color.Black;
+            EBJP_DWNLD.ForeColor = Color.Black;
+            DKCEU_DWNLD.ForeColor = Color.Black;
+            DKCUS_DWNLD.ForeColor = Color.Black;
             
-
-
-            #endregion
             #endregion
             #region WII/GC TODO
             #endregion
@@ -910,7 +1148,7 @@ namespace UWUVCI_AIO
 
         private void SNES_LOADIINE_Click(object sender, EventArgs e)
         {
-            Injection.loadiine(BaseROM);
+            Injection.loadiine(textBox26.Text);
             SNES_INST.Enabled = false;
             SNES_LOADIINE.Enabled = false;
         }
@@ -932,12 +1170,624 @@ namespace UWUVCI_AIO
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
+            if (Properties.Settings.Default.EarthboundEU == "")
+            {
+                EBEU_TKIMG.Image = Properties.Resources.X;
+                EBEU_TK.Text = "No TitleKey stored";
+                EBEU_TK.ForeColor = Color.Red;
+            }
+            else
+            {
+                EBEU_TKIMG.Image = Properties.Resources.yes;
+                EBEU_TK.Text = "TitleKey found";
+                EBEU_TK.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/EarthboundEU"))
+            {
+                EBEU_BASEIMG.Image = Properties.Resources.X;
+                EBEU_BASE.Text = "Base not downloaded";
+                EBEU_BASE.ForeColor = Color.Red;
+                SNES_INJCT.Enabled = false;
+            }
+            else
+            {
+                EBEU_BASEIMG.Image = Properties.Resources.yes;
+                EBEU_BASE.Text = "Base downloaded";
+                EBEU_BASE.ForeColor = Color.FromArgb(0, 127, 14);
+                EBEU_DWNLD.Visible = false;
+                SNES_INJCT.Enabled = true;
+            }
+            if (Properties.Settings.Default.EarthboundEU == "")
+            {
+                EBEU_DWNLD.Enabled = false;
+            }
+            else
+            {
+                if (Properties.Settings.Default.CommonKey == "")
+                {
+                    EBEU_DWNLD.Enabled = false;
+                }
+                else
+                {
+                    EBEU_DWNLD.Cursor = Cursors.Default;
+                    EBEU_DWNLD.Enabled = true;
+                }
 
+
+            }
         }
 
         private void UWUVCI_AIO_FormClosing(object sender, FormClosingEventArgs e)
         {
             Injection.clean();
+        }
+
+        private void EBEU_DWNLD_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void EBUS_DWNLD_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void EBUS_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.EarthboundUS == "")
+            {
+                EBUS_TKIMG.Image = Properties.Resources.X;
+                EBUS_TK.Text = "No TitleKey stored";
+                EBUS_TK.ForeColor = Color.Red;
+            }
+            else
+            {
+                EBUS_TKIMG.Image = Properties.Resources.yes;
+                EBUS_TK.Text = "TitleKey found";
+                EBUS_TK.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/EarthboundUS"))
+            {
+                EBUS_BASEIMG.Image = Properties.Resources.X;
+                EBUS_BASE.Text = "Base not downloaded";
+                EBUS_BASE.ForeColor = Color.Red;
+                SNES_INJCT.Enabled = false;
+            }
+            else
+            {
+                EBUS_BASEIMG.Image = Properties.Resources.yes;
+                EBUS_BASE.Text = "Base downloaded";
+                EBUS_BASE.ForeColor = Color.FromArgb(0, 127, 14);
+                EBUS_DWNLD.Visible = false;
+                SNES_INJCT.Enabled = true;
+            }
+            if (Properties.Settings.Default.EarthboundUS == "")
+            {
+                EBUS_DWNLD.Enabled = false;
+            }
+            else
+            {
+                if (Properties.Settings.Default.CommonKey == "")
+                {
+                    EBUS_DWNLD.Enabled = false;
+                }
+                else
+                {
+                    EBUS_DWNLD.Cursor = Cursors.Default;
+                    EBUS_DWNLD.Enabled = true;
+                }
+
+
+            }
+        }
+
+        private void EBJP_DWNLD_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void EBJP_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.EarthboundJP == "")
+            {
+                EBJP_TKIMG.Image = Properties.Resources.X;
+                EBJP_TK.Text = "No TitleKey stored";
+                EBJP_TK.ForeColor = Color.Red;
+            }
+            else
+            {
+                EBJP_TKIMG.Image = Properties.Resources.yes;
+                EBJP_TK.Text = "TitleKey found";
+                EBJP_TK.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/EarthboundJP"))
+            {
+                EBJP_BASEIMG.Image = Properties.Resources.X;
+                EBJP_BASE.Text = "Base not downloaded";
+                EBJP_BASE.ForeColor = Color.Red;
+                SNES_INJCT.Enabled = false;
+            }
+            else
+            {
+                EBJP_BASEIMG.Image = Properties.Resources.yes;
+                EBJP_BASE.Text = "Base downloaded";
+                EBJP_BASE.ForeColor = Color.FromArgb(0, 127, 14);
+                EBJP_DWNLD.Visible = false;
+                SNES_INJCT.Enabled = true;
+            }
+            if (Properties.Settings.Default.EarthboundJP == "")
+            {
+                EBJP_DWNLD.Enabled = false;
+            }
+            else
+            {
+                if (Properties.Settings.Default.CommonKey == "")
+                {
+                    EBJP_DWNLD.Enabled = false;
+                }
+                else
+                {
+                    EBJP_DWNLD.Cursor = Cursors.Default;
+                    EBJP_DWNLD.Enabled = true;
+                }
+
+
+            }
+        }
+
+        private void DKCEU_DWNLD_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void DKCEU_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.DKCEU == "")
+            {
+                DKCEU_TKIMG.Image = Properties.Resources.X;
+                DKCEU_TK.Text = "No TitleKey stored";
+                DKCEU_TK.ForeColor = Color.Red;
+            }
+            else
+            {
+                DKCEU_TKIMG.Image = Properties.Resources.yes;
+                DKCEU_TK.Text = "TitleKey found";
+                DKCEU_TK.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/DKCEU"))
+            {
+                DKCEU_BASEIMG.Image = Properties.Resources.X;
+                DKCEU_BASE.Text = "Base not downloaded";
+                DKCEU_BASE.ForeColor = Color.Red;
+                SNES_INJCT.Enabled = false;
+            }
+            else
+            {
+                DKCEU_BASEIMG.Image = Properties.Resources.yes;
+                DKCEU_BASE.Text = "Base downloaded";
+                DKCEU_BASE.ForeColor = Color.FromArgb(0, 127, 14);
+                DKCEU_DWNLD.Visible = false;
+                SNES_INJCT.Enabled = true;
+            }
+            if (Properties.Settings.Default.DKCEU == "")
+            {
+                DKCEU_DWNLD.Enabled = false;
+            }
+            else
+            {
+                if (Properties.Settings.Default.CommonKey == "")
+                {
+                    DKCEU_DWNLD.Enabled = false;
+                }
+                else
+                {
+                    DKCEU_DWNLD.Cursor = Cursors.Default;
+                    DKCEU_DWNLD.Enabled = true;
+                }
+
+
+            }
+        }
+
+        private void DKCUS_DWNLD_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void DKCUS_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.DKCUS == "")
+            {
+                DKCUS_TKIMG.Image = Properties.Resources.X;
+                DKCUS_TK.Text = "No TitleKey stored";
+                DKCUS_TK.ForeColor = Color.Red;
+            }
+            else
+            {
+                DKCUS_TKIMG.Image = Properties.Resources.yes;
+                DKCUS_TK.Text = "TitleKey found";
+                DKCUS_TK.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/DKCUS"))
+            {
+                DKCUS_BASEIMG.Image = Properties.Resources.X;
+                DKCUS_BASE.Text = "Base not downloaded";
+                DKCUS_BASE.ForeColor = Color.Red;
+                SNES_INJCT.Enabled = false;
+            }
+            else
+            {
+                DKCUS_BASEIMG.Image = Properties.Resources.yes;
+                DKCUS_BASE.Text = "Base downloaded";
+                DKCUS_BASE.ForeColor = Color.FromArgb(0, 127, 14);
+                DKCUS_DWNLD.Visible = false;
+                SNES_INJCT.Enabled = true;
+            }
+            if (Properties.Settings.Default.DKCUS == "")
+            {
+                DKCUS_DWNLD.Enabled = false;
+            }
+            else
+            {
+                if (Properties.Settings.Default.CommonKey == "")
+                {
+                    DKCUS_DWNLD.Enabled = false;
+                }
+                else
+                {
+                    DKCUS_DWNLD.Cursor = Cursors.Default;
+                    DKCUS_DWNLD.Enabled = true;
+                }
+
+
+            }
+
+        }
+
+        private void N64_BTN10_Click(object sender, EventArgs e)
+        {
+            ini_path = "blank";
+            textBox2.Text = "Using blank INI";
+        }
+
+        private void N64_BTN13_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox5.Text = openFileDialog1.FileName;
+                bootimages[2] = textBox5.Text;
+
+            }
+        }
+
+        private void N64_BTN14_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox6.Text = openFileDialog1.FileName;
+                bootimages[3] = textBox6.Text;
+
+            }
+        }
+
+        private void N64_BTN12_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox4.Text = openFileDialog1.FileName;
+                bootimages[1] = textBox4.Text;
+
+            }
+        }
+
+        private void N64_BTN11_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox3.Text = openFileDialog1.FileName;
+                bootimages[0] = textBox3.Text;
+
+            }
+        }
+
+        private void N64_BTN9_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Configuartion Files |*.INI";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox2.Text = openFileDialog1.FileName;
+                ini_path = textBox6.Text;
+
+            }
+        }
+
+        private void N64_BTN15_Click(object sender, EventArgs e)
+        {
+            Injection.inject(Injection.Console.N64, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox7.Text);
+        }
+
+        private void N64_BTN17_Click(object sender, EventArgs e)
+        {
+            Injection.packing(textBox7.Text);
+        }
+
+        private void N64_BTN16_Click(object sender, EventArgs e)
+        {
+            Injection.loadiine(textBox7.Text);
+        }
+
+        private void NDS_BTN10_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "NDS Roms |*.nds;*.srl";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox14.Text = openFileDialog1.FileName;
+                INJCT_ROM_path = textBox14.Text;
+
+            }
+        }
+
+        private void NDS_BTN11_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox12.Text = openFileDialog1.FileName;
+                bootimages[0] = textBox12.Text;
+
+            }
+        }
+
+        private void NDS_BTN12_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox11.Text = openFileDialog1.FileName;
+                bootimages[1] = textBox11.Text;
+
+            }
+        }
+
+        private void NDS_BTN13_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox10.Text = openFileDialog1.FileName;
+                bootimages[2] = textBox10.Text;
+
+            }
+        }
+
+        private void NDS_BTN14_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox9.Text = openFileDialog1.FileName;
+                bootimages[3] = textBox9.Text;
+
+            }
+        }
+
+        private void NDS_BTN15_Click(object sender, EventArgs e)
+        {
+            Injection.inject(Injection.Console.NDS, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox8.Text);
+        }
+
+        private void NDS_BTN17_Click(object sender, EventArgs e)
+        {
+            Injection.packing(textBox8.Text);
+        }
+
+        private void NDS_BTN16_Click(object sender, EventArgs e)
+        {
+            Injection.loadiine(textBox8.Text);
+        }
+
+        private void NES_ROM_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "NES Roms |*.nes";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox25.Text = openFileDialog1.FileName;
+                INJCT_ROM_path = textBox25.Text;
+
+            }
+        }
+
+        private void NES_TV_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox24.Text = openFileDialog1.FileName;
+                bootimages[0] = textBox24.Text;
+
+            }
+        }
+
+        private void NES_DRC_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox23.Text = openFileDialog1.FileName;
+                bootimages[1] = textBox23.Text;
+
+            }
+        }
+
+        private void NES_ICON_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox22.Text = openFileDialog1.FileName;
+                bootimages[2] = textBox22.Text;
+
+            }
+        }
+
+        private void NES_LOGO_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox21.Text = openFileDialog1.FileName;
+                bootimages[3] = textBox21.Text;
+
+            }
+        }
+
+        private void NES_INJCT_Click(object sender, EventArgs e)
+        {
+            Injection.inject(Injection.Console.NES, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox20.Text);
+        }
+
+        private void NES_INST_Click(object sender, EventArgs e)
+        {
+            Injection.packing(textBox20.Text);
+        }
+
+        private void NES_LOADIINE_Click(object sender, EventArgs e)
+        {
+            Injection.loadiine(textBox20.Text);
+        }
+
+        private void GBA_INJECT_Click(object sender, EventArgs e)
+        {
+            Injection.inject(Injection.Console.GBA, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox13.Text);
+        }
+
+        private void GBA_INST_Click(object sender, EventArgs e)
+        {
+            Injection.packing(textBox13.Text);
+        }
+
+        private void GBA_LOADIINE_Click(object sender, EventArgs e)
+        {
+            Injection.loadiine(textBox13.Text);
+        }
+
+        private void GBA_ROM_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "GBA Roms |*.gba";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox19.Text = openFileDialog1.FileName;
+                INJCT_ROM_path = textBox19.Text;
+
+            }
+        }
+
+        private void GBA_TV_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox18.Text = openFileDialog1.FileName;
+                bootimages[0] = textBox18.Text;
+
+            }
+        }
+
+        private void GBA_DRC_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox17.Text = openFileDialog1.FileName;
+                bootimages[1] = textBox17.Text;
+
+            }
+        }
+
+        private void GBA_ICON_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox16.Text = openFileDialog1.FileName;
+                bootimages[2] = textBox16.Text;
+
+            }
+        }
+
+        private void GBA_LOGO_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
+            openFileDialog1.FilterIndex = 1;
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            {
+                textBox15.Text = openFileDialog1.FileName;
+                bootimages[3] = textBox15.Text;
+
+            }
         }
     }
 }
