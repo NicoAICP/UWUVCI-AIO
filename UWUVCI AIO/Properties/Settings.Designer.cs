@@ -86,36 +86,36 @@ namespace UWUVCI_AIO.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string DKEU {
+        public string DK64EU {
             get {
-                return ((string)(this["DKEU"]));
+                return ((string)(this["DK64EU"]));
             }
             set {
-                this["DKEU"] = value;
+                this["DK64EU"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string DKUS {
+        public string DK64US {
             get {
-                return ((string)(this["DKUS"]));
+                return ((string)(this["DK64US"]));
             }
             set {
-                this["DKUS"] = value;
+                this["DK64US"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string FZX {
+        public string FZXUS {
             get {
-                return ((string)(this["FZX"]));
+                return ((string)(this["FZXUS"]));
             }
             set {
-                this["FZX"] = value;
+                this["FZXUS"] = value;
             }
         }
         

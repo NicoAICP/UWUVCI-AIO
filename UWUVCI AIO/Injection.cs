@@ -47,7 +47,7 @@ namespace UWUVCI_AIO
 
                 case Console.N64:
                     CopyBase(BaseRom, CSTMN_Base_path, temppath);
-                    N64(temppath, INJCT_Rom_path, ini_path);
+                    N64(temppath, INJCT_Rom_path, ini_path,darkremoval);
                     editXML(GameName, temppath);
                     Images(bootimages, temppath);
                     break;
@@ -106,13 +106,43 @@ namespace UWUVCI_AIO
             #region NDS
             #endregion
             #region N64
+            if(BaseRom == "PMEU")
+            {
+                TID = "0005000010199800";
+                TK = Properties.Settings.Default.PMEU;
+            }
+            else if(BaseRom == "PMUS")
+            {
+                TID = "0005000010199700";
+                TK = Properties.Settings.Default.PMUS;
+            }
+            else if (BaseRom == "FZXUS")
+            {
+                TID = "00050000101ebc00";
+                TK = Properties.Settings.Default.FZXUS;
+            }
+            else if (BaseRom == "FZXJP")
+            {
+                TID = "00050000101ebb00";
+                TK = Properties.Settings.Default.FZXJP;
+            }
+            else if (BaseRom == "DK64EU")
+            {
+                TID = "0005000010199300";
+                TK = Properties.Settings.Default.DK64EU;
+            }
+            else if (BaseRom == "DK64US")
+            {
+                TID = "0005000010199200";
+                TK = Properties.Settings.Default.DK64US;
+            }
             #endregion
             #region GBA
             #endregion
             #region NES
             #endregion
             #region SNES
-            if(BaseRom == "SMetroidEU")
+            if (BaseRom == "SMetroidEU")
             {
                 TID = "000500001010a700";
                 TK = Properties.Settings.Default.SMetroidEU;
@@ -168,6 +198,30 @@ namespace UWUVCI_AIO
                     #region NDS
                     #endregion
                     #region N64
+                    case "PMEU":
+                        DirectoryCopy("Paper Mario [NACP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("Paper Mario [NACP01]", true);
+                        break;
+                    case "PMUS":
+                        DirectoryCopy("Paper Mario [NACE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("Paper Mario [NAEP01]", true);
+                        break;
+                    case "FZXUS":
+                        DirectoryCopy("F-Zero X [NAWE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("F-Zero X [NAWE01]", true);
+                        break;
+                    case "FZXJP":
+                        DirectoryCopy("F-Zero X [NAWJ01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("F-Zero X [NAWJ01]", true);
+                        break;
+                    case "DK64EU":
+                        DirectoryCopy("Donkey Kong 64 [NAAP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("Donkey Kong 64 [NAAP01]", true);
+                        break;
+                    case "DK64US":
+                        DirectoryCopy("Donkey Kong 64 [NAAE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("Donkey Kong 64 [NAAE01]", true);
+                        break;
                     #endregion
                     #region GBA
                     #endregion
@@ -352,7 +406,7 @@ namespace UWUVCI_AIO
             zip.WaitForExit();
 
         }
-        private static void N64(string workpath, string romtoinject, string ini_path)
+        private static void N64(string workpath, string romtoinject, string ini_path, bool darkremoval)
         {
             string[] MainRom = Directory.GetFiles(workpath + "\\content\\rom");
             string Mainini = null;
@@ -392,6 +446,20 @@ namespace UWUVCI_AIO
                     File.Copy(ini_path, Mainini);
                 }
             }
+            if (darkremoval)
+            {
+
+                string Filter = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), workpath + @"\content\FrameLayout.arc");
+                BinaryWriter writer = new BinaryWriter(new FileStream(Filter, FileMode.Open));
+                writer.BaseStream.Position = 0x1AD8;
+                writer.Write(0x00);
+                writer.Close();
+                BinaryWriter writer1 = new BinaryWriter(new FileStream(Filter, FileMode.Open));
+                writer1.BaseStream.Position = 0x1ADC;
+                writer1.Write(0x00);
+                writer1.Close();
+            }
+            
         }
 
         //Compressed or decompresses the RPX using wiiurpxtool

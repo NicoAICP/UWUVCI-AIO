@@ -73,9 +73,9 @@ namespace UWUVCI_AIO
             {
                 PMEUtxt.Text = Properties.Settings.Default.PMEU;
                 PMUStxt.Text = Properties.Settings.Default.PMUS;
-                FZXUStxt.Text = Properties.Settings.Default.FZX;
-                DK64EUtxt.Text = Properties.Settings.Default.DKEU;
-                DK64UStxt.Text = Properties.Settings.Default.DKUS;
+                FZXUStxt.Text = Properties.Settings.Default.FZXUS;
+                DK64EUtxt.Text = Properties.Settings.Default.DK64EU;
+                DK64UStxt.Text = Properties.Settings.Default.DK64US;
                 FZXJPtxt.Text = Properties.Settings.Default.FZXJP;
             }
             // PAPER MARIO EU
@@ -139,7 +139,7 @@ namespace UWUVCI_AIO
             {
                 if (FZXUStxt.Text.GetHashCode() == -1036835128)
                 {
-                    Properties.Settings.Default.FZX = FZXUStxt.Text;
+                    Properties.Settings.Default.FZXUS = FZXUStxt.Text;
                     Properties.Settings.Default.Save();
                     if (language == "en-US")
                     {
@@ -167,7 +167,7 @@ namespace UWUVCI_AIO
             {
                 if (DK64EUtxt.Text.GetHashCode() == -206720283)
                 {
-                    Properties.Settings.Default.DKEU = DK64EUtxt.Text;
+                    Properties.Settings.Default.DK64EU = DK64EUtxt.Text;
                     Properties.Settings.Default.Save();
                     if (language == "en-US")
                     {
@@ -195,7 +195,7 @@ namespace UWUVCI_AIO
             {
                 if (DK64UStxt.Text.GetHashCode() == 2018764825)
                 {
-                    Properties.Settings.Default.DKUS = DK64UStxt.Text;
+                    Properties.Settings.Default.DK64US = DK64UStxt.Text;
                     Properties.Settings.Default.Save();
                     if (language == "en-US")
                     {

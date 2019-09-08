@@ -145,6 +145,17 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.BaseRomN64 = new System.Windows.Forms.GroupBox();
+            this.N64CSTM_PANEL = new System.Windows.Forms.Panel();
+            this.N64CONTENT = new System.Windows.Forms.Label();
+            this.N64CONTENTIMG = new System.Windows.Forms.PictureBox();
+            this.N64META = new System.Windows.Forms.Label();
+            this.N64METAIMG = new System.Windows.Forms.PictureBox();
+            this.N64CODE = new System.Windows.Forms.Label();
+            this.N64CODEIMG = new System.Windows.Forms.PictureBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.N64CSTMN_PATH_BTN = new System.Windows.Forms.Button();
+            this.N64CSTM_PATH = new System.Windows.Forms.TextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.PackingN64 = new System.Windows.Forms.GroupBox();
             this.N64_BTN17 = new System.Windows.Forms.Button();
             this.N64_BTN16 = new System.Windows.Forms.Button();
@@ -203,6 +214,30 @@
             this.NES_INST = new System.Windows.Forms.Button();
             this.NES_LOADIINE = new System.Windows.Forms.Button();
             this.SNES = new System.Windows.Forms.TabPage();
+            this.EBEU_PANEL = new System.Windows.Forms.Panel();
+            this.EBEU_DWNLD = new System.Windows.Forms.Button();
+            this.EBEU_TK = new System.Windows.Forms.Label();
+            this.EBEU_TKIMG = new System.Windows.Forms.PictureBox();
+            this.EBEU_CK = new System.Windows.Forms.Label();
+            this.EBEU_CKIMG = new System.Windows.Forms.PictureBox();
+            this.EBEU_BASE = new System.Windows.Forms.Label();
+            this.EBEU_BASEIMG = new System.Windows.Forms.PictureBox();
+            this.EBUS_PANEL = new System.Windows.Forms.Panel();
+            this.EBUS_DWNLD = new System.Windows.Forms.Button();
+            this.EBUS_TK = new System.Windows.Forms.Label();
+            this.EBUS_TKIMG = new System.Windows.Forms.PictureBox();
+            this.EBUS_CK = new System.Windows.Forms.Label();
+            this.EBUS_CKIMG = new System.Windows.Forms.PictureBox();
+            this.EBUS_BASE = new System.Windows.Forms.Label();
+            this.EBUS_BASEIMG = new System.Windows.Forms.PictureBox();
+            this.DKCEU_PANEL = new System.Windows.Forms.Panel();
+            this.DKCEU_DWNLD = new System.Windows.Forms.Button();
+            this.DKCEU_TK = new System.Windows.Forms.Label();
+            this.DKCEU_TKIMG = new System.Windows.Forms.PictureBox();
+            this.DKCEU_CK = new System.Windows.Forms.Label();
+            this.DKCEU_CKIMG = new System.Windows.Forms.PictureBox();
+            this.DKCEU_BASE = new System.Windows.Forms.Label();
+            this.DKCEU_BASEIMG = new System.Windows.Forms.PictureBox();
             this.SNES_BACK = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.SNES_INJCT = new System.Windows.Forms.Button();
@@ -226,46 +261,6 @@
             this.textBox31 = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.EBJP_PANEL = new System.Windows.Forms.Panel();
-            this.DKCEU_PANEL = new System.Windows.Forms.Panel();
-            this.DKCEU_DWNLD = new System.Windows.Forms.Button();
-            this.DKCEU_TK = new System.Windows.Forms.Label();
-            this.DKCEU_TKIMG = new System.Windows.Forms.PictureBox();
-            this.DKCEU_CK = new System.Windows.Forms.Label();
-            this.DKCEU_CKIMG = new System.Windows.Forms.PictureBox();
-            this.DKCEU_BASE = new System.Windows.Forms.Label();
-            this.DKCEU_BASEIMG = new System.Windows.Forms.PictureBox();
-            this.EBJP_DWNLD = new System.Windows.Forms.Button();
-            this.EBJP_TK = new System.Windows.Forms.Label();
-            this.EBJP_TKIMG = new System.Windows.Forms.PictureBox();
-            this.EBJP_CK = new System.Windows.Forms.Label();
-            this.EBJP_CKIMG = new System.Windows.Forms.PictureBox();
-            this.EBJP_BASE = new System.Windows.Forms.Label();
-            this.EBJP_BASEIMG = new System.Windows.Forms.PictureBox();
-            this.EBUS_PANEL = new System.Windows.Forms.Panel();
-            this.EBUS_DWNLD = new System.Windows.Forms.Button();
-            this.EBUS_TK = new System.Windows.Forms.Label();
-            this.EBUS_TKIMG = new System.Windows.Forms.PictureBox();
-            this.EBUS_CK = new System.Windows.Forms.Label();
-            this.EBUS_CKIMG = new System.Windows.Forms.PictureBox();
-            this.EBUS_BASE = new System.Windows.Forms.Label();
-            this.EBUS_BASEIMG = new System.Windows.Forms.PictureBox();
-            this.SMUS_PANEL = new System.Windows.Forms.Panel();
-            this.EBEU_PANEL = new System.Windows.Forms.Panel();
-            this.EBEU_DWNLD = new System.Windows.Forms.Button();
-            this.EBEU_TK = new System.Windows.Forms.Label();
-            this.EBEU_TKIMG = new System.Windows.Forms.PictureBox();
-            this.EBEU_CK = new System.Windows.Forms.Label();
-            this.EBEU_CKIMG = new System.Windows.Forms.PictureBox();
-            this.EBEU_BASE = new System.Windows.Forms.Label();
-            this.EBEU_BASEIMG = new System.Windows.Forms.PictureBox();
-            this.SMUS_DWNLD = new System.Windows.Forms.Button();
-            this.SMUSTKEY = new System.Windows.Forms.Label();
-            this.SMUSTKEYIMG = new System.Windows.Forms.PictureBox();
-            this.SMUSCKEY = new System.Windows.Forms.Label();
-            this.SMUSCKEYIMG = new System.Windows.Forms.PictureBox();
-            this.SMUSBASE = new System.Windows.Forms.Label();
-            this.SMUSBASEIMG = new System.Windows.Forms.PictureBox();
             this.SMetroidEUPanel = new System.Windows.Forms.Panel();
             this.SMEU_DWNLD = new System.Windows.Forms.Button();
             this.SMEU_TKEY = new System.Windows.Forms.Label();
@@ -274,6 +269,30 @@
             this.SMEUCK = new System.Windows.Forms.PictureBox();
             this.SMETROIDEUFOLDER = new System.Windows.Forms.Label();
             this.SMEUBASE = new System.Windows.Forms.PictureBox();
+            this.EBJP_PANEL = new System.Windows.Forms.Panel();
+            this.EBJP_DWNLD = new System.Windows.Forms.Button();
+            this.EBJP_TK = new System.Windows.Forms.Label();
+            this.EBJP_TKIMG = new System.Windows.Forms.PictureBox();
+            this.EBJP_CK = new System.Windows.Forms.Label();
+            this.EBJP_CKIMG = new System.Windows.Forms.PictureBox();
+            this.EBJP_BASE = new System.Windows.Forms.Label();
+            this.EBJP_BASEIMG = new System.Windows.Forms.PictureBox();
+            this.DKCUS_PANEL = new System.Windows.Forms.Panel();
+            this.DKCUS_DWNLD = new System.Windows.Forms.Button();
+            this.DKCUS_TK = new System.Windows.Forms.Label();
+            this.DKCUS_TKIMG = new System.Windows.Forms.PictureBox();
+            this.DKCUS_CK = new System.Windows.Forms.Label();
+            this.DKCUS_CKIMG = new System.Windows.Forms.PictureBox();
+            this.DKCUS_BASE = new System.Windows.Forms.Label();
+            this.DKCUS_BASEIMG = new System.Windows.Forms.PictureBox();
+            this.SMUS_PANEL = new System.Windows.Forms.Panel();
+            this.SMUS_DWNLD = new System.Windows.Forms.Button();
+            this.SMUSTKEY = new System.Windows.Forms.Label();
+            this.SMUSTKEYIMG = new System.Windows.Forms.PictureBox();
+            this.SMUSCKEY = new System.Windows.Forms.Label();
+            this.SMUSCKEYIMG = new System.Windows.Forms.PictureBox();
+            this.SMUSBASE = new System.Windows.Forms.Label();
+            this.SMUSBASEIMG = new System.Windows.Forms.PictureBox();
             this.SMJP_PANEL = new System.Windows.Forms.Panel();
             this.SMJP_DWNLD = new System.Windows.Forms.Button();
             this.SMJPTK = new System.Windows.Forms.Label();
@@ -309,27 +328,62 @@
             this.EBUS = new System.Windows.Forms.Timer(this.components);
             this.EBJP = new System.Windows.Forms.Timer(this.components);
             this.DKCEU = new System.Windows.Forms.Timer(this.components);
-            this.DKCUS_PANEL = new System.Windows.Forms.Panel();
-            this.DKCUS_DWNLD = new System.Windows.Forms.Button();
-            this.DKCUS_TK = new System.Windows.Forms.Label();
-            this.DKCUS_TKIMG = new System.Windows.Forms.PictureBox();
-            this.DKCUS_CK = new System.Windows.Forms.Label();
-            this.DKCUS_CKIMG = new System.Windows.Forms.PictureBox();
-            this.DKCUS_BASE = new System.Windows.Forms.Label();
-            this.DKCUS_BASEIMG = new System.Windows.Forms.PictureBox();
             this.DKCUS = new System.Windows.Forms.Timer(this.components);
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.N64CSTM_PANEL = new System.Windows.Forms.Panel();
-            this.N64CONTENT = new System.Windows.Forms.Label();
-            this.N64CONTENTIMG = new System.Windows.Forms.PictureBox();
-            this.N64META = new System.Windows.Forms.Label();
-            this.N64METAIMG = new System.Windows.Forms.PictureBox();
-            this.N64CODE = new System.Windows.Forms.Label();
-            this.N64CODEIMG = new System.Windows.Forms.PictureBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.N64CSTMN_PATH_BTN = new System.Windows.Forms.Button();
-            this.N64CSTM_PATH = new System.Windows.Forms.TextBox();
             this.N64CSTMNFOLDERS = new System.Windows.Forms.Timer(this.components);
+            this.PMEU_PANEL = new System.Windows.Forms.Panel();
+            this.PMEU_DWNLD = new System.Windows.Forms.Button();
+            this.PMEUTK = new System.Windows.Forms.Label();
+            this.PMEUTKIMG = new System.Windows.Forms.PictureBox();
+            this.PMEUCK = new System.Windows.Forms.Label();
+            this.PMEUCKIMG = new System.Windows.Forms.PictureBox();
+            this.PMEUBASE = new System.Windows.Forms.Label();
+            this.PMEUBASEIMG = new System.Windows.Forms.PictureBox();
+            this.PMEU = new System.Windows.Forms.Timer(this.components);
+            this.PMUS_PANEL = new System.Windows.Forms.Panel();
+            this.PMUS_DWNLD = new System.Windows.Forms.Button();
+            this.PMUSTK = new System.Windows.Forms.Label();
+            this.PMUSTKIMG = new System.Windows.Forms.PictureBox();
+            this.PMUSCK = new System.Windows.Forms.Label();
+            this.PMUSCKIMG = new System.Windows.Forms.PictureBox();
+            this.PMUSBASE = new System.Windows.Forms.Label();
+            this.PMUSBASEIMG = new System.Windows.Forms.PictureBox();
+            this.PMUS = new System.Windows.Forms.Timer(this.components);
+            this.FXZUS_PANEL = new System.Windows.Forms.Panel();
+            this.FZXUS_DWNLD = new System.Windows.Forms.Button();
+            this.FZXUSTK = new System.Windows.Forms.Label();
+            this.FZXUSTKIMG = new System.Windows.Forms.PictureBox();
+            this.FZXUSCK = new System.Windows.Forms.Label();
+            this.FXZUSCKIMG = new System.Windows.Forms.PictureBox();
+            this.FZXUSBASE = new System.Windows.Forms.Label();
+            this.FZXUSBASEIMG = new System.Windows.Forms.PictureBox();
+            this.FZXUS = new System.Windows.Forms.Timer(this.components);
+            this.FZXJP_PANEL = new System.Windows.Forms.Panel();
+            this.FZXJP_DWNLD = new System.Windows.Forms.Button();
+            this.FZXJPTK = new System.Windows.Forms.Label();
+            this.FZXJPTKIMG = new System.Windows.Forms.PictureBox();
+            this.FZXJPCK = new System.Windows.Forms.Label();
+            this.FZXJPCKIMG = new System.Windows.Forms.PictureBox();
+            this.FZXJPBASE = new System.Windows.Forms.Label();
+            this.FZXJPBASEIMG = new System.Windows.Forms.PictureBox();
+            this.FZXJP = new System.Windows.Forms.Timer(this.components);
+            this.DK64EU_PANEL = new System.Windows.Forms.Panel();
+            this.DK64EU_DWNLD = new System.Windows.Forms.Button();
+            this.DK64EUTK = new System.Windows.Forms.Label();
+            this.DK64EUTKIMG = new System.Windows.Forms.PictureBox();
+            this.DK64EUCK = new System.Windows.Forms.Label();
+            this.DK64EUCKIMG = new System.Windows.Forms.PictureBox();
+            this.DK64EUBASE = new System.Windows.Forms.Label();
+            this.DK64EUBASEIMG = new System.Windows.Forms.PictureBox();
+            this.DK64EU = new System.Windows.Forms.Timer(this.components);
+            this.DK64US_PANEL = new System.Windows.Forms.Panel();
+            this.DK64US_DWNLD = new System.Windows.Forms.Button();
+            this.DK64USTK = new System.Windows.Forms.Label();
+            this.DK64USTKIMG = new System.Windows.Forms.PictureBox();
+            this.DK64USCK = new System.Windows.Forms.Label();
+            this.DK64USCKIMG = new System.Windows.Forms.PictureBox();
+            this.DK64USBASE = new System.Windows.Forms.Label();
+            this.DK64USBASEIMG = new System.Windows.Forms.PictureBox();
+            this.DK64US = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -352,6 +406,10 @@
             this.N64.SuspendLayout();
             this.InjectionN64.SuspendLayout();
             this.BaseRomN64.SuspendLayout();
+            this.N64CSTM_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.N64CONTENTIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N64METAIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N64CODEIMG)).BeginInit();
             this.PackingN64.SuspendLayout();
             this.GBA.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -360,32 +418,36 @@
             this.groupBox7.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.SNES.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.EBJP_PANEL.SuspendLayout();
-            this.DKCEU_PANEL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_TKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_CKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_BASEIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EBJP_TKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EBJP_CKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EBJP_BASEIMG)).BeginInit();
-            this.EBUS_PANEL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EBUS_TKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EBUS_CKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EBUS_BASEIMG)).BeginInit();
-            this.SMUS_PANEL.SuspendLayout();
             this.EBEU_PANEL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EBEU_TKIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EBEU_CKIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EBEU_BASEIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SMUSTKEYIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SMUSCKEYIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SMUSBASEIMG)).BeginInit();
+            this.EBUS_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EBUS_TKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBUS_CKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBUS_BASEIMG)).BeginInit();
+            this.DKCEU_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_TKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_CKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_BASEIMG)).BeginInit();
+            this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.SMetroidEUPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SMEUTK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SMEUCK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SMEUBASE)).BeginInit();
+            this.EBJP_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EBJP_TKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBJP_CKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBJP_BASEIMG)).BeginInit();
+            this.DKCUS_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_TKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_CKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_BASEIMG)).BeginInit();
+            this.SMUS_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SMUSTKEYIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMUSCKEYIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMUSBASEIMG)).BeginInit();
             this.SMJP_PANEL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SMJPTKIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SMJPCKEYIMG)).BeginInit();
@@ -395,14 +457,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.SNESMETAIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SNESCODEIMG)).BeginInit();
             this.groupBox12.SuspendLayout();
-            this.DKCUS_PANEL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_TKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_CKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_BASEIMG)).BeginInit();
-            this.N64CSTM_PANEL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.N64CONTENTIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N64METAIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N64CODEIMG)).BeginInit();
+            this.PMEU_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PMEUTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMEUCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMEUBASEIMG)).BeginInit();
+            this.PMUS_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PMUSTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMUSCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMUSBASEIMG)).BeginInit();
+            this.FXZUS_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXUSTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FXZUSCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXUSBASEIMG)).BeginInit();
+            this.FZXJP_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXJPTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXJPCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXJPBASEIMG)).BeginInit();
+            this.DK64EU_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64EUTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64EUCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64EUBASEIMG)).BeginInit();
+            this.DK64US_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64USTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64USCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64USBASEIMG)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -1210,11 +1288,104 @@
             // 
             // BaseRomN64
             // 
+            this.BaseRomN64.Controls.Add(this.DK64US_PANEL);
+            this.BaseRomN64.Controls.Add(this.DK64EU_PANEL);
+            this.BaseRomN64.Controls.Add(this.FZXJP_PANEL);
+            this.BaseRomN64.Controls.Add(this.FXZUS_PANEL);
+            this.BaseRomN64.Controls.Add(this.PMUS_PANEL);
+            this.BaseRomN64.Controls.Add(this.PMEU_PANEL);
             this.BaseRomN64.Controls.Add(this.N64CSTM_PANEL);
             this.BaseRomN64.Controls.Add(this.comboBox2);
             resources.ApplyResources(this.BaseRomN64, "BaseRomN64");
             this.BaseRomN64.Name = "BaseRomN64";
             this.BaseRomN64.TabStop = false;
+            // 
+            // N64CSTM_PANEL
+            // 
+            this.N64CSTM_PANEL.Controls.Add(this.N64CONTENT);
+            this.N64CSTM_PANEL.Controls.Add(this.N64CONTENTIMG);
+            this.N64CSTM_PANEL.Controls.Add(this.N64META);
+            this.N64CSTM_PANEL.Controls.Add(this.N64METAIMG);
+            this.N64CSTM_PANEL.Controls.Add(this.N64CODE);
+            this.N64CSTM_PANEL.Controls.Add(this.N64CODEIMG);
+            this.N64CSTM_PANEL.Controls.Add(this.label56);
+            this.N64CSTM_PANEL.Controls.Add(this.N64CSTMN_PATH_BTN);
+            this.N64CSTM_PANEL.Controls.Add(this.N64CSTM_PATH);
+            resources.ApplyResources(this.N64CSTM_PANEL, "N64CSTM_PANEL");
+            this.N64CSTM_PANEL.Name = "N64CSTM_PANEL";
+            // 
+            // N64CONTENT
+            // 
+            resources.ApplyResources(this.N64CONTENT, "N64CONTENT");
+            this.N64CONTENT.ForeColor = System.Drawing.Color.Red;
+            this.N64CONTENT.Name = "N64CONTENT";
+            // 
+            // N64CONTENTIMG
+            // 
+            resources.ApplyResources(this.N64CONTENTIMG, "N64CONTENTIMG");
+            this.N64CONTENTIMG.Name = "N64CONTENTIMG";
+            this.N64CONTENTIMG.TabStop = false;
+            // 
+            // N64META
+            // 
+            resources.ApplyResources(this.N64META, "N64META");
+            this.N64META.ForeColor = System.Drawing.Color.Red;
+            this.N64META.Name = "N64META";
+            // 
+            // N64METAIMG
+            // 
+            resources.ApplyResources(this.N64METAIMG, "N64METAIMG");
+            this.N64METAIMG.Name = "N64METAIMG";
+            this.N64METAIMG.TabStop = false;
+            // 
+            // N64CODE
+            // 
+            resources.ApplyResources(this.N64CODE, "N64CODE");
+            this.N64CODE.ForeColor = System.Drawing.Color.Red;
+            this.N64CODE.Name = "N64CODE";
+            // 
+            // N64CODEIMG
+            // 
+            resources.ApplyResources(this.N64CODEIMG, "N64CODEIMG");
+            this.N64CODEIMG.Name = "N64CODEIMG";
+            this.N64CODEIMG.TabStop = false;
+            // 
+            // label56
+            // 
+            resources.ApplyResources(this.label56, "label56");
+            this.label56.Name = "label56";
+            // 
+            // N64CSTMN_PATH_BTN
+            // 
+            resources.ApplyResources(this.N64CSTMN_PATH_BTN, "N64CSTMN_PATH_BTN");
+            this.N64CSTMN_PATH_BTN.Name = "N64CSTMN_PATH_BTN";
+            this.N64CSTMN_PATH_BTN.UseVisualStyleBackColor = true;
+            this.N64CSTMN_PATH_BTN.Click += new System.EventHandler(this.N64CSTMN_PATH_BTN_Click);
+            // 
+            // N64CSTM_PATH
+            // 
+            resources.ApplyResources(this.N64CSTM_PATH, "N64CSTM_PATH");
+            this.N64CSTM_PATH.Name = "N64CSTM_PATH";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("comboBox2.AutoCompleteCustomSource"),
+            resources.GetString("comboBox2.AutoCompleteCustomSource1"),
+            resources.GetString("comboBox2.AutoCompleteCustomSource2")});
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            resources.GetString("comboBox2.Items"),
+            resources.GetString("comboBox2.Items1"),
+            resources.GetString("comboBox2.Items2"),
+            resources.GetString("comboBox2.Items3"),
+            resources.GetString("comboBox2.Items4"),
+            resources.GetString("comboBox2.Items5"),
+            resources.GetString("comboBox2.Items6")});
+            resources.ApplyResources(this.comboBox2, "comboBox2");
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
             // 
             // PackingN64
             // 
@@ -1631,6 +1802,171 @@
             resources.ApplyResources(this.SNES, "SNES");
             this.SNES.Name = "SNES";
             // 
+            // EBEU_PANEL
+            // 
+            this.EBEU_PANEL.Controls.Add(this.EBEU_DWNLD);
+            this.EBEU_PANEL.Controls.Add(this.EBEU_TK);
+            this.EBEU_PANEL.Controls.Add(this.EBEU_TKIMG);
+            this.EBEU_PANEL.Controls.Add(this.EBEU_CK);
+            this.EBEU_PANEL.Controls.Add(this.EBEU_CKIMG);
+            this.EBEU_PANEL.Controls.Add(this.EBEU_BASE);
+            this.EBEU_PANEL.Controls.Add(this.EBEU_BASEIMG);
+            resources.ApplyResources(this.EBEU_PANEL, "EBEU_PANEL");
+            this.EBEU_PANEL.Name = "EBEU_PANEL";
+            // 
+            // EBEU_DWNLD
+            // 
+            resources.ApplyResources(this.EBEU_DWNLD, "EBEU_DWNLD");
+            this.EBEU_DWNLD.Name = "EBEU_DWNLD";
+            this.EBEU_DWNLD.UseVisualStyleBackColor = true;
+            this.EBEU_DWNLD.Click += new System.EventHandler(this.EBEU_DWNLD_Click);
+            // 
+            // EBEU_TK
+            // 
+            resources.ApplyResources(this.EBEU_TK, "EBEU_TK");
+            this.EBEU_TK.ForeColor = System.Drawing.Color.Red;
+            this.EBEU_TK.Name = "EBEU_TK";
+            // 
+            // EBEU_TKIMG
+            // 
+            resources.ApplyResources(this.EBEU_TKIMG, "EBEU_TKIMG");
+            this.EBEU_TKIMG.Name = "EBEU_TKIMG";
+            this.EBEU_TKIMG.TabStop = false;
+            // 
+            // EBEU_CK
+            // 
+            resources.ApplyResources(this.EBEU_CK, "EBEU_CK");
+            this.EBEU_CK.ForeColor = System.Drawing.Color.Red;
+            this.EBEU_CK.Name = "EBEU_CK";
+            // 
+            // EBEU_CKIMG
+            // 
+            resources.ApplyResources(this.EBEU_CKIMG, "EBEU_CKIMG");
+            this.EBEU_CKIMG.Name = "EBEU_CKIMG";
+            this.EBEU_CKIMG.TabStop = false;
+            // 
+            // EBEU_BASE
+            // 
+            resources.ApplyResources(this.EBEU_BASE, "EBEU_BASE");
+            this.EBEU_BASE.ForeColor = System.Drawing.Color.Red;
+            this.EBEU_BASE.Name = "EBEU_BASE";
+            // 
+            // EBEU_BASEIMG
+            // 
+            resources.ApplyResources(this.EBEU_BASEIMG, "EBEU_BASEIMG");
+            this.EBEU_BASEIMG.Name = "EBEU_BASEIMG";
+            this.EBEU_BASEIMG.TabStop = false;
+            // 
+            // EBUS_PANEL
+            // 
+            this.EBUS_PANEL.Controls.Add(this.EBUS_DWNLD);
+            this.EBUS_PANEL.Controls.Add(this.EBUS_TK);
+            this.EBUS_PANEL.Controls.Add(this.EBUS_TKIMG);
+            this.EBUS_PANEL.Controls.Add(this.EBUS_CK);
+            this.EBUS_PANEL.Controls.Add(this.EBUS_CKIMG);
+            this.EBUS_PANEL.Controls.Add(this.EBUS_BASE);
+            this.EBUS_PANEL.Controls.Add(this.EBUS_BASEIMG);
+            resources.ApplyResources(this.EBUS_PANEL, "EBUS_PANEL");
+            this.EBUS_PANEL.Name = "EBUS_PANEL";
+            // 
+            // EBUS_DWNLD
+            // 
+            resources.ApplyResources(this.EBUS_DWNLD, "EBUS_DWNLD");
+            this.EBUS_DWNLD.Name = "EBUS_DWNLD";
+            this.EBUS_DWNLD.UseVisualStyleBackColor = true;
+            this.EBUS_DWNLD.Click += new System.EventHandler(this.EBUS_DWNLD_Click);
+            // 
+            // EBUS_TK
+            // 
+            resources.ApplyResources(this.EBUS_TK, "EBUS_TK");
+            this.EBUS_TK.ForeColor = System.Drawing.Color.Red;
+            this.EBUS_TK.Name = "EBUS_TK";
+            // 
+            // EBUS_TKIMG
+            // 
+            resources.ApplyResources(this.EBUS_TKIMG, "EBUS_TKIMG");
+            this.EBUS_TKIMG.Name = "EBUS_TKIMG";
+            this.EBUS_TKIMG.TabStop = false;
+            // 
+            // EBUS_CK
+            // 
+            resources.ApplyResources(this.EBUS_CK, "EBUS_CK");
+            this.EBUS_CK.ForeColor = System.Drawing.Color.Red;
+            this.EBUS_CK.Name = "EBUS_CK";
+            // 
+            // EBUS_CKIMG
+            // 
+            resources.ApplyResources(this.EBUS_CKIMG, "EBUS_CKIMG");
+            this.EBUS_CKIMG.Name = "EBUS_CKIMG";
+            this.EBUS_CKIMG.TabStop = false;
+            // 
+            // EBUS_BASE
+            // 
+            resources.ApplyResources(this.EBUS_BASE, "EBUS_BASE");
+            this.EBUS_BASE.ForeColor = System.Drawing.Color.Red;
+            this.EBUS_BASE.Name = "EBUS_BASE";
+            // 
+            // EBUS_BASEIMG
+            // 
+            resources.ApplyResources(this.EBUS_BASEIMG, "EBUS_BASEIMG");
+            this.EBUS_BASEIMG.Name = "EBUS_BASEIMG";
+            this.EBUS_BASEIMG.TabStop = false;
+            // 
+            // DKCEU_PANEL
+            // 
+            this.DKCEU_PANEL.Controls.Add(this.DKCEU_DWNLD);
+            this.DKCEU_PANEL.Controls.Add(this.DKCEU_TK);
+            this.DKCEU_PANEL.Controls.Add(this.DKCEU_TKIMG);
+            this.DKCEU_PANEL.Controls.Add(this.DKCEU_CK);
+            this.DKCEU_PANEL.Controls.Add(this.DKCEU_CKIMG);
+            this.DKCEU_PANEL.Controls.Add(this.DKCEU_BASE);
+            this.DKCEU_PANEL.Controls.Add(this.DKCEU_BASEIMG);
+            resources.ApplyResources(this.DKCEU_PANEL, "DKCEU_PANEL");
+            this.DKCEU_PANEL.Name = "DKCEU_PANEL";
+            // 
+            // DKCEU_DWNLD
+            // 
+            resources.ApplyResources(this.DKCEU_DWNLD, "DKCEU_DWNLD");
+            this.DKCEU_DWNLD.Name = "DKCEU_DWNLD";
+            this.DKCEU_DWNLD.UseVisualStyleBackColor = true;
+            this.DKCEU_DWNLD.Click += new System.EventHandler(this.DKCEU_DWNLD_Click);
+            // 
+            // DKCEU_TK
+            // 
+            resources.ApplyResources(this.DKCEU_TK, "DKCEU_TK");
+            this.DKCEU_TK.ForeColor = System.Drawing.Color.Red;
+            this.DKCEU_TK.Name = "DKCEU_TK";
+            // 
+            // DKCEU_TKIMG
+            // 
+            resources.ApplyResources(this.DKCEU_TKIMG, "DKCEU_TKIMG");
+            this.DKCEU_TKIMG.Name = "DKCEU_TKIMG";
+            this.DKCEU_TKIMG.TabStop = false;
+            // 
+            // DKCEU_CK
+            // 
+            resources.ApplyResources(this.DKCEU_CK, "DKCEU_CK");
+            this.DKCEU_CK.ForeColor = System.Drawing.Color.Red;
+            this.DKCEU_CK.Name = "DKCEU_CK";
+            // 
+            // DKCEU_CKIMG
+            // 
+            resources.ApplyResources(this.DKCEU_CKIMG, "DKCEU_CKIMG");
+            this.DKCEU_CKIMG.Name = "DKCEU_CKIMG";
+            this.DKCEU_CKIMG.TabStop = false;
+            // 
+            // DKCEU_BASE
+            // 
+            resources.ApplyResources(this.DKCEU_BASE, "DKCEU_BASE");
+            this.DKCEU_BASE.ForeColor = System.Drawing.Color.Red;
+            this.DKCEU_BASE.Name = "DKCEU_BASE";
+            // 
+            // DKCEU_BASEIMG
+            // 
+            resources.ApplyResources(this.DKCEU_BASEIMG, "DKCEU_BASEIMG");
+            this.DKCEU_BASEIMG.Name = "DKCEU_BASEIMG";
+            this.DKCEU_BASEIMG.TabStop = false;
+            // 
             // SNES_BACK
             // 
             resources.ApplyResources(this.SNES_BACK, "SNES_BACK");
@@ -1794,283 +2130,6 @@
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.TabStop = false;
             // 
-            // EBJP_PANEL
-            // 
-            this.EBJP_PANEL.Controls.Add(this.EBJP_DWNLD);
-            this.EBJP_PANEL.Controls.Add(this.EBJP_TK);
-            this.EBJP_PANEL.Controls.Add(this.EBJP_TKIMG);
-            this.EBJP_PANEL.Controls.Add(this.EBJP_CK);
-            this.EBJP_PANEL.Controls.Add(this.EBJP_CKIMG);
-            this.EBJP_PANEL.Controls.Add(this.EBJP_BASE);
-            this.EBJP_PANEL.Controls.Add(this.EBJP_BASEIMG);
-            resources.ApplyResources(this.EBJP_PANEL, "EBJP_PANEL");
-            this.EBJP_PANEL.Name = "EBJP_PANEL";
-            // 
-            // DKCEU_PANEL
-            // 
-            this.DKCEU_PANEL.Controls.Add(this.DKCEU_DWNLD);
-            this.DKCEU_PANEL.Controls.Add(this.DKCEU_TK);
-            this.DKCEU_PANEL.Controls.Add(this.DKCEU_TKIMG);
-            this.DKCEU_PANEL.Controls.Add(this.DKCEU_CK);
-            this.DKCEU_PANEL.Controls.Add(this.DKCEU_CKIMG);
-            this.DKCEU_PANEL.Controls.Add(this.DKCEU_BASE);
-            this.DKCEU_PANEL.Controls.Add(this.DKCEU_BASEIMG);
-            resources.ApplyResources(this.DKCEU_PANEL, "DKCEU_PANEL");
-            this.DKCEU_PANEL.Name = "DKCEU_PANEL";
-            // 
-            // DKCEU_DWNLD
-            // 
-            resources.ApplyResources(this.DKCEU_DWNLD, "DKCEU_DWNLD");
-            this.DKCEU_DWNLD.Name = "DKCEU_DWNLD";
-            this.DKCEU_DWNLD.UseVisualStyleBackColor = true;
-            this.DKCEU_DWNLD.Click += new System.EventHandler(this.DKCEU_DWNLD_Click);
-            // 
-            // DKCEU_TK
-            // 
-            resources.ApplyResources(this.DKCEU_TK, "DKCEU_TK");
-            this.DKCEU_TK.ForeColor = System.Drawing.Color.Red;
-            this.DKCEU_TK.Name = "DKCEU_TK";
-            // 
-            // DKCEU_TKIMG
-            // 
-            resources.ApplyResources(this.DKCEU_TKIMG, "DKCEU_TKIMG");
-            this.DKCEU_TKIMG.Name = "DKCEU_TKIMG";
-            this.DKCEU_TKIMG.TabStop = false;
-            // 
-            // DKCEU_CK
-            // 
-            resources.ApplyResources(this.DKCEU_CK, "DKCEU_CK");
-            this.DKCEU_CK.ForeColor = System.Drawing.Color.Red;
-            this.DKCEU_CK.Name = "DKCEU_CK";
-            // 
-            // DKCEU_CKIMG
-            // 
-            resources.ApplyResources(this.DKCEU_CKIMG, "DKCEU_CKIMG");
-            this.DKCEU_CKIMG.Name = "DKCEU_CKIMG";
-            this.DKCEU_CKIMG.TabStop = false;
-            // 
-            // DKCEU_BASE
-            // 
-            resources.ApplyResources(this.DKCEU_BASE, "DKCEU_BASE");
-            this.DKCEU_BASE.ForeColor = System.Drawing.Color.Red;
-            this.DKCEU_BASE.Name = "DKCEU_BASE";
-            // 
-            // DKCEU_BASEIMG
-            // 
-            resources.ApplyResources(this.DKCEU_BASEIMG, "DKCEU_BASEIMG");
-            this.DKCEU_BASEIMG.Name = "DKCEU_BASEIMG";
-            this.DKCEU_BASEIMG.TabStop = false;
-            // 
-            // EBJP_DWNLD
-            // 
-            resources.ApplyResources(this.EBJP_DWNLD, "EBJP_DWNLD");
-            this.EBJP_DWNLD.Name = "EBJP_DWNLD";
-            this.EBJP_DWNLD.UseVisualStyleBackColor = true;
-            this.EBJP_DWNLD.Click += new System.EventHandler(this.EBJP_DWNLD_Click);
-            // 
-            // EBJP_TK
-            // 
-            resources.ApplyResources(this.EBJP_TK, "EBJP_TK");
-            this.EBJP_TK.ForeColor = System.Drawing.Color.Red;
-            this.EBJP_TK.Name = "EBJP_TK";
-            // 
-            // EBJP_TKIMG
-            // 
-            resources.ApplyResources(this.EBJP_TKIMG, "EBJP_TKIMG");
-            this.EBJP_TKIMG.Name = "EBJP_TKIMG";
-            this.EBJP_TKIMG.TabStop = false;
-            // 
-            // EBJP_CK
-            // 
-            resources.ApplyResources(this.EBJP_CK, "EBJP_CK");
-            this.EBJP_CK.ForeColor = System.Drawing.Color.Red;
-            this.EBJP_CK.Name = "EBJP_CK";
-            // 
-            // EBJP_CKIMG
-            // 
-            resources.ApplyResources(this.EBJP_CKIMG, "EBJP_CKIMG");
-            this.EBJP_CKIMG.Name = "EBJP_CKIMG";
-            this.EBJP_CKIMG.TabStop = false;
-            // 
-            // EBJP_BASE
-            // 
-            resources.ApplyResources(this.EBJP_BASE, "EBJP_BASE");
-            this.EBJP_BASE.ForeColor = System.Drawing.Color.Red;
-            this.EBJP_BASE.Name = "EBJP_BASE";
-            // 
-            // EBJP_BASEIMG
-            // 
-            resources.ApplyResources(this.EBJP_BASEIMG, "EBJP_BASEIMG");
-            this.EBJP_BASEIMG.Name = "EBJP_BASEIMG";
-            this.EBJP_BASEIMG.TabStop = false;
-            // 
-            // EBUS_PANEL
-            // 
-            this.EBUS_PANEL.Controls.Add(this.EBUS_DWNLD);
-            this.EBUS_PANEL.Controls.Add(this.EBUS_TK);
-            this.EBUS_PANEL.Controls.Add(this.EBUS_TKIMG);
-            this.EBUS_PANEL.Controls.Add(this.EBUS_CK);
-            this.EBUS_PANEL.Controls.Add(this.EBUS_CKIMG);
-            this.EBUS_PANEL.Controls.Add(this.EBUS_BASE);
-            this.EBUS_PANEL.Controls.Add(this.EBUS_BASEIMG);
-            resources.ApplyResources(this.EBUS_PANEL, "EBUS_PANEL");
-            this.EBUS_PANEL.Name = "EBUS_PANEL";
-            // 
-            // EBUS_DWNLD
-            // 
-            resources.ApplyResources(this.EBUS_DWNLD, "EBUS_DWNLD");
-            this.EBUS_DWNLD.Name = "EBUS_DWNLD";
-            this.EBUS_DWNLD.UseVisualStyleBackColor = true;
-            this.EBUS_DWNLD.Click += new System.EventHandler(this.EBUS_DWNLD_Click);
-            // 
-            // EBUS_TK
-            // 
-            resources.ApplyResources(this.EBUS_TK, "EBUS_TK");
-            this.EBUS_TK.ForeColor = System.Drawing.Color.Red;
-            this.EBUS_TK.Name = "EBUS_TK";
-            // 
-            // EBUS_TKIMG
-            // 
-            resources.ApplyResources(this.EBUS_TKIMG, "EBUS_TKIMG");
-            this.EBUS_TKIMG.Name = "EBUS_TKIMG";
-            this.EBUS_TKIMG.TabStop = false;
-            // 
-            // EBUS_CK
-            // 
-            resources.ApplyResources(this.EBUS_CK, "EBUS_CK");
-            this.EBUS_CK.ForeColor = System.Drawing.Color.Red;
-            this.EBUS_CK.Name = "EBUS_CK";
-            // 
-            // EBUS_CKIMG
-            // 
-            resources.ApplyResources(this.EBUS_CKIMG, "EBUS_CKIMG");
-            this.EBUS_CKIMG.Name = "EBUS_CKIMG";
-            this.EBUS_CKIMG.TabStop = false;
-            // 
-            // EBUS_BASE
-            // 
-            resources.ApplyResources(this.EBUS_BASE, "EBUS_BASE");
-            this.EBUS_BASE.ForeColor = System.Drawing.Color.Red;
-            this.EBUS_BASE.Name = "EBUS_BASE";
-            // 
-            // EBUS_BASEIMG
-            // 
-            resources.ApplyResources(this.EBUS_BASEIMG, "EBUS_BASEIMG");
-            this.EBUS_BASEIMG.Name = "EBUS_BASEIMG";
-            this.EBUS_BASEIMG.TabStop = false;
-            // 
-            // SMUS_PANEL
-            // 
-            this.SMUS_PANEL.Controls.Add(this.SMUS_DWNLD);
-            this.SMUS_PANEL.Controls.Add(this.SMUSTKEY);
-            this.SMUS_PANEL.Controls.Add(this.SMUSTKEYIMG);
-            this.SMUS_PANEL.Controls.Add(this.SMUSCKEY);
-            this.SMUS_PANEL.Controls.Add(this.SMUSCKEYIMG);
-            this.SMUS_PANEL.Controls.Add(this.SMUSBASE);
-            this.SMUS_PANEL.Controls.Add(this.SMUSBASEIMG);
-            resources.ApplyResources(this.SMUS_PANEL, "SMUS_PANEL");
-            this.SMUS_PANEL.Name = "SMUS_PANEL";
-            // 
-            // EBEU_PANEL
-            // 
-            this.EBEU_PANEL.Controls.Add(this.EBEU_DWNLD);
-            this.EBEU_PANEL.Controls.Add(this.EBEU_TK);
-            this.EBEU_PANEL.Controls.Add(this.EBEU_TKIMG);
-            this.EBEU_PANEL.Controls.Add(this.EBEU_CK);
-            this.EBEU_PANEL.Controls.Add(this.EBEU_CKIMG);
-            this.EBEU_PANEL.Controls.Add(this.EBEU_BASE);
-            this.EBEU_PANEL.Controls.Add(this.EBEU_BASEIMG);
-            resources.ApplyResources(this.EBEU_PANEL, "EBEU_PANEL");
-            this.EBEU_PANEL.Name = "EBEU_PANEL";
-            // 
-            // EBEU_DWNLD
-            // 
-            resources.ApplyResources(this.EBEU_DWNLD, "EBEU_DWNLD");
-            this.EBEU_DWNLD.Name = "EBEU_DWNLD";
-            this.EBEU_DWNLD.UseVisualStyleBackColor = true;
-            this.EBEU_DWNLD.Click += new System.EventHandler(this.EBEU_DWNLD_Click);
-            // 
-            // EBEU_TK
-            // 
-            resources.ApplyResources(this.EBEU_TK, "EBEU_TK");
-            this.EBEU_TK.ForeColor = System.Drawing.Color.Red;
-            this.EBEU_TK.Name = "EBEU_TK";
-            // 
-            // EBEU_TKIMG
-            // 
-            resources.ApplyResources(this.EBEU_TKIMG, "EBEU_TKIMG");
-            this.EBEU_TKIMG.Name = "EBEU_TKIMG";
-            this.EBEU_TKIMG.TabStop = false;
-            // 
-            // EBEU_CK
-            // 
-            resources.ApplyResources(this.EBEU_CK, "EBEU_CK");
-            this.EBEU_CK.ForeColor = System.Drawing.Color.Red;
-            this.EBEU_CK.Name = "EBEU_CK";
-            // 
-            // EBEU_CKIMG
-            // 
-            resources.ApplyResources(this.EBEU_CKIMG, "EBEU_CKIMG");
-            this.EBEU_CKIMG.Name = "EBEU_CKIMG";
-            this.EBEU_CKIMG.TabStop = false;
-            // 
-            // EBEU_BASE
-            // 
-            resources.ApplyResources(this.EBEU_BASE, "EBEU_BASE");
-            this.EBEU_BASE.ForeColor = System.Drawing.Color.Red;
-            this.EBEU_BASE.Name = "EBEU_BASE";
-            // 
-            // EBEU_BASEIMG
-            // 
-            resources.ApplyResources(this.EBEU_BASEIMG, "EBEU_BASEIMG");
-            this.EBEU_BASEIMG.Name = "EBEU_BASEIMG";
-            this.EBEU_BASEIMG.TabStop = false;
-            // 
-            // SMUS_DWNLD
-            // 
-            this.SMUS_DWNLD.Cursor = System.Windows.Forms.Cursors.Help;
-            resources.ApplyResources(this.SMUS_DWNLD, "SMUS_DWNLD");
-            this.SMUS_DWNLD.Name = "SMUS_DWNLD";
-            this.toolTip1.SetToolTip(this.SMUS_DWNLD, resources.GetString("SMUS_DWNLD.ToolTip"));
-            this.SMUS_DWNLD.UseVisualStyleBackColor = true;
-            this.SMUS_DWNLD.Click += new System.EventHandler(this.SMUS_DWNLD_Click);
-            // 
-            // SMUSTKEY
-            // 
-            resources.ApplyResources(this.SMUSTKEY, "SMUSTKEY");
-            this.SMUSTKEY.ForeColor = System.Drawing.Color.Red;
-            this.SMUSTKEY.Name = "SMUSTKEY";
-            // 
-            // SMUSTKEYIMG
-            // 
-            resources.ApplyResources(this.SMUSTKEYIMG, "SMUSTKEYIMG");
-            this.SMUSTKEYIMG.Name = "SMUSTKEYIMG";
-            this.SMUSTKEYIMG.TabStop = false;
-            // 
-            // SMUSCKEY
-            // 
-            resources.ApplyResources(this.SMUSCKEY, "SMUSCKEY");
-            this.SMUSCKEY.ForeColor = System.Drawing.Color.Red;
-            this.SMUSCKEY.Name = "SMUSCKEY";
-            // 
-            // SMUSCKEYIMG
-            // 
-            resources.ApplyResources(this.SMUSCKEYIMG, "SMUSCKEYIMG");
-            this.SMUSCKEYIMG.Name = "SMUSCKEYIMG";
-            this.SMUSCKEYIMG.TabStop = false;
-            // 
-            // SMUSBASE
-            // 
-            resources.ApplyResources(this.SMUSBASE, "SMUSBASE");
-            this.SMUSBASE.ForeColor = System.Drawing.Color.Red;
-            this.SMUSBASE.Name = "SMUSBASE";
-            // 
-            // SMUSBASEIMG
-            // 
-            resources.ApplyResources(this.SMUSBASEIMG, "SMUSBASEIMG");
-            this.SMUSBASEIMG.Name = "SMUSBASEIMG";
-            this.SMUSBASEIMG.TabStop = false;
-            // 
             // SMetroidEUPanel
             // 
             this.SMetroidEUPanel.Controls.Add(this.SMEU_DWNLD);
@@ -2125,6 +2184,173 @@
             resources.ApplyResources(this.SMEUBASE, "SMEUBASE");
             this.SMEUBASE.Name = "SMEUBASE";
             this.SMEUBASE.TabStop = false;
+            // 
+            // EBJP_PANEL
+            // 
+            this.EBJP_PANEL.Controls.Add(this.EBJP_DWNLD);
+            this.EBJP_PANEL.Controls.Add(this.EBJP_TK);
+            this.EBJP_PANEL.Controls.Add(this.EBJP_TKIMG);
+            this.EBJP_PANEL.Controls.Add(this.EBJP_CK);
+            this.EBJP_PANEL.Controls.Add(this.EBJP_CKIMG);
+            this.EBJP_PANEL.Controls.Add(this.EBJP_BASE);
+            this.EBJP_PANEL.Controls.Add(this.EBJP_BASEIMG);
+            resources.ApplyResources(this.EBJP_PANEL, "EBJP_PANEL");
+            this.EBJP_PANEL.Name = "EBJP_PANEL";
+            // 
+            // EBJP_DWNLD
+            // 
+            resources.ApplyResources(this.EBJP_DWNLD, "EBJP_DWNLD");
+            this.EBJP_DWNLD.Name = "EBJP_DWNLD";
+            this.EBJP_DWNLD.UseVisualStyleBackColor = true;
+            this.EBJP_DWNLD.Click += new System.EventHandler(this.EBJP_DWNLD_Click);
+            // 
+            // EBJP_TK
+            // 
+            resources.ApplyResources(this.EBJP_TK, "EBJP_TK");
+            this.EBJP_TK.ForeColor = System.Drawing.Color.Red;
+            this.EBJP_TK.Name = "EBJP_TK";
+            // 
+            // EBJP_TKIMG
+            // 
+            resources.ApplyResources(this.EBJP_TKIMG, "EBJP_TKIMG");
+            this.EBJP_TKIMG.Name = "EBJP_TKIMG";
+            this.EBJP_TKIMG.TabStop = false;
+            // 
+            // EBJP_CK
+            // 
+            resources.ApplyResources(this.EBJP_CK, "EBJP_CK");
+            this.EBJP_CK.ForeColor = System.Drawing.Color.Red;
+            this.EBJP_CK.Name = "EBJP_CK";
+            // 
+            // EBJP_CKIMG
+            // 
+            resources.ApplyResources(this.EBJP_CKIMG, "EBJP_CKIMG");
+            this.EBJP_CKIMG.Name = "EBJP_CKIMG";
+            this.EBJP_CKIMG.TabStop = false;
+            // 
+            // EBJP_BASE
+            // 
+            resources.ApplyResources(this.EBJP_BASE, "EBJP_BASE");
+            this.EBJP_BASE.ForeColor = System.Drawing.Color.Red;
+            this.EBJP_BASE.Name = "EBJP_BASE";
+            // 
+            // EBJP_BASEIMG
+            // 
+            resources.ApplyResources(this.EBJP_BASEIMG, "EBJP_BASEIMG");
+            this.EBJP_BASEIMG.Name = "EBJP_BASEIMG";
+            this.EBJP_BASEIMG.TabStop = false;
+            // 
+            // DKCUS_PANEL
+            // 
+            this.DKCUS_PANEL.Controls.Add(this.DKCUS_DWNLD);
+            this.DKCUS_PANEL.Controls.Add(this.DKCUS_TK);
+            this.DKCUS_PANEL.Controls.Add(this.DKCUS_TKIMG);
+            this.DKCUS_PANEL.Controls.Add(this.DKCUS_CK);
+            this.DKCUS_PANEL.Controls.Add(this.DKCUS_CKIMG);
+            this.DKCUS_PANEL.Controls.Add(this.DKCUS_BASE);
+            this.DKCUS_PANEL.Controls.Add(this.DKCUS_BASEIMG);
+            resources.ApplyResources(this.DKCUS_PANEL, "DKCUS_PANEL");
+            this.DKCUS_PANEL.Name = "DKCUS_PANEL";
+            // 
+            // DKCUS_DWNLD
+            // 
+            resources.ApplyResources(this.DKCUS_DWNLD, "DKCUS_DWNLD");
+            this.DKCUS_DWNLD.Name = "DKCUS_DWNLD";
+            this.DKCUS_DWNLD.UseVisualStyleBackColor = true;
+            this.DKCUS_DWNLD.Click += new System.EventHandler(this.DKCUS_DWNLD_Click);
+            // 
+            // DKCUS_TK
+            // 
+            resources.ApplyResources(this.DKCUS_TK, "DKCUS_TK");
+            this.DKCUS_TK.ForeColor = System.Drawing.Color.Red;
+            this.DKCUS_TK.Name = "DKCUS_TK";
+            // 
+            // DKCUS_TKIMG
+            // 
+            resources.ApplyResources(this.DKCUS_TKIMG, "DKCUS_TKIMG");
+            this.DKCUS_TKIMG.Name = "DKCUS_TKIMG";
+            this.DKCUS_TKIMG.TabStop = false;
+            // 
+            // DKCUS_CK
+            // 
+            resources.ApplyResources(this.DKCUS_CK, "DKCUS_CK");
+            this.DKCUS_CK.ForeColor = System.Drawing.Color.Red;
+            this.DKCUS_CK.Name = "DKCUS_CK";
+            // 
+            // DKCUS_CKIMG
+            // 
+            resources.ApplyResources(this.DKCUS_CKIMG, "DKCUS_CKIMG");
+            this.DKCUS_CKIMG.Name = "DKCUS_CKIMG";
+            this.DKCUS_CKIMG.TabStop = false;
+            // 
+            // DKCUS_BASE
+            // 
+            resources.ApplyResources(this.DKCUS_BASE, "DKCUS_BASE");
+            this.DKCUS_BASE.ForeColor = System.Drawing.Color.Red;
+            this.DKCUS_BASE.Name = "DKCUS_BASE";
+            // 
+            // DKCUS_BASEIMG
+            // 
+            resources.ApplyResources(this.DKCUS_BASEIMG, "DKCUS_BASEIMG");
+            this.DKCUS_BASEIMG.Name = "DKCUS_BASEIMG";
+            this.DKCUS_BASEIMG.TabStop = false;
+            // 
+            // SMUS_PANEL
+            // 
+            this.SMUS_PANEL.Controls.Add(this.SMUS_DWNLD);
+            this.SMUS_PANEL.Controls.Add(this.SMUSTKEY);
+            this.SMUS_PANEL.Controls.Add(this.SMUSTKEYIMG);
+            this.SMUS_PANEL.Controls.Add(this.SMUSCKEY);
+            this.SMUS_PANEL.Controls.Add(this.SMUSCKEYIMG);
+            this.SMUS_PANEL.Controls.Add(this.SMUSBASE);
+            this.SMUS_PANEL.Controls.Add(this.SMUSBASEIMG);
+            resources.ApplyResources(this.SMUS_PANEL, "SMUS_PANEL");
+            this.SMUS_PANEL.Name = "SMUS_PANEL";
+            // 
+            // SMUS_DWNLD
+            // 
+            this.SMUS_DWNLD.Cursor = System.Windows.Forms.Cursors.Help;
+            resources.ApplyResources(this.SMUS_DWNLD, "SMUS_DWNLD");
+            this.SMUS_DWNLD.Name = "SMUS_DWNLD";
+            this.toolTip1.SetToolTip(this.SMUS_DWNLD, resources.GetString("SMUS_DWNLD.ToolTip"));
+            this.SMUS_DWNLD.UseVisualStyleBackColor = true;
+            this.SMUS_DWNLD.Click += new System.EventHandler(this.SMUS_DWNLD_Click);
+            // 
+            // SMUSTKEY
+            // 
+            resources.ApplyResources(this.SMUSTKEY, "SMUSTKEY");
+            this.SMUSTKEY.ForeColor = System.Drawing.Color.Red;
+            this.SMUSTKEY.Name = "SMUSTKEY";
+            // 
+            // SMUSTKEYIMG
+            // 
+            resources.ApplyResources(this.SMUSTKEYIMG, "SMUSTKEYIMG");
+            this.SMUSTKEYIMG.Name = "SMUSTKEYIMG";
+            this.SMUSTKEYIMG.TabStop = false;
+            // 
+            // SMUSCKEY
+            // 
+            resources.ApplyResources(this.SMUSCKEY, "SMUSCKEY");
+            this.SMUSCKEY.ForeColor = System.Drawing.Color.Red;
+            this.SMUSCKEY.Name = "SMUSCKEY";
+            // 
+            // SMUSCKEYIMG
+            // 
+            resources.ApplyResources(this.SMUSCKEYIMG, "SMUSCKEYIMG");
+            this.SMUSCKEYIMG.Name = "SMUSCKEYIMG";
+            this.SMUSCKEYIMG.TabStop = false;
+            // 
+            // SMUSBASE
+            // 
+            resources.ApplyResources(this.SMUSBASE, "SMUSBASE");
+            this.SMUSBASE.ForeColor = System.Drawing.Color.Red;
+            this.SMUSBASE.Name = "SMUSBASE";
+            // 
+            // SMUSBASEIMG
+            // 
+            resources.ApplyResources(this.SMUSBASEIMG, "SMUSBASEIMG");
+            this.SMUSBASEIMG.Name = "SMUSBASEIMG";
+            this.SMUSBASEIMG.TabStop = false;
             // 
             // SMJP_PANEL
             // 
@@ -2349,155 +2575,367 @@
             // 
             this.DKCEU.Tick += new System.EventHandler(this.DKCEU_Tick);
             // 
-            // DKCUS_PANEL
-            // 
-            this.DKCUS_PANEL.Controls.Add(this.DKCUS_DWNLD);
-            this.DKCUS_PANEL.Controls.Add(this.DKCUS_TK);
-            this.DKCUS_PANEL.Controls.Add(this.DKCUS_TKIMG);
-            this.DKCUS_PANEL.Controls.Add(this.DKCUS_CK);
-            this.DKCUS_PANEL.Controls.Add(this.DKCUS_CKIMG);
-            this.DKCUS_PANEL.Controls.Add(this.DKCUS_BASE);
-            this.DKCUS_PANEL.Controls.Add(this.DKCUS_BASEIMG);
-            resources.ApplyResources(this.DKCUS_PANEL, "DKCUS_PANEL");
-            this.DKCUS_PANEL.Name = "DKCUS_PANEL";
-            // 
-            // DKCUS_DWNLD
-            // 
-            resources.ApplyResources(this.DKCUS_DWNLD, "DKCUS_DWNLD");
-            this.DKCUS_DWNLD.Name = "DKCUS_DWNLD";
-            this.DKCUS_DWNLD.UseVisualStyleBackColor = true;
-            this.DKCUS_DWNLD.Click += new System.EventHandler(this.DKCUS_DWNLD_Click);
-            // 
-            // DKCUS_TK
-            // 
-            resources.ApplyResources(this.DKCUS_TK, "DKCUS_TK");
-            this.DKCUS_TK.ForeColor = System.Drawing.Color.Red;
-            this.DKCUS_TK.Name = "DKCUS_TK";
-            // 
-            // DKCUS_TKIMG
-            // 
-            resources.ApplyResources(this.DKCUS_TKIMG, "DKCUS_TKIMG");
-            this.DKCUS_TKIMG.Name = "DKCUS_TKIMG";
-            this.DKCUS_TKIMG.TabStop = false;
-            // 
-            // DKCUS_CK
-            // 
-            resources.ApplyResources(this.DKCUS_CK, "DKCUS_CK");
-            this.DKCUS_CK.ForeColor = System.Drawing.Color.Red;
-            this.DKCUS_CK.Name = "DKCUS_CK";
-            // 
-            // DKCUS_CKIMG
-            // 
-            resources.ApplyResources(this.DKCUS_CKIMG, "DKCUS_CKIMG");
-            this.DKCUS_CKIMG.Name = "DKCUS_CKIMG";
-            this.DKCUS_CKIMG.TabStop = false;
-            // 
-            // DKCUS_BASE
-            // 
-            resources.ApplyResources(this.DKCUS_BASE, "DKCUS_BASE");
-            this.DKCUS_BASE.ForeColor = System.Drawing.Color.Red;
-            this.DKCUS_BASE.Name = "DKCUS_BASE";
-            // 
-            // DKCUS_BASEIMG
-            // 
-            resources.ApplyResources(this.DKCUS_BASEIMG, "DKCUS_BASEIMG");
-            this.DKCUS_BASEIMG.Name = "DKCUS_BASEIMG";
-            this.DKCUS_BASEIMG.TabStop = false;
-            // 
             // DKCUS
             // 
             this.DKCUS.Tick += new System.EventHandler(this.DKCUS_Tick);
             // 
-            // comboBox2
-            // 
-            this.comboBox2.AutoCompleteCustomSource.AddRange(new string[] {
-            resources.GetString("comboBox2.AutoCompleteCustomSource"),
-            resources.GetString("comboBox2.AutoCompleteCustomSource1"),
-            resources.GetString("comboBox2.AutoCompleteCustomSource2")});
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            resources.GetString("comboBox2.Items"),
-            resources.GetString("comboBox2.Items1"),
-            resources.GetString("comboBox2.Items2"),
-            resources.GetString("comboBox2.Items3"),
-            resources.GetString("comboBox2.Items4"),
-            resources.GetString("comboBox2.Items5"),
-            resources.GetString("comboBox2.Items6")});
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
-            // 
-            // N64CSTM_PANEL
-            // 
-            this.N64CSTM_PANEL.Controls.Add(this.N64CONTENT);
-            this.N64CSTM_PANEL.Controls.Add(this.N64CONTENTIMG);
-            this.N64CSTM_PANEL.Controls.Add(this.N64META);
-            this.N64CSTM_PANEL.Controls.Add(this.N64METAIMG);
-            this.N64CSTM_PANEL.Controls.Add(this.N64CODE);
-            this.N64CSTM_PANEL.Controls.Add(this.N64CODEIMG);
-            this.N64CSTM_PANEL.Controls.Add(this.label56);
-            this.N64CSTM_PANEL.Controls.Add(this.N64CSTMN_PATH_BTN);
-            this.N64CSTM_PANEL.Controls.Add(this.N64CSTM_PATH);
-            resources.ApplyResources(this.N64CSTM_PANEL, "N64CSTM_PANEL");
-            this.N64CSTM_PANEL.Name = "N64CSTM_PANEL";
-            // 
-            // N64CONTENT
-            // 
-            resources.ApplyResources(this.N64CONTENT, "N64CONTENT");
-            this.N64CONTENT.ForeColor = System.Drawing.Color.Red;
-            this.N64CONTENT.Name = "N64CONTENT";
-            // 
-            // N64CONTENTIMG
-            // 
-            resources.ApplyResources(this.N64CONTENTIMG, "N64CONTENTIMG");
-            this.N64CONTENTIMG.Name = "N64CONTENTIMG";
-            this.N64CONTENTIMG.TabStop = false;
-            // 
-            // N64META
-            // 
-            resources.ApplyResources(this.N64META, "N64META");
-            this.N64META.ForeColor = System.Drawing.Color.Red;
-            this.N64META.Name = "N64META";
-            // 
-            // N64METAIMG
-            // 
-            resources.ApplyResources(this.N64METAIMG, "N64METAIMG");
-            this.N64METAIMG.Name = "N64METAIMG";
-            this.N64METAIMG.TabStop = false;
-            // 
-            // N64CODE
-            // 
-            resources.ApplyResources(this.N64CODE, "N64CODE");
-            this.N64CODE.ForeColor = System.Drawing.Color.Red;
-            this.N64CODE.Name = "N64CODE";
-            // 
-            // N64CODEIMG
-            // 
-            resources.ApplyResources(this.N64CODEIMG, "N64CODEIMG");
-            this.N64CODEIMG.Name = "N64CODEIMG";
-            this.N64CODEIMG.TabStop = false;
-            // 
-            // label56
-            // 
-            resources.ApplyResources(this.label56, "label56");
-            this.label56.Name = "label56";
-            // 
-            // N64CSTMN_PATH_BTN
-            // 
-            resources.ApplyResources(this.N64CSTMN_PATH_BTN, "N64CSTMN_PATH_BTN");
-            this.N64CSTMN_PATH_BTN.Name = "N64CSTMN_PATH_BTN";
-            this.N64CSTMN_PATH_BTN.UseVisualStyleBackColor = true;
-            this.N64CSTMN_PATH_BTN.Click += new System.EventHandler(this.N64CSTMN_PATH_BTN_Click);
-            // 
-            // N64CSTM_PATH
-            // 
-            resources.ApplyResources(this.N64CSTM_PATH, "N64CSTM_PATH");
-            this.N64CSTM_PATH.Name = "N64CSTM_PATH";
-            // 
             // N64CSTMNFOLDERS
             // 
             this.N64CSTMNFOLDERS.Tick += new System.EventHandler(this.N64CSTMNFOLDERS_Tick);
+            // 
+            // PMEU_PANEL
+            // 
+            this.PMEU_PANEL.Controls.Add(this.PMEU_DWNLD);
+            this.PMEU_PANEL.Controls.Add(this.PMEUTK);
+            this.PMEU_PANEL.Controls.Add(this.PMEUTKIMG);
+            this.PMEU_PANEL.Controls.Add(this.PMEUCK);
+            this.PMEU_PANEL.Controls.Add(this.PMEUCKIMG);
+            this.PMEU_PANEL.Controls.Add(this.PMEUBASE);
+            this.PMEU_PANEL.Controls.Add(this.PMEUBASEIMG);
+            resources.ApplyResources(this.PMEU_PANEL, "PMEU_PANEL");
+            this.PMEU_PANEL.Name = "PMEU_PANEL";
+            // 
+            // PMEU_DWNLD
+            // 
+            resources.ApplyResources(this.PMEU_DWNLD, "PMEU_DWNLD");
+            this.PMEU_DWNLD.Name = "PMEU_DWNLD";
+            this.PMEU_DWNLD.UseVisualStyleBackColor = true;
+            this.PMEU_DWNLD.Click += new System.EventHandler(this.PMEU_DWNLD_Click);
+            // 
+            // PMEUTK
+            // 
+            resources.ApplyResources(this.PMEUTK, "PMEUTK");
+            this.PMEUTK.ForeColor = System.Drawing.Color.Red;
+            this.PMEUTK.Name = "PMEUTK";
+            // 
+            // PMEUTKIMG
+            // 
+            resources.ApplyResources(this.PMEUTKIMG, "PMEUTKIMG");
+            this.PMEUTKIMG.Name = "PMEUTKIMG";
+            this.PMEUTKIMG.TabStop = false;
+            // 
+            // PMEUCK
+            // 
+            resources.ApplyResources(this.PMEUCK, "PMEUCK");
+            this.PMEUCK.ForeColor = System.Drawing.Color.Red;
+            this.PMEUCK.Name = "PMEUCK";
+            // 
+            // PMEUCKIMG
+            // 
+            resources.ApplyResources(this.PMEUCKIMG, "PMEUCKIMG");
+            this.PMEUCKIMG.Name = "PMEUCKIMG";
+            this.PMEUCKIMG.TabStop = false;
+            // 
+            // PMEUBASE
+            // 
+            resources.ApplyResources(this.PMEUBASE, "PMEUBASE");
+            this.PMEUBASE.ForeColor = System.Drawing.Color.Red;
+            this.PMEUBASE.Name = "PMEUBASE";
+            // 
+            // PMEUBASEIMG
+            // 
+            resources.ApplyResources(this.PMEUBASEIMG, "PMEUBASEIMG");
+            this.PMEUBASEIMG.Name = "PMEUBASEIMG";
+            this.PMEUBASEIMG.TabStop = false;
+            // 
+            // PMEU
+            // 
+            this.PMEU.Tick += new System.EventHandler(this.PMEU_Tick);
+            // 
+            // PMUS_PANEL
+            // 
+            this.PMUS_PANEL.Controls.Add(this.PMUS_DWNLD);
+            this.PMUS_PANEL.Controls.Add(this.PMUSTK);
+            this.PMUS_PANEL.Controls.Add(this.PMUSTKIMG);
+            this.PMUS_PANEL.Controls.Add(this.PMUSCK);
+            this.PMUS_PANEL.Controls.Add(this.PMUSCKIMG);
+            this.PMUS_PANEL.Controls.Add(this.PMUSBASE);
+            this.PMUS_PANEL.Controls.Add(this.PMUSBASEIMG);
+            resources.ApplyResources(this.PMUS_PANEL, "PMUS_PANEL");
+            this.PMUS_PANEL.Name = "PMUS_PANEL";
+            // 
+            // PMUS_DWNLD
+            // 
+            resources.ApplyResources(this.PMUS_DWNLD, "PMUS_DWNLD");
+            this.PMUS_DWNLD.Name = "PMUS_DWNLD";
+            this.PMUS_DWNLD.UseVisualStyleBackColor = true;
+            this.PMUS_DWNLD.Click += new System.EventHandler(this.PMUS_DWNLD_Click);
+            // 
+            // PMUSTK
+            // 
+            resources.ApplyResources(this.PMUSTK, "PMUSTK");
+            this.PMUSTK.ForeColor = System.Drawing.Color.Red;
+            this.PMUSTK.Name = "PMUSTK";
+            // 
+            // PMUSTKIMG
+            // 
+            resources.ApplyResources(this.PMUSTKIMG, "PMUSTKIMG");
+            this.PMUSTKIMG.Name = "PMUSTKIMG";
+            this.PMUSTKIMG.TabStop = false;
+            // 
+            // PMUSCK
+            // 
+            resources.ApplyResources(this.PMUSCK, "PMUSCK");
+            this.PMUSCK.ForeColor = System.Drawing.Color.Red;
+            this.PMUSCK.Name = "PMUSCK";
+            // 
+            // PMUSCKIMG
+            // 
+            resources.ApplyResources(this.PMUSCKIMG, "PMUSCKIMG");
+            this.PMUSCKIMG.Name = "PMUSCKIMG";
+            this.PMUSCKIMG.TabStop = false;
+            // 
+            // PMUSBASE
+            // 
+            resources.ApplyResources(this.PMUSBASE, "PMUSBASE");
+            this.PMUSBASE.ForeColor = System.Drawing.Color.Red;
+            this.PMUSBASE.Name = "PMUSBASE";
+            // 
+            // PMUSBASEIMG
+            // 
+            resources.ApplyResources(this.PMUSBASEIMG, "PMUSBASEIMG");
+            this.PMUSBASEIMG.Name = "PMUSBASEIMG";
+            this.PMUSBASEIMG.TabStop = false;
+            // 
+            // PMUS
+            // 
+            this.PMUS.Tick += new System.EventHandler(this.PMUS_Tick);
+            // 
+            // FXZUS_PANEL
+            // 
+            this.FXZUS_PANEL.Controls.Add(this.FZXUS_DWNLD);
+            this.FXZUS_PANEL.Controls.Add(this.FZXUSTK);
+            this.FXZUS_PANEL.Controls.Add(this.FZXUSTKIMG);
+            this.FXZUS_PANEL.Controls.Add(this.FZXUSCK);
+            this.FXZUS_PANEL.Controls.Add(this.FXZUSCKIMG);
+            this.FXZUS_PANEL.Controls.Add(this.FZXUSBASE);
+            this.FXZUS_PANEL.Controls.Add(this.FZXUSBASEIMG);
+            resources.ApplyResources(this.FXZUS_PANEL, "FXZUS_PANEL");
+            this.FXZUS_PANEL.Name = "FXZUS_PANEL";
+            // 
+            // FZXUS_DWNLD
+            // 
+            resources.ApplyResources(this.FZXUS_DWNLD, "FZXUS_DWNLD");
+            this.FZXUS_DWNLD.Name = "FZXUS_DWNLD";
+            this.FZXUS_DWNLD.UseVisualStyleBackColor = true;
+            this.FZXUS_DWNLD.Click += new System.EventHandler(this.FZXUS_DWNLD_Click);
+            // 
+            // FZXUSTK
+            // 
+            resources.ApplyResources(this.FZXUSTK, "FZXUSTK");
+            this.FZXUSTK.ForeColor = System.Drawing.Color.Red;
+            this.FZXUSTK.Name = "FZXUSTK";
+            // 
+            // FZXUSTKIMG
+            // 
+            resources.ApplyResources(this.FZXUSTKIMG, "FZXUSTKIMG");
+            this.FZXUSTKIMG.Name = "FZXUSTKIMG";
+            this.FZXUSTKIMG.TabStop = false;
+            // 
+            // FZXUSCK
+            // 
+            resources.ApplyResources(this.FZXUSCK, "FZXUSCK");
+            this.FZXUSCK.ForeColor = System.Drawing.Color.Red;
+            this.FZXUSCK.Name = "FZXUSCK";
+            // 
+            // FXZUSCKIMG
+            // 
+            resources.ApplyResources(this.FXZUSCKIMG, "FXZUSCKIMG");
+            this.FXZUSCKIMG.Name = "FXZUSCKIMG";
+            this.FXZUSCKIMG.TabStop = false;
+            // 
+            // FZXUSBASE
+            // 
+            resources.ApplyResources(this.FZXUSBASE, "FZXUSBASE");
+            this.FZXUSBASE.ForeColor = System.Drawing.Color.Red;
+            this.FZXUSBASE.Name = "FZXUSBASE";
+            // 
+            // FZXUSBASEIMG
+            // 
+            resources.ApplyResources(this.FZXUSBASEIMG, "FZXUSBASEIMG");
+            this.FZXUSBASEIMG.Name = "FZXUSBASEIMG";
+            this.FZXUSBASEIMG.TabStop = false;
+            // 
+            // FZXUS
+            // 
+            this.FZXUS.Tick += new System.EventHandler(this.FZXUS_Tick);
+            // 
+            // FZXJP_PANEL
+            // 
+            this.FZXJP_PANEL.Controls.Add(this.FZXJP_DWNLD);
+            this.FZXJP_PANEL.Controls.Add(this.FZXJPTK);
+            this.FZXJP_PANEL.Controls.Add(this.FZXJPTKIMG);
+            this.FZXJP_PANEL.Controls.Add(this.FZXJPCK);
+            this.FZXJP_PANEL.Controls.Add(this.FZXJPCKIMG);
+            this.FZXJP_PANEL.Controls.Add(this.FZXJPBASE);
+            this.FZXJP_PANEL.Controls.Add(this.FZXJPBASEIMG);
+            resources.ApplyResources(this.FZXJP_PANEL, "FZXJP_PANEL");
+            this.FZXJP_PANEL.Name = "FZXJP_PANEL";
+            // 
+            // FZXJP_DWNLD
+            // 
+            resources.ApplyResources(this.FZXJP_DWNLD, "FZXJP_DWNLD");
+            this.FZXJP_DWNLD.Name = "FZXJP_DWNLD";
+            this.FZXJP_DWNLD.UseVisualStyleBackColor = true;
+            this.FZXJP_DWNLD.Click += new System.EventHandler(this.FZXJP_DWNLD_Click);
+            // 
+            // FZXJPTK
+            // 
+            resources.ApplyResources(this.FZXJPTK, "FZXJPTK");
+            this.FZXJPTK.ForeColor = System.Drawing.Color.Red;
+            this.FZXJPTK.Name = "FZXJPTK";
+            // 
+            // FZXJPTKIMG
+            // 
+            resources.ApplyResources(this.FZXJPTKIMG, "FZXJPTKIMG");
+            this.FZXJPTKIMG.Name = "FZXJPTKIMG";
+            this.FZXJPTKIMG.TabStop = false;
+            // 
+            // FZXJPCK
+            // 
+            resources.ApplyResources(this.FZXJPCK, "FZXJPCK");
+            this.FZXJPCK.ForeColor = System.Drawing.Color.Red;
+            this.FZXJPCK.Name = "FZXJPCK";
+            // 
+            // FZXJPCKIMG
+            // 
+            resources.ApplyResources(this.FZXJPCKIMG, "FZXJPCKIMG");
+            this.FZXJPCKIMG.Name = "FZXJPCKIMG";
+            this.FZXJPCKIMG.TabStop = false;
+            // 
+            // FZXJPBASE
+            // 
+            resources.ApplyResources(this.FZXJPBASE, "FZXJPBASE");
+            this.FZXJPBASE.ForeColor = System.Drawing.Color.Red;
+            this.FZXJPBASE.Name = "FZXJPBASE";
+            // 
+            // FZXJPBASEIMG
+            // 
+            resources.ApplyResources(this.FZXJPBASEIMG, "FZXJPBASEIMG");
+            this.FZXJPBASEIMG.Name = "FZXJPBASEIMG";
+            this.FZXJPBASEIMG.TabStop = false;
+            // 
+            // FZXJP
+            // 
+            this.FZXJP.Tick += new System.EventHandler(this.FZXJP_Tick);
+            // 
+            // DK64EU_PANEL
+            // 
+            this.DK64EU_PANEL.Controls.Add(this.DK64EU_DWNLD);
+            this.DK64EU_PANEL.Controls.Add(this.DK64EUTK);
+            this.DK64EU_PANEL.Controls.Add(this.DK64EUTKIMG);
+            this.DK64EU_PANEL.Controls.Add(this.DK64EUCK);
+            this.DK64EU_PANEL.Controls.Add(this.DK64EUCKIMG);
+            this.DK64EU_PANEL.Controls.Add(this.DK64EUBASE);
+            this.DK64EU_PANEL.Controls.Add(this.DK64EUBASEIMG);
+            resources.ApplyResources(this.DK64EU_PANEL, "DK64EU_PANEL");
+            this.DK64EU_PANEL.Name = "DK64EU_PANEL";
+            // 
+            // DK64EU_DWNLD
+            // 
+            resources.ApplyResources(this.DK64EU_DWNLD, "DK64EU_DWNLD");
+            this.DK64EU_DWNLD.Name = "DK64EU_DWNLD";
+            this.DK64EU_DWNLD.UseVisualStyleBackColor = true;
+            this.DK64EU_DWNLD.Click += new System.EventHandler(this.DK64EU_DWNLD_Click);
+            // 
+            // DK64EUTK
+            // 
+            resources.ApplyResources(this.DK64EUTK, "DK64EUTK");
+            this.DK64EUTK.ForeColor = System.Drawing.Color.Red;
+            this.DK64EUTK.Name = "DK64EUTK";
+            // 
+            // DK64EUTKIMG
+            // 
+            resources.ApplyResources(this.DK64EUTKIMG, "DK64EUTKIMG");
+            this.DK64EUTKIMG.Name = "DK64EUTKIMG";
+            this.DK64EUTKIMG.TabStop = false;
+            // 
+            // DK64EUCK
+            // 
+            resources.ApplyResources(this.DK64EUCK, "DK64EUCK");
+            this.DK64EUCK.ForeColor = System.Drawing.Color.Red;
+            this.DK64EUCK.Name = "DK64EUCK";
+            // 
+            // DK64EUCKIMG
+            // 
+            resources.ApplyResources(this.DK64EUCKIMG, "DK64EUCKIMG");
+            this.DK64EUCKIMG.Name = "DK64EUCKIMG";
+            this.DK64EUCKIMG.TabStop = false;
+            // 
+            // DK64EUBASE
+            // 
+            resources.ApplyResources(this.DK64EUBASE, "DK64EUBASE");
+            this.DK64EUBASE.ForeColor = System.Drawing.Color.Red;
+            this.DK64EUBASE.Name = "DK64EUBASE";
+            // 
+            // DK64EUBASEIMG
+            // 
+            resources.ApplyResources(this.DK64EUBASEIMG, "DK64EUBASEIMG");
+            this.DK64EUBASEIMG.Name = "DK64EUBASEIMG";
+            this.DK64EUBASEIMG.TabStop = false;
+            // 
+            // DK64EU
+            // 
+            this.DK64EU.Tick += new System.EventHandler(this.DK64EU_Tick);
+            // 
+            // DK64US_PANEL
+            // 
+            this.DK64US_PANEL.Controls.Add(this.DK64US_DWNLD);
+            this.DK64US_PANEL.Controls.Add(this.DK64USTK);
+            this.DK64US_PANEL.Controls.Add(this.DK64USTKIMG);
+            this.DK64US_PANEL.Controls.Add(this.DK64USCK);
+            this.DK64US_PANEL.Controls.Add(this.DK64USCKIMG);
+            this.DK64US_PANEL.Controls.Add(this.DK64USBASE);
+            this.DK64US_PANEL.Controls.Add(this.DK64USBASEIMG);
+            resources.ApplyResources(this.DK64US_PANEL, "DK64US_PANEL");
+            this.DK64US_PANEL.Name = "DK64US_PANEL";
+            // 
+            // DK64US_DWNLD
+            // 
+            resources.ApplyResources(this.DK64US_DWNLD, "DK64US_DWNLD");
+            this.DK64US_DWNLD.Name = "DK64US_DWNLD";
+            this.DK64US_DWNLD.UseVisualStyleBackColor = true;
+            this.DK64US_DWNLD.Click += new System.EventHandler(this.DK64US_DWNLD_Click);
+            // 
+            // DK64USTK
+            // 
+            resources.ApplyResources(this.DK64USTK, "DK64USTK");
+            this.DK64USTK.ForeColor = System.Drawing.Color.Red;
+            this.DK64USTK.Name = "DK64USTK";
+            // 
+            // DK64USTKIMG
+            // 
+            resources.ApplyResources(this.DK64USTKIMG, "DK64USTKIMG");
+            this.DK64USTKIMG.Name = "DK64USTKIMG";
+            this.DK64USTKIMG.TabStop = false;
+            // 
+            // DK64USCK
+            // 
+            resources.ApplyResources(this.DK64USCK, "DK64USCK");
+            this.DK64USCK.ForeColor = System.Drawing.Color.Red;
+            this.DK64USCK.Name = "DK64USCK";
+            // 
+            // DK64USCKIMG
+            // 
+            resources.ApplyResources(this.DK64USCKIMG, "DK64USCKIMG");
+            this.DK64USCKIMG.Name = "DK64USCKIMG";
+            this.DK64USCKIMG.TabStop = false;
+            // 
+            // DK64USBASE
+            // 
+            resources.ApplyResources(this.DK64USBASE, "DK64USBASE");
+            this.DK64USBASE.ForeColor = System.Drawing.Color.Red;
+            this.DK64USBASE.Name = "DK64USBASE";
+            // 
+            // DK64USBASEIMG
+            // 
+            resources.ApplyResources(this.DK64USBASEIMG, "DK64USBASEIMG");
+            this.DK64USBASEIMG.Name = "DK64USBASEIMG";
+            this.DK64USBASEIMG.TabStop = false;
+            // 
+            // DK64US
+            // 
+            this.DK64US.Tick += new System.EventHandler(this.DK64US_Tick);
             // 
             // UWUVCI_AIO
             // 
@@ -2544,6 +2982,11 @@
             this.InjectionN64.ResumeLayout(false);
             this.InjectionN64.PerformLayout();
             this.BaseRomN64.ResumeLayout(false);
+            this.N64CSTM_PANEL.ResumeLayout(false);
+            this.N64CSTM_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.N64CONTENTIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N64METAIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N64CODEIMG)).EndInit();
             this.PackingN64.ResumeLayout(false);
             this.GBA.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
@@ -2554,40 +2997,45 @@
             this.groupBox7.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.SNES.ResumeLayout(false);
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            this.EBJP_PANEL.ResumeLayout(false);
-            this.EBJP_PANEL.PerformLayout();
-            this.DKCEU_PANEL.ResumeLayout(false);
-            this.DKCEU_PANEL.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_TKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_CKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_BASEIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EBJP_TKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EBJP_CKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EBJP_BASEIMG)).EndInit();
-            this.EBUS_PANEL.ResumeLayout(false);
-            this.EBUS_PANEL.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EBUS_TKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EBUS_CKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EBUS_BASEIMG)).EndInit();
-            this.SMUS_PANEL.ResumeLayout(false);
-            this.SMUS_PANEL.PerformLayout();
             this.EBEU_PANEL.ResumeLayout(false);
             this.EBEU_PANEL.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EBEU_TKIMG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EBEU_CKIMG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EBEU_BASEIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SMUSTKEYIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SMUSCKEYIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SMUSBASEIMG)).EndInit();
+            this.EBUS_PANEL.ResumeLayout(false);
+            this.EBUS_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EBUS_TKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBUS_CKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBUS_BASEIMG)).EndInit();
+            this.DKCEU_PANEL.ResumeLayout(false);
+            this.DKCEU_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_TKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_CKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCEU_BASEIMG)).EndInit();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.SMetroidEUPanel.ResumeLayout(false);
             this.SMetroidEUPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SMEUTK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SMEUCK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SMEUBASE)).EndInit();
+            this.EBJP_PANEL.ResumeLayout(false);
+            this.EBJP_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EBJP_TKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBJP_CKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EBJP_BASEIMG)).EndInit();
+            this.DKCUS_PANEL.ResumeLayout(false);
+            this.DKCUS_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_TKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_CKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_BASEIMG)).EndInit();
+            this.SMUS_PANEL.ResumeLayout(false);
+            this.SMUS_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SMUSTKEYIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMUSCKEYIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMUSBASEIMG)).EndInit();
             this.SMJP_PANEL.ResumeLayout(false);
             this.SMJP_PANEL.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SMJPTKIMG)).EndInit();
@@ -2599,16 +3047,36 @@
             ((System.ComponentModel.ISupportInitialize)(this.SNESMETAIMG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SNESCODEIMG)).EndInit();
             this.groupBox12.ResumeLayout(false);
-            this.DKCUS_PANEL.ResumeLayout(false);
-            this.DKCUS_PANEL.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_TKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_CKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DKCUS_BASEIMG)).EndInit();
-            this.N64CSTM_PANEL.ResumeLayout(false);
-            this.N64CSTM_PANEL.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.N64CONTENTIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N64METAIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N64CODEIMG)).EndInit();
+            this.PMEU_PANEL.ResumeLayout(false);
+            this.PMEU_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PMEUTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMEUCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMEUBASEIMG)).EndInit();
+            this.PMUS_PANEL.ResumeLayout(false);
+            this.PMUS_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PMUSTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMUSCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMUSBASEIMG)).EndInit();
+            this.FXZUS_PANEL.ResumeLayout(false);
+            this.FXZUS_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXUSTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FXZUSCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXUSBASEIMG)).EndInit();
+            this.FZXJP_PANEL.ResumeLayout(false);
+            this.FZXJP_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXJPTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXJPCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXJPBASEIMG)).EndInit();
+            this.DK64EU_PANEL.ResumeLayout(false);
+            this.DK64EU_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64EUTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64EUCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64EUBASEIMG)).EndInit();
+            this.DK64US_PANEL.ResumeLayout(false);
+            this.DK64US_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64USTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64USCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64USBASEIMG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2918,6 +3386,60 @@
         private System.Windows.Forms.TextBox N64CSTM_PATH;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Timer N64CSTMNFOLDERS;
+        private System.Windows.Forms.Panel PMEU_PANEL;
+        private System.Windows.Forms.Button PMEU_DWNLD;
+        private System.Windows.Forms.Label PMEUTK;
+        private System.Windows.Forms.PictureBox PMEUTKIMG;
+        private System.Windows.Forms.Label PMEUCK;
+        private System.Windows.Forms.PictureBox PMEUCKIMG;
+        private System.Windows.Forms.Label PMEUBASE;
+        private System.Windows.Forms.PictureBox PMEUBASEIMG;
+        private System.Windows.Forms.Timer PMEU;
+        private System.Windows.Forms.Panel PMUS_PANEL;
+        private System.Windows.Forms.Button PMUS_DWNLD;
+        private System.Windows.Forms.Label PMUSTK;
+        private System.Windows.Forms.PictureBox PMUSTKIMG;
+        private System.Windows.Forms.Label PMUSCK;
+        private System.Windows.Forms.PictureBox PMUSCKIMG;
+        private System.Windows.Forms.Label PMUSBASE;
+        private System.Windows.Forms.PictureBox PMUSBASEIMG;
+        private System.Windows.Forms.Timer PMUS;
+        private System.Windows.Forms.Panel FXZUS_PANEL;
+        private System.Windows.Forms.Button FZXUS_DWNLD;
+        private System.Windows.Forms.Label FZXUSTK;
+        private System.Windows.Forms.PictureBox FZXUSTKIMG;
+        private System.Windows.Forms.Label FZXUSCK;
+        private System.Windows.Forms.PictureBox FXZUSCKIMG;
+        private System.Windows.Forms.Label FZXUSBASE;
+        private System.Windows.Forms.PictureBox FZXUSBASEIMG;
+        private System.Windows.Forms.Timer FZXUS;
+        private System.Windows.Forms.Panel FZXJP_PANEL;
+        private System.Windows.Forms.Button FZXJP_DWNLD;
+        private System.Windows.Forms.Label FZXJPTK;
+        private System.Windows.Forms.PictureBox FZXJPTKIMG;
+        private System.Windows.Forms.Label FZXJPCK;
+        private System.Windows.Forms.PictureBox FZXJPCKIMG;
+        private System.Windows.Forms.Label FZXJPBASE;
+        private System.Windows.Forms.PictureBox FZXJPBASEIMG;
+        private System.Windows.Forms.Timer FZXJP;
+        private System.Windows.Forms.Panel DK64EU_PANEL;
+        private System.Windows.Forms.Button DK64EU_DWNLD;
+        private System.Windows.Forms.Label DK64EUTK;
+        private System.Windows.Forms.PictureBox DK64EUTKIMG;
+        private System.Windows.Forms.Label DK64EUCK;
+        private System.Windows.Forms.PictureBox DK64EUCKIMG;
+        private System.Windows.Forms.Label DK64EUBASE;
+        private System.Windows.Forms.PictureBox DK64EUBASEIMG;
+        private System.Windows.Forms.Timer DK64EU;
+        private System.Windows.Forms.Panel DK64US_PANEL;
+        private System.Windows.Forms.Button DK64US_DWNLD;
+        private System.Windows.Forms.Label DK64USTK;
+        private System.Windows.Forms.PictureBox DK64USTKIMG;
+        private System.Windows.Forms.Label DK64USCK;
+        private System.Windows.Forms.PictureBox DK64USCKIMG;
+        private System.Windows.Forms.Label DK64USBASE;
+        private System.Windows.Forms.PictureBox DK64USBASEIMG;
+        private System.Windows.Forms.Timer DK64US;
     }
 }
 

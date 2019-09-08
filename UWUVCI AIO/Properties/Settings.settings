@@ -17,13 +17,13 @@
     <Setting Name="PMUS" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="DKEU" Type="System.String" Scope="User">
+    <Setting Name="DK64EU" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="DKUS" Type="System.String" Scope="User">
+    <Setting Name="DK64US" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="FZX" Type="System.String" Scope="User">
+    <Setting Name="FZXUS" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="FZXJP" Type="System.String" Scope="User">

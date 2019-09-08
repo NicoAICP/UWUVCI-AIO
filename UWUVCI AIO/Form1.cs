@@ -79,8 +79,22 @@ namespace UWUVCI_AIO
                 bootimages[i] = null;
             }
             SNESCSTMNFOLDERS.Enabled = false;
+            EBEU.Enabled = false;
+            EBUS.Enabled = false;
+            EBJP.Enabled = false;
+            SMETROIDJP.Enabled = false;
+            SMETROIDUS.Enabled = false;
+            DKCEU.Enabled = false;
+            N64CSTMNFOLDERS.Enabled = false;
+            PMEU.Enabled = false;
+            PMUS.Enabled = false;
+            FZXUS.Enabled = false;
+            FZXJP.Enabled = false;
+            DK64EU.Enabled = false;
+            DK64US.Enabled = false;
             CSTMBaseRom_path = null;
             SMETROIDEU.Enabled = false;
+            Injection.clean();
         }
 
 
@@ -224,9 +238,153 @@ namespace UWUVCI_AIO
                 BaseROM = "Custom";
                 #region Panels
                 N64CSTM_PANEL.Visible = true;
+                PMEU_PANEL.Visible = false;
+                PMUS_PANEL.Visible = false;
+                FXZUS_PANEL.Visible = false;
+                FZXJP_PANEL.Visible = false;
+                DK64EU_PANEL.Visible = false;
+                DK64US_PANEL.Visible = false;
                 #endregion
                 #region Timers
                 N64CSTMNFOLDERS.Enabled = true;
+                PMEU.Enabled = false;
+                PMUS.Enabled = false;
+                FZXUS.Enabled = false;
+                FZXJP.Enabled = false;
+                DK64EU.Enabled = false;
+                DK64US.Enabled = false;
+                #endregion
+            }
+            if (b == 1)
+            {
+                BaseROM = "PMEU";
+                #region Panels
+                N64CSTM_PANEL.Visible = false;
+                PMEU_PANEL.Visible = true;
+                PMUS_PANEL.Visible = false;
+                FXZUS_PANEL.Visible = false;
+                FZXJP_PANEL.Visible = false;
+                DK64EU_PANEL.Visible = false;
+                DK64US_PANEL.Visible = false;
+                #endregion
+                #region Timers
+                N64CSTMNFOLDERS.Enabled = false;
+                PMEU.Enabled = true;
+                PMUS.Enabled = false;
+                FZXUS.Enabled = false;
+                FZXJP.Enabled = false;
+                DK64EU.Enabled = false;
+                DK64US.Enabled = false;
+                #endregion
+            }
+            if (b == 2)
+            {
+                BaseROM = "PMUS";
+                #region Panels
+                N64CSTM_PANEL.Visible = false;
+                PMEU_PANEL.Visible = false;
+                PMUS_PANEL.Visible = true;
+                FXZUS_PANEL.Visible = false;
+                FZXJP_PANEL.Visible = false;
+                DK64EU_PANEL.Visible = false;
+                DK64US_PANEL.Visible = false;
+                #endregion
+                #region Timers
+                N64CSTMNFOLDERS.Enabled = false;
+                PMEU.Enabled = false;
+                PMUS.Enabled = true;
+                FZXUS.Enabled = false;
+                FZXJP.Enabled = false;
+                DK64EU.Enabled = false;
+                DK64US.Enabled = false;
+                #endregion
+            }
+            if (b == 3)
+            {
+                BaseROM = "FZXUS";
+                #region Panels
+                N64CSTM_PANEL.Visible = false;
+                PMEU_PANEL.Visible = false;
+                PMUS_PANEL.Visible = false;
+                FXZUS_PANEL.Visible = true;
+                FZXJP_PANEL.Visible = false;
+                DK64EU_PANEL.Visible = false;
+                DK64US_PANEL.Visible = false;
+                #endregion
+                #region Timers
+                N64CSTMNFOLDERS.Enabled = false;
+                PMEU.Enabled = false;
+                PMUS.Enabled = false;
+                FZXUS.Enabled = true;
+                FZXJP.Enabled = false;
+                DK64EU.Enabled = false;
+                DK64US.Enabled = false;
+                #endregion
+            }
+            if (b == 4)
+            {
+                BaseROM = "FZXJP";
+                #region Panels
+                N64CSTM_PANEL.Visible = false;
+                PMEU_PANEL.Visible = false;
+                PMUS_PANEL.Visible = false;
+                FXZUS_PANEL.Visible = false;
+                FZXJP_PANEL.Visible = true;
+                DK64EU_PANEL.Visible = false;
+                DK64US_PANEL.Visible = false;
+                #endregion
+                #region Timers
+                N64CSTMNFOLDERS.Enabled = false;
+                PMEU.Enabled = false;
+                PMUS.Enabled = false;
+                FZXUS.Enabled = false;
+                FZXJP.Enabled = true;
+                DK64EU.Enabled = false;
+                DK64US.Enabled = false;
+                #endregion
+            }
+            if (b == 5)
+            {
+                BaseROM = "DK64EU";
+                #region Panels
+                N64CSTM_PANEL.Visible = false;
+                PMEU_PANEL.Visible = false;
+                PMUS_PANEL.Visible = false;
+                FXZUS_PANEL.Visible = false;
+                FZXJP_PANEL.Visible = false;
+                DK64EU_PANEL.Visible = true;
+                DK64US_PANEL.Visible = false;
+                #endregion
+                #region Timers
+                N64CSTMNFOLDERS.Enabled = false;
+                PMEU.Enabled = false;
+                PMUS.Enabled = false;
+                FZXUS.Enabled = false;
+                FZXJP.Enabled = false;
+                DK64EU.Enabled = true;
+                DK64US.Enabled = false;
+                #endregion
+            }
+            if (b == 6)
+            {
+                BaseROM = "DK64US";
+                #region Panels
+                N64CSTM_PANEL.Visible = false;
+                PMEU_PANEL.Visible = false;
+                PMUS_PANEL.Visible = false;
+                FXZUS_PANEL.Visible = false;
+                FZXJP_PANEL.Visible = false;
+                DK64EU_PANEL.Visible = false;
+                DK64US_PANEL.Visible = true;
+                #endregion
+                #region Timers
+                N64CSTMNFOLDERS.Enabled = false;
+                PMEU.Enabled = false;
+                PMUS.Enabled = false;
+                FZXUS.Enabled = false;
+                FZXJP.Enabled = false;
+                DK64EU.Enabled = false;
+                DK64US.Enabled =true;
                 #endregion
             }
         }
@@ -465,7 +623,24 @@ namespace UWUVCI_AIO
                 }
                 if (tabControl1.SelectedIndex == 2) //N64
                 {
-
+                    PMEUCKIMG.Image = Properties.Resources.yes;
+                    PMEUCK.Text = "No CommonKey stored";
+                    PMEUCK.ForeColor = Color.Red;
+                    PMUSCKIMG.Image = Properties.Resources.yes;
+                    PMUSCK.Text = "No CommonKey stored";
+                    PMUSCK.ForeColor = Color.Red;
+                    FXZUSCKIMG.Image = Properties.Resources.yes;
+                    FZXUSCK.Text = "No CommonKey stored";
+                    FZXUSCK.ForeColor = Color.Red;
+                    FZXJPCKIMG.Image = Properties.Resources.yes;
+                    FZXJPCK.Text = "No CommonKey stored";
+                    FZXJPCK.ForeColor = Color.Red;
+                    DK64USCKIMG.Image = Properties.Resources.yes;
+                    DK64USCK.Text = "No CommonKey stored";
+                    DK64USCK.ForeColor = Color.Red;
+                    DK64EUCKIMG.Image = Properties.Resources.yes;
+                    DK64EUCK.Text = "No CommonKey stored";
+                    DK64EUCK.ForeColor = Color.Red;
                 }
                 if (tabControl1.SelectedIndex == 3) //GBA
                 {
@@ -512,7 +687,24 @@ namespace UWUVCI_AIO
                 }
                 if (tabControl1.SelectedIndex == 2) //N64
                 {
-
+                    PMEUCKIMG.Image = Properties.Resources.yes;
+                    PMEUCK.Text = "CommonKey found";
+                    PMEUCK.ForeColor = Color.FromArgb(0, 127, 14);
+                    PMUSCKIMG.Image = Properties.Resources.yes;
+                    PMUSCK.Text = "CommonKey found";
+                    PMUSCK.ForeColor = Color.FromArgb(0, 127, 14);
+                    FXZUSCKIMG.Image = Properties.Resources.yes;
+                    FZXUSCK.Text = "CommonKey found";
+                    FZXUSCK.ForeColor = Color.FromArgb(0, 127, 14);
+                    FZXJPCKIMG.Image = Properties.Resources.yes;
+                    FZXJPCK.Text = "CommonKey found";
+                    FZXJPCK.ForeColor = Color.FromArgb(0, 127, 14);
+                    DK64EUCKIMG.Image = Properties.Resources.yes;
+                    DK64EUCK.Text = "CommonKey found";
+                    DK64EUCK.ForeColor = Color.FromArgb(0, 127, 14);
+                    DK64USCKIMG.Image = Properties.Resources.yes;
+                    DK64USCK.Text = "CommonKey found";
+                    DK64USCK.ForeColor = Color.FromArgb(0, 127, 14);
                 }
                 if (tabControl1.SelectedIndex == 3) //GBA
                 {
@@ -908,6 +1100,12 @@ namespace UWUVCI_AIO
             N64_BTN16.ForeColor = Color.Black;
             N64_BTN17.ForeColor = Color.Black;
             N64CSTMN_PATH_BTN.ForeColor = Color.Black;
+            PMEU_DWNLD.ForeColor = Color.Black;
+            PMUS_DWNLD.ForeColor = Color.Black;
+            FZXUS_DWNLD.ForeColor = Color.Black;
+            FZXJP_DWNLD.ForeColor = Color.Black;
+            DK64US_DWNLD.ForeColor = Color.Black;
+            DK64EU_DWNLD.ForeColor = Color.Black;
             #endregion
             #region nds
             groupBox1.ForeColor = Color.WhiteSmoke;
@@ -1951,6 +2149,330 @@ namespace UWUVCI_AIO
         {
             int index = comboBox2.SelectedIndex;
             N64BRinfopanel(index);
+        }
+
+        private void PMEU_DWNLD_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void PMEU_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.PMEU == "")
+            {
+                PMEUTKIMG.Image = Properties.Resources.X;
+                PMEUTK.Text = "No TitleKey stored";
+                PMEUTK.ForeColor = Color.Red;
+            }
+            else
+            {
+                PMEUTKIMG.Image = Properties.Resources.yes;
+                PMEUTK.Text = "TitleKey found";
+                PMEUTK.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/PMEU"))
+            {
+                PMEUBASEIMG.Image = Properties.Resources.X;
+                PMEUBASE.Text = "Base not downloaded";
+                PMEUBASE.ForeColor = Color.Red;
+                N64_BTN15.Enabled = false;
+            }
+            else
+            {
+                PMEUBASEIMG.Image = Properties.Resources.yes;
+                PMEUBASE.Text = "Base downloaded";
+                PMEUBASE.ForeColor = Color.FromArgb(0, 127, 14);
+                PMEU_DWNLD.Visible = false;
+                N64_BTN15.Enabled = true;
+            }
+            if (Properties.Settings.Default.PMEU == "")
+            {
+                PMEU_DWNLD.Enabled = false;
+            }
+            else
+            {
+                if (Properties.Settings.Default.CommonKey == "")
+                {
+                    PMEU_DWNLD.Enabled = false;
+                }
+                else
+                {
+                    PMEU_DWNLD.Cursor = Cursors.Default;
+                    PMEU_DWNLD.Enabled = true;
+                }
+
+
+            }
+        }
+
+        private void PMUS_DWNLD_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void PMUS_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.PMUS == "")
+            {
+                PMUSTKIMG.Image = Properties.Resources.X;
+                PMUSTK.Text = "No TitleKey stored";
+                PMUSTK.ForeColor = Color.Red;
+            }
+            else
+            {
+                PMUSTKIMG.Image = Properties.Resources.yes;
+                PMUSTK.Text = "TitleKey found";
+                PMUSTK.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/PMUS"))
+            {
+                PMUSBASEIMG.Image = Properties.Resources.X;
+                PMUSBASE.Text = "Base not downloaded";
+                PMUSBASE.ForeColor = Color.Red;
+                N64_BTN15.Enabled = false;
+            }
+            else
+            {
+                PMUSBASEIMG.Image = Properties.Resources.yes;
+                PMUSBASE.Text = "Base downloaded";
+                PMUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
+                PMUS_DWNLD.Visible = false;
+                N64_BTN15.Enabled = true;
+            }
+            if (Properties.Settings.Default.PMUS == "")
+            {
+                PMUS_DWNLD.Enabled = false;
+            }
+            else
+            {
+                if (Properties.Settings.Default.CommonKey == "")
+                {
+                    PMUS_DWNLD.Enabled = false;
+                }
+                else
+                {
+                    PMUS_DWNLD.Cursor = Cursors.Default;
+                    PMUS_DWNLD.Enabled = true;
+                }
+
+
+            }
+        }
+
+        private void FZXUS_DWNLD_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void FZXUS_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.FZXUS == "")
+            {
+                FZXUSTKIMG.Image = Properties.Resources.X;
+                FZXUSTK.Text = "No TitleKey stored";
+                FZXUSTK.ForeColor = Color.Red;
+            }
+            else
+            {
+                FZXUSTKIMG.Image = Properties.Resources.yes;
+                FZXUSTK.Text = "TitleKey found";
+                FZXUSTK.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/FZXUS"))
+            {
+                FZXUSBASEIMG.Image = Properties.Resources.X;
+                FZXUSBASE.Text = "Base not downloaded";
+                FZXUSBASE.ForeColor = Color.Red;
+                N64_BTN15.Enabled = false;
+            }
+            else
+            {
+                FZXUSBASEIMG.Image = Properties.Resources.yes;
+                FZXUSBASE.Text = "Base downloaded";
+                FZXUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
+                FZXUS_DWNLD.Visible = false;
+                N64_BTN15.Enabled = true;
+            }
+            if (Properties.Settings.Default.FZXUS == "")
+            {
+                FZXUS_DWNLD.Enabled = false;
+            }
+            else
+            {
+                if (Properties.Settings.Default.CommonKey == "")
+                {
+                    FZXUS_DWNLD.Enabled = false;
+                }
+                else
+                {
+                    FZXUS_DWNLD.Cursor = Cursors.Default;
+                    FZXUS_DWNLD.Enabled = true;
+                }
+
+
+            }
+        }
+
+        private void FZXJP_DWNLD_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void FZXJP_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.FZXJP == "")
+            {
+                FZXJPTKIMG.Image = Properties.Resources.X;
+                FZXJPTK.Text = "No TitleKey stored";
+                FZXJPTK.ForeColor = Color.Red;
+            }
+            else
+            {
+                FZXJPTKIMG.Image = Properties.Resources.yes;
+                FZXJPTK.Text = "TitleKey found";
+                FZXJPTK.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/FZXJP"))
+            {
+                FZXJPBASEIMG.Image = Properties.Resources.X;
+                FZXJPBASE.Text = "Base not downloaded";
+                FZXJPBASE.ForeColor = Color.Red;
+                N64_BTN15.Enabled = false;
+            }
+            else
+            {
+                FZXJPBASEIMG.Image = Properties.Resources.yes;
+                FZXJPBASE.Text = "Base downloaded";
+                FZXJPBASE.ForeColor = Color.FromArgb(0, 127, 14);
+                FZXJP_DWNLD.Visible = false;
+                N64_BTN15.Enabled = true;
+            }
+            if (Properties.Settings.Default.FZXJP == "")
+            {
+                FZXJP_DWNLD.Enabled = false;
+            }
+            else
+            {
+                if (Properties.Settings.Default.CommonKey == "")
+                {
+                    FZXJP_DWNLD.Enabled = false;
+                }
+                else
+                {
+                    FZXJP_DWNLD.Cursor = Cursors.Default;
+                    FZXJP_DWNLD.Enabled = true;
+                }
+
+
+            }
+        }
+
+        private void DK64EU_DWNLD_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void DK64EU_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.DK64EU == "")
+            {
+                DK64EUTKIMG.Image = Properties.Resources.X;
+                DK64EUTK.Text = "No TitleKey stored";
+                DK64EUTK.ForeColor = Color.Red;
+            }
+            else
+            {
+                DK64EUTKIMG.Image = Properties.Resources.yes;
+                DK64EUTK.Text = "TitleKey found";
+                DK64EUTK.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/DK64EU"))
+            {
+                DK64EUBASEIMG.Image = Properties.Resources.X;
+                DK64EUBASE.Text = "Base not downloaded";
+                DK64EUBASE.ForeColor = Color.Red;
+                N64_BTN15.Enabled = false;
+            }
+            else
+            {
+                DK64EUBASEIMG.Image = Properties.Resources.yes;
+                DK64EUBASE.Text = "Base downloaded";
+                DK64EUBASE.ForeColor = Color.FromArgb(0, 127, 14);
+                DK64EU_DWNLD.Visible = false;
+                N64_BTN15.Enabled = true;
+            }
+            if (Properties.Settings.Default.DK64EU == "")
+            {
+                DK64EU_DWNLD.Enabled = false;
+            }
+            else
+            {
+                if (Properties.Settings.Default.CommonKey == "")
+                {
+                    DK64EU_DWNLD.Enabled = false;
+                }
+                else
+                {
+                    DK64EU_DWNLD.Cursor = Cursors.Default;
+                    DK64EU_DWNLD.Enabled = true;
+                }
+
+
+            }
+        }
+
+        private void DK64US_DWNLD_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void DK64US_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.DK64US == "")
+            {
+                DK64USTKIMG.Image = Properties.Resources.X;
+                DK64USTK.Text = "No TitleKey stored";
+                DK64USTK.ForeColor = Color.Red;
+            }
+            else
+            {
+                DK64USTKIMG.Image = Properties.Resources.yes;
+                DK64USTK.Text = "TitleKey found";
+                DK64USTK.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/DK64US"))
+            {
+                DK64USBASEIMG.Image = Properties.Resources.X;
+                DK64USBASE.Text = "Base not downloaded";
+                DK64USBASE.ForeColor = Color.Red;
+                N64_BTN15.Enabled = false;
+            }
+            else
+            {
+                DK64USBASEIMG.Image = Properties.Resources.yes;
+                DK64USBASE.Text = "Base downloaded";
+                DK64USBASE.ForeColor = Color.FromArgb(0, 127, 14);
+                DK64US_DWNLD.Visible = false;
+                N64_BTN15.Enabled = true;
+            }
+            if (Properties.Settings.Default.DK64US == "")
+            {
+                DK64US_DWNLD.Enabled = false;
+            }
+            else
+            {
+                if (Properties.Settings.Default.CommonKey == "")
+                {
+                    DK64US_DWNLD.Enabled = false;
+                }
+                else
+                {
+                    DK64US_DWNLD.Cursor = Cursors.Default;
+                    DK64US_DWNLD.Enabled = true;
+                }
+
+
+            }
         }
     }
 }
