@@ -212,10 +212,23 @@ namespace UWUVCI_AIO
 
         }
 
-        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e) //SNES
         {
             int index = comboBox1.SelectedIndex;
             SNESBRinfopanel(index);
+        }
+        private void N64BRinfopanel(int b)
+        {
+            if(b == 0)
+            {
+                BaseROM = "Custom";
+                #region Panels
+                N64CSTM_PANEL.Visible = true;
+                #endregion
+                #region Timers
+                N64CSTMNFOLDERS.Enabled = true;
+                #endregion
+            }
         }
         private void SNESBRinfopanel(int b)
         {
@@ -892,15 +905,9 @@ namespace UWUVCI_AIO
             N64_BTN13.ForeColor = Color.Black;
             N64_BTN14.ForeColor = Color.Black;
             N64_BTN15.ForeColor = Color.Black;
-            N64_BTN1.ForeColor = Color.Black;
-            N64_BTN6.ForeColor = Color.Black;
-            N64_BTN2.ForeColor = Color.Black;
-            N64_BTN3.ForeColor = Color.Black;
-            N64_BTN4.ForeColor = Color.Black;
-            N64_BTN7.ForeColor = Color.Black;
-            N64_BTN5.ForeColor = Color.Black;
             N64_BTN16.ForeColor = Color.Black;
             N64_BTN17.ForeColor = Color.Black;
+            N64CSTMN_PATH_BTN.ForeColor = Color.Black;
             #endregion
             #region nds
             groupBox1.ForeColor = Color.WhiteSmoke;
@@ -1126,7 +1133,7 @@ namespace UWUVCI_AIO
 
         private void SNES_INJCT_Click(object sender, EventArgs e)
         {
-            Injection.inject(Injection.Console.SNES, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox26.Text);
+            Injection.inject(Injection.Console.SNES, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox26.Text, false);
             SNES_INST.Enabled = true;
             SNES_LOADIINE.Enabled = true;
         }
@@ -1522,17 +1529,39 @@ namespace UWUVCI_AIO
 
         private void N64_BTN15_Click(object sender, EventArgs e)
         {
-            Injection.inject(Injection.Console.N64, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox7.Text);
+            if (radioButton1.Checked)
+            {
+                Injection.inject(Injection.Console.N64, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox7.Text, false);
+            }
+            else
+            {
+                Injection.inject(Injection.Console.N64, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox7.Text, true);
+            }
+            N64_BTN17.Enabled = true;
+            N64_BTN16.Enabled = true;
         }
 
         private void N64_BTN17_Click(object sender, EventArgs e)
         {
-            Injection.packing(textBox7.Text);
+            if (Properties.Settings.Default.CommonKey == "")
+            {
+                MessageBox.Show("To use this option you need to enter the CommonKey (Settings -> Set CommonKey)");
+
+            }
+            else
+            {
+                Injection.packing(textBox7.Text);
+                N64_BTN17.Enabled = false;
+                N64_BTN16.Enabled = false;
+            }
+           
         }
 
         private void N64_BTN16_Click(object sender, EventArgs e)
         {
             Injection.loadiine(textBox7.Text);
+            N64_BTN17.Enabled = false;
+            N64_BTN16.Enabled = false;
         }
 
         private void NDS_BTN10_Click(object sender, EventArgs e)
@@ -1607,17 +1636,32 @@ namespace UWUVCI_AIO
 
         private void NDS_BTN15_Click(object sender, EventArgs e)
         {
-            Injection.inject(Injection.Console.NDS, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox8.Text);
+            Injection.inject(Injection.Console.NDS, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox8.Text,false);
+            NDS_BTN17.Enabled = true;
+            NDS_BTN16.Enabled = true;
         }
 
         private void NDS_BTN17_Click(object sender, EventArgs e)
         {
-            Injection.packing(textBox8.Text);
+            if (Properties.Settings.Default.CommonKey == "")
+            {
+                MessageBox.Show("To use this option you need to enter the CommonKey (Settings -> Set CommonKey)");
+
+            }
+            else
+            {
+                Injection.packing(textBox8.Text);
+                NDS_BTN17.Enabled = false;
+                NDS_BTN16.Enabled = false;
+            }
+            
         }
 
         private void NDS_BTN16_Click(object sender, EventArgs e)
         {
             Injection.loadiine(textBox8.Text);
+            NDS_BTN17.Enabled = false;
+            NDS_BTN16.Enabled = false;
         }
 
         private void NES_ROM_Click(object sender, EventArgs e)
@@ -1692,32 +1736,62 @@ namespace UWUVCI_AIO
 
         private void NES_INJCT_Click(object sender, EventArgs e)
         {
-            Injection.inject(Injection.Console.NES, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox20.Text);
+            Injection.inject(Injection.Console.NES, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox20.Text,false);
+            NES_INST.Enabled = true;
+            NES_LOADIINE.Enabled = true;
         }
 
         private void NES_INST_Click(object sender, EventArgs e)
         {
-            Injection.packing(textBox20.Text);
+            
+            if (Properties.Settings.Default.CommonKey == "")
+            {
+                MessageBox.Show("To use this option you need to enter the CommonKey (Settings -> Set CommonKey)");
+
+            }
+            else
+            {
+                Injection.packing(textBox20.Text);
+                NES_INST.Enabled = false;
+                NES_LOADIINE.Enabled = false;
+            }
         }
 
         private void NES_LOADIINE_Click(object sender, EventArgs e)
         {
+            NES_INST.Enabled = false;
+            NES_LOADIINE.Enabled = false;
             Injection.loadiine(textBox20.Text);
         }
 
         private void GBA_INJECT_Click(object sender, EventArgs e)
         {
-            Injection.inject(Injection.Console.GBA, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox13.Text);
+            Injection.inject(Injection.Console.GBA, BaseROM, CSTMBaseRom_path, INJCT_ROM_path, ini_path, bootimages, textBox13.Text, false);
+            GBA_INST.Enabled = true;
+            GBA_LOADIINE.Enabled = true;
         }
 
         private void GBA_INST_Click(object sender, EventArgs e)
         {
-            Injection.packing(textBox13.Text);
+            
+            if (Properties.Settings.Default.CommonKey == "")
+            {
+                MessageBox.Show("To use this option you need to enter the CommonKey (Settings -> Set CommonKey)");
+
+            }
+            else
+            {
+                Injection.packing(textBox13.Text);
+                GBA_INST.Enabled = false;
+                GBA_LOADIINE.Enabled = false;
+            }
         }
 
         private void GBA_LOADIINE_Click(object sender, EventArgs e)
         {
             Injection.loadiine(textBox13.Text);
+            GBA_INST.Enabled = false;
+            GBA_LOADIINE.Enabled = false;
         }
 
         private void GBA_ROM_Click(object sender, EventArgs e)
@@ -1788,6 +1862,95 @@ namespace UWUVCI_AIO
                 bootimages[3] = textBox15.Text;
 
             }
+        }
+
+        private void N64CSTMNFOLDERS_Tick(object sender, EventArgs e)
+        {
+            if (code == false || content == false || meta == false)
+            {
+                N64_BTN15.Enabled = false;
+            }
+            else
+            {
+                N64_BTN15.Enabled = true;
+            }
+            if (code == false)
+            {
+                N64CODEIMG.Image = Properties.Resources.X;
+                N64CODE.Text = "No code folder";
+                N64CODE.ForeColor = Color.Red;
+            }
+            else
+            {
+                N64CODEIMG.Image = Properties.Resources.yes;
+                N64CODE.Text = "Code folder found";
+                N64CODE.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (content == false)
+            {
+                N64CONTENTIMG.Image = Properties.Resources.X;
+                N64CONTENT.Text = "No content folder";
+                N64CONTENT.ForeColor = Color.Red;
+            }
+            else
+            {
+                N64CONTENTIMG.Image = Properties.Resources.yes;
+                N64CONTENT.Text = "Content folder found";
+                N64CONTENT.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (meta == false)
+            {
+                N64METAIMG.Image = Properties.Resources.X;
+                N64META.Text = "No meta folder";
+                N64META.ForeColor = Color.Red;
+            }
+            else
+            {
+                N64METAIMG.Image = Properties.Resources.yes;
+                N64META.Text = "Meta folder found";
+                N64META.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+        }
+
+        private void N64CSTMN_PATH_BTN_Click(object sender, EventArgs e)
+        {
+            DialogResult result = folderBrowserDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog1.SelectedPath))
+            {
+                N64CSTM_PATH.Text = folderBrowserDialog1.SelectedPath;
+                CSTMBaseRom_path = N64CSTM_PATH.Text;
+                if (Directory.Exists(folderBrowserDialog1.SelectedPath + "/code"))
+                {
+                    code = true;
+                }
+                else
+                {
+                    code = false;
+                }
+                if (Directory.Exists(folderBrowserDialog1.SelectedPath + "/content"))
+                {
+                    content = true;
+                }
+                else
+                {
+                    content = false;
+                }
+                if (Directory.Exists(folderBrowserDialog1.SelectedPath + "/meta"))
+                {
+                    meta = true;
+                }
+                else
+                {
+                    meta = false;
+                }
+            }
+        }
+
+        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = comboBox2.SelectedIndex;
+            N64BRinfopanel(index);
         }
     }
 }

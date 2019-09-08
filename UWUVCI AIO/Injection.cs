@@ -28,9 +28,10 @@ namespace UWUVCI_AIO
          *              bootDrcTex: PNG or TGA (PNG gets converted to TGA using UPNG). Needs to be in the dimensions 854x480, and if its a TGA it needs a bit depth of 24. If null, the originial BootImage will be used.
          *              iconTex: PNG or TGA (PNG gets converted to TGA using UPNG). Needs to be in the dimensions 128x128, and if its a TGA it needs a bit depth of 32. If null, the originial BootImage will be used.
          *              bootDrcTex: PNG or TGA (PNG gets converted to TGA using UPNG). Needs to be in the dimensions 170x42, and if its a TGA it needs a bit depth of 32. If null, the originial BootImage will be used.
+         * darkremoval = Only used for N64. Its for removal of the dark filter.
          */
         
-        public static void inject(Console console, string BaseRom, string CSTMN_Base_path, string INJCT_Rom_path, string ini_path, string[] bootimages, string GameName)
+        public static void inject(Console console, string BaseRom, string CSTMN_Base_path, string INJCT_Rom_path, string ini_path, string[] bootimages, string GameName, bool darkremoval)
         {
             string temppath = Properties.Settings.Default.WorkingPath + "/temp";
             Directory.CreateDirectory(temppath); 

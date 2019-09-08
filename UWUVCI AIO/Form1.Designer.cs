@@ -145,14 +145,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.BaseRomN64 = new System.Windows.Forms.GroupBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.N64_BTN4 = new System.Windows.Forms.Button();
-            this.N64_BTN5 = new System.Windows.Forms.Button();
-            this.N64_BTN7 = new System.Windows.Forms.Button();
-            this.N64_BTN3 = new System.Windows.Forms.Button();
-            this.N64_BTN2 = new System.Windows.Forms.Button();
-            this.N64_BTN6 = new System.Windows.Forms.Button();
-            this.N64_BTN1 = new System.Windows.Forms.Button();
             this.PackingN64 = new System.Windows.Forms.GroupBox();
             this.N64_BTN17 = new System.Windows.Forms.Button();
             this.N64_BTN16 = new System.Windows.Forms.Button();
@@ -326,6 +318,18 @@
             this.DKCUS_BASE = new System.Windows.Forms.Label();
             this.DKCUS_BASEIMG = new System.Windows.Forms.PictureBox();
             this.DKCUS = new System.Windows.Forms.Timer(this.components);
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.N64CSTM_PANEL = new System.Windows.Forms.Panel();
+            this.N64CONTENT = new System.Windows.Forms.Label();
+            this.N64CONTENTIMG = new System.Windows.Forms.PictureBox();
+            this.N64META = new System.Windows.Forms.Label();
+            this.N64METAIMG = new System.Windows.Forms.PictureBox();
+            this.N64CODE = new System.Windows.Forms.Label();
+            this.N64CODEIMG = new System.Windows.Forms.PictureBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.N64CSTMN_PATH_BTN = new System.Windows.Forms.Button();
+            this.N64CSTM_PATH = new System.Windows.Forms.TextBox();
+            this.N64CSTMNFOLDERS = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -395,6 +399,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.DKCUS_TKIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DKCUS_CKIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DKCUS_BASEIMG)).BeginInit();
+            this.N64CSTM_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.N64CONTENTIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N64METAIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N64CODEIMG)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -1202,64 +1210,11 @@
             // 
             // BaseRomN64
             // 
-            this.BaseRomN64.Controls.Add(this.label18);
-            this.BaseRomN64.Controls.Add(this.N64_BTN4);
-            this.BaseRomN64.Controls.Add(this.N64_BTN5);
-            this.BaseRomN64.Controls.Add(this.N64_BTN7);
-            this.BaseRomN64.Controls.Add(this.N64_BTN3);
-            this.BaseRomN64.Controls.Add(this.N64_BTN2);
-            this.BaseRomN64.Controls.Add(this.N64_BTN6);
-            this.BaseRomN64.Controls.Add(this.N64_BTN1);
+            this.BaseRomN64.Controls.Add(this.N64CSTM_PANEL);
+            this.BaseRomN64.Controls.Add(this.comboBox2);
             resources.ApplyResources(this.BaseRomN64, "BaseRomN64");
             this.BaseRomN64.Name = "BaseRomN64";
             this.BaseRomN64.TabStop = false;
-            // 
-            // label18
-            // 
-            resources.ApplyResources(this.label18, "label18");
-            this.label18.Name = "label18";
-            // 
-            // N64_BTN4
-            // 
-            resources.ApplyResources(this.N64_BTN4, "N64_BTN4");
-            this.N64_BTN4.Name = "N64_BTN4";
-            this.N64_BTN4.UseVisualStyleBackColor = true;
-            // 
-            // N64_BTN5
-            // 
-            resources.ApplyResources(this.N64_BTN5, "N64_BTN5");
-            this.N64_BTN5.Name = "N64_BTN5";
-            this.N64_BTN5.UseVisualStyleBackColor = true;
-            // 
-            // N64_BTN7
-            // 
-            resources.ApplyResources(this.N64_BTN7, "N64_BTN7");
-            this.N64_BTN7.Name = "N64_BTN7";
-            this.N64_BTN7.UseVisualStyleBackColor = true;
-            // 
-            // N64_BTN3
-            // 
-            resources.ApplyResources(this.N64_BTN3, "N64_BTN3");
-            this.N64_BTN3.Name = "N64_BTN3";
-            this.N64_BTN3.UseVisualStyleBackColor = true;
-            // 
-            // N64_BTN2
-            // 
-            resources.ApplyResources(this.N64_BTN2, "N64_BTN2");
-            this.N64_BTN2.Name = "N64_BTN2";
-            this.N64_BTN2.UseVisualStyleBackColor = true;
-            // 
-            // N64_BTN6
-            // 
-            resources.ApplyResources(this.N64_BTN6, "N64_BTN6");
-            this.N64_BTN6.Name = "N64_BTN6";
-            this.N64_BTN6.UseVisualStyleBackColor = true;
-            // 
-            // N64_BTN1
-            // 
-            resources.ApplyResources(this.N64_BTN1, "N64_BTN1");
-            this.N64_BTN1.Name = "N64_BTN1";
-            this.N64_BTN1.UseVisualStyleBackColor = true;
             // 
             // PackingN64
             // 
@@ -2453,6 +2408,97 @@
             // 
             this.DKCUS.Tick += new System.EventHandler(this.DKCUS_Tick);
             // 
+            // comboBox2
+            // 
+            this.comboBox2.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("comboBox2.AutoCompleteCustomSource"),
+            resources.GetString("comboBox2.AutoCompleteCustomSource1"),
+            resources.GetString("comboBox2.AutoCompleteCustomSource2")});
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            resources.GetString("comboBox2.Items"),
+            resources.GetString("comboBox2.Items1"),
+            resources.GetString("comboBox2.Items2"),
+            resources.GetString("comboBox2.Items3"),
+            resources.GetString("comboBox2.Items4"),
+            resources.GetString("comboBox2.Items5"),
+            resources.GetString("comboBox2.Items6")});
+            resources.ApplyResources(this.comboBox2, "comboBox2");
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
+            // 
+            // N64CSTM_PANEL
+            // 
+            this.N64CSTM_PANEL.Controls.Add(this.N64CONTENT);
+            this.N64CSTM_PANEL.Controls.Add(this.N64CONTENTIMG);
+            this.N64CSTM_PANEL.Controls.Add(this.N64META);
+            this.N64CSTM_PANEL.Controls.Add(this.N64METAIMG);
+            this.N64CSTM_PANEL.Controls.Add(this.N64CODE);
+            this.N64CSTM_PANEL.Controls.Add(this.N64CODEIMG);
+            this.N64CSTM_PANEL.Controls.Add(this.label56);
+            this.N64CSTM_PANEL.Controls.Add(this.N64CSTMN_PATH_BTN);
+            this.N64CSTM_PANEL.Controls.Add(this.N64CSTM_PATH);
+            resources.ApplyResources(this.N64CSTM_PANEL, "N64CSTM_PANEL");
+            this.N64CSTM_PANEL.Name = "N64CSTM_PANEL";
+            // 
+            // N64CONTENT
+            // 
+            resources.ApplyResources(this.N64CONTENT, "N64CONTENT");
+            this.N64CONTENT.ForeColor = System.Drawing.Color.Red;
+            this.N64CONTENT.Name = "N64CONTENT";
+            // 
+            // N64CONTENTIMG
+            // 
+            resources.ApplyResources(this.N64CONTENTIMG, "N64CONTENTIMG");
+            this.N64CONTENTIMG.Name = "N64CONTENTIMG";
+            this.N64CONTENTIMG.TabStop = false;
+            // 
+            // N64META
+            // 
+            resources.ApplyResources(this.N64META, "N64META");
+            this.N64META.ForeColor = System.Drawing.Color.Red;
+            this.N64META.Name = "N64META";
+            // 
+            // N64METAIMG
+            // 
+            resources.ApplyResources(this.N64METAIMG, "N64METAIMG");
+            this.N64METAIMG.Name = "N64METAIMG";
+            this.N64METAIMG.TabStop = false;
+            // 
+            // N64CODE
+            // 
+            resources.ApplyResources(this.N64CODE, "N64CODE");
+            this.N64CODE.ForeColor = System.Drawing.Color.Red;
+            this.N64CODE.Name = "N64CODE";
+            // 
+            // N64CODEIMG
+            // 
+            resources.ApplyResources(this.N64CODEIMG, "N64CODEIMG");
+            this.N64CODEIMG.Name = "N64CODEIMG";
+            this.N64CODEIMG.TabStop = false;
+            // 
+            // label56
+            // 
+            resources.ApplyResources(this.label56, "label56");
+            this.label56.Name = "label56";
+            // 
+            // N64CSTMN_PATH_BTN
+            // 
+            resources.ApplyResources(this.N64CSTMN_PATH_BTN, "N64CSTMN_PATH_BTN");
+            this.N64CSTMN_PATH_BTN.Name = "N64CSTMN_PATH_BTN";
+            this.N64CSTMN_PATH_BTN.UseVisualStyleBackColor = true;
+            this.N64CSTMN_PATH_BTN.Click += new System.EventHandler(this.N64CSTMN_PATH_BTN_Click);
+            // 
+            // N64CSTM_PATH
+            // 
+            resources.ApplyResources(this.N64CSTM_PATH, "N64CSTM_PATH");
+            this.N64CSTM_PATH.Name = "N64CSTM_PATH";
+            // 
+            // N64CSTMNFOLDERS
+            // 
+            this.N64CSTMNFOLDERS.Tick += new System.EventHandler(this.N64CSTMNFOLDERS_Tick);
+            // 
             // UWUVCI_AIO
             // 
             resources.ApplyResources(this, "$this");
@@ -2498,7 +2544,6 @@
             this.InjectionN64.ResumeLayout(false);
             this.InjectionN64.PerformLayout();
             this.BaseRomN64.ResumeLayout(false);
-            this.BaseRomN64.PerformLayout();
             this.PackingN64.ResumeLayout(false);
             this.GBA.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
@@ -2559,6 +2604,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.DKCUS_TKIMG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DKCUS_CKIMG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DKCUS_BASEIMG)).EndInit();
+            this.N64CSTM_PANEL.ResumeLayout(false);
+            this.N64CSTM_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.N64CONTENTIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N64METAIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N64CODEIMG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2645,14 +2695,6 @@
         private System.Windows.Forms.ToolStripMenuItem nESToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem nESToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem sNESToolStripMenuItem1;
-        private System.Windows.Forms.Button N64_BTN5;
-        private System.Windows.Forms.Button N64_BTN7;
-        private System.Windows.Forms.Button N64_BTN3;
-        private System.Windows.Forms.Button N64_BTN2;
-        private System.Windows.Forms.Button N64_BTN6;
-        private System.Windows.Forms.Button N64_BTN1;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button N64_BTN4;
         private System.Windows.Forms.Button N64_BTN17;
         private System.Windows.Forms.Button N64_BTN16;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
@@ -2864,6 +2906,18 @@
         private System.Windows.Forms.Label DKCUS_BASE;
         private System.Windows.Forms.PictureBox DKCUS_BASEIMG;
         private System.Windows.Forms.Timer DKCUS;
+        private System.Windows.Forms.Panel N64CSTM_PANEL;
+        private System.Windows.Forms.Label N64CONTENT;
+        private System.Windows.Forms.PictureBox N64CONTENTIMG;
+        private System.Windows.Forms.Label N64META;
+        private System.Windows.Forms.PictureBox N64METAIMG;
+        private System.Windows.Forms.Label N64CODE;
+        private System.Windows.Forms.PictureBox N64CODEIMG;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Button N64CSTMN_PATH_BTN;
+        private System.Windows.Forms.TextBox N64CSTM_PATH;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Timer N64CSTMNFOLDERS;
     }
 }
 
