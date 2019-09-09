@@ -100,16 +100,6 @@
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.NDS_BTN7 = new System.Windows.Forms.Button();
-            this.NDS_BTN8 = new System.Windows.Forms.Button();
-            this.NDS_BTN6 = new System.Windows.Forms.Button();
-            this.NDS_BTN4 = new System.Windows.Forms.Button();
-            this.NDS_BTN5 = new System.Windows.Forms.Button();
-            this.NDS_BTN3 = new System.Windows.Forms.Button();
-            this.NDS_BTN2 = new System.Windows.Forms.Button();
-            this.label30 = new System.Windows.Forms.Label();
-            this.NDS_BTN9 = new System.Windows.Forms.Button();
-            this.NDS_BTN1 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.NDS_BTN17 = new System.Windows.Forms.Button();
             this.NDS_BTN16 = new System.Windows.Forms.Button();
@@ -145,6 +135,54 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.BaseRomN64 = new System.Windows.Forms.GroupBox();
+            this.DK64US_PANEL = new System.Windows.Forms.Panel();
+            this.DK64US_DWNLD = new System.Windows.Forms.Button();
+            this.DK64USTK = new System.Windows.Forms.Label();
+            this.DK64USTKIMG = new System.Windows.Forms.PictureBox();
+            this.DK64USCK = new System.Windows.Forms.Label();
+            this.DK64USCKIMG = new System.Windows.Forms.PictureBox();
+            this.DK64USBASE = new System.Windows.Forms.Label();
+            this.DK64USBASEIMG = new System.Windows.Forms.PictureBox();
+            this.DK64EU_PANEL = new System.Windows.Forms.Panel();
+            this.DK64EU_DWNLD = new System.Windows.Forms.Button();
+            this.DK64EUTK = new System.Windows.Forms.Label();
+            this.DK64EUTKIMG = new System.Windows.Forms.PictureBox();
+            this.DK64EUCK = new System.Windows.Forms.Label();
+            this.DK64EUCKIMG = new System.Windows.Forms.PictureBox();
+            this.DK64EUBASE = new System.Windows.Forms.Label();
+            this.DK64EUBASEIMG = new System.Windows.Forms.PictureBox();
+            this.FZXJP_PANEL = new System.Windows.Forms.Panel();
+            this.FZXJP_DWNLD = new System.Windows.Forms.Button();
+            this.FZXJPTK = new System.Windows.Forms.Label();
+            this.FZXJPTKIMG = new System.Windows.Forms.PictureBox();
+            this.FZXJPCK = new System.Windows.Forms.Label();
+            this.FZXJPCKIMG = new System.Windows.Forms.PictureBox();
+            this.FZXJPBASE = new System.Windows.Forms.Label();
+            this.FZXJPBASEIMG = new System.Windows.Forms.PictureBox();
+            this.FXZUS_PANEL = new System.Windows.Forms.Panel();
+            this.FZXUS_DWNLD = new System.Windows.Forms.Button();
+            this.FZXUSTK = new System.Windows.Forms.Label();
+            this.FZXUSTKIMG = new System.Windows.Forms.PictureBox();
+            this.FZXUSCK = new System.Windows.Forms.Label();
+            this.FXZUSCKIMG = new System.Windows.Forms.PictureBox();
+            this.FZXUSBASE = new System.Windows.Forms.Label();
+            this.FZXUSBASEIMG = new System.Windows.Forms.PictureBox();
+            this.PMUS_PANEL = new System.Windows.Forms.Panel();
+            this.PMUS_DWNLD = new System.Windows.Forms.Button();
+            this.PMUSTK = new System.Windows.Forms.Label();
+            this.PMUSTKIMG = new System.Windows.Forms.PictureBox();
+            this.PMUSCK = new System.Windows.Forms.Label();
+            this.PMUSCKIMG = new System.Windows.Forms.PictureBox();
+            this.PMUSBASE = new System.Windows.Forms.Label();
+            this.PMUSBASEIMG = new System.Windows.Forms.PictureBox();
+            this.PMEU_PANEL = new System.Windows.Forms.Panel();
+            this.PMEU_DWNLD = new System.Windows.Forms.Button();
+            this.PMEUTK = new System.Windows.Forms.Label();
+            this.PMEUTKIMG = new System.Windows.Forms.PictureBox();
+            this.PMEUCK = new System.Windows.Forms.Label();
+            this.PMEUCKIMG = new System.Windows.Forms.PictureBox();
+            this.PMEUBASE = new System.Windows.Forms.Label();
+            this.PMEUBASEIMG = new System.Windows.Forms.PictureBox();
             this.N64CSTM_PANEL = new System.Windows.Forms.Panel();
             this.N64CONTENT = new System.Windows.Forms.Label();
             this.N64CONTENTIMG = new System.Windows.Forms.PictureBox();
@@ -330,60 +368,129 @@
             this.DKCEU = new System.Windows.Forms.Timer(this.components);
             this.DKCUS = new System.Windows.Forms.Timer(this.components);
             this.N64CSTMNFOLDERS = new System.Windows.Forms.Timer(this.components);
-            this.PMEU_PANEL = new System.Windows.Forms.Panel();
-            this.PMEU_DWNLD = new System.Windows.Forms.Button();
-            this.PMEUTK = new System.Windows.Forms.Label();
-            this.PMEUTKIMG = new System.Windows.Forms.PictureBox();
-            this.PMEUCK = new System.Windows.Forms.Label();
-            this.PMEUCKIMG = new System.Windows.Forms.PictureBox();
-            this.PMEUBASE = new System.Windows.Forms.Label();
-            this.PMEUBASEIMG = new System.Windows.Forms.PictureBox();
             this.PMEU = new System.Windows.Forms.Timer(this.components);
-            this.PMUS_PANEL = new System.Windows.Forms.Panel();
-            this.PMUS_DWNLD = new System.Windows.Forms.Button();
-            this.PMUSTK = new System.Windows.Forms.Label();
-            this.PMUSTKIMG = new System.Windows.Forms.PictureBox();
-            this.PMUSCK = new System.Windows.Forms.Label();
-            this.PMUSCKIMG = new System.Windows.Forms.PictureBox();
-            this.PMUSBASE = new System.Windows.Forms.Label();
-            this.PMUSBASEIMG = new System.Windows.Forms.PictureBox();
             this.PMUS = new System.Windows.Forms.Timer(this.components);
-            this.FXZUS_PANEL = new System.Windows.Forms.Panel();
-            this.FZXUS_DWNLD = new System.Windows.Forms.Button();
-            this.FZXUSTK = new System.Windows.Forms.Label();
-            this.FZXUSTKIMG = new System.Windows.Forms.PictureBox();
-            this.FZXUSCK = new System.Windows.Forms.Label();
-            this.FXZUSCKIMG = new System.Windows.Forms.PictureBox();
-            this.FZXUSBASE = new System.Windows.Forms.Label();
-            this.FZXUSBASEIMG = new System.Windows.Forms.PictureBox();
             this.FZXUS = new System.Windows.Forms.Timer(this.components);
-            this.FZXJP_PANEL = new System.Windows.Forms.Panel();
-            this.FZXJP_DWNLD = new System.Windows.Forms.Button();
-            this.FZXJPTK = new System.Windows.Forms.Label();
-            this.FZXJPTKIMG = new System.Windows.Forms.PictureBox();
-            this.FZXJPCK = new System.Windows.Forms.Label();
-            this.FZXJPCKIMG = new System.Windows.Forms.PictureBox();
-            this.FZXJPBASE = new System.Windows.Forms.Label();
-            this.FZXJPBASEIMG = new System.Windows.Forms.PictureBox();
             this.FZXJP = new System.Windows.Forms.Timer(this.components);
-            this.DK64EU_PANEL = new System.Windows.Forms.Panel();
-            this.DK64EU_DWNLD = new System.Windows.Forms.Button();
-            this.DK64EUTK = new System.Windows.Forms.Label();
-            this.DK64EUTKIMG = new System.Windows.Forms.PictureBox();
-            this.DK64EUCK = new System.Windows.Forms.Label();
-            this.DK64EUCKIMG = new System.Windows.Forms.PictureBox();
-            this.DK64EUBASE = new System.Windows.Forms.Label();
-            this.DK64EUBASEIMG = new System.Windows.Forms.PictureBox();
             this.DK64EU = new System.Windows.Forms.Timer(this.components);
-            this.DK64US_PANEL = new System.Windows.Forms.Panel();
-            this.DK64US_DWNLD = new System.Windows.Forms.Button();
-            this.DK64USTK = new System.Windows.Forms.Label();
-            this.DK64USTKIMG = new System.Windows.Forms.PictureBox();
-            this.DK64USCK = new System.Windows.Forms.Label();
-            this.DK64USCKIMG = new System.Windows.Forms.PictureBox();
-            this.DK64USBASE = new System.Windows.Forms.Label();
-            this.DK64USBASEIMG = new System.Windows.Forms.PictureBox();
             this.DK64US = new System.Windows.Forms.Timer(this.components);
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.NDSCSTMN_PANEL = new System.Windows.Forms.Panel();
+            this.NDSCONTENT = new System.Windows.Forms.Label();
+            this.NDSCONTENTIMG = new System.Windows.Forms.PictureBox();
+            this.NDSMETA = new System.Windows.Forms.Label();
+            this.NDSMETAIMG = new System.Windows.Forms.PictureBox();
+            this.NDSCODE = new System.Windows.Forms.Label();
+            this.NDSCODEIMG = new System.Windows.Forms.PictureBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.NDSCSTMN_BTN = new System.Windows.Forms.Button();
+            this.NDSCSTMN_PATH = new System.Windows.Forms.TextBox();
+            this.NDSCSTMNFOLDERS = new System.Windows.Forms.Timer(this.components);
+            this.ZSTEU_PANEL = new System.Windows.Forms.Panel();
+            this.ZSTEU_BTN = new System.Windows.Forms.Button();
+            this.ZSTEUTK = new System.Windows.Forms.Label();
+            this.ZSTEUTKIMG = new System.Windows.Forms.PictureBox();
+            this.ZSTEUCK = new System.Windows.Forms.Label();
+            this.ZSTEUCKIMG = new System.Windows.Forms.PictureBox();
+            this.ZSTEUBASE = new System.Windows.Forms.Label();
+            this.ZSTEUBASEIMG = new System.Windows.Forms.PictureBox();
+            this.ZSTEU = new System.Windows.Forms.Timer(this.components);
+            this.ZSTUS_PANEL = new System.Windows.Forms.Panel();
+            this.ZSTUS_BTN = new System.Windows.Forms.Button();
+            this.ZSTUSTK = new System.Windows.Forms.Label();
+            this.ZSTUSTKIMG = new System.Windows.Forms.PictureBox();
+            this.ZSTUSCK = new System.Windows.Forms.Label();
+            this.ZSTUSCKIMG = new System.Windows.Forms.PictureBox();
+            this.ZSTUSBASE = new System.Windows.Forms.Label();
+            this.ZSTUSBASEIMG = new System.Windows.Forms.PictureBox();
+            this.ZSTUS = new System.Windows.Forms.Timer(this.components);
+            this.ZPHEU_PANEL = new System.Windows.Forms.Panel();
+            this.ZPHEU_BTN = new System.Windows.Forms.Button();
+            this.ZPHEUTK = new System.Windows.Forms.Label();
+            this.ZPHEUTKIMG = new System.Windows.Forms.PictureBox();
+            this.ZPHEUCK = new System.Windows.Forms.Label();
+            this.ZPHEUCKIMG = new System.Windows.Forms.PictureBox();
+            this.ZPHEUBASE = new System.Windows.Forms.Label();
+            this.ZPHEUBASEIMG = new System.Windows.Forms.PictureBox();
+            this.ZPHEU = new System.Windows.Forms.Timer(this.components);
+            this.ZPHUS_PANEL = new System.Windows.Forms.Panel();
+            this.ZPHUS_BTN = new System.Windows.Forms.Button();
+            this.ZPHUSTK = new System.Windows.Forms.Label();
+            this.ZPHUSTKIMG = new System.Windows.Forms.PictureBox();
+            this.ZPHUSCK = new System.Windows.Forms.Label();
+            this.ZPHUSCKIMG = new System.Windows.Forms.PictureBox();
+            this.ZPHUSBASE = new System.Windows.Forms.Label();
+            this.ZPHUSBASEIMG = new System.Windows.Forms.PictureBox();
+            this.ZPHUS = new System.Windows.Forms.Timer(this.components);
+            this.WWEU_PANEL = new System.Windows.Forms.Panel();
+            this.WWEU_BTN = new System.Windows.Forms.Button();
+            this.WWEUTK = new System.Windows.Forms.Label();
+            this.WWEUTKIMG = new System.Windows.Forms.PictureBox();
+            this.WWEUCK = new System.Windows.Forms.Label();
+            this.WWEUCKIMG = new System.Windows.Forms.PictureBox();
+            this.WWEUBASE = new System.Windows.Forms.Label();
+            this.WWEUBASEIMG = new System.Windows.Forms.PictureBox();
+            this.WWEU = new System.Windows.Forms.Timer(this.components);
+            this.WWUS_PANEL = new System.Windows.Forms.Panel();
+            this.WWUS_BTN = new System.Windows.Forms.Button();
+            this.WWUSTK = new System.Windows.Forms.Label();
+            this.WWUSTKIMG = new System.Windows.Forms.PictureBox();
+            this.WWUSCK = new System.Windows.Forms.Label();
+            this.WWUSCKIMG = new System.Windows.Forms.PictureBox();
+            this.WWUSBASE = new System.Windows.Forms.Label();
+            this.WWUSBASEIMG = new System.Windows.Forms.PictureBox();
+            this.WWUS = new System.Windows.Forms.Timer(this.components);
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.NESCSTMN_PANEL = new System.Windows.Forms.Panel();
+            this.NESCONTENT = new System.Windows.Forms.Label();
+            this.NESCONTENTIMG = new System.Windows.Forms.PictureBox();
+            this.NESMETA = new System.Windows.Forms.Label();
+            this.NESMETAIMG = new System.Windows.Forms.PictureBox();
+            this.NESCODE = new System.Windows.Forms.Label();
+            this.NESCODEIMG = new System.Windows.Forms.PictureBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.NESCSTMN_BTN = new System.Windows.Forms.Button();
+            this.NESCSTMN_PATH = new System.Windows.Forms.TextBox();
+            this.NESCSTMNFOLDERS = new System.Windows.Forms.Timer(this.components);
+            this.POEU_PANEL = new System.Windows.Forms.Panel();
+            this.POEU_BTN = new System.Windows.Forms.Button();
+            this.POEUTK = new System.Windows.Forms.Label();
+            this.POEUTKIMG = new System.Windows.Forms.PictureBox();
+            this.POEUCK = new System.Windows.Forms.Label();
+            this.POEUCKIMG = new System.Windows.Forms.PictureBox();
+            this.POEUBASE = new System.Windows.Forms.Label();
+            this.POEUBASEIMG = new System.Windows.Forms.PictureBox();
+            this.POEU = new System.Windows.Forms.Timer(this.components);
+            this.POUS_PANEL = new System.Windows.Forms.Panel();
+            this.POUS_BTN = new System.Windows.Forms.Button();
+            this.POUSTK = new System.Windows.Forms.Label();
+            this.POUSTKIMG = new System.Windows.Forms.PictureBox();
+            this.POUSCK = new System.Windows.Forms.Label();
+            this.POUSCKIMG = new System.Windows.Forms.PictureBox();
+            this.POUSBASE = new System.Windows.Forms.Label();
+            this.POUSBASEIMG = new System.Windows.Forms.PictureBox();
+            this.POUS = new System.Windows.Forms.Timer(this.components);
+            this.SMBEU_PANEL = new System.Windows.Forms.Panel();
+            this.SMBEU_BTN = new System.Windows.Forms.Button();
+            this.SMBEUTK = new System.Windows.Forms.Label();
+            this.SMBEUTKIMG = new System.Windows.Forms.PictureBox();
+            this.SMBEUCK = new System.Windows.Forms.Label();
+            this.SMBEUCKIMG = new System.Windows.Forms.PictureBox();
+            this.SMBEUBASE = new System.Windows.Forms.Label();
+            this.SMBEUBASEIMG = new System.Windows.Forms.PictureBox();
+            this.SMBEU = new System.Windows.Forms.Timer(this.components);
+            this.SMBUS_PANEL = new System.Windows.Forms.Panel();
+            this.SMBUS_BTN = new System.Windows.Forms.Button();
+            this.SMBUSTK = new System.Windows.Forms.Label();
+            this.SMBUSTKIMG = new System.Windows.Forms.PictureBox();
+            this.SMBUSCK = new System.Windows.Forms.Label();
+            this.SMBUSCKIMG = new System.Windows.Forms.PictureBox();
+            this.SMBUSBASE = new System.Windows.Forms.Label();
+            this.SMBUSBASEIMG = new System.Windows.Forms.PictureBox();
+            this.SMBUS = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -406,6 +513,30 @@
             this.N64.SuspendLayout();
             this.InjectionN64.SuspendLayout();
             this.BaseRomN64.SuspendLayout();
+            this.DK64US_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64USTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64USCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64USBASEIMG)).BeginInit();
+            this.DK64EU_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64EUTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64EUCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64EUBASEIMG)).BeginInit();
+            this.FZXJP_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXJPTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXJPCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXJPBASEIMG)).BeginInit();
+            this.FXZUS_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXUSTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FXZUSCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXUSBASEIMG)).BeginInit();
+            this.PMUS_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PMUSTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMUSCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMUSBASEIMG)).BeginInit();
+            this.PMEU_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PMEUTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMEUCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMEUBASEIMG)).BeginInit();
             this.N64CSTM_PANEL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.N64CONTENTIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.N64METAIMG)).BeginInit();
@@ -416,6 +547,7 @@
             this.groupBox6.SuspendLayout();
             this.NES.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.SNES.SuspendLayout();
             this.EBEU_PANEL.SuspendLayout();
@@ -457,30 +589,54 @@
             ((System.ComponentModel.ISupportInitialize)(this.SNESMETAIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SNESCODEIMG)).BeginInit();
             this.groupBox12.SuspendLayout();
-            this.PMEU_PANEL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PMEUTKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PMEUCKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PMEUBASEIMG)).BeginInit();
-            this.PMUS_PANEL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PMUSTKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PMUSCKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PMUSBASEIMG)).BeginInit();
-            this.FXZUS_PANEL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FZXUSTKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FXZUSCKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FZXUSBASEIMG)).BeginInit();
-            this.FZXJP_PANEL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FZXJPTKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FZXJPCKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FZXJPBASEIMG)).BeginInit();
-            this.DK64EU_PANEL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DK64EUTKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DK64EUCKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DK64EUBASEIMG)).BeginInit();
-            this.DK64US_PANEL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DK64USTKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DK64USCKIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DK64USBASEIMG)).BeginInit();
+            this.NDSCSTMN_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NDSCONTENTIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NDSMETAIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NDSCODEIMG)).BeginInit();
+            this.ZSTEU_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ZSTEUTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZSTEUCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZSTEUBASEIMG)).BeginInit();
+            this.ZSTUS_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ZSTUSTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZSTUSCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZSTUSBASEIMG)).BeginInit();
+            this.ZPHEU_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ZPHEUTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZPHEUCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZPHEUBASEIMG)).BeginInit();
+            this.ZPHUS_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ZPHUSTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZPHUSCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZPHUSBASEIMG)).BeginInit();
+            this.WWEU_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WWEUTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WWEUCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WWEUBASEIMG)).BeginInit();
+            this.WWUS_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WWUSTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WWUSCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WWUSBASEIMG)).BeginInit();
+            this.NESCSTMN_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NESCONTENTIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NESMETAIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NESCODEIMG)).BeginInit();
+            this.POEU_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.POEUTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.POEUCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.POEUBASEIMG)).BeginInit();
+            this.POUS_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.POUSTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.POUSCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.POUSBASEIMG)).BeginInit();
+            this.SMBEU_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SMBEUTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMBEUCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMBEUBASEIMG)).BeginInit();
+            this.SMBUS_PANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SMBUSTKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMBUSCKIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMBUSBASEIMG)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -596,6 +752,7 @@
             // 
             resources.ApplyResources(this.nDSToolStripMenuItem, "nDSToolStripMenuItem");
             this.nDSToolStripMenuItem.Name = "nDSToolStripMenuItem";
+            this.nDSToolStripMenuItem.Click += new System.EventHandler(this.NDSToolStripMenuItem_Click);
             // 
             // n64ToolStripMenuItem1
             // 
@@ -612,6 +769,7 @@
             // 
             resources.ApplyResources(this.nESToolStripMenuItem2, "nESToolStripMenuItem2");
             this.nESToolStripMenuItem2.Name = "nESToolStripMenuItem2";
+            this.nESToolStripMenuItem2.Click += new System.EventHandler(this.NESToolStripMenuItem2_Click);
             // 
             // sNESToolStripMenuItem1
             // 
@@ -972,78 +1130,18 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.NDS_BTN7);
-            this.groupBox2.Controls.Add(this.NDS_BTN8);
-            this.groupBox2.Controls.Add(this.NDS_BTN6);
-            this.groupBox2.Controls.Add(this.NDS_BTN4);
-            this.groupBox2.Controls.Add(this.NDS_BTN5);
-            this.groupBox2.Controls.Add(this.NDS_BTN3);
-            this.groupBox2.Controls.Add(this.NDS_BTN2);
+            this.groupBox2.Controls.Add(this.ZPHUS_PANEL);
+            this.groupBox2.Controls.Add(this.WWUS_PANEL);
+            this.groupBox2.Controls.Add(this.WWEU_PANEL);
+            this.groupBox2.Controls.Add(this.ZPHEU_PANEL);
+            this.groupBox2.Controls.Add(this.ZSTUS_PANEL);
+            this.groupBox2.Controls.Add(this.ZSTEU_PANEL);
+            this.groupBox2.Controls.Add(this.NDSCSTMN_PANEL);
+            this.groupBox2.Controls.Add(this.comboBox3);
             this.groupBox2.Controls.Add(this.label30);
-            this.groupBox2.Controls.Add(this.NDS_BTN9);
-            this.groupBox2.Controls.Add(this.NDS_BTN1);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
-            // 
-            // NDS_BTN7
-            // 
-            resources.ApplyResources(this.NDS_BTN7, "NDS_BTN7");
-            this.NDS_BTN7.Name = "NDS_BTN7";
-            this.NDS_BTN7.UseVisualStyleBackColor = true;
-            // 
-            // NDS_BTN8
-            // 
-            resources.ApplyResources(this.NDS_BTN8, "NDS_BTN8");
-            this.NDS_BTN8.Name = "NDS_BTN8";
-            this.NDS_BTN8.UseVisualStyleBackColor = true;
-            // 
-            // NDS_BTN6
-            // 
-            resources.ApplyResources(this.NDS_BTN6, "NDS_BTN6");
-            this.NDS_BTN6.Name = "NDS_BTN6";
-            this.NDS_BTN6.UseVisualStyleBackColor = true;
-            // 
-            // NDS_BTN4
-            // 
-            resources.ApplyResources(this.NDS_BTN4, "NDS_BTN4");
-            this.NDS_BTN4.Name = "NDS_BTN4";
-            this.NDS_BTN4.UseVisualStyleBackColor = true;
-            // 
-            // NDS_BTN5
-            // 
-            resources.ApplyResources(this.NDS_BTN5, "NDS_BTN5");
-            this.NDS_BTN5.Name = "NDS_BTN5";
-            this.NDS_BTN5.UseVisualStyleBackColor = true;
-            // 
-            // NDS_BTN3
-            // 
-            resources.ApplyResources(this.NDS_BTN3, "NDS_BTN3");
-            this.NDS_BTN3.Name = "NDS_BTN3";
-            this.NDS_BTN3.UseVisualStyleBackColor = true;
-            // 
-            // NDS_BTN2
-            // 
-            resources.ApplyResources(this.NDS_BTN2, "NDS_BTN2");
-            this.NDS_BTN2.Name = "NDS_BTN2";
-            this.NDS_BTN2.UseVisualStyleBackColor = true;
-            // 
-            // label30
-            // 
-            resources.ApplyResources(this.label30, "label30");
-            this.label30.Name = "label30";
-            // 
-            // NDS_BTN9
-            // 
-            resources.ApplyResources(this.NDS_BTN9, "NDS_BTN9");
-            this.NDS_BTN9.Name = "NDS_BTN9";
-            this.NDS_BTN9.UseVisualStyleBackColor = true;
-            // 
-            // NDS_BTN1
-            // 
-            resources.ApplyResources(this.NDS_BTN1, "NDS_BTN1");
-            this.NDS_BTN1.Name = "NDS_BTN1";
-            this.NDS_BTN1.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -1288,6 +1386,7 @@
             // 
             // BaseRomN64
             // 
+            this.BaseRomN64.Controls.Add(this.label18);
             this.BaseRomN64.Controls.Add(this.DK64US_PANEL);
             this.BaseRomN64.Controls.Add(this.DK64EU_PANEL);
             this.BaseRomN64.Controls.Add(this.FZXJP_PANEL);
@@ -1299,6 +1398,336 @@
             resources.ApplyResources(this.BaseRomN64, "BaseRomN64");
             this.BaseRomN64.Name = "BaseRomN64";
             this.BaseRomN64.TabStop = false;
+            // 
+            // DK64US_PANEL
+            // 
+            this.DK64US_PANEL.Controls.Add(this.DK64US_DWNLD);
+            this.DK64US_PANEL.Controls.Add(this.DK64USTK);
+            this.DK64US_PANEL.Controls.Add(this.DK64USTKIMG);
+            this.DK64US_PANEL.Controls.Add(this.DK64USCK);
+            this.DK64US_PANEL.Controls.Add(this.DK64USCKIMG);
+            this.DK64US_PANEL.Controls.Add(this.DK64USBASE);
+            this.DK64US_PANEL.Controls.Add(this.DK64USBASEIMG);
+            resources.ApplyResources(this.DK64US_PANEL, "DK64US_PANEL");
+            this.DK64US_PANEL.Name = "DK64US_PANEL";
+            // 
+            // DK64US_DWNLD
+            // 
+            resources.ApplyResources(this.DK64US_DWNLD, "DK64US_DWNLD");
+            this.DK64US_DWNLD.Name = "DK64US_DWNLD";
+            this.DK64US_DWNLD.UseVisualStyleBackColor = true;
+            this.DK64US_DWNLD.Click += new System.EventHandler(this.DK64US_DWNLD_Click);
+            // 
+            // DK64USTK
+            // 
+            resources.ApplyResources(this.DK64USTK, "DK64USTK");
+            this.DK64USTK.ForeColor = System.Drawing.Color.Red;
+            this.DK64USTK.Name = "DK64USTK";
+            // 
+            // DK64USTKIMG
+            // 
+            resources.ApplyResources(this.DK64USTKIMG, "DK64USTKIMG");
+            this.DK64USTKIMG.Name = "DK64USTKIMG";
+            this.DK64USTKIMG.TabStop = false;
+            // 
+            // DK64USCK
+            // 
+            resources.ApplyResources(this.DK64USCK, "DK64USCK");
+            this.DK64USCK.ForeColor = System.Drawing.Color.Red;
+            this.DK64USCK.Name = "DK64USCK";
+            // 
+            // DK64USCKIMG
+            // 
+            resources.ApplyResources(this.DK64USCKIMG, "DK64USCKIMG");
+            this.DK64USCKIMG.Name = "DK64USCKIMG";
+            this.DK64USCKIMG.TabStop = false;
+            // 
+            // DK64USBASE
+            // 
+            resources.ApplyResources(this.DK64USBASE, "DK64USBASE");
+            this.DK64USBASE.ForeColor = System.Drawing.Color.Red;
+            this.DK64USBASE.Name = "DK64USBASE";
+            // 
+            // DK64USBASEIMG
+            // 
+            resources.ApplyResources(this.DK64USBASEIMG, "DK64USBASEIMG");
+            this.DK64USBASEIMG.Name = "DK64USBASEIMG";
+            this.DK64USBASEIMG.TabStop = false;
+            // 
+            // DK64EU_PANEL
+            // 
+            this.DK64EU_PANEL.Controls.Add(this.DK64EU_DWNLD);
+            this.DK64EU_PANEL.Controls.Add(this.DK64EUTK);
+            this.DK64EU_PANEL.Controls.Add(this.DK64EUTKIMG);
+            this.DK64EU_PANEL.Controls.Add(this.DK64EUCK);
+            this.DK64EU_PANEL.Controls.Add(this.DK64EUCKIMG);
+            this.DK64EU_PANEL.Controls.Add(this.DK64EUBASE);
+            this.DK64EU_PANEL.Controls.Add(this.DK64EUBASEIMG);
+            resources.ApplyResources(this.DK64EU_PANEL, "DK64EU_PANEL");
+            this.DK64EU_PANEL.Name = "DK64EU_PANEL";
+            // 
+            // DK64EU_DWNLD
+            // 
+            resources.ApplyResources(this.DK64EU_DWNLD, "DK64EU_DWNLD");
+            this.DK64EU_DWNLD.Name = "DK64EU_DWNLD";
+            this.DK64EU_DWNLD.UseVisualStyleBackColor = true;
+            this.DK64EU_DWNLD.Click += new System.EventHandler(this.DK64EU_DWNLD_Click);
+            // 
+            // DK64EUTK
+            // 
+            resources.ApplyResources(this.DK64EUTK, "DK64EUTK");
+            this.DK64EUTK.ForeColor = System.Drawing.Color.Red;
+            this.DK64EUTK.Name = "DK64EUTK";
+            // 
+            // DK64EUTKIMG
+            // 
+            resources.ApplyResources(this.DK64EUTKIMG, "DK64EUTKIMG");
+            this.DK64EUTKIMG.Name = "DK64EUTKIMG";
+            this.DK64EUTKIMG.TabStop = false;
+            // 
+            // DK64EUCK
+            // 
+            resources.ApplyResources(this.DK64EUCK, "DK64EUCK");
+            this.DK64EUCK.ForeColor = System.Drawing.Color.Red;
+            this.DK64EUCK.Name = "DK64EUCK";
+            // 
+            // DK64EUCKIMG
+            // 
+            resources.ApplyResources(this.DK64EUCKIMG, "DK64EUCKIMG");
+            this.DK64EUCKIMG.Name = "DK64EUCKIMG";
+            this.DK64EUCKIMG.TabStop = false;
+            // 
+            // DK64EUBASE
+            // 
+            resources.ApplyResources(this.DK64EUBASE, "DK64EUBASE");
+            this.DK64EUBASE.ForeColor = System.Drawing.Color.Red;
+            this.DK64EUBASE.Name = "DK64EUBASE";
+            // 
+            // DK64EUBASEIMG
+            // 
+            resources.ApplyResources(this.DK64EUBASEIMG, "DK64EUBASEIMG");
+            this.DK64EUBASEIMG.Name = "DK64EUBASEIMG";
+            this.DK64EUBASEIMG.TabStop = false;
+            // 
+            // FZXJP_PANEL
+            // 
+            this.FZXJP_PANEL.Controls.Add(this.FZXJP_DWNLD);
+            this.FZXJP_PANEL.Controls.Add(this.FZXJPTK);
+            this.FZXJP_PANEL.Controls.Add(this.FZXJPTKIMG);
+            this.FZXJP_PANEL.Controls.Add(this.FZXJPCK);
+            this.FZXJP_PANEL.Controls.Add(this.FZXJPCKIMG);
+            this.FZXJP_PANEL.Controls.Add(this.FZXJPBASE);
+            this.FZXJP_PANEL.Controls.Add(this.FZXJPBASEIMG);
+            resources.ApplyResources(this.FZXJP_PANEL, "FZXJP_PANEL");
+            this.FZXJP_PANEL.Name = "FZXJP_PANEL";
+            // 
+            // FZXJP_DWNLD
+            // 
+            resources.ApplyResources(this.FZXJP_DWNLD, "FZXJP_DWNLD");
+            this.FZXJP_DWNLD.Name = "FZXJP_DWNLD";
+            this.FZXJP_DWNLD.UseVisualStyleBackColor = true;
+            this.FZXJP_DWNLD.Click += new System.EventHandler(this.FZXJP_DWNLD_Click);
+            // 
+            // FZXJPTK
+            // 
+            resources.ApplyResources(this.FZXJPTK, "FZXJPTK");
+            this.FZXJPTK.ForeColor = System.Drawing.Color.Red;
+            this.FZXJPTK.Name = "FZXJPTK";
+            // 
+            // FZXJPTKIMG
+            // 
+            resources.ApplyResources(this.FZXJPTKIMG, "FZXJPTKIMG");
+            this.FZXJPTKIMG.Name = "FZXJPTKIMG";
+            this.FZXJPTKIMG.TabStop = false;
+            // 
+            // FZXJPCK
+            // 
+            resources.ApplyResources(this.FZXJPCK, "FZXJPCK");
+            this.FZXJPCK.ForeColor = System.Drawing.Color.Red;
+            this.FZXJPCK.Name = "FZXJPCK";
+            // 
+            // FZXJPCKIMG
+            // 
+            resources.ApplyResources(this.FZXJPCKIMG, "FZXJPCKIMG");
+            this.FZXJPCKIMG.Name = "FZXJPCKIMG";
+            this.FZXJPCKIMG.TabStop = false;
+            // 
+            // FZXJPBASE
+            // 
+            resources.ApplyResources(this.FZXJPBASE, "FZXJPBASE");
+            this.FZXJPBASE.ForeColor = System.Drawing.Color.Red;
+            this.FZXJPBASE.Name = "FZXJPBASE";
+            // 
+            // FZXJPBASEIMG
+            // 
+            resources.ApplyResources(this.FZXJPBASEIMG, "FZXJPBASEIMG");
+            this.FZXJPBASEIMG.Name = "FZXJPBASEIMG";
+            this.FZXJPBASEIMG.TabStop = false;
+            // 
+            // FXZUS_PANEL
+            // 
+            this.FXZUS_PANEL.Controls.Add(this.FZXUS_DWNLD);
+            this.FXZUS_PANEL.Controls.Add(this.FZXUSTK);
+            this.FXZUS_PANEL.Controls.Add(this.FZXUSTKIMG);
+            this.FXZUS_PANEL.Controls.Add(this.FZXUSCK);
+            this.FXZUS_PANEL.Controls.Add(this.FXZUSCKIMG);
+            this.FXZUS_PANEL.Controls.Add(this.FZXUSBASE);
+            this.FXZUS_PANEL.Controls.Add(this.FZXUSBASEIMG);
+            resources.ApplyResources(this.FXZUS_PANEL, "FXZUS_PANEL");
+            this.FXZUS_PANEL.Name = "FXZUS_PANEL";
+            // 
+            // FZXUS_DWNLD
+            // 
+            resources.ApplyResources(this.FZXUS_DWNLD, "FZXUS_DWNLD");
+            this.FZXUS_DWNLD.Name = "FZXUS_DWNLD";
+            this.FZXUS_DWNLD.UseVisualStyleBackColor = true;
+            this.FZXUS_DWNLD.Click += new System.EventHandler(this.FZXUS_DWNLD_Click);
+            // 
+            // FZXUSTK
+            // 
+            resources.ApplyResources(this.FZXUSTK, "FZXUSTK");
+            this.FZXUSTK.ForeColor = System.Drawing.Color.Red;
+            this.FZXUSTK.Name = "FZXUSTK";
+            // 
+            // FZXUSTKIMG
+            // 
+            resources.ApplyResources(this.FZXUSTKIMG, "FZXUSTKIMG");
+            this.FZXUSTKIMG.Name = "FZXUSTKIMG";
+            this.FZXUSTKIMG.TabStop = false;
+            // 
+            // FZXUSCK
+            // 
+            resources.ApplyResources(this.FZXUSCK, "FZXUSCK");
+            this.FZXUSCK.ForeColor = System.Drawing.Color.Red;
+            this.FZXUSCK.Name = "FZXUSCK";
+            // 
+            // FXZUSCKIMG
+            // 
+            resources.ApplyResources(this.FXZUSCKIMG, "FXZUSCKIMG");
+            this.FXZUSCKIMG.Name = "FXZUSCKIMG";
+            this.FXZUSCKIMG.TabStop = false;
+            // 
+            // FZXUSBASE
+            // 
+            resources.ApplyResources(this.FZXUSBASE, "FZXUSBASE");
+            this.FZXUSBASE.ForeColor = System.Drawing.Color.Red;
+            this.FZXUSBASE.Name = "FZXUSBASE";
+            // 
+            // FZXUSBASEIMG
+            // 
+            resources.ApplyResources(this.FZXUSBASEIMG, "FZXUSBASEIMG");
+            this.FZXUSBASEIMG.Name = "FZXUSBASEIMG";
+            this.FZXUSBASEIMG.TabStop = false;
+            // 
+            // PMUS_PANEL
+            // 
+            this.PMUS_PANEL.Controls.Add(this.PMUS_DWNLD);
+            this.PMUS_PANEL.Controls.Add(this.PMUSTK);
+            this.PMUS_PANEL.Controls.Add(this.PMUSTKIMG);
+            this.PMUS_PANEL.Controls.Add(this.PMUSCK);
+            this.PMUS_PANEL.Controls.Add(this.PMUSCKIMG);
+            this.PMUS_PANEL.Controls.Add(this.PMUSBASE);
+            this.PMUS_PANEL.Controls.Add(this.PMUSBASEIMG);
+            resources.ApplyResources(this.PMUS_PANEL, "PMUS_PANEL");
+            this.PMUS_PANEL.Name = "PMUS_PANEL";
+            // 
+            // PMUS_DWNLD
+            // 
+            resources.ApplyResources(this.PMUS_DWNLD, "PMUS_DWNLD");
+            this.PMUS_DWNLD.Name = "PMUS_DWNLD";
+            this.PMUS_DWNLD.UseVisualStyleBackColor = true;
+            this.PMUS_DWNLD.Click += new System.EventHandler(this.PMUS_DWNLD_Click);
+            // 
+            // PMUSTK
+            // 
+            resources.ApplyResources(this.PMUSTK, "PMUSTK");
+            this.PMUSTK.ForeColor = System.Drawing.Color.Red;
+            this.PMUSTK.Name = "PMUSTK";
+            // 
+            // PMUSTKIMG
+            // 
+            resources.ApplyResources(this.PMUSTKIMG, "PMUSTKIMG");
+            this.PMUSTKIMG.Name = "PMUSTKIMG";
+            this.PMUSTKIMG.TabStop = false;
+            // 
+            // PMUSCK
+            // 
+            resources.ApplyResources(this.PMUSCK, "PMUSCK");
+            this.PMUSCK.ForeColor = System.Drawing.Color.Red;
+            this.PMUSCK.Name = "PMUSCK";
+            // 
+            // PMUSCKIMG
+            // 
+            resources.ApplyResources(this.PMUSCKIMG, "PMUSCKIMG");
+            this.PMUSCKIMG.Name = "PMUSCKIMG";
+            this.PMUSCKIMG.TabStop = false;
+            // 
+            // PMUSBASE
+            // 
+            resources.ApplyResources(this.PMUSBASE, "PMUSBASE");
+            this.PMUSBASE.ForeColor = System.Drawing.Color.Red;
+            this.PMUSBASE.Name = "PMUSBASE";
+            // 
+            // PMUSBASEIMG
+            // 
+            resources.ApplyResources(this.PMUSBASEIMG, "PMUSBASEIMG");
+            this.PMUSBASEIMG.Name = "PMUSBASEIMG";
+            this.PMUSBASEIMG.TabStop = false;
+            // 
+            // PMEU_PANEL
+            // 
+            this.PMEU_PANEL.Controls.Add(this.PMEU_DWNLD);
+            this.PMEU_PANEL.Controls.Add(this.PMEUTK);
+            this.PMEU_PANEL.Controls.Add(this.PMEUTKIMG);
+            this.PMEU_PANEL.Controls.Add(this.PMEUCK);
+            this.PMEU_PANEL.Controls.Add(this.PMEUCKIMG);
+            this.PMEU_PANEL.Controls.Add(this.PMEUBASE);
+            this.PMEU_PANEL.Controls.Add(this.PMEUBASEIMG);
+            resources.ApplyResources(this.PMEU_PANEL, "PMEU_PANEL");
+            this.PMEU_PANEL.Name = "PMEU_PANEL";
+            // 
+            // PMEU_DWNLD
+            // 
+            resources.ApplyResources(this.PMEU_DWNLD, "PMEU_DWNLD");
+            this.PMEU_DWNLD.Name = "PMEU_DWNLD";
+            this.PMEU_DWNLD.UseVisualStyleBackColor = true;
+            this.PMEU_DWNLD.Click += new System.EventHandler(this.PMEU_DWNLD_Click);
+            // 
+            // PMEUTK
+            // 
+            resources.ApplyResources(this.PMEUTK, "PMEUTK");
+            this.PMEUTK.ForeColor = System.Drawing.Color.Red;
+            this.PMEUTK.Name = "PMEUTK";
+            // 
+            // PMEUTKIMG
+            // 
+            resources.ApplyResources(this.PMEUTKIMG, "PMEUTKIMG");
+            this.PMEUTKIMG.Name = "PMEUTKIMG";
+            this.PMEUTKIMG.TabStop = false;
+            // 
+            // PMEUCK
+            // 
+            resources.ApplyResources(this.PMEUCK, "PMEUCK");
+            this.PMEUCK.ForeColor = System.Drawing.Color.Red;
+            this.PMEUCK.Name = "PMEUCK";
+            // 
+            // PMEUCKIMG
+            // 
+            resources.ApplyResources(this.PMEUCKIMG, "PMEUCKIMG");
+            this.PMEUCKIMG.Name = "PMEUCKIMG";
+            this.PMEUCKIMG.TabStop = false;
+            // 
+            // PMEUBASE
+            // 
+            resources.ApplyResources(this.PMEUBASE, "PMEUBASE");
+            this.PMEUBASE.ForeColor = System.Drawing.Color.Red;
+            this.PMEUBASE.Name = "PMEUBASE";
+            // 
+            // PMEUBASEIMG
+            // 
+            resources.ApplyResources(this.PMEUBASEIMG, "PMEUBASEIMG");
+            this.PMEUBASEIMG.Name = "PMEUBASEIMG";
+            this.PMEUBASEIMG.TabStop = false;
             // 
             // N64CSTM_PANEL
             // 
@@ -1603,6 +2032,7 @@
             // NES
             // 
             this.NES.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.NES.Controls.Add(this.POEU_PANEL);
             this.NES.Controls.Add(this.NES_BACK);
             this.NES.Controls.Add(this.groupBox7);
             this.NES.Controls.Add(this.groupBox8);
@@ -1761,6 +2191,12 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.SMBUS_PANEL);
+            this.groupBox8.Controls.Add(this.SMBEU_PANEL);
+            this.groupBox8.Controls.Add(this.POUS_PANEL);
+            this.groupBox8.Controls.Add(this.NESCSTMN_PANEL);
+            this.groupBox8.Controls.Add(this.label36);
+            this.groupBox8.Controls.Add(this.comboBox4);
             resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.TabStop = false;
@@ -2583,359 +3019,825 @@
             // 
             this.N64CSTMNFOLDERS.Tick += new System.EventHandler(this.N64CSTMNFOLDERS_Tick);
             // 
-            // PMEU_PANEL
-            // 
-            this.PMEU_PANEL.Controls.Add(this.PMEU_DWNLD);
-            this.PMEU_PANEL.Controls.Add(this.PMEUTK);
-            this.PMEU_PANEL.Controls.Add(this.PMEUTKIMG);
-            this.PMEU_PANEL.Controls.Add(this.PMEUCK);
-            this.PMEU_PANEL.Controls.Add(this.PMEUCKIMG);
-            this.PMEU_PANEL.Controls.Add(this.PMEUBASE);
-            this.PMEU_PANEL.Controls.Add(this.PMEUBASEIMG);
-            resources.ApplyResources(this.PMEU_PANEL, "PMEU_PANEL");
-            this.PMEU_PANEL.Name = "PMEU_PANEL";
-            // 
-            // PMEU_DWNLD
-            // 
-            resources.ApplyResources(this.PMEU_DWNLD, "PMEU_DWNLD");
-            this.PMEU_DWNLD.Name = "PMEU_DWNLD";
-            this.PMEU_DWNLD.UseVisualStyleBackColor = true;
-            this.PMEU_DWNLD.Click += new System.EventHandler(this.PMEU_DWNLD_Click);
-            // 
-            // PMEUTK
-            // 
-            resources.ApplyResources(this.PMEUTK, "PMEUTK");
-            this.PMEUTK.ForeColor = System.Drawing.Color.Red;
-            this.PMEUTK.Name = "PMEUTK";
-            // 
-            // PMEUTKIMG
-            // 
-            resources.ApplyResources(this.PMEUTKIMG, "PMEUTKIMG");
-            this.PMEUTKIMG.Name = "PMEUTKIMG";
-            this.PMEUTKIMG.TabStop = false;
-            // 
-            // PMEUCK
-            // 
-            resources.ApplyResources(this.PMEUCK, "PMEUCK");
-            this.PMEUCK.ForeColor = System.Drawing.Color.Red;
-            this.PMEUCK.Name = "PMEUCK";
-            // 
-            // PMEUCKIMG
-            // 
-            resources.ApplyResources(this.PMEUCKIMG, "PMEUCKIMG");
-            this.PMEUCKIMG.Name = "PMEUCKIMG";
-            this.PMEUCKIMG.TabStop = false;
-            // 
-            // PMEUBASE
-            // 
-            resources.ApplyResources(this.PMEUBASE, "PMEUBASE");
-            this.PMEUBASE.ForeColor = System.Drawing.Color.Red;
-            this.PMEUBASE.Name = "PMEUBASE";
-            // 
-            // PMEUBASEIMG
-            // 
-            resources.ApplyResources(this.PMEUBASEIMG, "PMEUBASEIMG");
-            this.PMEUBASEIMG.Name = "PMEUBASEIMG";
-            this.PMEUBASEIMG.TabStop = false;
-            // 
             // PMEU
             // 
             this.PMEU.Tick += new System.EventHandler(this.PMEU_Tick);
-            // 
-            // PMUS_PANEL
-            // 
-            this.PMUS_PANEL.Controls.Add(this.PMUS_DWNLD);
-            this.PMUS_PANEL.Controls.Add(this.PMUSTK);
-            this.PMUS_PANEL.Controls.Add(this.PMUSTKIMG);
-            this.PMUS_PANEL.Controls.Add(this.PMUSCK);
-            this.PMUS_PANEL.Controls.Add(this.PMUSCKIMG);
-            this.PMUS_PANEL.Controls.Add(this.PMUSBASE);
-            this.PMUS_PANEL.Controls.Add(this.PMUSBASEIMG);
-            resources.ApplyResources(this.PMUS_PANEL, "PMUS_PANEL");
-            this.PMUS_PANEL.Name = "PMUS_PANEL";
-            // 
-            // PMUS_DWNLD
-            // 
-            resources.ApplyResources(this.PMUS_DWNLD, "PMUS_DWNLD");
-            this.PMUS_DWNLD.Name = "PMUS_DWNLD";
-            this.PMUS_DWNLD.UseVisualStyleBackColor = true;
-            this.PMUS_DWNLD.Click += new System.EventHandler(this.PMUS_DWNLD_Click);
-            // 
-            // PMUSTK
-            // 
-            resources.ApplyResources(this.PMUSTK, "PMUSTK");
-            this.PMUSTK.ForeColor = System.Drawing.Color.Red;
-            this.PMUSTK.Name = "PMUSTK";
-            // 
-            // PMUSTKIMG
-            // 
-            resources.ApplyResources(this.PMUSTKIMG, "PMUSTKIMG");
-            this.PMUSTKIMG.Name = "PMUSTKIMG";
-            this.PMUSTKIMG.TabStop = false;
-            // 
-            // PMUSCK
-            // 
-            resources.ApplyResources(this.PMUSCK, "PMUSCK");
-            this.PMUSCK.ForeColor = System.Drawing.Color.Red;
-            this.PMUSCK.Name = "PMUSCK";
-            // 
-            // PMUSCKIMG
-            // 
-            resources.ApplyResources(this.PMUSCKIMG, "PMUSCKIMG");
-            this.PMUSCKIMG.Name = "PMUSCKIMG";
-            this.PMUSCKIMG.TabStop = false;
-            // 
-            // PMUSBASE
-            // 
-            resources.ApplyResources(this.PMUSBASE, "PMUSBASE");
-            this.PMUSBASE.ForeColor = System.Drawing.Color.Red;
-            this.PMUSBASE.Name = "PMUSBASE";
-            // 
-            // PMUSBASEIMG
-            // 
-            resources.ApplyResources(this.PMUSBASEIMG, "PMUSBASEIMG");
-            this.PMUSBASEIMG.Name = "PMUSBASEIMG";
-            this.PMUSBASEIMG.TabStop = false;
             // 
             // PMUS
             // 
             this.PMUS.Tick += new System.EventHandler(this.PMUS_Tick);
             // 
-            // FXZUS_PANEL
-            // 
-            this.FXZUS_PANEL.Controls.Add(this.FZXUS_DWNLD);
-            this.FXZUS_PANEL.Controls.Add(this.FZXUSTK);
-            this.FXZUS_PANEL.Controls.Add(this.FZXUSTKIMG);
-            this.FXZUS_PANEL.Controls.Add(this.FZXUSCK);
-            this.FXZUS_PANEL.Controls.Add(this.FXZUSCKIMG);
-            this.FXZUS_PANEL.Controls.Add(this.FZXUSBASE);
-            this.FXZUS_PANEL.Controls.Add(this.FZXUSBASEIMG);
-            resources.ApplyResources(this.FXZUS_PANEL, "FXZUS_PANEL");
-            this.FXZUS_PANEL.Name = "FXZUS_PANEL";
-            // 
-            // FZXUS_DWNLD
-            // 
-            resources.ApplyResources(this.FZXUS_DWNLD, "FZXUS_DWNLD");
-            this.FZXUS_DWNLD.Name = "FZXUS_DWNLD";
-            this.FZXUS_DWNLD.UseVisualStyleBackColor = true;
-            this.FZXUS_DWNLD.Click += new System.EventHandler(this.FZXUS_DWNLD_Click);
-            // 
-            // FZXUSTK
-            // 
-            resources.ApplyResources(this.FZXUSTK, "FZXUSTK");
-            this.FZXUSTK.ForeColor = System.Drawing.Color.Red;
-            this.FZXUSTK.Name = "FZXUSTK";
-            // 
-            // FZXUSTKIMG
-            // 
-            resources.ApplyResources(this.FZXUSTKIMG, "FZXUSTKIMG");
-            this.FZXUSTKIMG.Name = "FZXUSTKIMG";
-            this.FZXUSTKIMG.TabStop = false;
-            // 
-            // FZXUSCK
-            // 
-            resources.ApplyResources(this.FZXUSCK, "FZXUSCK");
-            this.FZXUSCK.ForeColor = System.Drawing.Color.Red;
-            this.FZXUSCK.Name = "FZXUSCK";
-            // 
-            // FXZUSCKIMG
-            // 
-            resources.ApplyResources(this.FXZUSCKIMG, "FXZUSCKIMG");
-            this.FXZUSCKIMG.Name = "FXZUSCKIMG";
-            this.FXZUSCKIMG.TabStop = false;
-            // 
-            // FZXUSBASE
-            // 
-            resources.ApplyResources(this.FZXUSBASE, "FZXUSBASE");
-            this.FZXUSBASE.ForeColor = System.Drawing.Color.Red;
-            this.FZXUSBASE.Name = "FZXUSBASE";
-            // 
-            // FZXUSBASEIMG
-            // 
-            resources.ApplyResources(this.FZXUSBASEIMG, "FZXUSBASEIMG");
-            this.FZXUSBASEIMG.Name = "FZXUSBASEIMG";
-            this.FZXUSBASEIMG.TabStop = false;
-            // 
             // FZXUS
             // 
             this.FZXUS.Tick += new System.EventHandler(this.FZXUS_Tick);
-            // 
-            // FZXJP_PANEL
-            // 
-            this.FZXJP_PANEL.Controls.Add(this.FZXJP_DWNLD);
-            this.FZXJP_PANEL.Controls.Add(this.FZXJPTK);
-            this.FZXJP_PANEL.Controls.Add(this.FZXJPTKIMG);
-            this.FZXJP_PANEL.Controls.Add(this.FZXJPCK);
-            this.FZXJP_PANEL.Controls.Add(this.FZXJPCKIMG);
-            this.FZXJP_PANEL.Controls.Add(this.FZXJPBASE);
-            this.FZXJP_PANEL.Controls.Add(this.FZXJPBASEIMG);
-            resources.ApplyResources(this.FZXJP_PANEL, "FZXJP_PANEL");
-            this.FZXJP_PANEL.Name = "FZXJP_PANEL";
-            // 
-            // FZXJP_DWNLD
-            // 
-            resources.ApplyResources(this.FZXJP_DWNLD, "FZXJP_DWNLD");
-            this.FZXJP_DWNLD.Name = "FZXJP_DWNLD";
-            this.FZXJP_DWNLD.UseVisualStyleBackColor = true;
-            this.FZXJP_DWNLD.Click += new System.EventHandler(this.FZXJP_DWNLD_Click);
-            // 
-            // FZXJPTK
-            // 
-            resources.ApplyResources(this.FZXJPTK, "FZXJPTK");
-            this.FZXJPTK.ForeColor = System.Drawing.Color.Red;
-            this.FZXJPTK.Name = "FZXJPTK";
-            // 
-            // FZXJPTKIMG
-            // 
-            resources.ApplyResources(this.FZXJPTKIMG, "FZXJPTKIMG");
-            this.FZXJPTKIMG.Name = "FZXJPTKIMG";
-            this.FZXJPTKIMG.TabStop = false;
-            // 
-            // FZXJPCK
-            // 
-            resources.ApplyResources(this.FZXJPCK, "FZXJPCK");
-            this.FZXJPCK.ForeColor = System.Drawing.Color.Red;
-            this.FZXJPCK.Name = "FZXJPCK";
-            // 
-            // FZXJPCKIMG
-            // 
-            resources.ApplyResources(this.FZXJPCKIMG, "FZXJPCKIMG");
-            this.FZXJPCKIMG.Name = "FZXJPCKIMG";
-            this.FZXJPCKIMG.TabStop = false;
-            // 
-            // FZXJPBASE
-            // 
-            resources.ApplyResources(this.FZXJPBASE, "FZXJPBASE");
-            this.FZXJPBASE.ForeColor = System.Drawing.Color.Red;
-            this.FZXJPBASE.Name = "FZXJPBASE";
-            // 
-            // FZXJPBASEIMG
-            // 
-            resources.ApplyResources(this.FZXJPBASEIMG, "FZXJPBASEIMG");
-            this.FZXJPBASEIMG.Name = "FZXJPBASEIMG";
-            this.FZXJPBASEIMG.TabStop = false;
             // 
             // FZXJP
             // 
             this.FZXJP.Tick += new System.EventHandler(this.FZXJP_Tick);
             // 
-            // DK64EU_PANEL
-            // 
-            this.DK64EU_PANEL.Controls.Add(this.DK64EU_DWNLD);
-            this.DK64EU_PANEL.Controls.Add(this.DK64EUTK);
-            this.DK64EU_PANEL.Controls.Add(this.DK64EUTKIMG);
-            this.DK64EU_PANEL.Controls.Add(this.DK64EUCK);
-            this.DK64EU_PANEL.Controls.Add(this.DK64EUCKIMG);
-            this.DK64EU_PANEL.Controls.Add(this.DK64EUBASE);
-            this.DK64EU_PANEL.Controls.Add(this.DK64EUBASEIMG);
-            resources.ApplyResources(this.DK64EU_PANEL, "DK64EU_PANEL");
-            this.DK64EU_PANEL.Name = "DK64EU_PANEL";
-            // 
-            // DK64EU_DWNLD
-            // 
-            resources.ApplyResources(this.DK64EU_DWNLD, "DK64EU_DWNLD");
-            this.DK64EU_DWNLD.Name = "DK64EU_DWNLD";
-            this.DK64EU_DWNLD.UseVisualStyleBackColor = true;
-            this.DK64EU_DWNLD.Click += new System.EventHandler(this.DK64EU_DWNLD_Click);
-            // 
-            // DK64EUTK
-            // 
-            resources.ApplyResources(this.DK64EUTK, "DK64EUTK");
-            this.DK64EUTK.ForeColor = System.Drawing.Color.Red;
-            this.DK64EUTK.Name = "DK64EUTK";
-            // 
-            // DK64EUTKIMG
-            // 
-            resources.ApplyResources(this.DK64EUTKIMG, "DK64EUTKIMG");
-            this.DK64EUTKIMG.Name = "DK64EUTKIMG";
-            this.DK64EUTKIMG.TabStop = false;
-            // 
-            // DK64EUCK
-            // 
-            resources.ApplyResources(this.DK64EUCK, "DK64EUCK");
-            this.DK64EUCK.ForeColor = System.Drawing.Color.Red;
-            this.DK64EUCK.Name = "DK64EUCK";
-            // 
-            // DK64EUCKIMG
-            // 
-            resources.ApplyResources(this.DK64EUCKIMG, "DK64EUCKIMG");
-            this.DK64EUCKIMG.Name = "DK64EUCKIMG";
-            this.DK64EUCKIMG.TabStop = false;
-            // 
-            // DK64EUBASE
-            // 
-            resources.ApplyResources(this.DK64EUBASE, "DK64EUBASE");
-            this.DK64EUBASE.ForeColor = System.Drawing.Color.Red;
-            this.DK64EUBASE.Name = "DK64EUBASE";
-            // 
-            // DK64EUBASEIMG
-            // 
-            resources.ApplyResources(this.DK64EUBASEIMG, "DK64EUBASEIMG");
-            this.DK64EUBASEIMG.Name = "DK64EUBASEIMG";
-            this.DK64EUBASEIMG.TabStop = false;
-            // 
             // DK64EU
             // 
             this.DK64EU.Tick += new System.EventHandler(this.DK64EU_Tick);
             // 
-            // DK64US_PANEL
-            // 
-            this.DK64US_PANEL.Controls.Add(this.DK64US_DWNLD);
-            this.DK64US_PANEL.Controls.Add(this.DK64USTK);
-            this.DK64US_PANEL.Controls.Add(this.DK64USTKIMG);
-            this.DK64US_PANEL.Controls.Add(this.DK64USCK);
-            this.DK64US_PANEL.Controls.Add(this.DK64USCKIMG);
-            this.DK64US_PANEL.Controls.Add(this.DK64USBASE);
-            this.DK64US_PANEL.Controls.Add(this.DK64USBASEIMG);
-            resources.ApplyResources(this.DK64US_PANEL, "DK64US_PANEL");
-            this.DK64US_PANEL.Name = "DK64US_PANEL";
-            // 
-            // DK64US_DWNLD
-            // 
-            resources.ApplyResources(this.DK64US_DWNLD, "DK64US_DWNLD");
-            this.DK64US_DWNLD.Name = "DK64US_DWNLD";
-            this.DK64US_DWNLD.UseVisualStyleBackColor = true;
-            this.DK64US_DWNLD.Click += new System.EventHandler(this.DK64US_DWNLD_Click);
-            // 
-            // DK64USTK
-            // 
-            resources.ApplyResources(this.DK64USTK, "DK64USTK");
-            this.DK64USTK.ForeColor = System.Drawing.Color.Red;
-            this.DK64USTK.Name = "DK64USTK";
-            // 
-            // DK64USTKIMG
-            // 
-            resources.ApplyResources(this.DK64USTKIMG, "DK64USTKIMG");
-            this.DK64USTKIMG.Name = "DK64USTKIMG";
-            this.DK64USTKIMG.TabStop = false;
-            // 
-            // DK64USCK
-            // 
-            resources.ApplyResources(this.DK64USCK, "DK64USCK");
-            this.DK64USCK.ForeColor = System.Drawing.Color.Red;
-            this.DK64USCK.Name = "DK64USCK";
-            // 
-            // DK64USCKIMG
-            // 
-            resources.ApplyResources(this.DK64USCKIMG, "DK64USCKIMG");
-            this.DK64USCKIMG.Name = "DK64USCKIMG";
-            this.DK64USCKIMG.TabStop = false;
-            // 
-            // DK64USBASE
-            // 
-            resources.ApplyResources(this.DK64USBASE, "DK64USBASE");
-            this.DK64USBASE.ForeColor = System.Drawing.Color.Red;
-            this.DK64USBASE.Name = "DK64USBASE";
-            // 
-            // DK64USBASEIMG
-            // 
-            resources.ApplyResources(this.DK64USBASEIMG, "DK64USBASEIMG");
-            this.DK64USBASEIMG.Name = "DK64USBASEIMG";
-            this.DK64USBASEIMG.TabStop = false;
-            // 
             // DK64US
             // 
             this.DK64US.Tick += new System.EventHandler(this.DK64US_Tick);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("comboBox3.AutoCompleteCustomSource"),
+            resources.GetString("comboBox3.AutoCompleteCustomSource1"),
+            resources.GetString("comboBox3.AutoCompleteCustomSource2")});
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            resources.GetString("comboBox3.Items"),
+            resources.GetString("comboBox3.Items1"),
+            resources.GetString("comboBox3.Items2"),
+            resources.GetString("comboBox3.Items3"),
+            resources.GetString("comboBox3.Items4"),
+            resources.GetString("comboBox3.Items5"),
+            resources.GetString("comboBox3.Items6")});
+            resources.ApplyResources(this.comboBox3, "comboBox3");
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.ComboBox3_SelectedIndexChanged);
+            // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.Name = "label18";
+            // 
+            // label30
+            // 
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.Name = "label30";
+            // 
+            // NDSCSTMN_PANEL
+            // 
+            this.NDSCSTMN_PANEL.Controls.Add(this.NDSCONTENT);
+            this.NDSCSTMN_PANEL.Controls.Add(this.NDSCONTENTIMG);
+            this.NDSCSTMN_PANEL.Controls.Add(this.NDSMETA);
+            this.NDSCSTMN_PANEL.Controls.Add(this.NDSMETAIMG);
+            this.NDSCSTMN_PANEL.Controls.Add(this.NDSCODE);
+            this.NDSCSTMN_PANEL.Controls.Add(this.NDSCODEIMG);
+            this.NDSCSTMN_PANEL.Controls.Add(this.label58);
+            this.NDSCSTMN_PANEL.Controls.Add(this.NDSCSTMN_BTN);
+            this.NDSCSTMN_PANEL.Controls.Add(this.NDSCSTMN_PATH);
+            resources.ApplyResources(this.NDSCSTMN_PANEL, "NDSCSTMN_PANEL");
+            this.NDSCSTMN_PANEL.Name = "NDSCSTMN_PANEL";
+            // 
+            // NDSCONTENT
+            // 
+            resources.ApplyResources(this.NDSCONTENT, "NDSCONTENT");
+            this.NDSCONTENT.ForeColor = System.Drawing.Color.Red;
+            this.NDSCONTENT.Name = "NDSCONTENT";
+            // 
+            // NDSCONTENTIMG
+            // 
+            resources.ApplyResources(this.NDSCONTENTIMG, "NDSCONTENTIMG");
+            this.NDSCONTENTIMG.Name = "NDSCONTENTIMG";
+            this.NDSCONTENTIMG.TabStop = false;
+            // 
+            // NDSMETA
+            // 
+            resources.ApplyResources(this.NDSMETA, "NDSMETA");
+            this.NDSMETA.ForeColor = System.Drawing.Color.Red;
+            this.NDSMETA.Name = "NDSMETA";
+            // 
+            // NDSMETAIMG
+            // 
+            resources.ApplyResources(this.NDSMETAIMG, "NDSMETAIMG");
+            this.NDSMETAIMG.Name = "NDSMETAIMG";
+            this.NDSMETAIMG.TabStop = false;
+            // 
+            // NDSCODE
+            // 
+            resources.ApplyResources(this.NDSCODE, "NDSCODE");
+            this.NDSCODE.ForeColor = System.Drawing.Color.Red;
+            this.NDSCODE.Name = "NDSCODE";
+            // 
+            // NDSCODEIMG
+            // 
+            resources.ApplyResources(this.NDSCODEIMG, "NDSCODEIMG");
+            this.NDSCODEIMG.Name = "NDSCODEIMG";
+            this.NDSCODEIMG.TabStop = false;
+            // 
+            // label58
+            // 
+            resources.ApplyResources(this.label58, "label58");
+            this.label58.Name = "label58";
+            // 
+            // NDSCSTMN_BTN
+            // 
+            resources.ApplyResources(this.NDSCSTMN_BTN, "NDSCSTMN_BTN");
+            this.NDSCSTMN_BTN.Name = "NDSCSTMN_BTN";
+            this.NDSCSTMN_BTN.UseVisualStyleBackColor = true;
+            this.NDSCSTMN_BTN.Click += new System.EventHandler(this.NDSCSTMN_BTN_Click);
+            // 
+            // NDSCSTMN_PATH
+            // 
+            resources.ApplyResources(this.NDSCSTMN_PATH, "NDSCSTMN_PATH");
+            this.NDSCSTMN_PATH.Name = "NDSCSTMN_PATH";
+            // 
+            // NDSCSTMNFOLDERS
+            // 
+            this.NDSCSTMNFOLDERS.Tick += new System.EventHandler(this.NDSCSTMNFOLDERS_Tick);
+            // 
+            // ZSTEU_PANEL
+            // 
+            this.ZSTEU_PANEL.Controls.Add(this.ZSTEU_BTN);
+            this.ZSTEU_PANEL.Controls.Add(this.ZSTEUTK);
+            this.ZSTEU_PANEL.Controls.Add(this.ZSTEUTKIMG);
+            this.ZSTEU_PANEL.Controls.Add(this.ZSTEUCK);
+            this.ZSTEU_PANEL.Controls.Add(this.ZSTEUCKIMG);
+            this.ZSTEU_PANEL.Controls.Add(this.ZSTEUBASE);
+            this.ZSTEU_PANEL.Controls.Add(this.ZSTEUBASEIMG);
+            resources.ApplyResources(this.ZSTEU_PANEL, "ZSTEU_PANEL");
+            this.ZSTEU_PANEL.Name = "ZSTEU_PANEL";
+            // 
+            // ZSTEU_BTN
+            // 
+            this.ZSTEU_BTN.Cursor = System.Windows.Forms.Cursors.Help;
+            resources.ApplyResources(this.ZSTEU_BTN, "ZSTEU_BTN");
+            this.ZSTEU_BTN.Name = "ZSTEU_BTN";
+            this.toolTip1.SetToolTip(this.ZSTEU_BTN, resources.GetString("ZSTEU_BTN.ToolTip"));
+            this.ZSTEU_BTN.UseVisualStyleBackColor = true;
+            this.ZSTEU_BTN.Click += new System.EventHandler(this.ZSTEU_BTN_Click);
+            // 
+            // ZSTEUTK
+            // 
+            resources.ApplyResources(this.ZSTEUTK, "ZSTEUTK");
+            this.ZSTEUTK.ForeColor = System.Drawing.Color.Red;
+            this.ZSTEUTK.Name = "ZSTEUTK";
+            // 
+            // ZSTEUTKIMG
+            // 
+            resources.ApplyResources(this.ZSTEUTKIMG, "ZSTEUTKIMG");
+            this.ZSTEUTKIMG.Name = "ZSTEUTKIMG";
+            this.ZSTEUTKIMG.TabStop = false;
+            // 
+            // ZSTEUCK
+            // 
+            resources.ApplyResources(this.ZSTEUCK, "ZSTEUCK");
+            this.ZSTEUCK.ForeColor = System.Drawing.Color.Red;
+            this.ZSTEUCK.Name = "ZSTEUCK";
+            // 
+            // ZSTEUCKIMG
+            // 
+            resources.ApplyResources(this.ZSTEUCKIMG, "ZSTEUCKIMG");
+            this.ZSTEUCKIMG.Name = "ZSTEUCKIMG";
+            this.ZSTEUCKIMG.TabStop = false;
+            // 
+            // ZSTEUBASE
+            // 
+            resources.ApplyResources(this.ZSTEUBASE, "ZSTEUBASE");
+            this.ZSTEUBASE.ForeColor = System.Drawing.Color.Red;
+            this.ZSTEUBASE.Name = "ZSTEUBASE";
+            // 
+            // ZSTEUBASEIMG
+            // 
+            resources.ApplyResources(this.ZSTEUBASEIMG, "ZSTEUBASEIMG");
+            this.ZSTEUBASEIMG.Name = "ZSTEUBASEIMG";
+            this.ZSTEUBASEIMG.TabStop = false;
+            // 
+            // ZSTEU
+            // 
+            this.ZSTEU.Tick += new System.EventHandler(this.ZSTEU_Tick);
+            // 
+            // ZSTUS_PANEL
+            // 
+            this.ZSTUS_PANEL.Controls.Add(this.ZSTUS_BTN);
+            this.ZSTUS_PANEL.Controls.Add(this.ZSTUSTK);
+            this.ZSTUS_PANEL.Controls.Add(this.ZSTUSTKIMG);
+            this.ZSTUS_PANEL.Controls.Add(this.ZSTUSCK);
+            this.ZSTUS_PANEL.Controls.Add(this.ZSTUSCKIMG);
+            this.ZSTUS_PANEL.Controls.Add(this.ZSTUSBASE);
+            this.ZSTUS_PANEL.Controls.Add(this.ZSTUSBASEIMG);
+            resources.ApplyResources(this.ZSTUS_PANEL, "ZSTUS_PANEL");
+            this.ZSTUS_PANEL.Name = "ZSTUS_PANEL";
+            // 
+            // ZSTUS_BTN
+            // 
+            this.ZSTUS_BTN.Cursor = System.Windows.Forms.Cursors.Help;
+            resources.ApplyResources(this.ZSTUS_BTN, "ZSTUS_BTN");
+            this.ZSTUS_BTN.Name = "ZSTUS_BTN";
+            this.toolTip1.SetToolTip(this.ZSTUS_BTN, resources.GetString("ZSTUS_BTN.ToolTip"));
+            this.ZSTUS_BTN.UseVisualStyleBackColor = true;
+            this.ZSTUS_BTN.Click += new System.EventHandler(this.ZSTUS_BTN_Click);
+            // 
+            // ZSTUSTK
+            // 
+            resources.ApplyResources(this.ZSTUSTK, "ZSTUSTK");
+            this.ZSTUSTK.ForeColor = System.Drawing.Color.Red;
+            this.ZSTUSTK.Name = "ZSTUSTK";
+            // 
+            // ZSTUSTKIMG
+            // 
+            resources.ApplyResources(this.ZSTUSTKIMG, "ZSTUSTKIMG");
+            this.ZSTUSTKIMG.Name = "ZSTUSTKIMG";
+            this.ZSTUSTKIMG.TabStop = false;
+            // 
+            // ZSTUSCK
+            // 
+            resources.ApplyResources(this.ZSTUSCK, "ZSTUSCK");
+            this.ZSTUSCK.ForeColor = System.Drawing.Color.Red;
+            this.ZSTUSCK.Name = "ZSTUSCK";
+            // 
+            // ZSTUSCKIMG
+            // 
+            resources.ApplyResources(this.ZSTUSCKIMG, "ZSTUSCKIMG");
+            this.ZSTUSCKIMG.Name = "ZSTUSCKIMG";
+            this.ZSTUSCKIMG.TabStop = false;
+            // 
+            // ZSTUSBASE
+            // 
+            resources.ApplyResources(this.ZSTUSBASE, "ZSTUSBASE");
+            this.ZSTUSBASE.ForeColor = System.Drawing.Color.Red;
+            this.ZSTUSBASE.Name = "ZSTUSBASE";
+            // 
+            // ZSTUSBASEIMG
+            // 
+            resources.ApplyResources(this.ZSTUSBASEIMG, "ZSTUSBASEIMG");
+            this.ZSTUSBASEIMG.Name = "ZSTUSBASEIMG";
+            this.ZSTUSBASEIMG.TabStop = false;
+            // 
+            // ZSTUS
+            // 
+            this.ZSTUS.Tick += new System.EventHandler(this.ZSTUS_Tick);
+            // 
+            // ZPHEU_PANEL
+            // 
+            this.ZPHEU_PANEL.Controls.Add(this.ZPHEU_BTN);
+            this.ZPHEU_PANEL.Controls.Add(this.ZPHEUTK);
+            this.ZPHEU_PANEL.Controls.Add(this.ZPHEUTKIMG);
+            this.ZPHEU_PANEL.Controls.Add(this.ZPHEUCK);
+            this.ZPHEU_PANEL.Controls.Add(this.ZPHEUCKIMG);
+            this.ZPHEU_PANEL.Controls.Add(this.ZPHEUBASE);
+            this.ZPHEU_PANEL.Controls.Add(this.ZPHEUBASEIMG);
+            resources.ApplyResources(this.ZPHEU_PANEL, "ZPHEU_PANEL");
+            this.ZPHEU_PANEL.Name = "ZPHEU_PANEL";
+            // 
+            // ZPHEU_BTN
+            // 
+            this.ZPHEU_BTN.Cursor = System.Windows.Forms.Cursors.Help;
+            resources.ApplyResources(this.ZPHEU_BTN, "ZPHEU_BTN");
+            this.ZPHEU_BTN.Name = "ZPHEU_BTN";
+            this.toolTip1.SetToolTip(this.ZPHEU_BTN, resources.GetString("ZPHEU_BTN.ToolTip"));
+            this.ZPHEU_BTN.UseVisualStyleBackColor = true;
+            this.ZPHEU_BTN.Click += new System.EventHandler(this.ZPHEU_BTN_Click);
+            // 
+            // ZPHEUTK
+            // 
+            resources.ApplyResources(this.ZPHEUTK, "ZPHEUTK");
+            this.ZPHEUTK.ForeColor = System.Drawing.Color.Red;
+            this.ZPHEUTK.Name = "ZPHEUTK";
+            // 
+            // ZPHEUTKIMG
+            // 
+            resources.ApplyResources(this.ZPHEUTKIMG, "ZPHEUTKIMG");
+            this.ZPHEUTKIMG.Name = "ZPHEUTKIMG";
+            this.ZPHEUTKIMG.TabStop = false;
+            // 
+            // ZPHEUCK
+            // 
+            resources.ApplyResources(this.ZPHEUCK, "ZPHEUCK");
+            this.ZPHEUCK.ForeColor = System.Drawing.Color.Red;
+            this.ZPHEUCK.Name = "ZPHEUCK";
+            // 
+            // ZPHEUCKIMG
+            // 
+            resources.ApplyResources(this.ZPHEUCKIMG, "ZPHEUCKIMG");
+            this.ZPHEUCKIMG.Name = "ZPHEUCKIMG";
+            this.ZPHEUCKIMG.TabStop = false;
+            // 
+            // ZPHEUBASE
+            // 
+            resources.ApplyResources(this.ZPHEUBASE, "ZPHEUBASE");
+            this.ZPHEUBASE.ForeColor = System.Drawing.Color.Red;
+            this.ZPHEUBASE.Name = "ZPHEUBASE";
+            // 
+            // ZPHEUBASEIMG
+            // 
+            resources.ApplyResources(this.ZPHEUBASEIMG, "ZPHEUBASEIMG");
+            this.ZPHEUBASEIMG.Name = "ZPHEUBASEIMG";
+            this.ZPHEUBASEIMG.TabStop = false;
+            // 
+            // ZPHEU
+            // 
+            this.ZPHEU.Tick += new System.EventHandler(this.ZPHEU_Tick);
+            // 
+            // ZPHUS_PANEL
+            // 
+            this.ZPHUS_PANEL.Controls.Add(this.ZPHUS_BTN);
+            this.ZPHUS_PANEL.Controls.Add(this.ZPHUSTK);
+            this.ZPHUS_PANEL.Controls.Add(this.ZPHUSTKIMG);
+            this.ZPHUS_PANEL.Controls.Add(this.ZPHUSCK);
+            this.ZPHUS_PANEL.Controls.Add(this.ZPHUSCKIMG);
+            this.ZPHUS_PANEL.Controls.Add(this.ZPHUSBASE);
+            this.ZPHUS_PANEL.Controls.Add(this.ZPHUSBASEIMG);
+            resources.ApplyResources(this.ZPHUS_PANEL, "ZPHUS_PANEL");
+            this.ZPHUS_PANEL.Name = "ZPHUS_PANEL";
+            // 
+            // ZPHUS_BTN
+            // 
+            this.ZPHUS_BTN.Cursor = System.Windows.Forms.Cursors.Help;
+            resources.ApplyResources(this.ZPHUS_BTN, "ZPHUS_BTN");
+            this.ZPHUS_BTN.Name = "ZPHUS_BTN";
+            this.toolTip1.SetToolTip(this.ZPHUS_BTN, resources.GetString("ZPHUS_BTN.ToolTip"));
+            this.ZPHUS_BTN.UseVisualStyleBackColor = true;
+            this.ZPHUS_BTN.Click += new System.EventHandler(this.ZPHUS_BTN_Click);
+            // 
+            // ZPHUSTK
+            // 
+            resources.ApplyResources(this.ZPHUSTK, "ZPHUSTK");
+            this.ZPHUSTK.ForeColor = System.Drawing.Color.Red;
+            this.ZPHUSTK.Name = "ZPHUSTK";
+            // 
+            // ZPHUSTKIMG
+            // 
+            resources.ApplyResources(this.ZPHUSTKIMG, "ZPHUSTKIMG");
+            this.ZPHUSTKIMG.Name = "ZPHUSTKIMG";
+            this.ZPHUSTKIMG.TabStop = false;
+            // 
+            // ZPHUSCK
+            // 
+            resources.ApplyResources(this.ZPHUSCK, "ZPHUSCK");
+            this.ZPHUSCK.ForeColor = System.Drawing.Color.Red;
+            this.ZPHUSCK.Name = "ZPHUSCK";
+            // 
+            // ZPHUSCKIMG
+            // 
+            resources.ApplyResources(this.ZPHUSCKIMG, "ZPHUSCKIMG");
+            this.ZPHUSCKIMG.Name = "ZPHUSCKIMG";
+            this.ZPHUSCKIMG.TabStop = false;
+            // 
+            // ZPHUSBASE
+            // 
+            resources.ApplyResources(this.ZPHUSBASE, "ZPHUSBASE");
+            this.ZPHUSBASE.ForeColor = System.Drawing.Color.Red;
+            this.ZPHUSBASE.Name = "ZPHUSBASE";
+            // 
+            // ZPHUSBASEIMG
+            // 
+            resources.ApplyResources(this.ZPHUSBASEIMG, "ZPHUSBASEIMG");
+            this.ZPHUSBASEIMG.Name = "ZPHUSBASEIMG";
+            this.ZPHUSBASEIMG.TabStop = false;
+            // 
+            // ZPHUS
+            // 
+            this.ZPHUS.Tick += new System.EventHandler(this.ZPHUS_Tick);
+            // 
+            // WWEU_PANEL
+            // 
+            this.WWEU_PANEL.Controls.Add(this.WWEU_BTN);
+            this.WWEU_PANEL.Controls.Add(this.WWEUTK);
+            this.WWEU_PANEL.Controls.Add(this.WWEUTKIMG);
+            this.WWEU_PANEL.Controls.Add(this.WWEUCK);
+            this.WWEU_PANEL.Controls.Add(this.WWEUCKIMG);
+            this.WWEU_PANEL.Controls.Add(this.WWEUBASE);
+            this.WWEU_PANEL.Controls.Add(this.WWEUBASEIMG);
+            resources.ApplyResources(this.WWEU_PANEL, "WWEU_PANEL");
+            this.WWEU_PANEL.Name = "WWEU_PANEL";
+            // 
+            // WWEU_BTN
+            // 
+            this.WWEU_BTN.Cursor = System.Windows.Forms.Cursors.Help;
+            resources.ApplyResources(this.WWEU_BTN, "WWEU_BTN");
+            this.WWEU_BTN.Name = "WWEU_BTN";
+            this.toolTip1.SetToolTip(this.WWEU_BTN, resources.GetString("WWEU_BTN.ToolTip"));
+            this.WWEU_BTN.UseVisualStyleBackColor = true;
+            this.WWEU_BTN.Click += new System.EventHandler(this.WWEU_BTN_Click);
+            // 
+            // WWEUTK
+            // 
+            resources.ApplyResources(this.WWEUTK, "WWEUTK");
+            this.WWEUTK.ForeColor = System.Drawing.Color.Red;
+            this.WWEUTK.Name = "WWEUTK";
+            // 
+            // WWEUTKIMG
+            // 
+            resources.ApplyResources(this.WWEUTKIMG, "WWEUTKIMG");
+            this.WWEUTKIMG.Name = "WWEUTKIMG";
+            this.WWEUTKIMG.TabStop = false;
+            // 
+            // WWEUCK
+            // 
+            resources.ApplyResources(this.WWEUCK, "WWEUCK");
+            this.WWEUCK.ForeColor = System.Drawing.Color.Red;
+            this.WWEUCK.Name = "WWEUCK";
+            // 
+            // WWEUCKIMG
+            // 
+            resources.ApplyResources(this.WWEUCKIMG, "WWEUCKIMG");
+            this.WWEUCKIMG.Name = "WWEUCKIMG";
+            this.WWEUCKIMG.TabStop = false;
+            // 
+            // WWEUBASE
+            // 
+            resources.ApplyResources(this.WWEUBASE, "WWEUBASE");
+            this.WWEUBASE.ForeColor = System.Drawing.Color.Red;
+            this.WWEUBASE.Name = "WWEUBASE";
+            // 
+            // WWEUBASEIMG
+            // 
+            resources.ApplyResources(this.WWEUBASEIMG, "WWEUBASEIMG");
+            this.WWEUBASEIMG.Name = "WWEUBASEIMG";
+            this.WWEUBASEIMG.TabStop = false;
+            // 
+            // WWEU
+            // 
+            this.WWEU.Tick += new System.EventHandler(this.WWEU_Tick);
+            // 
+            // WWUS_PANEL
+            // 
+            this.WWUS_PANEL.Controls.Add(this.WWUS_BTN);
+            this.WWUS_PANEL.Controls.Add(this.WWUSTK);
+            this.WWUS_PANEL.Controls.Add(this.WWUSTKIMG);
+            this.WWUS_PANEL.Controls.Add(this.WWUSCK);
+            this.WWUS_PANEL.Controls.Add(this.WWUSCKIMG);
+            this.WWUS_PANEL.Controls.Add(this.WWUSBASE);
+            this.WWUS_PANEL.Controls.Add(this.WWUSBASEIMG);
+            resources.ApplyResources(this.WWUS_PANEL, "WWUS_PANEL");
+            this.WWUS_PANEL.Name = "WWUS_PANEL";
+            // 
+            // WWUS_BTN
+            // 
+            this.WWUS_BTN.Cursor = System.Windows.Forms.Cursors.Help;
+            resources.ApplyResources(this.WWUS_BTN, "WWUS_BTN");
+            this.WWUS_BTN.Name = "WWUS_BTN";
+            this.toolTip1.SetToolTip(this.WWUS_BTN, resources.GetString("WWUS_BTN.ToolTip"));
+            this.WWUS_BTN.UseVisualStyleBackColor = true;
+            this.WWUS_BTN.Click += new System.EventHandler(this.WWUS_BTN_Click);
+            // 
+            // WWUSTK
+            // 
+            resources.ApplyResources(this.WWUSTK, "WWUSTK");
+            this.WWUSTK.ForeColor = System.Drawing.Color.Red;
+            this.WWUSTK.Name = "WWUSTK";
+            // 
+            // WWUSTKIMG
+            // 
+            resources.ApplyResources(this.WWUSTKIMG, "WWUSTKIMG");
+            this.WWUSTKIMG.Name = "WWUSTKIMG";
+            this.WWUSTKIMG.TabStop = false;
+            // 
+            // WWUSCK
+            // 
+            resources.ApplyResources(this.WWUSCK, "WWUSCK");
+            this.WWUSCK.ForeColor = System.Drawing.Color.Red;
+            this.WWUSCK.Name = "WWUSCK";
+            // 
+            // WWUSCKIMG
+            // 
+            resources.ApplyResources(this.WWUSCKIMG, "WWUSCKIMG");
+            this.WWUSCKIMG.Name = "WWUSCKIMG";
+            this.WWUSCKIMG.TabStop = false;
+            // 
+            // WWUSBASE
+            // 
+            resources.ApplyResources(this.WWUSBASE, "WWUSBASE");
+            this.WWUSBASE.ForeColor = System.Drawing.Color.Red;
+            this.WWUSBASE.Name = "WWUSBASE";
+            // 
+            // WWUSBASEIMG
+            // 
+            resources.ApplyResources(this.WWUSBASEIMG, "WWUSBASEIMG");
+            this.WWUSBASEIMG.Name = "WWUSBASEIMG";
+            this.WWUSBASEIMG.TabStop = false;
+            // 
+            // WWUS
+            // 
+            this.WWUS.Tick += new System.EventHandler(this.WWUS_Tick);
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("comboBox4.AutoCompleteCustomSource"),
+            resources.GetString("comboBox4.AutoCompleteCustomSource1"),
+            resources.GetString("comboBox4.AutoCompleteCustomSource2")});
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            resources.GetString("comboBox4.Items"),
+            resources.GetString("comboBox4.Items1"),
+            resources.GetString("comboBox4.Items2"),
+            resources.GetString("comboBox4.Items3"),
+            resources.GetString("comboBox4.Items4")});
+            resources.ApplyResources(this.comboBox4, "comboBox4");
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.ComboBox4_SelectedIndexChanged);
+            // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.Name = "label36";
+            // 
+            // NESCSTMN_PANEL
+            // 
+            this.NESCSTMN_PANEL.Controls.Add(this.NESCONTENT);
+            this.NESCSTMN_PANEL.Controls.Add(this.NESCONTENTIMG);
+            this.NESCSTMN_PANEL.Controls.Add(this.NESMETA);
+            this.NESCSTMN_PANEL.Controls.Add(this.NESMETAIMG);
+            this.NESCSTMN_PANEL.Controls.Add(this.NESCODE);
+            this.NESCSTMN_PANEL.Controls.Add(this.NESCODEIMG);
+            this.NESCSTMN_PANEL.Controls.Add(this.label60);
+            this.NESCSTMN_PANEL.Controls.Add(this.NESCSTMN_BTN);
+            this.NESCSTMN_PANEL.Controls.Add(this.NESCSTMN_PATH);
+            resources.ApplyResources(this.NESCSTMN_PANEL, "NESCSTMN_PANEL");
+            this.NESCSTMN_PANEL.Name = "NESCSTMN_PANEL";
+            // 
+            // NESCONTENT
+            // 
+            resources.ApplyResources(this.NESCONTENT, "NESCONTENT");
+            this.NESCONTENT.ForeColor = System.Drawing.Color.Red;
+            this.NESCONTENT.Name = "NESCONTENT";
+            // 
+            // NESCONTENTIMG
+            // 
+            resources.ApplyResources(this.NESCONTENTIMG, "NESCONTENTIMG");
+            this.NESCONTENTIMG.Name = "NESCONTENTIMG";
+            this.NESCONTENTIMG.TabStop = false;
+            // 
+            // NESMETA
+            // 
+            resources.ApplyResources(this.NESMETA, "NESMETA");
+            this.NESMETA.ForeColor = System.Drawing.Color.Red;
+            this.NESMETA.Name = "NESMETA";
+            // 
+            // NESMETAIMG
+            // 
+            resources.ApplyResources(this.NESMETAIMG, "NESMETAIMG");
+            this.NESMETAIMG.Name = "NESMETAIMG";
+            this.NESMETAIMG.TabStop = false;
+            // 
+            // NESCODE
+            // 
+            resources.ApplyResources(this.NESCODE, "NESCODE");
+            this.NESCODE.ForeColor = System.Drawing.Color.Red;
+            this.NESCODE.Name = "NESCODE";
+            // 
+            // NESCODEIMG
+            // 
+            resources.ApplyResources(this.NESCODEIMG, "NESCODEIMG");
+            this.NESCODEIMG.Name = "NESCODEIMG";
+            this.NESCODEIMG.TabStop = false;
+            // 
+            // label60
+            // 
+            resources.ApplyResources(this.label60, "label60");
+            this.label60.Name = "label60";
+            // 
+            // NESCSTMN_BTN
+            // 
+            resources.ApplyResources(this.NESCSTMN_BTN, "NESCSTMN_BTN");
+            this.NESCSTMN_BTN.Name = "NESCSTMN_BTN";
+            this.NESCSTMN_BTN.UseVisualStyleBackColor = true;
+            this.NESCSTMN_BTN.Click += new System.EventHandler(this.NESCSTMN_BTN_Click);
+            // 
+            // NESCSTMN_PATH
+            // 
+            resources.ApplyResources(this.NESCSTMN_PATH, "NESCSTMN_PATH");
+            this.NESCSTMN_PATH.Name = "NESCSTMN_PATH";
+            // 
+            // NESCSTMNFOLDERS
+            // 
+            this.NESCSTMNFOLDERS.Tick += new System.EventHandler(this.NESCSTMNFOLDERS_Tick);
+            // 
+            // POEU_PANEL
+            // 
+            this.POEU_PANEL.Controls.Add(this.POEU_BTN);
+            this.POEU_PANEL.Controls.Add(this.POEUTK);
+            this.POEU_PANEL.Controls.Add(this.POEUTKIMG);
+            this.POEU_PANEL.Controls.Add(this.POEUCK);
+            this.POEU_PANEL.Controls.Add(this.POEUCKIMG);
+            this.POEU_PANEL.Controls.Add(this.POEUBASE);
+            this.POEU_PANEL.Controls.Add(this.POEUBASEIMG);
+            resources.ApplyResources(this.POEU_PANEL, "POEU_PANEL");
+            this.POEU_PANEL.Name = "POEU_PANEL";
+            // 
+            // POEU_BTN
+            // 
+            resources.ApplyResources(this.POEU_BTN, "POEU_BTN");
+            this.POEU_BTN.Name = "POEU_BTN";
+            this.POEU_BTN.UseVisualStyleBackColor = true;
+            this.POEU_BTN.Click += new System.EventHandler(this.POEU_BTN_Click);
+            // 
+            // POEUTK
+            // 
+            resources.ApplyResources(this.POEUTK, "POEUTK");
+            this.POEUTK.ForeColor = System.Drawing.Color.Red;
+            this.POEUTK.Name = "POEUTK";
+            // 
+            // POEUTKIMG
+            // 
+            resources.ApplyResources(this.POEUTKIMG, "POEUTKIMG");
+            this.POEUTKIMG.Name = "POEUTKIMG";
+            this.POEUTKIMG.TabStop = false;
+            // 
+            // POEUCK
+            // 
+            resources.ApplyResources(this.POEUCK, "POEUCK");
+            this.POEUCK.ForeColor = System.Drawing.Color.Red;
+            this.POEUCK.Name = "POEUCK";
+            // 
+            // POEUCKIMG
+            // 
+            resources.ApplyResources(this.POEUCKIMG, "POEUCKIMG");
+            this.POEUCKIMG.Name = "POEUCKIMG";
+            this.POEUCKIMG.TabStop = false;
+            // 
+            // POEUBASE
+            // 
+            resources.ApplyResources(this.POEUBASE, "POEUBASE");
+            this.POEUBASE.ForeColor = System.Drawing.Color.Red;
+            this.POEUBASE.Name = "POEUBASE";
+            // 
+            // POEUBASEIMG
+            // 
+            resources.ApplyResources(this.POEUBASEIMG, "POEUBASEIMG");
+            this.POEUBASEIMG.Name = "POEUBASEIMG";
+            this.POEUBASEIMG.TabStop = false;
+            // 
+            // POEU
+            // 
+            this.POEU.Tick += new System.EventHandler(this.POEU_Tick);
+            // 
+            // POUS_PANEL
+            // 
+            this.POUS_PANEL.Controls.Add(this.POUS_BTN);
+            this.POUS_PANEL.Controls.Add(this.POUSTK);
+            this.POUS_PANEL.Controls.Add(this.POUSTKIMG);
+            this.POUS_PANEL.Controls.Add(this.POUSCK);
+            this.POUS_PANEL.Controls.Add(this.POUSCKIMG);
+            this.POUS_PANEL.Controls.Add(this.POUSBASE);
+            this.POUS_PANEL.Controls.Add(this.POUSBASEIMG);
+            resources.ApplyResources(this.POUS_PANEL, "POUS_PANEL");
+            this.POUS_PANEL.Name = "POUS_PANEL";
+            // 
+            // POUS_BTN
+            // 
+            resources.ApplyResources(this.POUS_BTN, "POUS_BTN");
+            this.POUS_BTN.Name = "POUS_BTN";
+            this.POUS_BTN.UseVisualStyleBackColor = true;
+            this.POUS_BTN.Click += new System.EventHandler(this.POUS_BTN_Click);
+            // 
+            // POUSTK
+            // 
+            resources.ApplyResources(this.POUSTK, "POUSTK");
+            this.POUSTK.ForeColor = System.Drawing.Color.Red;
+            this.POUSTK.Name = "POUSTK";
+            // 
+            // POUSTKIMG
+            // 
+            resources.ApplyResources(this.POUSTKIMG, "POUSTKIMG");
+            this.POUSTKIMG.Name = "POUSTKIMG";
+            this.POUSTKIMG.TabStop = false;
+            // 
+            // POUSCK
+            // 
+            resources.ApplyResources(this.POUSCK, "POUSCK");
+            this.POUSCK.ForeColor = System.Drawing.Color.Red;
+            this.POUSCK.Name = "POUSCK";
+            // 
+            // POUSCKIMG
+            // 
+            resources.ApplyResources(this.POUSCKIMG, "POUSCKIMG");
+            this.POUSCKIMG.Name = "POUSCKIMG";
+            this.POUSCKIMG.TabStop = false;
+            // 
+            // POUSBASE
+            // 
+            resources.ApplyResources(this.POUSBASE, "POUSBASE");
+            this.POUSBASE.ForeColor = System.Drawing.Color.Red;
+            this.POUSBASE.Name = "POUSBASE";
+            // 
+            // POUSBASEIMG
+            // 
+            resources.ApplyResources(this.POUSBASEIMG, "POUSBASEIMG");
+            this.POUSBASEIMG.Name = "POUSBASEIMG";
+            this.POUSBASEIMG.TabStop = false;
+            // 
+            // POUS
+            // 
+            this.POUS.Tick += new System.EventHandler(this.POUS_Tick);
+            // 
+            // SMBEU_PANEL
+            // 
+            this.SMBEU_PANEL.Controls.Add(this.SMBEU_BTN);
+            this.SMBEU_PANEL.Controls.Add(this.SMBEUTK);
+            this.SMBEU_PANEL.Controls.Add(this.SMBEUTKIMG);
+            this.SMBEU_PANEL.Controls.Add(this.SMBEUCK);
+            this.SMBEU_PANEL.Controls.Add(this.SMBEUCKIMG);
+            this.SMBEU_PANEL.Controls.Add(this.SMBEUBASE);
+            this.SMBEU_PANEL.Controls.Add(this.SMBEUBASEIMG);
+            resources.ApplyResources(this.SMBEU_PANEL, "SMBEU_PANEL");
+            this.SMBEU_PANEL.Name = "SMBEU_PANEL";
+            // 
+            // SMBEU_BTN
+            // 
+            resources.ApplyResources(this.SMBEU_BTN, "SMBEU_BTN");
+            this.SMBEU_BTN.Name = "SMBEU_BTN";
+            this.SMBEU_BTN.UseVisualStyleBackColor = true;
+            this.SMBEU_BTN.Click += new System.EventHandler(this.SMBEU_BTN_Click);
+            // 
+            // SMBEUTK
+            // 
+            resources.ApplyResources(this.SMBEUTK, "SMBEUTK");
+            this.SMBEUTK.ForeColor = System.Drawing.Color.Red;
+            this.SMBEUTK.Name = "SMBEUTK";
+            // 
+            // SMBEUTKIMG
+            // 
+            resources.ApplyResources(this.SMBEUTKIMG, "SMBEUTKIMG");
+            this.SMBEUTKIMG.Name = "SMBEUTKIMG";
+            this.SMBEUTKIMG.TabStop = false;
+            // 
+            // SMBEUCK
+            // 
+            resources.ApplyResources(this.SMBEUCK, "SMBEUCK");
+            this.SMBEUCK.ForeColor = System.Drawing.Color.Red;
+            this.SMBEUCK.Name = "SMBEUCK";
+            // 
+            // SMBEUCKIMG
+            // 
+            resources.ApplyResources(this.SMBEUCKIMG, "SMBEUCKIMG");
+            this.SMBEUCKIMG.Name = "SMBEUCKIMG";
+            this.SMBEUCKIMG.TabStop = false;
+            // 
+            // SMBEUBASE
+            // 
+            resources.ApplyResources(this.SMBEUBASE, "SMBEUBASE");
+            this.SMBEUBASE.ForeColor = System.Drawing.Color.Red;
+            this.SMBEUBASE.Name = "SMBEUBASE";
+            // 
+            // SMBEUBASEIMG
+            // 
+            resources.ApplyResources(this.SMBEUBASEIMG, "SMBEUBASEIMG");
+            this.SMBEUBASEIMG.Name = "SMBEUBASEIMG";
+            this.SMBEUBASEIMG.TabStop = false;
+            // 
+            // SMBEU
+            // 
+            this.SMBEU.Tick += new System.EventHandler(this.SMBEU_Tick);
+            // 
+            // SMBUS_PANEL
+            // 
+            this.SMBUS_PANEL.Controls.Add(this.SMBUS_BTN);
+            this.SMBUS_PANEL.Controls.Add(this.SMBUSTK);
+            this.SMBUS_PANEL.Controls.Add(this.SMBUSTKIMG);
+            this.SMBUS_PANEL.Controls.Add(this.SMBUSCK);
+            this.SMBUS_PANEL.Controls.Add(this.SMBUSCKIMG);
+            this.SMBUS_PANEL.Controls.Add(this.SMBUSBASE);
+            this.SMBUS_PANEL.Controls.Add(this.SMBUSBASEIMG);
+            resources.ApplyResources(this.SMBUS_PANEL, "SMBUS_PANEL");
+            this.SMBUS_PANEL.Name = "SMBUS_PANEL";
+            // 
+            // SMBUS_BTN
+            // 
+            resources.ApplyResources(this.SMBUS_BTN, "SMBUS_BTN");
+            this.SMBUS_BTN.Name = "SMBUS_BTN";
+            this.SMBUS_BTN.UseVisualStyleBackColor = true;
+            // 
+            // SMBUSTK
+            // 
+            resources.ApplyResources(this.SMBUSTK, "SMBUSTK");
+            this.SMBUSTK.ForeColor = System.Drawing.Color.Red;
+            this.SMBUSTK.Name = "SMBUSTK";
+            // 
+            // SMBUSTKIMG
+            // 
+            resources.ApplyResources(this.SMBUSTKIMG, "SMBUSTKIMG");
+            this.SMBUSTKIMG.Name = "SMBUSTKIMG";
+            this.SMBUSTKIMG.TabStop = false;
+            // 
+            // SMBUSCK
+            // 
+            resources.ApplyResources(this.SMBUSCK, "SMBUSCK");
+            this.SMBUSCK.ForeColor = System.Drawing.Color.Red;
+            this.SMBUSCK.Name = "SMBUSCK";
+            // 
+            // SMBUSCKIMG
+            // 
+            resources.ApplyResources(this.SMBUSCKIMG, "SMBUSCKIMG");
+            this.SMBUSCKIMG.Name = "SMBUSCKIMG";
+            this.SMBUSCKIMG.TabStop = false;
+            // 
+            // SMBUSBASE
+            // 
+            resources.ApplyResources(this.SMBUSBASE, "SMBUSBASE");
+            this.SMBUSBASE.ForeColor = System.Drawing.Color.Red;
+            this.SMBUSBASE.Name = "SMBUSBASE";
+            // 
+            // SMBUSBASEIMG
+            // 
+            resources.ApplyResources(this.SMBUSBASEIMG, "SMBUSBASEIMG");
+            this.SMBUSBASEIMG.Name = "SMBUSBASEIMG";
+            this.SMBUSBASEIMG.TabStop = false;
+            // 
+            // SMBUS
+            // 
+            this.SMBUS.Tick += new System.EventHandler(this.SMBUS_Tick);
             // 
             // UWUVCI_AIO
             // 
@@ -2982,6 +3884,37 @@
             this.InjectionN64.ResumeLayout(false);
             this.InjectionN64.PerformLayout();
             this.BaseRomN64.ResumeLayout(false);
+            this.BaseRomN64.PerformLayout();
+            this.DK64US_PANEL.ResumeLayout(false);
+            this.DK64US_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64USTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64USCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64USBASEIMG)).EndInit();
+            this.DK64EU_PANEL.ResumeLayout(false);
+            this.DK64EU_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64EUTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64EUCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DK64EUBASEIMG)).EndInit();
+            this.FZXJP_PANEL.ResumeLayout(false);
+            this.FZXJP_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXJPTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXJPCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXJPBASEIMG)).EndInit();
+            this.FXZUS_PANEL.ResumeLayout(false);
+            this.FXZUS_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXUSTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FXZUSCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FZXUSBASEIMG)).EndInit();
+            this.PMUS_PANEL.ResumeLayout(false);
+            this.PMUS_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PMUSTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMUSCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMUSBASEIMG)).EndInit();
+            this.PMEU_PANEL.ResumeLayout(false);
+            this.PMEU_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PMEUTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMEUCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PMEUBASEIMG)).EndInit();
             this.N64CSTM_PANEL.ResumeLayout(false);
             this.N64CSTM_PANEL.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.N64CONTENTIMG)).EndInit();
@@ -2995,6 +3928,8 @@
             this.NES.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.SNES.ResumeLayout(false);
             this.EBEU_PANEL.ResumeLayout(false);
@@ -3047,36 +3982,66 @@
             ((System.ComponentModel.ISupportInitialize)(this.SNESMETAIMG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SNESCODEIMG)).EndInit();
             this.groupBox12.ResumeLayout(false);
-            this.PMEU_PANEL.ResumeLayout(false);
-            this.PMEU_PANEL.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PMEUTKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PMEUCKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PMEUBASEIMG)).EndInit();
-            this.PMUS_PANEL.ResumeLayout(false);
-            this.PMUS_PANEL.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PMUSTKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PMUSCKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PMUSBASEIMG)).EndInit();
-            this.FXZUS_PANEL.ResumeLayout(false);
-            this.FXZUS_PANEL.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FZXUSTKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FXZUSCKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FZXUSBASEIMG)).EndInit();
-            this.FZXJP_PANEL.ResumeLayout(false);
-            this.FZXJP_PANEL.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FZXJPTKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FZXJPCKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FZXJPBASEIMG)).EndInit();
-            this.DK64EU_PANEL.ResumeLayout(false);
-            this.DK64EU_PANEL.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DK64EUTKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DK64EUCKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DK64EUBASEIMG)).EndInit();
-            this.DK64US_PANEL.ResumeLayout(false);
-            this.DK64US_PANEL.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DK64USTKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DK64USCKIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DK64USBASEIMG)).EndInit();
+            this.NDSCSTMN_PANEL.ResumeLayout(false);
+            this.NDSCSTMN_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NDSCONTENTIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NDSMETAIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NDSCODEIMG)).EndInit();
+            this.ZSTEU_PANEL.ResumeLayout(false);
+            this.ZSTEU_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ZSTEUTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZSTEUCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZSTEUBASEIMG)).EndInit();
+            this.ZSTUS_PANEL.ResumeLayout(false);
+            this.ZSTUS_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ZSTUSTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZSTUSCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZSTUSBASEIMG)).EndInit();
+            this.ZPHEU_PANEL.ResumeLayout(false);
+            this.ZPHEU_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ZPHEUTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZPHEUCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZPHEUBASEIMG)).EndInit();
+            this.ZPHUS_PANEL.ResumeLayout(false);
+            this.ZPHUS_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ZPHUSTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZPHUSCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZPHUSBASEIMG)).EndInit();
+            this.WWEU_PANEL.ResumeLayout(false);
+            this.WWEU_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WWEUTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WWEUCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WWEUBASEIMG)).EndInit();
+            this.WWUS_PANEL.ResumeLayout(false);
+            this.WWUS_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WWUSTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WWUSCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WWUSBASEIMG)).EndInit();
+            this.NESCSTMN_PANEL.ResumeLayout(false);
+            this.NESCSTMN_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NESCONTENTIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NESMETAIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NESCODEIMG)).EndInit();
+            this.POEU_PANEL.ResumeLayout(false);
+            this.POEU_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.POEUTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.POEUCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.POEUBASEIMG)).EndInit();
+            this.POUS_PANEL.ResumeLayout(false);
+            this.POUS_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.POUSTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.POUSCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.POUSBASEIMG)).EndInit();
+            this.SMBEU_PANEL.ResumeLayout(false);
+            this.SMBEU_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SMBEUTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMBEUCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMBEUBASEIMG)).EndInit();
+            this.SMBUS_PANEL.ResumeLayout(false);
+            this.SMBUS_PANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SMBUSTKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMBUSCKIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMBUSBASEIMG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3189,19 +4154,9 @@
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Button NDS_BTN9;
-        private System.Windows.Forms.Button NDS_BTN1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button NDS_BTN17;
         private System.Windows.Forms.Button NDS_BTN16;
-        private System.Windows.Forms.Button NDS_BTN7;
-        private System.Windows.Forms.Button NDS_BTN8;
-        private System.Windows.Forms.Button NDS_BTN6;
-        private System.Windows.Forms.Button NDS_BTN4;
-        private System.Windows.Forms.Button NDS_BTN5;
-        private System.Windows.Forms.Button NDS_BTN3;
-        private System.Windows.Forms.Button NDS_BTN2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.TabPage GBA;
         private System.Windows.Forms.Button GBA_BACK;
@@ -3440,6 +4395,123 @@
         private System.Windows.Forms.Label DK64USBASE;
         private System.Windows.Forms.PictureBox DK64USBASEIMG;
         private System.Windows.Forms.Timer DK64US;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Panel NDSCSTMN_PANEL;
+        private System.Windows.Forms.Label NDSCONTENT;
+        private System.Windows.Forms.PictureBox NDSCONTENTIMG;
+        private System.Windows.Forms.Label NDSMETA;
+        private System.Windows.Forms.PictureBox NDSMETAIMG;
+        private System.Windows.Forms.Label NDSCODE;
+        private System.Windows.Forms.PictureBox NDSCODEIMG;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Button NDSCSTMN_BTN;
+        private System.Windows.Forms.TextBox NDSCSTMN_PATH;
+        private System.Windows.Forms.Timer NDSCSTMNFOLDERS;
+        private System.Windows.Forms.Panel ZSTEU_PANEL;
+        private System.Windows.Forms.Button ZSTEU_BTN;
+        private System.Windows.Forms.Label ZSTEUTK;
+        private System.Windows.Forms.PictureBox ZSTEUTKIMG;
+        private System.Windows.Forms.Label ZSTEUCK;
+        private System.Windows.Forms.PictureBox ZSTEUCKIMG;
+        private System.Windows.Forms.Label ZSTEUBASE;
+        private System.Windows.Forms.PictureBox ZSTEUBASEIMG;
+        private System.Windows.Forms.Timer ZSTEU;
+        private System.Windows.Forms.Panel ZSTUS_PANEL;
+        private System.Windows.Forms.Button ZSTUS_BTN;
+        private System.Windows.Forms.Label ZSTUSTK;
+        private System.Windows.Forms.PictureBox ZSTUSTKIMG;
+        private System.Windows.Forms.Label ZSTUSCK;
+        private System.Windows.Forms.PictureBox ZSTUSCKIMG;
+        private System.Windows.Forms.Label ZSTUSBASE;
+        private System.Windows.Forms.PictureBox ZSTUSBASEIMG;
+        private System.Windows.Forms.Timer ZSTUS;
+        private System.Windows.Forms.Panel ZPHEU_PANEL;
+        private System.Windows.Forms.Button ZPHEU_BTN;
+        private System.Windows.Forms.Label ZPHEUTK;
+        private System.Windows.Forms.PictureBox ZPHEUTKIMG;
+        private System.Windows.Forms.Label ZPHEUCK;
+        private System.Windows.Forms.PictureBox ZPHEUCKIMG;
+        private System.Windows.Forms.Label ZPHEUBASE;
+        private System.Windows.Forms.PictureBox ZPHEUBASEIMG;
+        private System.Windows.Forms.Timer ZPHEU;
+        private System.Windows.Forms.Panel ZPHUS_PANEL;
+        private System.Windows.Forms.Button ZPHUS_BTN;
+        private System.Windows.Forms.Label ZPHUSTK;
+        private System.Windows.Forms.PictureBox ZPHUSTKIMG;
+        private System.Windows.Forms.Label ZPHUSCK;
+        private System.Windows.Forms.PictureBox ZPHUSCKIMG;
+        private System.Windows.Forms.Label ZPHUSBASE;
+        private System.Windows.Forms.PictureBox ZPHUSBASEIMG;
+        private System.Windows.Forms.Timer ZPHUS;
+        private System.Windows.Forms.Panel WWEU_PANEL;
+        private System.Windows.Forms.Button WWEU_BTN;
+        private System.Windows.Forms.Label WWEUTK;
+        private System.Windows.Forms.PictureBox WWEUTKIMG;
+        private System.Windows.Forms.Label WWEUCK;
+        private System.Windows.Forms.PictureBox WWEUCKIMG;
+        private System.Windows.Forms.Label WWEUBASE;
+        private System.Windows.Forms.PictureBox WWEUBASEIMG;
+        private System.Windows.Forms.Timer WWEU;
+        private System.Windows.Forms.Panel WWUS_PANEL;
+        private System.Windows.Forms.Button WWUS_BTN;
+        private System.Windows.Forms.Label WWUSTK;
+        private System.Windows.Forms.PictureBox WWUSTKIMG;
+        private System.Windows.Forms.Label WWUSCK;
+        private System.Windows.Forms.PictureBox WWUSCKIMG;
+        private System.Windows.Forms.Label WWUSBASE;
+        private System.Windows.Forms.PictureBox WWUSBASEIMG;
+        private System.Windows.Forms.Timer WWUS;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Panel NESCSTMN_PANEL;
+        private System.Windows.Forms.Label NESCONTENT;
+        private System.Windows.Forms.PictureBox NESCONTENTIMG;
+        private System.Windows.Forms.Label NESMETA;
+        private System.Windows.Forms.PictureBox NESMETAIMG;
+        private System.Windows.Forms.Label NESCODE;
+        private System.Windows.Forms.PictureBox NESCODEIMG;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Button NESCSTMN_BTN;
+        private System.Windows.Forms.TextBox NESCSTMN_PATH;
+        private System.Windows.Forms.Timer NESCSTMNFOLDERS;
+        private System.Windows.Forms.Panel POEU_PANEL;
+        private System.Windows.Forms.Button POEU_BTN;
+        private System.Windows.Forms.Label POEUTK;
+        private System.Windows.Forms.PictureBox POEUTKIMG;
+        private System.Windows.Forms.Label POEUCK;
+        private System.Windows.Forms.PictureBox POEUCKIMG;
+        private System.Windows.Forms.Label POEUBASE;
+        private System.Windows.Forms.PictureBox POEUBASEIMG;
+        private System.Windows.Forms.Timer POEU;
+        private System.Windows.Forms.Panel POUS_PANEL;
+        private System.Windows.Forms.Button POUS_BTN;
+        private System.Windows.Forms.Label POUSTK;
+        private System.Windows.Forms.PictureBox POUSTKIMG;
+        private System.Windows.Forms.Label POUSCK;
+        private System.Windows.Forms.PictureBox POUSCKIMG;
+        private System.Windows.Forms.Label POUSBASE;
+        private System.Windows.Forms.PictureBox POUSBASEIMG;
+        private System.Windows.Forms.Timer POUS;
+        private System.Windows.Forms.Panel SMBEU_PANEL;
+        private System.Windows.Forms.Button SMBEU_BTN;
+        private System.Windows.Forms.Label SMBEUTK;
+        private System.Windows.Forms.PictureBox SMBEUTKIMG;
+        private System.Windows.Forms.Label SMBEUCK;
+        private System.Windows.Forms.PictureBox SMBEUCKIMG;
+        private System.Windows.Forms.Label SMBEUBASE;
+        private System.Windows.Forms.PictureBox SMBEUBASEIMG;
+        private System.Windows.Forms.Timer SMBEU;
+        private System.Windows.Forms.Panel SMBUS_PANEL;
+        private System.Windows.Forms.Button SMBUS_BTN;
+        private System.Windows.Forms.Label SMBUSTK;
+        private System.Windows.Forms.PictureBox SMBUSTKIMG;
+        private System.Windows.Forms.Label SMBUSCK;
+        private System.Windows.Forms.PictureBox SMBUSCKIMG;
+        private System.Windows.Forms.Label SMBUSBASE;
+        private System.Windows.Forms.PictureBox SMBUSBASEIMG;
+        private System.Windows.Forms.Timer SMBUS;
     }
 }
 

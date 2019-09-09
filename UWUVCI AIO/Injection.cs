@@ -94,7 +94,7 @@ namespace UWUVCI_AIO
         }
         public static void packing(string Gamename)
         {
-            CNUSPACKER.Program.Main(args: new[] { "-in", "\""+Properties.Settings.Default.WorkingPath + "/temp\"", "-out", "\""+Properties.Settings.Default.InjectionPath + "/"+Gamename+"\"", "-encryptKeyWith", Properties.Settings.Default.CommonKey });
+            CNUSPACKER.Program.Main(args: new[] { "-in", Properties.Settings.Default.WorkingPath + "/temp", "-out", Properties.Settings.Default.InjectionPath + "/"+Gamename, "-encryptKeyWith", Properties.Settings.Default.CommonKey });
             MessageBox.Show("Inject Succesfully created.\nYou can find your inject here:\n" + Properties.Settings.Default.InjectionPath + "/" + Gamename);
             
             clean();
@@ -102,11 +102,41 @@ namespace UWUVCI_AIO
         public static void download(string BaseRom)
         {
             string TID = null;
-            string TK = null; 
+            string TK = null;
             #region NDS
+            if (BaseRom == "ZSTEU")
+            {
+                TID = "00050000101b8d00";
+                TK = Properties.Settings.Default.ZSTEU;
+            }
+            else if (BaseRom == "ZSTUS")
+            {
+                TID = "00050000101b8c00";
+                TK = Properties.Settings.Default.ZSTUS;
+            }
+            else if (BaseRom == "ZPHEU")
+            {
+                TID = "00050000101c3800";
+                TK = Properties.Settings.Default.ZPHEU;
+            }
+            else if (BaseRom == "ZPHUS")
+            {
+                TID = "00050000101c3700";
+                TK = Properties.Settings.Default.ZPHUS;
+            }
+            else if (BaseRom == "WWEU")
+            {
+                TID = "00050000101a2000";
+                TK = Properties.Settings.Default.WWEU;
+            }
+            else if (BaseRom == "WWUS")
+            {
+                TID = "00050000101a1f00";
+                TK = Properties.Settings.Default.WWUS;
+            }
             #endregion
             #region N64
-            if(BaseRom == "PMEU")
+            if (BaseRom == "PMEU")
             {
                 TID = "0005000010199800";
                 TK = Properties.Settings.Default.PMEU;
@@ -140,6 +170,26 @@ namespace UWUVCI_AIO
             #region GBA
             #endregion
             #region NES
+            if (BaseRom == "POEU")
+            {
+                TID = "0005000010108c00";
+                TK = Properties.Settings.Default.POEU;
+            }
+            else if (BaseRom == "POUS")
+            {
+                TID = "0005000010108b00";
+                TK = Properties.Settings.Default.POUS;
+            }
+            else if (BaseRom == "SMBEU")
+            {
+                TID = "0005000010106e00";
+                TK = Properties.Settings.Default.SMBEU;
+            }
+            else if (BaseRom == "SMBUS")
+            {
+                TID = "0005000010106d00";
+                TK = Properties.Settings.Default.SMBUS;
+            }
             #endregion
             #region SNES
             if (BaseRom == "SMetroidEU")
@@ -196,6 +246,30 @@ namespace UWUVCI_AIO
                 switch (BaseRom)
                 {
                     #region NDS
+                    case "ZSTEU":
+                        DirectoryCopy("The Legend of Zelda Spirit Tracks [DARP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("The Legend of Zelda Spirit Tracks [DARP01]", true);
+                        break;
+                    case "ZSTUS":
+                        DirectoryCopy("The Legend of Zelda Spirit Tracks [DARE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("The Legend of Zelda Spirit Tracks [DARE01]", true);
+                        break;
+                    case "ZPHEU":
+                        DirectoryCopy("The Legend of Zelda Phantom Hourglass [DATP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("The Legend of Zelda Phantom Hourglass [DATP01]", true);
+                        break;
+                    case "ZPHUS":
+                        DirectoryCopy("The Legend of Zelda Phantom Hourglass [DATE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("The Legend of Zelda Phantom Hourglass [DATE01]", true);
+                        break;
+                    case "WWEU":
+                        DirectoryCopy("WarioWare Touched! [DAGP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("WarioWare Touched! [DAGP01]", true);
+                        break;
+                    case "WWUS":
+                        DirectoryCopy("WarioWare Touched! [DAGE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("WarioWare Touched! [DAGE01]", true);
+                        break;
                     #endregion
                     #region N64
                     case "PMEU":
@@ -226,6 +300,22 @@ namespace UWUVCI_AIO
                     #region GBA
                     #endregion
                     #region NES
+                    case "POEU":
+                        DirectoryCopy("Punch-Out!! [FAKP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("Punch-Out!! [FAKP01]", true);
+                        break;
+                    case "POUS":
+                        DirectoryCopy("Punch-Out!! Featuring Mr. Dream [FAKE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("Punch-Out!! Featuring Mr. Dream [FAKE01]", true);
+                        break;
+                    case "SMBEU":
+                        DirectoryCopy("Super Mario Bros. [FAAP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("Super Mario Bros. [FAAP01]", true);
+                        break;
+                    case "SMBUS":
+                        DirectoryCopy("Super Mario Bros. [FAAE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("Super Mario Bros. [FAAE01]", true);
+                        break;
                     #endregion
                     #region SNES
                     case "SMetroidEU":
@@ -388,13 +478,17 @@ namespace UWUVCI_AIO
         {
             string[] romname;
             #region unpack rom to get file name
+            Directory.SetCurrentDirectory(workpath + "/content/0010/");
             Process zip = new Process();
             zip.StartInfo.UseShellExecute = false;
             zip.StartInfo.CreateNoWindow = true;
             zip.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/7za.exe");
-            zip.StartInfo.Arguments = "x \"" + workpath + "\\content\\0010\\rom.zip\"";
+
+            zip.StartInfo.Arguments = "x \"" + workpath + "/content/0010/rom.zip\"";
+            
             zip.Start();
             zip.WaitForExit();
+            Directory.SetCurrentDirectory(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
             File.Delete(workpath + "\\content\\0010\\rom.zip");
             romname = Directory.GetFiles(workpath + "\\content\\0010", "*.srl");
 
@@ -404,7 +498,7 @@ namespace UWUVCI_AIO
             zip.StartInfo.Arguments = "a \"" + workpath + "\\content\\0010\\rom.zip\" \"" + romname[0] + "\"";
             zip.Start();
             zip.WaitForExit();
-
+            File.Delete(romname[0]);
         }
         private static void N64(string workpath, string romtoinject, string ini_path, bool darkremoval)
         {

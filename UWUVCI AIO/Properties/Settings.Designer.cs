@@ -274,5 +274,173 @@ namespace UWUVCI_AIO.Properties {
                 this["DKCUS"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ZSTEU {
+            get {
+                return ((string)(this["ZSTEU"]));
+            }
+            set {
+                this["ZSTEU"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ZSTUS {
+            get {
+                return ((string)(this["ZSTUS"]));
+            }
+            set {
+                this["ZSTUS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ZPHEU {
+            get {
+                return ((string)(this["ZPHEU"]));
+            }
+            set {
+                this["ZPHEU"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ZPHUS {
+            get {
+                return ((string)(this["ZPHUS"]));
+            }
+            set {
+                this["ZPHUS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string WWEU {
+            get {
+                return ((string)(this["WWEU"]));
+            }
+            set {
+                this["WWEU"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string WWUS {
+            get {
+                return ((string)(this["WWUS"]));
+            }
+            set {
+                this["WWUS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string POEU {
+            get {
+                return ((string)(this["POEU"]));
+            }
+            set {
+                this["POEU"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string POUS {
+            get {
+                return ((string)(this["POUS"]));
+            }
+            set {
+                this["POUS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SMBEU {
+            get {
+                return ((string)(this["SMBEU"]));
+            }
+            set {
+                this["SMBEU"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SMBUS {
+            get {
+                return ((string)(this["SMBUS"]));
+            }
+            set {
+                this["SMBUS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ZMCEU {
+            get {
+                return ((string)(this["ZMCEU"]));
+            }
+            set {
+                this["ZMCEU"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ZMCUS {
+            get {
+                return ((string)(this["ZMCUS"]));
+            }
+            set {
+                this["ZMCUS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string MKCEU {
+            get {
+                return ((string)(this["MKCEU"]));
+            }
+            set {
+                this["MKCEU"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string MKCUS {
+            get {
+                return ((string)(this["MKCUS"]));
+            }
+            set {
+                this["MKCUS"] = value;
+            }
+        }
     }
 }

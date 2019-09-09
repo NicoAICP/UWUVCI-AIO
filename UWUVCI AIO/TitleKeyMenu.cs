@@ -27,6 +27,8 @@ namespace UWUVCI_AIO
             }
             CheckN64Keys(0);
             CheckSNESKeys(0);
+            CheckNDSKeys(0);
+            CheckNESKeys(0);
         }
 
         private void TitleKeyMenu_Load(object sender, EventArgs e)
@@ -66,6 +68,16 @@ namespace UWUVCI_AIO
             DKCUS.ForeColor = Color.Black;
             button7.ForeColor = Color.Black;
             button8.ForeColor = Color.Black;
+            ZSTEU.ForeColor = Color.Black;
+            ZSTUS.ForeColor = Color.Black;
+            ZPHEU.ForeColor = Color.Black;
+            ZPHUS.ForeColor = Color.Black;
+            WWEU.ForeColor = Color.Black;
+            WWUS.ForeColor = Color.Black;
+            POEU.ForeColor = Color.Black;
+            POUS.ForeColor = Color.Black;
+            SMBEU.ForeColor = Color.Black;
+            SMBUS.ForeColor = Color.Black;
         }
         private void CheckN64Keys(byte b)
         {
@@ -485,6 +497,298 @@ namespace UWUVCI_AIO
                 }
             }
         }
+        private void CheckNDSKeys(byte b)
+        {
+            if(b == 0)
+            {
+                ZSTEU_TXT.Text = Properties.Settings.Default.ZSTEU;
+                ZSTUS_TXT.Text = Properties.Settings.Default.ZSTUS;
+                ZPHEU_TXT.Text = Properties.Settings.Default.ZPHEU;
+                ZPHUS_TXT.Text = Properties.Settings.Default.ZPHUS;
+                WWEU_TXT.Text = Properties.Settings.Default.WWEU;
+                WWUS_TXT.Text = Properties.Settings.Default.WWUS;
+            }
+            if(b == 1)
+            {
+                if (ZSTEU_TXT.Text.GetHashCode() == -1633670821)
+                {
+                    Properties.Settings.Default.ZSTEU = ZSTEU_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Spirit Tracks [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Spirit Tracks [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                }
+                else
+                {
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Spirit Tracks [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Spirit Tracks [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            if (b == 2)
+            {
+                if (ZSTUS_TXT.Text.GetHashCode() == -532174495)
+                {
+                    Properties.Settings.Default.ZSTUS = ZSTUS_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Spirit Tracks [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Spirit Tracks [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                }
+                else
+                {
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Spirit Tracks [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Spirit Tracks [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            if (b == 3)
+            {
+                if (ZPHEU_TXT.Text.GetHashCode() == 1694123503)
+                {
+                    Properties.Settings.Default.ZPHEU = ZPHEU_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Phantom Hourglass [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Phantom Hourglass [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                }
+                else
+                {
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Phantom Hourglass [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Phantom Hourglass [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            if (b == 4)
+            {
+                if (ZPHUS_TXT.Text.GetHashCode() == -997138256)
+                {
+                    Properties.Settings.Default.ZPHUS = ZPHUS_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Phantom Hourglass [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Phantom Hourglass [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                }
+                else
+                {
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Phantom Hourglass [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Phantom Hourglass [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            if (b == 5)
+            {
+                if (WWEU_TXT.Text.GetHashCode() == 1477098714)
+                {
+                    Properties.Settings.Default.WWEU = WWEU_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Wario Ware: Touched! [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Wario Ware: Touched! [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                }
+                else
+                {
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Wario Ware: Touched! [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Wario Ware: Touched! [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            if (b == 6)
+            {
+                if (WWUS_TXT.Text.GetHashCode() == -829326562)
+                {
+                    Properties.Settings.Default.WWUS = WWUS_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Wario Ware: Touched! [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Wario Ware: Touched! [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                }
+                else
+                {
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Wario Ware: Touched! [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Wario Ware: Touched! [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+        }
+        private void CheckNESKeys(byte b)
+        {
+            if (b == 0)
+            {
+                POEU_TXT.Text = Properties.Settings.Default.POEU;
+                POUS_TXT.Text = Properties.Settings.Default.POUS;
+                SMBEU_TXT.Text = Properties.Settings.Default.SMBEU;
+                SMBEU_TXT.Text = Properties.Settings.Default.SMBUS;
+            }
+            if (b == 1)
+            {
+                if (POEU_TXT.Text.GetHashCode() == 1686136738)
+                {
+                    Properties.Settings.Default.POEU = POEU_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Punch-Out!! [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Punch-Out!! [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                }
+                else
+                {
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Punch-Out!! [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Punch-Out!! [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            if (b == 2)
+            {
+                if (POUS_TXT.Text.GetHashCode() == 683326464)
+                {
+                    Properties.Settings.Default.POUS = POUS_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Punch-Out!! Featuring Mr. Dream [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Punch-Out!! Featuring Mr. Dream [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                }
+                else
+                {
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Punch-Out!! Featuring Mr. Dream [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Punch-Out!! Featuring Mr. Dream [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            if (b == 3)
+            {
+                if (SMBEU_TXT.Text.GetHashCode() == 1339870877)
+                {
+                    Properties.Settings.Default.SMBEU = SMBEU_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Super Mario Bros. [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Super Mario Bros. [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                }
+                else
+                {
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Super Mario Bros. [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Super Mario Bros. [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            if (b == 4)
+            {
+                if (SMBUS_TXT.Text.GetHashCode() == 1464579096)
+                {
+                    Properties.Settings.Default.SMBUS = SMBUS_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Super Mario Bros. [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Super Mario Bros. [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                }
+                else
+                {
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Super Mario Bros. [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Super Mario Bros. [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+        }
         private void PMEU_Click(object sender, EventArgs e)
         {
             CheckN64Keys(1);
@@ -575,5 +879,59 @@ namespace UWUVCI_AIO
 
         }
 
+        private void TabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ZSPEU_Click(object sender, EventArgs e)
+        {
+            CheckNDSKeys(1);
+        }
+
+        private void ZSPUS_Click(object sender, EventArgs e)
+        {
+            CheckNDSKeys(2);
+        }
+
+        private void ZPHEU_Click(object sender, EventArgs e)
+        {
+            CheckNDSKeys(3);
+        }
+
+        private void ZPHUS_Click(object sender, EventArgs e)
+        {
+            CheckNDSKeys(4);
+        }
+
+        private void WWEU_Click(object sender, EventArgs e)
+        {
+            CheckNDSKeys(5);
+        }
+
+        private void WWUS_Click(object sender, EventArgs e)
+        {
+            CheckNDSKeys(6);
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            CheckNESKeys(1);
+        }
+
+        private void POUS_Click(object sender, EventArgs e)
+        {
+            CheckNESKeys(2);
+        }
+
+        private void SMBEU_Click(object sender, EventArgs e)
+        {
+            CheckNESKeys(3);
+        }
+
+        private void SMBUS_Click(object sender, EventArgs e)
+        {
+            CheckNESKeys(4);
+        }
     }
 }
