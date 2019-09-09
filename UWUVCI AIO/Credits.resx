@@ -135,6 +135,9 @@ tga_verify_c by Morilli
 upng (png2tga) by Morilli
  - Fork of upng by elanthis
 
+retroinject_c by Morilli
+ - C Port of retroinject
+
 wiiurpxtool by 0CBH0
 
 SNES ROM Utility by takashi
