@@ -168,6 +168,26 @@ namespace UWUVCI_AIO
             }
             #endregion
             #region GBA
+            if (BaseRom == "ZMCEU")
+            {
+                TID = "000500001015e500";
+                TK = Properties.Settings.Default.ZMCEU;
+            }
+            else if (BaseRom == "ZMCUS")
+            {
+                TID = "000500001015e400";
+                TK = Properties.Settings.Default.ZMCUS;
+            }
+            else if (BaseRom == "MKCEU")
+            {
+                TID = "000500001017d200";
+                TK = Properties.Settings.Default.MKCEU;
+            }
+            else if (BaseRom == "MKCUS")
+            {
+                TID = "000500001017d300";
+                TK = Properties.Settings.Default.MKCUS;
+            }
             #endregion
             #region NES
             if (BaseRom == "POEU")
@@ -298,6 +318,22 @@ namespace UWUVCI_AIO
                         break;
                     #endregion
                     #region GBA
+                    case "ZMCEU":
+                        DirectoryCopy("The Legend of Zelda The Minish Cap [PAKP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("The Legend of Zelda The Minish Cap [PAKP01]", true);
+                        break;
+                    case "ZMCUS":
+                        DirectoryCopy("The Legend of Zelda The Minish Cap [PAKE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("The Legend of Zelda The Minish Cap [PAKE01]", true);
+                        break;
+                    case "MKCEU":
+                        DirectoryCopy("Mario Kart Super Circuit [PBDP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("Mario Kart Super Circuit [PBDP01]", true);
+                        break;
+                    case "MKCUS":
+                        DirectoryCopy("Mario Kart Super Circuit [PBDE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
+                        Directory.Delete("Mario Kart Super Circuit [PBDE01]", true);
+                        break;
                     #endregion
                     #region NES
                     case "POEU":

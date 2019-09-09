@@ -31,6 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TitleKeyMenu));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.ZPHUS = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ZPHUS_TXT = new System.Windows.Forms.TextBox();
+            this.WWUS = new System.Windows.Forms.Button();
+            this.WWEU = new System.Windows.Forms.Button();
+            this.ZPHEU = new System.Windows.Forms.Button();
+            this.ZSTUS = new System.Windows.Forms.Button();
+            this.ZSTEU = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.WWUS_TXT = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.WWEU_TXT = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ZPHEU_TXT = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ZSTUS_TXT = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.ZSTEU_TXT = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.FZXJP = new System.Windows.Forms.Button();
             this.FZXJP_LABEL = new System.Windows.Forms.Label();
@@ -51,7 +69,31 @@
             this.PMEU_LABEL = new System.Windows.Forms.Label();
             this.PMEUtxt = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.MKCUS = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.MKCUS_TXT = new System.Windows.Forms.TextBox();
+            this.MKCEU = new System.Windows.Forms.Button();
+            this.ZMCUS = new System.Windows.Forms.Button();
+            this.ZMCEU = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.MKCEU_TXT = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.ZMCUS_TXT = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.ZMCEU_TXT = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.SMBUS = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.SMBUS_TXT = new System.Windows.Forms.TextBox();
+            this.SMBEU = new System.Windows.Forms.Button();
+            this.POUS = new System.Windows.Forms.Button();
+            this.POEU = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.SMBEU_TXT = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.POUS_TXT = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.POEU_TXT = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.SNES1 = new System.Windows.Forms.TabPage();
@@ -82,39 +124,10 @@
             this.DKCEU = new System.Windows.Forms.Button();
             this.DKCEU_LABEL = new System.Windows.Forms.Label();
             this.DKCEUtxt = new System.Windows.Forms.TextBox();
-            this.ZPHUS = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ZPHUS_TXT = new System.Windows.Forms.TextBox();
-            this.WWUS = new System.Windows.Forms.Button();
-            this.WWEU = new System.Windows.Forms.Button();
-            this.ZPHEU = new System.Windows.Forms.Button();
-            this.ZSTUS = new System.Windows.Forms.Button();
-            this.ZSTEU = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.WWUS_TXT = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.WWEU_TXT = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.ZPHEU_TXT = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.ZSTUS_TXT = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.ZSTEU_TXT = new System.Windows.Forms.TextBox();
-            this.SMBUS = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.SMBUS_TXT = new System.Windows.Forms.TextBox();
-            this.SMBEU = new System.Windows.Forms.Button();
-            this.POUS = new System.Windows.Forms.Button();
-            this.POEU = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.SMBEU_TXT = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.POUS_TXT = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.POEU_TXT = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -157,6 +170,108 @@
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Click += new System.EventHandler(this.TabPage1_Click);
+            // 
+            // ZPHUS
+            // 
+            resources.ApplyResources(this.ZPHUS, "ZPHUS");
+            this.ZPHUS.Name = "ZPHUS";
+            this.ZPHUS.UseVisualStyleBackColor = true;
+            this.ZPHUS.Click += new System.EventHandler(this.ZPHUS_Click);
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // ZPHUS_TXT
+            // 
+            resources.ApplyResources(this.ZPHUS_TXT, "ZPHUS_TXT");
+            this.ZPHUS_TXT.Name = "ZPHUS_TXT";
+            // 
+            // WWUS
+            // 
+            resources.ApplyResources(this.WWUS, "WWUS");
+            this.WWUS.Name = "WWUS";
+            this.WWUS.UseVisualStyleBackColor = true;
+            this.WWUS.Click += new System.EventHandler(this.WWUS_Click);
+            // 
+            // WWEU
+            // 
+            resources.ApplyResources(this.WWEU, "WWEU");
+            this.WWEU.Name = "WWEU";
+            this.WWEU.UseVisualStyleBackColor = true;
+            this.WWEU.Click += new System.EventHandler(this.WWEU_Click);
+            // 
+            // ZPHEU
+            // 
+            resources.ApplyResources(this.ZPHEU, "ZPHEU");
+            this.ZPHEU.Name = "ZPHEU";
+            this.ZPHEU.UseVisualStyleBackColor = true;
+            this.ZPHEU.Click += new System.EventHandler(this.ZPHEU_Click);
+            // 
+            // ZSTUS
+            // 
+            resources.ApplyResources(this.ZSTUS, "ZSTUS");
+            this.ZSTUS.Name = "ZSTUS";
+            this.ZSTUS.UseVisualStyleBackColor = true;
+            this.ZSTUS.Click += new System.EventHandler(this.ZSPUS_Click);
+            // 
+            // ZSTEU
+            // 
+            resources.ApplyResources(this.ZSTEU, "ZSTEU");
+            this.ZSTEU.Name = "ZSTEU";
+            this.ZSTEU.UseVisualStyleBackColor = true;
+            this.ZSTEU.Click += new System.EventHandler(this.ZSPEU_Click);
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // WWUS_TXT
+            // 
+            resources.ApplyResources(this.WWUS_TXT, "WWUS_TXT");
+            this.WWUS_TXT.Name = "WWUS_TXT";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // WWEU_TXT
+            // 
+            resources.ApplyResources(this.WWEU_TXT, "WWEU_TXT");
+            this.WWEU_TXT.Name = "WWEU_TXT";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // ZPHEU_TXT
+            // 
+            resources.ApplyResources(this.ZPHEU_TXT, "ZPHEU_TXT");
+            this.ZPHEU_TXT.Name = "ZPHEU_TXT";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // ZSTUS_TXT
+            // 
+            resources.ApplyResources(this.ZSTUS_TXT, "ZSTUS_TXT");
+            this.ZSTUS_TXT.Name = "ZSTUS_TXT";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // ZSTEU_TXT
+            // 
+            resources.ApplyResources(this.ZSTEU_TXT, "ZSTEU_TXT");
+            this.ZSTEU_TXT.Name = "ZSTEU_TXT";
             // 
             // tabPage2
             // 
@@ -287,8 +402,88 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage3.Controls.Add(this.MKCUS);
+            this.tabPage3.Controls.Add(this.label11);
+            this.tabPage3.Controls.Add(this.MKCUS_TXT);
+            this.tabPage3.Controls.Add(this.MKCEU);
+            this.tabPage3.Controls.Add(this.ZMCUS);
+            this.tabPage3.Controls.Add(this.ZMCEU);
+            this.tabPage3.Controls.Add(this.label12);
+            this.tabPage3.Controls.Add(this.MKCEU_TXT);
+            this.tabPage3.Controls.Add(this.label13);
+            this.tabPage3.Controls.Add(this.ZMCUS_TXT);
+            this.tabPage3.Controls.Add(this.label14);
+            this.tabPage3.Controls.Add(this.ZMCEU_TXT);
             resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
+            // 
+            // MKCUS
+            // 
+            resources.ApplyResources(this.MKCUS, "MKCUS");
+            this.MKCUS.Name = "MKCUS";
+            this.MKCUS.UseVisualStyleBackColor = true;
+            this.MKCUS.Click += new System.EventHandler(this.MKCUS_Click);
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // MKCUS_TXT
+            // 
+            resources.ApplyResources(this.MKCUS_TXT, "MKCUS_TXT");
+            this.MKCUS_TXT.Name = "MKCUS_TXT";
+            // 
+            // MKCEU
+            // 
+            resources.ApplyResources(this.MKCEU, "MKCEU");
+            this.MKCEU.Name = "MKCEU";
+            this.MKCEU.UseVisualStyleBackColor = true;
+            this.MKCEU.Click += new System.EventHandler(this.MKCEU_Click);
+            // 
+            // ZMCUS
+            // 
+            resources.ApplyResources(this.ZMCUS, "ZMCUS");
+            this.ZMCUS.Name = "ZMCUS";
+            this.ZMCUS.UseVisualStyleBackColor = true;
+            this.ZMCUS.Click += new System.EventHandler(this.ZMCUS_Click);
+            // 
+            // ZMCEU
+            // 
+            resources.ApplyResources(this.ZMCEU, "ZMCEU");
+            this.ZMCEU.Name = "ZMCEU";
+            this.ZMCEU.UseVisualStyleBackColor = true;
+            this.ZMCEU.Click += new System.EventHandler(this.ZMCEU_Click);
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // MKCEU_TXT
+            // 
+            resources.ApplyResources(this.MKCEU_TXT, "MKCEU_TXT");
+            this.MKCEU_TXT.Name = "MKCEU_TXT";
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.Name = "label13";
+            // 
+            // ZMCUS_TXT
+            // 
+            resources.ApplyResources(this.ZMCUS_TXT, "ZMCUS_TXT");
+            this.ZMCUS_TXT.Name = "ZMCUS_TXT";
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
+            // 
+            // ZMCEU_TXT
+            // 
+            resources.ApplyResources(this.ZMCEU_TXT, "ZMCEU_TXT");
+            this.ZMCEU_TXT.Name = "ZMCEU_TXT";
             // 
             // tabPage4
             // 
@@ -307,6 +502,74 @@
             this.tabPage4.Controls.Add(this.POEU_TXT);
             resources.ApplyResources(this.tabPage4, "tabPage4");
             this.tabPage4.Name = "tabPage4";
+            // 
+            // SMBUS
+            // 
+            resources.ApplyResources(this.SMBUS, "SMBUS");
+            this.SMBUS.Name = "SMBUS";
+            this.SMBUS.UseVisualStyleBackColor = true;
+            this.SMBUS.Click += new System.EventHandler(this.SMBUS_Click);
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // SMBUS_TXT
+            // 
+            resources.ApplyResources(this.SMBUS_TXT, "SMBUS_TXT");
+            this.SMBUS_TXT.Name = "SMBUS_TXT";
+            // 
+            // SMBEU
+            // 
+            resources.ApplyResources(this.SMBEU, "SMBEU");
+            this.SMBEU.Name = "SMBEU";
+            this.SMBEU.UseVisualStyleBackColor = true;
+            this.SMBEU.Click += new System.EventHandler(this.SMBEU_Click);
+            // 
+            // POUS
+            // 
+            resources.ApplyResources(this.POUS, "POUS");
+            this.POUS.Name = "POUS";
+            this.POUS.UseVisualStyleBackColor = true;
+            this.POUS.Click += new System.EventHandler(this.POUS_Click);
+            // 
+            // POEU
+            // 
+            resources.ApplyResources(this.POEU, "POEU");
+            this.POEU.Name = "POEU";
+            this.POEU.UseVisualStyleBackColor = true;
+            this.POEU.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // SMBEU_TXT
+            // 
+            resources.ApplyResources(this.SMBEU_TXT, "SMBEU_TXT");
+            this.SMBEU_TXT.Name = "SMBEU_TXT";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // POUS_TXT
+            // 
+            resources.ApplyResources(this.POUS_TXT, "POUS_TXT");
+            this.POUS_TXT.Name = "POUS_TXT";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // POEU_TXT
+            // 
+            resources.ApplyResources(this.POEU_TXT, "POEU_TXT");
+            this.POEU_TXT.Name = "POEU_TXT";
             // 
             // tabPage5
             // 
@@ -515,176 +778,6 @@
             resources.ApplyResources(this.DKCEUtxt, "DKCEUtxt");
             this.DKCEUtxt.Name = "DKCEUtxt";
             // 
-            // ZPHUS
-            // 
-            resources.ApplyResources(this.ZPHUS, "ZPHUS");
-            this.ZPHUS.Name = "ZPHUS";
-            this.ZPHUS.UseVisualStyleBackColor = true;
-            this.ZPHUS.Click += new System.EventHandler(this.ZPHUS_Click);
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // ZPHUS_TXT
-            // 
-            resources.ApplyResources(this.ZPHUS_TXT, "ZPHUS_TXT");
-            this.ZPHUS_TXT.Name = "ZPHUS_TXT";
-            // 
-            // WWUS
-            // 
-            resources.ApplyResources(this.WWUS, "WWUS");
-            this.WWUS.Name = "WWUS";
-            this.WWUS.UseVisualStyleBackColor = true;
-            this.WWUS.Click += new System.EventHandler(this.WWUS_Click);
-            // 
-            // WWEU
-            // 
-            resources.ApplyResources(this.WWEU, "WWEU");
-            this.WWEU.Name = "WWEU";
-            this.WWEU.UseVisualStyleBackColor = true;
-            this.WWEU.Click += new System.EventHandler(this.WWEU_Click);
-            // 
-            // ZPHEU
-            // 
-            resources.ApplyResources(this.ZPHEU, "ZPHEU");
-            this.ZPHEU.Name = "ZPHEU";
-            this.ZPHEU.UseVisualStyleBackColor = true;
-            this.ZPHEU.Click += new System.EventHandler(this.ZPHEU_Click);
-            // 
-            // ZSTUS
-            // 
-            resources.ApplyResources(this.ZSTUS, "ZSTUS");
-            this.ZSTUS.Name = "ZSTUS";
-            this.ZSTUS.UseVisualStyleBackColor = true;
-            this.ZSTUS.Click += new System.EventHandler(this.ZSPUS_Click);
-            // 
-            // ZSTEU
-            // 
-            resources.ApplyResources(this.ZSTEU, "ZSTEU");
-            this.ZSTEU.Name = "ZSTEU";
-            this.ZSTEU.UseVisualStyleBackColor = true;
-            this.ZSTEU.Click += new System.EventHandler(this.ZSPEU_Click);
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // WWUS_TXT
-            // 
-            resources.ApplyResources(this.WWUS_TXT, "WWUS_TXT");
-            this.WWUS_TXT.Name = "WWUS_TXT";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // WWEU_TXT
-            // 
-            resources.ApplyResources(this.WWEU_TXT, "WWEU_TXT");
-            this.WWEU_TXT.Name = "WWEU_TXT";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // ZPHEU_TXT
-            // 
-            resources.ApplyResources(this.ZPHEU_TXT, "ZPHEU_TXT");
-            this.ZPHEU_TXT.Name = "ZPHEU_TXT";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // ZSTUS_TXT
-            // 
-            resources.ApplyResources(this.ZSTUS_TXT, "ZSTUS_TXT");
-            this.ZSTUS_TXT.Name = "ZSTUS_TXT";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // ZSTEU_TXT
-            // 
-            resources.ApplyResources(this.ZSTEU_TXT, "ZSTEU_TXT");
-            this.ZSTEU_TXT.Name = "ZSTEU_TXT";
-            // 
-            // SMBUS
-            // 
-            resources.ApplyResources(this.SMBUS, "SMBUS");
-            this.SMBUS.Name = "SMBUS";
-            this.SMBUS.UseVisualStyleBackColor = true;
-            this.SMBUS.Click += new System.EventHandler(this.SMBUS_Click);
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // SMBUS_TXT
-            // 
-            resources.ApplyResources(this.SMBUS_TXT, "SMBUS_TXT");
-            this.SMBUS_TXT.Name = "SMBUS_TXT";
-            // 
-            // SMBEU
-            // 
-            resources.ApplyResources(this.SMBEU, "SMBEU");
-            this.SMBEU.Name = "SMBEU";
-            this.SMBEU.UseVisualStyleBackColor = true;
-            this.SMBEU.Click += new System.EventHandler(this.SMBEU_Click);
-            // 
-            // POUS
-            // 
-            resources.ApplyResources(this.POUS, "POUS");
-            this.POUS.Name = "POUS";
-            this.POUS.UseVisualStyleBackColor = true;
-            this.POUS.Click += new System.EventHandler(this.POUS_Click);
-            // 
-            // POEU
-            // 
-            resources.ApplyResources(this.POEU, "POEU");
-            this.POEU.Name = "POEU";
-            this.POEU.UseVisualStyleBackColor = true;
-            this.POEU.Click += new System.EventHandler(this.Button4_Click);
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            // 
-            // SMBEU_TXT
-            // 
-            resources.ApplyResources(this.SMBEU_TXT, "SMBEU_TXT");
-            this.SMBEU_TXT.Name = "SMBEU_TXT";
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
-            // POUS_TXT
-            // 
-            resources.ApplyResources(this.POUS_TXT, "POUS_TXT");
-            this.POUS_TXT.Name = "POUS_TXT";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
-            // 
-            // POEU_TXT
-            // 
-            resources.ApplyResources(this.POEU_TXT, "POEU_TXT");
-            this.POEU_TXT.Name = "POEU_TXT";
-            // 
             // TitleKeyMenu
             // 
             resources.ApplyResources(this, "$this");
@@ -698,6 +791,8 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
@@ -795,5 +890,17 @@
         private System.Windows.Forms.TextBox POUS_TXT;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox POEU_TXT;
+        private System.Windows.Forms.Button MKCUS;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox MKCUS_TXT;
+        private System.Windows.Forms.Button MKCEU;
+        private System.Windows.Forms.Button ZMCUS;
+        private System.Windows.Forms.Button ZMCEU;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox MKCEU_TXT;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox ZMCUS_TXT;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox ZMCEU_TXT;
     }
 }

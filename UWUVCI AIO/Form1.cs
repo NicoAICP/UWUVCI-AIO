@@ -106,6 +106,10 @@ namespace UWUVCI_AIO
             POUS.Enabled = false;
             SMBEU.Enabled = false;
             SMBUS.Enabled = false;
+            ZMCEU.Enabled = false;
+            ZMCUS.Enabled = false;
+            MKCEU.Enabled = false;
+            MKCUS.Enabled = false;
             Injection.clean();
         }
 
@@ -673,7 +677,19 @@ namespace UWUVCI_AIO
                 }
                 if (tabControl1.SelectedIndex == 3) //GBA
                 {
+                    ZMCEUCKIMG.Image = Properties.Resources.yes;
+                    ZMCEUCK.Text = "No CommonKey stored";
+                    ZMCEUCK.ForeColor = Color.Red;
+                    ZMCUSCKIMG.Image = Properties.Resources.yes;
+                    ZMCUSCK.Text = "No CommonKey stored";
+                    ZMCUSCK.ForeColor = Color.Red;
 
+                    MKCEUCKIMG.Image = Properties.Resources.yes;
+                    MKCEUCK.Text = "No CommonKey stored";
+                    MKCEUCK.ForeColor = Color.Red;
+                    MKCUSCKIMG.Image = Properties.Resources.yes;
+                    MKCUSCK.Text = "No CommonKey stored";
+                    MKCUSCK.ForeColor = Color.Red;
                 }
                 if (tabControl1.SelectedIndex == 4) //NES
                 {
@@ -765,7 +781,19 @@ namespace UWUVCI_AIO
                 }
                 if (tabControl1.SelectedIndex == 3) //GBA
                 {
+                    ZMCEUCKIMG.Image = Properties.Resources.yes;
+                    ZMCEUCK.Text = "CommonKey found";
+                    ZMCEUCK.ForeColor = Color.FromArgb(0, 127, 14);
+                    ZMCUSCKIMG.Image = Properties.Resources.yes;
+                    ZMCUSCK.Text = "CommonKey found";
+                    ZMCUSCK.ForeColor = Color.FromArgb(0, 127, 14);
 
+                    MKCEUCKIMG.Image = Properties.Resources.yes;
+                    MKCEUCK.Text = "CommonKey found";
+                    MKCEUCK.ForeColor = Color.FromArgb(0, 127, 14);
+                    MKCUSCKIMG.Image = Properties.Resources.yes;
+                    MKCUSCK.Text = "CommonKey found";
+                    MKCUSCK.ForeColor = Color.FromArgb(0, 127, 14);
                 }
                 if (tabControl1.SelectedIndex == 4) //NES
                 {
@@ -1215,6 +1243,11 @@ namespace UWUVCI_AIO
             GBA_LOGO.ForeColor = Color.Black;
             GBA_ROM.ForeColor = Color.Black;
             GBA_TV.ForeColor = Color.Black;
+            GBACSTMN_BTN.ForeColor = Color.Black;
+            ZMCEU_BTN.ForeColor = Color.Black;
+            ZMCUS_BTN.ForeColor = Color.Black;
+            MKCEU_BTN.ForeColor = Color.Black;
+            MKCUS_BTN.ForeColor = Color.Black;
             #endregion
             #region nes
             groupBox7.ForeColor = Color.WhiteSmoke;
@@ -3538,6 +3571,425 @@ namespace UWUVCI_AIO
                 {
                     SMBUS_BTN.Cursor = Cursors.Default;
                     SMBUS_BTN.Enabled = true;
+                }
+
+
+            }
+        }
+
+        private void NESToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form tkey = new TitleKeyMenu(2); // 0 = NDS; 1 = N64, 2 = GBA, 3 = NES, 4 = SNES
+            tkey.Show();
+        }
+
+        private void ComboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = comboBox5.SelectedIndex;
+            GBABRinfopanel(index);
+        }
+        private void GBABRinfopanel(int b)
+        {
+            if (b == 0)
+            {
+                BaseROM = "Custom";
+                #region Panels
+                GBACSTMN_PANEL.Visible = true;
+                ZMCEU_PANEL.Visible = false;
+                ZMCUS_PANEL.Visible = false;
+                MKCEU_PANEL.Visible = false;
+                MKCUS_PANEL.Visible = false;
+
+
+                #endregion
+                #region Timers
+                GBACSTMNFOLDERS.Enabled = true;
+                ZMCEU.Enabled = false;
+                ZMCUS.Enabled = false;
+                MKCEU.Enabled = false;
+                MKCUS.Enabled = false;
+
+                #endregion
+            }
+            if (b == 1)
+            {
+                BaseROM = "ZMCEU";
+                #region Panels
+                GBACSTMN_PANEL.Visible = false;
+                ZMCEU_PANEL.Visible = true;
+                ZMCUS_PANEL.Visible = false;
+                MKCEU_PANEL.Visible = false;
+                MKCUS_PANEL.Visible = false;
+
+
+                #endregion
+                #region Timers
+                GBACSTMNFOLDERS.Enabled = false;
+                ZMCEU.Enabled = true;
+                ZMCUS.Enabled = false;
+                MKCEU.Enabled = false;
+                MKCUS.Enabled = false;
+
+                #endregion
+            }
+            if (b == 2)
+            {
+                BaseROM = "ZMCUS";
+                #region Panels
+                GBACSTMN_PANEL.Visible = false;
+                ZMCEU_PANEL.Visible = false;
+                ZMCUS_PANEL.Visible = true;
+                MKCEU_PANEL.Visible = false;
+                MKCUS_PANEL.Visible = false;
+
+
+                #endregion
+                #region Timers
+                GBACSTMNFOLDERS.Enabled = false;
+                ZMCEU.Enabled = false;
+                ZMCUS.Enabled = true;
+                MKCEU.Enabled = false;
+                MKCUS.Enabled = false;
+
+                #endregion
+            }
+            if (b == 3)
+            {
+                BaseROM = "MKCEU";
+                #region Panels
+                GBACSTMN_PANEL.Visible = false;
+                ZMCEU_PANEL.Visible = false;
+                ZMCUS_PANEL.Visible = false;
+                MKCEU_PANEL.Visible = true;
+                MKCUS_PANEL.Visible = false;
+
+
+                #endregion
+                #region Timers
+                GBACSTMNFOLDERS.Enabled = false;
+                ZMCEU.Enabled = false;
+                ZMCUS.Enabled = false;
+                MKCEU.Enabled = true;
+                MKCUS.Enabled = false;
+
+                #endregion
+            }
+            if (b == 4)
+            {
+                BaseROM = "MKCUS";
+                #region Panels
+                GBACSTMN_PANEL.Visible = false;
+                ZMCEU_PANEL.Visible = false;
+                ZMCUS_PANEL.Visible = false;
+                MKCEU_PANEL.Visible = false;
+                MKCUS_PANEL.Visible = true;
+
+
+                #endregion
+                #region Timers
+                GBACSTMNFOLDERS.Enabled = false;
+                ZMCEU.Enabled = false;
+                ZMCUS.Enabled = false;
+                MKCEU.Enabled = false;
+                MKCUS.Enabled = true;
+
+                #endregion
+            }
+        }
+
+        private void GBACSTMN_BTN_Click(object sender, EventArgs e)
+        {
+            DialogResult result = folderBrowserDialog1.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog1.SelectedPath))
+            {
+                GBACSTMN_PATH.Text = folderBrowserDialog1.SelectedPath;
+                CSTMBaseRom_path = GBACSTMN_PATH.Text;
+                if (Directory.Exists(folderBrowserDialog1.SelectedPath + "/code"))
+                {
+                    code = true;
+                }
+                else
+                {
+                    code = false;
+                }
+                if (Directory.Exists(folderBrowserDialog1.SelectedPath + "/content"))
+                {
+                    content = true;
+                }
+                else
+                {
+                    content = false;
+                }
+                if (Directory.Exists(folderBrowserDialog1.SelectedPath + "/meta"))
+                {
+                    meta = true;
+                }
+                else
+                {
+                    meta = false;
+                }
+            }
+        }
+
+        private void GBACSTMNFOLDERS_Tick(object sender, EventArgs e)
+        {
+            if (code == false || content == false || meta == false)
+            {
+                GBA_INJECT.Enabled = false;
+            }
+            else
+            {
+                GBA_INJECT.Enabled = true;
+            }
+            if (code == false)
+            {
+                GBACODEIMG.Image = Properties.Resources.X;
+                GBACODE.Text = "No code folder";
+                GBACODE.ForeColor = Color.Red;
+            }
+            else
+            {
+                GBACODEIMG.Image = Properties.Resources.yes;
+                GBACODE.Text = "Code folder found";
+                GBACODE.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (content == false)
+            {
+                GBACONTENTIMG.Image = Properties.Resources.X;
+                GBACONTENT.Text = "No content folder";
+                GBACONTENT.ForeColor = Color.Red;
+            }
+            else
+            {
+                GBACONTENTIMG.Image = Properties.Resources.yes;
+                GBACONTENT.Text = "Content folder found";
+                GBACONTENT.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (meta == false)
+            {
+                GBAMETAIMG.Image = Properties.Resources.X;
+                GBAMETA.Text = "No meta folder";
+                GBAMETA.ForeColor = Color.Red;
+            }
+            else
+            {
+                GBAMETAIMG.Image = Properties.Resources.yes;
+                GBAMETA.Text = "Meta folder found";
+                GBAMETA.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+        }
+
+        private void ZMCEU_BTN_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void ZMCEU_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.ZMCEU == "")
+            {
+                ZMCEUTKIMG.Image = Properties.Resources.X;
+                ZMCEUTK.Text = "No TitleKey stored";
+                ZMCEUTK.ForeColor = Color.Red;
+            }
+            else
+            {
+                ZMCEUTKIMG.Image = Properties.Resources.yes;
+                ZMCEUTK.Text = "TitleKey found";
+                ZMCEUTK.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/ZMCEU"))
+            {
+                ZMCEUBASEIMG.Image = Properties.Resources.X;
+                ZMCEUBASE.Text = "Base not downloaded";
+                ZMCEUBASE.ForeColor = Color.Red;
+                GBA_INJECT.Enabled = false;
+            }
+            else
+            {
+                ZMCEUBASEIMG.Image = Properties.Resources.yes;
+                ZMCEUBASE.Text = "Base downloaded";
+                ZMCEUBASE.ForeColor = Color.FromArgb(0, 127, 14);
+                ZMCEU_BTN.Visible = false;
+                GBA_INJECT.Enabled = true;
+            }
+            if (Properties.Settings.Default.ZMCEU == "")
+            {
+                ZMCEU_BTN.Enabled = false;
+            }
+            else
+            {
+                if (Properties.Settings.Default.CommonKey == "")
+                {
+                    ZMCEU_BTN.Enabled = false;
+                }
+                else
+                {
+                    ZMCEU_BTN.Cursor = Cursors.Default;
+                    ZMCEU_BTN.Enabled = true;
+                }
+
+
+            }
+        }
+
+        private void ZMCUS_BTN_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void ZMCUS_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.ZMCUS == "")
+            {
+                ZMCUSTKIMG.Image = Properties.Resources.X;
+                ZMCUSTK.Text = "No TitleKey stored";
+                ZMCUSTK.ForeColor = Color.Red;
+            }
+            else
+            {
+                ZMCUSTKIMG.Image = Properties.Resources.yes;
+                ZMCUSTK.Text = "TitleKey found";
+                ZMCUSTK.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/ZMCUS"))
+            {
+                ZMCUSBASEIMG.Image = Properties.Resources.X;
+                ZMCUSBASE.Text = "Base not downloaded";
+                ZMCUSBASE.ForeColor = Color.Red;
+                GBA_INJECT.Enabled = false;
+            }
+            else
+            {
+                ZMCUSBASEIMG.Image = Properties.Resources.yes;
+                ZMCUSBASE.Text = "Base downloaded";
+                ZMCUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
+                ZMCUS_BTN.Visible = false;
+                GBA_INJECT.Enabled = true;
+            }
+            if (Properties.Settings.Default.ZMCUS == "")
+            {
+                ZMCUS_BTN.Enabled = false;
+            }
+            else
+            {
+                if (Properties.Settings.Default.CommonKey == "")
+                {
+                    ZMCUS_BTN.Enabled = false;
+                }
+                else
+                {
+                    ZMCUS_BTN.Cursor = Cursors.Default;
+                    ZMCUS_BTN.Enabled = true;
+                }
+
+
+            }
+        }
+
+        private void MKCEU_BTN_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void MKCEU_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.MKCEU == "")
+            {
+                MKCEUTKIMG.Image = Properties.Resources.X;
+                MKCEUTK.Text = "No TitleKey stored";
+                MKCEUTK.ForeColor = Color.Red;
+            }
+            else
+            {
+                MKCEUTKIMG.Image = Properties.Resources.yes;
+                MKCEUTK.Text = "TitleKey found";
+                MKCEUTK.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/MKCEU"))
+            {
+                MKCEUBASEIMG.Image = Properties.Resources.X;
+                MKCEUBASE.Text = "Base not downloaded";
+                MKCEUBASE.ForeColor = Color.Red;
+                GBA_INJECT.Enabled = false;
+            }
+            else
+            {
+                MKCEUBASEIMG.Image = Properties.Resources.yes;
+                MKCEUBASE.Text = "Base downloaded";
+                MKCEUBASE.ForeColor = Color.FromArgb(0, 127, 14);
+                MKCEU_BTN.Visible = false;
+                GBA_INJECT.Enabled = true;
+            }
+            if (Properties.Settings.Default.MKCEU == "")
+            {
+                MKCEU_BTN.Enabled = false;
+            }
+            else
+            {
+                if (Properties.Settings.Default.CommonKey == "")
+                {
+                    MKCEU_BTN.Enabled = false;
+                }
+                else
+                {
+                    MKCEU_BTN.Cursor = Cursors.Default;
+                    MKCEU_BTN.Enabled = true;
+                }
+
+
+            }
+        }
+
+        private void MKCUS_BTN_Click(object sender, EventArgs e)
+        {
+            Injection.download(BaseROM);
+        }
+
+        private void Timer1_Tick_1(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.MKCUS == "")
+            {
+                MKCUSTKIMG.Image = Properties.Resources.X;
+                MKCUSTK.Text = "No TitleKey stored";
+                MKCUSTK.ForeColor = Color.Red;
+            }
+            else
+            {
+                MKCUSTKIMG.Image = Properties.Resources.yes;
+                MKCUSTK.Text = "TitleKey found";
+                MKCUSTK.ForeColor = Color.FromArgb(0, 127, 14);
+            }
+            if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/MKCUS"))
+            {
+                MKCUSBASEIMG.Image = Properties.Resources.X;
+                MKCUSBASE.Text = "Base not downloaded";
+                MKCUSBASE.ForeColor = Color.Red;
+                GBA_INJECT.Enabled = false;
+            }
+            else
+            {
+                MKCUSBASEIMG.Image = Properties.Resources.yes;
+                MKCUSBASE.Text = "Base downloaded";
+                MKCUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
+                MKCUS_BTN.Visible = false;
+                GBA_INJECT.Enabled = true;
+            }
+            if (Properties.Settings.Default.MKCUS == "")
+            {
+                MKCUS_BTN.Enabled = false;
+            }
+            else
+            {
+                if (Properties.Settings.Default.CommonKey == "")
+                {
+                    MKCUS_BTN.Enabled = false;
+                }
+                else
+                {
+                    MKCUS_BTN.Cursor = Cursors.Default;
+                    MKCUS_BTN.Enabled = true;
                 }
 
 

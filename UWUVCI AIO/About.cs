@@ -50,5 +50,11 @@ namespace UWUVCI_AIO
             button2.ForeColor = Color.Black;
             linkLabel1.LinkColor = Color.FromArgb(133, 255, 251);
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Credits credits = new Credits();
+            credits.Show();
+        }
     }
 }

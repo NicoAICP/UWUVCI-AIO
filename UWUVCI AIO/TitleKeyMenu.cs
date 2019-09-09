@@ -29,6 +29,7 @@ namespace UWUVCI_AIO
             CheckSNESKeys(0);
             CheckNDSKeys(0);
             CheckNESKeys(0);
+            CheckGBAKeys(0);
         }
 
         private void TitleKeyMenu_Load(object sender, EventArgs e)
@@ -78,6 +79,10 @@ namespace UWUVCI_AIO
             POUS.ForeColor = Color.Black;
             SMBEU.ForeColor = Color.Black;
             SMBUS.ForeColor = Color.Black;
+            ZMCEU.ForeColor = Color.Black;
+            ZMCUS.ForeColor = Color.Black;
+            MKCEU.ForeColor = Color.Black;
+            MKCUS.ForeColor = Color.Black;
         }
         private void CheckN64Keys(byte b)
         {
@@ -932,6 +937,143 @@ namespace UWUVCI_AIO
         private void SMBUS_Click(object sender, EventArgs e)
         {
             CheckNESKeys(4);
+        }
+        private void CheckGBAKeys(byte b)
+        {
+            if(b == 0)
+            {
+                ZMCEU_TXT.Text = Properties.Settings.Default.ZMCEU;
+                ZMCUS_TXT.Text = Properties.Settings.Default.ZMCUS;
+                MKCEU_TXT.Text = Properties.Settings.Default.MKCEU;
+                MKCUS_TXT.Text = Properties.Settings.Default.MKCUS;
+            }
+            if (b == 1)
+            {
+                if (ZMCEU_TXT.Text.GetHashCode() == 1694865495)
+                {
+                    Properties.Settings.Default.ZMCEU = ZMCEU_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Minish Cap [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Minish Cap [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                }
+                else
+                {
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Minish Cap [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Minish Cap [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            if (b == 2)
+            {
+                if (ZMCUS_TXT.Text.GetHashCode() == 1378855071)
+                {
+                    Properties.Settings.Default.ZMCUS = ZMCUS_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Minish Cap [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Minish Cap [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                }
+                else
+                {
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Minish Cap [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Minish Cap [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            if (b == 3)
+            {
+                if (MKCEU_TXT.Text.GetHashCode() == 1154633832)
+                {
+                    Properties.Settings.Default.MKCEU = MKCEU_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Mario Kart Super Circuit [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Mario Kart Super Circuit [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                }
+                else
+                {
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Mario Kart Super Circuit [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Mario Kart Super Circuit [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            if (b == 4)
+            {
+                if (MKCUS_TXT.Text.GetHashCode() == 1495117536)
+                {
+                    Properties.Settings.Default.MKCUS = MKCUS_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Mario Kart Super Circuit [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Mario Kart Super Circuit [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    }
+                }
+                else
+                {
+                    if (language == "en-US")
+                    {
+                        MessageBox.Show("The entered TitleKey for Mario Kart Super Circuit [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else if (language == "de-DE")
+                    {
+                        MessageBox.Show("Der eingegebene TitleKey für Mario Kart Super Circuit [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+        }
+        private void ZMCEU_Click(object sender, EventArgs e)
+        {
+            CheckGBAKeys(1);
+        }
+
+        private void ZMCUS_Click(object sender, EventArgs e)
+        {
+            CheckGBAKeys(2);
+        }
+
+        private void MKCEU_Click(object sender, EventArgs e)
+        {
+            CheckGBAKeys(3);
+        }
+
+        private void MKCUS_Click(object sender, EventArgs e)
+        {
+            CheckGBAKeys(4);
         }
     }
 }
