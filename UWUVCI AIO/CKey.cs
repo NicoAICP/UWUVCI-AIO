@@ -10,7 +10,7 @@ namespace UWUVCI_AIO
 {
     public partial class CKey : Form
     {
-        public string language = Properties.Settings.Default.Language;
+        private readonly string language = Properties.Settings.Default.Language;
         public CKey()
         {
             InitializeComponent();
@@ -19,8 +19,6 @@ namespace UWUVCI_AIO
             {
                 enableDarkMode();
             }
-
-
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -58,7 +56,7 @@ namespace UWUVCI_AIO
                 }
                 else
                 {
-                    MessageBox.Show("Ein Falscher CommonKey wurde angegeben", "Flascher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ein Falscher CommonKey wurde angegeben", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
             }
