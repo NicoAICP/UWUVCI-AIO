@@ -19,6 +19,6 @@ namespace System.IO
       foreach (var subdir in source.GetDirectories())
         subdir.CopyTo(target.CreateSubdirectory(subdir.Name));
     }
-       
+
     }
 }

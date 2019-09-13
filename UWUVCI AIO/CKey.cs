@@ -26,10 +26,10 @@ namespace UWUVCI_AIO
             {
                 enableDarkMode();
             }
-          
+
 
         }
-        
+
         private void Button1_Click(object sender, EventArgs e)
         {
             if(textBox1.Text.GetHashCode() == 487391367)
@@ -67,12 +67,12 @@ namespace UWUVCI_AIO
                 {
                     MessageBox.Show("Ein Falscher CommonKey wurde angegeben", "Flascher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-               
+
             }
         }
         private void enableDarkMode()
         {
-            
+
             this.BackColor = Color.FromArgb(60, 60, 60);
             this.ForeColor = Color.WhiteSmoke;
             button1.ForeColor = Color.Black;

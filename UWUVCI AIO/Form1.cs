@@ -26,7 +26,7 @@ namespace UWUVCI_AIO
         private static string CSTMBaseRom_path = null;
         private static string INJCT_ROM_path = null;
         private static string[] bootimages = new string[4]; // 0 = TV, 1 = DRC, 2 = ICON, 3 = LOGO
-       
+
         #endregion
         #endregion
 
@@ -57,12 +57,12 @@ namespace UWUVCI_AIO
 
             }
 
-                
+
                 if (Checking())
                 {
                     disableInjection();
                 }
-            
+
 
         }
         #region Consoles
@@ -233,7 +233,7 @@ namespace UWUVCI_AIO
         private void SNESToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ResetInput();
-            
+
             tabControl1.SelectedIndex = 5;
         }
 
@@ -733,7 +733,7 @@ namespace UWUVCI_AIO
                     DKCUS_CK.Text = "No CommonKey stored";
                     DKCUS_CK.ForeColor = Color.Red;
                 }
-                
+
             }
             else
             {
@@ -837,7 +837,7 @@ namespace UWUVCI_AIO
                     DKCUS_CK.Text = "CommonKey found";
                     DKCUS_CK.ForeColor = Color.FromArgb(0, 127, 14);
                 }
-                    
+
             }
 
         }
@@ -994,8 +994,8 @@ namespace UWUVCI_AIO
                     toolTip1.SetToolTip(SMEU_DWNLD, null);
                     SMEU_DWNLD.Enabled = true;
                 }
-            
-        
+
+
         }
             #endregion
         }
@@ -1177,7 +1177,7 @@ namespace UWUVCI_AIO
             panel1.BackColor = Color.FromArgb(50, 50, 50);
             Main.BackColor = Color.FromArgb(60, 60, 60);
             Main.ForeColor = Color.WhiteSmoke;
-            
+
             #region n64
             N64.BackColor = Color.FromArgb(60, 60, 60);
             N64.ForeColor = Color.WhiteSmoke;
@@ -1225,7 +1225,7 @@ namespace UWUVCI_AIO
             ZPHUS_BTN.ForeColor = Color.Black;
             WWEU_BTN.ForeColor = Color.Black;
             WWUS_BTN.ForeColor = Color.Black;
-            
+
             #endregion
             #region gba
             groupBox4.ForeColor = Color.WhiteSmoke;
@@ -1234,7 +1234,7 @@ namespace UWUVCI_AIO
             GBA.BackColor = Color.FromArgb(60, 60, 60);
             GBA.ForeColor = Color.WhiteSmoke;
             GBA_BACK.ForeColor = Color.Black;
-            
+
             GBA_DRC.ForeColor = Color.Black;
             GBA_ICON.ForeColor = Color.Black;
             GBA_INJECT.ForeColor = Color.Black;
@@ -1296,7 +1296,7 @@ namespace UWUVCI_AIO
             EBJP_DWNLD.ForeColor = Color.Black;
             DKCEU_DWNLD.ForeColor = Color.Black;
             DKCUS_DWNLD.ForeColor = Color.Black;
-            
+
             #endregion
             #region WII/GC TODO
             #endregion
@@ -1857,7 +1857,7 @@ namespace UWUVCI_AIO
                 N64_BTN17.Enabled = false;
                 N64_BTN16.Enabled = false;
             }
-           
+
         }
 
         private void N64_BTN16_Click(object sender, EventArgs e)
@@ -1957,7 +1957,7 @@ namespace UWUVCI_AIO
                 NDS_BTN17.Enabled = false;
                 NDS_BTN16.Enabled = false;
             }
-            
+
         }
 
         private void NDS_BTN16_Click(object sender, EventArgs e)
@@ -2046,7 +2046,7 @@ namespace UWUVCI_AIO
 
         private void NES_INST_Click(object sender, EventArgs e)
         {
-            
+
             if (Properties.Settings.Default.CommonKey == "")
             {
                 MessageBox.Show("To use this option you need to enter the CommonKey (Settings -> Set CommonKey)");
@@ -2076,7 +2076,7 @@ namespace UWUVCI_AIO
 
         private void GBA_INST_Click(object sender, EventArgs e)
         {
-            
+
             if (Properties.Settings.Default.CommonKey == "")
             {
                 MessageBox.Show("To use this option you need to enter the CommonKey (Settings -> Set CommonKey)");
@@ -2766,7 +2766,7 @@ namespace UWUVCI_AIO
                 POUS_PANEL.Visible = false;
                 SMBEU_PANEL.Visible = false;
                 SMBUS_PANEL.Visible = false;
-                
+
 
                 #endregion
                 #region Timers
@@ -2775,7 +2775,7 @@ namespace UWUVCI_AIO
                 POUS.Enabled = false;
                 SMBEU.Enabled = false;
                 SMBUS.Enabled = false;
-                
+
                 #endregion
             }
             if (b == 1)
@@ -2862,7 +2862,7 @@ namespace UWUVCI_AIO
 
                 #endregion
             }
-            
+
         }
         private void NDSCSTMN_BTN_Click(object sender, EventArgs e)
         {

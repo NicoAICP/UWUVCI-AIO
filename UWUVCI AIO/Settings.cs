@@ -16,7 +16,7 @@ namespace UWUVCI_AIO
     public partial class Settings : Form
     {
         private string language = Properties.Settings.Default.Language; //0 = English, 1 = German
-        
+
         public Settings()
         {
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
@@ -26,7 +26,7 @@ namespace UWUVCI_AIO
             {
                 enableDarkMode();
             }
-            
+
             if (language == "en-US")
             {
                 comboBox1.SelectedIndex = 0;
@@ -35,10 +35,10 @@ namespace UWUVCI_AIO
             {
                 comboBox1.SelectedIndex = 1;
             }
-            
+
         }
 
-        
+
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -67,7 +67,7 @@ namespace UWUVCI_AIO
         private void Button1_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.Language = language;
-            
+
             if (radioButton2.Checked)
             {
                 Properties.Settings.Default.darkmode = true;

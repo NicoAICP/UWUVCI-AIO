@@ -19,7 +19,7 @@ namespace UWUVCI_AIO
 
         /*
          * Console: Can either be NDS, N64, GBA, NES or SNES
-         * BaseRom = Name of the BaseRom, which is the folder name too (example: Super Metroid EU will be saved at the BaseRom path under the folder SMetroidEU, so the BaseRom is in this case SMetroidEU). 
+         * BaseRom = Name of the BaseRom, which is the folder name too (example: Super Metroid EU will be saved at the BaseRom path under the folder SMetroidEU, so the BaseRom is in this case SMetroidEU).
          * CSTMN_Base_path = Path to the custom Base. Is null if no custom base is used.
          * INJCT_Rom_path = Path to the Rom to be injected into the Base Game
          * ini_path = Only used for N64. Path to the INI configuration. If null it will use the blank ini.
@@ -30,11 +30,11 @@ namespace UWUVCI_AIO
          *              bootDrcTex: PNG or TGA (PNG gets converted to TGA using UPNG). Needs to be in the dimensions 170x42, and if its a TGA it needs a bit depth of 32. If null, the originial BootImage will be used.
          * darkremoval = Only used for N64. Its for removal of the dark filter.
          */
-        
+
         public static void inject(Console console, string BaseRom, string CSTMN_Base_path, string INJCT_Rom_path, string ini_path, string[] bootimages, string GameName, bool darkremoval)
         {
             string temppath = Properties.Settings.Default.WorkingPath + "/temp";
-            Directory.CreateDirectory(temppath); 
+            Directory.CreateDirectory(temppath);
 
             switch (console)
             {
@@ -96,7 +96,7 @@ namespace UWUVCI_AIO
         {
             CNUSPACKER.Program.Main(args: new[] { "-in", Properties.Settings.Default.WorkingPath + "/temp", "-out", Properties.Settings.Default.InjectionPath + "/"+Gamename, "-encryptKeyWith", Properties.Settings.Default.CommonKey });
             MessageBox.Show("Inject Succesfully created.\nYou can find your inject here:\n" + Properties.Settings.Default.InjectionPath + "/" + Gamename);
-            
+
             clean();
         }
         public static void download(string BaseRom)
@@ -216,7 +216,7 @@ namespace UWUVCI_AIO
             {
                 TID = "000500001010a700";
                 TK = Properties.Settings.Default.SMetroidEU;
-                
+
             }
             else if(BaseRom == "SMetroidUS")
             {
@@ -391,10 +391,10 @@ namespace UWUVCI_AIO
                 }
                 Directory.SetCurrentDirectory(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
             }
-            
+
         }
         // This function changes TitleID, ProductCode and GameName in app.xml (ID) and meta.xml (ID, ProductCode, Name)
-        private static void editXML(string GameName, string workpath)  
+        private static void editXML(string GameName, string workpath)
         {
             string xmlFile = workpath + "/meta/meta.xml";
             string xmlFile2 = workpath + "/code/app.xml";
@@ -485,17 +485,17 @@ namespace UWUVCI_AIO
             string[] RPX = Directory.GetFiles(workpath+"\\code", "*.rpx"); //To get the RPX path where the NES/SNES rom needs to be Injected in
 
             RPXdecomp(RPX[0]); //Decompresses the RPX to be able to write the game into it
-            
+
             Process retroinject = new Process();
                 retroinject.StartInfo.UseShellExecute = false;
                 retroinject.StartInfo.CreateNoWindow = true;
                 retroinject.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/retroinject.exe");
                 retroinject.StartInfo.Arguments = "\""+RPX[0] +"\" \""+romtoinject+"\" \""+RPX[0]+"\"";
-           
+
             retroinject.Start();
-           
+
             retroinject.WaitForExit();
-            
+
             RPXcomp(RPX[0]); //Compresses the RPX
         }
         private static void GBA (string workpath, string romtoinject)
@@ -521,7 +521,7 @@ namespace UWUVCI_AIO
             zip.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/7za.exe");
 
             zip.StartInfo.Arguments = "x \"" + workpath + "/content/0010/rom.zip\"";
-            
+
             zip.Start();
             zip.WaitForExit();
             Directory.SetCurrentDirectory(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
@@ -589,7 +589,7 @@ namespace UWUVCI_AIO
                 writer1.Write(0x00);
                 writer1.Close();
             }
-            
+
         }
 
         //Compressed or decompresses the RPX using wiiurpxtool
@@ -603,10 +603,10 @@ namespace UWUVCI_AIO
 
 
                 rpxtool.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/wiiurpxtool.exe");
-                
-               
+
+
                     rpxtool.StartInfo.Arguments = "-d \"" + rpxpath+"\"";
-                
+
                 rpxtool.Start();
             rpxtool.WaitForExit();
         }
@@ -629,7 +629,7 @@ namespace UWUVCI_AIO
         }
         private static void Images(string[] paths, string workpath)
         {
-            
+
             bool tv = false;
             bool drc = false;
             bool icon = false;
@@ -662,12 +662,12 @@ namespace UWUVCI_AIO
             if (paths[1] != null)
             {
                 drc = true;
-                if (paths[1].EndsWith(".png")) 
+                if (paths[1].EndsWith(".png"))
                 {
                     if (paths[1].EndsWith(".png")) //covnert png to tga
                     {
                         Process png2tga = new Process();
-                        
+
                             //That the window stays hidden
                             png2tga.StartInfo.UseShellExecute = false;
                             png2tga.StartInfo.CreateNoWindow = true;
@@ -682,9 +682,9 @@ namespace UWUVCI_AIO
                         paths[1] = paths[1].Replace(".png", ".tga");
                     }
                 }
-               
+
             }
-           
+
             if (paths[2] != null)
             {
                 icon = true;
@@ -693,7 +693,7 @@ namespace UWUVCI_AIO
                     if (paths[2].EndsWith(".png")) //covnert png to tga
                     {
                         Process png2tga = new Process();
-                        
+
                             //That the window stays hidden
                             png2tga.StartInfo.UseShellExecute = false;
                             png2tga.StartInfo.CreateNoWindow = true;
@@ -710,8 +710,8 @@ namespace UWUVCI_AIO
                 }
 
             }
-           
-            
+
+
             if (paths[3] != null)
             {
                 logo = true;
@@ -720,7 +720,7 @@ namespace UWUVCI_AIO
                     if (paths[3].EndsWith(".png")) //covnert png to tga
                     {
                         Process png2tga = new Process();
-                        
+
                             //That the window stays hidden
                             png2tga.StartInfo.UseShellExecute = false;
                             png2tga.StartInfo.CreateNoWindow = true;
@@ -743,11 +743,11 @@ namespace UWUVCI_AIO
             {
                 Directory.Delete(Properties.Settings.Default.WorkingPath + "/img", true);
             }
-            
-            
+
+
                 Directory.CreateDirectory(Properties.Settings.Default.WorkingPath + "/img");
-            
-           
+
+
             if (tv)
             {
                 File.Copy(paths[0], Properties.Settings.Default.WorkingPath + "/img/bootTvTex.tga");
@@ -766,7 +766,7 @@ namespace UWUVCI_AIO
             }
             if (tv||drc||icon||logo) {
                 Process tgaverify = new Process();
-                
+
                     //That the window stays hidden
                     tgaverify.StartInfo.UseShellExecute = false;
                     tgaverify.StartInfo.CreateNoWindow = true;
@@ -785,7 +785,7 @@ namespace UWUVCI_AIO
                         Tgaverifyoutput.Add(line);
                     }
                     tgaverify.WaitForExit();
-                
+
                 for (int i = 0; i < Tgaverifyoutput.Count(); i++)
                 {
                     if (tv)
@@ -832,7 +832,7 @@ namespace UWUVCI_AIO
                 if (fixup)
                 {
                     Process tgaverify2 = new Process();
-                    
+
                         //That the window stays hidden
                         tgaverify2.StartInfo.UseShellExecute = false;
                         tgaverify2.StartInfo.CreateNoWindow = true;
@@ -846,7 +846,7 @@ namespace UWUVCI_AIO
 
                         tgaverify2.Start();
                     tgaverify2.WaitForExit();
-                    
+
                 }
                 if (tv)
                 {

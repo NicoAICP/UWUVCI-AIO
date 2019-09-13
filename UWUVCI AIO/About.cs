@@ -13,10 +13,10 @@ using System.Resources;
 
 namespace UWUVCI_AIO
 {
- 
+
     public partial class About : Form
     {
-        
+
         public string language = Properties.Settings.Default.Language;
         public About()
         {
