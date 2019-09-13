@@ -433,7 +433,7 @@
     <value>File</value>
   </data>
   <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
+    <value>191, 22</value>
   </data>
   <data name="toolStripMenuItem2.Text" xml:space="preserve">
     <value>Set CommonKey</value>
@@ -701,25 +701,25 @@
     <value>SNES</value>
   </data>
   <data name="TitleKeys.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
+    <value>191, 22</value>
   </data>
   <data name="TitleKeys.Text" xml:space="preserve">
     <value>TitleKeys</value>
   </data>
   <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
+    <value>191, 22</value>
   </data>
   <data name="toolStripMenuItem3.Text" xml:space="preserve">
     <value>Paths</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 6</value>
+    <value>188, 6</value>
   </data>
   <data name="settingsToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Control+H</value>
+    <value>Strg+H</value>
   </data>
   <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
+    <value>191, 22</value>
   </data>
   <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
     <value>User Interface</value>
@@ -3349,7 +3349,7 @@
     <value>0</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>v0.1</value>
+    <value>v1.1</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
