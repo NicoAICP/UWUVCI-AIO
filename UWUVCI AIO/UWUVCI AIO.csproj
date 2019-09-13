@@ -84,9 +84,6 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="BLtabControll.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="CKey.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,7 +185,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="System.IO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -212,7 +208,6 @@
     <None Include="Resources\BACK_ENG_LIGHT.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bildercredits.txt" />
     <None Include="Resources\X.png" />
     <None Include="Resources\yes.png" />
     <None Include="Resources\!.png" />
