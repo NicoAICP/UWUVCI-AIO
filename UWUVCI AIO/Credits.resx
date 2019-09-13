@@ -142,7 +142,10 @@ wiiurpxtool by 0CBH0
 
 SNES ROM Utility by takashi
 
-JNUSTOOL by Maschell</value>
+JNUSTOOL by Maschell
+
+MelonSpeedruns - Finding out how
+to remove the N64 dark filter</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

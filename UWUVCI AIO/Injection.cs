@@ -12,8 +12,8 @@ namespace UWUVCI_AIO
     {
         public enum Console { NDS, N64, GBA, NES, SNES }
 
-        private static string tempPath = Path.Combine(Properties.Settings.Default.WorkingPath, "temp");
-        private static string imgPath = Path.Combine(Properties.Settings.Default.WorkingPath, "img");
+        private static readonly string tempPath = Path.Combine(Properties.Settings.Default.WorkingPath, "temp");
+        private static readonly string imgPath = Path.Combine(Properties.Settings.Default.WorkingPath, "img");
 
         /*
          * Console: Can either be NDS, N64, GBA, NES or SNES
@@ -392,7 +392,7 @@ namespace UWUVCI_AIO
             doc.SelectSingleNode("menu/longname_zht").InnerText = GameName;
 
             doc.SelectSingleNode("menu/product_code").InnerText = $"WUP-N-{ID}";
-            doc.SelectSingleNode("menu/title_id").InnerText = $"0005000010{ID}00";
+            doc.SelectSingleNode("menu/title_id").InnerText = $"0005000020{ID}00";
 
             doc.SelectSingleNode("menu/shortname_ja").InnerText = GameName;
             doc.SelectSingleNode("menu/shortname_fr").InnerText = GameName;
@@ -409,7 +409,7 @@ namespace UWUVCI_AIO
             doc.Save(metaXml);
 
             doc.Load(appXml);
-            doc.SelectSingleNode("app/title_id").InnerText = $"0005000010{ID}00";
+            doc.SelectSingleNode("app/title_id").InnerText = $"0005000020{ID}00";
             doc.Save(appXml);
         }
 
