@@ -32,7 +32,7 @@ namespace UWUVCI_AIO
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text.GetHashCode() == 487391367)
+            if (textBox1.Text.GetHashCode() == 487391367)
             {
                 Properties.Settings.Default.CommonKey = textBox1.Text;
                 Properties.Settings.Default.Save();
@@ -59,7 +59,7 @@ namespace UWUVCI_AIO
             }
             else
             {
-                if(language == "en-US")
+                if (language == "en-US")
                 {
                     MessageBox.Show("Invalid CommonKey provided", "Invalid Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }

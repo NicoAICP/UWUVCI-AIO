@@ -38,7 +38,7 @@ namespace UWUVCI_AIO
                 textBox1.Text = folderBrowserDialog1.SelectedPath;
                 Properties.Settings.Default.BaseRomPath = textBox1.Text;
                 Properties.Settings.Default.Save();
-                if(language == "de-DE")
+                if (language == "de-DE")
                 {
                     MessageBox.Show("Pfad erfolgreich gespeichert");
                 }

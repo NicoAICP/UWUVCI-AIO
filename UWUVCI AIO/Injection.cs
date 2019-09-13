@@ -76,7 +76,7 @@ namespace UWUVCI_AIO
         }
         public static void clean()
         {
-            if(Directory.Exists(Properties.Settings.Default.WorkingPath + "/temp"))
+            if (Directory.Exists(Properties.Settings.Default.WorkingPath + "/temp"))
             {
                 Directory.Delete(Properties.Settings.Default.WorkingPath + "/temp", true);
             }
@@ -141,7 +141,7 @@ namespace UWUVCI_AIO
                 TID = "0005000010199800";
                 TK = Properties.Settings.Default.PMEU;
             }
-            else if(BaseRom == "PMUS")
+            else if (BaseRom == "PMUS")
             {
                 TID = "0005000010199700";
                 TK = Properties.Settings.Default.PMUS;
@@ -218,7 +218,7 @@ namespace UWUVCI_AIO
                 TK = Properties.Settings.Default.SMetroidEU;
 
             }
-            else if(BaseRom == "SMetroidUS")
+            else if (BaseRom == "SMetroidUS")
             {
                 TID = "000500001010a600";
                 TK = Properties.Settings.Default.SMetroidUS;
@@ -563,9 +563,9 @@ namespace UWUVCI_AIO
             }
             File.Delete(MainRom[0]);
             File.Move(z64out, MainRom[0]);
-            if(ini_path != null)
+            if (ini_path != null)
             {
-                if(ini_path == "blank")
+                if (ini_path == "blank")
                 {
                     File.Delete(Mainini);
                     File.Copy(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/blank.ini"), Mainini);
@@ -739,7 +739,7 @@ namespace UWUVCI_AIO
             }
             #endregion
             #region Check if files are correct and then copy them into the work dir
-            if(Directory.Exists(Properties.Settings.Default.WorkingPath + "/img"))
+            if (Directory.Exists(Properties.Settings.Default.WorkingPath + "/img"))
             {
                 Directory.Delete(Properties.Settings.Default.WorkingPath + "/img", true);
             }

@@ -86,7 +86,7 @@ namespace UWUVCI_AIO
         }
         private void CheckN64Keys(byte b)
         {
-            if(b == 0)
+            if (b == 0)
             {
                 PMEUtxt.Text = Properties.Settings.Default.PMEU;
                 PMUStxt.Text = Properties.Settings.Default.PMUS;
@@ -96,9 +96,9 @@ namespace UWUVCI_AIO
                 FZXJPtxt.Text = Properties.Settings.Default.FZXJP;
             }
             // PAPER MARIO EU
-            if(b == 1)
+            if (b == 1)
             {
-                if(PMEUtxt.Text.GetHashCode() == -551238474)
+                if (PMEUtxt.Text.GetHashCode() == -551238474)
                 {
                     Properties.Settings.Default.PMEU = PMEUtxt.Text;
                     Properties.Settings.Default.Save();
@@ -113,11 +113,11 @@ namespace UWUVCI_AIO
                 }
                 else
                 {
-                    if(language == "en-US")
+                    if (language == "en-US")
                     {
                         MessageBox.Show("The entered TitleKey for Paper Mario [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-                    else if(language == "de-DE")
+                    else if (language == "de-DE")
                     {
                         MessageBox.Show("Der eingegebene TitleKey für Paper Mario [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
@@ -278,7 +278,7 @@ namespace UWUVCI_AIO
                 DKCUStxt.Text = Properties.Settings.Default.DKCUS;
             }
             // SUPER METROID EU
-            if(b == 1)
+            if (b == 1)
             {
                 if (SMetroidEUtxt.Text.GetHashCode() == -1533216561)
                 {
@@ -504,7 +504,7 @@ namespace UWUVCI_AIO
         }
         private void CheckNDSKeys(byte b)
         {
-            if(b == 0)
+            if (b == 0)
             {
                 ZSTEU_TXT.Text = Properties.Settings.Default.ZSTEU;
                 ZSTUS_TXT.Text = Properties.Settings.Default.ZSTUS;
@@ -513,7 +513,7 @@ namespace UWUVCI_AIO
                 WWEU_TXT.Text = Properties.Settings.Default.WWEU;
                 WWUS_TXT.Text = Properties.Settings.Default.WWUS;
             }
-            if(b == 1)
+            if (b == 1)
             {
                 if (ZSTEU_TXT.Text.GetHashCode() == -1633670821)
                 {
@@ -940,7 +940,7 @@ namespace UWUVCI_AIO
         }
         private void CheckGBAKeys(byte b)
         {
-            if(b == 0)
+            if (b == 0)
             {
                 ZMCEU_TXT.Text = Properties.Settings.Default.ZMCEU;
                 ZMCUS_TXT.Text = Properties.Settings.Default.ZMCUS;

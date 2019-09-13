@@ -74,7 +74,7 @@ namespace UWUVCI_AIO
             meta = false;
             INJCT_ROM_path = null;
             ini_path = null;
-            for(int i = 0; i < bootimages.Count(); i++)
+            for (int i = 0; i < bootimages.Count(); i++)
             {
                 bootimages[i] = null;
             }
@@ -249,7 +249,7 @@ namespace UWUVCI_AIO
         }
         private void N64BRinfopanel(int b)
         {
-            if(b == 0)
+            if (b == 0)
             {
                 BaseROM = "Custom";
                 #region Panels
@@ -502,7 +502,7 @@ namespace UWUVCI_AIO
                 DKCUS.Enabled = false;
                 #endregion
             }
-            if(b == 4)
+            if (b == 4)
             {
                 SNESCUSTOM.Visible = false;
                 SMetroidEUPanel.Visible = false;
@@ -706,7 +706,7 @@ namespace UWUVCI_AIO
                     SMBUSCK.Text = "No CommonKey stored";
                     SMBUSCK.ForeColor = Color.Red;
                 }
-                if(tabControl1.SelectedIndex == 5) //SNES
+                if (tabControl1.SelectedIndex == 5) //SNES
                 {
                     SMEUCK.Image = Properties.Resources.X;
                     SMEEU_CKEY.Text = "No CommonKey stored";
@@ -1443,7 +1443,7 @@ namespace UWUVCI_AIO
 
         private void SNES_INST_Click(object sender, EventArgs e)
         {
-            if(Properties.Settings.Default.CommonKey == "")
+            if (Properties.Settings.Default.CommonKey == "")
             {
                 MessageBox.Show("To use this option you need to enter the CommonKey (Settings -> Set CommonKey)");
 
@@ -2593,7 +2593,7 @@ namespace UWUVCI_AIO
         }
         private void NDSBRinfopanel ( int b)
         {
-            if(b == 0)
+            if (b == 0)
             {
                 BaseROM = "Custom";
                 #region Panels

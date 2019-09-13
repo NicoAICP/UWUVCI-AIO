@@ -42,7 +42,7 @@ namespace UWUVCI_AIO
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           if(comboBox1.SelectedIndex == 0)
+           if (comboBox1.SelectedIndex == 0)
             {
                 language = "en-US";
 
