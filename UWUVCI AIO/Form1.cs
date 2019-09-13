@@ -1,5 +1,4 @@
-﻿using AutoUpdaterDotNET;
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
@@ -8,6 +7,8 @@ using System.Linq;
 using System.Reflection;
 using System.Threading;
 using System.Windows.Forms;
+using AutoUpdaterDotNET;
+using UWUVCI_AIO.Properties;
 
 namespace UWUVCI_AIO
 {
@@ -635,101 +636,101 @@ namespace UWUVCI_AIO
             {
                 if (tabControl1.SelectedIndex == 1) //NDS
                 {
-                    ZSTEUCKIMG.Image = Properties.Resources.yes;
+                    ZSTEUCKIMG.Image = Resources.yes;
                     ZSTEUCK.Text = "No CommonKey stored";
                     ZSTEUCK.ForeColor = Color.Red;
-                    ZSTUSCKIMG.Image = Properties.Resources.yes;
+                    ZSTUSCKIMG.Image = Resources.yes;
                     ZSTUSCK.Text = "No CommonKey stored";
                     ZSTUSCK.ForeColor = Color.Red;
-                    ZPHEUCKIMG.Image = Properties.Resources.yes;
+                    ZPHEUCKIMG.Image = Resources.yes;
                     ZPHEUCK.Text = "No CommonKey stored";
                     ZPHEUCK.ForeColor = Color.Red;
-                    ZPHUSCKIMG.Image = Properties.Resources.yes;
+                    ZPHUSCKIMG.Image = Resources.yes;
                     ZPHUSCK.Text = "No CommonKey stored";
                     ZPHUSCK.ForeColor = Color.Red;
-                    WWEUCKIMG.Image = Properties.Resources.yes;
+                    WWEUCKIMG.Image = Resources.yes;
                     WWEUCK.Text = "No CommonKey stored";
                     WWEUCK.ForeColor = Color.Red;
-                    WWUSCKIMG.Image = Properties.Resources.yes;
+                    WWUSCKIMG.Image = Resources.yes;
                     WWUSCK.Text = "No CommonKey stored";
                     WWUSCK.ForeColor = Color.Red;
                 }
                 if (tabControl1.SelectedIndex == 2) //N64
                 {
-                    PMEUCKIMG.Image = Properties.Resources.yes;
+                    PMEUCKIMG.Image = Resources.yes;
                     PMEUCK.Text = "No CommonKey stored";
                     PMEUCK.ForeColor = Color.Red;
-                    PMUSCKIMG.Image = Properties.Resources.yes;
+                    PMUSCKIMG.Image = Resources.yes;
                     PMUSCK.Text = "No CommonKey stored";
                     PMUSCK.ForeColor = Color.Red;
-                    FXZUSCKIMG.Image = Properties.Resources.yes;
+                    FXZUSCKIMG.Image = Resources.yes;
                     FZXUSCK.Text = "No CommonKey stored";
                     FZXUSCK.ForeColor = Color.Red;
-                    FZXJPCKIMG.Image = Properties.Resources.yes;
+                    FZXJPCKIMG.Image = Resources.yes;
                     FZXJPCK.Text = "No CommonKey stored";
                     FZXJPCK.ForeColor = Color.Red;
-                    DK64USCKIMG.Image = Properties.Resources.yes;
+                    DK64USCKIMG.Image = Resources.yes;
                     DK64USCK.Text = "No CommonKey stored";
                     DK64USCK.ForeColor = Color.Red;
-                    DK64EUCKIMG.Image = Properties.Resources.yes;
+                    DK64EUCKIMG.Image = Resources.yes;
                     DK64EUCK.Text = "No CommonKey stored";
                     DK64EUCK.ForeColor = Color.Red;
                 }
                 if (tabControl1.SelectedIndex == 3) //GBA
                 {
-                    ZMCEUCKIMG.Image = Properties.Resources.yes;
+                    ZMCEUCKIMG.Image = Resources.yes;
                     ZMCEUCK.Text = "No CommonKey stored";
                     ZMCEUCK.ForeColor = Color.Red;
-                    ZMCUSCKIMG.Image = Properties.Resources.yes;
+                    ZMCUSCKIMG.Image = Resources.yes;
                     ZMCUSCK.Text = "No CommonKey stored";
                     ZMCUSCK.ForeColor = Color.Red;
 
-                    MKCEUCKIMG.Image = Properties.Resources.yes;
+                    MKCEUCKIMG.Image = Resources.yes;
                     MKCEUCK.Text = "No CommonKey stored";
                     MKCEUCK.ForeColor = Color.Red;
-                    MKCUSCKIMG.Image = Properties.Resources.yes;
+                    MKCUSCKIMG.Image = Resources.yes;
                     MKCUSCK.Text = "No CommonKey stored";
                     MKCUSCK.ForeColor = Color.Red;
                 }
                 if (tabControl1.SelectedIndex == 4) //NES
                 {
-                    POEUCKIMG.Image = Properties.Resources.yes;
+                    POEUCKIMG.Image = Resources.yes;
                     POEUCK.Text = "No CommonKey stored";
                     POEUCK.ForeColor = Color.Red;
-                    POUSCKIMG.Image = Properties.Resources.yes;
+                    POUSCKIMG.Image = Resources.yes;
                     POUSCK.Text = "No CommonKey stored";
                     POUSCK.ForeColor = Color.Red;
-                    SMBEUCKIMG.Image = Properties.Resources.yes;
+                    SMBEUCKIMG.Image = Resources.yes;
                     SMBEUCK.Text = "No CommonKey stored";
                     SMBEUCK.ForeColor = Color.Red;
-                    SMBUSCKIMG.Image = Properties.Resources.yes;
+                    SMBUSCKIMG.Image = Resources.yes;
                     SMBUSCK.Text = "No CommonKey stored";
                     SMBUSCK.ForeColor = Color.Red;
                 }
                 if (tabControl1.SelectedIndex == 5) //SNES
                 {
-                    SMEUCK.Image = Properties.Resources.X;
+                    SMEUCK.Image = Resources.X;
                     SMEEU_CKEY.Text = "No CommonKey stored";
                     SMEEU_CKEY.ForeColor = Color.Red;
-                    SMUSCKEYIMG.Image = Properties.Resources.X;
+                    SMUSCKEYIMG.Image = Resources.X;
                     SMUSCKEY.Text = "No CommonKey stored";
                     SMUSCKEY.ForeColor = Color.Red;
-                    SMJPCKEYIMG.Image = Properties.Resources.X;
+                    SMJPCKEYIMG.Image = Resources.X;
                     SMJPCKEY.Text = "No CommonKey stored";
                     SMJPCKEY.ForeColor = Color.Red;
-                    EBEU_CKIMG.Image = Properties.Resources.X;
+                    EBEU_CKIMG.Image = Resources.X;
                     EBEU_CK.Text = "No CommonKey stored";
                     EBEU_CK.ForeColor = Color.Red;
-                    EBUS_CKIMG.Image = Properties.Resources.X;
+                    EBUS_CKIMG.Image = Resources.X;
                     EBUS_CK.Text = "No CommonKey stored";
                     EBUS_CK.ForeColor = Color.Red;
-                    EBJP_CKIMG.Image = Properties.Resources.X;
+                    EBJP_CKIMG.Image = Resources.X;
                     EBJP_CK.Text = "No CommonKey stored";
                     EBJP_CK.ForeColor = Color.Red;
-                    DKCEU_CKIMG.Image = Properties.Resources.X;
+                    DKCEU_CKIMG.Image = Resources.X;
                     DKCEU_CK.Text = "No CommonKey stored";
                     DKCEU_CK.ForeColor = Color.Red;
-                    DKCUS_CKIMG.Image = Properties.Resources.X;
+                    DKCUS_CKIMG.Image = Resources.X;
                     DKCUS_CK.Text = "No CommonKey stored";
                     DKCUS_CK.ForeColor = Color.Red;
                 }
@@ -739,101 +740,101 @@ namespace UWUVCI_AIO
             {
                 if (tabControl1.SelectedIndex == 1) //NDS
                 {
-                    ZSTEUCKIMG.Image = Properties.Resources.yes;
+                    ZSTEUCKIMG.Image = Resources.yes;
                     ZSTEUCK.Text = "CommonKey found";
                     ZSTEUCK.ForeColor = Color.FromArgb(0, 127, 14);
-                    ZSTUSCKIMG.Image = Properties.Resources.yes;
+                    ZSTUSCKIMG.Image = Resources.yes;
                     ZSTUSCK.Text = "CommonKey found";
                     ZSTUSCK.ForeColor = Color.FromArgb(0, 127, 14);
-                    ZPHEUCKIMG.Image = Properties.Resources.yes;
+                    ZPHEUCKIMG.Image = Resources.yes;
                     ZPHEUCK.Text = "CommonKey found";
                     ZPHEUCK.ForeColor = Color.FromArgb(0, 127, 14);
-                    ZPHUSCKIMG.Image = Properties.Resources.yes;
+                    ZPHUSCKIMG.Image = Resources.yes;
                     ZPHUSCK.Text = "CommonKey found";
                     ZPHUSCK.ForeColor = Color.FromArgb(0, 127, 14);
-                    WWEUCKIMG.Image = Properties.Resources.yes;
+                    WWEUCKIMG.Image = Resources.yes;
                     WWEUCK.Text = "CommonKey found";
                     WWEUCK.ForeColor = Color.FromArgb(0, 127, 14);
-                    WWUSCKIMG.Image = Properties.Resources.yes;
+                    WWUSCKIMG.Image = Resources.yes;
                     WWUSCK.Text = "CommonKey found";
                     WWUSCK.ForeColor = Color.FromArgb(0, 127, 14);
                 }
                 if (tabControl1.SelectedIndex == 2) //N64
                 {
-                    PMEUCKIMG.Image = Properties.Resources.yes;
+                    PMEUCKIMG.Image = Resources.yes;
                     PMEUCK.Text = "CommonKey found";
                     PMEUCK.ForeColor = Color.FromArgb(0, 127, 14);
-                    PMUSCKIMG.Image = Properties.Resources.yes;
+                    PMUSCKIMG.Image = Resources.yes;
                     PMUSCK.Text = "CommonKey found";
                     PMUSCK.ForeColor = Color.FromArgb(0, 127, 14);
-                    FXZUSCKIMG.Image = Properties.Resources.yes;
+                    FXZUSCKIMG.Image = Resources.yes;
                     FZXUSCK.Text = "CommonKey found";
                     FZXUSCK.ForeColor = Color.FromArgb(0, 127, 14);
-                    FZXJPCKIMG.Image = Properties.Resources.yes;
+                    FZXJPCKIMG.Image = Resources.yes;
                     FZXJPCK.Text = "CommonKey found";
                     FZXJPCK.ForeColor = Color.FromArgb(0, 127, 14);
-                    DK64EUCKIMG.Image = Properties.Resources.yes;
+                    DK64EUCKIMG.Image = Resources.yes;
                     DK64EUCK.Text = "CommonKey found";
                     DK64EUCK.ForeColor = Color.FromArgb(0, 127, 14);
-                    DK64USCKIMG.Image = Properties.Resources.yes;
+                    DK64USCKIMG.Image = Resources.yes;
                     DK64USCK.Text = "CommonKey found";
                     DK64USCK.ForeColor = Color.FromArgb(0, 127, 14);
                 }
                 if (tabControl1.SelectedIndex == 3) //GBA
                 {
-                    ZMCEUCKIMG.Image = Properties.Resources.yes;
+                    ZMCEUCKIMG.Image = Resources.yes;
                     ZMCEUCK.Text = "CommonKey found";
                     ZMCEUCK.ForeColor = Color.FromArgb(0, 127, 14);
-                    ZMCUSCKIMG.Image = Properties.Resources.yes;
+                    ZMCUSCKIMG.Image = Resources.yes;
                     ZMCUSCK.Text = "CommonKey found";
                     ZMCUSCK.ForeColor = Color.FromArgb(0, 127, 14);
 
-                    MKCEUCKIMG.Image = Properties.Resources.yes;
+                    MKCEUCKIMG.Image = Resources.yes;
                     MKCEUCK.Text = "CommonKey found";
                     MKCEUCK.ForeColor = Color.FromArgb(0, 127, 14);
-                    MKCUSCKIMG.Image = Properties.Resources.yes;
+                    MKCUSCKIMG.Image = Resources.yes;
                     MKCUSCK.Text = "CommonKey found";
                     MKCUSCK.ForeColor = Color.FromArgb(0, 127, 14);
                 }
                 if (tabControl1.SelectedIndex == 4) //NES
                 {
-                    POEUCKIMG.Image = Properties.Resources.yes;
+                    POEUCKIMG.Image = Resources.yes;
                     POEUCK.Text = "CommonKey found";
                     POEUCK.ForeColor = Color.FromArgb(0, 127, 14);
-                    POUSCKIMG.Image = Properties.Resources.yes;
+                    POUSCKIMG.Image = Resources.yes;
                     POUSCK.Text = "CommonKey found";
                     POUSCK.ForeColor = Color.FromArgb(0, 127, 14);
-                    SMBEUCKIMG.Image = Properties.Resources.yes;
+                    SMBEUCKIMG.Image = Resources.yes;
                     SMBEUCK.Text = "CommonKey found";
                     SMBEUCK.ForeColor = Color.FromArgb(0, 127, 14);
-                    SMBUSCKIMG.Image = Properties.Resources.yes;
+                    SMBUSCKIMG.Image = Resources.yes;
                     SMBUSCK.Text = "CommonKey found";
                     SMBUSCK.ForeColor = Color.FromArgb(0, 127, 14);
                 }
                 if (tabControl1.SelectedIndex == 5) //SNES
                 {
-                    SMEUCK.Image = Properties.Resources.yes;
+                    SMEUCK.Image = Resources.yes;
                     SMEEU_CKEY.Text = "CommonKey found";
                     SMEEU_CKEY.ForeColor = Color.FromArgb(0, 127, 14);
-                    SMUSCKEYIMG.Image = Properties.Resources.yes;
+                    SMUSCKEYIMG.Image = Resources.yes;
                     SMUSCKEY.Text = "CommonKey found";
                     SMUSCKEY.ForeColor = Color.FromArgb(0, 127, 14);
-                    SMJPCKEYIMG.Image = Properties.Resources.yes;
+                    SMJPCKEYIMG.Image = Resources.yes;
                     SMJPCKEY.Text = "CommonKey found";
                     SMJPCKEY.ForeColor = Color.FromArgb(0, 127, 14);
-                    EBEU_CKIMG.Image = Properties.Resources.yes;
+                    EBEU_CKIMG.Image = Resources.yes;
                     EBEU_CK.Text = "CommonKey found";
                     EBEU_CK.ForeColor = Color.FromArgb(0, 127, 14);
-                    EBUS_CKIMG.Image = Properties.Resources.yes;
+                    EBUS_CKIMG.Image = Resources.yes;
                     EBUS_CK.Text = "CommonKey found";
                     EBUS_CK.ForeColor = Color.FromArgb(0, 127, 14);
-                    EBJP_CKIMG.Image = Properties.Resources.yes;
+                    EBJP_CKIMG.Image = Resources.yes;
                     EBJP_CK.Text = "CommonKey found";
                     EBJP_CK.ForeColor = Color.FromArgb(0, 127, 14);
-                    DKCEU_CKIMG.Image = Properties.Resources.yes;
+                    DKCEU_CKIMG.Image = Resources.yes;
                     DKCEU_CK.Text = "CommonKey found";
                     DKCEU_CK.ForeColor = Color.FromArgb(0, 127, 14);
-                    DKCUS_CKIMG.Image = Properties.Resources.yes;
+                    DKCUS_CKIMG.Image = Resources.yes;
                     DKCUS_CK.Text = "CommonKey found";
                     DKCUS_CK.ForeColor = Color.FromArgb(0, 127, 14);
                 }
@@ -894,37 +895,37 @@ namespace UWUVCI_AIO
             }
             if (code == false)
             {
-                SNESCODEIMG.Image = Properties.Resources.X;
+                SNESCODEIMG.Image = Resources.X;
                 SNESCODETXT.Text = "No code folder";
                 SNESCODETXT.ForeColor = Color.Red;
             }
             else
             {
-                SNESCODEIMG.Image = Properties.Resources.yes;
+                SNESCODEIMG.Image = Resources.yes;
                 SNESCODETXT.Text = "Code folder found";
                 SNESCODETXT.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (content == false)
             {
-                SNESCONTENTIMG.Image = Properties.Resources.X;
+                SNESCONTENTIMG.Image = Resources.X;
                 SNESCONTENTTXT.Text = "No content folder";
                 SNESCONTENTTXT.ForeColor = Color.Red;
             }
             else
             {
-                SNESCONTENTIMG.Image = Properties.Resources.yes;
+                SNESCONTENTIMG.Image = Resources.yes;
                 SNESCONTENTTXT.Text = "Content folder found";
                 SNESCONTENTTXT.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (meta == false)
             {
-                SNESMETAIMG.Image = Properties.Resources.X;
+                SNESMETAIMG.Image = Resources.X;
                 SNESMETATXT.Text = "No meta folder";
                 SNESMETATXT.ForeColor = Color.Red;
             }
             else
             {
-                SNESMETAIMG.Image = Properties.Resources.yes;
+                SNESMETAIMG.Image = Resources.yes;
                 SNESMETATXT.Text = "Meta folder found";
                 SNESMETATXT.ForeColor = Color.FromArgb(0, 127, 14);
             }
@@ -953,26 +954,26 @@ namespace UWUVCI_AIO
 
             if (Properties.Settings.Default.SMetroidEU == "")
             {
-                SMEUTK.Image = Properties.Resources.X;
+                SMEUTK.Image = Resources.X;
                 SMEU_TKEY.Text = "No TitleKey stored";
                 SMEU_TKEY.ForeColor = Color.Red;
             }
             else
             {
-                SMEUTK.Image = Properties.Resources.yes;
+                SMEUTK.Image = Resources.yes;
                 SMEU_TKEY.Text = "TitleKey found";
                 SMEU_TKEY.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/SMetroidEU"))
             {
-                SMEUBASE.Image = Properties.Resources.X;
+                SMEUBASE.Image = Resources.X;
                 SMETROIDEUFOLDER.Text = "Base not downloaded";
                 SMETROIDEUFOLDER.ForeColor = Color.Red;
                 SNES_INJCT.Enabled = false;
             }
             else
             {
-                SMEUBASE.Image = Properties.Resources.yes;
+                SMEUBASE.Image = Resources.yes;
                 SMETROIDEUFOLDER.Text = "Base downloaded";
                 SMETROIDEUFOLDER.ForeColor = Color.FromArgb(0, 127, 14);
                 SMEU_DWNLD.Visible = false;
@@ -1004,26 +1005,26 @@ namespace UWUVCI_AIO
 
             if (Properties.Settings.Default.SMetroidJP == "")
             {
-                SMJPTKIMG.Image = Properties.Resources.X;
+                SMJPTKIMG.Image = Resources.X;
                 SMJPTK.Text = "No TitleKey stored";
                 SMJPTK.ForeColor = Color.Red;
             }
             else
             {
-                SMEUTK.Image = Properties.Resources.yes;
+                SMEUTK.Image = Resources.yes;
                 SMEU_TKEY.Text = "TitleKey found";
                 SMEU_TKEY.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/SMetroidJP"))
             {
-                SMJPBASEIMG.Image = Properties.Resources.X;
+                SMJPBASEIMG.Image = Resources.X;
                 SMJPBASE.Text = "Base not downloaded";
                 SMJPBASE.ForeColor = Color.Red;
                 SNES_INJCT.Enabled = false;
             }
             else
             {
-                SMJPBASEIMG.Image = Properties.Resources.yes;
+                SMJPBASEIMG.Image = Resources.yes;
                 SMJPBASE.Text = "Base downloaded";
                 SMJPBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 SNES_INJCT.Enabled = true;
@@ -1084,26 +1085,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.SMetroidUS == "")
             {
-                SMUSTKEYIMG.Image = Properties.Resources.X;
+                SMUSTKEYIMG.Image = Resources.X;
                 SMUSTKEY.Text = "No TitleKey stored";
                 SMUSTKEY.ForeColor = Color.Red;
             }
             else
             {
-                SMUSTKEYIMG.Image = Properties.Resources.yes;
+                SMUSTKEYIMG.Image = Resources.yes;
                 SMUSTKEY.Text = "TitleKey found";
                 SMUSTKEY.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/SMetroidUS"))
             {
-                SMUSBASEIMG.Image = Properties.Resources.X;
+                SMUSBASEIMG.Image = Resources.X;
                 SMUSBASE.Text = "Base not downloaded";
                 SMUSBASE.ForeColor = Color.Red;
                 SNES_INJCT.Enabled = false;
             }
             else
             {
-                SMUSBASEIMG.Image = Properties.Resources.yes;
+                SMUSBASEIMG.Image = Resources.yes;
                 SMUSBASE.Text = "Base downloaded";
                 SMUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 SNES_INJCT.Enabled = true;
@@ -1482,26 +1483,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.EarthboundEU == "")
             {
-                EBEU_TKIMG.Image = Properties.Resources.X;
+                EBEU_TKIMG.Image = Resources.X;
                 EBEU_TK.Text = "No TitleKey stored";
                 EBEU_TK.ForeColor = Color.Red;
             }
             else
             {
-                EBEU_TKIMG.Image = Properties.Resources.yes;
+                EBEU_TKIMG.Image = Resources.yes;
                 EBEU_TK.Text = "TitleKey found";
                 EBEU_TK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/EarthboundEU"))
             {
-                EBEU_BASEIMG.Image = Properties.Resources.X;
+                EBEU_BASEIMG.Image = Resources.X;
                 EBEU_BASE.Text = "Base not downloaded";
                 EBEU_BASE.ForeColor = Color.Red;
                 SNES_INJCT.Enabled = false;
             }
             else
             {
-                EBEU_BASEIMG.Image = Properties.Resources.yes;
+                EBEU_BASEIMG.Image = Resources.yes;
                 EBEU_BASE.Text = "Base downloaded";
                 EBEU_BASE.ForeColor = Color.FromArgb(0, 127, 14);
                 EBEU_DWNLD.Visible = false;
@@ -1546,26 +1547,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.EarthboundUS == "")
             {
-                EBUS_TKIMG.Image = Properties.Resources.X;
+                EBUS_TKIMG.Image = Resources.X;
                 EBUS_TK.Text = "No TitleKey stored";
                 EBUS_TK.ForeColor = Color.Red;
             }
             else
             {
-                EBUS_TKIMG.Image = Properties.Resources.yes;
+                EBUS_TKIMG.Image = Resources.yes;
                 EBUS_TK.Text = "TitleKey found";
                 EBUS_TK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/EarthboundUS"))
             {
-                EBUS_BASEIMG.Image = Properties.Resources.X;
+                EBUS_BASEIMG.Image = Resources.X;
                 EBUS_BASE.Text = "Base not downloaded";
                 EBUS_BASE.ForeColor = Color.Red;
                 SNES_INJCT.Enabled = false;
             }
             else
             {
-                EBUS_BASEIMG.Image = Properties.Resources.yes;
+                EBUS_BASEIMG.Image = Resources.yes;
                 EBUS_BASE.Text = "Base downloaded";
                 EBUS_BASE.ForeColor = Color.FromArgb(0, 127, 14);
                 EBUS_DWNLD.Visible = false;
@@ -1600,26 +1601,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.EarthboundJP == "")
             {
-                EBJP_TKIMG.Image = Properties.Resources.X;
+                EBJP_TKIMG.Image = Resources.X;
                 EBJP_TK.Text = "No TitleKey stored";
                 EBJP_TK.ForeColor = Color.Red;
             }
             else
             {
-                EBJP_TKIMG.Image = Properties.Resources.yes;
+                EBJP_TKIMG.Image = Resources.yes;
                 EBJP_TK.Text = "TitleKey found";
                 EBJP_TK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/EarthboundJP"))
             {
-                EBJP_BASEIMG.Image = Properties.Resources.X;
+                EBJP_BASEIMG.Image = Resources.X;
                 EBJP_BASE.Text = "Base not downloaded";
                 EBJP_BASE.ForeColor = Color.Red;
                 SNES_INJCT.Enabled = false;
             }
             else
             {
-                EBJP_BASEIMG.Image = Properties.Resources.yes;
+                EBJP_BASEIMG.Image = Resources.yes;
                 EBJP_BASE.Text = "Base downloaded";
                 EBJP_BASE.ForeColor = Color.FromArgb(0, 127, 14);
                 EBJP_DWNLD.Visible = false;
@@ -1654,26 +1655,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.DKCEU == "")
             {
-                DKCEU_TKIMG.Image = Properties.Resources.X;
+                DKCEU_TKIMG.Image = Resources.X;
                 DKCEU_TK.Text = "No TitleKey stored";
                 DKCEU_TK.ForeColor = Color.Red;
             }
             else
             {
-                DKCEU_TKIMG.Image = Properties.Resources.yes;
+                DKCEU_TKIMG.Image = Resources.yes;
                 DKCEU_TK.Text = "TitleKey found";
                 DKCEU_TK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/DKCEU"))
             {
-                DKCEU_BASEIMG.Image = Properties.Resources.X;
+                DKCEU_BASEIMG.Image = Resources.X;
                 DKCEU_BASE.Text = "Base not downloaded";
                 DKCEU_BASE.ForeColor = Color.Red;
                 SNES_INJCT.Enabled = false;
             }
             else
             {
-                DKCEU_BASEIMG.Image = Properties.Resources.yes;
+                DKCEU_BASEIMG.Image = Resources.yes;
                 DKCEU_BASE.Text = "Base downloaded";
                 DKCEU_BASE.ForeColor = Color.FromArgb(0, 127, 14);
                 DKCEU_DWNLD.Visible = false;
@@ -1708,26 +1709,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.DKCUS == "")
             {
-                DKCUS_TKIMG.Image = Properties.Resources.X;
+                DKCUS_TKIMG.Image = Resources.X;
                 DKCUS_TK.Text = "No TitleKey stored";
                 DKCUS_TK.ForeColor = Color.Red;
             }
             else
             {
-                DKCUS_TKIMG.Image = Properties.Resources.yes;
+                DKCUS_TKIMG.Image = Resources.yes;
                 DKCUS_TK.Text = "TitleKey found";
                 DKCUS_TK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/DKCUS"))
             {
-                DKCUS_BASEIMG.Image = Properties.Resources.X;
+                DKCUS_BASEIMG.Image = Resources.X;
                 DKCUS_BASE.Text = "Base not downloaded";
                 DKCUS_BASE.ForeColor = Color.Red;
                 SNES_INJCT.Enabled = false;
             }
             else
             {
-                DKCUS_BASEIMG.Image = Properties.Resources.yes;
+                DKCUS_BASEIMG.Image = Resources.yes;
                 DKCUS_BASE.Text = "Base downloaded";
                 DKCUS_BASE.ForeColor = Color.FromArgb(0, 127, 14);
                 DKCUS_DWNLD.Visible = false;
@@ -2179,37 +2180,37 @@ namespace UWUVCI_AIO
             }
             if (code == false)
             {
-                N64CODEIMG.Image = Properties.Resources.X;
+                N64CODEIMG.Image = Resources.X;
                 N64CODE.Text = "No code folder";
                 N64CODE.ForeColor = Color.Red;
             }
             else
             {
-                N64CODEIMG.Image = Properties.Resources.yes;
+                N64CODEIMG.Image = Resources.yes;
                 N64CODE.Text = "Code folder found";
                 N64CODE.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (content == false)
             {
-                N64CONTENTIMG.Image = Properties.Resources.X;
+                N64CONTENTIMG.Image = Resources.X;
                 N64CONTENT.Text = "No content folder";
                 N64CONTENT.ForeColor = Color.Red;
             }
             else
             {
-                N64CONTENTIMG.Image = Properties.Resources.yes;
+                N64CONTENTIMG.Image = Resources.yes;
                 N64CONTENT.Text = "Content folder found";
                 N64CONTENT.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (meta == false)
             {
-                N64METAIMG.Image = Properties.Resources.X;
+                N64METAIMG.Image = Resources.X;
                 N64META.Text = "No meta folder";
                 N64META.ForeColor = Color.Red;
             }
             else
             {
-                N64METAIMG.Image = Properties.Resources.yes;
+                N64METAIMG.Image = Resources.yes;
                 N64META.Text = "Meta folder found";
                 N64META.ForeColor = Color.FromArgb(0, 127, 14);
             }
@@ -2265,26 +2266,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.PMEU == "")
             {
-                PMEUTKIMG.Image = Properties.Resources.X;
+                PMEUTKIMG.Image = Resources.X;
                 PMEUTK.Text = "No TitleKey stored";
                 PMEUTK.ForeColor = Color.Red;
             }
             else
             {
-                PMEUTKIMG.Image = Properties.Resources.yes;
+                PMEUTKIMG.Image = Resources.yes;
                 PMEUTK.Text = "TitleKey found";
                 PMEUTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/PMEU"))
             {
-                PMEUBASEIMG.Image = Properties.Resources.X;
+                PMEUBASEIMG.Image = Resources.X;
                 PMEUBASE.Text = "Base not downloaded";
                 PMEUBASE.ForeColor = Color.Red;
                 N64_BTN15.Enabled = false;
             }
             else
             {
-                PMEUBASEIMG.Image = Properties.Resources.yes;
+                PMEUBASEIMG.Image = Resources.yes;
                 PMEUBASE.Text = "Base downloaded";
                 PMEUBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 PMEU_DWNLD.Visible = false;
@@ -2319,26 +2320,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.PMUS == "")
             {
-                PMUSTKIMG.Image = Properties.Resources.X;
+                PMUSTKIMG.Image = Resources.X;
                 PMUSTK.Text = "No TitleKey stored";
                 PMUSTK.ForeColor = Color.Red;
             }
             else
             {
-                PMUSTKIMG.Image = Properties.Resources.yes;
+                PMUSTKIMG.Image = Resources.yes;
                 PMUSTK.Text = "TitleKey found";
                 PMUSTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/PMUS"))
             {
-                PMUSBASEIMG.Image = Properties.Resources.X;
+                PMUSBASEIMG.Image = Resources.X;
                 PMUSBASE.Text = "Base not downloaded";
                 PMUSBASE.ForeColor = Color.Red;
                 N64_BTN15.Enabled = false;
             }
             else
             {
-                PMUSBASEIMG.Image = Properties.Resources.yes;
+                PMUSBASEIMG.Image = Resources.yes;
                 PMUSBASE.Text = "Base downloaded";
                 PMUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 PMUS_DWNLD.Visible = false;
@@ -2373,26 +2374,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.FZXUS == "")
             {
-                FZXUSTKIMG.Image = Properties.Resources.X;
+                FZXUSTKIMG.Image = Resources.X;
                 FZXUSTK.Text = "No TitleKey stored";
                 FZXUSTK.ForeColor = Color.Red;
             }
             else
             {
-                FZXUSTKIMG.Image = Properties.Resources.yes;
+                FZXUSTKIMG.Image = Resources.yes;
                 FZXUSTK.Text = "TitleKey found";
                 FZXUSTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/FZXUS"))
             {
-                FZXUSBASEIMG.Image = Properties.Resources.X;
+                FZXUSBASEIMG.Image = Resources.X;
                 FZXUSBASE.Text = "Base not downloaded";
                 FZXUSBASE.ForeColor = Color.Red;
                 N64_BTN15.Enabled = false;
             }
             else
             {
-                FZXUSBASEIMG.Image = Properties.Resources.yes;
+                FZXUSBASEIMG.Image = Resources.yes;
                 FZXUSBASE.Text = "Base downloaded";
                 FZXUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 FZXUS_DWNLD.Visible = false;
@@ -2427,26 +2428,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.FZXJP == "")
             {
-                FZXJPTKIMG.Image = Properties.Resources.X;
+                FZXJPTKIMG.Image = Resources.X;
                 FZXJPTK.Text = "No TitleKey stored";
                 FZXJPTK.ForeColor = Color.Red;
             }
             else
             {
-                FZXJPTKIMG.Image = Properties.Resources.yes;
+                FZXJPTKIMG.Image = Resources.yes;
                 FZXJPTK.Text = "TitleKey found";
                 FZXJPTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/FZXJP"))
             {
-                FZXJPBASEIMG.Image = Properties.Resources.X;
+                FZXJPBASEIMG.Image = Resources.X;
                 FZXJPBASE.Text = "Base not downloaded";
                 FZXJPBASE.ForeColor = Color.Red;
                 N64_BTN15.Enabled = false;
             }
             else
             {
-                FZXJPBASEIMG.Image = Properties.Resources.yes;
+                FZXJPBASEIMG.Image = Resources.yes;
                 FZXJPBASE.Text = "Base downloaded";
                 FZXJPBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 FZXJP_DWNLD.Visible = false;
@@ -2481,26 +2482,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.DK64EU == "")
             {
-                DK64EUTKIMG.Image = Properties.Resources.X;
+                DK64EUTKIMG.Image = Resources.X;
                 DK64EUTK.Text = "No TitleKey stored";
                 DK64EUTK.ForeColor = Color.Red;
             }
             else
             {
-                DK64EUTKIMG.Image = Properties.Resources.yes;
+                DK64EUTKIMG.Image = Resources.yes;
                 DK64EUTK.Text = "TitleKey found";
                 DK64EUTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/DK64EU"))
             {
-                DK64EUBASEIMG.Image = Properties.Resources.X;
+                DK64EUBASEIMG.Image = Resources.X;
                 DK64EUBASE.Text = "Base not downloaded";
                 DK64EUBASE.ForeColor = Color.Red;
                 N64_BTN15.Enabled = false;
             }
             else
             {
-                DK64EUBASEIMG.Image = Properties.Resources.yes;
+                DK64EUBASEIMG.Image = Resources.yes;
                 DK64EUBASE.Text = "Base downloaded";
                 DK64EUBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 DK64EU_DWNLD.Visible = false;
@@ -2535,26 +2536,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.DK64US == "")
             {
-                DK64USTKIMG.Image = Properties.Resources.X;
+                DK64USTKIMG.Image = Resources.X;
                 DK64USTK.Text = "No TitleKey stored";
                 DK64USTK.ForeColor = Color.Red;
             }
             else
             {
-                DK64USTKIMG.Image = Properties.Resources.yes;
+                DK64USTKIMG.Image = Resources.yes;
                 DK64USTK.Text = "TitleKey found";
                 DK64USTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/DK64US"))
             {
-                DK64USBASEIMG.Image = Properties.Resources.X;
+                DK64USBASEIMG.Image = Resources.X;
                 DK64USBASE.Text = "Base not downloaded";
                 DK64USBASE.ForeColor = Color.Red;
                 N64_BTN15.Enabled = false;
             }
             else
             {
-                DK64USBASEIMG.Image = Properties.Resources.yes;
+                DK64USBASEIMG.Image = Resources.yes;
                 DK64USBASE.Text = "Base downloaded";
                 DK64USBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 DK64US_DWNLD.Visible = false;
@@ -2911,37 +2912,37 @@ namespace UWUVCI_AIO
             }
             if (code == false)
             {
-                NDSCODEIMG.Image = Properties.Resources.X;
+                NDSCODEIMG.Image = Resources.X;
                 NDSCODE.Text = "No code folder";
                 NDSCODE.ForeColor = Color.Red;
             }
             else
             {
-                NDSCODEIMG.Image = Properties.Resources.yes;
+                NDSCODEIMG.Image = Resources.yes;
                 NDSCODE.Text = "Code folder found";
                 NDSCODE.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (content == false)
             {
-                NDSCONTENTIMG.Image = Properties.Resources.X;
+                NDSCONTENTIMG.Image = Resources.X;
                 NDSCONTENT.Text = "No content folder";
                 NDSCONTENT.ForeColor = Color.Red;
             }
             else
             {
-                NDSCONTENTIMG.Image = Properties.Resources.yes;
+                NDSCONTENTIMG.Image = Resources.yes;
                 NDSCONTENT.Text = "Content folder found";
                 NDSCONTENT.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (meta == false)
             {
-                NDSMETAIMG.Image = Properties.Resources.X;
+                NDSMETAIMG.Image = Resources.X;
                 NDSMETA.Text = "No meta folder";
                 NDSMETA.ForeColor = Color.Red;
             }
             else
             {
-                NDSMETAIMG.Image = Properties.Resources.yes;
+                NDSMETAIMG.Image = Resources.yes;
                 NDSMETA.Text = "Meta folder found";
                 NDSMETA.ForeColor = Color.FromArgb(0, 127, 14);
             }
@@ -2956,26 +2957,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.ZSTEU == "")
             {
-                ZSTEUTKIMG.Image = Properties.Resources.X;
+                ZSTEUTKIMG.Image = Resources.X;
                 ZSTEUTK.Text = "No TitleKey stored";
                 ZSTEUTK.ForeColor = Color.Red;
             }
             else
             {
-                ZSTEUTKIMG.Image = Properties.Resources.yes;
+                ZSTEUTKIMG.Image = Resources.yes;
                 ZSTEUTK.Text = "TitleKey found";
                 ZSTEUTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/ZSTEU"))
             {
-                ZSTEUBASEIMG.Image = Properties.Resources.X;
+                ZSTEUBASEIMG.Image = Resources.X;
                 ZSTEUBASE.Text = "Base not downloaded";
                 ZSTEUBASE.ForeColor = Color.Red;
                 NDS_BTN15.Enabled = false;
             }
             else
             {
-                ZSTEUBASEIMG.Image = Properties.Resources.yes;
+                ZSTEUBASEIMG.Image = Resources.yes;
                 ZSTEUBASE.Text = "Base downloaded";
                 ZSTEUBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 ZSTEU_BTN.Visible = false;
@@ -3005,26 +3006,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.ZSTUS == "")
             {
-                ZSTUSTKIMG.Image = Properties.Resources.X;
+                ZSTUSTKIMG.Image = Resources.X;
                 ZSTUSTK.Text = "No TitleKey stored";
                 ZSTUSTK.ForeColor = Color.Red;
             }
             else
             {
-                ZSTUSTKIMG.Image = Properties.Resources.yes;
+                ZSTUSTKIMG.Image = Resources.yes;
                 ZSTUSTK.Text = "TitleKey found";
                 ZSTUSTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/ZSTUS"))
             {
-                ZSTUSBASEIMG.Image = Properties.Resources.X;
+                ZSTUSBASEIMG.Image = Resources.X;
                 ZSTUSBASE.Text = "Base not downloaded";
                 ZSTUSBASE.ForeColor = Color.Red;
                 NDS_BTN15.Enabled = false;
             }
             else
             {
-                ZSTUSBASEIMG.Image = Properties.Resources.yes;
+                ZSTUSBASEIMG.Image = Resources.yes;
                 ZSTUSBASE.Text = "Base downloaded";
                 ZSTUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 ZSTUS_BTN.Visible = false;
@@ -3064,26 +3065,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.ZPHEU == "")
             {
-                ZPHEUTKIMG.Image = Properties.Resources.X;
+                ZPHEUTKIMG.Image = Resources.X;
                 ZPHEUTK.Text = "No TitleKey stored";
                 ZPHEUTK.ForeColor = Color.Red;
             }
             else
             {
-                ZPHEUTKIMG.Image = Properties.Resources.yes;
+                ZPHEUTKIMG.Image = Resources.yes;
                 ZPHEUTK.Text = "TitleKey found";
                 ZPHEUTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/ZPHEU"))
             {
-                ZPHEUBASEIMG.Image = Properties.Resources.X;
+                ZPHEUBASEIMG.Image = Resources.X;
                 ZPHEUBASE.Text = "Base not downloaded";
                 ZPHEUBASE.ForeColor = Color.Red;
                 NDS_BTN15.Enabled = false;
             }
             else
             {
-                ZPHEUBASEIMG.Image = Properties.Resources.yes;
+                ZPHEUBASEIMG.Image = Resources.yes;
                 ZPHEUBASE.Text = "Base downloaded";
                 ZPHEUBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 ZPHEU_BTN.Visible = false;
@@ -3113,26 +3114,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.ZPHUS == "")
             {
-                ZPHUSTKIMG.Image = Properties.Resources.X;
+                ZPHUSTKIMG.Image = Resources.X;
                 ZPHUSTK.Text = "No TitleKey stored";
                 ZPHUSTK.ForeColor = Color.Red;
             }
             else
             {
-                ZPHUSTKIMG.Image = Properties.Resources.yes;
+                ZPHUSTKIMG.Image = Resources.yes;
                 ZPHUSTK.Text = "TitleKey found";
                 ZPHUSTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/ZPHUS"))
             {
-                ZPHUSBASEIMG.Image = Properties.Resources.X;
+                ZPHUSBASEIMG.Image = Resources.X;
                 ZPHUSBASE.Text = "Base not downloaded";
                 ZPHUSBASE.ForeColor = Color.Red;
                 NDS_BTN15.Enabled = false;
             }
             else
             {
-                ZPHUSBASEIMG.Image = Properties.Resources.yes;
+                ZPHUSBASEIMG.Image = Resources.yes;
                 ZPHUSBASE.Text = "Base downloaded";
                 ZPHUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 ZPHUS_BTN.Visible = false;
@@ -3172,26 +3173,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.WWEU == "")
             {
-                WWEUTKIMG.Image = Properties.Resources.X;
+                WWEUTKIMG.Image = Resources.X;
                 WWEUTK.Text = "No TitleKey stored";
                 WWEUTK.ForeColor = Color.Red;
             }
             else
             {
-                WWEUTKIMG.Image = Properties.Resources.yes;
+                WWEUTKIMG.Image = Resources.yes;
                 WWEUTK.Text = "TitleKey found";
                 WWEUTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/WWEU"))
             {
-                WWEUBASEIMG.Image = Properties.Resources.X;
+                WWEUBASEIMG.Image = Resources.X;
                 WWEUBASE.Text = "Base not downloaded";
                 WWEUBASE.ForeColor = Color.Red;
                 NDS_BTN15.Enabled = false;
             }
             else
             {
-                WWEUBASEIMG.Image = Properties.Resources.yes;
+                WWEUBASEIMG.Image = Resources.yes;
                 WWEUBASE.Text = "Base downloaded";
                 WWEUBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 WWEU_BTN.Visible = false;
@@ -3221,26 +3222,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.WWUS == "")
             {
-                WWUSTKIMG.Image = Properties.Resources.X;
+                WWUSTKIMG.Image = Resources.X;
                 WWUSTK.Text = "No TitleKey stored";
                 WWUSTK.ForeColor = Color.Red;
             }
             else
             {
-                WWUSTKIMG.Image = Properties.Resources.yes;
+                WWUSTKIMG.Image = Resources.yes;
                 WWUSTK.Text = "TitleKey found";
                 WWUSTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/WWUS"))
             {
-                WWUSBASEIMG.Image = Properties.Resources.X;
+                WWUSBASEIMG.Image = Resources.X;
                 WWUSBASE.Text = "Base not downloaded";
                 WWUSBASE.ForeColor = Color.Red;
                 NDS_BTN15.Enabled = false;
             }
             else
             {
-                WWUSBASEIMG.Image = Properties.Resources.yes;
+                WWUSBASEIMG.Image = Resources.yes;
                 WWUSBASE.Text = "Base downloaded";
                 WWUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 WWUS_BTN.Visible = false;
@@ -3324,37 +3325,37 @@ namespace UWUVCI_AIO
             }
             if (code == false)
             {
-                NESCODEIMG.Image = Properties.Resources.X;
+                NESCODEIMG.Image = Resources.X;
                 NESCODE.Text = "No code folder";
                 NESCODE.ForeColor = Color.Red;
             }
             else
             {
-                NESCODEIMG.Image = Properties.Resources.yes;
+                NESCODEIMG.Image = Resources.yes;
                 NESCODE.Text = "Code folder found";
                 NESCODE.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (content == false)
             {
-                NESCONTENTIMG.Image = Properties.Resources.X;
+                NESCONTENTIMG.Image = Resources.X;
                 NESCONTENT.Text = "No content folder";
                 NESCONTENT.ForeColor = Color.Red;
             }
             else
             {
-                NESCONTENTIMG.Image = Properties.Resources.yes;
+                NESCONTENTIMG.Image = Resources.yes;
                 NESCONTENT.Text = "Content folder found";
                 NESCONTENT.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (meta == false)
             {
-                NESMETAIMG.Image = Properties.Resources.X;
+                NESMETAIMG.Image = Resources.X;
                 NESMETA.Text = "No meta folder";
                 NESMETA.ForeColor = Color.Red;
             }
             else
             {
-                NESMETAIMG.Image = Properties.Resources.yes;
+                NESMETAIMG.Image = Resources.yes;
                 NESMETA.Text = "Meta folder found";
                 NESMETA.ForeColor = Color.FromArgb(0, 127, 14);
             }
@@ -3369,26 +3370,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.POEU == "")
             {
-                POEUTKIMG.Image = Properties.Resources.X;
+                POEUTKIMG.Image = Resources.X;
                 POEUTK.Text = "No TitleKey stored";
                 POEUTK.ForeColor = Color.Red;
             }
             else
             {
-                POEUTKIMG.Image = Properties.Resources.yes;
+                POEUTKIMG.Image = Resources.yes;
                 POEUTK.Text = "TitleKey found";
                 POEUTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/POEU"))
             {
-                POEUBASEIMG.Image = Properties.Resources.X;
+                POEUBASEIMG.Image = Resources.X;
                 POEUBASE.Text = "Base not downloaded";
                 POEUBASE.ForeColor = Color.Red;
                 NES_INJCT.Enabled = false;
             }
             else
             {
-                POEUBASEIMG.Image = Properties.Resources.yes;
+                POEUBASEIMG.Image = Resources.yes;
                 POEUBASE.Text = "Base downloaded";
                 POEUBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 POEU_BTN.Visible = false;
@@ -3429,26 +3430,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.POUS == "")
             {
-                POUSTKIMG.Image = Properties.Resources.X;
+                POUSTKIMG.Image = Resources.X;
                 POUSTK.Text = "No TitleKey stored";
                 POUSTK.ForeColor = Color.Red;
             }
             else
             {
-                POUSTKIMG.Image = Properties.Resources.yes;
+                POUSTKIMG.Image = Resources.yes;
                 POUSTK.Text = "TitleKey found";
                 POUSTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/POUS"))
             {
-                POUSBASEIMG.Image = Properties.Resources.X;
+                POUSBASEIMG.Image = Resources.X;
                 POUSBASE.Text = "Base not downloaded";
                 POUSBASE.ForeColor = Color.Red;
                 NES_INJCT.Enabled = false;
             }
             else
             {
-                POUSBASEIMG.Image = Properties.Resources.yes;
+                POUSBASEIMG.Image = Resources.yes;
                 POUSBASE.Text = "Base downloaded";
                 POUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 POUS_BTN.Visible = false;
@@ -3478,26 +3479,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.SMBEU == "")
             {
-                SMBEUTKIMG.Image = Properties.Resources.X;
+                SMBEUTKIMG.Image = Resources.X;
                 SMBEUTK.Text = "No TitleKey stored";
                 SMBEUTK.ForeColor = Color.Red;
             }
             else
             {
-                SMBEUTKIMG.Image = Properties.Resources.yes;
+                SMBEUTKIMG.Image = Resources.yes;
                 SMBEUTK.Text = "TitleKey found";
                 SMBEUTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/SMBEU"))
             {
-                SMBEUBASEIMG.Image = Properties.Resources.X;
+                SMBEUBASEIMG.Image = Resources.X;
                 SMBEUBASE.Text = "Base not downloaded";
                 SMBEUBASE.ForeColor = Color.Red;
                 NES_INJCT.Enabled = false;
             }
             else
             {
-                SMBEUBASEIMG.Image = Properties.Resources.yes;
+                SMBEUBASEIMG.Image = Resources.yes;
                 SMBEUBASE.Text = "Base downloaded";
                 SMBEUBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 SMBEU_BTN.Visible = false;
@@ -3532,26 +3533,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.SMBUS == "")
             {
-                SMBUSTKIMG.Image = Properties.Resources.X;
+                SMBUSTKIMG.Image = Resources.X;
                 SMBUSTK.Text = "No TitleKey stored";
                 SMBUSTK.ForeColor = Color.Red;
             }
             else
             {
-                SMBUSTKIMG.Image = Properties.Resources.yes;
+                SMBUSTKIMG.Image = Resources.yes;
                 SMBUSTK.Text = "TitleKey found";
                 SMBUSTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/SMBUS"))
             {
-                SMBUSBASEIMG.Image = Properties.Resources.X;
+                SMBUSBASEIMG.Image = Resources.X;
                 SMBUSBASE.Text = "Base not downloaded";
                 SMBUSBASE.ForeColor = Color.Red;
                 NES_INJCT.Enabled = false;
             }
             else
             {
-                SMBUSBASEIMG.Image = Properties.Resources.yes;
+                SMBUSBASEIMG.Image = Resources.yes;
                 SMBUSBASE.Text = "Base downloaded";
                 SMBUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 SMBUS_BTN.Visible = false;
@@ -3744,37 +3745,37 @@ namespace UWUVCI_AIO
             }
             if (code == false)
             {
-                GBACODEIMG.Image = Properties.Resources.X;
+                GBACODEIMG.Image = Resources.X;
                 GBACODE.Text = "No code folder";
                 GBACODE.ForeColor = Color.Red;
             }
             else
             {
-                GBACODEIMG.Image = Properties.Resources.yes;
+                GBACODEIMG.Image = Resources.yes;
                 GBACODE.Text = "Code folder found";
                 GBACODE.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (content == false)
             {
-                GBACONTENTIMG.Image = Properties.Resources.X;
+                GBACONTENTIMG.Image = Resources.X;
                 GBACONTENT.Text = "No content folder";
                 GBACONTENT.ForeColor = Color.Red;
             }
             else
             {
-                GBACONTENTIMG.Image = Properties.Resources.yes;
+                GBACONTENTIMG.Image = Resources.yes;
                 GBACONTENT.Text = "Content folder found";
                 GBACONTENT.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (meta == false)
             {
-                GBAMETAIMG.Image = Properties.Resources.X;
+                GBAMETAIMG.Image = Resources.X;
                 GBAMETA.Text = "No meta folder";
                 GBAMETA.ForeColor = Color.Red;
             }
             else
             {
-                GBAMETAIMG.Image = Properties.Resources.yes;
+                GBAMETAIMG.Image = Resources.yes;
                 GBAMETA.Text = "Meta folder found";
                 GBAMETA.ForeColor = Color.FromArgb(0, 127, 14);
             }
@@ -3789,26 +3790,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.ZMCEU == "")
             {
-                ZMCEUTKIMG.Image = Properties.Resources.X;
+                ZMCEUTKIMG.Image = Resources.X;
                 ZMCEUTK.Text = "No TitleKey stored";
                 ZMCEUTK.ForeColor = Color.Red;
             }
             else
             {
-                ZMCEUTKIMG.Image = Properties.Resources.yes;
+                ZMCEUTKIMG.Image = Resources.yes;
                 ZMCEUTK.Text = "TitleKey found";
                 ZMCEUTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/ZMCEU"))
             {
-                ZMCEUBASEIMG.Image = Properties.Resources.X;
+                ZMCEUBASEIMG.Image = Resources.X;
                 ZMCEUBASE.Text = "Base not downloaded";
                 ZMCEUBASE.ForeColor = Color.Red;
                 GBA_INJECT.Enabled = false;
             }
             else
             {
-                ZMCEUBASEIMG.Image = Properties.Resources.yes;
+                ZMCEUBASEIMG.Image = Resources.yes;
                 ZMCEUBASE.Text = "Base downloaded";
                 ZMCEUBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 ZMCEU_BTN.Visible = false;
@@ -3843,26 +3844,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.ZMCUS == "")
             {
-                ZMCUSTKIMG.Image = Properties.Resources.X;
+                ZMCUSTKIMG.Image = Resources.X;
                 ZMCUSTK.Text = "No TitleKey stored";
                 ZMCUSTK.ForeColor = Color.Red;
             }
             else
             {
-                ZMCUSTKIMG.Image = Properties.Resources.yes;
+                ZMCUSTKIMG.Image = Resources.yes;
                 ZMCUSTK.Text = "TitleKey found";
                 ZMCUSTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/ZMCUS"))
             {
-                ZMCUSBASEIMG.Image = Properties.Resources.X;
+                ZMCUSBASEIMG.Image = Resources.X;
                 ZMCUSBASE.Text = "Base not downloaded";
                 ZMCUSBASE.ForeColor = Color.Red;
                 GBA_INJECT.Enabled = false;
             }
             else
             {
-                ZMCUSBASEIMG.Image = Properties.Resources.yes;
+                ZMCUSBASEIMG.Image = Resources.yes;
                 ZMCUSBASE.Text = "Base downloaded";
                 ZMCUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 ZMCUS_BTN.Visible = false;
@@ -3897,26 +3898,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.MKCEU == "")
             {
-                MKCEUTKIMG.Image = Properties.Resources.X;
+                MKCEUTKIMG.Image = Resources.X;
                 MKCEUTK.Text = "No TitleKey stored";
                 MKCEUTK.ForeColor = Color.Red;
             }
             else
             {
-                MKCEUTKIMG.Image = Properties.Resources.yes;
+                MKCEUTKIMG.Image = Resources.yes;
                 MKCEUTK.Text = "TitleKey found";
                 MKCEUTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/MKCEU"))
             {
-                MKCEUBASEIMG.Image = Properties.Resources.X;
+                MKCEUBASEIMG.Image = Resources.X;
                 MKCEUBASE.Text = "Base not downloaded";
                 MKCEUBASE.ForeColor = Color.Red;
                 GBA_INJECT.Enabled = false;
             }
             else
             {
-                MKCEUBASEIMG.Image = Properties.Resources.yes;
+                MKCEUBASEIMG.Image = Resources.yes;
                 MKCEUBASE.Text = "Base downloaded";
                 MKCEUBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 MKCEU_BTN.Visible = false;
@@ -3951,26 +3952,26 @@ namespace UWUVCI_AIO
         {
             if (Properties.Settings.Default.MKCUS == "")
             {
-                MKCUSTKIMG.Image = Properties.Resources.X;
+                MKCUSTKIMG.Image = Resources.X;
                 MKCUSTK.Text = "No TitleKey stored";
                 MKCUSTK.ForeColor = Color.Red;
             }
             else
             {
-                MKCUSTKIMG.Image = Properties.Resources.yes;
+                MKCUSTKIMG.Image = Resources.yes;
                 MKCUSTK.Text = "TitleKey found";
                 MKCUSTK.ForeColor = Color.FromArgb(0, 127, 14);
             }
             if (!Directory.Exists(Properties.Settings.Default.BaseRomPath + "/MKCUS"))
             {
-                MKCUSBASEIMG.Image = Properties.Resources.X;
+                MKCUSBASEIMG.Image = Resources.X;
                 MKCUSBASE.Text = "Base not downloaded";
                 MKCUSBASE.ForeColor = Color.Red;
                 GBA_INJECT.Enabled = false;
             }
             else
             {
-                MKCUSBASEIMG.Image = Properties.Resources.yes;
+                MKCUSBASEIMG.Image = Resources.yes;
                 MKCUSBASE.Text = "Base downloaded";
                 MKCUSBASE.ForeColor = Color.FromArgb(0, 127, 14);
                 MKCUS_BTN.Visible = false;

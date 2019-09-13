@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
-using System.Resources;
+using System.Windows.Forms;
 
 namespace UWUVCI_AIO
 {
@@ -35,7 +29,7 @@ namespace UWUVCI_AIO
 
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://gbatemp.net/members/nicoaicp.404553/");
+            Process.Start("https://gbatemp.net/members/nicoaicp.404553/");
         }
 
         private void Button1_Click(object sender, EventArgs e)
