@@ -510,7 +510,6 @@
             this.SMETROIDEU = new System.Windows.Forms.Timer(this.components);
             this.SMETROIDUS = new System.Windows.Forms.Timer(this.components);
             this.SMETROIDJP = new System.Windows.Forms.Timer(this.components);
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.EBEU = new System.Windows.Forms.Timer(this.components);
             this.EBUS = new System.Windows.Forms.Timer(this.components);
             this.EBJP = new System.Windows.Forms.Timer(this.components);
@@ -4127,10 +4126,6 @@
             // 
             this.SMETROIDJP.Tick += new System.EventHandler(this.SMETROIDJP_Tick);
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // EBEU
             // 
             this.EBEU.Tick += new System.EventHandler(this.Timer1_Tick);
@@ -4718,7 +4713,6 @@
         private System.Windows.Forms.Label SMJPBASE;
         private System.Windows.Forms.PictureBox SMJPBASEIMG;
         private System.Windows.Forms.Timer SMETROIDJP;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Timer EBEU;
         private System.Windows.Forms.Panel EBEU_PANEL;
         private System.Windows.Forms.Button EBEU_DWNLD;

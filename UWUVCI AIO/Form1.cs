@@ -40,7 +40,7 @@ namespace UWUVCI_AIO
 
             InitializeComponent();
 
-            if (Properties.Settings.Default.darkmode == true)
+            if (Properties.Settings.Default.darkmode)
             {
                 enableDarkMode();
             }
@@ -124,11 +124,6 @@ namespace UWUVCI_AIO
             tabControl1.SelectedIndex = 2; // 0 = Main, 1 = NDS, 2 = N64, 3 = GBA, 4 = NES, 5 = SNES
         }
 
-        private void Label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 1; // 0 = Main, 1 = NDS, 2 = N64, 3 = GBA, 4 = NES, 5 = SNES
@@ -141,12 +136,6 @@ namespace UWUVCI_AIO
             tabControl1.SelectedIndex = 0;
         }
 
-
-
-        private void TextBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void N64ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -1050,34 +1039,37 @@ namespace UWUVCI_AIO
         }
         private void SNES_ROM_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Opening romutil now. Load your SNES rom in it and check if the checkbox Header is checked. If thats the case click remove header and then okay. This will create a new file called <Gamename>_noheader.sfc/smc. Use this file. If its not the case, continue with your current rom.");
-            Process romutil = new Process();
-            romutil.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/romutil.exe");
-            romutil.Start();
-            romutil.WaitForExit();
-            openFileDialog1.Filter =  "SNES roms |*.sfc;*.smc";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            MessageBox.Show("Opening romutil now. Load your SNES rom in it and check if the checkbox \"Header\" is checked.\n" +
+                            "If that's the case, click \"Remove Header\" and then \"OK\". This will create a new file called <Gamename>_noheader.sfc/smc. Use this file." +
+                            " If the \"Header\" checkbox was not checked, continue with your current rom.");
+            using (Process romutil = new Process())
             {
-                textBox31.Text = openFileDialog1.FileName;
-                INJCT_ROM_path = textBox31.Text;
+                romutil.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/romutil.exe");
+                romutil.Start();
+                romutil.WaitForExit();
+            }
 
+            using (OpenFileDialog fileDialog = new OpenFileDialog())
+            {
+                fileDialog.Filter =  "SNES roms |*.sfc;*.smc";
+
+                if (fileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    INJCT_ROM_path = textBox31.Text = fileDialog.FileName;
+                }
             }
         }
 
         private void N64_BTN8_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "N64 Roms |*.n64;*.v64;*.z64" ;
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            using (OpenFileDialog fileDialog = new OpenFileDialog())
             {
-                textBox1.Text = openFileDialog1.FileName;
-                INJCT_ROM_path = textBox1.Text;
+                fileDialog.Filter = "N64 Roms |*.n64;*.v64;*.z64" ;
 
+                if (fileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    INJCT_ROM_path = textBox1.Text = fileDialog.FileName;
+                }
             }
         }
 
@@ -1359,80 +1351,26 @@ namespace UWUVCI_AIO
             path.Show();
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         #endregion
 
         private void SNES_TV_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox30.Text = openFileDialog1.FileName;
-                bootimages[0] = textBox30.Text;
-
-            }
+            bootimages[0] = textBox30.Text = SelectPngOrTgaFile();
         }
 
         private void SNES_DRC_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox29.Text = openFileDialog1.FileName;
-                bootimages[1] = textBox29.Text;
-
-            }
+            bootimages[1] = textBox29.Text = SelectPngOrTgaFile();
         }
 
         private void SNES_ICON_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox28.Text = openFileDialog1.FileName;
-                bootimages[2] = textBox28.Text;
-
-            }
+            bootimages[2] = textBox28.Text = SelectPngOrTgaFile();
         }
 
         private void SNES_LOGO_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.png;*.tga";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox27.Text = openFileDialog1.FileName;
-                bootimages[3] = textBox27.Text;
-
-            }
-        }
-
-        private void Button3_Click(object sender, EventArgs e)
-        {
-
+            bootimages[3] = textBox27.Text = SelectPngOrTgaFile();
         }
 
         private void SNES_INJCT_Click(object sender, EventArgs e)
@@ -1763,71 +1701,34 @@ namespace UWUVCI_AIO
 
         private void N64_BTN13_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox5.Text = openFileDialog1.FileName;
-                bootimages[2] = textBox5.Text;
-
-            }
+            bootimages[2] = textBox5.Text = SelectPngOrTgaFile();
         }
 
         private void N64_BTN14_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox6.Text = openFileDialog1.FileName;
-                bootimages[3] = textBox6.Text;
-
-            }
+            bootimages[3] = textBox6.Text = SelectPngOrTgaFile();
         }
 
         private void N64_BTN12_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox4.Text = openFileDialog1.FileName;
-                bootimages[1] = textBox4.Text;
-
-            }
+            bootimages[1] = textBox4.Text = SelectPngOrTgaFile();
         }
 
         private void N64_BTN11_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox3.Text = openFileDialog1.FileName;
-                bootimages[0] = textBox3.Text;
-
-            }
+            bootimages[0] = textBox3.Text = SelectPngOrTgaFile();
         }
 
         private void N64_BTN9_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Configuartion Files |*.INI";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            using (OpenFileDialog fileDialog = new OpenFileDialog())
             {
-                textBox2.Text = openFileDialog1.FileName;
-                ini_path = textBox6.Text;
+                fileDialog.Filter = "Configuration Files |*.INI";
 
+                if (fileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    ini_path = textBox2.Text = fileDialog.FileName;
+                }
             }
         }
 
@@ -1870,72 +1771,35 @@ namespace UWUVCI_AIO
 
         private void NDS_BTN10_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "NDS Roms |*.nds;*.srl";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            using (OpenFileDialog fileDialog = new OpenFileDialog())
             {
-                textBox14.Text = openFileDialog1.FileName;
-                INJCT_ROM_path = textBox14.Text;
+                fileDialog.Filter = "NDS Roms |*.nds;*.srl";
 
+                if (fileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    INJCT_ROM_path = textBox14.Text = fileDialog.FileName;
+                }
             }
         }
 
         private void NDS_BTN11_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox12.Text = openFileDialog1.FileName;
-                bootimages[0] = textBox12.Text;
-
-            }
+            bootimages[0] = textBox12.Text = SelectPngOrTgaFile();
         }
 
         private void NDS_BTN12_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox11.Text = openFileDialog1.FileName;
-                bootimages[1] = textBox11.Text;
-
-            }
+            bootimages[1] = textBox11.Text = SelectPngOrTgaFile();
         }
 
         private void NDS_BTN13_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox10.Text = openFileDialog1.FileName;
-                bootimages[2] = textBox10.Text;
-
-            }
+            bootimages[2] = textBox10.Text = SelectPngOrTgaFile();
         }
 
         private void NDS_BTN14_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox9.Text = openFileDialog1.FileName;
-                bootimages[3] = textBox9.Text;
-
-            }
+            bootimages[3] = textBox9.Text = SelectPngOrTgaFile();
         }
 
         private void NDS_BTN15_Click(object sender, EventArgs e)
@@ -1970,72 +1834,35 @@ namespace UWUVCI_AIO
 
         private void NES_ROM_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "NES Roms |*.nes";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            using (OpenFileDialog fileDialog = new OpenFileDialog())
             {
-                textBox25.Text = openFileDialog1.FileName;
-                INJCT_ROM_path = textBox25.Text;
+                fileDialog.Filter = "NES Roms |*.nes";
 
+                if (fileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    INJCT_ROM_path = textBox25.Text = fileDialog.FileName;
+                }
             }
         }
 
         private void NES_TV_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox24.Text = openFileDialog1.FileName;
-                bootimages[0] = textBox24.Text;
-
-            }
+            bootimages[0] = textBox24.Text = SelectPngOrTgaFile();
         }
 
         private void NES_DRC_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox23.Text = openFileDialog1.FileName;
-                bootimages[1] = textBox23.Text;
-
-            }
+            bootimages[1] = textBox23.Text = SelectPngOrTgaFile();
         }
 
         private void NES_ICON_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox22.Text = openFileDialog1.FileName;
-                bootimages[2] = textBox22.Text;
-
-            }
+            bootimages[2] = textBox22.Text = SelectPngOrTgaFile();
         }
 
         private void NES_LOGO_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox21.Text = openFileDialog1.FileName;
-                bootimages[3] = textBox21.Text;
-
-            }
+            bootimages[3] = textBox21.Text = SelectPngOrTgaFile();
         }
 
         private void NES_INJCT_Click(object sender, EventArgs e)
@@ -2100,72 +1927,35 @@ namespace UWUVCI_AIO
 
         private void GBA_ROM_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "GBA Roms |*.gba";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
+            using (OpenFileDialog fileDialog = new OpenFileDialog())
             {
-                textBox19.Text = openFileDialog1.FileName;
-                INJCT_ROM_path = textBox19.Text;
+                fileDialog.Filter = "GBA Roms |*.gba";
 
+                if (fileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    INJCT_ROM_path = textBox19.Text = fileDialog.FileName;
+                }
             }
         }
 
         private void GBA_TV_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox18.Text = openFileDialog1.FileName;
-                bootimages[0] = textBox18.Text;
-
-            }
+            bootimages[0] = textBox18.Text = SelectPngOrTgaFile();
         }
 
         private void GBA_DRC_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox17.Text = openFileDialog1.FileName;
-                bootimages[1] = textBox17.Text;
-
-            }
+            bootimages[1] = textBox17.Text = SelectPngOrTgaFile();
         }
 
         private void GBA_ICON_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox16.Text = openFileDialog1.FileName;
-                bootimages[2] = textBox16.Text;
-
-            }
+            bootimages[2] = textBox16.Text = SelectPngOrTgaFile();
         }
 
         private void GBA_LOGO_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Image Files |*.JPG;*.TGA";
-            openFileDialog1.FilterIndex = 1;
-            DialogResult result = openFileDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog1.FileName))
-            {
-                textBox15.Text = openFileDialog1.FileName;
-                bootimages[3] = textBox15.Text;
-
-            }
+            bootimages[3] = textBox15.Text = SelectPngOrTgaFile();
         }
 
         private void N64CSTMNFOLDERS_Tick(object sender, EventArgs e)
@@ -3992,8 +3782,16 @@ namespace UWUVCI_AIO
                     MKCUS_BTN.Cursor = Cursors.Default;
                     MKCUS_BTN.Enabled = true;
                 }
+            }
+        }
 
+        private static string SelectPngOrTgaFile()
+        {
+            using (OpenFileDialog fileDialog = new OpenFileDialog())
+            {
+                fileDialog.Filter = "Image Files |*.png;*.tga";
 
+                return (fileDialog.ShowDialog() == DialogResult.OK) ? fileDialog.FileName : null;
             }
         }
     }
