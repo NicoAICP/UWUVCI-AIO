@@ -127,4 +127,90 @@
   <data name="X" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BasePathInvalid" xml:space="preserve">
+    <value>The path for the BaseRoms shouldn't be the same as the Injected Games one.</value>
+  </data>
+  <data name="InjectionPathInvalid" xml:space="preserve">
+    <value>The path for Injected Games shouldn't be the same as the BaseRom one.</value>
+  </data>
+  <data name="PathSaved" xml:space="preserve">
+    <value>Path saved successfully!</value>
+  </data>
+  <data name="CorrectKey" xml:space="preserve">
+    <value>Correct Key</value>
+  </data>
+  <data name="IncorrectKey" xml:space="preserve">
+    <value>Incorrect Key</value>
+  </data>
+  <data name="TitlekeyCorrect" xml:space="preserve">
+    <value>The entered TitleKey for "{0}" is correct.</value>
+  </data>
+  <data name="TitlekeyIncorrect" xml:space="preserve">
+    <value>The entered TitleKey for "{0}" is incorrect.</value>
+  </data>
+  <data name="CommonkeyAlreadySet" xml:space="preserve">
+    <value>CommonKey is already set</value>
+  </data>
+  <data name="EnterAllPaths" xml:space="preserve">
+    <value>Please enter all paths (Settings -&gt; Paths) to be able to inject.</value>
+  </data>
+  <data name="InvalidCommonkey" xml:space="preserve">
+    <value>Invalid CommonKey provided</value>
+  </data>
+  <data name="InvalidKey" xml:space="preserve">
+    <value>Invalid Key</value>
+  </data>
+  <data name="ValidCommonkey" xml:space="preserve">
+    <value>CommonKey successfully set</value>
+  </data>
+  <data name="ValidKey" xml:space="preserve">
+    <value>Valid Key</value>
+  </data>
+  <data name="BaseDownloaded" xml:space="preserve">
+    <value>Base downloaded</value>
+  </data>
+  <data name="BaseNotDownloaded" xml:space="preserve">
+    <value>Base not downloaded</value>
+  </data>
+  <data name="CommonkeyNotSet" xml:space="preserve">
+    <value>No CommonKey stored</value>
+  </data>
+  <data name="CommonkeySet" xml:space="preserve">
+    <value>CommonKey found</value>
+  </data>
+  <data name="TitlekeyNotSet" xml:space="preserve">
+    <value>No TitleKey stored</value>
+  </data>
+  <data name="TitlekeySet" xml:space="preserve">
+    <value>TitleKey found</value>
+  </data>
+  <data name="FolderDoesNotExist" xml:space="preserve">
+    <value>{0} folder missing</value>
+  </data>
+  <data name="FolderExists" xml:space="preserve">
+    <value>{0} folder found</value>
+  </data>
+  <data name="CommonkeyNeeded" xml:space="preserve">
+    <value>To use this option you need to enter the CommonKey (Settings -&gt; Set CommonKey)</value>
+  </data>
+  <data name="InjectCreatedText" xml:space="preserve">
+    <value>Inject successfully created.
+You can find your inject here:
+{0}</value>
+  </data>
+  <data name="InjectionFinishedCaption" xml:space="preserve">
+    <value>Injection finished</value>
+  </data>
+  <data name="PackingFinished" xml:space="preserve">
+    <value>Packing finished</value>
+  </data>
+  <data name="InjectCreatedCaption" xml:space="preserve">
+    <value>Inject created</value>
+  </data>
+  <data name="InjectionFinishedText" xml:space="preserve">
+    <value>Injection finished successfully!</value>
+  </data>
+  <data name="AllPathsSet" xml:space="preserve">
+    <value>All paths set! You are now able to start injecting.</value>
+  </data>
 </root>

@@ -5,7 +5,7 @@
     <Setting Name="Language" Type="System.String" Scope="User">
       <Value Profile="(Default)">en-US</Value>
     </Setting>
-    <Setting Name="darkmode" Type="System.Boolean" Scope="User">
+    <Setting Name="DarkMode" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="CommonKey" Type="System.String" Scope="User">
@@ -33,9 +33,6 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="InjectionPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="WorkingPath" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="allpathset" Type="System.Boolean" Scope="User">

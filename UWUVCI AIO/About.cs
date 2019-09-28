@@ -1,30 +1,31 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Drawing;
-using System.Globalization;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace UWUVCI_AIO
 {
-
     public partial class About : Form
     {
+        private static Credits credits;
 
-        public string language = Properties.Settings.Default.Language;
         public About()
         {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
             InitializeComponent();
-            if (Properties.Settings.Default.darkmode)
+
+            if (Properties.Settings.Default.DarkMode)
             {
-                enableDarkMode();
+                EnableDarkMode();
             }
         }
 
-        private void About_Load(object sender, EventArgs e)
+        private void EnableDarkMode()
         {
-
+            this.BackColor = Color.FromArgb(50, 50, 50);
+            this.ForeColor = Color.WhiteSmoke;
+            CloseButton.ForeColor = Color.Black;
+            CreditsButton.ForeColor = Color.Black;
+            linkLabel1.LinkColor = Color.FromArgb(133, 255, 251);
         }
 
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -32,23 +33,22 @@ namespace UWUVCI_AIO
             Process.Start("https://gbatemp.net/members/nicoaicp.404553/");
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void CloseButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        private void enableDarkMode()
-        {
-            this.BackColor = Color.FromArgb(50, 50, 50);
-            this.ForeColor = Color.WhiteSmoke;
-            button1.ForeColor = Color.Black;
-            button2.ForeColor = Color.Black;
-            linkLabel1.LinkColor = Color.FromArgb(133, 255, 251);
-        }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void CreditsButton_Click(object sender, EventArgs e)
         {
-            Credits credits = new Credits();
-            credits.Show();
+            if (credits == null || credits.IsDisposed)
+            {
+                credits = new Credits();
+                credits.Show();
+            }
+            else
+            {
+                credits.Activate();
+            }
         }
     }
 }

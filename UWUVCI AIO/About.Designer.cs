@@ -33,11 +33,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.CloseButton = new System.Windows.Forms.Button();
+            this.CreditsButton = new System.Windows.Forms.Button();
+            this.UWUVCILogo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UWUVCILogo)).BeginInit();
             this.SuspendLayout();
             // 
             // linkLabel1
@@ -64,42 +64,43 @@
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
-            // button1
+            // CloseButton
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            resources.ApplyResources(this.CloseButton, "CloseButton");
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.UseVisualStyleBackColor = true;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
-            // button2
+            // CreditsButton
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            resources.ApplyResources(this.CreditsButton, "CreditsButton");
+            this.CreditsButton.Name = "CreditsButton";
+            this.CreditsButton.UseVisualStyleBackColor = true;
+            this.CreditsButton.Click += new System.EventHandler(this.CreditsButton_Click);
             // 
-            // pictureBox1
+            // UWUVCILogo
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            resources.ApplyResources(this.UWUVCILogo, "UWUVCILogo");
+            this.UWUVCILogo.Name = "UWUVCILogo";
+            this.UWUVCILogo.TabStop = false;
             // 
             // About
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.CreditsButton);
+            this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Controls.Add(this.UWUVCILogo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "About";
-            this.Load += new System.EventHandler(this.About_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UWUVCILogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,8 +112,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button CloseButton;
+        private System.Windows.Forms.Button CreditsButton;
+        private System.Windows.Forms.PictureBox UWUVCILogo;
     }
 }

@@ -37,7 +37,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 364);
+            this.label1.Size = new System.Drawing.Size(202, 338);
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
             // 
@@ -45,14 +45,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(224, 377);
+            this.ClientSize = new System.Drawing.Size(224, 355);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Credits";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Credits";
-            this.Load += new System.EventHandler(this.Credits_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

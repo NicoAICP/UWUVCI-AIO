@@ -123,7 +123,7 @@
 CNUSPacker by NicoAICP, Morilli
  - C# Port of NUSPacker by timogus
 
-inject_gba_c by Morilli 
+inject_gba_c (psb) by Morilli 
  - C Port of inject_gba by ajd4096
 
 N64Converter_C by Morilli
@@ -139,8 +139,6 @@ retroinject_c by Morilli
  - C Port of retroinject
 
 wiiurpxtool by 0CBH0
-
-SNES ROM Utility by takashi
 
 JNUSTOOL by Maschell
 

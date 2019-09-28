@@ -1,49 +1,38 @@
 ﻿using System;
 using System.Drawing;
-using System.Globalization;
-using System.Threading;
 using System.Windows.Forms;
+using UWUVCI_AIO.Properties;
 
 namespace UWUVCI_AIO
 {
     public partial class TitleKeyMenu : Form
     {
-        public string language = Properties.Settings.Default.Language;
-        public TitleKeyMenu(byte b)
+        public TitleKeyMenu(int index)
         {
             InitializeComponent();
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
-            tabControl1.SelectedIndex = b;
-            if (Properties.Settings.Default.darkmode == true)
+
+            tabControl1.SelectedIndex = index;
+            if (Properties.Settings.Default.DarkMode)
             {
-                enableDarkMode();
+                EnableDarkMode();
             }
-            CheckN64Keys(0);
-            CheckSNESKeys(0);
-            CheckNDSKeys(0);
-            CheckNESKeys(0);
-            CheckGBAKeys(0);
+            LoadFromSettings();
         }
 
-        private void TitleKeyMenu_Load(object sender, EventArgs e)
+        private void EnableDarkMode()
         {
-
-        }
-
-        private void enableDarkMode()
-        {
-            tabPage1.BackColor = Color.FromArgb(60, 60, 60);
-            tabPage2.BackColor = Color.FromArgb(60, 60, 60);
-            tabPage3.BackColor = Color.FromArgb(60, 60, 60);
-            tabPage4.BackColor = Color.FromArgb(60, 60, 60);
-            tabPage5.BackColor = Color.FromArgb(60, 60, 60);
+            NDSTabPage.BackColor = Color.FromArgb(60, 60, 60);
+            N64TabPage.BackColor = Color.FromArgb(60, 60, 60);
+            GBATabPage.BackColor = Color.FromArgb(60, 60, 60);
+            NESTabPage.BackColor = Color.FromArgb(60, 60, 60);
+            SNESTabPage.BackColor = Color.FromArgb(60, 60, 60);
             SNES1.BackColor = Color.FromArgb(60, 60, 60);
             SNES2.BackColor = Color.FromArgb(60, 60, 60);
-            tabPage1.ForeColor = Color.WhiteSmoke;
-            tabPage2.ForeColor = Color.WhiteSmoke;
-            tabPage3.ForeColor = Color.WhiteSmoke;
-            tabPage4.ForeColor = Color.WhiteSmoke;
-            tabPage5.ForeColor = Color.WhiteSmoke;
+            NDSTabPage.ForeColor = Color.WhiteSmoke;
+            N64TabPage.ForeColor = Color.WhiteSmoke;
+            GBATabPage.ForeColor = Color.WhiteSmoke;
+            NESTabPage.ForeColor = Color.WhiteSmoke;
+            SNESTabPage.ForeColor = Color.WhiteSmoke;
             SNES1.ForeColor = Color.WhiteSmoke;
             SNES2.ForeColor = Color.WhiteSmoke;
             PMEU.ForeColor = Color.Black;
@@ -77,809 +66,310 @@ namespace UWUVCI_AIO
             MKCEU.ForeColor = Color.Black;
             MKCUS.ForeColor = Color.Black;
         }
-        private void CheckN64Keys(byte b)
+
+        private void LoadFromSettings()
         {
-            if (b == 0)
-            {
-                PMEUtxt.Text = Properties.Settings.Default.PMEU;
-                PMUStxt.Text = Properties.Settings.Default.PMUS;
-                FZXUStxt.Text = Properties.Settings.Default.FZXUS;
-                DK64EUtxt.Text = Properties.Settings.Default.DK64EU;
-                DK64UStxt.Text = Properties.Settings.Default.DK64US;
-                FZXJPtxt.Text = Properties.Settings.Default.FZXJP;
-            }
-            // PAPER MARIO EU
-            if (b == 1)
-            {
-                if (PMEUtxt.Text.GetHashCode() == -551238474)
-                {
-                    Properties.Settings.Default.PMEU = PMEUtxt.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Paper Mario [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Paper Mario [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Paper Mario [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Paper Mario [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            // PAPER MARIO US
-            if (b == 2)
-            {
-                if (PMUStxt.Text.GetHashCode() == 519583299)
-                {
-                    Properties.Settings.Default.PMUS = PMUStxt.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Paper Mario [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Paper Mario [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Paper Mario [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Paper Mario [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            // F-ZERO X US
-            if (b == 3)
-            {
-                if (FZXUStxt.Text.GetHashCode() == -1036835128)
-                {
-                    Properties.Settings.Default.FZXUS = FZXUStxt.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for F-Zero X [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für F-Zero X [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for F-Zero X [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für F-Zero X [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            // DONKEY KONG 64 EU
-            if (b == 4)
-            {
-                if (DK64EUtxt.Text.GetHashCode() == -206720283)
-                {
-                    Properties.Settings.Default.DK64EU = DK64EUtxt.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Donkey Kong 64 [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Donkey Kong 64 [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Donkey Kong 64 [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Donkey Kong 64 [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            // DONKEY KONG 64 US
-            if (b == 5)
-            {
-                if (DK64UStxt.Text.GetHashCode() == 2018764825)
-                {
-                    Properties.Settings.Default.DK64US = DK64UStxt.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Donkey Kong 64 [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Donkey Kong 64 [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Donkey Kong 64 [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Donkey Kong 64 [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            // F-ZERO X JP                                    DONT QUESTION MY LISTING
-            if (b == 6)
-            {
-                if (FZXJPtxt.Text.GetHashCode() == -565957635)
-                {
-                    Properties.Settings.Default.FZXJP = FZXJPtxt.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for F-Zero X [JP] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für F-Zero X [JP] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for F-Zero X [JP] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für F-Zero X [JP] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
+            ZSTEU_TXT.Text = Properties.Settings.Default.ZSTEU;
+            ZSTUS_TXT.Text = Properties.Settings.Default.ZSTUS;
+            ZPHEU_TXT.Text = Properties.Settings.Default.ZPHEU;
+            ZPHUS_TXT.Text = Properties.Settings.Default.ZPHUS;
+            WWEU_TXT.Text = Properties.Settings.Default.WWEU;
+            WWUS_TXT.Text = Properties.Settings.Default.WWUS;
+            PMEUtxt.Text = Properties.Settings.Default.PMEU;
+            PMUStxt.Text = Properties.Settings.Default.PMUS;
+            FZXUStxt.Text = Properties.Settings.Default.FZXUS;
+            DK64EUtxt.Text = Properties.Settings.Default.DK64EU;
+            DK64UStxt.Text = Properties.Settings.Default.DK64US;
+            FZXJPtxt.Text = Properties.Settings.Default.FZXJP;
+            ZMCEU_TXT.Text = Properties.Settings.Default.ZMCEU;
+            ZMCUS_TXT.Text = Properties.Settings.Default.ZMCUS;
+            MKCEU_TXT.Text = Properties.Settings.Default.MKCEU;
+            MKCUS_TXT.Text = Properties.Settings.Default.MKCUS;
+            POEU_TXT.Text = Properties.Settings.Default.POEU;
+            POUS_TXT.Text = Properties.Settings.Default.POUS;
+            SMBEU_TXT.Text = Properties.Settings.Default.SMBEU;
+            SMBEU_TXT.Text = Properties.Settings.Default.SMBUS;
+            SMetroidEUtxt.Text = Properties.Settings.Default.SMetroidEU;
+            SMetroidUStxt.Text = Properties.Settings.Default.SMetroidUS;
+            SMetroidJPtxt.Text = Properties.Settings.Default.SMetroidJP;
+            EarthboundEUtxt.Text = Properties.Settings.Default.EarthboundEU;
+            EarthboundUStxt.Text = Properties.Settings.Default.EarthboundUS;
+            EarthboundJPtxt.Text = Properties.Settings.Default.EarthboundJP;
+            DKCEUtxt.Text = Properties.Settings.Default.DKCEU;
+            DKCUStxt.Text = Properties.Settings.Default.DKCUS;
         }
-        private void CheckSNESKeys(byte b)
+
+        private void CheckNDSKeys(int index)
         {
-            if (b == 0)
+            switch (index)
             {
-                SMetroidEUtxt.Text = Properties.Settings.Default.SMetroidEU;
-                SMetroidUStxt.Text = Properties.Settings.Default.SMetroidUS;
-                SMetroidJPtxt.Text = Properties.Settings.Default.SMetroidJP;
-                EarthboundEUtxt.Text = Properties.Settings.Default.EarthboundEU;
-                EarthboundUStxt.Text = Properties.Settings.Default.EarthboundUS;
-                EarthboundJPtxt.Text = Properties.Settings.Default.EarthboundJP;
-                DKCEUtxt.Text = Properties.Settings.Default.DKCEU;
-                DKCUStxt.Text = Properties.Settings.Default.DKCUS;
-            }
-            // SUPER METROID EU
-            if (b == 1)
-            {
-                if (SMetroidEUtxt.Text.GetHashCode() == -1533216561)
-                {
-                    Properties.Settings.Default.SMetroidEU = SMetroidEUtxt.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Super Metroid [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Super Metroid [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Super Metroid [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Super Metroid [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            // SUPER METROID US
-            if (b == 2)
-            {
-                if (SMetroidUStxt.Text.GetHashCode() == 533928700)
-                {
-                    Properties.Settings.Default.SMetroidUS = SMetroidUStxt.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Super Metroid [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Super Metroid [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Super Metroid [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Super Metroid [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            // スーパーメトロイド SUPER METROID JP
-            if (b == 3)
-            {
-                if (SMetroidJPtxt.Text.GetHashCode() == 1767332967)
-                {
-                    Properties.Settings.Default.SMetroidJP = SMetroidJPtxt.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for スーパーメトロイド (Super Metroid) [JP] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für スーパーメトロイド (Super Metroid) [JP] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for スーパーメトロイド (Super Metroid) [JP] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für スーパーメトロイド (Super Metroid) [JP] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            // EARTHBOUND EU
-            if (b == 4)
-            {
-                if (EarthboundEUtxt.Text.GetHashCode() == 922998333)
-                {
-                    Properties.Settings.Default.EarthboundEU = EarthboundEUtxt.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Earthbound [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Earthbound [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Earthbound [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Earthbound [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            // EARTHBOUND US
-            if (b == 5)
-            {
-                if (EarthboundUStxt.Text.GetHashCode() == 2126250902)
-                {
-                    Properties.Settings.Default.EarthboundUS = EarthboundUStxt.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Earthbound [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Earthbound [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Earthbound [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Earthbound [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            // MOTHER (EARTHBOUND) JP
-            if (b == 6)
-            {
-                if (EarthboundJPtxt.Text.GetHashCode() == 64041181)
-                {
-                    Properties.Settings.Default.EarthboundJP = EarthboundJPtxt.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for MOTHER [JP] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für MOTHER [JP] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for MOTHER [JP] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für MOTHER [JP] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            // DONKEY KONG COUNTRY EU
-            if (b == 7)
-            {
-                if (DKCEUtxt.Text.GetHashCode() == 2110524003)
-                {
-                    Properties.Settings.Default.DKCEU = DKCEUtxt.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Donkey Kong Country [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Donkey Kong Country [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Donkey Kong Country [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Donkey Kong Country [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            // DONKEY KONG COUNTRY US
-            if (b == 8)
-            {
-                if (DKCUStxt.Text.GetHashCode() == -1733982319)
-                {
-                    Properties.Settings.Default.DKCUS = DKCUStxt.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Donkey Kong Country [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Donkey Kong Country [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Donkey Kong Country [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Donkey Kong Country [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-        }
-        private void CheckNDSKeys(byte b)
-        {
-            if (b == 0)
-            {
-                ZSTEU_TXT.Text = Properties.Settings.Default.ZSTEU;
-                ZSTUS_TXT.Text = Properties.Settings.Default.ZSTUS;
-                ZPHEU_TXT.Text = Properties.Settings.Default.ZPHEU;
-                ZPHUS_TXT.Text = Properties.Settings.Default.ZPHUS;
-                WWEU_TXT.Text = Properties.Settings.Default.WWEU;
-                WWUS_TXT.Text = Properties.Settings.Default.WWUS;
-            }
-            if (b == 1)
-            {
-                if (ZSTEU_TXT.Text.GetHashCode() == -1633670821)
-                {
+                case 1 when ZSTEU_TXT.Text.GetHashCode() == -1633670821:
                     Properties.Settings.Default.ZSTEU = ZSTEU_TXT.Text;
                     Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Spirit Tracks [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Spirit Tracks [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Spirit Tracks [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Spirit Tracks [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            if (b == 2)
-            {
-                if (ZSTUS_TXT.Text.GetHashCode() == -532174495)
-                {
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "The Legend Of Zelda: Spirit Tracks [EU]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 1:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "The Legend Of Zelda: Spirit Tracks [EU]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                case 2 when ZSTUS_TXT.Text.GetHashCode() == -532174495:
                     Properties.Settings.Default.ZSTUS = ZSTUS_TXT.Text;
                     Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Spirit Tracks [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Spirit Tracks [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Spirit Tracks [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Spirit Tracks [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            if (b == 3)
-            {
-                if (ZPHEU_TXT.Text.GetHashCode() == 1694123503)
-                {
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "The Legend Of Zelda: Spirit Tracks [US]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 2:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "The Legend Of Zelda: Spirit Tracks [US]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                case 3 when ZPHEU_TXT.Text.GetHashCode() == 1694123503:
                     Properties.Settings.Default.ZPHEU = ZPHEU_TXT.Text;
                     Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Phantom Hourglass [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Phantom Hourglass [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Phantom Hourglass [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Phantom Hourglass [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            if (b == 4)
-            {
-                if (ZPHUS_TXT.Text.GetHashCode() == -997138256)
-                {
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "The Legend Of Zelda: Phantom Hourglass [EU]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 3:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "The Legend Of Zelda: Phantom Hourglass [EU]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                case 4 when ZPHUS_TXT.Text.GetHashCode() == -997138256:
                     Properties.Settings.Default.ZPHUS = ZPHUS_TXT.Text;
                     Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Phantom Hourglass [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Phantom Hourglass [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Phantom Hourglass [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Phantom Hourglass [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            if (b == 5)
-            {
-                if (WWEU_TXT.Text.GetHashCode() == 1477098714)
-                {
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "The Legend Of Zelda: Phantom Hourglass [US]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 4:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "The Legend Of Zelda: Phantom Hourglass [US]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                case 5 when WWEU_TXT.Text.GetHashCode() == 1477098714:
                     Properties.Settings.Default.WWEU = WWEU_TXT.Text;
                     Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Wario Ware: Touched! [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Wario Ware: Touched! [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Wario Ware: Touched! [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Wario Ware: Touched! [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            if (b == 6)
-            {
-                if (WWUS_TXT.Text.GetHashCode() == -829326562)
-                {
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Wario Ware: Touched! [EU]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 5:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Wario Ware: Touched! [EU]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                case 6 when WWUS_TXT.Text.GetHashCode() == -829326562:
                     Properties.Settings.Default.WWUS = WWUS_TXT.Text;
                     Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Wario Ware: Touched! [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Wario Ware: Touched! [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Wario Ware: Touched! [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Wario Ware: Touched! [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Wario Ware: Touched! [US]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 6:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Wario Ware: Touched! [US]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
             }
         }
-        private void CheckNESKeys(byte b)
+
+        private void CheckN64Keys(int index)
         {
-            if (b == 0)
+            switch (index)
             {
-                POEU_TXT.Text = Properties.Settings.Default.POEU;
-                POUS_TXT.Text = Properties.Settings.Default.POUS;
-                SMBEU_TXT.Text = Properties.Settings.Default.SMBEU;
-                SMBEU_TXT.Text = Properties.Settings.Default.SMBUS;
+                // PAPER MARIO EU
+                case 1 when PMEUtxt.Text.GetHashCode() == -551238474:
+                    Properties.Settings.Default.PMEU = PMEUtxt.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Paper Mario [EU]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 1:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Paper Mario [EU]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                // PAPER MARIO US
+                case 2 when PMUStxt.Text.GetHashCode() == 519583299:
+                    Properties.Settings.Default.PMUS = PMUStxt.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Paper Mario [US]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 2:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Paper Mario [US]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                // F-ZERO X US
+                case 3 when FZXUStxt.Text.GetHashCode() == -1036835128:
+                    Properties.Settings.Default.FZXUS = FZXUStxt.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "F-Zero X [US]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 3:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "F-Zero X [US]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                // F-ZERO X JP
+                case 4 when FZXJPtxt.Text.GetHashCode() == -565957635:
+                    Properties.Settings.Default.FZXJP = FZXJPtxt.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "F-Zero X [JP]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 4:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "F-Zero X [JP]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                // DONKEY KONG 64 EU
+                case 5 when DK64EUtxt.Text.GetHashCode() == -206720283:
+                    Properties.Settings.Default.DK64EU = DK64EUtxt.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Donkey Kong 64 [EU]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 5:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Donkey Kong 64 [EU]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                // DONKEY KONG 64 US
+                case 6 when DK64UStxt.Text.GetHashCode() == 2018764825:
+                    Properties.Settings.Default.DK64US = DK64UStxt.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Donkey Kong 64 [US]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 6:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Donkey Kong 64 [US]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
             }
-            if (b == 1)
+        }
+
+        private void CheckGBAKeys(int index)
+        {
+            switch (index)
             {
-                if (POEU_TXT.Text.GetHashCode() == 1686136738)
-                {
+                case 1 when ZMCEU_TXT.Text.GetHashCode() == 1694865495:
+                    Properties.Settings.Default.ZMCEU = ZMCEU_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "The Legend Of Zelda: Minish Cap [EU]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 1:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "The Legend Of Zelda: Minish Cap [EU]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                case 2 when ZMCUS_TXT.Text.GetHashCode() == 1378855071:
+                    Properties.Settings.Default.ZMCUS = ZMCUS_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "The Legend Of Zelda: Minish Cap [US]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 2:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "The Legend Of Zelda: Minish Cap [US]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                case 3 when MKCEU_TXT.Text.GetHashCode() == 1154633832:
+                    Properties.Settings.Default.MKCEU = MKCEU_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Mario Kart Super Circuit [EU]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 3:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Mario Kart Super Circuit [EU]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                case 4 when MKCUS_TXT.Text.GetHashCode() == 1495117536:
+                    Properties.Settings.Default.MKCUS = MKCUS_TXT.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Mario Kart Super Circuit [US]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 4:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Mario Kart Super Circuit [US]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+            }
+        }
+
+        private void CheckNESKeys(int index)
+        {
+            switch (index)
+            {
+                case 1 when POEU_TXT.Text.GetHashCode() == 1686136738:
                     Properties.Settings.Default.POEU = POEU_TXT.Text;
                     Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Punch-Out!! [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Punch-Out!! [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Punch-Out!! [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Punch-Out!! [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            if (b == 2)
-            {
-                if (POUS_TXT.Text.GetHashCode() == 683326464)
-                {
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Punch-Out!! [EU]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 1:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Punch-Out!! [EU]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                case 2 when POUS_TXT.Text.GetHashCode() == 683326464:
                     Properties.Settings.Default.POUS = POUS_TXT.Text;
                     Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Punch-Out!! Featuring Mr. Dream [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Punch-Out!! Featuring Mr. Dream [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Punch-Out!! Featuring Mr. Dream [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Punch-Out!! Featuring Mr. Dream [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            if (b == 3)
-            {
-                if (SMBEU_TXT.Text.GetHashCode() == 1339870877)
-                {
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Punch-Out!! Featuring Mr. Dream [US]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 2:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Punch-Out!! Featuring Mr. Dream [US]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                case 3 when SMBEU_TXT.Text.GetHashCode() == 1339870877:
                     Properties.Settings.Default.SMBEU = SMBEU_TXT.Text;
                     Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Super Mario Bros. [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Super Mario Bros. [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Super Mario Bros. [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Super Mario Bros. [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            if (b == 4)
-            {
-                if (SMBUS_TXT.Text.GetHashCode() == 1464579096)
-                {
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Super Mario Bros. [EU]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 3:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Super Mario Bros. [EU]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                case 4 when SMBUS_TXT.Text.GetHashCode() == 1464579096:
                     Properties.Settings.Default.SMBUS = SMBUS_TXT.Text;
                     Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Super Mario Bros. [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Super Mario Bros. [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Super Mario Bros. [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Super Mario Bros. [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Super Mario Bros. [US]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 4:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Super Mario Bros. [US]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
             }
         }
-        private void PMEU_Click(object sender, EventArgs e)
+
+        private void CheckSNESKeys(int b)
         {
-            CheckN64Keys(1);
-        }
-
-        private void PMUS_Click(object sender, EventArgs e)
-        {
-            CheckN64Keys(2);
-        }
-
-        private void FZX_Click(object sender, EventArgs e)
-        {
-            CheckN64Keys(3);
-        }
-
-        private void DKEU_Click(object sender, EventArgs e)
-        {
-            CheckN64Keys(4);
-        }
-
-        private void DKUS_Click(object sender, EventArgs e)
-        {
-            CheckN64Keys(5);
-        }
-
-        private void FZXJP_Click(object sender, EventArgs e)
-        {
-            CheckN64Keys(6);
-        }
-
-        private void Button8_Click(object sender, EventArgs e)
-        {
-            tabControl2.SelectedIndex = 0;
-        }
-
-        private void Button7_Click(object sender, EventArgs e)
-        {
-            tabControl2.SelectedIndex = 1;
-        }
-
-        private void DKCUS_Click_1(object sender, EventArgs e)
-        {
-            CheckSNESKeys(8);
-        }
-
-        private void DKCEU_Click_1(object sender, EventArgs e)
-        {
-            CheckSNESKeys(7);
-        }
-
-        private void SMetroidEU_Click(object sender, EventArgs e)
-        {
-            CheckSNESKeys(1);
-        }
-
-        private void SMetroidUS_Click(object sender, EventArgs e)
-        {
-            CheckSNESKeys(2);
-        }
-
-        private void SMetroidJP_Click(object sender, EventArgs e)
-        {
-            CheckSNESKeys(3);
-        }
-
-        private void EarthboundEU_Click(object sender, EventArgs e)
-        {
-            CheckSNESKeys(4);
-        }
-
-        private void EarthboundUS_Click(object sender, EventArgs e)
-        {
-            CheckSNESKeys(5);
-        }
-
-        private void EarthboundJP_Click(object sender, EventArgs e)
-        {
-            CheckSNESKeys(6);
-        }
-
-        private void TextBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SNES2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TabPage1_Click(object sender, EventArgs e)
-        {
-
+            switch (b)
+            {
+                // SUPER METROID EU
+                case 1 when SMetroidEUtxt.Text.GetHashCode() == -1533216561:
+                    Properties.Settings.Default.SMetroidEU = SMetroidEUtxt.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Super Metroid [EU]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 1:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Super Metroid [EU]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                // SUPER METROID US
+                case 2 when SMetroidUStxt.Text.GetHashCode() == 533928700:
+                    Properties.Settings.Default.SMetroidUS = SMetroidUStxt.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Super Metroid [US]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 2:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Super Metroid [US]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                // スーパーメトロイド SUPER METROID JP
+                case 3 when SMetroidJPtxt.Text.GetHashCode() == 1767332967:
+                    Properties.Settings.Default.SMetroidJP = SMetroidJPtxt.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "スーパーメトロイド (Super Metroid) [JP]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 3:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "スーパーメトロイド (Super Metroid) [JP]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                // EARTHBOUND EU
+                case 4 when EarthboundEUtxt.Text.GetHashCode() == 922998333:
+                    Properties.Settings.Default.EarthboundEU = EarthboundEUtxt.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Earthbound [EU]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 4:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Earthbound [EU]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                // EARTHBOUND US
+                case 5 when EarthboundUStxt.Text.GetHashCode() == 2126250902:
+                    Properties.Settings.Default.EarthboundUS = EarthboundUStxt.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Earthbound [US]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 5:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Earthbound [US]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                // MOTHER (EARTHBOUND) JP
+                case 6 when EarthboundJPtxt.Text.GetHashCode() == 64041181:
+                    Properties.Settings.Default.EarthboundJP = EarthboundJPtxt.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "MOTHER [JP]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 6:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "MOTHER [JP]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                // DONKEY KONG COUNTRY EU
+                case 7 when DKCEUtxt.Text.GetHashCode() == 2110524003:
+                    Properties.Settings.Default.DKCEU = DKCEUtxt.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Donkey Kong Country [EU]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 7:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Donkey Kong Country [EU]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+                // DONKEY KONG COUNTRY US
+                case 8 when DKCUStxt.Text.GetHashCode() == -1733982319:
+                    Properties.Settings.Default.DKCUS = DKCUStxt.Text;
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(string.Format(Resources.TitlekeyCorrect, "Donkey Kong Country [US]"), Resources.CorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 8:
+                    MessageBox.Show(string.Format(Resources.TitlekeyIncorrect, "Donkey Kong Country [US]"), Resources.IncorrectKey, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+            }
         }
 
         private void ZSPEU_Click(object sender, EventArgs e)
@@ -912,6 +402,56 @@ namespace UWUVCI_AIO
             CheckNDSKeys(6);
         }
 
+        private void PMEU_Click(object sender, EventArgs e)
+        {
+            CheckN64Keys(1);
+        }
+
+        private void PMUS_Click(object sender, EventArgs e)
+        {
+            CheckN64Keys(2);
+        }
+
+        private void FZX_Click(object sender, EventArgs e)
+        {
+            CheckN64Keys(3);
+        }
+
+        private void FZXJP_Click(object sender, EventArgs e)
+        {
+            CheckN64Keys(4);
+        }
+
+        private void DKEU_Click(object sender, EventArgs e)
+        {
+            CheckN64Keys(5);
+        }
+
+        private void DKUS_Click(object sender, EventArgs e)
+        {
+            CheckN64Keys(6);
+        }
+
+        private void ZMCEU_Click(object sender, EventArgs e)
+        {
+            CheckGBAKeys(1);
+        }
+
+        private void ZMCUS_Click(object sender, EventArgs e)
+        {
+            CheckGBAKeys(2);
+        }
+
+        private void MKCEU_Click(object sender, EventArgs e)
+        {
+            CheckGBAKeys(3);
+        }
+
+        private void MKCUS_Click(object sender, EventArgs e)
+        {
+            CheckGBAKeys(4);
+        }
+
         private void Button4_Click(object sender, EventArgs e)
         {
             CheckNESKeys(1);
@@ -931,142 +471,55 @@ namespace UWUVCI_AIO
         {
             CheckNESKeys(4);
         }
-        private void CheckGBAKeys(byte b)
+
+        private void Button8_Click(object sender, EventArgs e)
         {
-            if (b == 0)
-            {
-                ZMCEU_TXT.Text = Properties.Settings.Default.ZMCEU;
-                ZMCUS_TXT.Text = Properties.Settings.Default.ZMCUS;
-                MKCEU_TXT.Text = Properties.Settings.Default.MKCEU;
-                MKCUS_TXT.Text = Properties.Settings.Default.MKCUS;
-            }
-            if (b == 1)
-            {
-                if (ZMCEU_TXT.Text.GetHashCode() == 1694865495)
-                {
-                    Properties.Settings.Default.ZMCEU = ZMCEU_TXT.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Minish Cap [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Minish Cap [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Minish Cap [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Minish Cap [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            if (b == 2)
-            {
-                if (ZMCUS_TXT.Text.GetHashCode() == 1378855071)
-                {
-                    Properties.Settings.Default.ZMCUS = ZMCUS_TXT.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Minish Cap [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Minish Cap [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for The Legend Of Zelda: Minish Cap [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für The Legend Of Zelda: Minish Cap [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            if (b == 3)
-            {
-                if (MKCEU_TXT.Text.GetHashCode() == 1154633832)
-                {
-                    Properties.Settings.Default.MKCEU = MKCEU_TXT.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Mario Kart Super Circuit [EU] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Mario Kart Super Circuit [EU] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Mario Kart Super Circuit [EU] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Mario Kart Super Circuit [EU] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            if (b == 4)
-            {
-                if (MKCUS_TXT.Text.GetHashCode() == 1495117536)
-                {
-                    Properties.Settings.Default.MKCUS = MKCUS_TXT.Text;
-                    Properties.Settings.Default.Save();
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Mario Kart Super Circuit [US] is correct.", "Correct Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Mario Kart Super Circuit [US] ist richtig.", "Richtiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
-                else
-                {
-                    if (language == "en-US")
-                    {
-                        MessageBox.Show("The entered TitleKey for Mario Kart Super Circuit [US] is incorrect.", "Incorrect Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else if (language == "de-DE")
-                    {
-                        MessageBox.Show("Der eingegebene TitleKey für Mario Kart Super Circuit [US] ist falsch.", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-        }
-        private void ZMCEU_Click(object sender, EventArgs e)
-        {
-            CheckGBAKeys(1);
+            tabControl2.SelectedIndex = 0; // SNES page 1
         }
 
-        private void ZMCUS_Click(object sender, EventArgs e)
+        private void Button7_Click(object sender, EventArgs e)
         {
-            CheckGBAKeys(2);
+            tabControl2.SelectedIndex = 1; // SNES page 2
         }
 
-        private void MKCEU_Click(object sender, EventArgs e)
+        private void SMetroidEU_Click(object sender, EventArgs e)
         {
-            CheckGBAKeys(3);
+            CheckSNESKeys(1);
         }
 
-        private void MKCUS_Click(object sender, EventArgs e)
+        private void SMetroidUS_Click(object sender, EventArgs e)
         {
-            CheckGBAKeys(4);
+            CheckSNESKeys(2);
+        }
+
+        private void SMetroidJP_Click(object sender, EventArgs e)
+        {
+            CheckSNESKeys(3);
+        }
+
+        private void EarthboundEU_Click(object sender, EventArgs e)
+        {
+            CheckSNESKeys(4);
+        }
+
+        private void EarthboundUS_Click(object sender, EventArgs e)
+        {
+            CheckSNESKeys(5);
+        }
+
+        private void EarthboundJP_Click(object sender, EventArgs e)
+        {
+            CheckSNESKeys(6);
+        }
+
+        private void DKCEU_Click(object sender, EventArgs e)
+        {
+            CheckSNESKeys(7);
+        }
+
+        private void DKCUS_Click(object sender, EventArgs e)
+        {
+            CheckSNESKeys(8);
         }
     }
 }

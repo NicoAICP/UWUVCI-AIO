@@ -1,154 +1,84 @@
 ﻿using System;
 using System.Drawing;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Threading;
 using System.Windows.Forms;
+using Microsoft.WindowsAPICodePack.Dialogs;
+using UWUVCI_AIO.Properties;
 
 namespace UWUVCI_AIO
 {
     public partial class PathMenu : Form
     {
-        public string language = Properties.Settings.Default.Language;
         public PathMenu()
         {
             InitializeComponent();
-            loadfromsettings();
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
 
-            if (Properties.Settings.Default.darkmode == true)
+            if (Properties.Settings.Default.DarkMode)
             {
-                enableDarkMode();
+                EnableDarkMode();
             }
+            LoadFromSettings();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            DialogResult result = folderBrowserDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog1.SelectedPath) && folderBrowserDialog1.SelectedPath != Properties.Settings.Default.WorkingPath && folderBrowserDialog1.SelectedPath != Properties.Settings.Default.InjectionPath && IsDirectoryEmpty(folderBrowserDialog1.SelectedPath))
-            {
-                textBox1.Text = folderBrowserDialog1.SelectedPath;
-                Properties.Settings.Default.BaseRomPath = textBox1.Text;
-                Properties.Settings.Default.Save();
-                if (language == "de-DE")
-                {
-                    MessageBox.Show("Pfad erfolgreich gespeichert");
-                }
-                else
-                {
-                    MessageBox.Show("Path successfully saved!");
-                }
-
-            }
-            else
-            {
-                if (language == "de-DE")
-                {
-                    MessageBox.Show("Der Pfad fürs Basenverzeichnis darf nicht gleich dem Arbeits- sowie dem Injected Games - Verzeichnis sein.");
-                }
-                else
-                {
-                    MessageBox.Show("The path for the Bases shouldn't be the same as the Work and the Injected Games one.");
-                }
-            }
-
-        }
-
-        private void PathMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label2_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void enableDarkMode()
+        private void EnableDarkMode()
         {
             this.BackColor = Color.FromArgb(60, 60, 60);
             this.ForeColor = Color.WhiteSmoke;
-            button1.ForeColor = Color.Black;
-            button2.ForeColor = Color.Black;
-            button3.ForeColor = Color.Black;
+            BaseRomButton.ForeColor = Color.Black;
+            InjectionButton.ForeColor = Color.Black;
         }
-        public bool IsDirectoryEmpty(string path)
+
+        private void LoadFromSettings()
         {
-            return !Directory.EnumerateFileSystemEntries(path).Any();
+            BaseRomTextBox.Text = Properties.Settings.Default.BaseRomPath;
+            InjectionTextBox.Text = Properties.Settings.Default.InjectionPath;
         }
-        private void Button3_Click(object sender, EventArgs e)
+
+        private void BaseRomButton_Click(object sender, EventArgs e)
         {
-            DialogResult result = folderBrowserDialog1.ShowDialog();
-
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog1.SelectedPath) && folderBrowserDialog1.SelectedPath != Properties.Settings.Default.BaseRomPath && folderBrowserDialog1.SelectedPath != Properties.Settings.Default.InjectionPath && IsDirectoryEmpty(folderBrowserDialog1.SelectedPath))
+            using (CommonOpenFileDialog fileDialog = new CommonOpenFileDialog())
             {
-                textBox3.Text = folderBrowserDialog1.SelectedPath;
-                Properties.Settings.Default.WorkingPath = textBox3.Text;
-                Properties.Settings.Default.Save();
-                if (language == "de-DE")
-                {
-                    MessageBox.Show("Pfad erfolgreich gespeichert");
-                }
-                else
-                {
-                    MessageBox.Show("Path successfully saved!");
-                }
+                fileDialog.IsFolderPicker = true;
 
-            }
-            else
-            {
-                if (language == "de-DE")
+                if (fileDialog.ShowDialog() == CommonFileDialogResult.Ok)
                 {
-                    MessageBox.Show("Der Pfad fürs Arbeitsverzeichnis darf nicht gleich dem Basen- sowie dem Injected Games - Verzeichnis sein.");
-                }
-                else
-                {
-                    MessageBox.Show("The path for work shouldn't be the same as the Bases and the Injected Games one.");
+                    if (fileDialog.FileName != Properties.Settings.Default.InjectionPath)
+                    {
+                        Properties.Settings.Default.BaseRomPath = BaseRomTextBox.Text = fileDialog.FileName;
+                        Properties.Settings.Default.Save();
+                        MessageBox.Show(Resources.PathSaved, "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show(Resources.BasePathInvalid, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
-        }
-        private void loadfromsettings()
-        {
-            textBox2.Text = Properties.Settings.Default.InjectionPath;
-            textBox1.Text = Properties.Settings.Default.BaseRomPath;
-            textBox3.Text = Properties.Settings.Default.WorkingPath;
-        }
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            DialogResult result = folderBrowserDialog1.ShowDialog();
 
-            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog1.SelectedPath) && folderBrowserDialog1.SelectedPath != Properties.Settings.Default.BaseRomPath && folderBrowserDialog1.SelectedPath != Properties.Settings.Default.WorkingPath && IsDirectoryEmpty(folderBrowserDialog1.SelectedPath))
-            {
-                textBox2.Text = folderBrowserDialog1.SelectedPath;
-                Properties.Settings.Default.InjectionPath = textBox2.Text;
-                Properties.Settings.Default.Save();
-                if (language == "de-DE")
-                {
-                    MessageBox.Show("Pfad erfolgreich gespeichert");
-                }
-                else
-                {
-                    MessageBox.Show("Path successfully saved!");
-                }
+            Activate();
+        }
 
-            }
-            else
+        private void InjectionButton_Click(object sender, EventArgs e)
+        {
+            using (CommonOpenFileDialog fileDialog = new CommonOpenFileDialog())
             {
-                if (language == "de-DE")
+                fileDialog.IsFolderPicker = true;
+
+                if (fileDialog.ShowDialog() == CommonFileDialogResult.Ok)
                 {
-                    MessageBox.Show("Der Pfad fürs Injected Games - Verzeichnis darf nicht gleich dem Basen- sowie dem Arbeits- Verzeichnis sein.");
-                }
-                else
-                {
-                    MessageBox.Show("The path for Injected Games shouldn't be the same as the Base and the work one.");
+                    if (fileDialog.FileName != Properties.Settings.Default.BaseRomPath)
+                    {
+                        Properties.Settings.Default.InjectionPath = InjectionTextBox.Text = fileDialog.FileName;
+                        Properties.Settings.Default.Save();
+                        MessageBox.Show(Resources.PathSaved, "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show(Resources.InjectionPathInvalid, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
+
+            Activate();
         }
     }
 }

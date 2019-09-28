@@ -1,5 +1,4 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace UWUVCI_AIO
@@ -9,17 +8,14 @@ namespace UWUVCI_AIO
         public Credits()
         {
             InitializeComponent();
-            if (Properties.Settings.Default.darkmode)
+
+            if (Properties.Settings.Default.DarkMode)
             {
-                enableDarkMode();
+                EnableDarkMode();
             }
         }
 
-        private void Credits_Load(object sender, EventArgs e)
-        {
-
-        }
-        private void enableDarkMode()
+        private void EnableDarkMode()
         {
             this.BackColor = Color.FromArgb(50, 50, 50);
             this.ForeColor = Color.WhiteSmoke;

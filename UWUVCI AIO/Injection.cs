@@ -2,9 +2,10 @@
 using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
-using System.Reflection;
+using System.Text;
 using System.Windows.Forms;
 using System.Xml;
+using UWUVCI_AIO.Properties;
 
 namespace UWUVCI_AIO
 {
@@ -12,427 +13,346 @@ namespace UWUVCI_AIO
     {
         public enum Console { NDS, N64, GBA, NES, SNES }
 
-        private static readonly string tempPath = Path.Combine(Properties.Settings.Default.WorkingPath, "temp");
-        private static readonly string imgPath = Path.Combine(Properties.Settings.Default.WorkingPath, "img");
+        private static readonly string tempPath = Path.Combine(Directory.GetCurrentDirectory(), "temp");
+        private static readonly string baseRomPath = Path.Combine(tempPath, "baserom");
+        private static readonly string imgPath = Path.Combine(tempPath, "img");
+        private static readonly string toolsPath = Path.Combine(Directory.GetCurrentDirectory(), "Tools");
 
         /*
          * Console: Can either be NDS, N64, GBA, NES or SNES
-         * BaseRom = Name of the BaseRom, which is the folder name too (example: Super Metroid EU will be saved at the BaseRom path under the folder SMetroidEU, so the BaseRom is in this case SMetroidEU).
-         * CSTMN_Base_path = Path to the custom Base. Is null if no custom base is used.
-         * INJCT_Rom_path = Path to the Rom to be injected into the Base Game.
-         * ini_path = Only used for N64. Path to the INI configuration. If "blank", a blank ini will be used.
-         * bootimages = String array containing the paths for
+         * baseRom = Name of the BaseRom, which is the folder name too (example: Super Metroid EU will be saved at the BaseRom path under the folder SMetroidEU, so the BaseRom is in this case SMetroidEU).
+         * customBasePath = Path to the custom Base. Is null if no custom base is used.
+         * injectRomPath = Path to the Rom to be injected into the Base Game.
+         * bootImages = String array containing the paths for
          *              bootTvTex: PNG or TGA (PNG gets converted to TGA using UPNG). Needs to be in the dimensions 1280x720 and have a bit depth of 24. If null, the original BootImage will be used.
          *              bootDrcTex: PNG or TGA (PNG gets converted to TGA using UPNG). Needs to be in the dimensions 854x480 and have a bit depth of 24. If null, the original BootImage will be used.
          *              iconTex: PNG or TGA (PNG gets converted to TGA using UPNG). Needs to be in the dimensions 128x128 and have a bit depth of 32. If null, the original BootImage will be used.
          *              bootLogoTex: PNG or TGA (PNG gets converted to TGA using UPNG). Needs to be in the dimensions 170x42 and have a bit depth of 32. If null, the original BootImage will be used.
-         * darkremoval = Only used for N64. Indicates whether the dark filter should be removed.
+         * gameName = The name of the final game to be entered into the .xml files.
+         * iniPath = Only used for N64. Path to the INI configuration. If "blank", a blank ini will be used.
+         * darkRemoval = Only used for N64. Indicates whether the dark filter should be removed.
          */
-        public static void inject(Console console, string BaseRom, string CSTMN_Base_path, string INJCT_Rom_path, string ini_path, string[] bootimages, string GameName, bool darkremoval)
+        public static void Inject(Console console, string baseRom, string customBasePath, string injectRomPath, string[] bootImages, string gameName, string iniPath = null, bool darkRemoval = false)
         {
-            CopyBase(BaseRom, CSTMN_Base_path);
+            CopyBase(baseRom, customBasePath);
             switch (console)
             {
                 case Console.NDS:
-                    NDS(INJCT_Rom_path);
+                    NDS(injectRomPath);
                     break;
 
                 case Console.N64:
-                    N64(INJCT_Rom_path, ini_path, darkremoval);
+                    N64(injectRomPath, iniPath, darkRemoval);
                     break;
 
                 case Console.GBA:
-                    GBA(INJCT_Rom_path);
+                    GBA(injectRomPath);
                     break;
 
                 case Console.NES:
+                    NESSNES(injectRomPath);
+                    break;
                 case Console.SNES:
-                    NESSNES(INJCT_Rom_path);
+                    NESSNES(RemoveHeader(injectRomPath));
                     break;
             }
 
-            editXML(GameName);
-            Images(bootimages);
+            EditXML(gameName);
+            Images(bootImages);
+            MessageBox.Show(Resources.InjectionFinishedText, Resources.InjectionFinishedCaption, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        public static void clean()
+        public static void Clean()
         {
             if (Directory.Exists(tempPath))
             {
                 Directory.Delete(tempPath, true);
             }
-
-            if (Directory.Exists(imgPath))
-            {
-                Directory.Delete(imgPath, true);
-            }
         }
 
-        public static void loadiine(string Gamename)
+        public static void Loadiine(string gameName)
         {
-            if (Directory.Exists(Path.Combine(Properties.Settings.Default.InjectionPath, Gamename)))
+            string outputPath = Path.Combine(Properties.Settings.Default.InjectionPath, gameName);
+            int i = 0;
+            while (Directory.Exists(outputPath))
             {
-                MessageBox.Show("The entered output directory already exists. Consider choosing a different one.");
+                outputPath = Path.Combine(Properties.Settings.Default.InjectionPath, $"{gameName}_{i}");
+                i++;
             }
-            else
-            {
-                Directory.Move(tempPath,Path.Combine(Properties.Settings.Default.InjectionPath, Gamename));
-                MessageBox.Show("Inject successfully created.\nYou can find your inject here:\n" + Path.Combine(Properties.Settings.Default.InjectionPath, Gamename));
 
-                clean();
-            }
+            Directory.Move(baseRomPath,outputPath);
+            MessageBox.Show(string.Format(Resources.InjectCreatedText, outputPath), Resources.InjectCreatedCaption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            Clean();
         }
 
-        public static void packing(string Gamename)
+        public static void Packing(string gameName)
         {
-            CNUSPACKER.Program.Main(new[] { "-in", tempPath, "-out", Path.Combine(Properties.Settings.Default.InjectionPath, Gamename), "-encryptKeyWith", Properties.Settings.Default.CommonKey });
-            MessageBox.Show("Inject successfully created.\nYou can find your inject here:\n" + Path.Combine(Properties.Settings.Default.InjectionPath, Gamename));
+            string outputPath = Path.Combine(Properties.Settings.Default.InjectionPath, gameName);
+            int i = 0;
+            while (Directory.Exists(outputPath))
+            {
+                outputPath = Path.Combine(Properties.Settings.Default.InjectionPath, $"{gameName}_{i}");
+                i++;
+            }
 
-            clean();
+            CNUSPACKER.Program.Main(new[] { "-in", baseRomPath, "-out", outputPath, "-encryptKeyWith", Properties.Settings.Default.CommonKey });
+            MessageBox.Show(string.Format(Resources.InjectCreatedText, outputPath), Resources.InjectCreatedCaption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            Clean();
         }
 
-        public static void download(string BaseRom)
+        public static void Download(string baseRom)
         {
             string TID = null;
             string TK = null;
-            #region NDS
-            switch (BaseRom)
+            string folderName = "";
+
+            switch (baseRom)
             {
+                #region NDS
                 case "ZSTEU":
                     TID = "00050000101b8d00";
                     TK = Properties.Settings.Default.ZSTEU;
+                    folderName = "The Legend of Zelda Spirit Tracks [DARP01]";
                     break;
                 case "ZSTUS":
                     TID = "00050000101b8c00";
                     TK = Properties.Settings.Default.ZSTUS;
+                    folderName = "The Legend of Zelda Spirit Tracks [DARE01]";
                     break;
                 case "ZPHEU":
                     TID = "00050000101c3800";
                     TK = Properties.Settings.Default.ZPHEU;
+                    folderName = "The Legend of Zelda Phantom Hourglass [DATP01]";
                     break;
                 case "ZPHUS":
                     TID = "00050000101c3700";
                     TK = Properties.Settings.Default.ZPHUS;
+                    folderName = "The Legend of Zelda Phantom Hourglass [DATE01]";
                     break;
                 case "WWEU":
                     TID = "00050000101a2000";
                     TK = Properties.Settings.Default.WWEU;
+                    folderName = "WarioWare Touched! [DAGP01]";
                     break;
                 case "WWUS":
                     TID = "00050000101a1f00";
                     TK = Properties.Settings.Default.WWUS;
+                    folderName = "WarioWare Touched! [DAGE01]";
                     break;
-            }
-            #endregion
-            #region N64
-            switch (BaseRom)
-            {
+                #endregion
+                #region N64
                 case "PMEU":
                     TID = "0005000010199800";
                     TK = Properties.Settings.Default.PMEU;
+                    folderName = "Paper Mario [NACP01]";
                     break;
                 case "PMUS":
                     TID = "0005000010199700";
                     TK = Properties.Settings.Default.PMUS;
+                    folderName = "Paper Mario [NACE01]";
                     break;
                 case "FZXUS":
                     TID = "00050000101ebc00";
                     TK = Properties.Settings.Default.FZXUS;
+                    folderName = "F-Zero X [NAWE01]";
                     break;
                 case "FZXJP":
                     TID = "00050000101ebb00";
                     TK = Properties.Settings.Default.FZXJP;
+                    folderName = "F-Zero X [NAWJ01]";
                     break;
                 case "DK64EU":
                     TID = "0005000010199300";
                     TK = Properties.Settings.Default.DK64EU;
+                    folderName = "Donkey Kong 64 [NAAP01]";
                     break;
                 case "DK64US":
                     TID = "0005000010199200";
                     TK = Properties.Settings.Default.DK64US;
+                    folderName = "Donkey Kong 64 [NAAE01]";
                     break;
-            }
-            #endregion
-            #region GBA
-            switch (BaseRom)
-            {
+                #endregion
+                #region GBA
                 case "ZMCEU":
                     TID = "000500001015e500";
                     TK = Properties.Settings.Default.ZMCEU;
+                    folderName = "The Legend of Zelda The Minish Cap [PAKP01]";
                     break;
                 case "ZMCUS":
                     TID = "000500001015e400";
                     TK = Properties.Settings.Default.ZMCUS;
+                    folderName = "The Legend of Zelda The Minish Cap [PAKE01]";
                     break;
                 case "MKCEU":
                     TID = "000500001017d200";
                     TK = Properties.Settings.Default.MKCEU;
+                    folderName = "Mario Kart Super Circuit [PBDP01]";
                     break;
                 case "MKCUS":
                     TID = "000500001017d300";
                     TK = Properties.Settings.Default.MKCUS;
+                    folderName = "Mario Kart Super Circuit [PBDE01]";
                     break;
-            }
-            #endregion
-            #region NES
-            switch (BaseRom)
-            {
+                #endregion
+                #region NES
                 case "POEU":
                     TID = "0005000010108c00";
                     TK = Properties.Settings.Default.POEU;
+                    folderName = "Punch-Out!! [FAKP01]";
                     break;
                 case "POUS":
                     TID = "0005000010108b00";
                     TK = Properties.Settings.Default.POUS;
+                    folderName = "Punch-Out!! Featuring Mr. Dream [FAKE01]";
                     break;
                 case "SMBEU":
                     TID = "0005000010106e00";
                     TK = Properties.Settings.Default.SMBEU;
+                    folderName = "Super Mario Bros. [FAAP01]";
                     break;
                 case "SMBUS":
                     TID = "0005000010106d00";
                     TK = Properties.Settings.Default.SMBUS;
+                    folderName = "Super Mario Bros. [FAAE01]";
                     break;
-            }
-            #endregion
-            #region SNES
-            switch (BaseRom)
-            {
+                #endregion
+                #region SNES
                 case "SMetroidEU":
                     TID = "000500001010a700";
                     TK = Properties.Settings.Default.SMetroidEU;
+                    folderName = "Super Metroid [JAJP01]";
                     break;
                 case "SMetroidUS":
                     TID = "000500001010a600";
                     TK = Properties.Settings.Default.SMetroidUS;
+                    folderName = "Super Metroid [JAJE01]";
                     break;
                 case "SMetroidJP":
                     TID = "000500001010a500";
                     TK = Properties.Settings.Default.SMetroidJP;
+                    folderName = "スーパーメトロイド [JAJJ01]";
                     break;
                 case "EarthboundEU":
                     TID = "0005000010133500";
                     TK = Properties.Settings.Default.EarthboundEU;
+                    folderName = "EarthBound [JBBP01]";
                     break;
                 case "EarthboundUS":
                     TID = "0005000010133400";
                     TK = Properties.Settings.Default.EarthboundJP;
+                    folderName = "EarthBound [JBBE01]";
                     break;
                 case "EarthboundJP":
                     TID = "0005000010133000";
                     TK = Properties.Settings.Default.EarthboundJP;
+                    folderName = "MOTHER [FBDJ01]";
                     break;
                 case "DKCEU":
                     TID = "0005000010109600";
                     TK = Properties.Settings.Default.DKCEU;
+                    folderName = "Donkey Kong Country [JACP01]";
                     break;
                 case "DKCUS":
                     TID = "0005000010109500";
                     TK = Properties.Settings.Default.DKCUS;
+                    folderName = "Donkey Kong Country [JACE01]";
                     break;
+                #endregion
             }
-            #endregion
-            Directory.SetCurrentDirectory(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/JNUSTOOL/"));
+
             using (Process download = new Process())
             {
+                download.StartInfo.WorkingDirectory = Path.Combine(toolsPath, "JNUSTOOL");
                 download.StartInfo.FileName = "java";
                 download.StartInfo.Arguments = $"-jar JNUSTOOL.jar {TID} {TK} -file .*";
                 download.Start();
                 download.WaitForExit();
-                switch (BaseRom)
-                {
-                    #region NDS
-                    case "ZSTEU":
-                        DirectoryCopy("The Legend of Zelda Spirit Tracks [DARP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("The Legend of Zelda Spirit Tracks [DARP01]", true);
-                        break;
-                    case "ZSTUS":
-                        DirectoryCopy("The Legend of Zelda Spirit Tracks [DARE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("The Legend of Zelda Spirit Tracks [DARE01]", true);
-                        break;
-                    case "ZPHEU":
-                        DirectoryCopy("The Legend of Zelda Phantom Hourglass [DATP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("The Legend of Zelda Phantom Hourglass [DATP01]", true);
-                        break;
-                    case "ZPHUS":
-                        DirectoryCopy("The Legend of Zelda Phantom Hourglass [DATE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("The Legend of Zelda Phantom Hourglass [DATE01]", true);
-                        break;
-                    case "WWEU":
-                        DirectoryCopy("WarioWare Touched! [DAGP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("WarioWare Touched! [DAGP01]", true);
-                        break;
-                    case "WWUS":
-                        DirectoryCopy("WarioWare Touched! [DAGE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("WarioWare Touched! [DAGE01]", true);
-                        break;
-                    #endregion
-                    #region N64
-                    case "PMEU":
-                        DirectoryCopy("Paper Mario [NACP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("Paper Mario [NACP01]", true);
-                        break;
-                    case "PMUS":
-                        DirectoryCopy("Paper Mario [NACE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("Paper Mario [NAEP01]", true);
-                        break;
-                    case "FZXUS":
-                        DirectoryCopy("F-Zero X [NAWE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("F-Zero X [NAWE01]", true);
-                        break;
-                    case "FZXJP":
-                        DirectoryCopy("F-Zero X [NAWJ01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("F-Zero X [NAWJ01]", true);
-                        break;
-                    case "DK64EU":
-                        DirectoryCopy("Donkey Kong 64 [NAAP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("Donkey Kong 64 [NAAP01]", true);
-                        break;
-                    case "DK64US":
-                        DirectoryCopy("Donkey Kong 64 [NAAE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("Donkey Kong 64 [NAAE01]", true);
-                        break;
-                    #endregion
-                    #region GBA
-                    case "ZMCEU":
-                        DirectoryCopy("The Legend of Zelda The Minish Cap [PAKP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("The Legend of Zelda The Minish Cap [PAKP01]", true);
-                        break;
-                    case "ZMCUS":
-                        DirectoryCopy("The Legend of Zelda The Minish Cap [PAKE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("The Legend of Zelda The Minish Cap [PAKE01]", true);
-                        break;
-                    case "MKCEU":
-                        DirectoryCopy("Mario Kart Super Circuit [PBDP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("Mario Kart Super Circuit [PBDP01]", true);
-                        break;
-                    case "MKCUS":
-                        DirectoryCopy("Mario Kart Super Circuit [PBDE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("Mario Kart Super Circuit [PBDE01]", true);
-                        break;
-                    #endregion
-                    #region NES
-                    case "POEU":
-                        DirectoryCopy("Punch-Out!! [FAKP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("Punch-Out!! [FAKP01]", true);
-                        break;
-                    case "POUS":
-                        DirectoryCopy("Punch-Out!! Featuring Mr. Dream [FAKE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("Punch-Out!! Featuring Mr. Dream [FAKE01]", true);
-                        break;
-                    case "SMBEU":
-                        DirectoryCopy("Super Mario Bros. [FAAP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("Super Mario Bros. [FAAP01]", true);
-                        break;
-                    case "SMBUS":
-                        DirectoryCopy("Super Mario Bros. [FAAE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("Super Mario Bros. [FAAE01]", true);
-                        break;
-                    #endregion
-                    #region SNES
-                    case "SMetroidEU":
-                        DirectoryCopy("Super Metroid [JAJP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("Super Metroid [JAJP01]", true);
-                        break;
-                    case "SMetroidUS":
-                        DirectoryCopy("Super Metroid [JAJE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("Super Metroid [JAJ301]", true);
-                        break;
-                    case "SMetroidJP":
-                        DirectoryCopy("スーパーメトロイド [JAJJ01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("スーパーメトロイド [JAJJ01]", true);
-                        break;
-                    case "EarthboundEU":
-                        DirectoryCopy("EarthBound [JBBP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("EarthBound [JBBP01]", true);
-                        break;
-                    case "EarthboundUS":
-                        DirectoryCopy("EarthBound [JBBE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("EarthBound [JBBE01]", true);
-                        break;
-                    case "EarthboundJP":
-                        DirectoryCopy("MOTHER [FBDJ01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("MOTHER [FBDJ01]", true);
-                        break;
-                    case "DKCEU":
-                        DirectoryCopy("Donkey Kong Country [JACP01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("Donkey Kong Country [JACP01]", true);
-                        break;
-                    case "DKCUS":
-                        DirectoryCopy("Donkey Kong Country [JACE01]", Properties.Settings.Default.BaseRomPath + "/" + BaseRom, true);
-                        Directory.Delete("Donkey Kong Country [JACE01]", true);
-                        break;
-                        #endregion
-                }
-                Directory.SetCurrentDirectory(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
             }
+
+            Directory.Move(Path.Combine(toolsPath, "JNUSTOOL", folderName), Path.Combine(Properties.Settings.Default.BaseRomPath, baseRom));
         }
 
         // This function changes TitleID, ProductCode and GameName in app.xml (ID) and meta.xml (ID, ProductCode, Name)
-        private static void editXML(string GameName)
+        private static void EditXML(string gameName)
         {
-            string metaXml = Path.Combine(tempPath, "meta/meta.xml");
-            string appXml = Path.Combine(tempPath, "code/app.xml");
+            string metaXml = Path.Combine(baseRomPath, "meta", "meta.xml");
+            string appXml = Path.Combine(baseRomPath, "code", "app.xml");
             Random random = new Random();
             string ID = $"{random.Next(0x10000):X4}";
 
             XmlDocument doc = new XmlDocument();
-            doc.Load(metaXml);
-            doc.SelectSingleNode("menu/longname_ja").InnerText = GameName;
-            doc.SelectSingleNode("menu/longname_en").InnerText = GameName;
-            doc.SelectSingleNode("menu/longname_fr").InnerText = GameName;
-            doc.SelectSingleNode("menu/longname_de").InnerText = GameName;
-            doc.SelectSingleNode("menu/longname_it").InnerText = GameName;
-            doc.SelectSingleNode("menu/longname_es").InnerText = GameName;
-            doc.SelectSingleNode("menu/longname_zhs").InnerText = GameName;
-            doc.SelectSingleNode("menu/longname_ko").InnerText = GameName;
-            doc.SelectSingleNode("menu/longname_nl").InnerText = GameName;
-            doc.SelectSingleNode("menu/longname_pt").InnerText = GameName;
-            doc.SelectSingleNode("menu/longname_ru").InnerText = GameName;
-            doc.SelectSingleNode("menu/longname_zht").InnerText = GameName;
+            try
+            {
+                doc.Load(metaXml);
+                doc.SelectSingleNode("menu/longname_ja").InnerText = gameName;
+                doc.SelectSingleNode("menu/longname_en").InnerText = gameName;
+                doc.SelectSingleNode("menu/longname_fr").InnerText = gameName;
+                doc.SelectSingleNode("menu/longname_de").InnerText = gameName;
+                doc.SelectSingleNode("menu/longname_it").InnerText = gameName;
+                doc.SelectSingleNode("menu/longname_es").InnerText = gameName;
+                doc.SelectSingleNode("menu/longname_zhs").InnerText = gameName;
+                doc.SelectSingleNode("menu/longname_ko").InnerText = gameName;
+                doc.SelectSingleNode("menu/longname_nl").InnerText = gameName;
+                doc.SelectSingleNode("menu/longname_pt").InnerText = gameName;
+                doc.SelectSingleNode("menu/longname_ru").InnerText = gameName;
+                doc.SelectSingleNode("menu/longname_zht").InnerText = gameName;
 
-            doc.SelectSingleNode("menu/product_code").InnerText = $"WUP-N-{ID}";
-            doc.SelectSingleNode("menu/title_id").InnerText = $"0005000020{ID}00";
+                doc.SelectSingleNode("menu/product_code").InnerText = $"WUP-N-{ID}";
+                doc.SelectSingleNode("menu/title_id").InnerText = $"0005000020{ID}00";
 
-            doc.SelectSingleNode("menu/shortname_ja").InnerText = GameName;
-            doc.SelectSingleNode("menu/shortname_fr").InnerText = GameName;
-            doc.SelectSingleNode("menu/shortname_de").InnerText = GameName;
-            doc.SelectSingleNode("menu/shortname_en").InnerText = GameName;
-            doc.SelectSingleNode("menu/shortname_it").InnerText = GameName;
-            doc.SelectSingleNode("menu/shortname_es").InnerText = GameName;
-            doc.SelectSingleNode("menu/shortname_zhs").InnerText = GameName;
-            doc.SelectSingleNode("menu/shortname_ko").InnerText = GameName;
-            doc.SelectSingleNode("menu/shortname_nl").InnerText = GameName;
-            doc.SelectSingleNode("menu/shortname_pt").InnerText = GameName;
-            doc.SelectSingleNode("menu/shortname_ru").InnerText = GameName;
-            doc.SelectSingleNode("menu/shortname_zht").InnerText = GameName;
-            doc.Save(metaXml);
+                doc.SelectSingleNode("menu/shortname_ja").InnerText = gameName;
+                doc.SelectSingleNode("menu/shortname_fr").InnerText = gameName;
+                doc.SelectSingleNode("menu/shortname_de").InnerText = gameName;
+                doc.SelectSingleNode("menu/shortname_en").InnerText = gameName;
+                doc.SelectSingleNode("menu/shortname_it").InnerText = gameName;
+                doc.SelectSingleNode("menu/shortname_es").InnerText = gameName;
+                doc.SelectSingleNode("menu/shortname_zhs").InnerText = gameName;
+                doc.SelectSingleNode("menu/shortname_ko").InnerText = gameName;
+                doc.SelectSingleNode("menu/shortname_nl").InnerText = gameName;
+                doc.SelectSingleNode("menu/shortname_pt").InnerText = gameName;
+                doc.SelectSingleNode("menu/shortname_ru").InnerText = gameName;
+                doc.SelectSingleNode("menu/shortname_zht").InnerText = gameName;
+                doc.Save(metaXml);
+            }
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Error when editing the meta.xml: Values seem to be missing.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
-            doc.Load(appXml);
-            doc.SelectSingleNode("app/title_id").InnerText = $"0005000020{ID}00";
-            doc.Save(appXml);
+            try
+            {
+                doc.Load(appXml);
+                doc.SelectSingleNode("app/title_id").InnerText = $"0005000020{ID}00";
+                doc.Save(appXml);
+            }
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Error when editing the app.xml: Values seem to be missing.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         //This function copies the custom or normal Base to the working directory
-        private static void CopyBase(string baserom, string custom_path)
+        private static void CopyBase(string baserom, string customPath)
         {
-            if (Directory.Exists(tempPath)) // sanity check
+            if (Directory.Exists(baseRomPath)) // sanity check
             {
-                Directory.Delete(tempPath, true);
+                Directory.Delete(baseRomPath, true);
             }
             if (baserom == "Custom")
             {
-                DirectoryCopy(custom_path, tempPath, true);
+                DirectoryCopy(customPath, baseRomPath, true);
             }
             else
             {
-                DirectoryCopy(Path.Combine(Properties.Settings.Default.BaseRomPath, baserom), tempPath, true);
+                DirectoryCopy(Path.Combine(Properties.Settings.Default.BaseRomPath, baserom), baseRomPath, true);
             }
         }
 
-        private static void NESSNES(string romtoinject)
+        private static void NESSNES(string injectRomPath)
         {
-            string rpxFile = Directory.GetFiles(Path.Combine(tempPath, "code"), "*.rpx")[0]; //To get the RPX path where the NES/SNES rom needs to be Injected in
+            string rpxFile = Directory.GetFiles(Path.Combine(baseRomPath, "code"), "*.rpx")[0]; //To get the RPX path where the NES/SNES rom needs to be Injected in
 
             RPXdecomp(rpxFile); //Decompresses the RPX to be able to write the game into it
 
@@ -440,8 +360,8 @@ namespace UWUVCI_AIO
             {
                 retroinject.StartInfo.UseShellExecute = false;
                 retroinject.StartInfo.CreateNoWindow = true;
-                retroinject.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/retroinject.exe");
-                retroinject.StartInfo.Arguments = $"\"{rpxFile}\" \"{romtoinject}\" \"{rpxFile}\"";
+                retroinject.StartInfo.FileName = Path.Combine(toolsPath, "retroinject.exe");
+                retroinject.StartInfo.Arguments = $"\"{rpxFile}\" \"{injectRomPath}\" \"{rpxFile}\"";
 
                 retroinject.Start();
                 retroinject.WaitForExit();
@@ -450,61 +370,54 @@ namespace UWUVCI_AIO
             RPXcomp(rpxFile); //Compresses the RPX
         }
 
-        private static void GBA (string romtoinject)
+        private static void GBA(string injectRomPath)
         {
             using (Process psb = new Process())
             {
                 psb.StartInfo.UseShellExecute = false;
                 psb.StartInfo.CreateNoWindow = true;
-                psb.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/psb.exe");
-                psb.StartInfo.Arguments = $"\"{tempPath}/content/alldata.psb.m\" \"{romtoinject}\" \"{tempPath}/content/alldata.psb.m\"";
+                psb.StartInfo.FileName = Path.Combine(toolsPath, "psb.exe");
+                psb.StartInfo.Arguments = $"\"{Path.Combine(baseRomPath, "content", "alldata.psb.m")}\" \"{injectRomPath}\" \"{Path.Combine(baseRomPath, "content", "alldata.psb.m")}\"";
                 psb.Start();
 
                 psb.WaitForExit();
             }
         }
 
-        private static void NDS(string romtoinject)
+        private static void NDS(string injectRomPath)
         {
-            using (ZipArchive archive = ZipFile.Open(Path.Combine(tempPath, "content/0010/rom.zip"), ZipArchiveMode.Update))
+            using (ZipArchive archive = ZipFile.Open(Path.Combine(baseRomPath, "content", "0010", "rom.zip"), ZipArchiveMode.Update))
             {
                 string romname = archive.Entries[0].FullName;
                 archive.Entries[0].Delete();
-                archive.CreateEntryFromFile(romtoinject, romname);
+                archive.CreateEntryFromFile(injectRomPath, romname);
             }
         }
 
-        private static void N64(string romtoinject, string ini_path, bool darkremoval)
+        private static void N64(string injectRomPath, string iniPath, bool darkRemoval)
         {
-            string mainRomPath = Directory.GetFiles(Path.Combine(tempPath, "content/rom"))[0];
-            string mainIni = Path.Combine(tempPath, $"content/config/{Path.GetFileName(mainRomPath)}.ini");
+            string mainRomPath = Directory.GetFiles(Path.Combine(baseRomPath, "content", "rom"))[0];
+            string mainIni = Path.Combine(baseRomPath, "content", "config", $"{Path.GetFileName(mainRomPath)}.ini");
             using (Process n64convert = new Process())
             {
                 n64convert.StartInfo.UseShellExecute = false;
                 n64convert.StartInfo.CreateNoWindow = true;
-                n64convert.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/N64Converter.exe");
-                n64convert.StartInfo.Arguments = $"\"{romtoinject}\" \"{mainRomPath}\"";
+                n64convert.StartInfo.FileName = Path.Combine(toolsPath, "N64Converter.exe");
+                n64convert.StartInfo.Arguments = $"\"{injectRomPath}\" \"{mainRomPath}\"";
 
                 n64convert.Start();
                 n64convert.WaitForExit();
             }
 
-            if (ini_path != null)
+            if (iniPath != null)
             {
                 File.Delete(mainIni);
-                if (ini_path == "blank")
-                {
-                    File.Copy(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/blank.ini"), mainIni);
-                }
-                else
-                {
-                    File.Copy(ini_path, mainIni);
-                }
+                File.Copy((iniPath == "blank") ? Path.Combine(toolsPath, "blank.ini") : iniPath, mainIni);
             }
 
-            if (darkremoval)
+            if (darkRemoval)
             {
-                string filePath = Path.Combine(tempPath, "content/FrameLayout.arc");
+                string filePath = Path.Combine(baseRomPath, "content", "FrameLayout.arc");
                 using (BinaryWriter writer = new BinaryWriter(new FileStream(filePath, FileMode.Open)))
                 {
                     writer.Seek(0x1AD8, SeekOrigin.Begin);
@@ -520,7 +433,7 @@ namespace UWUVCI_AIO
             {
                 rpxtool.StartInfo.UseShellExecute = false;
                 rpxtool.StartInfo.CreateNoWindow = true;
-                rpxtool.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/wiiurpxtool.exe");
+                rpxtool.StartInfo.FileName = Path.Combine(toolsPath, "wiiurpxtool.exe");
                 rpxtool.StartInfo.Arguments = $"-d \"{rpxpath}\"";
 
                 rpxtool.Start();
@@ -533,7 +446,7 @@ namespace UWUVCI_AIO
             {
                 rpxtool.StartInfo.UseShellExecute = false;
                 rpxtool.StartInfo.CreateNoWindow = true;
-                rpxtool.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/wiiurpxtool.exe");
+                rpxtool.StartInfo.FileName = Path.Combine(toolsPath, "wiiurpxtool.exe");
                 rpxtool.StartInfo.Arguments = $"-c \"{rpxpath}\"";
 
                 rpxtool.Start();
@@ -623,7 +536,7 @@ namespace UWUVCI_AIO
                 {
                     tgaverify.StartInfo.UseShellExecute = false;
                     tgaverify.StartInfo.CreateNoWindow = true;
-                    tgaverify.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/tga_verify.exe");
+                    tgaverify.StartInfo.FileName = Path.Combine(toolsPath, "tga_verify.exe");
                     tgaverify.StartInfo.Arguments = $"\"{imgPath}\"";
                     tgaverify.StartInfo.RedirectStandardError = true;
 
@@ -642,7 +555,7 @@ namespace UWUVCI_AIO
                     {
                         tgaverifyFixup.StartInfo.UseShellExecute = false;
                         tgaverifyFixup.StartInfo.CreateNoWindow = true;
-                        tgaverifyFixup.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/tga_verify.exe");
+                        tgaverifyFixup.StartInfo.FileName = Path.Combine(toolsPath, "tga_verify.exe");
                         tgaverifyFixup.StartInfo.Arguments = $"--fixup \"{imgPath}\"";
 
                         tgaverifyFixup.Start();
@@ -652,23 +565,23 @@ namespace UWUVCI_AIO
 
                 if (tv)
                 {
-                    File.Delete(Path.Combine(tempPath, "meta/bootTvTex.tga"));
-                    File.Move(Path.Combine(imgPath, "bootTvTex.tga"), Path.Combine(tempPath, "meta/bootTvTex.tga"));
+                    File.Delete(Path.Combine(baseRomPath, "meta", "bootTvTex.tga"));
+                    File.Move(Path.Combine(imgPath, "bootTvTex.tga"), Path.Combine(baseRomPath, "meta", "bootTvTex.tga"));
                 }
                 if (drc)
                 {
-                    File.Delete(Path.Combine(tempPath, "meta/bootDrcTex.tga"));
-                    File.Move(Path.Combine(imgPath, "bootDrcTex.tga"), Path.Combine(tempPath, "meta/bootDrcTex.tga"));
+                    File.Delete(Path.Combine(baseRomPath, "meta", "bootDrcTex.tga"));
+                    File.Move(Path.Combine(imgPath, "bootDrcTex.tga"), Path.Combine(baseRomPath, "meta", "bootDrcTex.tga"));
                 }
                 if (icon)
                 {
-                    File.Delete(Path.Combine(tempPath, "meta/iconTex.tga"));
-                    File.Move(Path.Combine(imgPath, "iconTex.tga"), Path.Combine(tempPath, "meta/iconTex.tga"));
+                    File.Delete(Path.Combine(baseRomPath, "meta", "iconTex.tga"));
+                    File.Move(Path.Combine(imgPath, "iconTex.tga"), Path.Combine(baseRomPath, "meta", "iconTex.tga"));
                 }
                 if (logo)
                 {
-                    File.Delete(Path.Combine(tempPath, "meta/bootLogoTex.tga"));
-                    File.Move(Path.Combine(imgPath, "bootLogoTex.tga"), Path.Combine(tempPath, "meta/bootLogoTex.tga"));
+                    File.Delete(Path.Combine(baseRomPath, "meta", "bootLogoTex.tga"));
+                    File.Move(Path.Combine(imgPath, "bootLogoTex.tga"), Path.Combine(baseRomPath, "meta", "bootLogoTex.tga"));
                 }
             }
             #endregion
@@ -681,7 +594,7 @@ namespace UWUVCI_AIO
             {
                 png2tga.StartInfo.UseShellExecute = false;
                 png2tga.StartInfo.CreateNoWindow = true;
-                png2tga.StartInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Tools/png2tga.exe");
+                png2tga.StartInfo.FileName = Path.Combine(toolsPath, "png2tga.exe");
                 png2tga.StartInfo.Arguments = $"\"{pngPath}\" \"{tgaPath}\"";
 
                 png2tga.Start();
@@ -691,6 +604,29 @@ namespace UWUVCI_AIO
             return tgaPath;
         }
 
+        private static string RemoveHeader(string filePath)
+        {
+            // logic taken from snesROMUtil
+            using (FileStream inStream = new FileStream(filePath, FileMode.Open))
+            {
+                byte[] header = new byte[512];
+                inStream.Read(header, 0, 512);
+                string string1 = BitConverter.ToString(header, 8, 3);
+                string string2 = Encoding.ASCII.GetString(header, 0, 11);
+                string string3 = BitConverter.ToString(header, 30, 16);
+                if (string1 != "AA-BB-04" && string2 != "GAME DOCTOR" && string3 != "00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00")
+                    return filePath;
+
+                string newFilePath = Path.Combine(tempPath, Path.GetFileName(filePath));
+                using (FileStream outStream = new FileStream(newFilePath, FileMode.OpenOrCreate))
+                {
+                    inStream.CopyTo(outStream);
+                }
+
+                return newFilePath;
+            }
+        }
+
         private static void DirectoryCopy(string sourceDirName, string destDirName, bool copySubDirs)
         {
             // Get the subdirectories for the specified directory.
@@ -698,12 +634,9 @@ namespace UWUVCI_AIO
 
             if (!dir.Exists)
             {
-                throw new DirectoryNotFoundException(
-                    "Source directory does not exist or could not be found: "
-                    + sourceDirName);
+                throw new DirectoryNotFoundException($"Source directory does not exist or could not be found: {sourceDirName}");
             }
 
-            DirectoryInfo[] dirs = dir.GetDirectories();
             // If the destination directory doesn't exist, create it.
             if (!Directory.Exists(destDirName))
             {
@@ -711,20 +644,17 @@ namespace UWUVCI_AIO
             }
 
             // Get the files in the directory and copy them to the new location.
-            FileInfo[] files = dir.GetFiles();
-            foreach (FileInfo file in files)
+            foreach (FileInfo file in dir.EnumerateFiles())
             {
-                string temppath = Path.Combine(destDirName, file.Name);
-                file.CopyTo(temppath, false);
+                file.CopyTo(Path.Combine(destDirName, file.Name), false);
             }
 
             // If copying subdirectories, copy them and their contents to new location.
             if (copySubDirs)
             {
-                foreach (DirectoryInfo subdir in dirs)
+                foreach (DirectoryInfo subdir in dir.EnumerateDirectories())
                 {
-                    string temppath = Path.Combine(destDirName, subdir.Name);
-                    DirectoryCopy(subdir.FullName, temppath, copySubDirs);
+                    DirectoryCopy(subdir.FullName,  Path.Combine(destDirName, subdir.Name), copySubDirs);
                 }
             }
         }

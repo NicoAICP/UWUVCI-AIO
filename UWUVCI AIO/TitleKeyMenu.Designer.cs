@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TitleKeyMenu));
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.NDSTabPage = new System.Windows.Forms.TabPage();
             this.ZPHUS = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.ZPHUS_TXT = new System.Windows.Forms.TextBox();
@@ -49,7 +49,7 @@
             this.ZSTUS_TXT = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.ZSTEU_TXT = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.N64TabPage = new System.Windows.Forms.TabPage();
             this.FZXJP = new System.Windows.Forms.Button();
             this.FZXJP_LABEL = new System.Windows.Forms.Label();
             this.FZXJPtxt = new System.Windows.Forms.TextBox();
@@ -68,7 +68,7 @@
             this.PMUStxt = new System.Windows.Forms.TextBox();
             this.PMEU_LABEL = new System.Windows.Forms.Label();
             this.PMEUtxt = new System.Windows.Forms.TextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.GBATabPage = new System.Windows.Forms.TabPage();
             this.MKCUS = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.MKCUS_TXT = new System.Windows.Forms.TextBox();
@@ -81,7 +81,7 @@
             this.ZMCUS_TXT = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.ZMCEU_TXT = new System.Windows.Forms.TextBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.NESTabPage = new System.Windows.Forms.TabPage();
             this.SMBUS = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.SMBUS_TXT = new System.Windows.Forms.TextBox();
@@ -94,42 +94,42 @@
             this.POUS_TXT = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.POEU_TXT = new System.Windows.Forms.TextBox();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.SNESTabPage = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.SNES1 = new System.Windows.Forms.TabPage();
             this.button7 = new System.Windows.Forms.Button();
             this.EarthboundJP = new System.Windows.Forms.Button();
             this.EarthboundJP_LABEL = new System.Windows.Forms.Label();
             this.EarthboundJPtxt = new System.Windows.Forms.TextBox();
+            this.EarthboundUStxt = new System.Windows.Forms.TextBox();
+            this.EarthboundEUtxt = new System.Windows.Forms.TextBox();
+            this.SMetroidJPtxt = new System.Windows.Forms.TextBox();
+            this.SMetroidUStxt = new System.Windows.Forms.TextBox();
+            this.SMetroidEUtxt = new System.Windows.Forms.TextBox();
             this.EarthboundUS = new System.Windows.Forms.Button();
             this.EarthboundUS_LABEL = new System.Windows.Forms.Label();
-            this.EarthboundUStxt = new System.Windows.Forms.TextBox();
             this.EarthboundEU = new System.Windows.Forms.Button();
             this.EarthboundEU_LABEL = new System.Windows.Forms.Label();
-            this.EarthboundEUtxt = new System.Windows.Forms.TextBox();
             this.SMetroidJP = new System.Windows.Forms.Button();
             this.SMetroidJP_LABEL = new System.Windows.Forms.Label();
-            this.SMetroidJPtxt = new System.Windows.Forms.TextBox();
             this.SMetroidUS = new System.Windows.Forms.Button();
             this.SMetroidUS_LABEL = new System.Windows.Forms.Label();
-            this.SMetroidUStxt = new System.Windows.Forms.TextBox();
             this.SMetroidEU = new System.Windows.Forms.Button();
             this.SMetroidEU_LABEL = new System.Windows.Forms.Label();
-            this.SMetroidEUtxt = new System.Windows.Forms.TextBox();
             this.SNES2 = new System.Windows.Forms.TabPage();
             this.button8 = new System.Windows.Forms.Button();
             this.DKCUS = new System.Windows.Forms.Button();
             this.DKCUS_LABEL = new System.Windows.Forms.Label();
             this.DKCUStxt = new System.Windows.Forms.TextBox();
+            this.DKCEUtxt = new System.Windows.Forms.TextBox();
             this.DKCEU = new System.Windows.Forms.Button();
             this.DKCEU_LABEL = new System.Windows.Forms.Label();
-            this.DKCEUtxt = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
+            this.NDSTabPage.SuspendLayout();
+            this.N64TabPage.SuspendLayout();
+            this.GBATabPage.SuspendLayout();
+            this.NESTabPage.SuspendLayout();
+            this.SNESTabPage.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.SNES1.SuspendLayout();
             this.SNES2.SuspendLayout();
@@ -137,39 +137,38 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
             resources.ApplyResources(this.tabControl1, "tabControl1");
+            this.tabControl1.Controls.Add(this.NDSTabPage);
+            this.tabControl1.Controls.Add(this.N64TabPage);
+            this.tabControl1.Controls.Add(this.GBATabPage);
+            this.tabControl1.Controls.Add(this.NESTabPage);
+            this.tabControl1.Controls.Add(this.SNESTabPage);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
-            // tabPage1
+            // NDSTabPage
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage1.Controls.Add(this.ZPHUS);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.ZPHUS_TXT);
-            this.tabPage1.Controls.Add(this.WWUS);
-            this.tabPage1.Controls.Add(this.WWEU);
-            this.tabPage1.Controls.Add(this.ZPHEU);
-            this.tabPage1.Controls.Add(this.ZSTUS);
-            this.tabPage1.Controls.Add(this.ZSTEU);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.WWUS_TXT);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.WWEU_TXT);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.ZPHEU_TXT);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.ZSTUS_TXT);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.ZSTEU_TXT);
-            resources.ApplyResources(this.tabPage1, "tabPage1");
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Click += new System.EventHandler(this.TabPage1_Click);
+            resources.ApplyResources(this.NDSTabPage, "NDSTabPage");
+            this.NDSTabPage.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.NDSTabPage.Controls.Add(this.ZPHUS);
+            this.NDSTabPage.Controls.Add(this.label1);
+            this.NDSTabPage.Controls.Add(this.ZPHUS_TXT);
+            this.NDSTabPage.Controls.Add(this.WWUS);
+            this.NDSTabPage.Controls.Add(this.WWEU);
+            this.NDSTabPage.Controls.Add(this.ZPHEU);
+            this.NDSTabPage.Controls.Add(this.ZSTUS);
+            this.NDSTabPage.Controls.Add(this.ZSTEU);
+            this.NDSTabPage.Controls.Add(this.label2);
+            this.NDSTabPage.Controls.Add(this.WWUS_TXT);
+            this.NDSTabPage.Controls.Add(this.label3);
+            this.NDSTabPage.Controls.Add(this.WWEU_TXT);
+            this.NDSTabPage.Controls.Add(this.label4);
+            this.NDSTabPage.Controls.Add(this.ZPHEU_TXT);
+            this.NDSTabPage.Controls.Add(this.label5);
+            this.NDSTabPage.Controls.Add(this.ZSTUS_TXT);
+            this.NDSTabPage.Controls.Add(this.label6);
+            this.NDSTabPage.Controls.Add(this.ZSTEU_TXT);
+            this.NDSTabPage.Name = "NDSTabPage";
             // 
             // ZPHUS
             // 
@@ -273,29 +272,29 @@
             resources.ApplyResources(this.ZSTEU_TXT, "ZSTEU_TXT");
             this.ZSTEU_TXT.Name = "ZSTEU_TXT";
             // 
-            // tabPage2
+            // N64TabPage
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage2.Controls.Add(this.FZXJP);
-            this.tabPage2.Controls.Add(this.FZXJP_LABEL);
-            this.tabPage2.Controls.Add(this.FZXJPtxt);
-            this.tabPage2.Controls.Add(this.DKUS);
-            this.tabPage2.Controls.Add(this.DKEU);
-            this.tabPage2.Controls.Add(this.FZX);
-            this.tabPage2.Controls.Add(this.PMUS);
-            this.tabPage2.Controls.Add(this.PMEU);
-            this.tabPage2.Controls.Add(this.DK64US_LABEL);
-            this.tabPage2.Controls.Add(this.DK64UStxt);
-            this.tabPage2.Controls.Add(this.DK64EU_LABEL);
-            this.tabPage2.Controls.Add(this.DK64EUtxt);
-            this.tabPage2.Controls.Add(this.FZXUS_LABEL);
-            this.tabPage2.Controls.Add(this.FZXUStxt);
-            this.tabPage2.Controls.Add(this.PMUS_LABEL);
-            this.tabPage2.Controls.Add(this.PMUStxt);
-            this.tabPage2.Controls.Add(this.PMEU_LABEL);
-            this.tabPage2.Controls.Add(this.PMEUtxt);
-            resources.ApplyResources(this.tabPage2, "tabPage2");
-            this.tabPage2.Name = "tabPage2";
+            resources.ApplyResources(this.N64TabPage, "N64TabPage");
+            this.N64TabPage.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.N64TabPage.Controls.Add(this.FZXJP);
+            this.N64TabPage.Controls.Add(this.FZXJP_LABEL);
+            this.N64TabPage.Controls.Add(this.FZXJPtxt);
+            this.N64TabPage.Controls.Add(this.DKUS);
+            this.N64TabPage.Controls.Add(this.DKEU);
+            this.N64TabPage.Controls.Add(this.FZX);
+            this.N64TabPage.Controls.Add(this.PMUS);
+            this.N64TabPage.Controls.Add(this.PMEU);
+            this.N64TabPage.Controls.Add(this.DK64US_LABEL);
+            this.N64TabPage.Controls.Add(this.DK64UStxt);
+            this.N64TabPage.Controls.Add(this.DK64EU_LABEL);
+            this.N64TabPage.Controls.Add(this.DK64EUtxt);
+            this.N64TabPage.Controls.Add(this.FZXUS_LABEL);
+            this.N64TabPage.Controls.Add(this.FZXUStxt);
+            this.N64TabPage.Controls.Add(this.PMUS_LABEL);
+            this.N64TabPage.Controls.Add(this.PMUStxt);
+            this.N64TabPage.Controls.Add(this.PMEU_LABEL);
+            this.N64TabPage.Controls.Add(this.PMEUtxt);
+            this.N64TabPage.Name = "N64TabPage";
             // 
             // FZXJP
             // 
@@ -399,23 +398,23 @@
             resources.ApplyResources(this.PMEUtxt, "PMEUtxt");
             this.PMEUtxt.Name = "PMEUtxt";
             // 
-            // tabPage3
+            // GBATabPage
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage3.Controls.Add(this.MKCUS);
-            this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Controls.Add(this.MKCUS_TXT);
-            this.tabPage3.Controls.Add(this.MKCEU);
-            this.tabPage3.Controls.Add(this.ZMCUS);
-            this.tabPage3.Controls.Add(this.ZMCEU);
-            this.tabPage3.Controls.Add(this.label12);
-            this.tabPage3.Controls.Add(this.MKCEU_TXT);
-            this.tabPage3.Controls.Add(this.label13);
-            this.tabPage3.Controls.Add(this.ZMCUS_TXT);
-            this.tabPage3.Controls.Add(this.label14);
-            this.tabPage3.Controls.Add(this.ZMCEU_TXT);
-            resources.ApplyResources(this.tabPage3, "tabPage3");
-            this.tabPage3.Name = "tabPage3";
+            resources.ApplyResources(this.GBATabPage, "GBATabPage");
+            this.GBATabPage.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.GBATabPage.Controls.Add(this.MKCUS);
+            this.GBATabPage.Controls.Add(this.label11);
+            this.GBATabPage.Controls.Add(this.MKCUS_TXT);
+            this.GBATabPage.Controls.Add(this.MKCEU);
+            this.GBATabPage.Controls.Add(this.ZMCUS);
+            this.GBATabPage.Controls.Add(this.ZMCEU);
+            this.GBATabPage.Controls.Add(this.label12);
+            this.GBATabPage.Controls.Add(this.MKCEU_TXT);
+            this.GBATabPage.Controls.Add(this.label13);
+            this.GBATabPage.Controls.Add(this.ZMCUS_TXT);
+            this.GBATabPage.Controls.Add(this.label14);
+            this.GBATabPage.Controls.Add(this.ZMCEU_TXT);
+            this.GBATabPage.Name = "GBATabPage";
             // 
             // MKCUS
             // 
@@ -485,23 +484,23 @@
             resources.ApplyResources(this.ZMCEU_TXT, "ZMCEU_TXT");
             this.ZMCEU_TXT.Name = "ZMCEU_TXT";
             // 
-            // tabPage4
+            // NESTabPage
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage4.Controls.Add(this.SMBUS);
-            this.tabPage4.Controls.Add(this.label7);
-            this.tabPage4.Controls.Add(this.SMBUS_TXT);
-            this.tabPage4.Controls.Add(this.SMBEU);
-            this.tabPage4.Controls.Add(this.POUS);
-            this.tabPage4.Controls.Add(this.POEU);
-            this.tabPage4.Controls.Add(this.label8);
-            this.tabPage4.Controls.Add(this.SMBEU_TXT);
-            this.tabPage4.Controls.Add(this.label9);
-            this.tabPage4.Controls.Add(this.POUS_TXT);
-            this.tabPage4.Controls.Add(this.label10);
-            this.tabPage4.Controls.Add(this.POEU_TXT);
-            resources.ApplyResources(this.tabPage4, "tabPage4");
-            this.tabPage4.Name = "tabPage4";
+            resources.ApplyResources(this.NESTabPage, "NESTabPage");
+            this.NESTabPage.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.NESTabPage.Controls.Add(this.SMBUS);
+            this.NESTabPage.Controls.Add(this.label7);
+            this.NESTabPage.Controls.Add(this.SMBUS_TXT);
+            this.NESTabPage.Controls.Add(this.SMBEU);
+            this.NESTabPage.Controls.Add(this.POUS);
+            this.NESTabPage.Controls.Add(this.POEU);
+            this.NESTabPage.Controls.Add(this.label8);
+            this.NESTabPage.Controls.Add(this.SMBEU_TXT);
+            this.NESTabPage.Controls.Add(this.label9);
+            this.NESTabPage.Controls.Add(this.POUS_TXT);
+            this.NESTabPage.Controls.Add(this.label10);
+            this.NESTabPage.Controls.Add(this.POEU_TXT);
+            this.NESTabPage.Name = "NESTabPage";
             // 
             // SMBUS
             // 
@@ -571,12 +570,12 @@
             resources.ApplyResources(this.POEU_TXT, "POEU_TXT");
             this.POEU_TXT.Name = "POEU_TXT";
             // 
-            // tabPage5
+            // SNESTabPage
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage5.Controls.Add(this.tabControl2);
-            resources.ApplyResources(this.tabPage5, "tabPage5");
-            this.tabPage5.Name = "tabPage5";
+            resources.ApplyResources(this.SNESTabPage, "SNESTabPage");
+            this.SNESTabPage.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SNESTabPage.Controls.Add(this.tabControl2);
+            this.SNESTabPage.Name = "SNESTabPage";
             // 
             // tabControl2
             // 
@@ -590,26 +589,26 @@
             // 
             // SNES1
             // 
+            resources.ApplyResources(this.SNES1, "SNES1");
             this.SNES1.Controls.Add(this.button7);
             this.SNES1.Controls.Add(this.EarthboundJP);
             this.SNES1.Controls.Add(this.EarthboundJP_LABEL);
             this.SNES1.Controls.Add(this.EarthboundJPtxt);
+            this.SNES1.Controls.Add(this.EarthboundUStxt);
+            this.SNES1.Controls.Add(this.EarthboundEUtxt);
+            this.SNES1.Controls.Add(this.SMetroidJPtxt);
+            this.SNES1.Controls.Add(this.SMetroidUStxt);
+            this.SNES1.Controls.Add(this.SMetroidEUtxt);
             this.SNES1.Controls.Add(this.EarthboundUS);
             this.SNES1.Controls.Add(this.EarthboundUS_LABEL);
-            this.SNES1.Controls.Add(this.EarthboundUStxt);
             this.SNES1.Controls.Add(this.EarthboundEU);
             this.SNES1.Controls.Add(this.EarthboundEU_LABEL);
-            this.SNES1.Controls.Add(this.EarthboundEUtxt);
             this.SNES1.Controls.Add(this.SMetroidJP);
             this.SNES1.Controls.Add(this.SMetroidJP_LABEL);
-            this.SNES1.Controls.Add(this.SMetroidJPtxt);
             this.SNES1.Controls.Add(this.SMetroidUS);
             this.SNES1.Controls.Add(this.SMetroidUS_LABEL);
-            this.SNES1.Controls.Add(this.SMetroidUStxt);
             this.SNES1.Controls.Add(this.SMetroidEU);
             this.SNES1.Controls.Add(this.SMetroidEU_LABEL);
-            this.SNES1.Controls.Add(this.SMetroidEUtxt);
-            resources.ApplyResources(this.SNES1, "SNES1");
             this.SNES1.Name = "SNES1";
             this.SNES1.UseVisualStyleBackColor = true;
             // 
@@ -637,6 +636,31 @@
             resources.ApplyResources(this.EarthboundJPtxt, "EarthboundJPtxt");
             this.EarthboundJPtxt.Name = "EarthboundJPtxt";
             // 
+            // EarthboundUStxt
+            // 
+            resources.ApplyResources(this.EarthboundUStxt, "EarthboundUStxt");
+            this.EarthboundUStxt.Name = "EarthboundUStxt";
+            // 
+            // EarthboundEUtxt
+            // 
+            resources.ApplyResources(this.EarthboundEUtxt, "EarthboundEUtxt");
+            this.EarthboundEUtxt.Name = "EarthboundEUtxt";
+            // 
+            // SMetroidJPtxt
+            // 
+            resources.ApplyResources(this.SMetroidJPtxt, "SMetroidJPtxt");
+            this.SMetroidJPtxt.Name = "SMetroidJPtxt";
+            // 
+            // SMetroidUStxt
+            // 
+            resources.ApplyResources(this.SMetroidUStxt, "SMetroidUStxt");
+            this.SMetroidUStxt.Name = "SMetroidUStxt";
+            // 
+            // SMetroidEUtxt
+            // 
+            resources.ApplyResources(this.SMetroidEUtxt, "SMetroidEUtxt");
+            this.SMetroidEUtxt.Name = "SMetroidEUtxt";
+            // 
             // EarthboundUS
             // 
             resources.ApplyResources(this.EarthboundUS, "EarthboundUS");
@@ -648,12 +672,6 @@
             // 
             resources.ApplyResources(this.EarthboundUS_LABEL, "EarthboundUS_LABEL");
             this.EarthboundUS_LABEL.Name = "EarthboundUS_LABEL";
-            // 
-            // EarthboundUStxt
-            // 
-            resources.ApplyResources(this.EarthboundUStxt, "EarthboundUStxt");
-            this.EarthboundUStxt.Name = "EarthboundUStxt";
-            this.EarthboundUStxt.TextChanged += new System.EventHandler(this.TextBox5_TextChanged);
             // 
             // EarthboundEU
             // 
@@ -667,11 +685,6 @@
             resources.ApplyResources(this.EarthboundEU_LABEL, "EarthboundEU_LABEL");
             this.EarthboundEU_LABEL.Name = "EarthboundEU_LABEL";
             // 
-            // EarthboundEUtxt
-            // 
-            resources.ApplyResources(this.EarthboundEUtxt, "EarthboundEUtxt");
-            this.EarthboundEUtxt.Name = "EarthboundEUtxt";
-            // 
             // SMetroidJP
             // 
             resources.ApplyResources(this.SMetroidJP, "SMetroidJP");
@@ -683,11 +696,6 @@
             // 
             resources.ApplyResources(this.SMetroidJP_LABEL, "SMetroidJP_LABEL");
             this.SMetroidJP_LABEL.Name = "SMetroidJP_LABEL";
-            // 
-            // SMetroidJPtxt
-            // 
-            resources.ApplyResources(this.SMetroidJPtxt, "SMetroidJPtxt");
-            this.SMetroidJPtxt.Name = "SMetroidJPtxt";
             // 
             // SMetroidUS
             // 
@@ -701,11 +709,6 @@
             resources.ApplyResources(this.SMetroidUS_LABEL, "SMetroidUS_LABEL");
             this.SMetroidUS_LABEL.Name = "SMetroidUS_LABEL";
             // 
-            // SMetroidUStxt
-            // 
-            resources.ApplyResources(this.SMetroidUStxt, "SMetroidUStxt");
-            this.SMetroidUStxt.Name = "SMetroidUStxt";
-            // 
             // SMetroidEU
             // 
             resources.ApplyResources(this.SMetroidEU, "SMetroidEU");
@@ -718,24 +721,18 @@
             resources.ApplyResources(this.SMetroidEU_LABEL, "SMetroidEU_LABEL");
             this.SMetroidEU_LABEL.Name = "SMetroidEU_LABEL";
             // 
-            // SMetroidEUtxt
-            // 
-            resources.ApplyResources(this.SMetroidEUtxt, "SMetroidEUtxt");
-            this.SMetroidEUtxt.Name = "SMetroidEUtxt";
-            // 
             // SNES2
             // 
+            resources.ApplyResources(this.SNES2, "SNES2");
             this.SNES2.Controls.Add(this.button8);
             this.SNES2.Controls.Add(this.DKCUS);
             this.SNES2.Controls.Add(this.DKCUS_LABEL);
             this.SNES2.Controls.Add(this.DKCUStxt);
+            this.SNES2.Controls.Add(this.DKCEUtxt);
             this.SNES2.Controls.Add(this.DKCEU);
             this.SNES2.Controls.Add(this.DKCEU_LABEL);
-            this.SNES2.Controls.Add(this.DKCEUtxt);
-            resources.ApplyResources(this.SNES2, "SNES2");
             this.SNES2.Name = "SNES2";
             this.SNES2.UseVisualStyleBackColor = true;
-            this.SNES2.Click += new System.EventHandler(this.SNES2_Click);
             // 
             // button8
             // 
@@ -749,7 +746,7 @@
             resources.ApplyResources(this.DKCUS, "DKCUS");
             this.DKCUS.Name = "DKCUS";
             this.DKCUS.UseVisualStyleBackColor = true;
-            this.DKCUS.Click += new System.EventHandler(this.DKCUS_Click_1);
+            this.DKCUS.Click += new System.EventHandler(this.DKCUS_Click);
             // 
             // DKCUS_LABEL
             // 
@@ -761,41 +758,44 @@
             resources.ApplyResources(this.DKCUStxt, "DKCUStxt");
             this.DKCUStxt.Name = "DKCUStxt";
             // 
+            // DKCEUtxt
+            // 
+            resources.ApplyResources(this.DKCEUtxt, "DKCEUtxt");
+            this.DKCEUtxt.Name = "DKCEUtxt";
+            // 
             // DKCEU
             // 
             resources.ApplyResources(this.DKCEU, "DKCEU");
             this.DKCEU.Name = "DKCEU";
             this.DKCEU.UseVisualStyleBackColor = true;
-            this.DKCEU.Click += new System.EventHandler(this.DKCEU_Click_1);
+            this.DKCEU.Click += new System.EventHandler(this.DKCEU_Click);
             // 
             // DKCEU_LABEL
             // 
             resources.ApplyResources(this.DKCEU_LABEL, "DKCEU_LABEL");
             this.DKCEU_LABEL.Name = "DKCEU_LABEL";
             // 
-            // DKCEUtxt
-            // 
-            resources.ApplyResources(this.DKCEUtxt, "DKCEUtxt");
-            this.DKCEUtxt.Name = "DKCEUtxt";
-            // 
             // TitleKeyMenu
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "TitleKeyMenu";
-            this.Load += new System.EventHandler(this.TitleKeyMenu_Load);
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
+            this.NDSTabPage.ResumeLayout(false);
+            this.NDSTabPage.PerformLayout();
+            this.N64TabPage.ResumeLayout(false);
+            this.N64TabPage.PerformLayout();
+            this.GBATabPage.ResumeLayout(false);
+            this.GBATabPage.PerformLayout();
+            this.NESTabPage.ResumeLayout(false);
+            this.NESTabPage.PerformLayout();
+            this.SNESTabPage.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.SNES1.ResumeLayout(false);
             this.SNES1.PerformLayout();
@@ -808,8 +808,8 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage NDSTabPage;
+        private System.Windows.Forms.TabPage N64TabPage;
         private System.Windows.Forms.Button PMEU;
         private System.Windows.Forms.Label DK64US_LABEL;
         private System.Windows.Forms.TextBox DK64UStxt;
@@ -821,9 +821,9 @@
         private System.Windows.Forms.TextBox PMUStxt;
         private System.Windows.Forms.Label PMEU_LABEL;
         private System.Windows.Forms.TextBox PMEUtxt;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage GBATabPage;
+        private System.Windows.Forms.TabPage NESTabPage;
+        private System.Windows.Forms.TabPage SNESTabPage;
         private System.Windows.Forms.Button DKUS;
         private System.Windows.Forms.Button DKEU;
         private System.Windows.Forms.Button FZX;
@@ -831,35 +831,6 @@
         private System.Windows.Forms.Button FZXJP;
         private System.Windows.Forms.Label FZXJP_LABEL;
         private System.Windows.Forms.TextBox FZXJPtxt;
-        private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage SNES1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button EarthboundJP;
-        private System.Windows.Forms.Label EarthboundJP_LABEL;
-        private System.Windows.Forms.TextBox EarthboundJPtxt;
-        private System.Windows.Forms.Button EarthboundUS;
-        private System.Windows.Forms.Label EarthboundUS_LABEL;
-        private System.Windows.Forms.TextBox EarthboundUStxt;
-        private System.Windows.Forms.Button EarthboundEU;
-        private System.Windows.Forms.Label EarthboundEU_LABEL;
-        private System.Windows.Forms.TextBox EarthboundEUtxt;
-        private System.Windows.Forms.Button SMetroidJP;
-        private System.Windows.Forms.Label SMetroidJP_LABEL;
-        private System.Windows.Forms.TextBox SMetroidJPtxt;
-        private System.Windows.Forms.Button SMetroidUS;
-        private System.Windows.Forms.Label SMetroidUS_LABEL;
-        private System.Windows.Forms.TextBox SMetroidUStxt;
-        private System.Windows.Forms.Button SMetroidEU;
-        private System.Windows.Forms.Label SMetroidEU_LABEL;
-        private System.Windows.Forms.TextBox SMetroidEUtxt;
-        private System.Windows.Forms.TabPage SNES2;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button DKCUS;
-        private System.Windows.Forms.Label DKCUS_LABEL;
-        private System.Windows.Forms.TextBox DKCUStxt;
-        private System.Windows.Forms.Button DKCEU;
-        private System.Windows.Forms.Label DKCEU_LABEL;
-        private System.Windows.Forms.TextBox DKCEUtxt;
         private System.Windows.Forms.Button ZPHUS;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox ZPHUS_TXT;
@@ -902,5 +873,34 @@
         private System.Windows.Forms.TextBox ZMCUS_TXT;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox ZMCEU_TXT;
+        private System.Windows.Forms.TabPage SNES2;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button DKCUS;
+        private System.Windows.Forms.Label DKCUS_LABEL;
+        private System.Windows.Forms.TextBox DKCUStxt;
+        private System.Windows.Forms.TextBox DKCEUtxt;
+        private System.Windows.Forms.Button DKCEU;
+        private System.Windows.Forms.Label DKCEU_LABEL;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage SNES1;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button EarthboundJP;
+        private System.Windows.Forms.Label EarthboundJP_LABEL;
+        private System.Windows.Forms.TextBox EarthboundJPtxt;
+        private System.Windows.Forms.TextBox EarthboundUStxt;
+        private System.Windows.Forms.TextBox EarthboundEUtxt;
+        private System.Windows.Forms.TextBox SMetroidJPtxt;
+        private System.Windows.Forms.TextBox SMetroidUStxt;
+        private System.Windows.Forms.TextBox SMetroidEUtxt;
+        private System.Windows.Forms.Button EarthboundUS;
+        private System.Windows.Forms.Label EarthboundUS_LABEL;
+        private System.Windows.Forms.Button EarthboundEU;
+        private System.Windows.Forms.Label EarthboundEU_LABEL;
+        private System.Windows.Forms.Button SMetroidJP;
+        private System.Windows.Forms.Label SMetroidJP_LABEL;
+        private System.Windows.Forms.Button SMetroidUS;
+        private System.Windows.Forms.Label SMetroidUS_LABEL;
+        private System.Windows.Forms.Button SMetroidEU;
+        private System.Windows.Forms.Label SMetroidEU_LABEL;
     }
 }

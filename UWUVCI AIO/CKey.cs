@@ -2,22 +2,20 @@
 using System.Drawing;
 using System.Globalization;
 using System.IO;
-using System.Reflection;
 using System.Threading;
 using System.Windows.Forms;
+using UWUVCI_AIO.Properties;
 
 namespace UWUVCI_AIO
 {
     public partial class CKey : Form
     {
-        private readonly string language = Properties.Settings.Default.Language;
         public CKey()
         {
             InitializeComponent();
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
-            if (Properties.Settings.Default.darkmode == true)
+            if (Properties.Settings.Default.DarkMode)
             {
-                enableDarkMode();
+                EnableDarkMode();
             }
         }
 
@@ -27,41 +25,27 @@ namespace UWUVCI_AIO
             {
                 Properties.Settings.Default.CommonKey = textBox1.Text;
                 Properties.Settings.Default.Save();
-                if (File.Exists(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"TOOLS\JNUSTOOL\config")))
+                string configFile = Path.Combine(Directory.GetCurrentDirectory(), "TOOLS", "JNUSTOOL", "config");
+                if (File.Exists(configFile))
                 {
-
-                    string cfg = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"TOOLS\JNUSTOOL\config");
                     string word = "<ckey>";
-                    if (File.ReadAllText(cfg).Contains(word))
+                    string text = File.ReadAllText(configFile);
+                    if (text.Contains(word))
                     {
-                        string text = File.ReadAllText(cfg);
                         text = text.Replace(word, Properties.Settings.Default.CommonKey);
-                        File.WriteAllText(cfg, text);
+                        File.WriteAllText(configFile, text);
                     }
                 }
-                if (language == "en-US")
-                {
-                    MessageBox.Show("CommonKey successfully set", "Valid Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                }
-                else
-                {
-                    MessageBox.Show("CommonKey erfolgreich gespeichert", "Gültiger Key", MessageBoxButtons.OK, MessageBoxIcon.None);
-                }
+
+                MessageBox.Show(Resources.ValidCommonkey, Resources.ValidKey, MessageBoxButtons.OK, MessageBoxIcon.None);
             }
             else
             {
-                if (language == "en-US")
-                {
-                    MessageBox.Show("Invalid CommonKey provided", "Invalid Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    MessageBox.Show("Ein Falscher CommonKey wurde angegeben", "Falscher Key", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-
+                MessageBox.Show(Resources.InvalidCommonkey, Resources.InvalidKey, MessageBoxButtons.OK, MessageBoxIcon.None);
             }
         }
-        private void enableDarkMode()
+
+        private void EnableDarkMode()
         {
 
             this.BackColor = Color.FromArgb(60, 60, 60);
@@ -73,11 +57,6 @@ namespace UWUVCI_AIO
         private void Button2_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
