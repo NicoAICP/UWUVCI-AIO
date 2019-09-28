@@ -328,14 +328,14 @@ namespace UWUVCI_AIO
             }
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void SNESCustomButton_Click(object sender, EventArgs e)
         {
             customBaseRomPath = SNESCustomTextBox.Text = SelectRomFolder() ?? customBaseRomPath;
             FillCustomPanel(SNESCustomPanel);
             CheckInjectButton();
         }
 
-        private void SNES_ROM_Click(object sender, EventArgs e)
+        private void SNESRomButton_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog fileDialog = new OpenFileDialog())
             {
@@ -349,7 +349,7 @@ namespace UWUVCI_AIO
             }
         }
 
-        private void N64_BTN8_Click(object sender, EventArgs e)
+        private void N64RomButton_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog fileDialog = new OpenFileDialog())
             {
@@ -414,27 +414,27 @@ namespace UWUVCI_AIO
 
         #endregion
 
-        private void SNES_TV_Click(object sender, EventArgs e)
+        private void SNESTVButton_Click(object sender, EventArgs e)
         {
             bootimages[0] = SNESTVTextBox.Text = SelectPngOrTgaFile() ?? bootimages[0];
         }
 
-        private void SNES_DRC_Click(object sender, EventArgs e)
+        private void SNESDRCButton_Click(object sender, EventArgs e)
         {
             bootimages[1] = SNESDRCTextBox.Text = SelectPngOrTgaFile() ?? bootimages[1];
         }
 
-        private void SNES_ICON_Click(object sender, EventArgs e)
+        private void SNESIconButton_Click(object sender, EventArgs e)
         {
             bootimages[2] = SNESIconTextBox.Text = SelectPngOrTgaFile() ?? bootimages[2];
         }
 
-        private void SNES_LOGO_Click(object sender, EventArgs e)
+        private void SNESLogoButton_Click(object sender, EventArgs e)
         {
             bootimages[3] = SNESLogoTextBox.Text = SelectPngOrTgaFile() ?? bootimages[3];
         }
 
-        private void SNES_INJCT_Click(object sender, EventArgs e)
+        private void SNESInjectButton_Click(object sender, EventArgs e)
         {
             Injection.Inject(Injection.Console.SNES, BaseROM, customBaseRomPath, injectRomPath, bootimages, SNESGameNameTextBox.Text);
             SNESInstallButton.Enabled = true;
@@ -455,7 +455,7 @@ namespace UWUVCI_AIO
             }
         }
 
-        private void SNES_LOADIINE_Click(object sender, EventArgs e)
+        private void SNESLoadiineButton_Click(object sender, EventArgs e)
         {
             Injection.Loadiine(SNESGameNameTextBox.Text);
             SNESInstallButton.Enabled = false;
@@ -467,38 +467,39 @@ namespace UWUVCI_AIO
             Injection.Clean();
         }
 
-        private void EBEU_DWNLD_Click(object sender, EventArgs e)
+        private void SNESBaseDownloadButton_Click(object sender, EventArgs e)
         {
             Injection.Download(BaseROM);
+            SNESBaseComboBox_SelectedIndexChanged(null, null);
         }
 
-        private void N64_BTN10_Click(object sender, EventArgs e)
+        private void N64BlankINIButton_Click(object sender, EventArgs e)
         {
             iniPath = "blank";
             N64INITextBox.Text = "Using blank INI";
         }
 
-        private void N64_BTN11_Click(object sender, EventArgs e)
+        private void N64TVButton_Click(object sender, EventArgs e)
         {
             bootimages[0] = N64TVTextBox.Text = SelectPngOrTgaFile() ?? bootimages[0];
         }
 
-        private void N64_BTN12_Click(object sender, EventArgs e)
+        private void N64DRCButton_Click(object sender, EventArgs e)
         {
             bootimages[1] = N64DRCTextBox.Text = SelectPngOrTgaFile() ?? bootimages[1];
         }
 
-        private void N64_BTN13_Click(object sender, EventArgs e)
+        private void N64IconButton_Click(object sender, EventArgs e)
         {
             bootimages[2] = N64IconTextBox.Text = SelectPngOrTgaFile() ?? bootimages[2];
         }
 
-        private void N64_BTN14_Click(object sender, EventArgs e)
+        private void N64LogoButton_Click(object sender, EventArgs e)
         {
             bootimages[3] = N64LogoTextBox.Text = SelectPngOrTgaFile() ?? bootimages[3];
         }
 
-        private void N64_BTN9_Click(object sender, EventArgs e)
+        private void N64INIButton_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog fileDialog = new OpenFileDialog())
             {
@@ -511,14 +512,14 @@ namespace UWUVCI_AIO
             }
         }
 
-        private void N64_BTN15_Click(object sender, EventArgs e)
+        private void N64InjectButton_Click(object sender, EventArgs e)
         {
             Injection.Inject(Injection.Console.N64, BaseROM, customBaseRomPath, injectRomPath, bootimages, N64GameNameTextBox.Text, iniPath, !N64DarkFilterRadioButton1.Checked);
             N64InstallButton.Enabled = true;
             N64LoadiineButton.Enabled = true;
         }
 
-        private void N64_BTN17_Click(object sender, EventArgs e)
+        private void N64InstallButton_Click(object sender, EventArgs e)
         {
             if (Properties.Settings.Default.CommonKey == "")
             {
@@ -532,14 +533,14 @@ namespace UWUVCI_AIO
             }
         }
 
-        private void N64_BTN16_Click(object sender, EventArgs e)
+        private void N64LoadiineButton_Click(object sender, EventArgs e)
         {
             Injection.Loadiine(N64GameNameTextBox.Text);
             N64InstallButton.Enabled = false;
             N64LoadiineButton.Enabled = false;
         }
 
-        private void NDS_BTN10_Click(object sender, EventArgs e)
+        private void NDSRomButton_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog fileDialog = new OpenFileDialog())
             {
@@ -553,27 +554,27 @@ namespace UWUVCI_AIO
             }
         }
 
-        private void NDS_BTN11_Click(object sender, EventArgs e)
+        private void NDSTVButton_Click(object sender, EventArgs e)
         {
             bootimages[0] = NDSTVTextBox.Text = SelectPngOrTgaFile() ?? bootimages[0];
         }
 
-        private void NDS_BTN12_Click(object sender, EventArgs e)
+        private void NDSDRCButton_Click(object sender, EventArgs e)
         {
             bootimages[1] = NDSDRCTextBox.Text = SelectPngOrTgaFile() ?? bootimages[1];
         }
 
-        private void NDS_BTN13_Click(object sender, EventArgs e)
+        private void NDSIconButton_Click(object sender, EventArgs e)
         {
             bootimages[2] = NDSIconTextBox.Text = SelectPngOrTgaFile() ?? bootimages[2];
         }
 
-        private void NDS_BTN14_Click(object sender, EventArgs e)
+        private void NDSLogoButton_Click(object sender, EventArgs e)
         {
             bootimages[3] = NDSLogoTextBox.Text = SelectPngOrTgaFile() ?? bootimages[3];
         }
 
-        private void NDS_BTN15_Click(object sender, EventArgs e)
+        private void NDSInjectButton_Click(object sender, EventArgs e)
         {
             Injection.Inject(Injection.Console.NDS, BaseROM, customBaseRomPath, injectRomPath, bootimages, NDSGameNameTextBox.Text);
             NDSInstallButton.Enabled = true;
@@ -601,7 +602,7 @@ namespace UWUVCI_AIO
             NDSLoadiineButton.Enabled = false;
         }
 
-        private void NES_ROM_Click(object sender, EventArgs e)
+        private void NESRomButton_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog fileDialog = new OpenFileDialog())
             {
@@ -656,21 +657,21 @@ namespace UWUVCI_AIO
             }
         }
 
-        private void NES_LOADIINE_Click(object sender, EventArgs e)
+        private void NESLoadiineButton_Click(object sender, EventArgs e)
         {
             NESInstallButton.Enabled = false;
             NESLoadiineButton.Enabled = false;
             Injection.Loadiine(NESGameNameTextBox.Text);
         }
 
-        private void GBA_INJECT_Click(object sender, EventArgs e)
+        private void GBAInjectButton_Click(object sender, EventArgs e)
         {
             Injection.Inject(Injection.Console.GBA, BaseROM, customBaseRomPath, injectRomPath, bootimages, GBAGameNameTextBox.Text);
             GBAInstallButton.Enabled = true;
             GBALoadiineButton.Enabled = true;
         }
 
-        private void GBA_INST_Click(object sender, EventArgs e)
+        private void GBAInstallButton_Click(object sender, EventArgs e)
         {
             if (Properties.Settings.Default.CommonKey == "")
             {
@@ -684,14 +685,14 @@ namespace UWUVCI_AIO
             }
         }
 
-        private void GBA_LOADIINE_Click(object sender, EventArgs e)
+        private void GBALoadiineButton_Click(object sender, EventArgs e)
         {
             Injection.Loadiine(GBAGameNameTextBox.Text);
             GBAInstallButton.Enabled = false;
             GBALoadiineButton.Enabled = false;
         }
 
-        private void GBA_ROM_Click(object sender, EventArgs e)
+        private void GBARomButton_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog fileDialog = new OpenFileDialog())
             {
@@ -705,34 +706,34 @@ namespace UWUVCI_AIO
             }
         }
 
-        private void GBA_TV_Click(object sender, EventArgs e)
+        private void GBATVButton_Click(object sender, EventArgs e)
         {
             bootimages[0] = GBATVTextBox.Text = SelectPngOrTgaFile() ?? bootimages[0];
         }
 
-        private void GBA_DRC_Click(object sender, EventArgs e)
+        private void GBADRCButton_Click(object sender, EventArgs e)
         {
             bootimages[1] = GBADRCTextBox.Text = SelectPngOrTgaFile() ?? bootimages[1];
         }
 
-        private void GBA_ICON_Click(object sender, EventArgs e)
+        private void GBAIconButton_Click(object sender, EventArgs e)
         {
             bootimages[2] = GBAIconTextBox.Text = SelectPngOrTgaFile() ?? bootimages[2];
         }
 
-        private void GBA_LOGO_Click(object sender, EventArgs e)
+        private void GBALogoButton_Click(object sender, EventArgs e)
         {
             bootimages[3] = GBALogoTextBox.Text = SelectPngOrTgaFile() ?? bootimages[3];
         }
 
-        private void N64CSTMN_PATH_BTN_Click(object sender, EventArgs e)
+        private void N64CustomButton_Click(object sender, EventArgs e)
         {
             customBaseRomPath = N64CustomTextBox.Text = SelectRomFolder() ?? customBaseRomPath;
             FillCustomPanel(N64CustomPanel);
             CheckInjectButton();
         }
 
-        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void N64BaseComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             N64CustomPanel.Visible = false;
             N64BasePanel.Visible = false;
@@ -771,9 +772,10 @@ namespace UWUVCI_AIO
             CheckInjectButton();
         }
 
-        private void DK64US_DWNLD_Click(object sender, EventArgs e)
+        private void N64BaseDownloadButton_Click(object sender, EventArgs e)
         {
             Injection.Download(BaseROM);
+            N64BaseComboBox_SelectedIndexChanged(null, null);
         }
 
         private void NDSToolStripMenuItem_Click(object sender, EventArgs e)
@@ -833,6 +835,7 @@ namespace UWUVCI_AIO
         private void NDSBaseDownloadButton_Click(object sender, EventArgs e)
         {
             Injection.Download(BaseROM);
+            NDSBaseComboBox_SelectedIndexChanged(null, null);
         }
 
         private void NESToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -843,14 +846,14 @@ namespace UWUVCI_AIO
             }
         }
 
-        private void NESCSTMN_BTN_Click(object sender, EventArgs e)
+        private void NESCustomButton_Click(object sender, EventArgs e)
         {
             customBaseRomPath = NESCustomTextBox.Text = SelectRomFolder() ?? customBaseRomPath;
             FillCustomPanel(NESCustomPanel);
             CheckInjectButton();
         }
 
-        private void ComboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        private void NESBaseComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             NESCustomPanel.Visible = false;
             NESBasePanel.Visible = false;
@@ -883,9 +886,10 @@ namespace UWUVCI_AIO
             CheckInjectButton();
         }
 
-        private void POUS_BTN_Click(object sender, EventArgs e)
+        private void NESBaseDownloadButton_Click(object sender, EventArgs e)
         {
             Injection.Download(BaseROM);
+            NESBaseComboBox_SelectedIndexChanged(null, null);
         }
 
         private void NESToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -896,7 +900,7 @@ namespace UWUVCI_AIO
             }
         }
 
-        private void ComboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        private void GBABaseComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             GBACustomPanel.Visible = false;
             GBABasePanel.Visible = false;
@@ -929,16 +933,17 @@ namespace UWUVCI_AIO
             CheckInjectButton();
         }
 
-        private void GBACSTMN_BTN_Click(object sender, EventArgs e)
+        private void GBACustomButton_Click(object sender, EventArgs e)
         {
             customBaseRomPath = GBACustomTextBox.Text = SelectRomFolder() ?? customBaseRomPath;
             FillCustomPanel(GBACustomPanel);
             CheckInjectButton();
         }
 
-        private void MKCUS_BTN_Click(object sender, EventArgs e)
+        private void GBABaseDownloadButton_Click(object sender, EventArgs e)
         {
             Injection.Download(BaseROM);
+            GBABaseComboBox_SelectedIndexChanged(null, null);
         }
 
         private static string SelectPngOrTgaFile()
