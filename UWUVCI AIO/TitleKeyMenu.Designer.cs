@@ -137,18 +137,17 @@
             // 
             // tabControl1
             // 
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.NDSTabPage);
             this.tabControl1.Controls.Add(this.N64TabPage);
             this.tabControl1.Controls.Add(this.GBATabPage);
             this.tabControl1.Controls.Add(this.NESTabPage);
             this.tabControl1.Controls.Add(this.SNESTabPage);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
             // NDSTabPage
             // 
-            resources.ApplyResources(this.NDSTabPage, "NDSTabPage");
             this.NDSTabPage.BackColor = System.Drawing.Color.WhiteSmoke;
             this.NDSTabPage.Controls.Add(this.ZPHUS);
             this.NDSTabPage.Controls.Add(this.label1);
@@ -168,6 +167,7 @@
             this.NDSTabPage.Controls.Add(this.ZSTUS_TXT);
             this.NDSTabPage.Controls.Add(this.label6);
             this.NDSTabPage.Controls.Add(this.ZSTEU_TXT);
+            resources.ApplyResources(this.NDSTabPage, "NDSTabPage");
             this.NDSTabPage.Name = "NDSTabPage";
             // 
             // ZPHUS
@@ -274,7 +274,6 @@
             // 
             // N64TabPage
             // 
-            resources.ApplyResources(this.N64TabPage, "N64TabPage");
             this.N64TabPage.BackColor = System.Drawing.Color.WhiteSmoke;
             this.N64TabPage.Controls.Add(this.FZXJP);
             this.N64TabPage.Controls.Add(this.FZXJP_LABEL);
@@ -294,6 +293,7 @@
             this.N64TabPage.Controls.Add(this.PMUStxt);
             this.N64TabPage.Controls.Add(this.PMEU_LABEL);
             this.N64TabPage.Controls.Add(this.PMEUtxt);
+            resources.ApplyResources(this.N64TabPage, "N64TabPage");
             this.N64TabPage.Name = "N64TabPage";
             // 
             // FZXJP
@@ -400,7 +400,6 @@
             // 
             // GBATabPage
             // 
-            resources.ApplyResources(this.GBATabPage, "GBATabPage");
             this.GBATabPage.BackColor = System.Drawing.Color.WhiteSmoke;
             this.GBATabPage.Controls.Add(this.MKCUS);
             this.GBATabPage.Controls.Add(this.label11);
@@ -414,6 +413,7 @@
             this.GBATabPage.Controls.Add(this.ZMCUS_TXT);
             this.GBATabPage.Controls.Add(this.label14);
             this.GBATabPage.Controls.Add(this.ZMCEU_TXT);
+            resources.ApplyResources(this.GBATabPage, "GBATabPage");
             this.GBATabPage.Name = "GBATabPage";
             // 
             // MKCUS
@@ -486,7 +486,6 @@
             // 
             // NESTabPage
             // 
-            resources.ApplyResources(this.NESTabPage, "NESTabPage");
             this.NESTabPage.BackColor = System.Drawing.Color.WhiteSmoke;
             this.NESTabPage.Controls.Add(this.SMBUS);
             this.NESTabPage.Controls.Add(this.label7);
@@ -500,6 +499,7 @@
             this.NESTabPage.Controls.Add(this.POUS_TXT);
             this.NESTabPage.Controls.Add(this.label10);
             this.NESTabPage.Controls.Add(this.POEU_TXT);
+            resources.ApplyResources(this.NESTabPage, "NESTabPage");
             this.NESTabPage.Name = "NESTabPage";
             // 
             // SMBUS
@@ -572,9 +572,9 @@
             // 
             // SNESTabPage
             // 
-            resources.ApplyResources(this.SNESTabPage, "SNESTabPage");
             this.SNESTabPage.BackColor = System.Drawing.Color.WhiteSmoke;
             this.SNESTabPage.Controls.Add(this.tabControl2);
+            resources.ApplyResources(this.SNESTabPage, "SNESTabPage");
             this.SNESTabPage.Name = "SNESTabPage";
             // 
             // tabControl2
@@ -589,7 +589,6 @@
             // 
             // SNES1
             // 
-            resources.ApplyResources(this.SNES1, "SNES1");
             this.SNES1.Controls.Add(this.button7);
             this.SNES1.Controls.Add(this.EarthboundJP);
             this.SNES1.Controls.Add(this.EarthboundJP_LABEL);
@@ -609,6 +608,7 @@
             this.SNES1.Controls.Add(this.SMetroidUS_LABEL);
             this.SNES1.Controls.Add(this.SMetroidEU);
             this.SNES1.Controls.Add(this.SMetroidEU_LABEL);
+            resources.ApplyResources(this.SNES1, "SNES1");
             this.SNES1.Name = "SNES1";
             this.SNES1.UseVisualStyleBackColor = true;
             // 
@@ -723,7 +723,6 @@
             // 
             // SNES2
             // 
-            resources.ApplyResources(this.SNES2, "SNES2");
             this.SNES2.Controls.Add(this.button8);
             this.SNES2.Controls.Add(this.DKCUS);
             this.SNES2.Controls.Add(this.DKCUS_LABEL);
@@ -731,6 +730,7 @@
             this.SNES2.Controls.Add(this.DKCEUtxt);
             this.SNES2.Controls.Add(this.DKCEU);
             this.SNES2.Controls.Add(this.DKCEU_LABEL);
+            resources.ApplyResources(this.SNES2, "SNES2");
             this.SNES2.Name = "SNES2";
             this.SNES2.UseVisualStyleBackColor = true;
             // 

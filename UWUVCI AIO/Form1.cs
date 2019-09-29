@@ -47,8 +47,8 @@ namespace UWUVCI_AIO
 
             if (Properties.Settings.Default.CommonKey.GetHashCode() == 487391367)
             {
-                toolStripMenuItem2.Enabled = false;
-                toolStripMenuItem2.Text = Resources.CommonkeyAlreadySet;
+                CommonkeyToolStripMenuItem.Enabled = false;
+                CommonkeyToolStripMenuItem.Text = Resources.CommonkeyAlreadySet;
             }
 
             if (!AllPathsSet())
@@ -60,6 +60,7 @@ namespace UWUVCI_AIO
         private static void ResetInput()
         {
             BaseROM = null;
+            customBaseRomPath = null;
             code = false;
             content = false;
             meta = false;
@@ -69,7 +70,6 @@ namespace UWUVCI_AIO
             {
                 bootimages[i] = null;
             }
-            customBaseRomPath = null;
             Injection.Clean();
         }
 
@@ -86,7 +86,7 @@ namespace UWUVCI_AIO
             GBAImage.Enabled = false;
             NESImage.Enabled = false;
             SNESImage.Enabled = false;
-            newToolStripMenuItem.Enabled = false;
+            NewToolStripMenuItem.Enabled = false;
         }
 
         private void EnableInjection()
@@ -97,7 +97,7 @@ namespace UWUVCI_AIO
             GBAImage.Enabled = true;
             NESImage.Enabled = true;
             SNESImage.Enabled = true;
-            newToolStripMenuItem.Enabled = true;
+            NewToolStripMenuItem.Enabled = true;
         }
 
         private void EnableDarkMode()
@@ -206,10 +206,10 @@ namespace UWUVCI_AIO
         private void BackButton_Click(object sender, EventArgs e)
         {
             ResetInput();
-            tabControl1.SelectedIndex = 0;
+            MainTabControl.SelectedIndex = 0;
         }
 
-        private void N64ToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void N64ToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             using (TitleKeyMenu titleKeyMenu = new TitleKeyMenu(1)) // 0 = NDS; 1 = N64, 2 = GBA, 3 = NES, 4 = SNES
             {
@@ -219,60 +219,67 @@ namespace UWUVCI_AIO
 
         private void NDSImage_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 1; // 0 = Main, 1 = NDS, 2 = N64, 3 = GBA, 4 = NES, 5 = SNES
+            MainTabControl.SelectedIndex = 1;
+            LoadValuesFromTabPage();
         }
 
         private void N64Image_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 2; // 0 = Main, 1 = NDS, 2 = N64, 3 = GBA, 4 = NES, 5 = SNES
+            MainTabControl.SelectedIndex = 2;
+            LoadValuesFromTabPage();
         }
 
         private void GBAImage_Click(object sender, EventArgs e)
         {
-            ResetInput();
-            tabControl1.SelectedIndex = 3; // 0 = Main, 1 = NDS, 2 = N64, 3 = GBA, 4 = NES, 5 = SNES
+            MainTabControl.SelectedIndex = 3;
+            LoadValuesFromTabPage();
         }
 
         private void NESImage_Click(object sender, EventArgs e)
         {
-            ResetInput();
-            tabControl1.SelectedIndex = 4; // 0 = Main, 1 = NDS, 2 = N64, 3 = GBA, 4 = NES, 5 = SNES
+            MainTabControl.SelectedIndex = 4;
+            LoadValuesFromTabPage();
         }
 
         private void SNESImage_Click(object sender, EventArgs e)
         {
-            ResetInput();
-            tabControl1.SelectedIndex = 5; // 0 = Main, 1 = NDS, 2 = N64, 3 = GBA, 4 = NES, 5 = SNES
+            MainTabControl.SelectedIndex = 5;
+            LoadValuesFromTabPage();
         }
 
-        private void ToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void NDSToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ResetInput();
-            tabControl1.SelectedIndex = 1; // 0 = Main, 1 = NDS, 2 = N64, 3 = GBA, 4 = NES, 5 = SNES
+            MainTabControl.SelectedIndex = 1;
+            ClearTabPage();
         }
 
-        private void N64ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void N64ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ResetInput();
-            tabControl1.SelectedIndex = 2; // 0 = Main, 1 = NDS, 2 = N64, 3 = GBA, 4 = NES, 5 = SNES
+            MainTabControl.SelectedIndex = 2;
+            ClearTabPage();
         }
 
-        private void GBAToolStripMenuItem_Click(object sender, EventArgs e)
+        private void GBAToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ResetInput();
-            tabControl1.SelectedIndex = 3; // 0 = Main, 1 = NDS, 2 = N64, 3 = GBA, 4 = NES, 5 = SNES
+            MainTabControl.SelectedIndex = 3;
+            ClearTabPage();
         }
 
-        private void NESToolStripMenuItem_Click(object sender, EventArgs e)
+        private void NESToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ResetInput();
-            tabControl1.SelectedIndex = 4; // 0 = Main, 1 = NDS, 2 = N64, 3 = GBA, 4 = NES, 5 = SNES
+            MainTabControl.SelectedIndex = 4;
+            ClearTabPage();
         }
 
-        private void SNESToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SNESToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ResetInput();
-            tabControl1.SelectedIndex = 5; // 0 = Main, 1 = NDS, 2 = N64, 3 = GBA, 4 = NES, 5 = SNES
+            MainTabControl.SelectedIndex = 5;
+            ClearTabPage();
         }
 
         private void SNESBaseComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -280,47 +287,50 @@ namespace UWUVCI_AIO
             SNESCustomPanel.Visible = false;
             SNESBasePanel.Visible = false;
 
-            if (SNESBaseComboBox.SelectedIndex == 0)
+            switch (SNESBaseComboBox.SelectedIndex)
             {
-                SNESCustomPanel.Visible = true;
-                FillCustomPanel(SNESCustomPanel);
-            }
-            else
-            {
-                SNESBasePanel.Visible = true;
-                switch (SNESBaseComboBox.SelectedIndex)
-                {
-                    case 1:
-                        FillPanel(SNESBasePanel, "SMetroidEU");
-                        break;
-                    case 2:
-                        FillPanel(SNESBasePanel, "SMetroidUS");
-                        break;
-                    case 3:
-                        FillPanel(SNESBasePanel, "SMetroidJP");
-                        break;
-                    case 4:
-                        FillPanel(SNESBasePanel, "EarthboundEU");
-                        break;
-                    case 5:
-                        FillPanel(SNESBasePanel, "EarthboundUS");
-                        break;
-                    case 6:
-                        FillPanel(SNESBasePanel, "EarthboundJP");
-                        break;
-                    case 7:
-                        FillPanel(SNESBasePanel, "DKCEU");
-                        break;
-                    case 8:
-                        FillPanel(SNESBasePanel, "DKCUS");
-                        break;
-                }
+                case -1:
+                    return;
+                case 0:
+                    SNESCustomPanel.Visible = true;
+                    FillCustomPanel(SNESCustomPanel);
+                    break;
+                default:
+                    SNESBasePanel.Visible = true;
+                    switch (SNESBaseComboBox.SelectedIndex)
+                    {
+                        case 1:
+                            FillPanel(SNESBasePanel, "SMetroidEU");
+                            break;
+                        case 2:
+                            FillPanel(SNESBasePanel, "SMetroidUS");
+                            break;
+                        case 3:
+                            FillPanel(SNESBasePanel, "SMetroidJP");
+                            break;
+                        case 4:
+                            FillPanel(SNESBasePanel, "EarthboundEU");
+                            break;
+                        case 5:
+                            FillPanel(SNESBasePanel, "EarthboundUS");
+                            break;
+                        case 6:
+                            FillPanel(SNESBasePanel, "EarthboundJP");
+                            break;
+                        case 7:
+                            FillPanel(SNESBasePanel, "DKCEU");
+                            break;
+                        case 8:
+                            FillPanel(SNESBasePanel, "DKCUS");
+                            break;
+                    }
+                    break;
             }
 
             CheckInjectButton();
         }
 
-        private void SNESToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void SNESToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             using (TitleKeyMenu titleKeyMenu = new TitleKeyMenu(4)) // 0 = NDS; 1 = N64, 2 = GBA, 3 = NES, 4 = SNES
             {
@@ -364,12 +374,12 @@ namespace UWUVCI_AIO
         }
 
         #region UI buttons i guess
-        private void CloseToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void CloseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
         }
 
-        private void SettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void InterfaceToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (Settings settings = new Settings())
             {
@@ -390,7 +400,7 @@ namespace UWUVCI_AIO
             }
         }
 
-        private void ToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void CommonkeyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (CKey ckey = new CKey())
             {
@@ -398,7 +408,7 @@ namespace UWUVCI_AIO
             }
         }
 
-        private void ToolStripMenuItem3_Click(object sender, EventArgs e)
+        private void PathsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             bool allPathsWereSet = AllPathsSet();
             using (PathMenu pathMenu = new PathMenu())
@@ -738,35 +748,38 @@ namespace UWUVCI_AIO
             N64CustomPanel.Visible = false;
             N64BasePanel.Visible = false;
 
-            if (N64BaseComboBox.SelectedIndex == 0)
+            switch (N64BaseComboBox.SelectedIndex)
             {
-                N64CustomPanel.Visible = true;
-                FillCustomPanel(N64CustomPanel);
-            }
-            else
-            {
-                N64BasePanel.Visible = true;
-                switch (N64BaseComboBox.SelectedIndex)
-                {
-                    case 1:
-                        FillPanel(N64BasePanel, "PMEU");
-                        break;
-                    case 2:
-                        FillPanel(N64BasePanel, "PMUS");
-                        break;
-                    case 3:
-                        FillPanel(N64BasePanel, "FZXUS");
-                        break;
-                    case 4:
-                        FillPanel(N64BasePanel, "FZXJP");
-                        break;
-                    case 5:
-                        FillPanel(N64BasePanel, "DK64EU");
-                        break;
-                    case 6:
-                        FillPanel(N64BasePanel, "DK64US");
-                        break;
-                }
+                case -1:
+                    return;
+                case 0:
+                    N64CustomPanel.Visible = true;
+                    FillCustomPanel(N64CustomPanel);
+                    break;
+                default:
+                    N64BasePanel.Visible = true;
+                    switch (N64BaseComboBox.SelectedIndex)
+                    {
+                        case 1:
+                            FillPanel(N64BasePanel, "PMEU");
+                            break;
+                        case 2:
+                            FillPanel(N64BasePanel, "PMUS");
+                            break;
+                        case 3:
+                            FillPanel(N64BasePanel, "FZXUS");
+                            break;
+                        case 4:
+                            FillPanel(N64BasePanel, "FZXJP");
+                            break;
+                        case 5:
+                            FillPanel(N64BasePanel, "DK64EU");
+                            break;
+                        case 6:
+                            FillPanel(N64BasePanel, "DK64US");
+                            break;
+                    }
+                    break;
             }
 
             CheckInjectButton();
@@ -778,7 +791,7 @@ namespace UWUVCI_AIO
             N64BaseComboBox_SelectedIndexChanged(null, null);
         }
 
-        private void NDSToolStripMenuItem_Click(object sender, EventArgs e)
+        private void NDSToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             using (TitleKeyMenu titleKeyMenu = new TitleKeyMenu(0)) // 0 = NDS; 1 = N64, 2 = GBA, 3 = NES, 4 = SNES
             {
@@ -791,35 +804,38 @@ namespace UWUVCI_AIO
             NDSCustomPanel.Visible = false;
             NDSBasePanel.Visible = false;
 
-            if (NDSBaseComboBox.SelectedIndex == 0)
+            switch (NDSBaseComboBox.SelectedIndex)
             {
-                NDSCustomPanel.Visible = true;
-                FillCustomPanel(NDSCustomPanel);
-            }
-            else
-            {
-                NDSBasePanel.Visible = true;
-                switch (NDSBaseComboBox.SelectedIndex)
-                {
-                    case 1:
-                        FillPanel(NDSBasePanel, "ZSTEU");
-                        break;
-                    case 2:
-                        FillPanel(NDSBasePanel, "ZSTUS");
-                        break;
-                    case 3:
-                        FillPanel(NDSBasePanel, "ZPHEU");
-                        break;
-                    case 4:
-                        FillPanel(NDSBasePanel, "ZPHUS");
-                        break;
-                    case 5:
-                        FillPanel(NDSBasePanel, "WWEU");
-                        break;
-                    case 6:
-                        FillPanel(NDSBasePanel, "WWUS");
-                        break;
-                }
+                case -1:
+                    return;
+                case 0:
+                    NDSCustomPanel.Visible = true;
+                    FillCustomPanel(NDSCustomPanel);
+                    break;
+                default:
+                    NDSBasePanel.Visible = true;
+                    switch (NDSBaseComboBox.SelectedIndex)
+                    {
+                        case 1:
+                            FillPanel(NDSBasePanel, "ZSTEU");
+                            break;
+                        case 2:
+                            FillPanel(NDSBasePanel, "ZSTUS");
+                            break;
+                        case 3:
+                            FillPanel(NDSBasePanel, "ZPHEU");
+                            break;
+                        case 4:
+                            FillPanel(NDSBasePanel, "ZPHUS");
+                            break;
+                        case 5:
+                            FillPanel(NDSBasePanel, "WWEU");
+                            break;
+                        case 6:
+                            FillPanel(NDSBasePanel, "WWUS");
+                            break;
+                    }
+                    break;
             }
 
             CheckInjectButton();
@@ -858,29 +874,32 @@ namespace UWUVCI_AIO
             NESCustomPanel.Visible = false;
             NESBasePanel.Visible = false;
 
-            if (NESBaseComboBox.SelectedIndex == 0)
+            switch (NESBaseComboBox.SelectedIndex)
             {
-                NESCustomPanel.Visible = true;
-                FillCustomPanel(NESCustomPanel);
-            }
-            else
-            {
-                NESBasePanel.Visible = true;
-                switch (NESBaseComboBox.SelectedIndex)
-                {
-                    case 1:
-                        FillPanel(NESBasePanel, "POEU");
-                        break;
-                    case 2:
-                        FillPanel(NESBasePanel, "POUS");
-                        break;
-                    case 3:
-                        FillPanel(NESBasePanel, "SMBEU");
-                        break;
-                    case 4:
-                        FillPanel(NESBasePanel, "SMBUS");
-                        break;
-                }
+                case -1:
+                    return;
+                case 0:
+                    NESCustomPanel.Visible = true;
+                    FillCustomPanel(NESCustomPanel);
+                    break;
+                default:
+                    NESBasePanel.Visible = true;
+                    switch (NESBaseComboBox.SelectedIndex)
+                    {
+                        case 1:
+                            FillPanel(NESBasePanel, "POEU");
+                            break;
+                        case 2:
+                            FillPanel(NESBasePanel, "POUS");
+                            break;
+                        case 3:
+                            FillPanel(NESBasePanel, "SMBEU");
+                            break;
+                        case 4:
+                            FillPanel(NESBasePanel, "SMBUS");
+                            break;
+                    }
+                    break;
             }
 
             CheckInjectButton();
@@ -892,7 +911,7 @@ namespace UWUVCI_AIO
             NESBaseComboBox_SelectedIndexChanged(null, null);
         }
 
-        private void NESToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void GBAToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             using (TitleKeyMenu titleKeyMenu = new TitleKeyMenu(2)) // 0 = NDS; 1 = N64, 2 = GBA, 3 = NES, 4 = SNES
             {
@@ -905,29 +924,32 @@ namespace UWUVCI_AIO
             GBACustomPanel.Visible = false;
             GBABasePanel.Visible = false;
 
-            if (GBABaseComboBox.SelectedIndex == 0)
+            switch (GBABaseComboBox.SelectedIndex)
             {
-                GBACustomPanel.Visible = true;
-                FillCustomPanel(GBACustomPanel);
-            }
-            else
-            {
-                GBABasePanel.Visible = true;
-                switch (GBABaseComboBox.SelectedIndex)
-                {
-                    case 1:
-                        FillPanel(GBABasePanel, "ZMCEU");
-                        break;
-                    case 2:
-                        FillPanel(GBABasePanel, "ZMCUS");
-                        break;
-                    case 3:
-                        FillPanel(GBABasePanel, "MKCEU");
-                        break;
-                    case 4:
-                        FillPanel(GBABasePanel, "MKCUS");
-                        break;
-                }
+                case -1:
+                    return;
+                case 0:
+                    GBACustomPanel.Visible = true;
+                    FillCustomPanel(GBACustomPanel);
+                    break;
+                default:
+                    GBABasePanel.Visible = true;
+                    switch (GBABaseComboBox.SelectedIndex)
+                    {
+                        case 1:
+                            FillPanel(GBABasePanel, "ZMCEU");
+                            break;
+                        case 2:
+                            FillPanel(GBABasePanel, "ZMCUS");
+                            break;
+                        case 3:
+                            FillPanel(GBABasePanel, "MKCEU");
+                            break;
+                        case 4:
+                            FillPanel(GBABasePanel, "MKCUS");
+                            break;
+                    }
+                    break;
             }
 
             CheckInjectButton();
@@ -968,7 +990,7 @@ namespace UWUVCI_AIO
 
         private void CheckInjectButton()
         {
-            switch (tabControl1.SelectedIndex)
+            switch (MainTabControl.SelectedIndex)
             {
                 case 1: // NDS
                     if (NDSBaseComboBox.SelectedIndex == 0)
@@ -1113,11 +1135,144 @@ namespace UWUVCI_AIO
             }
         }
 
+        private void LoadValuesFromTabPage()
+        {
+            switch (MainTabControl.SelectedIndex)
+            {
+                case 1: // NDS
+                    NDSBaseComboBox_SelectedIndexChanged(null, null);
+                    BaseROM = NDSRomTextBox.Text;
+                    if (!string.IsNullOrEmpty(NDSTVTextBox.Text))
+                        bootimages[0] = NDSTVTextBox.Text;
+                    if (!string.IsNullOrEmpty(NDSDRCTextBox.Text))
+                        bootimages[1] = NDSDRCTextBox.Text;
+                    if (!string.IsNullOrEmpty(NDSLogoTextBox.Text))
+                        bootimages[2] = NDSLogoTextBox.Text;
+                    if (!string.IsNullOrEmpty(NDSIconTextBox.Text))
+                        bootimages[3] = NDSIconTextBox.Text;
+                    break;
+                case 2: // N64
+                    N64BaseComboBox_SelectedIndexChanged(null, null);
+                    BaseROM = N64RomTextBox.Text;
+                    if (!string.IsNullOrEmpty(N64INITextBox.Text))
+                        iniPath = N64INITextBox.Text;
+                    if (!string.IsNullOrEmpty(N64TVTextBox.Text))
+                        bootimages[0] = N64TVTextBox.Text;
+                    if (!string.IsNullOrEmpty(N64DRCTextBox.Text))
+                        bootimages[1] = N64DRCTextBox.Text;
+                    if (!string.IsNullOrEmpty(N64LogoTextBox.Text))
+                        bootimages[2] = N64LogoTextBox.Text;
+                    if (!string.IsNullOrEmpty(N64IconTextBox.Text))
+                        bootimages[3] = N64IconTextBox.Text;
+                    break;
+                case 3: // GBA
+                    GBABaseComboBox_SelectedIndexChanged(null, null);
+                    BaseROM = GBARomTextBox.Text;
+                    if (!string.IsNullOrEmpty(GBATVTextBox.Text))
+                        bootimages[0] = GBATVTextBox.Text;
+                    if (!string.IsNullOrEmpty(GBADRCTextBox.Text))
+                        bootimages[1] = GBADRCTextBox.Text;
+                    if (!string.IsNullOrEmpty(GBALogoTextBox.Text))
+                        bootimages[2] = GBALogoTextBox.Text;
+                    if (!string.IsNullOrEmpty(GBAIconTextBox.Text))
+                        bootimages[3] = GBAIconTextBox.Text;
+                    break;
+                case 4: // NES
+                    NESBaseComboBox_SelectedIndexChanged(null, null);
+                    BaseROM = NESRomTextBox.Text;
+                    if (!string.IsNullOrEmpty(NESTVTextBox.Text))
+                        bootimages[0] = NESTVTextBox.Text;
+                    if (!string.IsNullOrEmpty(NESDRCTextBox.Text))
+                        bootimages[1] = NESDRCTextBox.Text;
+                    if (!string.IsNullOrEmpty(NESLogoTextBox.Text))
+                        bootimages[2] = NESLogoTextBox.Text;
+                    if (!string.IsNullOrEmpty(NESIconTextBox.Text))
+                        bootimages[3] = NESIconTextBox.Text;
+                    break;
+                case 5: // SNES
+                    SNESBaseComboBox_SelectedIndexChanged(null, null);
+                    BaseROM = SNESRomTextBox.Text;
+                    if (!string.IsNullOrEmpty(SNESTVTextBox.Text))
+                        bootimages[0] = SNESTVTextBox.Text;
+                    if (!string.IsNullOrEmpty(SNESDRCTextBox.Text))
+                        bootimages[1] = SNESDRCTextBox.Text;
+                    if (!string.IsNullOrEmpty(SNESLogoTextBox.Text))
+                        bootimages[2] = SNESLogoTextBox.Text;
+                    if (!string.IsNullOrEmpty(SNESIconTextBox.Text))
+                        bootimages[3] = SNESIconTextBox.Text;
+                    break;
+            }
+        }
+
+        private void ClearTabPage()
+        {
+            switch (MainTabControl.SelectedIndex)
+            {
+                case 1: // NDS
+                    NDSBaseComboBox.SelectedIndex = -1;
+                    NDSRomTextBox.Text = "";
+                    NDSTVTextBox.Text = "";
+                    NDSDRCTextBox.Text = "";
+                    NDSLogoTextBox.Text = "";
+                    NDSIconTextBox.Text = "";
+                    NDSGameNameTextBox.Text = "";
+                    NDSLoadiineButton.Enabled = false;
+                    NDSInstallButton.Enabled = false;
+                    break;
+                case 2: // N64
+                    N64BaseComboBox.SelectedIndex = -1;
+                    N64RomTextBox.Text = "";
+                    N64DarkFilterRadioButton1.Select();
+                    N64INITextBox.Text = "";
+                    N64TVTextBox.Text = "";
+                    N64DRCTextBox.Text = "";
+                    N64LogoTextBox.Text = "";
+                    N64IconTextBox.Text = "";
+                    N64GameNameTextBox.Text = "";
+                    N64LoadiineButton.Enabled = false;
+                    N64InstallButton.Enabled = false;
+                    break;
+                case 3: // GBA
+                    GBABaseComboBox.SelectedIndex = -1;
+                    GBARomTextBox.Text = "";
+                    GBATVTextBox.Text = "";
+                    GBADRCTextBox.Text = "";
+                    GBALogoTextBox.Text = "";
+                    GBAIconTextBox.Text = "";
+                    GBAGameNameTextBox.Text = "";
+                    GBALoadiineButton.Enabled = false;
+                    GBAInstallButton.Enabled = false;
+                    break;
+                case 4: // NES
+                    NESBaseComboBox.SelectedIndex = -1;
+                    NESRomTextBox.Text = "";
+                    NESTVTextBox.Text = "";
+                    NESDRCTextBox.Text = "";
+                    NESLogoTextBox.Text = "";
+                    NESIconTextBox.Text = "";
+                    NESGameNameTextBox.Text = "";
+                    NESLoadiineButton.Enabled = false;
+                    NESInstallButton.Enabled = false;
+                    break;
+                case 5: // SNES
+                    SNESBaseComboBox.SelectedIndex = -1;
+                    SNESRomTextBox.Text = "";
+                    SNESTVTextBox.Text = "";
+                    SNESDRCTextBox.Text = "";
+                    SNESLogoTextBox.Text = "";
+                    SNESIconTextBox.Text = "";
+                    SNESGameNameTextBox.Text = "";
+                    SNESLoadiineButton.Enabled = false;
+                    SNESInstallButton.Enabled = false;
+                    break;
+            }
+        }
+
         private void DefaultOnKeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
             {
-                switch (tabControl1.SelectedIndex)
+                switch (MainTabControl.SelectedIndex)
                 {
                     case 1: // NDS
                         NDSBackButton.PerformClick();
@@ -1140,7 +1295,7 @@ namespace UWUVCI_AIO
 
         private void DefaultOnPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            switch (tabControl1.SelectedIndex)
+            switch (MainTabControl.SelectedIndex)
             {
                 case 1: // NDS
                     switch (NDSBaseComboBox.SelectedIndex)

@@ -96,7 +96,17 @@ namespace UWUVCI_AIO
                 i++;
             }
 
-            CNUSPACKER.Program.Main(new[] { "-in", baseRomPath, "-out", outputPath, "-encryptKeyWith", Properties.Settings.Default.CommonKey });
+            using (Process cnuspacker = new Process())
+            {
+                cnuspacker.StartInfo.UseShellExecute = false;
+                cnuspacker.StartInfo.CreateNoWindow = true;
+                cnuspacker.StartInfo.FileName = Path.Combine(toolsPath, "CNUSPACKER.exe");
+                cnuspacker.StartInfo.Arguments = $"-in \"{baseRomPath}\" -out \"{outputPath}\" -encryptKeyWith {Properties.Settings.Default.CommonKey}";
+
+                cnuspacker.Start();
+                cnuspacker.WaitForExit();
+            }
+
             MessageBox.Show(string.Format(Resources.InjectCreatedText, outputPath), Resources.InjectCreatedCaption, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             Clean();
@@ -280,7 +290,7 @@ namespace UWUVCI_AIO
             string metaXml = Path.Combine(baseRomPath, "meta", "meta.xml");
             string appXml = Path.Combine(baseRomPath, "code", "app.xml");
             Random random = new Random();
-            string ID = $"{random.Next(0x10000):X4}";
+            string ID = $"{random.Next(0x3000, 0x10000):X4}";
 
             XmlDocument doc = new XmlDocument();
             try
@@ -300,7 +310,8 @@ namespace UWUVCI_AIO
                 doc.SelectSingleNode("menu/longname_zht").InnerText = gameName;
 
                 doc.SelectSingleNode("menu/product_code").InnerText = $"WUP-N-{ID}";
-                doc.SelectSingleNode("menu/title_id").InnerText = $"0005000020{ID}00";
+                doc.SelectSingleNode("menu/title_id").InnerText = $"0005000010{ID}00";
+                doc.SelectSingleNode("menu/group_id").InnerText = $"0000{ID}";
 
                 doc.SelectSingleNode("menu/shortname_ja").InnerText = gameName;
                 doc.SelectSingleNode("menu/shortname_fr").InnerText = gameName;
@@ -324,7 +335,8 @@ namespace UWUVCI_AIO
             try
             {
                 doc.Load(appXml);
-                doc.SelectSingleNode("app/title_id").InnerText = $"0005000020{ID}00";
+                doc.SelectSingleNode("app/title_id").InnerText = $"0005000010{ID}00";
+                doc.SelectSingleNode("app/group_id").InnerText = $"0000{ID}";
                 doc.Save(appXml);
             }
             catch (NullReferenceException)
@@ -378,8 +390,8 @@ namespace UWUVCI_AIO
                 psb.StartInfo.CreateNoWindow = true;
                 psb.StartInfo.FileName = Path.Combine(toolsPath, "psb.exe");
                 psb.StartInfo.Arguments = $"\"{Path.Combine(baseRomPath, "content", "alldata.psb.m")}\" \"{injectRomPath}\" \"{Path.Combine(baseRomPath, "content", "alldata.psb.m")}\"";
-                psb.Start();
 
+                psb.Start();
                 psb.WaitForExit();
             }
         }
@@ -440,6 +452,7 @@ namespace UWUVCI_AIO
                 rpxtool.WaitForExit();
             }
         }
+
         private static void RPXcomp(string rpxpath)
         {
             using (Process rpxtool = new Process())
@@ -460,107 +473,47 @@ namespace UWUVCI_AIO
             bool drc = false;
             bool icon = false;
             bool logo = false;
-            bool fixup = false;
-
-            #region check if file exists and convert if needed
-
-            if (paths[0] != null)
-            {
-                tv = true;
-
-                if (paths[0].EndsWith(".png")) //convert png to tga
-                {
-                    paths[0] = ConvertPngToTga(paths[0]);
-                }
-            }
-
-            if (paths[1] != null)
-            {
-                drc = true;
-
-                if (paths[1].EndsWith(".png")) //convert png to tga
-                {
-                    paths[1] = ConvertPngToTga(paths[1]);
-                }
-            }
-
-            if (paths[2] != null)
-            {
-                icon = true;
-
-                if (paths[2].EndsWith(".png")) //convert png to tga
-                {
-                    paths[2] = ConvertPngToTga(paths[2]);
-                }
-            }
-
-            if (paths[3] != null)
-            {
-                logo = true;
-
-                if (paths[3].EndsWith(".png")) //convert png to tga
-                {
-                    paths[3] = ConvertPngToTga(paths[3]);
-                }
-            }
-            #endregion
-
-            #region Check if files are correct and then copy them into the work dir
 
             if (Directory.Exists(imgPath)) // sanity check
             {
                 Directory.Delete(imgPath, true);
             }
-
             Directory.CreateDirectory(imgPath);
 
-            if (tv)
+            if (paths[0] != null)
             {
-                File.Copy(paths[0], Path.Combine(imgPath, "bootTvTex.tga"));
-            }
-            if (drc)
-            {
-                File.Copy(paths[1], Path.Combine(imgPath, "bootDrcTex.tga"));
-            }
-            if (icon)
-            {
-                File.Copy(paths[2], Path.Combine(imgPath, "iconTex.tga"));
-            }
-            if (logo)
-            {
-                File.Copy(paths[3], Path.Combine(imgPath, "bootLogoTex.tga"));
+                tv = true;
+                CopyAndConvertImage(paths[0], Path.Combine(imgPath, "bootTvTex.tga"));
             }
 
-            if (tv||drc||icon||logo) {
-                using (Process tgaverify = new Process())
+            if (paths[1] != null)
+            {
+                drc = true;
+                CopyAndConvertImage(paths[1], Path.Combine(imgPath, "bootDrcTex.tga"));
+            }
+
+            if (paths[2] != null)
+            {
+                icon = true;
+                CopyAndConvertImage(paths[2], Path.Combine(imgPath, "iconTex.tga"));
+            }
+
+            if (paths[3] != null)
+            {
+                logo = true;
+                CopyAndConvertImage(paths[3], Path.Combine(imgPath, "bootLogoTex.tga"));
+            }
+
+            if (tv || drc || icon || logo) {
+                using (Process tgaverifyFixup = new Process())
                 {
-                    tgaverify.StartInfo.UseShellExecute = false;
-                    tgaverify.StartInfo.CreateNoWindow = true;
-                    tgaverify.StartInfo.FileName = Path.Combine(toolsPath, "tga_verify.exe");
-                    tgaverify.StartInfo.Arguments = $"\"{imgPath}\"";
-                    tgaverify.StartInfo.RedirectStandardError = true;
+                    tgaverifyFixup.StartInfo.UseShellExecute = false;
+                    tgaverifyFixup.StartInfo.CreateNoWindow = true;
+                    tgaverifyFixup.StartInfo.FileName = Path.Combine(toolsPath, "tga_verify.exe");
+                    tgaverifyFixup.StartInfo.Arguments = $"--fixup \"{imgPath}\"";
 
-                    tgaverify.Start();
-                    if (!tgaverify.StandardError.EndOfStream)
-                    {
-                        fixup = true;
-                    }
-
-                    tgaverify.WaitForExit();
-                }
-
-                if (fixup)
-                {
-                    using (Process tgaverifyFixup = new Process())
-                    {
-                        tgaverifyFixup.StartInfo.UseShellExecute = false;
-                        tgaverifyFixup.StartInfo.CreateNoWindow = true;
-                        tgaverifyFixup.StartInfo.FileName = Path.Combine(toolsPath, "tga_verify.exe");
-                        tgaverifyFixup.StartInfo.Arguments = $"--fixup \"{imgPath}\"";
-
-                        tgaverifyFixup.Start();
-                        tgaverifyFixup.WaitForExit();
-                    }
+                    tgaverifyFixup.Start();
+                    tgaverifyFixup.WaitForExit();
                 }
 
                 if (tv)
@@ -584,24 +537,27 @@ namespace UWUVCI_AIO
                     File.Move(Path.Combine(imgPath, "bootLogoTex.tga"), Path.Combine(baseRomPath, "meta", "bootLogoTex.tga"));
                 }
             }
-            #endregion
         }
 
-        private static string ConvertPngToTga(string pngPath)
+        private static void CopyAndConvertImage(string inputPath, string outputPath)
         {
-            string tgaPath = Path.ChangeExtension(pngPath, ".tga");
-            using (Process png2tga = new Process())
+            if (inputPath.EndsWith(".tga"))
             {
-                png2tga.StartInfo.UseShellExecute = false;
-                png2tga.StartInfo.CreateNoWindow = true;
-                png2tga.StartInfo.FileName = Path.Combine(toolsPath, "png2tga.exe");
-                png2tga.StartInfo.Arguments = $"\"{pngPath}\" \"{tgaPath}\"";
-
-                png2tga.Start();
-                png2tga.WaitForExit();
+                File.Copy(inputPath, outputPath);
             }
+            else
+            {
+                using (Process png2tga = new Process())
+                {
+                    png2tga.StartInfo.UseShellExecute = false;
+                    png2tga.StartInfo.CreateNoWindow = true;
+                    png2tga.StartInfo.FileName = Path.Combine(toolsPath, "png2tga.exe");
+                    png2tga.StartInfo.Arguments = $"\"{inputPath}\" \"{outputPath}\"";
 
-            return tgaPath;
+                    png2tga.Start();
+                    png2tga.WaitForExit();
+                }
+            }
         }
 
         private static string RemoveHeader(string filePath)

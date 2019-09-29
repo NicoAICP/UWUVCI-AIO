@@ -31,33 +31,33 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UWUVCI_AIO));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.n64ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gBAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sNESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
-            this.closeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.hilfeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TitleKeys = new System.Windows.Forms.ToolStripMenuItem();
-            this.nDSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.n64ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.nESToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.nESToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.sNESToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NDSToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.N64ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.GBAToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.NESToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.SNESToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.CloseToolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.CloseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CommonkeyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TitleKeysToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NDSToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.N64ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.GBAToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.NESToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.SNESToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.PathsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.InterfaceToolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.InterfaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.VersionLabel = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.MainTabControl = new System.Windows.Forms.TabControl();
             this.Main = new System.Windows.Forms.TabPage();
             this.SNESPanel = new System.Windows.Forms.Panel();
             this.SNESLabel = new System.Windows.Forms.Label();
@@ -321,7 +321,7 @@
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.MainTabControl.SuspendLayout();
             this.Main.SuspendLayout();
             this.SNESPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SNESImage)).BeginInit();
@@ -398,162 +398,162 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.hilfeToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.FileToolStripMenuItem,
+            this.SettingsToolStripMenuItem,
+            this.HelpToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
-            // fileToolStripMenuItem
+            // FileToolStripMenuItem
             // 
-            this.fileToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem,
-            this.closeToolStripMenuItem,
-            this.closeToolStripMenuItem1});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
+            this.FileToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.NewToolStripMenuItem,
+            this.CloseToolStripSeparator,
+            this.CloseToolStripMenuItem});
+            this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             // 
-            // newToolStripMenuItem
+            // NewToolStripMenuItem
             // 
-            this.newToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
-            this.newToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.n64ToolStripMenuItem,
-            this.gBAToolStripMenuItem,
-            this.nESToolStripMenuItem,
-            this.sNESToolStripMenuItem});
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            resources.ApplyResources(this.newToolStripMenuItem, "newToolStripMenuItem");
+            this.NewToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.NewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.NDSToolStripMenuItem1,
+            this.N64ToolStripMenuItem1,
+            this.GBAToolStripMenuItem1,
+            this.NESToolStripMenuItem1,
+            this.SNESToolStripMenuItem1});
+            this.NewToolStripMenuItem.Name = "NewToolStripMenuItem";
+            resources.ApplyResources(this.NewToolStripMenuItem, "NewToolStripMenuItem");
             // 
-            // toolStripMenuItem1
+            // NDSToolStripMenuItem1
             // 
-            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.ToolStripMenuItem1_Click);
+            resources.ApplyResources(this.NDSToolStripMenuItem1, "NDSToolStripMenuItem1");
+            this.NDSToolStripMenuItem1.Name = "NDSToolStripMenuItem1";
+            this.NDSToolStripMenuItem1.Click += new System.EventHandler(this.NDSToolStripMenuItem1_Click);
             // 
-            // n64ToolStripMenuItem
+            // N64ToolStripMenuItem1
             // 
-            resources.ApplyResources(this.n64ToolStripMenuItem, "n64ToolStripMenuItem");
-            this.n64ToolStripMenuItem.Name = "n64ToolStripMenuItem";
-            this.n64ToolStripMenuItem.Click += new System.EventHandler(this.N64ToolStripMenuItem_Click);
+            resources.ApplyResources(this.N64ToolStripMenuItem1, "N64ToolStripMenuItem1");
+            this.N64ToolStripMenuItem1.Name = "N64ToolStripMenuItem1";
+            this.N64ToolStripMenuItem1.Click += new System.EventHandler(this.N64ToolStripMenuItem1_Click);
             // 
-            // gBAToolStripMenuItem
+            // GBAToolStripMenuItem1
             // 
-            resources.ApplyResources(this.gBAToolStripMenuItem, "gBAToolStripMenuItem");
-            this.gBAToolStripMenuItem.Name = "gBAToolStripMenuItem";
-            this.gBAToolStripMenuItem.Click += new System.EventHandler(this.GBAToolStripMenuItem_Click);
+            resources.ApplyResources(this.GBAToolStripMenuItem1, "GBAToolStripMenuItem1");
+            this.GBAToolStripMenuItem1.Name = "GBAToolStripMenuItem1";
+            this.GBAToolStripMenuItem1.Click += new System.EventHandler(this.GBAToolStripMenuItem1_Click);
             // 
-            // nESToolStripMenuItem
+            // NESToolStripMenuItem1
             // 
-            resources.ApplyResources(this.nESToolStripMenuItem, "nESToolStripMenuItem");
-            this.nESToolStripMenuItem.Name = "nESToolStripMenuItem";
-            this.nESToolStripMenuItem.Click += new System.EventHandler(this.NESToolStripMenuItem_Click);
+            resources.ApplyResources(this.NESToolStripMenuItem1, "NESToolStripMenuItem1");
+            this.NESToolStripMenuItem1.Name = "NESToolStripMenuItem1";
+            this.NESToolStripMenuItem1.Click += new System.EventHandler(this.NESToolStripMenuItem1_Click);
             // 
-            // sNESToolStripMenuItem
+            // SNESToolStripMenuItem1
             // 
-            resources.ApplyResources(this.sNESToolStripMenuItem, "sNESToolStripMenuItem");
-            this.sNESToolStripMenuItem.Name = "sNESToolStripMenuItem";
-            this.sNESToolStripMenuItem.Click += new System.EventHandler(this.SNESToolStripMenuItem_Click);
+            resources.ApplyResources(this.SNESToolStripMenuItem1, "SNESToolStripMenuItem1");
+            this.SNESToolStripMenuItem1.Name = "SNESToolStripMenuItem1";
+            this.SNESToolStripMenuItem1.Click += new System.EventHandler(this.SNESToolStripMenuItem1_Click);
             // 
-            // closeToolStripMenuItem
+            // CloseToolStripSeparator
             // 
-            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            resources.ApplyResources(this.closeToolStripMenuItem, "closeToolStripMenuItem");
+            this.CloseToolStripSeparator.Name = "CloseToolStripSeparator";
+            resources.ApplyResources(this.CloseToolStripSeparator, "CloseToolStripSeparator");
             // 
-            // closeToolStripMenuItem1
+            // CloseToolStripMenuItem
             // 
-            this.closeToolStripMenuItem1.Name = "closeToolStripMenuItem1";
-            resources.ApplyResources(this.closeToolStripMenuItem1, "closeToolStripMenuItem1");
-            this.closeToolStripMenuItem1.Click += new System.EventHandler(this.CloseToolStripMenuItem1_Click);
+            this.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem";
+            resources.ApplyResources(this.CloseToolStripMenuItem, "CloseToolStripMenuItem");
+            this.CloseToolStripMenuItem.Click += new System.EventHandler(this.CloseToolStripMenuItem_Click);
             // 
-            // hilfeToolStripMenuItem
+            // SettingsToolStripMenuItem
             // 
-            this.hilfeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.TitleKeys,
-            this.toolStripMenuItem3,
-            this.toolStripSeparator1,
-            this.settingsToolStripMenuItem});
-            this.hilfeToolStripMenuItem.Name = "hilfeToolStripMenuItem";
-            resources.ApplyResources(this.hilfeToolStripMenuItem, "hilfeToolStripMenuItem");
+            this.SettingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CommonkeyToolStripMenuItem,
+            this.TitleKeysToolStripMenuItem,
+            this.PathsToolStripMenuItem,
+            this.InterfaceToolStripSeparator,
+            this.InterfaceToolStripMenuItem});
+            this.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem";
+            resources.ApplyResources(this.SettingsToolStripMenuItem, "SettingsToolStripMenuItem");
             // 
-            // toolStripMenuItem2
+            // CommonkeyToolStripMenuItem
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.ToolStripMenuItem2_Click);
+            this.CommonkeyToolStripMenuItem.Name = "CommonkeyToolStripMenuItem";
+            resources.ApplyResources(this.CommonkeyToolStripMenuItem, "CommonkeyToolStripMenuItem");
+            this.CommonkeyToolStripMenuItem.Click += new System.EventHandler(this.CommonkeyToolStripMenuItem_Click);
             // 
-            // TitleKeys
+            // TitleKeysToolStripMenuItem
             // 
-            this.TitleKeys.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nDSToolStripMenuItem,
-            this.n64ToolStripMenuItem1,
-            this.nESToolStripMenuItem1,
-            this.nESToolStripMenuItem2,
-            this.sNESToolStripMenuItem1});
-            this.TitleKeys.Name = "TitleKeys";
-            resources.ApplyResources(this.TitleKeys, "TitleKeys");
+            this.TitleKeysToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.NDSToolStripMenuItem2,
+            this.N64ToolStripMenuItem2,
+            this.GBAToolStripMenuItem2,
+            this.NESToolStripMenuItem2,
+            this.SNESToolStripMenuItem2});
+            this.TitleKeysToolStripMenuItem.Name = "TitleKeysToolStripMenuItem";
+            resources.ApplyResources(this.TitleKeysToolStripMenuItem, "TitleKeysToolStripMenuItem");
             // 
-            // nDSToolStripMenuItem
+            // NDSToolStripMenuItem2
             // 
-            resources.ApplyResources(this.nDSToolStripMenuItem, "nDSToolStripMenuItem");
-            this.nDSToolStripMenuItem.Name = "nDSToolStripMenuItem";
-            this.nDSToolStripMenuItem.Click += new System.EventHandler(this.NDSToolStripMenuItem_Click);
+            resources.ApplyResources(this.NDSToolStripMenuItem2, "NDSToolStripMenuItem2");
+            this.NDSToolStripMenuItem2.Name = "NDSToolStripMenuItem2";
+            this.NDSToolStripMenuItem2.Click += new System.EventHandler(this.NDSToolStripMenuItem2_Click);
             // 
-            // n64ToolStripMenuItem1
+            // N64ToolStripMenuItem2
             // 
-            resources.ApplyResources(this.n64ToolStripMenuItem1, "n64ToolStripMenuItem1");
-            this.n64ToolStripMenuItem1.Name = "n64ToolStripMenuItem1";
-            this.n64ToolStripMenuItem1.Click += new System.EventHandler(this.N64ToolStripMenuItem1_Click);
+            resources.ApplyResources(this.N64ToolStripMenuItem2, "N64ToolStripMenuItem2");
+            this.N64ToolStripMenuItem2.Name = "N64ToolStripMenuItem2";
+            this.N64ToolStripMenuItem2.Click += new System.EventHandler(this.N64ToolStripMenuItem2_Click);
             // 
-            // nESToolStripMenuItem1
+            // GBAToolStripMenuItem2
             // 
-            resources.ApplyResources(this.nESToolStripMenuItem1, "nESToolStripMenuItem1");
-            this.nESToolStripMenuItem1.Name = "nESToolStripMenuItem1";
-            this.nESToolStripMenuItem1.Click += new System.EventHandler(this.NESToolStripMenuItem1_Click);
+            resources.ApplyResources(this.GBAToolStripMenuItem2, "GBAToolStripMenuItem2");
+            this.GBAToolStripMenuItem2.Name = "GBAToolStripMenuItem2";
+            this.GBAToolStripMenuItem2.Click += new System.EventHandler(this.GBAToolStripMenuItem2_Click);
             // 
-            // nESToolStripMenuItem2
+            // NESToolStripMenuItem2
             // 
-            resources.ApplyResources(this.nESToolStripMenuItem2, "nESToolStripMenuItem2");
-            this.nESToolStripMenuItem2.Name = "nESToolStripMenuItem2";
-            this.nESToolStripMenuItem2.Click += new System.EventHandler(this.NESToolStripMenuItem2_Click);
+            resources.ApplyResources(this.NESToolStripMenuItem2, "NESToolStripMenuItem2");
+            this.NESToolStripMenuItem2.Name = "NESToolStripMenuItem2";
+            this.NESToolStripMenuItem2.Click += new System.EventHandler(this.NESToolStripMenuItem2_Click);
             // 
-            // sNESToolStripMenuItem1
+            // SNESToolStripMenuItem2
             // 
-            resources.ApplyResources(this.sNESToolStripMenuItem1, "sNESToolStripMenuItem1");
-            this.sNESToolStripMenuItem1.Name = "sNESToolStripMenuItem1";
-            this.sNESToolStripMenuItem1.Click += new System.EventHandler(this.SNESToolStripMenuItem1_Click);
+            resources.ApplyResources(this.SNESToolStripMenuItem2, "SNESToolStripMenuItem2");
+            this.SNESToolStripMenuItem2.Name = "SNESToolStripMenuItem2";
+            this.SNESToolStripMenuItem2.Click += new System.EventHandler(this.SNESToolStripMenuItem2_Click);
             // 
-            // toolStripMenuItem3
+            // PathsToolStripMenuItem
             // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
-            this.toolStripMenuItem3.Click += new System.EventHandler(this.ToolStripMenuItem3_Click);
+            this.PathsToolStripMenuItem.Name = "PathsToolStripMenuItem";
+            resources.ApplyResources(this.PathsToolStripMenuItem, "PathsToolStripMenuItem");
+            this.PathsToolStripMenuItem.Click += new System.EventHandler(this.PathsToolStripMenuItem_Click);
             // 
-            // toolStripSeparator1
+            // InterfaceToolStripSeparator
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            this.InterfaceToolStripSeparator.Name = "InterfaceToolStripSeparator";
+            resources.ApplyResources(this.InterfaceToolStripSeparator, "InterfaceToolStripSeparator");
             // 
-            // settingsToolStripMenuItem
+            // InterfaceToolStripMenuItem
             // 
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            resources.ApplyResources(this.settingsToolStripMenuItem, "settingsToolStripMenuItem");
-            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.SettingsToolStripMenuItem_Click);
+            this.InterfaceToolStripMenuItem.Name = "InterfaceToolStripMenuItem";
+            resources.ApplyResources(this.InterfaceToolStripMenuItem, "InterfaceToolStripMenuItem");
+            this.InterfaceToolStripMenuItem.Click += new System.EventHandler(this.InterfaceToolStripMenuItem_Click);
             // 
-            // helpToolStripMenuItem
+            // HelpToolStripMenuItem
             // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
+            this.HelpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AboutToolStripMenuItem});
+            this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
+            resources.ApplyResources(this.HelpToolStripMenuItem, "HelpToolStripMenuItem");
             // 
-            // aboutToolStripMenuItem
+            // AboutToolStripMenuItem
             // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
+            this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
+            resources.ApplyResources(this.AboutToolStripMenuItem, "AboutToolStripMenuItem");
+            this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -578,21 +578,21 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.tabControl1);
+            this.panel3.Controls.Add(this.MainTabControl);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
-            // tabControl1
+            // MainTabControl
             // 
-            this.tabControl1.Controls.Add(this.Main);
-            this.tabControl1.Controls.Add(this.NDS);
-            this.tabControl1.Controls.Add(this.N64);
-            this.tabControl1.Controls.Add(this.GBA);
-            this.tabControl1.Controls.Add(this.NES);
-            this.tabControl1.Controls.Add(this.SNES);
-            resources.ApplyResources(this.tabControl1, "tabControl1");
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
+            this.MainTabControl.Controls.Add(this.Main);
+            this.MainTabControl.Controls.Add(this.NDS);
+            this.MainTabControl.Controls.Add(this.N64);
+            this.MainTabControl.Controls.Add(this.GBA);
+            this.MainTabControl.Controls.Add(this.NES);
+            this.MainTabControl.Controls.Add(this.SNES);
+            resources.ApplyResources(this.MainTabControl, "MainTabControl");
+            this.MainTabControl.Name = "MainTabControl";
+            this.MainTabControl.SelectedIndex = 0;
             // 
             // Main
             // 
@@ -2491,7 +2491,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
+            this.MainTabControl.ResumeLayout(false);
             this.Main.ResumeLayout(false);
             this.SNESPanel.ResumeLayout(false);
             this.SNESPanel.PerformLayout();
@@ -2596,26 +2596,22 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hilfeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem n64ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gBAToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nESToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sNESToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator closeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SettingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem NewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator CloseToolStripSeparator;
+        private System.Windows.Forms.ToolStripMenuItem CloseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem HelpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator InterfaceToolStripSeparator;
+        private System.Windows.Forms.ToolStripMenuItem InterfaceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label VersionLabel;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Splitter splitter1;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl MainTabControl;
         private System.Windows.Forms.TabPage Main;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem NDSToolStripMenuItem1;
         private System.Windows.Forms.Panel SNESPanel;
         private System.Windows.Forms.Panel NESPanel;
         private System.Windows.Forms.Panel GBAPanel;
@@ -2632,7 +2628,7 @@
         private System.Windows.Forms.Label NDSLabel;
         private System.Windows.Forms.PictureBox NDSImage;
         private System.Windows.Forms.TabPage NDS;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem CommonkeyToolStripMenuItem;
         private System.Windows.Forms.TabPage N64;
         private System.Windows.Forms.GroupBox N64InjectionGroupBox;
         private System.Windows.Forms.GroupBox N64BaseGroupBox;
@@ -2667,15 +2663,15 @@
         private System.Windows.Forms.TextBox N64DRCTextBox;
         private System.Windows.Forms.Label N64TVLabel;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.ToolStripMenuItem TitleKeys;
-        private System.Windows.Forms.ToolStripMenuItem nDSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem n64ToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem nESToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem nESToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem sNESToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem TitleKeysToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem NDSToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem N64ToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem GBAToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem NESToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem SNESToolStripMenuItem2;
         private System.Windows.Forms.Button N64InstallButton;
         private System.Windows.Forms.Button N64LoadiineButton;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem PathsToolStripMenuItem;
         private System.Windows.Forms.Button NDSBackButton;
         private System.Windows.Forms.GroupBox NDSInjectionGroupBox;
         private System.Windows.Forms.Button NDSInjectButton;
@@ -2884,6 +2880,10 @@
         private System.Windows.Forms.PictureBox NESBaseCommonkeyImage;
         private System.Windows.Forms.Label NESBaseDownloadedLabel;
         private System.Windows.Forms.PictureBox NESBaseDownloadedImage;
+        private System.Windows.Forms.ToolStripMenuItem SNESToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem NESToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem GBAToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem N64ToolStripMenuItem1;
     }
 }
 

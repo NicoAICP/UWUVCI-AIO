@@ -121,7 +121,7 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="toolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="NDSToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
         DwAAjA8AAP1SAACBQAAAfXkAAOmLAAA85QAAGcxzPIV3AAAKOWlDQ1BQaG90b3Nob3AgSUNDIHByb2Zp
@@ -204,16 +204,16 @@
 </value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="toolStripMenuItem1.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+  <data name="NDSToolStripMenuItem1.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>F1</value>
   </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="NDSToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 22</value>
   </data>
-  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+  <data name="NDSToolStripMenuItem1.Text" xml:space="preserve">
     <value>NDS</value>
   </data>
-  <data name="n64ToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="N64ToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wgAADsIBFShKgAAAAAd0SU1FB94FHBYbFJ2IcI0AAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjEu
@@ -263,16 +263,16 @@
         YII=
 </value>
   </data>
-  <data name="n64ToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+  <data name="N64ToolStripMenuItem1.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>F2</value>
   </data>
-  <data name="n64ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 22</value>
   </data>
-  <data name="n64ToolStripMenuItem.Text" xml:space="preserve">
+  <data name="N64ToolStripMenuItem1.Text" xml:space="preserve">
     <value>N64</value>
   </data>
-  <data name="gBAToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="GBAToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMS42/U4J6AAABj5JREFUeF7tmu9P
@@ -305,16 +305,16 @@
         Fl8yj5YYaFChQoUKFSpUqFChQoUKFSpyDofjP64yZYd4iTlkAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="gBAToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+  <data name="GBAToolStripMenuItem1.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>F3</value>
   </data>
-  <data name="gBAToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="GBAToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 22</value>
   </data>
-  <data name="gBAToolStripMenuItem.Text" xml:space="preserve">
+  <data name="GBAToolStripMenuItem1.Text" xml:space="preserve">
     <value>GBA</value>
   </data>
-  <data name="nESToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="NESToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMS42/U4J6AAABehJREFUeF7tmGlM
@@ -346,16 +346,16 @@
         8y/9p2n8dtGhTwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="nESToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+  <data name="NESToolStripMenuItem1.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>F4</value>
   </data>
-  <data name="nESToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="NESToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 22</value>
   </data>
-  <data name="nESToolStripMenuItem.Text" xml:space="preserve">
+  <data name="NESToolStripMenuItem1.Text" xml:space="preserve">
     <value>NES</value>
   </data>
-  <data name="sNESToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="SNESToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wgAADsIBFShKgAAAAAd0SU1FB94FHBYgEdFQazoAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjEu
@@ -390,46 +390,46 @@
         RK5CYII=
 </value>
   </data>
-  <data name="sNESToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+  <data name="SNESToolStripMenuItem1.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>F5</value>
   </data>
-  <data name="sNESToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SNESToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 22</value>
   </data>
-  <data name="sNESToolStripMenuItem.Text" xml:space="preserve">
+  <data name="SNESToolStripMenuItem1.Text" xml:space="preserve">
     <value>SNES</value>
   </data>
-  <data name="newToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="NewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 22</value>
   </data>
-  <data name="newToolStripMenuItem.Text" xml:space="preserve">
+  <data name="NewToolStripMenuItem.Text" xml:space="preserve">
     <value>New</value>
   </data>
-  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="CloseToolStripSeparator.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 6</value>
   </data>
-  <data name="closeToolStripMenuItem1.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+  <data name="CloseToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Alt+F4</value>
   </data>
-  <data name="closeToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="CloseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 22</value>
   </data>
-  <data name="closeToolStripMenuItem1.Text" xml:space="preserve">
+  <data name="CloseToolStripMenuItem.Text" xml:space="preserve">
     <value>Close</value>
   </data>
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 20</value>
   </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
     <value>File</value>
   </data>
-  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
+  <data name="CommonkeyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 22</value>
   </data>
-  <data name="toolStripMenuItem2.Text" xml:space="preserve">
+  <data name="CommonkeyToolStripMenuItem.Text" xml:space="preserve">
     <value>Set CommonKey</value>
   </data>
-  <data name="nDSToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="NDSToolStripMenuItem2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
         DwAAjA8AAP1SAACBQAAAfXkAAOmLAAA85QAAGcxzPIV3AAAKOWlDQ1BQaG90b3Nob3AgSUNDIHByb2Zp
@@ -511,13 +511,13 @@
         YII=
 </value>
   </data>
-  <data name="nDSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="NDSToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 22</value>
   </data>
-  <data name="nDSToolStripMenuItem.Text" xml:space="preserve">
+  <data name="NDSToolStripMenuItem2.Text" xml:space="preserve">
     <value>NDS</value>
   </data>
-  <data name="n64ToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="N64ToolStripMenuItem2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wgAADsIBFShKgAAAAAd0SU1FB94FHBYbFJ2IcI0AAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjEu
@@ -567,13 +567,13 @@
         YII=
 </value>
   </data>
-  <data name="n64ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="N64ToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 22</value>
   </data>
-  <data name="n64ToolStripMenuItem1.Text" xml:space="preserve">
+  <data name="N64ToolStripMenuItem2.Text" xml:space="preserve">
     <value>N64</value>
   </data>
-  <data name="nESToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="GBAToolStripMenuItem2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMS42/U4J6AAABj5JREFUeF7tmu9P
@@ -606,13 +606,13 @@
         Fl8yj5YYaFChQoUKFSpUqFChQoUKFSpyDofjP64yZYd4iTlkAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="nESToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="GBAToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 22</value>
   </data>
-  <data name="nESToolStripMenuItem1.Text" xml:space="preserve">
+  <data name="GBAToolStripMenuItem2.Text" xml:space="preserve">
     <value>GBA</value>
   </data>
-  <data name="nESToolStripMenuItem2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="NESToolStripMenuItem2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMS42/U4J6AAABehJREFUeF7tmGlM
@@ -644,13 +644,13 @@
         8y/9p2n8dtGhTwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="nESToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="NESToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 22</value>
   </data>
-  <data name="nESToolStripMenuItem2.Text" xml:space="preserve">
+  <data name="NESToolStripMenuItem2.Text" xml:space="preserve">
     <value>NES</value>
   </data>
-  <data name="sNESToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="SNESToolStripMenuItem2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wgAADsIBFShKgAAAAAd0SU1FB94FHBYgEdFQazoAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjEu
@@ -685,52 +685,49 @@
         RK5CYII=
 </value>
   </data>
-  <data name="sNESToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SNESToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 22</value>
   </data>
-  <data name="sNESToolStripMenuItem1.Text" xml:space="preserve">
+  <data name="SNESToolStripMenuItem2.Text" xml:space="preserve">
     <value>SNES</value>
   </data>
-  <data name="TitleKeys.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
+  <data name="TitleKeysToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 22</value>
   </data>
-  <data name="TitleKeys.Text" xml:space="preserve">
+  <data name="TitleKeysToolStripMenuItem.Text" xml:space="preserve">
     <value>TitleKeys</value>
   </data>
-  <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
+  <data name="PathsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 22</value>
   </data>
-  <data name="toolStripMenuItem3.Text" xml:space="preserve">
+  <data name="PathsToolStripMenuItem.Text" xml:space="preserve">
     <value>Paths</value>
   </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 6</value>
+  <data name="InterfaceToolStripSeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 6</value>
   </data>
-  <data name="settingsToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+H</value>
+  <data name="InterfaceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 22</value>
   </data>
-  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+  <data name="InterfaceToolStripMenuItem.Text" xml:space="preserve">
     <value>User Interface</value>
   </data>
-  <data name="hilfeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 20</value>
   </data>
-  <data name="hilfeToolStripMenuItem.Text" xml:space="preserve">
+  <data name="SettingsToolStripMenuItem.Text" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="AboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 22</value>
   </data>
-  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+  <data name="AboutToolStripMenuItem.Text" xml:space="preserve">
     <value>About UWUVCI AIO</value>
   </data>
-  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="HelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 20</value>
   </data>
-  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+  <data name="HelpToolStripMenuItem.Text" xml:space="preserve">
     <value>Help</value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
@@ -1480,7 +1477,7 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Main.Parent" xml:space="preserve">
-    <value>tabControl1</value>
+    <value>MainTabControl</value>
   </data>
   <data name="&gt;&gt;Main.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -2803,7 +2800,7 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;NDS.Parent" xml:space="preserve">
-    <value>tabControl1</value>
+    <value>MainTabControl</value>
   </data>
   <data name="&gt;&gt;NDS.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -4348,7 +4345,7 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;N64.Parent" xml:space="preserve">
-    <value>tabControl1</value>
+    <value>MainTabControl</value>
   </data>
   <data name="&gt;&gt;N64.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -5659,7 +5656,7 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;GBA.Parent" xml:space="preserve">
-    <value>tabControl1</value>
+    <value>MainTabControl</value>
   </data>
   <data name="&gt;&gt;GBA.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -6970,7 +6967,7 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;NES.Parent" xml:space="preserve">
-    <value>tabControl1</value>
+    <value>MainTabControl</value>
   </data>
   <data name="&gt;&gt;NES.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -7234,13 +7231,13 @@
     <value>10, 281</value>
   </data>
   <data name="SNESLogoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 13</value>
+    <value>119, 13</value>
   </data>
   <data name="SNESLogoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
   <data name="SNESLogoLabel.Text" xml:space="preserve">
-    <value>(Optional) BootLogo</value>
+    <value>(Optional) BootLogoTex</value>
   </data>
   <data name="&gt;&gt;SNESLogoLabel.Name" xml:space="preserve">
     <value>SNESLogoLabel</value>
@@ -8293,30 +8290,30 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;SNES.Parent" xml:space="preserve">
-    <value>tabControl1</value>
+    <value>MainTabControl</value>
   </data>
   <data name="&gt;&gt;SNES.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="MainTabControl.Location" type="System.Drawing.Point, System.Drawing">
     <value>-11, -24</value>
   </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="MainTabControl.Size" type="System.Drawing.Size, System.Drawing">
     <value>669, 568</value>
   </data>
-  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+  <data name="MainTabControl.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
+  <data name="&gt;&gt;MainTabControl.Name" xml:space="preserve">
+    <value>MainTabControl</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+  <data name="&gt;&gt;MainTabControl.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;MainTabControl.Parent" xml:space="preserve">
     <value>panel3</value>
   </data>
-  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;MainTabControl.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -9493,136 +9490,136 @@
   <data name="$this.Text" xml:space="preserve">
     <value>UWUVCI AIO - BETA</value>
   </data>
-  <data name="&gt;&gt;fileToolStripMenuItem.Name" xml:space="preserve">
-    <value>fileToolStripMenuItem</value>
+  <data name="&gt;&gt;FileToolStripMenuItem.Name" xml:space="preserve">
+    <value>FileToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;fileToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;FileToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;newToolStripMenuItem.Name" xml:space="preserve">
-    <value>newToolStripMenuItem</value>
+  <data name="&gt;&gt;NewToolStripMenuItem.Name" xml:space="preserve">
+    <value>NewToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;newToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;NewToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
-    <value>toolStripMenuItem1</value>
+  <data name="&gt;&gt;NDSToolStripMenuItem1.Name" xml:space="preserve">
+    <value>NDSToolStripMenuItem1</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;NDSToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;n64ToolStripMenuItem.Name" xml:space="preserve">
-    <value>n64ToolStripMenuItem</value>
+  <data name="&gt;&gt;N64ToolStripMenuItem1.Name" xml:space="preserve">
+    <value>N64ToolStripMenuItem1</value>
   </data>
-  <data name="&gt;&gt;n64ToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64ToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;gBAToolStripMenuItem.Name" xml:space="preserve">
-    <value>gBAToolStripMenuItem</value>
+  <data name="&gt;&gt;GBAToolStripMenuItem1.Name" xml:space="preserve">
+    <value>GBAToolStripMenuItem1</value>
   </data>
-  <data name="&gt;&gt;gBAToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;GBAToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nESToolStripMenuItem.Name" xml:space="preserve">
-    <value>nESToolStripMenuItem</value>
+  <data name="&gt;&gt;NESToolStripMenuItem1.Name" xml:space="preserve">
+    <value>NESToolStripMenuItem1</value>
   </data>
-  <data name="&gt;&gt;nESToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;NESToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;sNESToolStripMenuItem.Name" xml:space="preserve">
-    <value>sNESToolStripMenuItem</value>
+  <data name="&gt;&gt;SNESToolStripMenuItem1.Name" xml:space="preserve">
+    <value>SNESToolStripMenuItem1</value>
   </data>
-  <data name="&gt;&gt;sNESToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;SNESToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;closeToolStripMenuItem.Name" xml:space="preserve">
-    <value>closeToolStripMenuItem</value>
+  <data name="&gt;&gt;CloseToolStripSeparator.Name" xml:space="preserve">
+    <value>CloseToolStripSeparator</value>
   </data>
-  <data name="&gt;&gt;closeToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;CloseToolStripSeparator.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;closeToolStripMenuItem1.Name" xml:space="preserve">
-    <value>closeToolStripMenuItem1</value>
+  <data name="&gt;&gt;CloseToolStripMenuItem.Name" xml:space="preserve">
+    <value>CloseToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;closeToolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;CloseToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;hilfeToolStripMenuItem.Name" xml:space="preserve">
-    <value>hilfeToolStripMenuItem</value>
+  <data name="&gt;&gt;SettingsToolStripMenuItem.Name" xml:space="preserve">
+    <value>SettingsToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;hilfeToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;SettingsToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
-    <value>toolStripMenuItem2</value>
+  <data name="&gt;&gt;CommonkeyToolStripMenuItem.Name" xml:space="preserve">
+    <value>CommonkeyToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
+  <data name="&gt;&gt;CommonkeyToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TitleKeys.Name" xml:space="preserve">
-    <value>TitleKeys</value>
+  <data name="&gt;&gt;TitleKeysToolStripMenuItem.Name" xml:space="preserve">
+    <value>TitleKeysToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;TitleKeys.Type" xml:space="preserve">
+  <data name="&gt;&gt;TitleKeysToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nDSToolStripMenuItem.Name" xml:space="preserve">
-    <value>nDSToolStripMenuItem</value>
+  <data name="&gt;&gt;NDSToolStripMenuItem2.Name" xml:space="preserve">
+    <value>NDSToolStripMenuItem2</value>
   </data>
-  <data name="&gt;&gt;nDSToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;NDSToolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;n64ToolStripMenuItem1.Name" xml:space="preserve">
-    <value>n64ToolStripMenuItem1</value>
+  <data name="&gt;&gt;N64ToolStripMenuItem2.Name" xml:space="preserve">
+    <value>N64ToolStripMenuItem2</value>
   </data>
-  <data name="&gt;&gt;n64ToolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;N64ToolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nESToolStripMenuItem1.Name" xml:space="preserve">
-    <value>nESToolStripMenuItem1</value>
+  <data name="&gt;&gt;GBAToolStripMenuItem2.Name" xml:space="preserve">
+    <value>GBAToolStripMenuItem2</value>
   </data>
-  <data name="&gt;&gt;nESToolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;GBAToolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nESToolStripMenuItem2.Name" xml:space="preserve">
-    <value>nESToolStripMenuItem2</value>
+  <data name="&gt;&gt;NESToolStripMenuItem2.Name" xml:space="preserve">
+    <value>NESToolStripMenuItem2</value>
   </data>
-  <data name="&gt;&gt;nESToolStripMenuItem2.Type" xml:space="preserve">
+  <data name="&gt;&gt;NESToolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;sNESToolStripMenuItem1.Name" xml:space="preserve">
-    <value>sNESToolStripMenuItem1</value>
+  <data name="&gt;&gt;SNESToolStripMenuItem2.Name" xml:space="preserve">
+    <value>SNESToolStripMenuItem2</value>
   </data>
-  <data name="&gt;&gt;sNESToolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;SNESToolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem3.Name" xml:space="preserve">
-    <value>toolStripMenuItem3</value>
+  <data name="&gt;&gt;PathsToolStripMenuItem.Name" xml:space="preserve">
+    <value>PathsToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem3.Type" xml:space="preserve">
+  <data name="&gt;&gt;PathsToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
-    <value>toolStripSeparator1</value>
+  <data name="&gt;&gt;InterfaceToolStripSeparator.Name" xml:space="preserve">
+    <value>InterfaceToolStripSeparator</value>
   </data>
-  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+  <data name="&gt;&gt;InterfaceToolStripSeparator.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;settingsToolStripMenuItem.Name" xml:space="preserve">
-    <value>settingsToolStripMenuItem</value>
+  <data name="&gt;&gt;InterfaceToolStripMenuItem.Name" xml:space="preserve">
+    <value>InterfaceToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;settingsToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;InterfaceToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;helpToolStripMenuItem.Name" xml:space="preserve">
-    <value>helpToolStripMenuItem</value>
+  <data name="&gt;&gt;HelpToolStripMenuItem.Name" xml:space="preserve">
+    <value>HelpToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;helpToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;HelpToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
-    <value>aboutToolStripMenuItem</value>
+  <data name="&gt;&gt;AboutToolStripMenuItem.Name" xml:space="preserve">
+    <value>AboutToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;AboutToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
