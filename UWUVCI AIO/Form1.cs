@@ -37,7 +37,12 @@ namespace UWUVCI_AIO
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(Properties.Settings.Default.Language);
 
             InitializeComponent();
-
+            if (Properties.Settings.Default.UpgradeRequired)
+            {
+                Properties.Settings.Default.Upgrade();
+                Properties.Settings.Default.UpgradeRequired = false;
+                Properties.Settings.Default.Save();
+            }
             if (Properties.Settings.Default.DarkMode)
             {
                 EnableDarkMode();
@@ -1391,6 +1396,11 @@ namespace UWUVCI_AIO
                     }
                     break;
             }
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
