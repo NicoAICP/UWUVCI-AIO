@@ -20,10 +20,5 @@ namespace UWUVCI_AIO
             this.BackColor = Color.FromArgb(50, 50, 50);
             this.ForeColor = Color.WhiteSmoke;
         }
-
-        private void label1_Click(object sender, System.EventArgs e)
-        {
-
-        }
     }
 }

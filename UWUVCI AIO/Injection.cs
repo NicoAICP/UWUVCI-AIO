@@ -115,173 +115,124 @@ namespace UWUVCI_AIO
         public static void Download(string baseRom)
         {
             string TID = null;
-            string TK = null;
-            string folderName = "";
+            string TK = (string) Properties.Settings.Default[baseRom];
 
             switch (baseRom)
             {
                 #region NDS
                 case "ZSTEU":
                     TID = "00050000101b8d00";
-                    TK = Properties.Settings.Default.ZSTEU;
-                    folderName = "The Legend of Zelda Spirit Tracks [DARP01]";
                     break;
                 case "ZSTUS":
                     TID = "00050000101b8c00";
-                    TK = Properties.Settings.Default.ZSTUS;
-                    folderName = "The Legend of Zelda Spirit Tracks [DARE01]";
                     break;
                 case "ZPHEU":
                     TID = "00050000101c3800";
-                    TK = Properties.Settings.Default.ZPHEU;
-                    folderName = "The Legend of Zelda Phantom Hourglass [DATP01]";
                     break;
                 case "ZPHUS":
                     TID = "00050000101c3700";
-                    TK = Properties.Settings.Default.ZPHUS;
-                    folderName = "The Legend of Zelda Phantom Hourglass [DATE01]";
                     break;
                 case "WWEU":
                     TID = "00050000101a2000";
-                    TK = Properties.Settings.Default.WWEU;
-                    folderName = "WarioWare Touched! [DAGP01]";
                     break;
                 case "WWUS":
                     TID = "00050000101a1f00";
-                    TK = Properties.Settings.Default.WWUS;
-                    folderName = "WarioWare Touched! [DAGE01]";
                     break;
                 #endregion
                 #region N64
                 case "PMEU":
                     TID = "0005000010199800";
-                    TK = Properties.Settings.Default.PMEU;
-                    folderName = "Paper Mario [NACP01]";
                     break;
                 case "PMUS":
                     TID = "0005000010199700";
-                    TK = Properties.Settings.Default.PMUS;
-                    folderName = "Paper Mario [NACE01]";
                     break;
                 case "FZXUS":
                     TID = "00050000101ebc00";
-                    TK = Properties.Settings.Default.FZXUS;
-                    folderName = "F-Zero X [NAWE01]";
                     break;
                 case "FZXJP":
                     TID = "00050000101ebb00";
-                    TK = Properties.Settings.Default.FZXJP;
-                    folderName = "F-Zero X [NAWJ01]";
                     break;
                 case "DK64EU":
                     TID = "0005000010199300";
-                    TK = Properties.Settings.Default.DK64EU;
-                    folderName = "Donkey Kong 64 [NAAP01]";
                     break;
                 case "DK64US":
                     TID = "0005000010199200";
-                    TK = Properties.Settings.Default.DK64US;
-                    folderName = "Donkey Kong 64 [NAAE01]";
                     break;
                 #endregion
                 #region GBA
                 case "ZMCEU":
                     TID = "000500001015e500";
-                    TK = Properties.Settings.Default.ZMCEU;
-                    folderName = "The Legend of Zelda The Minish Cap [PAKP01]";
                     break;
                 case "ZMCUS":
                     TID = "000500001015e400";
-                    TK = Properties.Settings.Default.ZMCUS;
-                    folderName = "The Legend of Zelda The Minish Cap [PAKE01]";
                     break;
                 case "MKCEU":
                     TID = "000500001017d200";
-                    TK = Properties.Settings.Default.MKCEU;
-                    folderName = "Mario Kart Super Circuit [PBDP01]";
                     break;
                 case "MKCUS":
                     TID = "000500001017d300";
-                    TK = Properties.Settings.Default.MKCUS;
-                    folderName = "Mario Kart Super Circuit [PBDE01]";
                     break;
                 #endregion
                 #region NES
                 case "POEU":
                     TID = "0005000010108c00";
-                    TK = Properties.Settings.Default.POEU;
-                    folderName = "Punch-Out!! [FAKP01]";
                     break;
                 case "POUS":
                     TID = "0005000010108b00";
-                    TK = Properties.Settings.Default.POUS;
-                    folderName = "Punch-Out!! Featuring Mr. Dream [FAKE01]";
                     break;
                 case "SMBEU":
                     TID = "0005000010106e00";
-                    TK = Properties.Settings.Default.SMBEU;
-                    folderName = "Super Mario Bros. [FAAP01]";
                     break;
                 case "SMBUS":
                     TID = "0005000010106d00";
-                    TK = Properties.Settings.Default.SMBUS;
-                    folderName = "Super Mario Bros. [FAAE01]";
                     break;
                 #endregion
                 #region SNES
                 case "SMetroidEU":
                     TID = "000500001010a700";
-                    TK = Properties.Settings.Default.SMetroidEU;
-                    folderName = "Super Metroid [JAJP01]";
                     break;
                 case "SMetroidUS":
                     TID = "000500001010a600";
-                    TK = Properties.Settings.Default.SMetroidUS;
-                    folderName = "Super Metroid [JAJE01]";
                     break;
                 case "SMetroidJP":
                     TID = "000500001010a500";
-                    TK = Properties.Settings.Default.SMetroidJP;
-                    folderName = "スーパーメトロイド [JAJJ01]";
                     break;
                 case "EarthboundEU":
                     TID = "0005000010133500";
-                    TK = Properties.Settings.Default.EarthboundEU;
-                    folderName = "EarthBound [JBBP01]";
                     break;
                 case "EarthboundUS":
                     TID = "0005000010133400";
-                    TK = Properties.Settings.Default.EarthboundJP;
-                    folderName = "EarthBound [JBBE01]";
                     break;
                 case "EarthboundJP":
                     TID = "0005000010133000";
-                    TK = Properties.Settings.Default.EarthboundJP;
-                    folderName = "MOTHER [FBDJ01]";
                     break;
                 case "DKCEU":
                     TID = "0005000010109600";
-                    TK = Properties.Settings.Default.DKCEU;
-                    folderName = "Donkey Kong Country [JACP01]";
                     break;
                 case "DKCUS":
                     TID = "0005000010109500";
-                    TK = Properties.Settings.Default.DKCUS;
-                    folderName = "Donkey Kong Country [JACE01]";
                     break;
                 #endregion
             }
 
+            Directory.CreateDirectory(tempPath);
             using (Process download = new Process())
             {
-                download.StartInfo.WorkingDirectory = Path.Combine(toolsPath, "JNUSTOOL");
-                download.StartInfo.FileName = "java";
-                download.StartInfo.Arguments = $"-jar JNUSTOOL.jar {TID} {TK} -file .*";
+                download.StartInfo.FileName = Path.Combine(toolsPath, "WiiUDownloader.exe");
+                download.StartInfo.Arguments = $"{TID} {TK} \"{Path.Combine(tempPath, "download")}\"";
+
                 download.Start();
                 download.WaitForExit();
             }
 
-            Directory.Move(Path.Combine(toolsPath, "JNUSTOOL", folderName), Path.Combine(Properties.Settings.Default.BaseRomPath, baseRom));
+            using (Process decrypt = new Process())
+            {
+                decrypt.StartInfo.FileName = Path.Combine(toolsPath, "Cdecrypt.exe");
+                decrypt.StartInfo.Arguments = $"{Properties.Settings.Default.CommonKey} \"{Path.Combine(tempPath, "download")}\" \"{Path.Combine(Properties.Settings.Default.BaseRomPath, baseRom)}\"";
+
+                decrypt.Start();
+                decrypt.WaitForExit();
+            }
         }
 
         // This function changes TitleID, ProductCode and GameName in app.xml (ID) and meta.xml (ID, ProductCode, Name)

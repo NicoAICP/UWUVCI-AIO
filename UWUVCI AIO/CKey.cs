@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using System.Globalization;
-using System.IO;
-using System.Threading;
 using System.Windows.Forms;
 using UWUVCI_AIO.Properties;
 
@@ -25,18 +22,6 @@ namespace UWUVCI_AIO
             {
                 Properties.Settings.Default.CommonKey = textBox1.Text;
                 Properties.Settings.Default.Save();
-                string configFile = Path.Combine(Directory.GetCurrentDirectory(), "TOOLS", "JNUSTOOL", "config");
-                if (File.Exists(configFile))
-                {
-                    string word = "<ckey>";
-                    string text = File.ReadAllText(configFile);
-                    if (text.Contains(word))
-                    {
-                        text = text.Replace(word, Properties.Settings.Default.CommonKey);
-                        File.WriteAllText(configFile, text);
-                    }
-                }
-
                 MessageBox.Show(Resources.ValidCommonkey, Resources.ValidKey, MessageBoxButtons.OK, MessageBoxIcon.None);
             }
             else
