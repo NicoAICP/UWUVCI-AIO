@@ -17,7 +17,6 @@ Features:
 * Easy to use GUI
 
 Planned Features:
-* Removal of the Java Dependency (Currently with the help of Morilli we removed almost every dependency except Java, and thats cause of JNUSTool)
 * Downloading of BootImages for Injects and Configuration Files for N64
 
 
@@ -32,4 +31,5 @@ Credits:
 * https://github.com/Morilli/Retroinject_C - Morilli
 * SNES ROM Utility - takashi (https://www.romhacking.net/community/1108/)
 * https://github.com/0CBH0/wiiurpxtool/ - 0CBH0
-* https://github.com/Maschell/JNUSTool - Maschell
+* https://github.com/Morilli/WiiUDownloader - Morilli
+* Cdecrypt - Crediar
